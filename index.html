@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Internal Tech Ops Portal - Executive Demo</title>
   <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; margin: 0; padding: 0; color: #333; }
-    header { background: #1e293b; color: white; padding: 1.5rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
-    h1 { margin: 0; font-size: 2.2rem; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #E1E0FF; /* Light purple/pink from Quickplay logo */ margin: 0; padding: 0; color: #333; }
+    header { background: linear-gradient(to right, #6A1B9A, #FF7043); /* Gradient from Quickplay logo */ color: white; padding: 1rem 2rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; position: relative;}
+    header .logo { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); height: 40px; } /* Quickplay logo size */
+    header h1 { margin: 0; font-size: 2.2rem; }
     .container { padding: 2rem; max-width: 1200px; margin: auto; }
-    h2 { color: #1e293b; border-bottom: 2px solid #ddd; padding-bottom: 0.7rem; margin-top: 1.5rem; font-size: 1.8rem; } /* Adjusted margin-top for tabbed sections */
+    h2 { color: #1e293b; border-bottom: 2px solid #ddd; padding-bottom: 0.7rem; margin-top: 1.5rem; font-size: 1.8rem; }
     .section { margin-bottom: 2.5rem; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
     th, td { padding: 1rem; border: 1px solid #eee; text-align: left; vertical-align: top; }
@@ -63,7 +64,7 @@
       display: block;
     }
 
-    /* Chatbot Styling (retained from previous) */
+    /* Chatbot Styling */
     .chatbot-container {
       position: fixed;
       bottom: 20px;
@@ -146,19 +147,37 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      justify-content: flex-start;
     }
-    .customer-concurrency-list li {
+    .customer-concurrency-item {
       background: #f0f8ff;
       border: 1px solid #cfe2ff;
       padding: 0.8rem 1.2rem;
       border-radius: 5px;
       font-weight: bold;
       color: #0056b3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 120px;
+      text-align: center;
+    }
+    .customer-concurrency-item .concurrency-value {
+      font-size: 1.3em;
+      color: #1e293b;
+      margin-top: 5px;
+    }
+    /* Logo styling in tables */
+    .app-logo {
+        height: 20px; /* Adjust size as needed */
+        vertical-align: middle;
+        margin-right: 5px;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="YOUR_QUICKPLAY_LOGO_URL_HERE" alt="Quickplay Logo" class="logo">
     <h1>Internal Tech Ops Portal - Executive Demo</h1>
   </header>
   <div class="container">
@@ -209,16 +228,12 @@
 
       <h2 style="margin-top: 3rem;">Customer Concurrency</h2>
       <ul class="customer-concurrency-list">
-        <li>Aha</li>
-        <li>RSM</li>
-        <li>PLDT</li>
-        <li>Canela</li>
-        <li>Customer A</li>
-        <li>Customer B</li>
-        <li>Customer C</li>
-        <li>Customer D</li>
+        <li class="customer-concurrency-item">Aha <span class="concurrency-value">4.5K</span></li>
+        <li class="customer-concurrency-item">RSM <span class="concurrency-value">1.2K</span></li>
+        <li class="customer-concurrency-item">PLDT <span class="concurrency-value">3K</span></li>
+        <li class="customer-concurrency-item">Canela <span class="concurrency-value">800</span></li>
       </ul>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">This list represents currently active customers or customer groups.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">This list represents currently active customers or user concurrency.</p>
     </div>
 
     <div id="CustomerStats" class="tab-content section">
@@ -236,40 +251,40 @@
         </thead>
         <tbody>
           <tr>
-            <td>Customer A</td>
-            <td>FinApp</td>
+            <td><img src="YOUR_AHA_LOGO_URL_HERE" alt="Aha Logo" class="app-logo"> Aha</td>
+            <td>Entertainment</td>
             <td>iOS/Android</td>
-            <td>4.5 ⭐</td>
-            <td>4.2 ⭐</td>
-            <td>99.8% <span class="badge badge-success">Stable</span></td>
+            <td>4.6 ⭐ <img src="YOUR_IOS_LOGO_URL_HERE" alt="iOS" class="app-logo"></td>
+            <td>4.3 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>99.9% <span class="badge badge-success">Stable</span></td>
           </tr>
           <tr>
-            <td>Customer B</td>
-            <td>RetailFlow</td>
+            <td><img src="YOUR_RSM_LOGO_URL_HERE" alt="RSM Logo" class="app-logo"> RSM</td>
+            <td>Sports&Media</td>
             <td>iOS/Android</td>
-            <td>4.3 ⭐</td>
-            <td>4.0 ⭐</td>
-            <td>99.5% <span class="badge badge-success">Stable</span></td>
+            <td>4.1 ⭐ <img src="YOUR_IOS_LOGO_URL_HERE" alt="iOS" class="app-logo"></td>
+            <td>3.9 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>99.7% <span class="badge badge-success">Stable</span></td>
           </tr>
           <tr>
-            <td>Customer C</td>
-            <td>EduConnect</td>
+            <td><img src="YOUR_PLDT_LOGO_URL_HERE" alt="PLDT Logo" class="app-logo"> PLDT</td>
+            <td>Telecom</td>
             <td>Android</td>
             <td>N/A</td>
-            <td>3.8 ⭐</td>
-            <td>98.1% <span class="badge badge-warning">Watch</span></td>
+            <td>4.0 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>98.5% <span class="badge badge-warning">Watch</span></td>
           </tr>
           <tr>
-            <td>Customer D</td>
-            <td>HealthTracker</td>
-            <td>iOS</td>
-            <td>4.7 ⭐</td>
-            <td>N/A</td>
-            <td>99.9% <span class="badge badge-success">Stable</span></td>
+            <td><img src="YOUR_CANELA_LOGO_URL_HERE" alt="Canela Logo" class="app-logo"> Canela</td>
+            <td>Streaming</td>
+            <td>iOS/Android</td>
+            <td>4.2 ⭐ <img src="YOUR_IOS_LOGO_URL_HERE" alt="iOS" class="app-logo"></td>
+            <td>4.1 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>99.6% <span class="badge badge-success">Stable</span></td>
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">App ratings are dynamically fetched. Performance data is mocked.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">App ratings are for demo purposes only; actual ratings would be fetched via APIs. Performance data is mocked.</p>
     </div>
 
     <div id="SyntheticMonitoring" class="tab-content section">
@@ -575,7 +590,7 @@
           <tr>
             <td>ISSUE-001</td>
             <td>Payment Gateway 503 Errors</td>
-            <td>Customer A</td>
+            <td>Aha</td>
             <td>2025-05-20</td>
             <td>Restarted payment microservice, scaled up instances.</td>
             <td>Team Alpha</td>
@@ -583,7 +598,7 @@
           <tr>
             <td>ISSUE-002</td>
             <td>App Crashing on Android 12</td>
-            <td>Customer C</td>
+            <td>PLDT</td>
             <td>2025-04-15</td>
             <td>Deployed hotfix v3.1.1, addressed memory leak.</td>
             <td>Team Bravo</td>
@@ -591,7 +606,7 @@
           <tr>
             <td>ISSUE-003</td>
             <td>Synthetic Login Test Failure</td>
-            <td>Customer B</td>
+            <td>RSM</td>
             <td>2025-06-01</td>
             <td>Identified stale credentials in monitoring system. Updated.</td>
             <td>Team Alpha</td>
@@ -657,19 +672,19 @@
         let botResponse = "I'm still learning, but I can assist with common queries!";
 
         if (message.toLowerCase().includes('app rating') || message.toLowerCase().includes('customer stats')) {
-          botResponse = "For 'Customer A', the iOS rating is 4.5⭐ and Android is 4.2⭐. 'Customer C' Android is 3.8⭐.";
+          botResponse = "For Aha, iOS rating is 4.6⭐, Android is 4.3⭐. For RSM, iOS is 4.1⭐, Android is 3.9⭐. Check the 'Customer Stats' tab.";
         } else if (message.toLowerCase().includes('synthetic') || message.toLowerCase().includes('health check')) {
-          botResponse = "The 'epg-ingestion-tm' service is showing 401/503 errors. Also, 'syndication-ingestion-disney' is reporting 503 errors for both SG and HK statuses.";
+          botResponse = "The 'epg-ingestion-tm' service is showing 401/503 errors. Also, 'syndication-ingestion-disney' is reporting 503 errors for both SG and HK statuses. Check the 'Synthetic Monitoring' tab.";
         } else if (message.toLowerCase().includes('manifest')) {
-          botResponse = "For RSM channels, 'snehd' HLS protocol is showing a 'MISSING_STREAM' status, indicating a missing 'audio-only' stream variant.";
+          botResponse = "For RSM channels, 'snehd' HLS protocol is showing a 'MISSING_STREAM' status, indicating a missing 'audio-only' stream variant. See the 'Manifest Check' tab.";
         } else if (message.toLowerCase().includes('shift handoff')) {
-          botResponse = "Yesterday's night shift reported high CPU on DB-Prod-01 and ongoing checkout failures for Customer B.";
+          botResponse = "Yesterday's night shift reported high CPU on DB-Prod-01 and ongoing checkout failures for RSM. Check the 'Shift Handoffs' tab.";
         } else if (message.toLowerCase().includes('search')) {
           botResponse = "I can search for past issues. Try searching for 'Payment Gateway 503 Errors' in the 'Issue Resolution Search' section above.";
         } else if (message.toLowerCase().includes('who is working') || message.toLowerCase().includes('on call') || message.toLowerCase().includes('calendar') || message.toLowerCase().includes('shift')) {
             botResponse = "Today (June 9, 2025), RAJA, Abhi, and Ranjith are working. Ajay and Vishal are off-shift. Check the 'Home' tab for details.";
         } else if (message.toLowerCase().includes('customer concurrency') || message.toLowerCase().includes('customers')) {
-            botResponse = "Our active customers include Aha, RSM, PLDT, Canela, Customer A, B, C, and D.";
+            botResponse = "Our active customers include Aha (4.5K), RSM (1.2K), PLDT (3K), and Canela (800). Check the 'Home' tab.";
         }
         else if (message.toLowerCase().includes('escalate') || message.toLowerCase().includes('human')) {
           botResponse = "I can't resolve this myself. I've notified the on-call team via Slack. A human agent will get back to you shortly.";
