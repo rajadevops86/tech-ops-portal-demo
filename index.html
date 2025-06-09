@@ -146,38 +146,89 @@
       margin-top: 1rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 15px; /* Increased gap */
       justify-content: flex-start;
     }
     .customer-concurrency-item {
       background: #f0f8ff;
       border: 1px solid #cfe2ff;
       padding: 0.8rem 1.2rem;
-      border-radius: 5px;
+      border-radius: 8px; /* Slightly more rounded */
       font-weight: bold;
       color: #0056b3;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-width: 120px;
+      min-width: 140px; /* Wider cards */
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+    }
+    .customer-concurrency-item .customer-logo {
+      height: 30px; /* Larger customer logo */
+      margin-bottom: 8px;
     }
     .customer-concurrency-item .concurrency-value {
-      font-size: 1.3em;
+      font-size: 1.5em; /* Larger text */
       color: #1e293b;
       margin-top: 5px;
     }
     /* Logo styling in tables */
-    .app-logo {
-        height: 20px; /* Adjust size as needed */
+    .app-platform-logo {
+        height: 24px; /* Adjust size as needed */
         vertical-align: middle;
-        margin-right: 5px;
+        margin-left: 8px; /* Space between rating and logo */
+    }
+    td .customer-logo-inline {
+        height: 28px; /* Slightly larger customer logo in table */
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    /* Shift Handoff Specific Styling */
+    .shift-handoff-details {
+        margin-top: 1rem;
+        background-color: #fdfdfd;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #eee;
+    }
+    .shift-handoff-details h3 {
+        color: #1e293b;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 0.5rem;
+    }
+    .shift-handoff-details ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .shift-handoff-details ul li {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+    }
+    .shift-handoff-details .log-entry {
+        background-color: #f8f8f8;
+        border-left: 3px solid #0056b3;
+        padding: 0.8rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+    }
+    .shift-handoff-details .log-entry strong {
+        color: #0056b3;
+    }
+    .shift-handoff-details .log-entry span.time {
+        font-size: 0.85em;
+        color: #777;
+        margin-left: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="YOUR_QUICKPLAY_LOGO_URL_HERE" alt="Quickplay Logo" class="logo">
+    <img src="image/Quickplay.jpg" alt="Quickplay Logo" class="logo">
     <h1>Internal Tech Ops Portal - Executive Demo</h1>
   </header>
   <div class="container">
@@ -228,10 +279,10 @@
 
       <h2 style="margin-top: 3rem;">Customer Concurrency</h2>
       <ul class="customer-concurrency-list">
-        <li class="customer-concurrency-item">Aha <span class="concurrency-value">4.5K</span></li>
-        <li class="customer-concurrency-item">RSM <span class="concurrency-value">1.2K</span></li>
-        <li class="customer-concurrency-item">PLDT <span class="concurrency-value">3K</span></li>
-        <li class="customer-concurrency-item">Canela <span class="concurrency-value">800</span></li>
+        <li class="customer-concurrency-item"><img src="image/aha.jpg" alt="Aha Logo" class="customer-logo"> Aha <span class="concurrency-value">4.5K</span></li>
+        <li class="customer-concurrency-item"><img src="image/RSM_Logo.png" alt="RSM Logo" class="customer-logo"> RSM <span class="concurrency-value">1.2K</span></li>
+        <li class="customer-concurrency-item"><img src="image/smart.png" alt="PLDT Logo" class="customer-logo"> PLDT <span class="concurrency-value">3K</span></li>
+        <li class="customer-concurrency-item"><img src="image/Canela.png" alt="Canela Logo" class="customer-logo"> Canela <span class="concurrency-value">800</span></li>
       </ul>
       <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">This list represents currently active customers or user concurrency.</p>
     </div>
@@ -251,35 +302,35 @@
         </thead>
         <tbody>
           <tr>
-            <td><img src="YOUR_AHA_LOGO_URL_HERE" alt="Aha Logo" class="app-logo"> Aha</td>
+            <td><img src="image/aha.jpg" alt="Aha Logo" class="customer-logo-inline"> Aha</td>
             <td>Entertainment</td>
             <td>iOS/Android</td>
-            <td>4.6 ⭐ <img src="YOUR_IOS_LOGO_URL_HERE" alt="iOS" class="app-logo"></td>
-            <td>4.3 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>4.6 ⭐ <img src="image/iOS.jpg" alt="iOS Logo" class="app-platform-logo"></td>
+            <td>4.3 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
             <td>99.9% <span class="badge badge-success">Stable</span></td>
           </tr>
           <tr>
-            <td><img src="YOUR_RSM_LOGO_URL_HERE" alt="RSM Logo" class="app-logo"> RSM</td>
+            <td><img src="image/RSM_Logo.png" alt="RSM Logo" class="customer-logo-inline"> RSM</td>
             <td>Sports&Media</td>
             <td>iOS/Android</td>
-            <td>4.1 ⭐ <img src="YOUR_IOS_LOGO_URL_HERE" alt="iOS" class="app-logo"></td>
-            <td>3.9 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>4.1 ⭐ <img src="image/iOS.jpg" alt="iOS Logo" class="app-platform-logo"></td>
+            <td>3.9 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
             <td>99.7% <span class="badge badge-success">Stable</span></td>
           </tr>
           <tr>
-            <td><img src="YOUR_PLDT_LOGO_URL_HERE" alt="PLDT Logo" class="app-logo"> PLDT</td>
+            <td><img src="image/smart.png" alt="PLDT Logo" class="customer-logo-inline"> PLDT</td>
             <td>Telecom</td>
             <td>Android</td>
             <td>N/A</td>
-            <td>4.0 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>4.0 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
             <td>98.5% <span class="badge badge-warning">Watch</span></td>
           </tr>
           <tr>
-            <td><img src="YOUR_CANELA_LOGO_URL_HERE" alt="Canela Logo" class="app-logo"> Canela</td>
+            <td><img src="image/Canela.png" alt="Canela Logo" class="customer-logo-inline"> Canela</td>
             <td>Streaming</td>
             <td>iOS/Android</td>
-            <td>4.2 ⭐ <img src="YOUR_IOS_LOGO_URL_HERE" alt="iOS" class="app-logo"></td>
-            <td>4.1 ⭐ <img src="YOUR_ANDROID_LOGO_URL_HERE" alt="Android" class="app-logo"></td>
+            <td>4.2 ⭐ <img src="image/iOS.jpg" alt="iOS Logo" class="app-platform-logo"></td>
+            <td>4.1 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
             <td>99.6% <span class="badge badge-success">Stable</span></td>
           </tr>
         </tbody>
@@ -486,54 +537,50 @@
     </div>
 
     <div id="ShiftHandoffs" class="tab-content section">
-      <h2>Shift Handoffs</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Shift</th>
-            <th>Owner</th>
-            <th>Key Issues</th>
-            <th>Pending Tasks</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2025-06-08</td>
-            <td>Night (22:00 - 06:00)</td>
-            <td>Sarah M.</td>
-            <td>
-              <ul>
-                <li>High CPU on DB-Prod-01 (resolved by restart).</li>
-                <li>Customer B checkout failures (ongoing, L2 engaged).</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>Follow up on Customer B issue.</li>
-                <li>Check DB-Prod-01 metrics post-restart.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>2025-06-09</td>
-            <td>Morning (06:00 - 14:00)</td>
-            <td>Carlos T.</td>
-            <td>
-              <ul>
-                <li>Customer C app store rating drop (investigating).</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>Run manifest check on User Auth Service.</li>
-                <li>Escalate Customer C rating issue if no clear cause found.</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Structured daily handoff logs for clear communication between shifts.</p>
+      <h2>Shift Handoffs (June 9, 2025 - Morning Shift)</h2>
+      <div class="shift-handoff-details">
+        <div class="log-entry">
+          <strong>Shift Hand Off: Incident Summary for the Day</strong> <span class="time">9:34 AM</span>
+          <ul>
+            <li>Incidents Opened: 7</li>
+            <li>Resolved/Closed: 4</li>
+            <li>Incidents Updated: 28</li>
+          </ul>
+          <h3>Incidents:</h3>
+          <ul>
+            <li><strong>INC0195019:</strong> The customer is facing a loading issue in the mobile</li>
+            <li><strong>INC0195020:</strong> Customer is facing a loading issue in the mobile</li>
+            <li><strong>INC0195021:</strong> Loading issue on mobile</li>
+            <li><strong>INC0195022:</strong> Customer is facing an app stuck issue on mobile</li>
+            <li><strong>INC0195023:</strong> [AHA] User already has subscription but still showing subscribe now</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <strong>Changes:</strong> <span class="time">9:35 AM</span>
+          <ul>
+            <li><strong>CHG0102910:</strong> [LocalNow] HLS & EPG URL Changes for one Live Channel in AMD - Completed</li>
+            <li><strong>[AHA]</strong> Indian Idol Audition portal - Telugu Indian Idol - Update</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <strong>Upcoming CR:</strong> <span class="time">9:35 AM</span>
+          <ul>
+            <li><strong>CHG0102882:</strong> [AHA] Web deployment of version</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <strong>FYI (For Your Information):</strong>
+          <ul>
+            <li>Manifest alert for Cignal and Plive has been created successfully.</li>
+            <li>Cignal - all 83 channels alerts has been done (both HLS and Dash).</li>
+            <li>Health alerts have been configured for Telekon Malaysia's microservices endpoint.</li>
+          </ul>
+        </div>
+        <p style="margin-top: 1rem; text-align: right; font-style: italic; font-size: 0.9em;">Detailed shift log provided by Praveen Kumar.</p>
+      </div>
     </div>
 
     <div id="RBAC" class="tab-content section">
@@ -588,12 +635,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>ISSUE-001</td>
-            <td>Payment Gateway 503 Errors</td>
+            <td>INC0195023</td>
+            <td>User has subscription but showing 'subscribe now'</td>
             <td>Aha</td>
-            <td>2025-05-20</td>
-            <td>Restarted payment microservice, scaled up instances.</td>
-            <td>Team Alpha</td>
+            <td>2025-06-09</td>
+            <td>Investigating: Likely data sync issue.</td>
+            <td>Praveen K.</td>
           </tr>
           <tr>
             <td>ISSUE-002</td>
@@ -676,11 +723,11 @@
         } else if (message.toLowerCase().includes('synthetic') || message.toLowerCase().includes('health check')) {
           botResponse = "The 'epg-ingestion-tm' service is showing 401/503 errors. Also, 'syndication-ingestion-disney' is reporting 503 errors for both SG and HK statuses. Check the 'Synthetic Monitoring' tab.";
         } else if (message.toLowerCase().includes('manifest')) {
-          botResponse = "For RSM channels, 'snehd' HLS protocol is showing a 'MISSING_STREAM' status, indicating a missing 'audio-only' stream variant. See the 'Manifest Check' tab.";
+          botResponse = "For RSM channels, 'snehd' HLS protocol is showing a 'MISSING_STREAM' status. See the 'Manifest Check' tab.";
         } else if (message.toLowerCase().includes('shift handoff')) {
-          botResponse = "Yesterday's night shift reported high CPU on DB-Prod-01 and ongoing checkout failures for RSM. Check the 'Shift Handoffs' tab.";
+          botResponse = "Today's shift reported 7 incidents opened, 4 closed. Notably, [AHA] is experiencing 'subscribe now' issues despite active subscriptions. See the 'Shift Handoffs' tab for full details.";
         } else if (message.toLowerCase().includes('search')) {
-          botResponse = "I can search for past issues. Try searching for 'Payment Gateway 503 Errors' in the 'Issue Resolution Search' section above.";
+          botResponse = "I can search for past issues. Try searching for 'Payment Gateway 503 Errors' or 'Aha subscription issue' in the 'Issue Resolution Search' section.";
         } else if (message.toLowerCase().includes('who is working') || message.toLowerCase().includes('on call') || message.toLowerCase().includes('calendar') || message.toLowerCase().includes('shift')) {
             botResponse = "Today (June 9, 2025), RAJA, Abhi, and Ranjith are working. Ajay and Vishal are off-shift. Check the 'Home' tab for details.";
         } else if (message.toLowerCase().includes('customer concurrency') || message.toLowerCase().includes('customers')) {
