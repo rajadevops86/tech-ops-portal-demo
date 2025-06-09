@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Ops Portal Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 0; }
+    header { background: #1e293b; color: white; padding: 1rem; text-align: center; }
+    .container { padding: 2rem; max-width: 1200px; margin: auto; }
+    h2 { color: #1e293b; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+    .section { margin-bottom: 2rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { padding: 0.8rem; border-bottom: 1px solid #ddd; text-align: left; }
+    th { background-color: #f0f0f0; }
+    .status-working { color: green; font-weight: bold; }
+    .status-off { color: red; font-weight: bold; }
+    .chatbot-box { border: 1px solid #ccc; padding: 1rem; border-radius: 8px; background: #fafafa; margin-top: 2rem; }
+    .message { margin-bottom: 1rem; padding: 0.5rem; border-radius: 5px; }
+    .bot { background-color: #e6e6e6; text-align: left; }
+    .user { background-color: #d4e3ff; text-align: right; }
+    input[type="text"] { width: calc(100% - 20px); padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 0.5rem 1rem; background-color: #1e40af; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; }
+    button:hover { background-color: #1a368d; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Internal Tech Ops Portal - Executive Demo</h1>
+  </header>
+  <div class="container">
+
+    <div class="section">
+      <h2>Customer Stats</h2>
+      <table>
+        <tr><th>Customer</th><th>iOS Rating</th><th>Android Rating</th><th>App Performance</th><th>Last 7 Days Downloads</th></tr>
+        <tr><td>Customer A (E-commerce)</td><td>4.5 ⭐</td><td>4.2 ⭐</td><td>98.5% uptime, 1.2s avg. load</td><td>+15,000</td></tr>
+        <tr><td>Customer B (Fintech)</td><td>4.3 ⭐</td><td>4.0 ⭐</td><td>99.1% uptime, 0.9s avg. load</td><td>+8,200</td></tr>
+        <tr><td>Customer C (Gaming)</td><td>4.7 ⭐</td><td>4.6 ⭐</td><td>99.9% uptime, 0.5s avg. load</td><td>+25,000</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Synthetic Monitoring Results (Last 24h)</h2>
+      <table>
+        <tr><th>Test Name</th><th>Customer</th><th>Status</th><th>Avg. Response Time</th><th>Errors</th></tr>
+        <tr><td>Login Flow Test</td><td>Customer A</td><td class="status-working">🟢 Pass</td><td>250ms</td><td>0</td></tr>
+        <tr><td>Checkout Process</td><td>Customer A</td><td class="status-working">🟢 Pass</td><td>480ms</td><td>0</td></tr>
+        <tr><td>Payment Gateway</td><td>Customer B</td><td class="status-off">🔴 Fail</td><td>1200ms</td><td>5xx</td></tr>
+        <tr><td>User Registration</td><td>Customer C</td><td class="status-working">🟢 Pass</td><td>180ms</td><td>0</td></tr>
+      </table>
+      <p><em>Note: Customer B's payment gateway synthetic test is failing. Team is investigating.</em></p>
+    </div>
+
+    <div class="section">
+      <h2>Manifest Check Results</h2>
+      <p><strong>App: Customer A (E-commerce) - Latest Build (v3.1.2)</strong></p>
+      <ul>
+        <li>✅ `ad_sdk_version`: `5.1.0` (Matches expected)</li>
+        <li>✅ `feature_flags.dark_mode`: `true`</li>
+        <li><li>⚠️ `api_endpoint_v2`: Missing in manifest! (Expected: `https://api.customer-a.com/v2/`)</li>
+        <li>✅ `cdn_url`: `https://cdn.customer-a.com`</li>
+      </ul>
+      <p><em>Action: Alert raised for missing API endpoint.</em></p>
+    </div>
+
+    <div class="section">
+      <h2>Operations Calendar (Today: June 9, 2025)</h2>
+      <table>
+        <tr><th>Name</th><th>Email</th><th>Status</th></tr>
+        <tr><td>Alice Smith</td><td>alice@company.com</td><td class="status-working">🟢 Working</td></tr>
+        <tr><td>Bob Kumar</td><td>bob@company.com</td><td class="status-off">🔴 Off</td></tr>
+        <tr><td>Carlos Tan</td><td>carlos@company.com</td><td class="status-working">🟢 Working</td></tr>
+      </table>
+      <p><em>Data loaded from `ops_schedule.csv` (mock).</em></p>
+    </div>
+
+    <div class="section">
+      <h2>Shift Handoffs (June 8, 2025 - Evening Shift)</h2>
+      <p><strong>Shift Owner: David Lee</strong></p>
+      <ul>
+        <li>**High Priority:** Customer B Payment Gateway synthetic failures started around 16:30 IST. On-call (Carlos) notified.</li>
+        <li>**Known Customer Escalations:** Customer A reported slower image loading; investigating CDN cache.</li>
+        <li>**Pending Tasks:** Verify Customer C's new analytics integration.</li>
+        <li>**Action Items:** Follow up on Customer B Payment Gateway RCA.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>RBAC (Role-Based Access Control) Overview</h2>
+      <table>
+        <tr><th>Role</th><th>Permissions</th><th>Users</th></tr>
+        <tr><td>Admin</td><td>Full Access (All Modules)</td><td>Alice Smith, David Lee</td></tr>
+        <tr><td>Operations</td><td>View All, Edit Shift Handoffs, Resolve Issues</td><td>Bob Kumar, Carlos Tan</td></tr>
+        <tr><td>Viewer</td><td>View Dashboards Only</td><td>Marketing Team, Product Team</td></tr>
+      </table>
+      <p><em>Access controlled via Keycloak integration (simulated).</em></p>
+    </div>
+
+    <div class="section">
+      <h2>Issue Search (Ops Memory)</h2>
+      <p>Search for past issues: "buffer overflow"</p>
+      <table>
+        <tr><th>Issue ID</th><th>Summary</th><th>Resolution</th><th>Date</th><th>Owner</th><th>Tags</th></tr>
+        <tr><td>ISSUE-001</td><td>Buffer overflow on Log Service</td><td>Restarted service, increased memory allocation. Root cause: rogue parser.</td><td>2024-11-15</td><td>David Lee</td><td>`Logs`, `Service Stability`</td></tr>
+        <tr><td>ISSUE-007</td><td>Database connection pool exhaustion leading to timeouts</td><td>Increased max connections. RCA: high load from reporting tool.</td><td>2025-01-20</td><td>Carlos Tan</td><td>`Database`, `Performance`</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Gemini-Powered Chatbot Assistant</h2>
+      <div class="chatbot-box" id="chatbot-conversation">
+        <div class="message bot">Hello! How can I assist you with technical operations today?</div>
+        <div class="message user">What's the app rating for Customer A?</div>
+        <div class="message bot">Customer A's iOS App Store rating is 4.5 ⭐ and Android Play Store rating is 4.2 ⭐.</div>
+        <div class="message user">Show synthetic results for Customer B.</div>
+        <div class="message bot">For Customer B, the Payment Gateway synthetic test is currently failing with 5xx errors. All other tests are passing.</div>
+        <div class="message user">Have we seen "buffer overflow" issues before?</div>
+        <div class="message bot">Yes, a "buffer overflow" on the Log Service occurred on 2024-11-15. It was resolved by restarting the service and increasing memory allocation. Root cause was a rogue parser.</div>
+        <div class="message user">I need to talk to someone.</div>
+        <div class="message bot">I understand. I'm escalating your query to the on-call operations team via Slack. Please expect a response shortly.</div>
+      </div>
+      <input type="text" placeholder="Type your message..." onkeypress="handleChatInput(event)">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.querySelector('.chatbot-box + input[type="text"]');
+      const message = input.value.trim();
+      if (message) {
+        const conversation = document.getElementById('chatbot-conversation');
+        const userDiv = document.createElement('div');
+        userDiv.className = 'message user';
+        userDiv.textContent = message;
+        conversation.appendChild(userDiv);
+        input.value = '';
+
+        // Simulate bot response (for demo purposes)
+        setTimeout(() => {
+          const botDiv = document.createElement('div');
+          botDiv.className = 'message bot';
+          let botResponse = "I'm a demo bot. I can only simulate responses for known queries.";
+          if (message.toLowerCase().includes('app rating')) {
+            botResponse = "I can fetch app ratings from our system, for Customer A it's iOS: 4.5⭐, Android: 4.2⭐.";
+          } else if (message.toLowerCase().includes('synthetic')) {
+            botResponse = "Synthetic monitoring data for Customer B shows a failure in the Payment Gateway test.";
+          } else if (message.toLowerCase().includes('shift')) {
+            botResponse = "David Lee owned the evening shift yesterday. Key items: Customer B payment gateway issue and CDN cache investigation for Customer A.";
+          } else if (message.toLowerCase().includes('help') || message.toLowerCase().includes('talk to someone')) {
+            botResponse = "Understood. I've notified the on-call team. Someone will reach out to you shortly.";
+          } else if (message.toLowerCase().includes('issue') || message.toLowerCase().includes('past issues')) {
+            botResponse = "Searching past issues... for 'buffer overflow', we had a similar incident on 2024-11-15, resolved by service restart.";
+          }
+          conversation.appendChild(botDiv);
+          conversation.scrollTop = conversation.scrollHeight; // Scroll to bottom
+        }, 1000);
+      }
+    }
+
+    function handleChatInput(event) {
+      if (event.key === 'Enter') {
+        sendMessage();
+      }
+    }
+  </script>
+</body>
+</html>
