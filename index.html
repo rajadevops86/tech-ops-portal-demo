@@ -64,7 +64,31 @@
       display: block;
     }
 
-    /* Chatbot Styling */
+    /* Chatbot Toggle Button */
+    .chatbot-toggle-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #1e293b;
+        color: white;
+        border: none;
+        border-radius: 50%; /* Makes it circular */
+        width: 60px; /* Size of the button */
+        height: 60px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 1001; /* Above chatbot container */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+    .chatbot-toggle-button:hover {
+        background: #0f172a;
+    }
+
+    /* Chatbot Container */
     .chatbot-container {
       position: fixed;
       bottom: 20px;
@@ -75,7 +99,7 @@
       border: 1px solid #ccc;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      display: flex;
+      display: none; /* Hidden by default */
       flex-direction: column;
       overflow: hidden;
       z-index: 1000;
@@ -88,6 +112,17 @@
       border-top-right-radius: 9px;
       font-weight: bold;
       text-align: center;
+      display: flex; /* To align title and close button */
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chatbot-header .close-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0 10px;
     }
     .chatbot-messages {
       flex-grow: 1;
@@ -552,7 +587,7 @@
             <li><strong>INC0195020:</strong> Customer is facing a loading issue in the mobile</li>
             <li><strong>INC0195021:</strong> Loading issue on mobile</li>
             <li><strong>INC0195022:</strong> Customer is facing an app stuck issue on mobile</li>
-            <li><strong>INC0195023:</strong> [AHA] User already has subscription but still showing subscribe now</li>
+            <li><strong>INC0195023:</strong> [AHA] user already have subscription but still showing subscribe now</li>
           </ul>
         </div>
 
@@ -665,8 +700,13 @@
 
   </div>
 
-  <div class="chatbot-container">
-    <div class="chatbot-header">Gemini Chatbot Assistant</div>
+  <button class="chatbot-toggle-button" onclick="toggleChatbot()">Chat</button>
+
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <span>Gemini Chatbot Assistant</span>
+      <button class="close-button" onclick="toggleChatbot()">X</button>
+    </div>
     <div class="chatbot-messages" id="chatbot-messages">
       <div class="chatbot-message bot">Hello! I'm your internal ops assistant. How can I help you today?</div>
     </div>
@@ -698,6 +738,18 @@
       document.querySelector(".tab-button").classList.add("active");
     });
 
+    // Chatbot Toggle Functionality
+    function toggleChatbot() {
+        const chatbotContainer = document.getElementById('chatbot-container');
+        if (chatbotContainer.style.display === 'flex') {
+            chatbotContainer.style.display = 'none';
+        } else {
+            chatbotContainer.style.display = 'flex';
+            // Scroll to bottom of messages when opened
+            const messagesDiv = document.getElementById('chatbot-messages');
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    }
 
     // Chatbot functionality
     function sendMessage() {
