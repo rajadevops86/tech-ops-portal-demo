@@ -3,25 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Ops Portal Demo</title>
+  <title>Internal Tech Ops Portal - Executive Demo</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 0; }
-    header { background: #1e293b; color: white; padding: 1rem; text-align: center; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; margin: 0; padding: 0; color: #333; }
+    header { background: #1e293b; color: white; padding: 1.5rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    h1 { margin: 0; font-size: 2.2rem; }
     .container { padding: 2rem; max-width: 1200px; margin: auto; }
-    h2 { color: #1e293b; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
-    .section { margin-bottom: 2rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { color: #1e293b; border-bottom: 2px solid #ddd; padding-bottom: 0.7rem; margin-top: 2.5rem; font-size: 1.8rem; }
+    .section { margin-bottom: 2.5rem; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { padding: 0.8rem; border-bottom: 1px solid #ddd; text-align: left; }
-    th { background-color: #f0f0f0; }
-    .status-working { color: green; font-weight: bold; }
-    .status-off { color: red; font-weight: bold; }
-    .chatbot-box { border: 1px solid #ccc; padding: 1rem; border-radius: 8px; background: #fafafa; margin-top: 2rem; }
-    .message { margin-bottom: 1rem; padding: 0.5rem; border-radius: 5px; }
-    .bot { background-color: #e6e6e6; text-align: left; }
-    .user { background-color: #d4e3ff; text-align: right; }
-    input[type="text"] { width: calc(100% - 20px); padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
-    button { padding: 0.5rem 1rem; background-color: #1e40af; color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; }
-    button:hover { background-color: #1a368d; }
+    th, td { padding: 1rem; border: 1px solid #eee; text-align: left; vertical-align: top; }
+    th { background: #e9ecef; color: #1e293b; font-weight: 600; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    .status-working { color: #28a745; font-weight: bold; } /* Green */
+    .status-off { color: #dc3545; font-weight: bold; } /* Red */
+    .badge { padding: 0.3em 0.6em; border-radius: 5px; font-size: 0.85em; }
+    .badge-success { background-color: #d4edda; color: #155724; }
+    .badge-danger { background-color: #f8d7da; color: #721c24; }
+    .badge-warning { background-color: #fff3cd; color: #856404; }
+    .chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 350px;
+      height: 450px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    .chatbot-header {
+      background: #1e293b;
+      color: white;
+      padding: 0.8rem;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .chatbot-messages {
+      flex-grow: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      background: #fdfdfd;
+    }
+    .chatbot-message {
+      margin-bottom: 0.8rem;
+      padding: 0.6rem 1rem;
+      border-radius: 15px;
+      max-width: 80%;
+    }
+    .chatbot-message.user {
+      background: #e0f2f7;
+      color: #0056b3;
+      align-self: flex-end;
+      margin-left: auto;
+      text-align: right;
+    }
+    .chatbot-message.bot {
+      background: #f0f0f0;
+      color: #333;
+      align-self: flex-start;
+      margin-right: auto;
+    }
+    .chatbot-input {
+      display: flex;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+    }
+    .chatbot-input input {
+      flex-grow: 1;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 0.7rem 1rem;
+      margin-right: 0.5rem;
+    }
+    .chatbot-input button {
+      background: #1e293b;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 0.7rem 1.2rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .chatbot-input button:hover {
+      background: #0f172a;
+    }
   </style>
 </head>
 <body>
@@ -31,140 +103,379 @@
   <div class="container">
 
     <div class="section">
-      <h2>Customer Stats</h2>
+      <h2>Operations Calendar (Today: June 9, 2025)</h2>
       <table>
-        <tr><th>Customer</th><th>iOS Rating</th><th>Android Rating</th><th>App Performance</th><th>Last 7 Days Downloads</th></tr>
-        <tr><td>Customer A (E-commerce)</td><td>4.5 ⭐</td><td>4.2 ⭐</td><td>98.5% uptime, 1.2s avg. load</td><td>+15,000</td></tr>
-        <tr><td>Customer B (Fintech)</td><td>4.3 ⭐</td><td>4.0 ⭐</td><td>99.1% uptime, 0.9s avg. load</td><td>+8,200</td></tr>
-        <tr><td>Customer C (Gaming)</td><td>4.7 ⭐</td><td>4.6 ⭐</td><td>99.9% uptime, 0.5s avg. load</td><td>+25,000</td></tr>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice Smith</td>
+            <td>alice@company.com</td>
+            <td class="status-working">🟢 Working</td>
+          </tr>
+          <tr>
+            <td>Bob Kumar</td>
+            <td>bob@company.com</td>
+            <td class="status-off">🔴 Off</td>
+          </tr>
+          <tr>
+            <td>Carlos Tan</td>
+            <td>carlos@company.com</td>
+            <td class="status-working">🟢 Working</td>
+          </tr>
+          <tr>
+            <td>David Lee</td>
+            <td>david@company.com</td>
+            <td class="status-working">🟢 Working</td>
+          </tr>
+          <tr>
+            <td>Eva Chen</td>
+            <td>eva@company.com</td>
+            <td class="status-off">🔴 Off</td>
+          </tr>
+        </tbody>
       </table>
+      <p style="margin-top: 1.5rem; text-align: right; font-style: italic; font-size: 0.9em;">Data for today sourced from `ops_schedule.csv`</p>
     </div>
 
     <div class="section">
-      <h2>Synthetic Monitoring Results (Last 24h)</h2>
+      <h2>Customer Stats</h2>
       <table>
-        <tr><th>Test Name</th><th>Customer</th><th>Status</th><th>Avg. Response Time</th><th>Errors</th></tr>
-        <tr><td>Login Flow Test</td><td>Customer A</td><td class="status-working">🟢 Pass</td><td>250ms</td><td>0</td></tr>
-        <tr><td>Checkout Process</td><td>Customer A</td><td class="status-working">🟢 Pass</td><td>480ms</td><td>0</td></tr>
-        <tr><td>Payment Gateway</td><td>Customer B</td><td class="status-off">🔴 Fail</td><td>1200ms</td><td>5xx</td></tr>
-        <tr><td>User Registration</td><td>Customer C</td><td class="status-working">🟢 Pass</td><td>180ms</td><td>0</td></tr>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>App</th>
+            <th>Platform</th>
+            <th>iOS Rating</th>
+            <th>Android Rating</th>
+            <th>App Performance (Uptime)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Customer A</td>
+            <td>FinApp</td>
+            <td>iOS/Android</td>
+            <td>4.5 ⭐</td>
+            <td>4.2 ⭐</td>
+            <td>99.8% <span class="badge badge-success">Stable</span></td>
+          </tr>
+          <tr>
+            <td>Customer B</td>
+            <td>RetailFlow</td>
+            <td>iOS/Android</td>
+            <td>4.3 ⭐</td>
+            <td>4.0 ⭐</td>
+            <td>99.5% <span class="badge badge-success">Stable</span></td>
+          </tr>
+          <tr>
+            <td>Customer C</td>
+            <td>EduConnect</td>
+            <td>Android</td>
+            <td>N/A</td>
+            <td>3.8 ⭐</td>
+            <td>98.1% <span class="badge badge-warning">Watch</span></td>
+          </tr>
+          <tr>
+            <td>Customer D</td>
+            <td>HealthTracker</td>
+            <td>iOS</td>
+            <td>4.7 ⭐</td>
+            <td>N/A</td>
+            <td>99.9% <span class="badge badge-success">Stable</span></td>
+          </tr>
+        </tbody>
       </table>
-      <p><em>Note: Customer B's payment gateway synthetic test is failing. Team is investigating.</em></p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">App ratings are dynamically fetched. Performance data is mocked.</p>
+    </div>
+
+    <div class="section">
+      <h2>Synthetic Monitoring Results</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Test Name</th>
+            <th>Customer</th>
+            <th>Location</th>
+            <th>Last Run Status</th>
+            <th>Response Time</th>
+            <th>Errors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Login Flow Test</td>
+            <td>Customer A</td>
+            <td>US-East</td>
+            <td><span class="badge badge-success">PASS</span></td>
+            <td>150ms</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Checkout Process</td>
+            <td>Customer B</td>
+            <td>EU-West</td>
+            <td><span class="badge badge-danger">FAIL</span></td>
+            <td>>5000ms</td>
+            <td>504 Gateway Timeout</td>
+          </tr>
+          <tr>
+            <td>API Endpoint Check</td>
+            <td>Customer C</td>
+            <td>Asia-SE</td>
+            <td><span class="badge badge-success">PASS</span></td>
+            <td>80ms</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Dashboard Load</td>
+            <td>Customer A</td>
+            <td>US-West</td>
+            <td><span class="badge badge-success">PASS</span></td>
+            <td>220ms</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Synthetic monitoring results are simulated. Real data would integrate with Prometheus/Grafana.</p>
     </div>
 
     <div class="section">
       <h2>Manifest Check Results</h2>
-      <p><strong>App: Customer A (E-commerce) - Latest Build (v3.1.2)</strong></p>
-      <ul>
-        <li>✅ `ad_sdk_version`: `5.1.0` (Matches expected)</li>
-        <li>✅ `feature_flags.dark_mode`: `true`</li>
-        <li><li>⚠️ `api_endpoint_v2`: Missing in manifest! (Expected: `https://api.customer-a.com/v2/`)</li>
-        <li>✅ `cdn_url`: `https://cdn.customer-a.com`</li>
-      </ul>
-      <p><em>Action: Alert raised for missing API endpoint.</em></p>
-    </div>
-
-    <div class="section">
-      <h2>Operations Calendar (Today: June 9, 2025)</h2>
       <table>
-        <tr><th>Name</th><th>Email</th><th>Status</th></tr>
-        <tr><td>Alice Smith</td><td>alice@company.com</td><td class="status-working">🟢 Working</td></tr>
-        <tr><td>Bob Kumar</td><td>bob@company.com</td><td class="status-off">🔴 Off</td></tr>
-        <tr><td>Carlos Tan</td><td>carlos@company.com</td><td class="status-working">🟢 Working</td></tr>
+        <thead>
+          <tr>
+            <th>Service/App</th>
+            <th>Manifest Version</th>
+            <th>Last Checked</th>
+            <th>Status</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Payment Gateway</td>
+            <td>v1.2.3</td>
+            <td>2025-06-08</td>
+            <td><span class="badge badge-success">OK</span></td>
+            <td>No deviations found.</td>
+          </tr>
+          <tr>
+            <td>User Auth Service</td>
+            <td>v2.0.1</td>
+            <td>2025-06-09</td>
+            <td><span class="badge badge-danger">MISMATCH</span></td>
+            <td>Missing 'featureFlags.newAuthFlow' key.</td>
+          </tr>
+          <tr>
+            <td>Reporting Engine</td>
+            <td>v1.0.5</td>
+            <td>2025-06-07</td>
+            <td><span class="badge badge-warning">DEPRECATED</span></td>
+            <td>Using deprecated API endpoints.</td>
+          </tr>
+        </tbody>
       </table>
-      <p><em>Data loaded from `ops_schedule.csv` (mock).</em></p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Manifest checks would highlight configuration drift or non-compliance.</p>
     </div>
 
     <div class="section">
-      <h2>Shift Handoffs (June 8, 2025 - Evening Shift)</h2>
-      <p><strong>Shift Owner: David Lee</strong></p>
-      <ul>
-        <li>**High Priority:** Customer B Payment Gateway synthetic failures started around 16:30 IST. On-call (Carlos) notified.</li>
-        <li>**Known Customer Escalations:** Customer A reported slower image loading; investigating CDN cache.</li>
-        <li>**Pending Tasks:** Verify Customer C's new analytics integration.</li>
-        <li>**Action Items:** Follow up on Customer B Payment Gateway RCA.</li>
-      </ul>
+      <h2>Shift Handoffs</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Shift</th>
+            <th>Owner</th>
+            <th>Key Issues</th>
+            <th>Pending Tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-06-08</td>
+            <td>Night (22:00 - 06:00)</td>
+            <td>Sarah M.</td>
+            <td>
+              <ul>
+                <li>High CPU on DB-Prod-01 (resolved by restart).</li>
+                <li>Customer B checkout failures (ongoing, L2 engaged).</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Follow up on Customer B issue.</li>
+                <li>Check DB-Prod-01 metrics post-restart.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2025-06-09</td>
+            <td>Morning (06:00 - 14:00)</td>
+            <td>Carlos T.</td>
+            <td>
+              <ul>
+                <li>Customer C app store rating drop (investigating).</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Run manifest check on User Auth Service.</li>
+                <li>Escalate Customer C rating issue if no clear cause found.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Structured daily handoff logs for clear communication between shifts.</p>
     </div>
 
     <div class="section">
       <h2>RBAC (Role-Based Access Control) Overview</h2>
       <table>
-        <tr><th>Role</th><th>Permissions</th><th>Users</th></tr>
-        <tr><td>Admin</td><td>Full Access (All Modules)</td><td>Alice Smith, David Lee</td></tr>
-        <tr><td>Operations</td><td>View All, Edit Shift Handoffs, Resolve Issues</td><td>Bob Kumar, Carlos Tan</td></tr>
-        <tr><td>Viewer</td><td>View Dashboards Only</td><td>Marketing Team, Product Team</td></tr>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Description</th>
+            <th>Access Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Admin</td>
+            <td>Full control over all modules and user management.</td>
+            <td>All (View, Edit, Manage Users)</td>
+          </tr>
+          <tr>
+            <td>Operations Lead</td>
+            <td>Access to all operational dashboards, manage team members.</td>
+            <td>All (View, Edit on assigned customers)</td>
+          </tr>
+          <tr>
+            <td>Operations Engineer</td>
+            <td>View dashboards, perform specific operational tasks.</td>
+            <td>View all, Edit limited to assigned customers</td>
+          </tr>
+          <tr>
+            <td>Viewer</td>
+            <td>Read-only access to all dashboards.</td>
+            <td>View Only</td>
+          </tr>
+        </tbody>
       </table>
-      <p><em>Access controlled via Keycloak integration (simulated).</em></p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Simulated RBAC rules. Actual implementation would integrate with Keycloak or similar SSO.</p>
     </div>
 
     <div class="section">
-      <h2>Issue Search (Ops Memory)</h2>
-      <p>Search for past issues: "buffer overflow"</p>
+      <h2>Issue Resolution Search (Ops Memory)</h2>
+      <input type="text" placeholder="Search for past issues (e.g., 'buffer timeout', 'payment gateway error')" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 1rem;">
       <table>
-        <tr><th>Issue ID</th><th>Summary</th><th>Resolution</th><th>Date</th><th>Owner</th><th>Tags</th></tr>
-        <tr><td>ISSUE-001</td><td>Buffer overflow on Log Service</td><td>Restarted service, increased memory allocation. Root cause: rogue parser.</td><td>2024-11-15</td><td>David Lee</td><td>`Logs`, `Service Stability`</td></tr>
-        <tr><td>ISSUE-007</td><td>Database connection pool exhaustion leading to timeouts</td><td>Increased max connections. RCA: high load from reporting tool.</td><td>2025-01-20</td><td>Carlos Tan</td><td>`Database`, `Performance`</td></tr>
+        <thead>
+          <tr>
+            <th>Issue ID</th>
+            <th>Summary</th>
+            <th>Customer</th>
+            <th>Date Resolved</th>
+            <th>Resolution</th>
+            <th>Owner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ISSUE-001</td>
+            <td>Payment Gateway 503 Errors</td>
+            <td>Customer A</td>
+            <td>2025-05-20</td>
+            <td>Restarted payment microservice, scaled up instances.</td>
+            <td>Team Alpha</td>
+          </tr>
+          <tr>
+            <td>ISSUE-002</td>
+            <td>App Crashing on Android 12</td>
+            <td>Customer C</td>
+            <td>2025-04-15</td>
+            <td>Deployed hotfix v3.1.1, addressed memory leak.</td>
+            <td>Team Bravo</td>
+          </tr>
+          <tr>
+            <td>ISSUE-003</td>
+            <td>Synthetic Login Test Failure</td>
+            <td>Customer B</td>
+            <td>2025-06-01</td>
+            <td>Identified stale credentials in monitoring system. Updated.</td>
+            <td>Team Alpha</td>
+          </tr>
+        </tbody>
       </table>
-    </div>
-
-    <div class="section">
-      <h2>Gemini-Powered Chatbot Assistant</h2>
-      <div class="chatbot-box" id="chatbot-conversation">
-        <div class="message bot">Hello! How can I assist you with technical operations today?</div>
-        <div class="message user">What's the app rating for Customer A?</div>
-        <div class="message bot">Customer A's iOS App Store rating is 4.5 ⭐ and Android Play Store rating is 4.2 ⭐.</div>
-        <div class="message user">Show synthetic results for Customer B.</div>
-        <div class="message bot">For Customer B, the Payment Gateway synthetic test is currently failing with 5xx errors. All other tests are passing.</div>
-        <div class="message user">Have we seen "buffer overflow" issues before?</div>
-        <div class="message bot">Yes, a "buffer overflow" on the Log Service occurred on 2024-11-15. It was resolved by restarting the service and increasing memory allocation. Root cause was a rogue parser.</div>
-        <div class="message user">I need to talk to someone.</div>
-        <div class="message bot">I understand. I'm escalating your query to the on-call operations team via Slack. Please expect a response shortly.</div>
-      </div>
-      <input type="text" placeholder="Type your message..." onkeypress="handleChatInput(event)">
-      <button onclick="sendMessage()">Send</button>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Search functionality is simulated. Real implementation uses Elasticsearch/PostgreSQL full-text search.</p>
     </div>
 
   </div>
 
+  <div class="chatbot-container">
+    <div class="chatbot-header">Gemini Chatbot Assistant</div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <div class="chatbot-message bot">Hello! I'm your internal ops assistant. How can I help you today?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input-field" placeholder="Ask a question..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
   <script>
     function sendMessage() {
-      const input = document.querySelector('.chatbot-box + input[type="text"]');
-      const message = input.value.trim();
-      if (message) {
-        const conversation = document.getElementById('chatbot-conversation');
-        const userDiv = document.createElement('div');
-        userDiv.className = 'message user';
-        userDiv.textContent = message;
-        conversation.appendChild(userDiv);
-        input.value = '';
+      const inputField = document.getElementById('chatbot-input-field');
+      const message = inputField.value.trim();
+      if (message === '') return;
 
-        // Simulate bot response (for demo purposes)
-        setTimeout(() => {
-          const botDiv = document.createElement('div');
-          botDiv.className = 'message bot';
-          let botResponse = "I'm a demo bot. I can only simulate responses for known queries.";
-          if (message.toLowerCase().includes('app rating')) {
-            botResponse = "I can fetch app ratings from our system, for Customer A it's iOS: 4.5⭐, Android: 4.2⭐.";
-          } else if (message.toLowerCase().includes('synthetic')) {
-            botResponse = "Synthetic monitoring data for Customer B shows a failure in the Payment Gateway test.";
-          } else if (message.toLowerCase().includes('shift')) {
-            botResponse = "David Lee owned the evening shift yesterday. Key items: Customer B payment gateway issue and CDN cache investigation for Customer A.";
-          } else if (message.toLowerCase().includes('help') || message.toLowerCase().includes('talk to someone')) {
-            botResponse = "Understood. I've notified the on-call team. Someone will reach out to you shortly.";
-          } else if (message.toLowerCase().includes('issue') || message.toLowerCase().includes('past issues')) {
-            botResponse = "Searching past issues... for 'buffer overflow', we had a similar incident on 2024-11-15, resolved by service restart.";
-          }
-          conversation.appendChild(botDiv);
-          conversation.scrollTop = conversation.scrollHeight; // Scroll to bottom
-        }, 1000);
-      }
+      const messagesDiv = document.getElementById('chatbot-messages');
+      const userMessageDiv = document.createElement('div');
+      userMessageDiv.classList.add('chatbot-message', 'user');
+      userMessageDiv.textContent = message;
+      messagesDiv.appendChild(userMessageDiv);
+      inputField.value = '';
+
+      // Simulate bot response based on user input
+      setTimeout(() => {
+        const botMessageDiv = document.createElement('div');
+        botMessageDiv.classList.add('chatbot-message', 'bot');
+        let botResponse = "I'm still learning, but I can assist with common queries!";
+
+        if (message.toLowerCase().includes('app rating') || message.toLowerCase().includes('customer stats')) {
+          botResponse = "For 'Customer A', the iOS rating is 4.5⭐ and Android is 4.2⭐. 'Customer C' Android is 3.8⭐.";
+        } else if (message.toLowerCase().includes('synthetic')) {
+          botResponse = "The 'Checkout Process' for 'Customer B' failed today due to a 504 Gateway Timeout. Other tests are passing.";
+        } else if (message.toLowerCase().includes('manifest')) {
+          botResponse = "The 'User Auth Service' manifest shows a 'MISMATCH' due to a missing 'featureFlags.newAuthFlow' key.";
+        } else if (message.toLowerCase().includes('shift handoff')) {
+          botResponse = "Yesterday's night shift reported high CPU on DB-Prod-01 and ongoing checkout failures for Customer B.";
+        } else if (message.toLowerCase().includes('search')) {
+          botResponse = "I can search for past issues. Try searching for 'Payment Gateway 503 Errors' in the 'Issue Resolution Search' section above.";
+        } else if (message.toLowerCase().includes('who is working') || message.toLowerCase().includes('on call')) {
+            botResponse = "Today (June 9, 2025), Alice Smith, Carlos Tan, and David Lee are working. Bob Kumar and Eva Chen are off-shift.";
+        } else if (message.toLowerCase().includes('escalate') || message.toLowerCase().includes('human')) {
+          botResponse = "I can't resolve this myself. I've notified the on-call team via Slack. A human agent will get back to you shortly.";
+        } else {
+          botResponse = "I'm designed to help with operational queries like app performance, synthetic tests, or shift logs. Can you rephrase your question?";
+        }
+
+        botMessageDiv.textContent = botResponse;
+        messagesDiv.appendChild(botMessageDiv);
+        messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
+      }, 500); // Simulate typing delay
     }
 
-    function handleChatInput(event) {
+    document.getElementById('chatbot-input-field').addEventListener('keypress', function(event) {
       if (event.key === 'Enter') {
         sendMessage();
       }
-    }
+    });
   </script>
 </body>
 </html>
