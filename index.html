@@ -615,25 +615,25 @@
 
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   <script>
-    window.botpressWebChat.init({
-        "composerPlaceholder": "Chat with TechOps Bot",
-        "botConversationDescription": "Your AI assistant for TechOps 360",
-        "botId": "56efefce-fa7c-41e6-9846-ec36c7c6704a", // <-- IMPORTANT: Replace with your Botpress Bot ID
-        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-        "messagingUrl": "https://messaging.botpress.cloud",
-        "clientId": "56efefce-fa7c-41e6-9846-ec36c7c6704a", // <-- IMPORTANT: Replace with your Botpress Bot ID
-        "webhookId": "56efefce-fa7c-41e6-9846-ec36c7c6704a", // <-- Optional: You can often use the botId here too
-        "lazySocket": true,
-        "themeName": "prism",
-        "botName": "TechOps Assistant",
-        "avatarUrl": "https://your-domain.com/path/to/bot-avatar.png", // Optional: Add a URL to a custom bot avatar
-        "stylesheet": "https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
-        "frontendVersion": "v1",
-        "useSessionStorage": true,
-        "enableConversationDeletion": true,
-        "theme": "prism",
-        "themeColor": "#2563eb"
-    });
-  </script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with TechOps Bot",
+      "botConversationDescription": "Your AI assistant for TechOps 360",
+      "botId": "56efefce-fa7c-41e6-9846-ec36c7c6704a", // <-- Replace this
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "a7e5af98-3b12-4265-a9f9-6f3fcd500b93", // <-- Replace this (often the same as botId)
+      // "webhookId" is often not needed if you use the messagingUrl
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "TechOps Assistant",
+      // "avatarUrl": "URL_TO_YOUR_BOT_AVATAR_IMAGE.png", // Optional: Replace this
+      "stylesheet": "https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
   </body>
 </html>
