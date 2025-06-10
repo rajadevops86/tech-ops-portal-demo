@@ -64,116 +64,6 @@
       display: block;
     }
 
-    /* Chatbot Toggle Button */
-    .chatbot-toggle-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #1e293b;
-        color: white;
-        border: none;
-        border-radius: 50%; /* Makes it circular */
-        width: 60px; /* Size of the button */
-        height: 60px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        z-index: 1001; /* Above chatbot container */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background-color 0.3s;
-    }
-    .chatbot-toggle-button:hover {
-        background: #0f172a;
-    }
-
-    /* Chatbot Container */
-    .chatbot-container {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 350px;
-      height: 450px;
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      display: none; /* Hidden by default */
-      flex-direction: column;
-      overflow: hidden;
-      z-index: 1000;
-    }
-    .chatbot-header {
-      background: #1e293b;
-      color: white;
-      padding: 0.8rem;
-      border-top-left-radius: 9px;
-      border-top-right-radius: 9px;
-      font-weight: bold;
-      text-align: center;
-      display: flex; /* To align title and close button */
-      justify-content: space-between;
-      align-items: center;
-    }
-    .chatbot-header .close-button {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.2rem;
-        cursor: pointer;
-        padding: 0 10px;
-    }
-    .chatbot-messages {
-      flex-grow: 1;
-      padding: 1rem;
-      overflow-y: auto;
-      background: #fdfdfd;
-    }
-    .chatbot-message {
-      margin-bottom: 0.8rem;
-      padding: 0.6rem 1rem;
-      border-radius: 15px;
-      max-width: 80%;
-    }
-    .chatbot-message.user {
-      background: #e0f2f7;
-      color: #0056b3;
-      align-self: flex-end;
-      margin-left: auto;
-      text-align: right;
-    }
-    .chatbot-message.bot {
-      background: #f0f0f0;
-      color: #333;
-      align-self: flex-start;
-      margin-right: auto;
-    }
-    .chatbot-input {
-      display: flex;
-      padding: 1rem;
-      border-top: 1px solid #eee;
-    }
-    .chatbot-input input {
-      flex-grow: 1;
-      border: 1px solid #ddd;
-      border-radius: 20px;
-      padding: 0.7rem 1rem;
-      margin-right: 0.5rem;
-    }
-    .chatbot-input button {
-      background: #1e293b;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 0.7rem 1.2rem;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .chatbot-input button:hover {
-      background: #0f172a;
-    }
-
     /* Customer Concurrency List */
     .customer-concurrency-list {
       list-style: none;
@@ -700,22 +590,6 @@
 
   </div>
 
-  <button class="chatbot-toggle-button" onclick="toggleChatbot()">Chat</button>
-
-  <div class="chatbot-container" id="chatbot-container">
-    <div class="chatbot-header">
-      <span>Gemini Chatbot Assistant</span>
-      <button class="close-button" onclick="toggleChatbot()">X</button>
-    </div>
-    <div class="chatbot-messages" id="chatbot-messages">
-      <div class="chatbot-message bot">Hello! I'm your internal ops assistant. How can I help you today?</div>
-    </div>
-    <div class="chatbot-input">
-      <input type="text" id="chatbot-input-field" placeholder="Ask a question..." />
-      <button onclick="sendMessage()">Send</button>
-    </div>
-  </div>
-
   <script>
     // Tab functionality
     function openTab(evt, tabName) {
@@ -737,71 +611,29 @@
       document.getElementById("Home").style.display = "block";
       document.querySelector(".tab-button").classList.add("active");
     });
+  </script>
 
-    // Chatbot Toggle Functionality
-    function toggleChatbot() {
-        const chatbotContainer = document.getElementById('chatbot-container');
-        if (chatbotContainer.style.display === 'flex') {
-            chatbotContainer.style.display = 'none';
-        } else {
-            chatbotContainer.style.display = 'flex';
-            // Scroll to bottom of messages when opened
-            const messagesDiv = document.getElementById('chatbot-messages');
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-    }
-
-    // Chatbot functionality
-    function sendMessage() {
-      const inputField = document.getElementById('chatbot-input-field');
-      const message = inputField.value.trim();
-      if (message === '') return;
-
-      const messagesDiv = document.getElementById('chatbot-messages');
-      const userMessageDiv = document.createElement('div');
-      userMessageDiv.classList.add('chatbot-message', 'user');
-      userMessageDiv.textContent = message;
-      messagesDiv.appendChild(userMessageDiv);
-      inputField.value = '';
-
-      // Simulate bot response based on user input
-      setTimeout(() => {
-        const botMessageDiv = document.createElement('div');
-        botMessageDiv.classList.add('chatbot-message', 'bot');
-        let botResponse = "I'm still learning, but I can assist with common queries!";
-
-        if (message.toLowerCase().includes('app rating') || message.toLowerCase().includes('customer stats')) {
-          botResponse = "For Aha, iOS rating is 4.6⭐, Android is 4.3⭐. For RSM, iOS is 4.1⭐, Android is 3.9⭐. Check the 'Customer Stats' tab.";
-        } else if (message.toLowerCase().includes('synthetic') || message.toLowerCase().includes('health check')) {
-          botResponse = "The 'epg-ingestion-tm' service is showing 401/503 errors. Also, 'syndication-ingestion-disney' is reporting 503 errors for both SG and HK statuses. Check the 'Synthetic Monitoring' tab.";
-        } else if (message.toLowerCase().includes('manifest')) {
-          botResponse = "For RSM channels, 'snehd' HLS protocol is showing a 'MISSING_STREAM' status. See the 'Manifest Check' tab.";
-        } else if (message.toLowerCase().includes('shift handoff')) {
-          botResponse = "Today's shift reported 7 incidents opened, 4 closed. Notably, [AHA] is experiencing 'subscribe now' issues despite active subscriptions. See the 'Shift Handoffs' tab for full details.";
-        } else if (message.toLowerCase().includes('search')) {
-          botResponse = "I can search for past issues. Try searching for 'Payment Gateway 503 Errors' or 'Aha subscription issue' in the 'Issue Resolution Search' section.";
-        } else if (message.toLowerCase().includes('who is working') || message.toLowerCase().includes('on call') || message.toLowerCase().includes('calendar') || message.toLowerCase().includes('shift')) {
-            botResponse = "Today (June 9, 2025), RAJA, Abhi, and Ranjith are working. Ajay and Vishal are off-shift. Check the 'Home' tab for details.";
-        } else if (message.toLowerCase().includes('customer concurrency') || message.toLowerCase().includes('customers')) {
-            botResponse = "Our active customers include Aha (4.5K), RSM (1.2K), PLDT (3K), and Canela (800). Check the 'Home' tab.";
-        }
-        else if (message.toLowerCase().includes('escalate') || message.toLowerCase().includes('human')) {
-          botResponse = "I can't resolve this myself. I've notified the on-call team via Slack. A human agent will get back to you shortly.";
-        } else {
-          botResponse = "I'm designed to help with operational queries like app performance, synthetic tests, or shift logs. Can you rephrase your question?";
-        }
-
-        botMessageDiv.textContent = botResponse;
-        messagesDiv.appendChild(botMessageDiv);
-        messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
-      }, 500); // Simulate typing delay
-    }
-
-    document.getElementById('chatbot-input-field').addEventListener('keypress', function(event) {
-      if (event.key === 'Enter') {
-        sendMessage();
-      }
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with TechOps Bot",
+        "botConversationDescription": "Your AI assistant for TechOps 360",
+        "botId": "YOUR_BOT_ID", // <-- IMPORTANT: Replace with your Botpress Bot ID
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "YOUR_BOT_ID", // <-- IMPORTANT: Replace with your Botpress Bot ID
+        "webhookId": "YOUR_WEBHOOK_ID", // <-- Optional: You can often use the botId here too
+        "lazySocket": true,
+        "themeName": "prism",
+        "botName": "TechOps Assistant",
+        "avatarUrl": "https://your-domain.com/path/to/bot-avatar.png", // Optional: Add a URL to a custom bot avatar
+        "stylesheet": "https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
+        "frontendVersion": "v1",
+        "useSessionStorage": true,
+        "enableConversationDeletion": true,
+        "theme": "prism",
+        "themeColor": "#2563eb"
     });
   </script>
-</body>
+  </body>
 </html>
