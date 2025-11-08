@@ -24,8 +24,18 @@ async function loadAppMetrics() {
     const resp = await fetch(METRICS_URL + "?v=1", { cache: "no-store" });
     if (!resp.ok) throw new Error("HTTP " + resp.status);
     const json = await resp.json();
-    if (!Array.isArray(json)) throw new Error("Expected array");
-    return json;
+
+    // Case 1: top-level array
+    if (Array.isArray(json)) {
+      return json;
+    }
+
+    // Case 2: { generated_utc, apps: [...] }  ← your current structure
+    if (json && Array.isArray(json.apps)) {
+      return json.apps;
+    }
+
+    throw new Error("Unexpected app-metrics.json shape");
   } catch (e) {
     console.error("Failed to load app metrics:", e);
     return [];
