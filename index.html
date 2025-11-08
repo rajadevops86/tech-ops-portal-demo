@@ -212,56 +212,17 @@
       <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">This list represents currently active customers or user concurrency.</p>
     </div>
 
-    <div id="CustomerStats" class="tab-content section">
-      <h2>Customer Stats</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Customer</th>
-            <th>App</th>
-            <th>Platform</th>
-            <th>iOS Rating</th>
-            <th>Android Rating</th>
-            <th>App Performance (Uptime)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="image/aha.jpg" alt="Aha Logo" class="customer-logo-inline"> Aha</td>
-            <td>Entertainment</td>
-            <td>iOS/Android</td>
-            <td>4.6 ⭐ <img src="image/iOS.jpg" alt="iOS Logo" class="app-platform-logo"></td>
-            <td>4.3 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
-            <td>99.9% <span class="badge badge-success">Stable</span></td>
-          </tr>
-          <tr>
-            <td><img src="image/RSM_Logo.png" alt="RSM Logo" class="customer-logo-inline"> RSM</td>
-            <td>Sports&Media</td>
-            <td>iOS/Android</td>
-            <td>4.1 ⭐ <img src="image/iOS.jpg" alt="iOS Logo" class="app-platform-logo"></td>
-            <td>3.9 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
-            <td>99.7% <span class="badge badge-success">Stable</span></td>
-          </tr>
-          <tr>
-            <td><img src="image/smart.png" alt="PLDT Logo" class="customer-logo-inline"> PLDT</td>
-            <td>Telecom</td>
-            <td>Android</td>
-            <td>N/A</td>
-            <td>4.0 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
-            <td>98.5% <span class="badge badge-warning">Watch</span></td>
-          </tr>
-          <tr>
-            <td><img src="image/Canela.png" alt="Canela Logo" class="customer-logo-inline"> Canela</td>
-            <td>Streaming</td>
-            <td>iOS/Android</td>
-            <td>4.2 ⭐ <img src="image/iOS.jpg" alt="iOS Logo" class="app-platform-logo"></td>
-            <td>4.1 ⭐ <img src="image/Android.png" alt="Android Logo" class="app-platform-logo"></td>
-            <td>99.6% <span class="badge badge-success">Stable</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">App ratings are for demo purposes only; actual ratings would be fetched via APIs. Performance data is mocked.</p>
-    </div>
+   <div id="CustomerStats" class="tab-content section">
+  <h2>Customer Stats</h2>
+  <p style="margin-bottom: 0.75rem;">
+    App store ratings and customer sentiment derived from app-store comments (last 7 days).
+  </p>
+
+  <!-- NEW dashboard root: JS will render the whole UI here -->
+  <div id="customer-sentiment-dashboard">
+    <!-- Dashboard will be injected by customer-sentiment.js -->
+  </div>
+</div>
 
     <div id="SyntheticMonitoring" class="tab-content section">
       <h2>Synthetic Monitoring Results (Live Health Checks)</h2>
@@ -635,5 +596,7 @@
       "themeColor": "#2563eb"
   });
 </script>
+    <!-- Customer sentiment dashboard logic -->
+  <script src="customer-sentiment.js"></script>
   </body>
 </html>
