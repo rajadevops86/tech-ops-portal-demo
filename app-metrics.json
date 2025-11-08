@@ -1,94 +1,212 @@
-[
-  {
-    "appName": "Aha",
-    "ios": {
-      "rating": 4.1,
-      "ratingDelta": -0.1
+{
+  "generated_utc": "2025-11-08T11:47:33.782352+00:00",
+  "apps": [
+    {
+      "appName": "Aha",
+      "ios": {
+        "rating": 4.53092
+      },
+      "android": {
+        "rating": 4.4196563
+      },
+      "sentiment": {
+        "score": 0.506,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "Excellent",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "very nice app 👍👍👍",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "very nice",
+            "rating": 5,
+            "platform": "Android"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "Worst ever App! Even after 3 Adds the Movie doesn't Continue playing",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "very worst app I ever see",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst conversation in help line",
+            "rating": 1,
+            "platform": "Android"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
+            "trend": "steady"
+          }
+        ]
+      }
     },
-    "android": {
-      "rating": 4.2,
-      "ratingDelta": 0.0
+    {
+      "appName": "Pilipinas Live",
+      "ios": {
+        "rating": 4.5441
+      },
+      "android": {
+        "rating": 4.621812
+      },
+      "sentiment": {
+        "score": 0.562,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "this thing is the best to watch NBA",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "da best",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "very good",
+            "rating": 5,
+            "platform": "Android"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "I already paid. They already deducted ₱160 on my account (supposedly ₱149) BUT STILL NO SUBSCRIPTION!! VERY POOR APP!!",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "i cant reach out to any support team even though im paying a subscriptiions but i dont  bad support very disappointed re error i exceeded the limit of device although im just using one device",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Useless!!! Di nag papalabas ng quality games!!! Trash!!!",
+            "rating": 1,
+            "platform": "iOS"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
+            "trend": "steady"
+          }
+        ]
+      }
     },
-    "sentiment": {
-      "score": 0.73,
-      "scoreDelta": -0.03,
-      "topPositive": [
-        {
-          "text": "Streaming quality is much better after the latest update.",
-          "rating": 5,
-          "platform": "iOS"
-        },
-        {
-          "text": "Love the new UI and content recommendations.",
-          "rating": 5,
-          "platform": "Android"
-        }
-      ],
-      "topNegative": [
-        {
-          "text": "Crashes frequently on Android TV after 30 minutes.",
-          "rating": 1,
-          "platform": "Android"
-        },
-        {
-          "text": "Subtitle sync issues on some movies.",
-          "rating": 2,
-          "platform": "iOS"
-        }
-      ],
-      "drivers": [
-        {
-          "label": "Crash issues on Android TV",
-          "trend": "worsening"
-        },
-        {
-          "label": "Perceived video quality",
-          "trend": "improving"
-        },
-        {
-          "label": "Content catalog breadth",
-          "trend": "steady"
-        }
-      ]
+    {
+      "appName": "Unifi TV 2.0",
+      "ios": {
+        "rating": 1.75059
+      },
+      "android": {
+        "rating": 3.7769232
+      },
+      "sentiment": {
+        "score": 0.539,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "Best TV streaming apps",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "\"App baru ni memang best! Lagi cepat load, banyak pilihan rancangan dan kualiti video mantap. Rasa macam ada pawagam mini sendiri!\" 🍿📱",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "best lah",
+            "rating": 5,
+            "platform": "Android"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "wrong password....",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "horrible interface. terrible experience. changing tv channel is a nightmare.",
+            "rating": 1,
+            "platform": "Android"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          }
+        ]
+      }
     }
-  },
-  {
-    "appName": "RSM",
-    "ios": {
-      "rating": 4.1,
-      "ratingDelta": 0.0
-    },
-    "android": {
-      "rating": 3.9,
-      "ratingDelta": -0.1
-    },
-    "sentiment": {
-      "score": 0.65,
-      "scoreDelta": -0.02,
-      "topPositive": [
-        {
-          "text": "Live sports streams are mostly smooth.",
-          "rating": 5,
-          "platform": "Android"
-        }
-      ],
-      "topNegative": [
-        {
-          "text": "Some matches buffer a lot on mobile data.",
-          "rating": 2,
-          "platform": "iOS"
-        }
-      ],
-      "drivers": [
-        {
-          "label": "Live match buffering",
-          "trend": "worsening"
-        },
-        {
-          "label": "Overall video quality",
-          "trend": "steady"
-        }
-      ]
-    }
-  }
-]
+  ]
+}
