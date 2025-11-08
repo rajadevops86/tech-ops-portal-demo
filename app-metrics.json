@@ -1,0 +1,94 @@
+[
+  {
+    "appName": "Aha",
+    "ios": {
+      "rating": 4.1,
+      "ratingDelta": -0.1
+    },
+    "android": {
+      "rating": 4.2,
+      "ratingDelta": 0.0
+    },
+    "sentiment": {
+      "score": 0.73,
+      "scoreDelta": -0.03,
+      "topPositive": [
+        {
+          "text": "Streaming quality is much better after the latest update.",
+          "rating": 5,
+          "platform": "iOS"
+        },
+        {
+          "text": "Love the new UI and content recommendations.",
+          "rating": 5,
+          "platform": "Android"
+        }
+      ],
+      "topNegative": [
+        {
+          "text": "Crashes frequently on Android TV after 30 minutes.",
+          "rating": 1,
+          "platform": "Android"
+        },
+        {
+          "text": "Subtitle sync issues on some movies.",
+          "rating": 2,
+          "platform": "iOS"
+        }
+      ],
+      "drivers": [
+        {
+          "label": "Crash issues on Android TV",
+          "trend": "worsening"
+        },
+        {
+          "label": "Perceived video quality",
+          "trend": "improving"
+        },
+        {
+          "label": "Content catalog breadth",
+          "trend": "steady"
+        }
+      ]
+    }
+  },
+  {
+    "appName": "RSM",
+    "ios": {
+      "rating": 4.1,
+      "ratingDelta": 0.0
+    },
+    "android": {
+      "rating": 3.9,
+      "ratingDelta": -0.1
+    },
+    "sentiment": {
+      "score": 0.65,
+      "scoreDelta": -0.02,
+      "topPositive": [
+        {
+          "text": "Live sports streams are mostly smooth.",
+          "rating": 5,
+          "platform": "Android"
+        }
+      ],
+      "topNegative": [
+        {
+          "text": "Some matches buffer a lot on mobile data.",
+          "rating": 2,
+          "platform": "iOS"
+        }
+      ],
+      "drivers": [
+        {
+          "label": "Live match buffering",
+          "trend": "worsening"
+        },
+        {
+          "label": "Overall video quality",
+          "trend": "steady"
+        }
+      ]
+    }
+  }
+]
