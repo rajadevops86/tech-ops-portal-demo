@@ -212,16 +212,14 @@
       <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">This list represents currently active customers or user concurrency.</p>
     </div>
 
-   <div id="CustomerStats" class="tab-content section">
+<div id="CustomerStats" class="tab-content section">
   <h2>Customer Stats</h2>
   <p style="margin-bottom: 0.75rem;">
     App store ratings and customer sentiment derived from app-store comments (last 7 days).
   </p>
 
-  <!-- NEW dashboard root: JS will render the whole UI here -->
-  <div id="customer-sentiment-dashboard">
-    <!-- Dashboard will be injected by customer-sentiment.js -->
-  </div>
+  <!-- New dashboard root -->
+  <div id="customer-sentiment-dashboard"></div>
 </div>
 
     <div id="SyntheticMonitoring" class="tab-content section">
@@ -597,6 +595,6 @@
   });
 </script>
     <!-- Customer sentiment dashboard logic -->
-  <script src="customer-sentiment.js"></script>
+  <script src="customer-sentiment.js?v=2"></script>
   </body>
 </html>
