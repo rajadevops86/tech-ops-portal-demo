@@ -1,0 +1,54 @@
+name: Update app store metrics
+
+on:
+  # Run once every 24 hours at 02:00 UTC
+  schedule:
+    - cron: "0 2 * * *"
+  # Allow manual run from GitHub Actions UI
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed so the workflow can commit back to the repo
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # so git diff works
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m textblob.download_corpora
+
+      - name: Run collectors
+        run: |
+          python collect_store_data.py
+          python generate_app_metrics.py
+
+      - name: Commit and push changes (if any)
+        run: |
+          # Check if app-metrics.json changed
+          if git diff --quiet app-metrics.json; then
+            echo "No changes in app-metrics.json; nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # add whichever files you want to track; store_data_raw.json is optional
+          git add app-metrics.json store_data_raw.json
+
+          git commit -m "chore: update app-metrics.json [skip ci]"
+          git push
