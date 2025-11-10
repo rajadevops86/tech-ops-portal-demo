@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-10T07:10:47.771859+00:00",
+  "generated_utc": "2025-11-10T11:01:57.303031+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53095
+        "rating": 4.53094
       },
       "android": {
-        "rating": 4.41974
+        "rating": 4.419726
       },
       "sentiment": {
-        "score": 0.492,
+        "score": 0.495,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "Good",
+            "text": "Good entertainment movie",
             "rating": 5,
             "platform": "Android"
           }
@@ -73,7 +73,7 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.54194
+        "rating": 4.54434
       },
       "android": {
         "rating": 4.6094027
@@ -142,7 +142,7 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.75644
+        "rating": 1.75822
       },
       "android": {
         "rating": 3.7692308
