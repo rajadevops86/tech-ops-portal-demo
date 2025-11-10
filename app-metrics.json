@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2025-11-10T03:13:06.371392+00:00",
+  "generated_utc": "2025-11-10T07:10:47.771859+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53092
+        "rating": 4.53095
       },
       "android": {
-        "rating": 4.419673
+        "rating": 4.41974
       },
       "sentiment": {
         "score": 0.492,
@@ -19,14 +19,14 @@
             "platform": "iOS"
           },
           {
-            "text": "very nice app 👍👍👍",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
             "text": "Very nice i simply loved it",
             "rating": 5,
             "platform": "iOS"
+          },
+          {
+            "text": "Good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.54484
+        "rating": 4.54194
       },
       "android": {
-        "rating": 4.609842
+        "rating": 4.6094027
       },
       "sentiment": {
         "score": 0.565,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.75059
+        "rating": 1.75644
       },
       "android": {
-        "rating": 3.8031497
+        "rating": 3.7692308
       },
       "sentiment": {
-        "score": 0.537,
+        "score": 0.543,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,7 +169,7 @@
         ],
         "topNegative": [
           {
-            "text": "wrong password....",
+            "text": "Tolong la. Useless sangat. Nak buka channels langsung tak boleh. Chat dgn agent asyik terkeluar. Seminggu tak boleh buka",
             "rating": 1,
             "platform": "Android"
           },
