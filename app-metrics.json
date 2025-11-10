@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-11-09T03:24:36.877828+00:00",
+  "generated_utc": "2025-11-10T03:13:06.371392+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53092
       },
       "android": {
-        "rating": 4.419557
+        "rating": 4.419673
       },
       "sentiment": {
-        "score": 0.513,
+        "score": 0.492,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,9 +24,9 @@
             "platform": "Android"
           },
           {
-            "text": "very nice",
+            "text": "Very nice i simply loved it",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -52,19 +52,19 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -76,10 +76,10 @@
         "rating": 4.54484
       },
       "android": {
-        "rating": 4.622144
+        "rating": 4.609842
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.565,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -133,7 +133,7 @@
             "trend": "steady"
           },
           {
-            "label": "update",
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -145,10 +145,10 @@
         "rating": 1.75059
       },
       "android": {
-        "rating": 3.7537313
+        "rating": 3.8031497
       },
       "sentiment": {
-        "score": 0.539,
+        "score": 0.537,
         "scoreDelta": 0,
         "topPositive": [
           {
