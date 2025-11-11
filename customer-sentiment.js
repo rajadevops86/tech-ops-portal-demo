@@ -30,7 +30,7 @@ async function loadAppMetrics() {
       return json;
     }
 
-    // Case 2: { generated_utc, apps: [...] }  ← your current structure
+    // Case 2: { generated_utc, apps: [...] }
     if (json && Array.isArray(json.apps)) {
       return json.apps;
     }
@@ -67,9 +67,7 @@ function buildRatingBadge(ratingObj) {
   const value = document.createElement("span");
   value.className = "value";
   value.textContent =
-    ratingObj && ratingObj.rating != null
-      ? ratingObj.rating.toFixed(2)
-      : "–";
+    ratingObj && ratingObj.rating != null ? ratingObj.rating.toFixed(2) : "–";
 
   container.appendChild(star);
   container.appendChild(value);
@@ -122,51 +120,53 @@ function renderDashboard(apps) {
   if (!root) return;
 
   root.innerHTML = `
-    <div class="cs-header">
-      <div>
-        <h3>App Ratings & Customer Sentiment</h3>
-        <p class="cs-subtitle">
-          iOS & Android ratings with last-week sentiment from app-store comments.
-        </p>
-      </div>
-      <div class="cs-controls">
-        <div class="cs-pill">Window: <strong>Last 7 days</strong></div>
-        <div class="cs-pill">
-          <span>Sort by</span>
-          <select id="cs-sort-select">
-            <option value="sentiment">Sentiment score</option>
-            <option value="ios">iOS rating</option>
-            <option value="android">Android rating</option>
-            <option value="name">App name</option>
-          </select>
+    <div class="cs-root">
+      <div class="cs-header">
+        <div>
+          <h3>App Ratings &amp; Customer Sentiment</h3>
+          <p class="cs-subtitle">
+            iOS &amp; Android ratings with last-week sentiment from app-store comments.
+          </p>
+        </div>
+        <div class="cs-controls">
+          <div class="cs-pill">Window: <strong>Last 7 days</strong></div>
+          <div class="cs-pill">
+            <span>Sort by</span>
+            <select id="cs-sort-select">
+              <option value="sentiment">Sentiment score</option>
+              <option value="ios">iOS rating</option>
+              <option value="android">Android rating</option>
+              <option value="name">App name</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="cs-layout">
-      <section class="cs-card">
-        <div class="cs-card-header">
-          <h4>App Overview</h4>
-          <span>Click a row to view comments & drivers</span>
-        </div>
-        <div class="cs-table-wrap">
-          <table class="cs-table">
-            <thead>
-              <tr>
-                <th>App</th>
-                <th>iOS Rating</th>
-                <th>Android Rating</th>
-                <th>Customer Sentiment</th>
-              </tr>
-            </thead>
-            <tbody id="cs-table-body"></tbody>
-          </table>
-        </div>
-      </section>
-      <section class="cs-card">
-        <div id="cs-details-panel" class="cs-details-empty">
-          Select an app on the left to view detailed comments and attributing factors.
-        </div>
-      </section>
+      <div class="cs-layout">
+        <section class="cs-card">
+          <div class="cs-card-header">
+            <h4>App Overview</h4>
+            <span>Click a row to view comments &amp; drivers</span>
+          </div>
+          <div class="cs-table-wrap">
+            <table class="cs-table">
+              <thead>
+                <tr>
+                  <th>App</th>
+                  <th>iOS Rating</th>
+                  <th>Android Rating</th>
+                  <th>Customer Sentiment</th>
+                </tr>
+              </thead>
+              <tbody id="cs-table-body"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="cs-card">
+          <div id="cs-details-panel" class="cs-details-empty">
+            Select an app on the left to view detailed comments and attributing factors.
+          </div>
+        </section>
+      </div>
     </div>
   `;
 
@@ -246,7 +246,7 @@ function renderDashboard(apps) {
       <div class="cs-details-header">
         <div>
           <h4>${app.appName}</h4>
-          <p>Ratings & sentiment from app-store reviews (last 7 days).</p>
+          <p>Ratings &amp; sentiment from app-store reviews (last 7 days).</p>
         </div>
         <div class="cs-chip">
           <span class="dot"></span>
@@ -374,14 +374,19 @@ function renderDashboard(apps) {
   renderDetails(null);
 }
 
-// inject light-theme styles
-// inject light/dark-theme aware styles
+// inject theme-aware styles (shares font with rest of site)
 function injectCustomerSentimentStyles() {
   if (document.getElementById("customer-sentiment-styles")) return;
   const style = document.createElement("style");
   style.id = "customer-sentiment-styles";
   style.textContent = `
-    /* ========== Base layout (theme-neutral where possible) ========== */
+    /* Base + font hook */
+    .cs-root,
+    .cs-root * {
+      font-family: var(--qp-font, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+      box-sizing: border-box;
+    }
+
     .cs-header {
       display:flex;
       justify-content:space-between;
@@ -412,6 +417,7 @@ function injectCustomerSentimentStyles() {
       gap:6px;
       border-width:1px;
       border-style:solid;
+      font-size:.75rem;
     }
     .cs-pill strong{font-weight:600;}
     .cs-pill select{
@@ -434,7 +440,7 @@ function injectCustomerSentimentStyles() {
       padding:.75rem;
       border-width:1px;
       border-style:solid;
-      box-shadow:0 10px 30px rgba(15,23,42,.10);
+      box-shadow:0 10px 30px rgba(0,0,0,.22);
     }
     .cs-card-header{
       display:flex;
@@ -580,7 +586,6 @@ function injectCustomerSentimentStyles() {
       justify-content:space-between;
       margin-bottom:2px;
     }
-    .list-header strong{}
     .list-header span{font-size:.7rem;}
 
     .comment-list{
@@ -595,6 +600,7 @@ function injectCustomerSentimentStyles() {
       border-bottom-width:1px;
       border-bottom-style:dashed;
     }
+    .comment-text{font-size:.74rem;}
     .comment-meta{
       margin-top:2px;
       display:flex;
@@ -618,7 +624,7 @@ function injectCustomerSentimentStyles() {
       border-style:solid;
     }
 
-    /* ========== LIGHT MODE (body.light-mode) ========== */
+    /* LIGHT MODE */
     body.light-mode .cs-header h3{color:#111827;}
     body.light-mode .cs-subtitle{color:#4b5563;}
     body.light-mode .cs-pill{
@@ -646,8 +652,18 @@ function injectCustomerSentimentStyles() {
       color:#111827;
       border-color:#e5e7eb;
     }
-    body.light-mode .cs-table tbody tr:hover{background:#f3f4f6;}
-    body.light-mode .cs-row-active{background:#e5f2ff;}
+    body.light-mode .cs-table tbody tr:nth-child(even){
+      background-color:#ffffff;
+    }
+    body.light-mode .cs-table tbody tr:hover{
+      background:#f3f4f6;
+    }
+    body.light-mode .cs-row-active{
+      background:#e5f2ff;
+    }
+    body.light-mode .cs-row-active td{
+      color:#111827;
+    }
     body.light-mode .cs-app-name{color:#111827;}
 
     body.light-mode .cs-badge-rating{
@@ -719,7 +735,7 @@ function injectCustomerSentimentStyles() {
       border-color:#bfdbfe;
     }
 
-    /* ========== DARK MODE (body NOT light-mode) ========== */
+    /* DARK MODE */
     body:not(.light-mode) .cs-header h3{color:#e5e5e5;}
     body:not(.light-mode) .cs-subtitle{color:#9ca3af;}
     body:not(.light-mode) .cs-pill{
@@ -733,7 +749,7 @@ function injectCustomerSentimentStyles() {
     body:not(.light-mode) .cs-card{
       background:#020617;
       border-color:#1f2937;
-      box-shadow:0 10px 30px rgba(0,0,0,.65);
+      box-shadow:0 10px 30px rgba(0,0,0,.7);
     }
     body:not(.light-mode) .cs-card-header h4{color:#e5e5e5;}
     body:not(.light-mode) .cs-card-header span{color:#9ca3af;}
@@ -747,8 +763,18 @@ function injectCustomerSentimentStyles() {
       color:#e5e5e5;
       border-color:#1f2937;
     }
-    body:not(.light-mode) .cs-table tbody tr:hover{background:#111827;}
-    body:not(.light-mode) .cs-row-active{background:#0b1120;}
+    body:not(.light-mode) .cs-table tbody tr:nth-child(even){
+      background-color:#020617;
+    }
+    body:not(.light-mode) .cs-table tbody tr:hover{
+      background:#111827;
+    }
+    body:not(.light-mode) .cs-row-active{
+      background:#1d4ed8;
+    }
+    body:not(.light-mode) .cs-row-active td{
+      color:#f9fafb;
+    }
     body:not(.light-mode) .cs-app-name{color:#f9fafb;}
 
     body:not(.light-mode) .cs-badge-rating{
