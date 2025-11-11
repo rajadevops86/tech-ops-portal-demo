@@ -5,47 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechOps 360 - Portal</title>
 
-  <!-- Quickplay-style font (replace "Inter" with your real org font if needed) -->
+  <!-- Quickplay-style font (adjust if your org uses a different one) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --qp-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-      /* dark mode defaults */
-      --bg: #020617;
-      --bg-section: #020617;
-      --bg-card: #020617;
-      --border-card: #1f2937;
+      --bg-gradient: radial-gradient(circle at top left, #1d4ed8 0, transparent 45%),
+                      radial-gradient(circle at top right, #7c3aed 0, transparent 55%),
+                      radial-gradient(circle at bottom, #ec4899 0, transparent 55%),
+                      #020617;
+      --card-bg: rgba(15, 23, 42, 0.92);
+      --card-border: rgba(148, 163, 184, 0.35);
+      --card-shadow: 0 24px 70px rgba(15, 23, 42, 0.9);
       --text-main: #e5e7eb;
       --text-muted: #9ca3af;
-      --tab-bg: #111827;
-      --tab-bg-active: #020617;
-      --tab-border: #1f2937;
-      --table-header-bg: #020617;
-      --table-header-text: #9ca3af;
-      --table-row-even: #020617;
-      --table-row-hover: #111827;
-      --header-gradient-start: #6A1B9A;
-      --header-gradient-end: #FF7043;
       --accent: #f97316;
-    }
-
-    /* light overrides */
-    body.light-mode {
-      --bg: #E1E0FF;
-      --bg-section: #E1E0FF;
-      --bg-card: #ffffff;
-      --border-card: #e5e7eb;
-      --text-main: #111827;
-      --text-muted: #4b5563;
-      --tab-bg: #e5e7eb;
-      --tab-bg-active: #ffffff;
-      --tab-border: #d1d5db;
-      --table-header-bg: #f9fafb;
-      --table-header-text: #4b5563;
-      --table-row-even: #f9fafb;
-      --table-row-hover: #f3f4f6;
+      --accent-soft: rgba(248, 113, 113, 0.35);
+      --divider: rgba(148, 163, 184, 0.35);
+      --nav-bg: rgba(15, 23, 42, 0.95);
+      --nav-border: rgba(148, 163, 184, 0.35);
+      --nav-active: rgba(129, 140, 248, 0.25);
+      --pill-bg: rgba(15, 23, 42, 0.9);
+      --pill-border: rgba(148, 163, 184, 0.5);
+      --table-header-bg: rgba(15, 23, 42, 0.98);
+      --table-row-alt: rgba(15, 23, 42, 0.7);
+      --table-row-hover: rgba(30, 64, 175, 0.55);
     }
 
     * {
@@ -54,148 +40,327 @@
 
     body {
       margin: 0;
-      padding: 0;
+      min-height: 100vh;
       font-family: var(--qp-font);
-      background: var(--bg);
       color: var(--text-main);
-      transition: background-color 0.25s ease, color 0.25s ease;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
     }
 
-    header {
-      background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-end));
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    /* Top bar */
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      padding: 16px 28px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    header .logo {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 40px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.1rem;
-      letter-spacing: 0.02em;
+      justify-content: space-between;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 0.6),
+        transparent
+      );
+      border-bottom: 1px solid rgba(148, 163, 184, 0.25);
     }
 
-    .theme-toggle {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 0.35rem 0.9rem;
+    .top-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-nav-logo {
+      height: 32px;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.4);
-      background: rgba(15,23,42,0.2);
-      color: #f9fafb;
-      font-size: 0.85rem;
-      font-family: var(--qp-font);
-      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.7);
+      background: #020617;
+    }
+
+    .top-nav-title-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .top-nav-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .top-nav-subtitle {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .top-nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .pill-badge {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--pill-border);
+      background: var(--pill-bg);
       display: inline-flex;
       align-items: center;
-      gap: 0.3rem;
-      backdrop-filter: blur(4px);
-    }
-    .theme-toggle:hover {
-      background: rgba(15,23,42,0.4);
-    }
-
-    .container {
-      padding: 2rem 1rem 3rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--text-main);
-      border-bottom: 1px solid rgba(148,163,184,0.4);
-      padding-bottom: 0.7rem;
-      margin-top: 0;
-      font-size: 1.6rem;
-    }
-
-    .section {
-      margin-bottom: 2.5rem;
-      background: var(--bg-card);
-      padding: 1.5rem 1.75rem;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-      border: 1px solid var(--border-card);
-    }
-
-    /* Tabs */
-    .tabs {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-      border-bottom: 1px solid rgba(148,163,184,0.4);
-      gap: 4px;
-    }
-    .tab-button {
-      padding: 0.75rem 1.3rem;
-      cursor: pointer;
-      background: var(--tab-bg);
-      border: 1px solid var(--tab-border);
-      border-bottom: none;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      font-weight: 500;
+      gap: 6px;
       color: var(--text-muted);
-      transition: background-color 0.22s ease, color 0.22s ease, transform 0.1s ease;
-      font-family: var(--qp-font);
     }
-    .tab-button:hover {
+
+    .pill-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
+    }
+
+    /* App shell */
+
+    .app-shell {
+      display: flex;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 18px;
+    }
+
+    /* Side nav */
+
+    .side-nav {
+      width: 220px;
+      min-width: 190px;
+      padding: 14px 12px;
+      border-radius: 18px;
+      background: var(--nav-bg);
+      border: 1px solid var(--nav-border);
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.8);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .side-nav-section-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      padding: 4px 8px 6px;
+    }
+
+    .side-nav-item {
+      border-radius: 12px;
+      border: 1px solid transparent;
+      background: transparent;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease,
+        transform 0.08s ease;
+    }
+
+    .side-nav-item-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .side-nav-item-label {
+      flex: 1;
+      text-align: left;
+    }
+
+    .side-nav-item:hover {
+      background: rgba(15, 23, 42, 0.9);
+      border-color: rgba(129, 140, 248, 0.6);
+      color: #e5e7eb;
       transform: translateY(-1px);
     }
-    .tab-button.active {
-      background: var(--tab-bg-active);
-      color: var(--text-main);
-      position: relative;
-      bottom: -1px;
-      z-index: 1;
-      border-color: var(--border-card);
+
+    .side-nav-item.active {
+      background: var(--nav-active);
+      border-color: rgba(129, 140, 248, 0.9);
+      color: #e5e7eb;
     }
-    .tab-content {
+
+    .side-nav-footer {
+      margin-top: 8px;
+      padding: 8px;
+      border-radius: 12px;
+      border: 1px dashed rgba(148, 163, 184, 0.45);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    /* Main content */
+
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .panel {
       display: none;
-      padding-top: 1.5rem;
     }
-    .tab-content.active {
+    .panel.active {
       display: block;
     }
 
-    /* Tables */
+    .panel-header {
+      margin-bottom: 8px;
+    }
+
+    .panel-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .panel-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 960px) {
+      .app-shell {
+        flex-direction: column;
+      }
+      .side-nav {
+        width: 100%;
+        max-width: none;
+        flex-direction: row;
+        overflow-x: auto;
+      }
+      .side-nav-item {
+        white-space: nowrap;
+      }
+      .side-nav-footer {
+        display: none;
+      }
+      .panel-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Cards */
+
+    .card {
+      border-radius: 22px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--card-shadow);
+      padding: 16px 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.45;
+      background: linear-gradient(
+        135deg,
+        rgba(248, 250, 252, 0.06),
+        transparent 40%,
+        rgba(56, 189, 248, 0.08) 70%,
+        transparent 100%
+      );
+      pointer-events: none;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card-title span.badge-pill {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-muted);
+    }
+
+    .card-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Global table styling used by all tables on page */
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      font-family: var(--qp-font);
+      font-size: 0.84rem;
+      margin-top: 6px;
     }
+
     thead {
       background: var(--table-header-bg);
-      color: var(--table-header-text);
     }
+
     th, td {
-      padding: 0.75rem 0.8rem;
+      padding: 8px 10px;
       text-align: left;
-      vertical-align: top;
-      border-bottom: 1px solid rgba(148,163,184,0.3);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.3);
     }
+
     th {
       font-weight: 500;
+      color: var(--text-muted);
     }
-    /* Zebra striping for all tables EXCEPT customer sentiment */
-    table:not(.cs-table) tbody tr:nth-child(even) {
-      background-color: var(--table-row-even);
+
+    tbody tr:nth-child(even) {
+      background-color: var(--table-row-alt);
     }
-    table:not(.cs-table) tbody tr:hover {
+
+    tbody tr:hover {
       background-color: var(--table-row-hover);
     }
 
@@ -203,629 +368,616 @@
       color: #22c55e;
       font-weight: 600;
     }
+
     .status-off {
       color: #f97373;
       font-weight: 600;
     }
+
     .status-pto {
-  color: #fbbf24;   /* amber */
-  font-weight: 600;
-  }
-  
-  .status-sick {
-    color: #f97373;   /* soft red */
-    font-weight: 600;
-  }
-
-
-    .badge {
-      padding: 0.22em 0.55em;
-      border-radius: 999px;
-      font-size: 0.8em;
-      font-weight: 500;
-      font-family: var(--qp-font);
-    }
-    .badge-success {
-      background-color: rgba(22, 163, 74, 0.12);
-      color: #4ade80;
-    }
-    .badge-danger {
-      background-color: rgba(220, 38, 38, 0.18);
-      color: #fecaca;
-    }
-    .badge-warning {
-      background-color: rgba(245, 158, 11, 0.18);
-      color: #fed7aa;
-    }
-
-    /* Customer Concurrency */
-    .customer-concurrency-list {
-      list-style: none;
-      padding: 0;
-      margin-top: 1.25rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: flex-start;
-    }
-    .customer-concurrency-item {
-      background: rgba(15,23,42,0.85);
-      border: 1px solid rgba(148,163,184,0.45);
-      padding: 0.75rem 1.1rem;
-      border-radius: 10px;
+      color: #fbbf24;
       font-weight: 600;
-      color: var(--text-main);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 140px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.45);
-    }
-    body.light-mode .customer-concurrency-item {
-      background: #f0f8ff;
-      border-color: #cfe2ff;
-    }
-    .customer-concurrency-item .customer-logo {
-      height: 30px;
-      margin-bottom: 8px;
-    }
-    .customer-concurrency-item .concurrency-value {
-      font-size: 1.4em;
-      color: var(--accent);
-      margin-top: 4px;
     }
 
-    .app-platform-logo {
-      height: 24px;
-      vertical-align: middle;
-      margin-left: 8px;
-    }
-    td .customer-logo-inline {
-      height: 28px;
-      vertical-align: middle;
-      margin-right: 8px;
+    .status-sick {
+      color: #f97373;
+      font-weight: 600;
     }
 
-    /* Shift Handoffs */
-    .shift-handoff-details {
-      margin-top: 1rem;
-      background-color: rgba(15,23,42,0.85);
-      padding: 1.25rem;
-      border-radius: 10px;
-      border: 1px solid rgba(148,163,184,0.4);
-    }
-    body.light-mode .shift-handoff-details {
-      background-color: #fdfdfd;
-      border-color: #e5e7eb;
-    }
-    .shift-handoff-details h3 {
-      color: var(--text-main);
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-      border-bottom: 1px dashed rgba(148,163,184,0.6);
-      padding-bottom: 0.4rem;
-    }
-    .shift-handoff-details ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 0.8rem;
-    }
-    .shift-handoff-details ul li {
-      margin-bottom: 0.45rem;
-      line-height: 1.4;
-      color: var(--text-main);
-    }
-    .shift-handoff-details .log-entry {
-      background-color: rgba(2,6,23,0.9);
-      border-left: 3px solid #2563eb;
-      padding: 0.75rem 1rem;
-      margin-bottom: 0.9rem;
-      border-radius: 6px;
-    }
-    body.light-mode .shift-handoff-details .log-entry {
-      background-color: #f8fafc;
-    }
-    .shift-handoff-details .log-entry strong {
-      color: #38bdf8;
-    }
-    .shift-handoff-details .log-entry span.time {
-      font-size: 0.8em;
-      color: var(--text-muted);
-      margin-left: 10px;
-    }
-
-    /* RBAC / Issue Search input */
-    .search-input {
-      width: 100%;
-      padding: 0.75rem 0.9rem;
-      border-radius: 8px;
-      border: 1px solid rgba(148,163,184,0.6);
-      background: rgba(15,23,42,0.7);
-      color: var(--text-main);
-      font-family: var(--qp-font);
-      font-size: 0.9rem;
-    }
-    .search-input::placeholder {
-      color: var(--text-muted);
-    }
-    body.light-mode .search-input {
-      background: #ffffff;
-      border-color: #d1d5db;
-      color: #111827;
-    }
-
-    p.meta-note {
-      margin-top: 1rem;
-      font-style: italic;
-      font-size: 0.85rem;
+    .card-footer-note {
+      margin-top: 6px;
+      font-size: 0.75rem;
       color: var(--text-muted);
       text-align: right;
     }
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-      .section {
-        padding: 1.2rem 1.1rem;
-      }
-      th, td {
-        padding: 0.6rem 0.5rem;
-      }
+    /* Concurrency list */
+
+    .concurrency-list {
+      list-style: none;
+      padding: 0;
+      margin: 4px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .concurrency-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px 9px;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .concurrency-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .concurrency-logo {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      overflow: hidden;
+      background: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .concurrency-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .concurrency-name {
+      font-weight: 500;
+      font-size: 0.86rem;
+    }
+
+    .concurrency-badge {
+      font-size: 0.78rem;
+      padding: 2px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(248, 250, 252, 0.3);
+      background: rgba(15, 23, 42, 0.9);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .concurrency-badge span.value {
+      font-weight: 600;
+      color: #facc15;
+    }
+
+    /* Secondary panels use the same cards */
+
+    .panel-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .meta-note {
+      margin-top: 6px;
+      font-size: 0.74rem;
+      color: var(--text-muted);
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="image/Quickplay.jpg" alt="Quickplay Logo" class="logo">
-    <h1>TechOps 360 - Portal</h1>
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
-      🌙 Dark
-    </button>
-  </header>
-
-  <div class="container">
-
-    <div class="tabs">
-      <button class="tab-button active" onclick="openTab(event, 'Home')">Home</button>
-      <button class="tab-button" onclick="openTab(event, 'CustomerStats')">Customer Stats</button>
-      <button class="tab-button" onclick="openTab(event, 'SyntheticMonitoring')">Synthetic Monitoring</button>
-      <button class="tab-button" onclick="openTab(event, 'ManifestCheck')">Manifest Check</button>
-      <button class="tab-button" onclick="openTab(event, 'ShiftHandoffs')">Shift Handoffs</button>
-      <button class="tab-button" onclick="openTab(event, 'RBAC')">RBAC</button>
-      <button class="tab-button" onclick="openTab(event, 'IssueSearch')">Issue Search</button>
-    </div>
-
-    <!-- HOME -->
-    <div id="Home" class="tab-content active section">
-      <h2>Operations Calendar (Today)</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Engineer Name</th>
-      <th>Status</th>
-      <th>Shift (local time)</th>
-    </tr>
-  </thead>
-  <tbody id="ops-calendar-body">
-    <tr>
-      <td colspan="3">Loading schedule…</td>
-    </tr>
-  </tbody>
-</table>
-<p class="meta-note">Current shift status for operations engineers (IST / MYT / EST coverage).</p>
-
-
-      <h2 style="margin-top: 3rem;">Customer Concurrency</h2>
-      <ul class="customer-concurrency-list">
-        <li class="customer-concurrency-item"><img src="image/aha.jpg" alt="Aha Logo" class="customer-logo"> Aha <span class="concurrency-value">4.5K</span></li>
-        <li class="customer-concurrency-item"><img src="image/RSM_Logo.png" alt="RSM Logo" class="customer-logo"> RSM <span class="concurrency-value">1.2K</span></li>
-        <li class="customer-concurrency-item"><img src="image/smart.png" alt="PLDT Logo" class="customer-logo"> PLDT <span class="concurrency-value">3K</span></li>
-        <li class="customer-concurrency-item"><img src="image/Canela.png" alt="Canela Logo" class="customer-logo"> Canela <span class="concurrency-value">800</span></li>
-      </ul>
-      <p class="meta-note" style="text-align:left;margin-top:0.8rem;">This list represents currently active customers or user concurrency.</p>
-    </div>
-
-    <!-- CUSTOMER STATS -->
-    <div id="CustomerStats" class="tab-content section">
-      <h2>Customer Stats</h2>
-      <p style="margin-bottom: 0.75rem; color: var(--text-muted);">
-        App store ratings and customer sentiment derived from app-store comments (last 7 days).
-      </p>
-      <div id="customer-sentiment-dashboard"></div>
-    </div>
-
-    <!-- SYNTHETIC MONITORING -->
-    <div id="SyntheticMonitoring" class="tab-content section">
-      <h2>Synthetic Monitoring Results (Live Health Checks)</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Service Name</th>
-            <th>Component</th>
-            <th>SG Status</th>
-            <th>HK Status</th>
-            <th>Last Checked</th>
-            <th>Overall Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>admin-search-service</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>cms-metadata</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>data-store-4</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>device-register-preview</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>epg-ingestion-tm</td>
-            <td>CMS</td>
-            <td>401</td>
-            <td>503</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-danger">DOWN</span></td>
-          </tr>
-          <tr>
-            <td>image-download-cloud</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>image-metadata-cloud</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>live-metadata</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>lock-service</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>playback-auth-preview</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>sitemap-generator</td>
-            <td>Edge</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>syndication-ingestion-disney</td>
-            <td>CMS</td>
-            <td>503</td>
-            <td>503</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-danger">DOWN</span></td>
-          </tr>
-          <tr>
-            <td>syndication-metadata</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-          <tr>
-            <td>user-settings-service</td>
-            <td>CMS</td>
-            <td>200</td>
-            <td>200</td>
-            <td>2025-06-09 14:00 IST</td>
-            <td><span class="badge badge-success">OK</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left;">Health check statuses directly from service monitoring systems.</p>
-    </div>
-
-    <!-- MANIFEST CHECK -->
-    <div id="ManifestCheck" class="tab-content section">
-      <h2>Manifest Check Results: RSM Channels</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Channel Name</th>
-            <th>Protocol</th>
-            <th>URL</th>
-            <th>Status</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>snohd</td>
-            <td>HLS</td>
-            <td>https://live-streaming-tma.live.rsm.firstlight.ai/snohd/snohd.isml/.m3u8</td>
-            <td><span class="badge badge-success">OK</span></td>
-            <td>Manifest loaded successfully.</td>
-          </tr>
-          <tr>
-            <td>sn1hd</td>
-            <td>HLS</td>
-            <td>https://live-streaming-tm.live.rsm.firstlight.ai/sn1hd/sn1hd.isml/.m3u8</td>
-            <td><span class="badge badge-success">OK</span></td>
-            <td>Manifest loaded successfully.</td>
-          </tr>
-          <tr>
-            <td>sn360h</td>
-            <td>HLS</td>
-            <td>https://live-streaming-tm.live.rsm.firstlight.ai/sn360h/sn360h.isml/.m3u8</td>
-            <td><span class="badge badge-success">OK</span></td>
-            <td>Manifest loaded successfully.</td>
-          </tr>
-          <tr>
-            <td>snehd</td>
-            <td>HLS</td>
-            <td>https://live-streaming-tm.live.rsm.firstlight.ai/snehd/snehd.isml/.m3u8</td>
-            <td><span class="badge badge-danger">MISSING_STREAM</span></td>
-            <td>Detected missing 'audio-only' stream variant.</td>
-          </tr>
-          <tr>
-            <td>snwhd</td>
-            <td>HLS</td>
-            <td>https://live-streaming-tm.live.rsm.firstlight.ai/snwhd/snwhd.isml/.m3u8</td>
-            <td><span class="badge badge-success">OK</span></td>
-            <td>Manifest loaded successfully.</td>
-          </tr>
-          <tr>
-            <td>wwehd</td>
-            <td>DASH</td>
-            <td>https://live-streaming-tm.live.rsm.firstlight.ai/wwehd/wwehd_cenc.isml/.mpd</td>
-            <td><span class="badge badge-success">OK</span></td>
-            <td>Manifest loaded successfully.</td>
-          </tr>
-          <tr>
-            <td>snplus16</td>
-            <td>DASH</td>
-            <td>https://live-streaming-tm.live.rsm.firstlight.ai/snplus16/snplus16_cenc.isml/.mpd</td>
-            <td><span class="badge badge-success">OK</span></td>
-            <td>Manifest loaded successfully.</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left;">Manifest checks validate content integrity for streaming channels. Data is a representative subset from <code>RSM_Manifest_URL.txt</code>.</p>
-    </div>
-
-    <!-- SHIFT HANDOFFS -->
-    <div id="ShiftHandoffs" class="tab-content section">
-      <h2>Shift Handoffs (June 9, 2025 - Morning Shift)</h2>
-      <div class="shift-handoff-details">
-        <div class="log-entry">
-          <strong>Shift Hand Off: Incident Summary for the Day</strong> <span class="time">9:34 AM</span>
-          <ul>
-            <li>Incidents Opened: 7</li>
-            <li>Resolved/Closed: 4</li>
-            <li>Incidents Updated: 28</li>
-          </ul>
-          <h3>Incidents:</h3>
-          <ul>
-            <li><strong>INC0195019:</strong> The customer is facing a loading issue in the mobile</li>
-            <li><strong>INC0195020:</strong> Customer is facing a loading issue in the mobile</li>
-            <li><strong>INC0195021:</strong> Loading issue on mobile</li>
-            <li><strong>INC0195022:</strong> Customer is facing an app stuck issue on mobile</li>
-            <li><strong>INC0195023:</strong> [AHA] user already have subscription but still showing subscribe now</li>
-          </ul>
-        </div>
-
-        <div class="log-entry">
-          <strong>Changes:</strong> <span class="time">9:35 AM</span>
-          <ul>
-            <li><strong>CHG0102910:</strong> [LocalNow] HLS &amp; EPG URL Changes for one Live Channel in AMD - Completed</li>
-            <li><strong>[AHA]</strong> Indian Idol Audition portal - Telugu Indian Idol - Update</li>
-          </ul>
-        </div>
-
-        <div class="log-entry">
-          <strong>Upcoming CR:</strong> <span class="time">9:35 AM</span>
-          <ul>
-            <li><strong>CHG0102882:</strong> [AHA] Web deployment of version</li>
-          </ul>
-        </div>
-
-        <div class="log-entry">
-          <strong>FYI (For Your Information):</strong>
-          <ul>
-            <li>Manifest alert for Cignal and Plive has been created successfully.</li>
-            <li>Cignal - all 83 channels alerts has been done (both HLS and Dash).</li>
-            <li>Health alerts have been configured for Telekon Malaysia's microservices endpoint.</li>
-          </ul>
-        </div>
-        <p class="meta-note">Detailed shift log provided by Praveen Kumar.</p>
+  <!-- Top bar -->
+  <header class="top-nav">
+    <div class="top-nav-left">
+      <div class="top-nav-logo">
+        <img src="image/Quickplay.jpg" alt="Quickplay Logo" style="height: 32px; display: block;">
+      </div>
+      <div class="top-nav-title-block">
+        <div class="top-nav-title">TechOps 360</div>
+        <div class="top-nav-subtitle">Live operations view for Quickplay customers</div>
       </div>
     </div>
-
-    <!-- RBAC -->
-    <div id="RBAC" class="tab-content section">
-      <h2>RBAC (Role-Based Access Control) Overview</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Role</th>
-            <th>Description</th>
-            <th>Access Level</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Admin</td>
-            <td>Full control over all modules and user management.</td>
-            <td>All (View, Edit, Manage Users)</td>
-          </tr>
-          <tr>
-            <td>Operations Lead</td>
-            <td>Access to all operational dashboards, manage team members.</td>
-            <td>All (View, Edit on assigned customers)</td>
-          </tr>
-          <tr>
-            <td>Operations Engineer</td>
-            <td>View dashboards, perform specific operational tasks.</td>
-            <td>View all, Edit limited to assigned customers</td>
-          </tr>
-          <tr>
-            <td>Viewer</td>
-            <td>Read-only access to all dashboards.</td>
-            <td>View Only</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left;">Simulated RBAC rules. Actual implementation would integrate with Keycloak or similar SSO.</p>
+    <div class="top-nav-right">
+      <div class="pill-badge">
+        <span class="pill-dot"></span>
+        <span>24×7 follow-the-sun support</span>
+      </div>
     </div>
+  </header>
 
-    <!-- ISSUE SEARCH -->
-    <div id="IssueSearch" class="tab-content section">
-      <h2>Issue Resolution Search (Ops Memory)</h2>
-      <input type="text" class="search-input"
-        placeholder="Search for past issues (e.g., 'buffer timeout', 'payment gateway error')" />
-      <table>
-        <thead>
-          <tr>
-            <th>Issue ID</th>
-            <th>Summary</th>
-            <th>Customer</th>
-            <th>Date Resolved</th>
-            <th>Resolution</th>
-            <th>Owner</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>INC0195023</td>
-            <td>User has subscription but showing 'subscribe now'</td>
-            <td>Aha</td>
-            <td>2025-06-09</td>
-            <td>Investigating: Likely data sync issue.</td>
-            <td>Praveen K.</td>
-          </tr>
-          <tr>
-            <td>ISSUE-002</td>
-            <td>App Crashing on Android 12</td>
-            <td>PLDT</td>
-            <td>2025-04-15</td>
-            <td>Deployed hotfix v3.1.1, addressed memory leak.</td>
-            <td>Team Bravo</td>
-          </tr>
-          <tr>
-            <td>ISSUE-003</td>
-            <td>Synthetic Login Test Failure</td>
-            <td>RSM</td>
-            <td>2025-06-01</td>
-            <td>Identified stale credentials in monitoring system. Updated.</td>
-            <td>Team Alpha</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left;">Search functionality is simulated. Real implementation uses Elasticsearch/PostgreSQL full-text search.</p>
-    </div>
+  <div class="app-shell">
+    <!-- Side navigation -->
+    <aside class="side-nav">
+      <div class="side-nav-section-label">Views</div>
 
+      <button class="side-nav-item active" data-panel="panel-dashboard">
+        <span class="side-nav-item-icon">🏠</span>
+        <span class="side-nav-item-label">Dashboard</span>
+      </button>
+
+      <button class="side-nav-item" data-panel="panel-customer-stats">
+        <span class="side-nav-item-icon">📊</span>
+        <span class="side-nav-item-label">Customer Stats</span>
+      </button>
+
+      <button class="side-nav-item" data-panel="panel-synth">
+        <span class="side-nav-item-icon">🩺</span>
+        <span class="side-nav-item-label">Synthetic Monitoring</span>
+      </button>
+
+      <button class="side-nav-item" data-panel="panel-manifests">
+        <span class="side-nav-item-icon">📡</span>
+        <span class="side-nav-item-label">Manifest Check</span>
+      </button>
+
+      <button class="side-nav-item" data-panel="panel-handoffs">
+        <span class="side-nav-item-icon">📒</span>
+        <span class="side-nav-item-label">Shift Handoffs</span>
+      </button>
+
+      <button class="side-nav-item" data-panel="panel-rbac">
+        <span class="side-nav-item-icon">🔐</span>
+        <span class="side-nav-item-label">RBAC</span>
+      </button>
+
+      <button class="side-nav-item" data-panel="panel-issues">
+        <span class="side-nav-item-icon">🧠</span>
+        <span class="side-nav-item-label">Issue Search</span>
+      </button>
+
+      <div class="side-nav-footer">
+        This is an internal TechOps view. Data is simulated for demo except where wired to live sources (Google Sheets, app-store sentiment).
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+
+      <!-- MAIN DASHBOARD: current shift + concurrency -->
+      <section id="panel-dashboard" class="panel active">
+        <div class="panel-header">
+          <div class="panel-title">Live Operations Dashboard</div>
+          <div class="panel-subtitle">
+            Who is on shift right now and active customer concurrency across the platform.
+          </div>
+        </div>
+
+        <div class="panel-grid">
+          <!-- Card: current shift -->
+          <div class="card">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-title">
+                  Current shift coverage
+                  <span class="badge-pill">Today • auto-updated</span>
+                </div>
+                <div class="card-meta">
+                  Showing only engineers currently within their local shift window.
+                </div>
+              </div>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Engineer Name</th>
+                    <th>Status</th>
+                    <th>Shift (local time)</th>
+                  </tr>
+                </thead>
+                <tbody id="ops-calendar-body">
+                  <tr>
+                    <td colspan="3">Loading schedule…</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="card-footer-note">
+                Coverage includes IST, MYT and EST rotations.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: concurrency -->
+          <div class="card">
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-title">
+                  Customer concurrency
+                  <span class="badge-pill">Snapshot</span>
+                </div>
+                <div class="card-meta">
+                  Representative active concurrency across key customers.
+                </div>
+              </div>
+
+              <ul class="concurrency-list">
+                <li class="concurrency-item">
+                  <div class="concurrency-left">
+                    <div class="concurrency-logo">
+                      <img src="image/aha.jpg" alt="Aha">
+                    </div>
+                    <div class="concurrency-name">Aha</div>
+                  </div>
+                  <div class="concurrency-badge">
+                    Live
+                    <span class="value">4.5K</span>
+                  </div>
+                </li>
+
+                <li class="concurrency-item">
+                  <div class="concurrency-left">
+                    <div class="concurrency-logo">
+                      <img src="image/RSM_Logo.png" alt="RSM">
+                    </div>
+                    <div class="concurrency-name">RSM</div>
+                  </div>
+                  <div class="concurrency-badge">
+                    Live
+                    <span class="value">1.2K</span>
+                  </div>
+                </li>
+
+                <li class="concurrency-item">
+                  <div class="concurrency-left">
+                    <div class="concurrency-logo">
+                      <img src="image/smart.png" alt="PLDT">
+                    </div>
+                    <div class="concurrency-name">PLDT</div>
+                  </div>
+                  <div class="concurrency-badge">
+                    Live
+                    <span class="value">3.0K</span>
+                  </div>
+                </li>
+
+                <li class="concurrency-item">
+                  <div class="concurrency-left">
+                    <div class="concurrency-logo">
+                      <img src="image/Canela.png" alt="Canela">
+                    </div>
+                    <div class="concurrency-name">Canela</div>
+                  </div>
+                  <div class="concurrency-badge">
+                    Live
+                    <span class="value">800</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="card-footer-note" style="text-align:left;">
+                Values are demo numbers; wire to real metrics API when ready.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUSTOMER STATS PANEL -->
+      <section id="panel-customer-stats" class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Customer Stats</div>
+          <div class="panel-subtitle">
+            App store ratings and customer sentiment derived from app-store comments (last 7 days).
+          </div>
+        </div>
+
+        <div class="panel-stack">
+          <div class="card">
+            <div class="card-content">
+              <div id="customer-sentiment-dashboard"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYNTHETIC MONITORING PANEL -->
+      <section id="panel-synth" class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Synthetic Monitoring</div>
+          <div class="panel-subtitle">
+            Representative synthetic checks against key CMS / Edge endpoints.
+          </div>
+        </div>
+
+        <div class="panel-stack">
+          <div class="card">
+            <div class="card-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Service Name</th>
+                    <th>Component</th>
+                    <th>SG Status</th>
+                    <th>HK Status</th>
+                    <th>Last Checked</th>
+                    <th>Overall Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>admin-search-service</td>
+                    <td>CMS</td>
+                    <td>200</td>
+                    <td>200</td>
+                    <td>2025-06-09 14:00 IST</td>
+                    <td><span class="status-working">OK</span></td>
+                  </tr>
+                  <tr>
+                    <td>cms-metadata</td>
+                    <td>CMS</td>
+                    <td>200</td>
+                    <td>200</td>
+                    <td>2025-06-09 14:00 IST</td>
+                    <td><span class="status-working">OK</span></td>
+                  </tr>
+                  <tr>
+                    <td>epg-ingestion-tm</td>
+                    <td>CMS</td>
+                    <td>401</td>
+                    <td>503</td>
+                    <td>2025-06-09 14:00 IST</td>
+                    <td><span class="status-off">DOWN</span></td>
+                  </tr>
+                  <tr>
+                    <td>syndication-ingestion-disney</td>
+                    <td>CMS</td>
+                    <td>503</td>
+                    <td>503</td>
+                    <td>2025-06-09 14:00 IST</td>
+                    <td><span class="status-off">DOWN</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="meta-note">
+                Health check statuses directly from service monitoring systems (sample data).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MANIFEST CHECK PANEL -->
+      <section id="panel-manifests" class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Manifest Check – RSM</div>
+          <div class="panel-subtitle">
+            Manifest integrity for a subset of RSM channels (HLS / DASH).
+          </div>
+        </div>
+
+        <div class="panel-stack">
+          <div class="card">
+            <div class="card-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Channel Name</th>
+                    <th>Protocol</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>snohd</td>
+                    <td>HLS</td>
+                    <td>https://live-streaming-tma.live.rsm.firstlight.ai/snohd/snohd.isml/.m3u8</td>
+                    <td><span class="status-working">OK</span></td>
+                    <td>Manifest loaded successfully.</td>
+                  </tr>
+                  <tr>
+                    <td>snehd</td>
+                    <td>HLS</td>
+                    <td>https://live-streaming-tm.live.rsm.firstlight.ai/snehd/snehd.isml/.m3u8</td>
+                    <td><span class="status-off">MISSING_STREAM</span></td>
+                    <td>Detected missing 'audio-only' stream variant.</td>
+                  </tr>
+                  <tr>
+                    <td>wwehd</td>
+                    <td>DASH</td>
+                    <td>https://live-streaming-tm.live.rsm.firstlight.ai/wwehd/wwehd_cenc.isml/.mpd</td>
+                    <td><span class="status-working">OK</span></td>
+                    <td>Manifest loaded successfully.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="meta-note">
+                Data is a representative subset from <code>RSM_Manifest_URL.txt</code>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHIFT HANDOFFS PANEL -->
+      <section id="panel-handoffs" class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Shift Handoffs</div>
+          <div class="panel-subtitle">
+            Morning shift handoff summary – incidents, changes and FYI items.
+          </div>
+        </div>
+
+        <div class="panel-stack">
+          <div class="card">
+            <div class="card-content">
+              <p class="meta-note" style="text-align:left;margin-bottom:6px;">
+                Detailed shift log provided by Praveen Kumar (sample data).
+              </p>
+              <ul style="list-style:none;padding:0;margin:0;font-size:0.85rem;">
+                <li style="margin-bottom:10px;">
+                  <strong>Incidents opened:</strong> 7 &nbsp;•&nbsp; <strong>Resolved/Closed:</strong> 4 &nbsp;•&nbsp; <strong>Updated:</strong> 28
+                </li>
+                <li style="margin-bottom:6px;"><strong>INC0195019:</strong> The customer is facing a loading issue in the mobile</li>
+                <li style="margin-bottom:6px;"><strong>INC0195020:</strong> Customer is facing a loading issue in the mobile</li>
+                <li style="margin-bottom:6px;"><strong>INC0195021:</strong> Loading issue on mobile</li>
+                <li style="margin-bottom:6px;"><strong>INC0195022:</strong> App stuck issue on mobile</li>
+                <li style="margin-bottom:6px;"><strong>INC0195023:</strong> [AHA] user already has subscription but still seeing “subscribe now”</li>
+                <li style="margin-top:8px;margin-bottom:4px;"><strong>Change log:</strong></li>
+                <li style="margin-bottom:4px;"><strong>CHG0102910:</strong> [LocalNow] HLS &amp; EPG URL changes for one Live Channel in AMD – Completed</li>
+                <li style="margin-bottom:4px;"><strong>[AHA]</strong> Indian Idol Audition portal – Telugu Indian Idol – Update</li>
+                <li style="margin-top:8px;margin-bottom:4px;"><strong>Upcoming CR:</strong> <strong>CHG0102882</strong> [AHA] Web deployment of version</li>
+                <li style="margin-top:8px;">
+                  <strong>FYI:</strong> Manifest alerts for Cignal &amp; Plive created; all 83 Cignal channels (HLS + DASH) wired; health alerts configured for Telekom Malaysia endpoints.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RBAC PANEL -->
+      <section id="panel-rbac" class="panel">
+        <div class="panel-header">
+          <div class="panel-title">RBAC Overview</div>
+          <div class="panel-subtitle">
+            Simulated role-based access model for TechOps 360 (wire to SSO/Keycloak in production).
+          </div>
+        </div>
+
+        <div class="panel-stack">
+          <div class="card">
+            <div class="card-content">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Role</th>
+                    <th>Description</th>
+                    <th>Access Level</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Admin</td>
+                    <td>Full control over all modules and user management.</td>
+                    <td>All (View, Edit, Manage Users)</td>
+                  </tr>
+                  <tr>
+                    <td>Operations Lead</td>
+                    <td>Access to all operational dashboards, manage team members.</td>
+                    <td>All (View, Edit on assigned customers)</td>
+                  </tr>
+                  <tr>
+                    <td>Operations Engineer</td>
+                    <td>View dashboards, perform specific operational tasks.</td>
+                    <td>View all, Edit limited to assigned customers</td>
+                  </tr>
+                  <tr>
+                    <td>Viewer</td>
+                    <td>Read-only access to all dashboards.</td>
+                    <td>View Only</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="meta-note" style="text-align:left;">
+                Map these roles to your SSO groups or identity provider for enforcement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ISSUE SEARCH PANEL -->
+      <section id="panel-issues" class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Issue Resolution Search</div>
+          <div class="panel-subtitle">
+            Ops memory for past incidents and how they were resolved (simulated search UX).
+          </div>
+        </div>
+
+        <div class="panel-stack">
+          <div class="card">
+            <div class="card-content">
+              <input
+                type="text"
+                placeholder="Search for past issues (e.g., 'buffer timeout', 'payment gateway error')"
+                style="width:100%;padding:9px 10px;border-radius:10px;border:1px solid rgba(148,163,184,0.6);background:rgba(15,23,42,0.9);color:#e5e7eb;font-size:0.85rem;margin-bottom:10px;"
+              />
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Issue ID</th>
+                    <th>Summary</th>
+                    <th>Customer</th>
+                    <th>Date Resolved</th>
+                    <th>Resolution</th>
+                    <th>Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>INC0195023</td>
+                    <td>User has subscription but showing “subscribe now”</td>
+                    <td>Aha</td>
+                    <td>2025-06-09</td>
+                    <td>Investigating: Likely data sync issue.</td>
+                    <td>Praveen K.</td>
+                  </tr>
+                  <tr>
+                    <td>ISSUE-002</td>
+                    <td>App crashing on Android 12</td>
+                    <td>PLDT</td>
+                    <td>2025-04-15</td>
+                    <td>Deployed hotfix v3.1.1 to address memory leak.</td>
+                    <td>Team Bravo</td>
+                  </tr>
+                  <tr>
+                    <td>ISSUE-003</td>
+                    <td>Synthetic login test failure</td>
+                    <td>RSM</td>
+                    <td>2025-06-01</td>
+                    <td>Updated stale credentials in monitoring system.</td>
+                    <td>Team Alpha</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="meta-note" style="text-align:left;">
+                Search functionality is simulated. Real implementation would use Elasticsearch/PostgreSQL full-text search.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 
-  <!-- Tabs + Theme JS -->
+  <!-- Simple JS: side nav panel switching -->
   <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active");
-      }
-      tablinks = document.getElementsByClassName("tab-button");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-      document.getElementById(tabName).classList.add("active");
-      evt.currentTarget.classList.add("active");
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      const navItems = Array.from(document.querySelectorAll('.side-nav-item'));
+      const panels = Array.from(document.querySelectorAll('.panel'));
 
-    function applyTheme(theme) {
-      if (theme === 'light') {
-        document.body.classList.add('light-mode');
-      } else {
-        document.body.classList.remove('light-mode');
-      }
-      var btn = document.getElementById('theme-toggle');
-      if (!btn) return;
-      if (document.body.classList.contains('light-mode')) {
-        btn.textContent = '🌙 Dark';
-        btn.setAttribute('aria-label', 'Switch to dark mode');
-      } else {
-        btn.textContent = '☀️ Light';
-        btn.setAttribute('aria-label', 'Switch to light mode');
-      }
-    }
+      navItems.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-panel');
 
-    document.addEventListener("DOMContentLoaded", function () {
-      // Theme init
-      var storedTheme = localStorage.getItem('techops-theme');
-      var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-      applyTheme(storedTheme || (prefersLight ? 'light' : 'dark'));
+          navItems.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
 
-      var toggle = document.getElementById('theme-toggle');
-      if (toggle) {
-        toggle.addEventListener('click', function () {
-          var next = document.body.classList.contains('light-mode') ? 'dark' : 'light';
-          localStorage.setItem('techops-theme', next);
-          applyTheme(next);
+          panels.forEach((p) => {
+            if (p.id === targetId) {
+              p.classList.add('active');
+            } else {
+              p.classList.remove('active');
+            }
+          });
         });
-      }
-
-      // Default open Home tab
-      document.getElementById("Home").classList.add("active");
-      document.querySelector(".tab-button").classList.add("active");
+      });
     });
   </script>
 
-   <!-- Ops calendar (Google Sheets) -->
+  <!-- Ops calendar (Google Sheets) -->
   <script src="ops-calendar.js?v=3"></script>
-  
+
   <!-- Botpress -->
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   <script>
