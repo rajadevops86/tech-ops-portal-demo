@@ -1,5 +1,7 @@
-// ops-calendar.js
+// ops-calendar.js v3
 // ================= Operations Calendar – Google Sheet integration =================
+
+console.log("[OpsCalendar] v3 loaded");
 
 // Your sheet info
 const OPS_SHEET_ID   = "1tIggu_-kutucmc-owxhr0bwWCQKiK1n-bDzdEy8u4Vw";
@@ -10,11 +12,11 @@ const OPS_GVIZ_URL =
   )}&tqx=out:json`;
 
 // Fixed offsets in minutes from UTC for schedule timezones
-// (simple model, ignores DST for EST – good enough for this dashboard)
+// (simple model, ignores DST for EST – OK for this dashboard)
 const ZONE_OFFSETS_MIN = {
   IST: 5 * 60 + 30,  // UTC+5:30
   MYT: 8 * 60,       // UTC+8
-  EST: -5 * 60       // UTC-5 (treat EST/EDT as EST for simplicity)
+  EST: -5 * 60       // UTC-5
 };
 
 // Format today exactly like the header row: "Monday, November 10, 2025"
@@ -34,8 +36,8 @@ function cleanCellText(str) {
   if (!str) return "";
   return (
     str
-      // general emoji range
-      .replace(/[\u{1F300}-\u{1FAFF}]/gu, "")
+      // emoji + dingbats etc
+      .replace(/[\u2600-\u26FF\u{1F300}-\u{1FAFF}]/gu, "")
       .replace(/\s+/g, " ")
       .trim()
   );
@@ -56,7 +58,7 @@ function parseTimeToMinutes(str) {
   return hour * 60 + min;
 }
 
-// Turn a shift string into { label, cssClass } (generic status)
+// High-level status (Working / Off / PTO / Sick / —)
 function classifyShift(text) {
   const v = text.toLowerCase();
   if (!v) {
@@ -71,11 +73,11 @@ function classifyShift(text) {
   if (v.includes("off")) {
     return { label: "Off", css: "status-off" };
   }
-  // Anything else is assumed to be a working shift like "11:00 AM - 08:00 PM EST"
+  // Anything else is assumed to be a working shift like "11:00 AM - 08:00 PM IST"
   return { label: "Working", css: "status-working" };
 }
 
-// Check if the current time (now) falls inside the shift.
+// Check if the current time falls inside the shift window.
 // Expect shift like "11:00 AM - 08:00 PM IST"
 function isCurrentlyOnShift(shiftText) {
   if (!shiftText) return false;
@@ -84,7 +86,7 @@ function isCurrentlyOnShift(shiftText) {
     /(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*(IST|MYT|EST)/i;
   const m = shiftText.match(regex);
   if (!m) {
-    // cannot parse – treat as not currently on shift
+    console.log("[OpsCalendar] Could not parse shift:", shiftText);
     return false;
   }
 
@@ -103,15 +105,21 @@ function isCurrentlyOnShift(shiftText) {
   const now = new Date();
   const nowUtcMin = now.getUTCHours() * 60 + now.getUTCMinutes();
   const nowLocalMin =
-    (nowUtcMin + offsetMin + 24 * 60) % (24 * 60); // wrap around 0–1439
+    (nowUtcMin + offsetMin + 24 * 60) % (24 * 60); // wrap 0–1439
 
-  // Handle normal and overnight ranges
+  let onShift;
   if (startMin <= endMin) {
-    return nowLocalMin >= startMin && nowLocalMin < endMin;
+    onShift = nowLocalMin >= startMin && nowLocalMin < endMin;
   } else {
-    // Overnight shift, e.g. 10 PM – 6 AM
-    return nowLocalMin >= startMin || nowLocalMin < endMin;
+    // Overnight shift
+    onShift = nowLocalMin >= startMin || nowLocalMin < endMin;
   }
+
+  console.log(
+    `[OpsCalendar] shift "${shiftText}" in ${tzAbbrev}: start=${startMin}, end=${endMin}, nowLocal=${nowLocalMin}, onShift=${onShift}`
+  );
+
+  return onShift;
 }
 
 async function loadOpsCalendar() {
@@ -145,8 +153,8 @@ async function loadOpsCalendar() {
       const cell = headerRow[i];
       if (!cell) continue;
 
-      // Use formatted value if available; fallback to raw
       const formatted = (cell.f || cell.v || "").toString().trim();
+      console.log(`[OpsCalendar] header col ${i}: "${formatted}"`);
 
       if (formatted === todayLabel) {
         todayColIndex = i;
@@ -174,20 +182,20 @@ async function loadOpsCalendar() {
       const cell = row[todayColIndex] || {};
       const rawCell = cell.v || cell.f || "";
       const cleaned = cleanCellText(rawCell);
-      if (!cleaned) continue; // nothing scheduled today for this person
+      if (!cleaned) continue; // nothing scheduled today
 
-      // If PTO / Off / Sick etc → not working now, skip
       const baseStatus = classifyShift(cleaned);
+
+      // Only consider Working status
       if (baseStatus.label !== "Working") {
         continue;
       }
 
-      // If the current time is not within the shift window → skip
+      // Only keep engineers whose local time is currently within the shift
       if (!isCurrentlyOnShift(cleaned)) {
         continue;
       }
 
-      // At this point, engineer is "Working" and currently on shift
       out.push(`
         <tr>
           <td>${engineerName}</td>
@@ -210,6 +218,7 @@ async function loadOpsCalendar() {
 
 // Run once on load + refresh every 5 minutes
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("[OpsCalendar] DOMContentLoaded – loading now");
   loadOpsCalendar();
   setInterval(loadOpsCalendar, 5 * 60 * 1000); // refresh every 5 minutes
 });
