@@ -119,5 +119,7 @@
   // Kick it off after DOM is ready
   document.addEventListener("DOMContentLoaded", () => {
     loadOpsCalendar();
+      // refresh every 5 min (adjust if needed)
+  setInterval(loadOpsCalendar, 5 * 60 * 1000);
   });
 </script>
