@@ -207,6 +207,16 @@
       color: #f97373;
       font-weight: 600;
     }
+    .status-pto {
+  color: #fbbf24;   /* amber */
+  font-weight: 600;
+  }
+  
+  .status-sick {
+    color: #f97373;   /* soft red */
+    font-weight: 600;
+  }
+
 
     .badge {
       padding: 0.22em 0.55em;
@@ -389,38 +399,23 @@
 
     <!-- HOME -->
     <div id="Home" class="tab-content active section">
-      <h2>Operations Calendar (Today: June 9, 2025)</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Engineer Name</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>RAJA</td>
-            <td class="status-working">🟢 Working</td>
-          </tr>
-          <tr>
-            <td>Abhi</td>
-            <td class="status-working">🟢 Working</td>
-          </tr>
-          <tr>
-            <td>Ajay</td>
-            <td class="status-off">🔴 Off</td>
-          </tr>
-          <tr>
-            <td>Ranjith</td>
-            <td class="status-working">🟢 Working</td>
-          </tr>
-          <tr>
-            <td>Vishal</td>
-            <td class="status-off">🔴 Off</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="meta-note">Current shift status for operations engineers.</p>
+      <h2>Operations Calendar (Today)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Engineer Name</th>
+      <th>Status</th>
+      <th>Shift (local time)</th>
+    </tr>
+  </thead>
+  <tbody id="ops-calendar-body">
+    <tr>
+      <td colspan="3">Loading schedule…</td>
+    </tr>
+  </tbody>
+</table>
+<p class="meta-note">Current shift status for operations engineers (IST / MYT / EST coverage).</p>
+
 
       <h2 style="margin-top: 3rem;">Customer Concurrency</h2>
       <ul class="customer-concurrency-list">
@@ -828,6 +823,9 @@
     });
   </script>
 
+   <!-- Ops calendar (Google Sheets) -->
+  <script src="ops-calendar.js?v=1"></script>
+  
   <!-- Botpress -->
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   <script>
