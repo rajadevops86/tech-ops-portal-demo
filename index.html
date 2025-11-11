@@ -5,59 +5,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechOps 360 - Portal</title>
   <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #E1E0FF; /* Light purple/pink from Quickplay logo */ margin: 0; padding: 0; color: #333; }
-    header { background: linear-gradient(to right, #6A1B9A, #FF7043); /* Gradient from Quickplay logo */ color: white; padding: 1rem 2rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; position: relative;}
-    header .logo { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); height: 40px; } /* Quickplay logo size */
-    header h1 { margin: 0; font-size: 2.2rem; }
-    .container { padding: 2rem; max-width: 1200px; margin: auto; }
-    h2 { color: #1e293b; border-bottom: 2px solid #ddd; padding-bottom: 0.7rem; margin-top: 1.5rem; font-size: 1.8rem; }
-    .section { margin-bottom: 2.5rem; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { padding: 1rem; border: 1px solid #eee; text-align: left; vertical-align: top; }
-    th { background: #e9ecef; color: #1e293b; font-weight: 600; }
-    tr:nth-child(even) { background-color: #f9f9f9; }
-    .status-working { color: #28a745; font-weight: bold; } /* Green */
-    .status-off { color: #dc3545; font-weight: bold; } /* Red */
-    .badge { padding: 0.3em 0.6em; border-radius: 5px; font-size: 0.85em; }
-    .badge-success { background-color: #d4edda; color: #155724; }
-    .badge-danger { background-color: #f8d7da; color: #721c24; }
-    .badge-warning { background-color: #fff3cd; color: #856404; }
+    /* =========================
+       Base (Dark Theme Default)
+       ========================= */
+    :root {
+      --bg-main: #0e1116;
+      --bg-card: #1b1f27;
+      --bg-card-soft: #161a22;
+      --bg-table-header: #23272f;
+      --bg-table-row-alt: #181b22;
+      --border-soft: #2c2f36;
+      --text-main: #e5e5e5;
+      --text-muted: #9ca3af;
+      --accent-gold: #facc15;
+      --accent-orange: #ffae6d;
+      --accent-blue: #3b82f6;
+      --accent-chip-bg: #1e293b;
+      --accent-chip-border: #334155;
+    }
 
-    /* Tabs Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #6A1B9A, #FF7043);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header .logo {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    /* Theme toggle button */
+    #theme-toggle {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(15,23,42,0.9);
+      color: #e5e5e5;
+      border: 1px solid rgba(148,163,184,0.4);
+      border-radius: 999px;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    #theme-toggle:hover {
+      background: rgba(15,23,42,1);
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent-orange);
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.7rem;
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+      background: var(--bg-card);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 1rem;
+      border: 1px solid var(--border-soft);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--bg-table-header);
+      color: var(--text-main);
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background-color: var(--bg-table-row-alt);
+    }
+
+    .status-working {
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .status-off {
+      color: #f87171;
+      font-weight: bold;
+    }
+
+    .badge {
+      padding: 0.3em 0.6em;
+      border-radius: 5px;
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+    .badge-success {
+      background-color: #064e3b;
+      color: #34d399;
+    }
+    .badge-danger {
+      background-color: #450a0a;
+      color: #f87171;
+    }
+    .badge-warning {
+      background-color: #78350f;
+      color: #fbbf24;
+    }
+
+    /* Tabs */
     .tabs {
       display: flex;
       flex-wrap: wrap;
       margin-top: 1rem;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid var(--border-soft);
     }
     .tab-button {
       padding: 1rem 1.5rem;
       cursor: pointer;
-      background: #e9ecef;
-      border: 1px solid #ddd;
+      background: #1f2937;
+      border: 1px solid var(--border-soft);
       border-bottom: none;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       margin-right: 5px;
       font-weight: 600;
-      color: #555;
+      color: #cbd5e1;
       transition: background-color 0.3s, color 0.3s;
     }
     .tab-button:hover {
-      background: #cfe2ff;
-      color: #1e293b;
+      background: #334155;
+      color: #ffffff;
     }
     .tab-button.active {
-      background: white;
-      border-bottom: 2px solid white;
-      color: #1e293b;
+      background: #0f172a;
+      border-bottom: 2px solid #0f172a;
+      color: #ffffff;
       position: relative;
       bottom: -2px;
       z-index: 1;
     }
     .tab-content {
       display: none;
-      padding-top: 1.5rem; /* Space below tabs */
+      padding-top: 1.5rem;
       border-top: none;
     }
     .tab-content.active {
@@ -71,83 +195,126 @@
       margin-top: 1rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 15px; /* Increased gap */
+      gap: 15px;
       justify-content: flex-start;
     }
     .customer-concurrency-item {
-      background: #f0f8ff;
-      border: 1px solid #cfe2ff;
+      background: var(--accent-chip-bg);
+      border: 1px solid var(--accent-chip-border);
       padding: 0.8rem 1.2rem;
-      border-radius: 8px; /* Slightly more rounded */
+      border-radius: 8px;
       font-weight: bold;
-      color: #0056b3;
+      color: #93c5fd;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-width: 140px; /* Wider cards */
+      min-width: 140px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
     .customer-concurrency-item .customer-logo {
-      height: 30px; /* Larger customer logo */
+      height: 30px;
       margin-bottom: 8px;
     }
     .customer-concurrency-item .concurrency-value {
-      font-size: 1.5em; /* Larger text */
-      color: #1e293b;
+      font-size: 1.5em;
+      color: var(--accent-gold);
       margin-top: 5px;
     }
-    /* Logo styling in tables */
+
     .app-platform-logo {
-        height: 24px; /* Adjust size as needed */
-        vertical-align: middle;
-        margin-left: 8px; /* Space between rating and logo */
+      height: 24px;
+      vertical-align: middle;
+      margin-left: 8px;
     }
     td .customer-logo-inline {
-        height: 28px; /* Slightly larger customer logo in table */
-        vertical-align: middle;
-        margin-right: 8px;
+      height: 28px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
 
-    /* Shift Handoff Specific Styling */
+    /* Shift Handoff */
     .shift-handoff-details {
-        margin-top: 1rem;
-        background-color: #fdfdfd;
-        padding: 1.5rem;
-        border-radius: 8px;
-        border: 1px solid #eee;
+      margin-top: 1rem;
+      background-color: var(--bg-card-soft);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-soft);
     }
     .shift-handoff-details h3 {
-        color: #1e293b;
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font-size: 1.3rem;
-        border-bottom: 1px dashed #ccc;
-        padding-bottom: 0.5rem;
+      color: var(--accent-gold);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      border-bottom: 1px dashed #4b5563;
+      padding-bottom: 0.5rem;
     }
     .shift-handoff-details ul {
-        list-style: none;
-        padding: 0;
-        margin-bottom: 1rem;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
     }
     .shift-handoff-details ul li {
-        margin-bottom: 0.5rem;
-        line-height: 1.4;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
     }
     .shift-handoff-details .log-entry {
-        background-color: #f8f8f8;
-        border-left: 3px solid #0056b3;
-        padding: 0.8rem 1rem;
-        margin-bottom: 1rem;
-        border-radius: 4px;
+      background-color: #1e2530;
+      border-left: 4px solid var(--accent-blue);
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
     }
     .shift-handoff-details .log-entry strong {
-        color: #0056b3;
+      color: #e5e5e5;
     }
     .shift-handoff-details .log-entry span.time {
-        font-size: 0.85em;
-        color: #777;
-        margin-left: 10px;
+      font-size: 0.85em;
+      color: var(--text-muted);
+      margin-left: 10px;
+    }
+
+    /* =========================
+       Light Mode Overrides
+       ========================= */
+    body.light-mode {
+      background: #E1E0FF;
+      color: #333;
+    }
+    body.light-mode .section {
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    body.light-mode h2 {
+      color: #1e293b;
+      border-bottom-color: #ddd;
+    }
+    body.light-mode th {
+      background: #e9ecef;
+      color: #1e293b;
+    }
+    body.light-mode tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    body.light-mode .customer-concurrency-item {
+      background: #f0f8ff;
+      border-color: #cfe2ff;
+      color: #0056b3;
+    }
+    body.light-mode .customer-concurrency-item .concurrency-value {
+      color: #1e293b;
+    }
+    body.light-mode .shift-handoff-details {
+      background-color: #fdfdfd;
+      border-color: #eee;
+    }
+    body.light-mode .shift-handoff-details .log-entry {
+      background-color: #f8f8f8;
+      border-left-color: #0056b3;
+    }
+    body.light-mode #theme-toggle {
+      background: rgba(31,41,55,0.9);
+      color: #f9fafb;
     }
   </style>
 </head>
@@ -155,7 +322,11 @@
   <header>
     <img src="image/Quickplay.jpg" alt="Quickplay Logo" class="logo">
     <h1>TechOps 360 - Portal</h1>
+    <button id="theme-toggle">
+      🌙 <span>Dark</span>
+    </button>
   </header>
+
   <div class="container">
 
     <div class="tabs">
@@ -200,27 +371,45 @@
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 1.5rem; text-align: right; font-style: italic; font-size: 0.9em;">Current shift status for operations engineers.</p>
+      <p style="margin-top: 1.5rem; text-align: right; font-style: italic; font-size: 0.9em;">
+        Current shift status for operations engineers.
+      </p>
 
       <h2 style="margin-top: 3rem;">Customer Concurrency</h2>
       <ul class="customer-concurrency-list">
-        <li class="customer-concurrency-item"><img src="image/aha.jpg" alt="Aha Logo" class="customer-logo"> Aha <span class="concurrency-value">4.5K</span></li>
-        <li class="customer-concurrency-item"><img src="image/RSM_Logo.png" alt="RSM Logo" class="customer-logo"> RSM <span class="concurrency-value">1.2K</span></li>
-        <li class="customer-concurrency-item"><img src="image/smart.png" alt="PLDT Logo" class="customer-logo"> PLDT <span class="concurrency-value">3K</span></li>
-        <li class="customer-concurrency-item"><img src="image/Canela.png" alt="Canela Logo" class="customer-logo"> Canela <span class="concurrency-value">800</span></li>
+        <li class="customer-concurrency-item">
+          <img src="image/aha.jpg" alt="Aha Logo" class="customer-logo">
+          Aha
+          <span class="concurrency-value">4.5K</span>
+        </li>
+        <li class="customer-concurrency-item">
+          <img src="image/RSM_Logo.png" alt="RSM Logo" class="customer-logo">
+          RSM
+          <span class="concurrency-value">1.2K</span>
+        </li>
+        <li class="customer-concurrency-item">
+          <img src="image/smart.png" alt="PLDT Logo" class="customer-logo">
+          PLDT
+          <span class="concurrency-value">3K</span>
+        </li>
+        <li class="customer-concurrency-item">
+          <img src="image/Canela.png" alt="Canela Logo" class="customer-logo">
+          Canela
+          <span class="concurrency-value">800</span>
+        </li>
       </ul>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">This list represents currently active customers or user concurrency.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">
+        This list represents currently active customers or user concurrency.
+      </p>
     </div>
 
-<div id="CustomerStats" class="tab-content section">
-  <h2>Customer Stats</h2>
-  <p style="margin-bottom: 0.75rem;">
-    App store ratings and customer sentiment derived from app-store comments (last 7 days).
-  </p>
-
-  <!-- New dashboard root -->
-  <div id="customer-sentiment-dashboard"></div>
-</div>
+    <div id="CustomerStats" class="tab-content section">
+      <h2>Customer Stats</h2>
+      <p style="margin-bottom: 0.75rem;">
+        App store ratings and customer sentiment derived from app-store comments (last 7 days).
+      </p>
+      <div id="customer-sentiment-dashboard"></div>
+    </div>
 
     <div id="SyntheticMonitoring" class="tab-content section">
       <h2>Synthetic Monitoring Results (Live Health Checks)</h2>
@@ -350,7 +539,9 @@
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Health check statuses directly from service monitoring systems.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">
+        Health check statuses directly from service monitoring systems.
+      </p>
     </div>
 
     <div id="ManifestCheck" class="tab-content section">
@@ -417,7 +608,10 @@
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Manifest checks validate content integrity for streaming channels. Data is a representative subset from `RSM_Manifest_URL.txt`.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">
+        Manifest checks validate content integrity for streaming channels. Data is a representative subset from
+        <code>RSM_Manifest_URL.txt</code>.
+      </p>
     </div>
 
     <div id="ShiftHandoffs" class="tab-content section">
@@ -443,7 +637,7 @@
         <div class="log-entry">
           <strong>Changes:</strong> <span class="time">9:35 AM</span>
           <ul>
-            <li><strong>CHG0102910:</strong> [LocalNow] HLS & EPG URL Changes for one Live Channel in AMD - Completed</li>
+            <li><strong>CHG0102910:</strong> [LocalNow] HLS &amp; EPG URL Changes for one Live Channel in AMD - Completed</li>
             <li><strong>[AHA]</strong> Indian Idol Audition portal - Telugu Indian Idol - Update</li>
           </ul>
         </div>
@@ -463,7 +657,9 @@
             <li>Health alerts have been configured for Telekon Malaysia's microservices endpoint.</li>
           </ul>
         </div>
-        <p style="margin-top: 1rem; text-align: right; font-style: italic; font-size: 0.9em;">Detailed shift log provided by Praveen Kumar.</p>
+        <p style="margin-top: 1rem; text-align: right; font-style: italic; font-size: 0.9em;">
+          Detailed shift log provided by Praveen Kumar.
+        </p>
       </div>
     </div>
 
@@ -500,12 +696,18 @@
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Simulated RBAC rules. Actual implementation would integrate with Keycloak or similar SSO.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">
+        Simulated RBAC rules. Actual implementation would integrate with Keycloak or similar SSO.
+      </p>
     </div>
 
     <div id="IssueSearch" class="tab-content section">
       <h2>Issue Resolution Search (Ops Memory)</h2>
-      <input type="text" placeholder="Search for past issues (e.g., 'buffer timeout', 'payment gateway error')" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 1rem;">
+      <input
+        type="text"
+        placeholder="Search for past issues (e.g., 'buffer timeout', 'payment gateway error')"
+        style="width: 100%; padding: 0.8rem; border: 1px solid #4b5563; border-radius: 5px; margin-bottom: 1rem; background-color: #020617; color: #e5e5e5;"
+      >
       <table>
         <thead>
           <tr>
@@ -544,7 +746,9 @@
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">Search functionality is simulated. Real implementation uses Elasticsearch/PostgreSQL full-text search.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 0.9em;">
+        Search functionality is simulated. Real implementation uses Elasticsearch/PostgreSQL full-text search.
+      </p>
     </div>
 
   </div>
@@ -556,45 +760,84 @@
       tabcontent = document.getElementsByClassName("tab-content");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
+        tabcontent[i].classList.remove("active");
       }
       tablinks = document.getElementsByClassName("tab-button");
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-      document.getElementById(tabName).style.display = "block";
+      var target = document.getElementById(tabName);
+      if (target) {
+        target.style.display = "block";
+        target.classList.add("active");
+      }
       evt.currentTarget.className += " active";
     }
 
-    // Default open the Home tab on page load
+    function updateThemeToggleLabel() {
+      var btn = document.getElementById("theme-toggle");
+      if (!btn) return;
+      var span = btn.querySelector("span");
+      if (document.body.classList.contains("light-mode")) {
+        btn.firstChild.textContent = "☀️";
+        if (span) span.textContent = "Light";
+      } else {
+        btn.firstChild.textContent = "🌙";
+        if (span) span.textContent = "Dark";
+      }
+    }
+
     document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("Home").style.display = "block";
-      document.querySelector(".tab-button").classList.add("active");
+      // Default open Home tab
+      var homeTab = document.getElementById("Home");
+      if (homeTab) {
+        homeTab.style.display = "block";
+        homeTab.classList.add("active");
+      }
+
+      // Apply saved theme
+      var savedTheme = localStorage.getItem("techops-theme");
+      if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+      }
+      updateThemeToggleLabel();
+
+      // Theme toggle handler
+      var toggleBtn = document.getElementById("theme-toggle");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function() {
+          document.body.classList.toggle("light-mode");
+          var mode = document.body.classList.contains("light-mode") ? "light" : "dark";
+          localStorage.setItem("techops-theme", mode);
+          updateThemeToggleLabel();
+        });
+      }
     });
   </script>
 
+  <!-- Botpress Chat Widget -->
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   <script>
-  window.botpressWebChat.init({
+    window.botpressWebChat.init({
       "composerPlaceholder": "Chat with TechOps Bot",
       "botConversationDescription": "Your AI assistant for TechOps 360",
-      "botId": "56efefce-fa7c-41e6-9846-ec36c7c6704a", // <-- Replace this
+      "botId": "56efefce-fa7c-41e6-9846-ec36c7c6704a",
       "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
       "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "a7e5af98-3b12-4265-a9f9-6f3fcd500b93", // <-- Replace this (often the same as botId)
-      // "webhookId" is often not needed if you use the messagingUrl
+      "clientId": "a7e5af98-3b12-4265-a9f9-6f3fcd500b93",
       "lazySocket": true,
       "themeName": "prism",
       "botName": "TechOps Assistant",
-      // "avatarUrl": "URL_TO_YOUR_BOT_AVATAR_IMAGE.png", // Optional: Replace this
       "stylesheet": "https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
       "frontendVersion": "v1",
       "useSessionStorage": true,
       "enableConversationDeletion": true,
       "theme": "prism",
       "themeColor": "#2563eb"
-  });
-</script>
-    <!-- Customer sentiment dashboard logic -->
+    });
+  </script>
+
+  <!-- Customer sentiment dashboard logic -->
   <script src="customer-sentiment.js?v=2"></script>
-  </body>
+</body>
 </html>
