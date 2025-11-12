@@ -1,27 +1,33 @@
-// ops-calendar.js v4 — resilient GVIZ + clean rendering (no freezes)
+// ops-calendar.js v5 — GID-based GViz, resilient parsing, on-shift filter
 
-console.log("[OpsCalendar] v4 loaded");
+console.log("[OpsCalendar] v5 loaded");
 
-// === Config ===
-const OPS_SHEET_ID   = "1tIggu_-kutucmc-owxhr0bwWCQKiK1n-bDzdEy8u4Vw";
-const OPS_SHEET_NAME = "November 2025";
-const OPS_GVIZ_URL =
-  `https://docs.google.com/spreadsheets/d/${OPS_SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(OPS_SHEET_NAME)}&tqx=out:json`;
+// === Sheet config (use gid to avoid name mismatches) ===
+const OPS_SHEET_ID  = "1tIggu_-kutucmc-owxhr0bwWCQKiK1n-bDzdEy8u4Vw";
+const OPS_SHEET_GID = "2113548477"; // <-- from your link
+const OPS_GVIZ_URL  =
+  `https://docs.google.com/spreadsheets/d/${OPS_SHEET_ID}/gviz/tq?gid=${OPS_SHEET_GID}&tqx=out:json&tq=`; // empty query returns whole sheet
 
+// DOM + timing
 const T_BODY_ID = "ops-calendar-body";
-const FETCH_TIMEOUT_MS = 8000;     // never hang UI
-const REFRESH_MS       = 5 * 60e3; // 5 min auto-refresh
+const FETCH_TIMEOUT_MS = 10000;
+const REFRESH_MS       = 5 * 60 * 1000; // 5 minutes
 
-// Fixed offsets (simple model; EST no DST)
-const ZONE_OFFSETS_MIN = { IST: 330, MYT: 480, EST: -300 };
+// Fixed UTC offsets (simple model; no DST for EST). Add as needed.
+const ZONE_OFFSETS_MIN = {
+  IST: 330,  // UTC+5:30
+  MYT: 480,  // UTC+8
+  EST: -300, // UTC-5
+  GST: 240,  // UTC+4 (Dubai)
+};
 
+// ---------- helpers ----------
 function todayLabelUS() {
   const d = new Date();
   return new Intl.DateTimeFormat("en-US", {
-    weekday: "long", month: "long", day: "numeric", year: "numeric"
+    weekday: "long", month: "long", day: "numeric", year: "numeric",
   }).format(d);
 }
-
 function cleanCellText(str) {
   if (!str) return "";
   return String(str)
@@ -29,7 +35,6 @@ function cleanCellText(str) {
     .replace(/\s+/g, " ")
     .trim();
 }
-
 function parseTimeToMinutes(str) {
   if (!str) return null;
   const m = str.trim().match(/(\d{1,2}):(\d{2})\s*([AP]M)/i);
@@ -39,7 +44,6 @@ function parseTimeToMinutes(str) {
   if (ap === "AM" && h === 12)  h = 0;
   return h * 60 + mm;
 }
-
 function classifyShift(txt) {
   const v = (txt || "").toLowerCase();
   if (!v) return { label: "—", css: "status-off" };
@@ -48,10 +52,9 @@ function classifyShift(txt) {
   if (v.includes("off"))  return { label: "Off",  css: "status-off"  };
   return { label: "Working", css: "status-working" };
 }
-
 function isCurrentlyOnShift(shiftText) {
   if (!shiftText) return false;
-  const m = shiftText.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*(IST|MYT|EST)/i);
+  const m = shiftText.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*(IST|MYT|EST|GST)/i);
   if (!m) return false;
   const startMin = parseTimeToMinutes(m[1]);
   const endMin   = parseTimeToMinutes(m[2]);
@@ -65,38 +68,40 @@ function isCurrentlyOnShift(shiftText) {
 
   return (startMin <= endMin)
     ? nowLocal >= startMin && nowLocal < endMin
-    : nowLocal >= startMin || nowLocal < endMin; // overnight
+    : nowLocal >= startMin || nowLocal < endMin; // overnight window
+}
+function renderMessage(html) {
+  const tbody = document.getElementById(T_BODY_ID);
+  if (tbody) tbody.innerHTML = `<tr><td colspan="3">${html}</td></tr>`;
 }
 
 async function fetchGViz(url, timeoutMs) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
-    const res = await fetch(url, { cache: "no-store", signal: ctrl.signal, mode: "cors" });
+    // cache-bust to avoid any stale auth redirect caches
+    const bust = (url.includes("?") ? "&" : "?") + "_ts=" + Date.now();
+    const res = await fetch(url + bust, { cache: "no-store", signal: ctrl.signal, mode: "cors" });
     if (!res.ok) throw new Error("HTTP_" + res.status);
     const text = await res.text();
 
-    // Robust extraction of setResponse(...)
-    const match = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]+?)\);?/);
-    if (!match) throw new Error("GVIZ_WRAPPER_NOT_FOUND");
-    return JSON.parse(match[1]);
+    // Expected: google.visualization.Query.setResponse({...});
+    const m = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]+?)\);?\s*$/);
+    if (!m) throw new Error("GVIZ_WRAPPER_NOT_FOUND");
+    return JSON.parse(m[1]);
   } finally {
     clearTimeout(t);
   }
 }
 
-// Find today's column index:
+// Prefer header in table.cols; fallback to first row (sheet header)
 function findTodayColumn(gv) {
   const target = todayLabelUS();
-
-  // 1) Preferred: look at table.cols[].label
   const cols = gv.table?.cols || [];
   for (let i = 1; i < cols.length; i++) {
-    const lab = (cols[i]?.label || "").trim();
-    if (lab === target) return i;
+    const label = (cols[i]?.label || "").trim();
+    if (label === target) return i;
   }
-
-  // 2) Fallback: first data row looks like a header row in the sheet
   const rows = gv.table?.rows || [];
   if (rows[0]?.c) {
     for (let i = 1; i < rows[0].c.length; i++) {
@@ -105,14 +110,7 @@ function findTodayColumn(gv) {
       if (formatted === target) return i;
     }
   }
-
   return -1;
-}
-
-function renderMessage(html) {
-  const tbody = document.getElementById(T_BODY_ID);
-  if (!tbody) return;
-  tbody.innerHTML = `<tr><td colspan="3">${html}</td></tr>`;
 }
 
 function renderOnShift(gv, todayCol) {
@@ -122,7 +120,7 @@ function renderOnShift(gv, todayCol) {
   const rows = gv.table?.rows || [];
   const out = [];
 
-  // Start from r=1 (r=0 would be “header” row if your sheet has one)
+  // r=1 onwards (skip any literal header row in the sheet)
   for (let r = 1; r < rows.length; r++) {
     const rCells = rows[r].c || [];
     const name = rCells[0]?.v;
@@ -152,17 +150,20 @@ function renderOnShift(gv, todayCol) {
 }
 
 async function loadOpsCalendar() {
-  const tbody = document.getElementById(T_BODY_ID);
-  if (!tbody) return;
   renderMessage("Loading schedule…");
-
   try {
     const gv = await fetchGViz(OPS_GVIZ_URL, FETCH_TIMEOUT_MS);
-    const col = findTodayColumn(gv);
 
+    // Basic sanity check: must have a table
+    if (!gv?.table?.rows?.length) {
+      renderMessage("No schedule data found in this sheet/tab.");
+      return;
+    }
+
+    const col = findTodayColumn(gv);
     if (col === -1) {
       const wanted = todayLabelUS();
-      renderMessage(`Could not find a column for <strong>${wanted}</strong> in the sheet <em>${OPS_SHEET_NAME}</em>.`);
+      renderMessage(`Could not find a date column for <strong>${wanted}</strong> in this tab.`);
       return;
     }
 
@@ -175,5 +176,5 @@ async function loadOpsCalendar() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadOpsCalendar();
-  if (REFRESH_MS > 0) setInterval(loadOpsCalendar, REFRESH_MS);
+  setInterval(loadOpsCalendar, REFRESH_MS);
 });
