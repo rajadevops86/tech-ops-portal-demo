@@ -64,4 +64,418 @@
 
     .shell{display:grid;grid-template-columns:230px 1fr 380px;gap:18px;padding:18px;max-width:1400px;margin:0 auto}
     @media(max-width:1200px){.shell{grid-template-columns:1fr}.right-col{order:3}}
-    .side{background
+    .side{background:var(--card-bg);border:1px solid var(--card-border);border-radius:18px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:8px}
+    .side h6{margin:6px 8px;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .navbtn{display:flex;align-items:center;gap:10px;background:transparent;color:var(--muted);padding:10px 12px;border-radius:12px;border:1px solid transparent;cursor:pointer}
+    .navbtn.active,.navbtn:hover{color:var(--text);border-color:var(--card-border);background:var(--row-alt)}
+    .hr{height:1px;background:var(--card-border);border:none;margin:6px 0}
+
+    .panel{display:none}
+    .panel.active{display:block}
+    .card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:22px;box-shadow:var(--shadow);padding:14px 16px;position:relative}
+    h3{margin:6px 0 10px;font-size:1.08rem}
+
+    .grid-center{display:grid;grid-template-rows:auto auto auto;gap:16px}
+    .grid-right{display:grid;grid-template-rows:auto auto;gap:16px}
+    table{width:100%;border-collapse:collapse;font-size:.9rem}
+    thead{background:var(--table-head)}
+    th,td{padding:8px 10px;border-bottom:1px solid var(--card-border);text-align:left}
+    tbody tr:nth-child(even){background:var(--row-alt)}
+    tbody tr:hover{background:var(--row-hover)}
+
+    .sev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .sev{background:var(--tile-bg);border:1px solid var(--card-border);border-radius:14px;padding:10px;text-align:center}
+    .sev h4{margin:2px 0 6px;font-size:.9rem;color:var(--muted)}
+    .sev .n{font-size:1.4rem;font-weight:800}
+    .sev-p1 .n{color:var(--sev-p1)} .sev-p2 .n{color:var(--sev-p2)} .sev-p3 .n{color:var(--sev-p3)} .sev-p4 .n{color:var(--sev-p4)}
+
+    /* Concurrency */
+    .conc-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;overflow:auto;flex:1}
+    .conc-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--tile-bg);border:1px solid var(--card-border)}
+    .conc-left{display:flex;align-items:center;gap:8px}
+    .logo-sq{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;overflow:hidden;background:#fff;border:1px solid rgba(2,6,23,.06)}
+    .logo-sq img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+    .badge{font-size:.78rem;border:1px solid rgba(248,250,252,.35);padding:2px 8px;border-radius:999px;display:inline-flex;gap:6px;align-items:center;background:var(--pill);color:var(--text)}
+    .badge .v{color:#facc15;font-weight:800}
+
+    /* Equal-height cards + scrollable bodies */
+    .fixed-eq{height:var(--card-fixed-h);display:flex;flex-direction:column}
+    .table-wrap{overflow:auto;margin-top:6px}
+
+    /* ON SHIFT pill */
+    .pill-on{display:inline-block;padding:2px 10px;border-radius:999px;font-weight:800;color:#16a34a;border:1px solid rgba(22,163,74,.35);background:rgba(22,163,74,.10)}
+
+    /* Slot machine */
+    .slot-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:18px;padding-bottom:18px}
+    .slots{display:flex;gap:10px}
+    .slot{width:72px;height:92px;border-radius:14px;background:var(--tile-bg);border:1px solid var(--card-border);overflow:hidden;position:relative;box-shadow:inset 0 -10px 20px rgba(255,255,255,.03)}
+    .digit-col{position:absolute;left:0;top:0;width:100%;transition:transform 1100ms cubic-bezier(.22,1,.36,1)}
+    .digit{height:92px;display:grid;place-items:center;font-weight:800;font-size:2.35rem;color:var(--text)}
+    .slot-sub{font-size:.86rem;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <!-- TOP -->
+  <header class="top">
+    <div class="brand">
+      <div class="logo"><img src="image/Quickplay.jpg" alt="Quickplay" style="height:18px"></div>
+      <div>
+        <div class="title">TechOps 360</div>
+        <div class="sub">Operational intelligence for Quickplay customers</div>
+      </div>
+    </div>
+    <div>
+      <span class="pill"><span class="dot"></span>24×7 follow-the-sun</span>
+      <button id="modeToggle" class="toggle" style="margin-left:8px">Light</button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <!-- SIDE NAV -->
+    <aside class="side">
+      <h6>Views</h6>
+      <button class="navbtn active" data-panel="panel-dashboard">Dashboard</button>
+      <button class="navbtn" data-panel="panel-cust">Customer Stats</button>
+      <button class="navbtn" data-panel="panel-synth">Synthetic Monitoring</button>
+      <button class="navbtn" data-panel="panel-manif">Manifest Check</button>
+      <button class="navbtn" data-panel="panel-handoff">Shift Handoffs</button>
+      <button class="navbtn" data-panel="panel-rbac">RBAC</button>
+      <button class="navbtn" data-panel="panel-issues">Issue Search</button>
+      <hr class="hr">
+      <div class="sub" style="padding:6px 8px">Internal view. Live: Ops calendar (Google Sheets). Others are static samples until NR/Grafana/ServiceNow wiring.</div>
+    </aside>
+
+    <!-- CENTER PANELS -->
+    <main class="panel active" id="panel-dashboard">
+      <div class="grid-center">
+        <!-- Ops Calendar -->
+        <section class="card fixed-eq">
+          <h3>Operations Calendar (Today)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
+              <tbody id="ops-calendar-body"><tr><td colspan="3">Loading schedule…</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Slot machine -->
+        <section class="card slot-card">
+          <h3 style="text-align:center">Total incidents since org inception</h3>
+          <div class="slots" id="slotCounter"></div>
+          <div class="slot-sub">Demo spins then settles on today’s placeholder total.</div>
+        </section>
+
+        <!-- Severity -->
+        <section class="card">
+          <h3>Incidents today</h3>
+          <div class="sev-grid">
+            <div class="sev sev-p1"><h4>P1</h4><div class="n" id="p1">1</div></div>
+            <div class="sev sev-p2"><h4>P2</h4><div class="n" id="p2">3</div></div>
+            <div class="sev sev-p3"><h4>P3</h4><div class="n" id="p3">4</div></div>
+            <div class="sev sev-p4"><h4>P4</h4><div class="n" id="p4">6</div></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- RIGHT (on dashboard) -->
+    <aside class="panel active right-col" id="panel-dashboard-right">
+      <div class="grid-right">
+        <section class="card fixed-eq" id="concCard">
+          <h3>Customer concurrency</h3>
+          <ul class="conc-list" id="concList">
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/aha_Logo.png" alt="Aha"></div><div>Aha</div></div><div class="badge">Live <span class="v">4.5K</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/PilipinasLive_Logo.png" alt="Philippinas Live"></div><div>Philippinas Live</div></div><div class="badge">Live <span class="v">1.8K</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Cignal_Logo.png" alt="Cignal"></div><div>Cignal</div></div><div class="badge">Live <span class="v">2.4K</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Unifi2.0_logo.png" alt="Unifi 2.0"></div><div>Unifi 2.0</div></div><div class="badge">Live <span class="v">1.1K</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Univision_logo.webp" alt="Univision"></div><div>Univision</div></div><div class="badge">Live <span class="v">2.0K</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/UnivisionNow_logo.png" alt="Univision Now"></div><div>Univision Now</div></div><div class="badge">Live <span class="v">900</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/LocalNow_Logo.png" alt="Local Now"></div><div>Local Now</div></div><div class="badge">Live <span class="v">700</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/TWC_Logo.png" alt="TWC (The Weather Channel)"></div><div>TWC</div></div><div class="badge">Live <span class="v">1.6K</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/GOTHAM_Logo.png" alt="GOTHAM"></div><div>GOTHAM</div></div><div class="badge">Live <span class="v">400</span></div></li>
+            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/CanelaTV_Logo.png" alt="Canela TV"></div><div>Canela TV</div></div><div class="badge">Live <span class="v">800</span></div></li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3 class="g-title">Availability</h3>
+          <svg id="gauge" class="gauge" viewBox="0 0 360 200">
+            <defs>
+              <linearGradient id="ggrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="50%" stop-color="#f59e0b"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <path d="M20,180 A160,160 0 0 1 340,180" stroke="rgba(148,163,184,.28)" stroke-width="18" fill="none"/>
+            <path id="gArc" d="M20,180 A160,160 0 0 1 340,180" stroke="url(#ggrad)" stroke-width="18" fill="none" stroke-linecap="round" stroke-dasharray="0 503"/>
+            <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="g-label" id="gPct">96%</div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- CUSTOMER STATS -->
+    <main class="panel" id="panel-cust">
+      <section class="card">
+        <h3>Customer Stats</h3>
+        <div id="customer-sentiment-dashboard"></div>
+      </section>
+    </main>
+
+    <!-- SYNTHETIC MONITORING (static sample) -->
+    <main class="panel" id="panel-synth">
+      <section class="card">
+        <h3>Synthetic Monitoring</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Check</th><th>Location</th><th>Interval</th><th>Last run</th><th>Status</th><th>p50 (ms)</th></tr></thead>
+            <tbody>
+              <tr><td>Playback start – Aha</td><td>Mumbai</td><td>5 min</td><td>Just now</td><td style="color:#16a34a">PASS</td><td>860</td></tr>
+              <tr><td>DRM license – Univision</td><td>Virginia</td><td>5 min</td><td>2 min ago</td><td style="color:#16a34a">PASS</td><td>420</td></tr>
+              <tr><td>Login – Unifi 2.0</td><td>Kuala Lumpur</td><td>5 min</td><td>4 min ago</td><td style="color:#d97706">FLAKY</td><td>1280</td></tr>
+              <tr><td>Search – Pilipinas Live</td><td>Singapore</td><td>10 min</td><td>6 min ago</td><td style="color:#dc2626">FAIL</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- MANIFEST CHECK (static sample) -->
+    <main class="panel" id="panel-manif">
+      <section class="card">
+        <h3>Manifest Check</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Customer</th><th>URL</th><th>HTTP</th><th>TS segments</th><th>Codec</th><th>CMAF</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Aha</td><td>…/aha/master.m3u8</td><td>200</td><td>6</td><td>H.264/AAC</td><td>Yes</td><td style="color:#16a34a">OK</td></tr>
+              <tr><td>Cignal</td><td>…/cignal/master.m3u8</td><td>200</td><td>6</td><td>H.264/AAC</td><td>No</td><td style="color:#f59e0b">Warn</td></tr>
+              <tr><td>Univision Now</td><td>…/uni-now/master.m3u8</td><td>404</td><td>—</td><td>—</td><td>—</td><td style="color:#dc2626">Error</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- SHIFT HANDOFFS (static sample) -->
+    <main class="panel" id="panel-handoff">
+      <section class="card">
+        <h3>Shift Handoffs</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>From → To</th><th>Window</th><th>P1/P2</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>IST → MYT</td><td>13:00–22:00 IST</td><td>0/1</td><td>Unifi login spike around 17:30; monitor.</td></tr>
+              <tr><td>MYT → EST</td><td>13:00–22:00 MYT</td><td>0/0</td><td>Aha DRM licence CPU at 75% — watch NR alert.</td></tr>
+              <tr><td>EST → IST</td><td>13:00–22:00 EST</td><td>1/0</td><td>Pilipinas search API failed 3/10 checks.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- RBAC (static sample) -->
+    <main class="panel" id="panel-rbac">
+      <section class="card">
+        <h3>RBAC</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Role</th><th>Scope</th><th>Permissions</th></tr></thead>
+            <tbody>
+              <tr><td>L1 SOC</td><td>Eyes-on-glass</td><td>Read alerts, create incident, comms template</td></tr>
+              <tr><td>L2 App Ops</td><td>Services</td><td>Restart pods, feature toggles, config change (std)</td></tr>
+              <tr><td>L3 Platform</td><td>Core</td><td>Deploy patches, DB ops, infra scale</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- ISSUE SEARCH (static sample) -->
+    <main class="panel" id="panel-issues">
+      <section class="card">
+        <h3>Issue Search</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Customer</th><th>Severity</th><th>Opened</th><th>Summary</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>INC-8721</td><td>Pilipinas Live</td><td>P2</td><td>Today 14:07</td><td>Search API timeout</td><td style="color:#d97706">Mitigating</td></tr>
+              <tr><td>INC-8714</td><td>Univision Now</td><td>P3</td><td>Yesterday</td><td>Playback start > 5s p95</td><td style="color:#16a34a">Resolved</td></tr>
+              <tr><td>INC-8697</td><td>Aha</td><td>P1</td><td>2 days ago</td><td>DRM licence outage</td><td style="color:#16a34a">Resolved</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- THEME TOGGLE -->
+  <script>
+    (function(){
+      const root=document.documentElement,btn=document.getElementById('modeToggle');
+      const saved=localStorage.getItem('techops-theme');
+      if(saved){
+        root.setAttribute('data-theme',saved);
+        btn.textContent=saved==='dark'?'Light':'Dark';
+        document.body.classList.toggle('light-mode', saved==='light')
+      }
+      btn.addEventListener('click',()=>{
+        const cur=root.getAttribute('data-theme')||'dark';
+        const next=cur==='dark'?'light':'dark';
+        root.setAttribute('data-theme',next);
+        btn.textContent=next==='dark'?'Light':'Dark';
+        localStorage.setItem('techops-theme',next);
+        document.body.classList.toggle('light-mode', next==='light');
+        document.getElementById('needle').setAttribute('stroke', next==='dark' ? '#ffffff' : '#111827');
+      });
+    })();
+  </script>
+
+  <!-- MENU ROUTER -->
+  <script>
+    (function(){
+      const nav = Array.from(document.querySelectorAll('.navbtn'));
+      const panels = {
+        'panel-dashboard': document.getElementById('panel-dashboard'),
+        'panel-dashboard-right': document.getElementById('panel-dashboard-right'),
+        'panel-cust': document.getElementById('panel-cust'),
+        'panel-synth': document.getElementById('panel-synth'),
+        'panel-manif': document.getElementById('panel-manif'),
+        'panel-handoff': document.getElementById('panel-handoff'),
+        'panel-rbac': document.getElementById('panel-rbac'),
+        'panel-issues': document.getElementById('panel-issues'),
+      };
+      function show(id){
+        Object.values(panels).forEach(p=>p.classList.remove('active'));
+        if(id==='panel-dashboard'){
+          panels['panel-dashboard'].classList.add('active');
+          panels['panel-dashboard-right'].classList.add('active');
+        } else {
+          panels[id].classList.add('active');
+        }
+      }
+      nav.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          nav.forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+          show(btn.dataset.panel);
+        });
+      });
+    })();
+  </script>
+
+  <!-- SLOT MACHINE (robust + persistent) -->
+  <script>
+    (function(){
+      const TARGET="654432";      // placeholder total
+      const H=92;                 // must match .digit height
+      const wrap=document.getElementById('slotCounter');
+      wrap.innerHTML='';
+
+      function makeCol(digit){
+        const slot=document.createElement('div'); slot.className='slot';
+        const col=document.createElement('div');  col.className='digit-col';
+        // preload digits (3 full cycles 0..9) + final digit
+        for(let c=0;c<3;c++){
+          for(let i=0;i<10;i++){
+            const e=document.createElement('div'); e.className='digit'; e.textContent=i; col.appendChild(e);
+          }
+        }
+        const last=document.createElement('div'); last.className='digit'; last.textContent=digit; col.appendChild(last);
+        slot.appendChild(col);
+
+        // animate after paint
+        requestAnimationFrame(()=>{ requestAnimationFrame(()=>{
+          const end=30 + Number(digit); // 3 cycles (30) + final digit offset
+          col.style.transform=`translateY(-${end*H}px)`;
+        })});
+
+        // lock final state after transition
+        col.addEventListener('transitionend',()=>{ col.style.transition='none'; });
+
+        return slot;
+      }
+      TARGET.split('').forEach(d=>wrap.appendChild(makeCol(d)));
+    })();
+  </script>
+
+  <!-- AVAILABILITY GAUGE -->
+  <script>
+    (function(){
+      const targetPct=96; // demo value
+      const path=document.getElementById('gArc');
+      const needle=document.getElementById('needle');
+      const label=document.getElementById('gPct');
+      const circumference=503, cx=180, cy=180, len=130;
+      const start=performance.now(), dur=1200;
+      const pctToDeg=p=>180-(p*1.8);
+      function step(now){
+        const t=Math.min(1,(now-start)/dur), eased=1-Math.pow(1-t,3), pct=targetPct*eased;
+        label.textContent=Math.round(pct)+'%';
+        const dash=(pct/100)*circumference; path.setAttribute('stroke-dasharray',`${dash} ${circumference-dash}`);
+        const rad=pctToDeg(pct)*Math.PI/180, x2=cx+len*Math.cos(rad), y2=cy-len*Math.sin(rad);
+        needle.setAttribute('x2',x2); needle.setAttribute('y2',y2);
+        if(t<1) requestAnimationFrame(step);
+      }
+      const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+      needle.setAttribute('stroke', theme==='dark' ? '#ffffff' : '#111827');
+      requestAnimationFrame(step);
+    })();
+  </script>
+
+  <!-- GOOGLE SHEETS OPS CALENDAR (your implementation) -->
+  <script src="ops-calendar.js"></script>
+
+  <!-- Post-process ops table: show only Working/On Shift and style the badge; safe-guarded -->
+  <script>
+    (function () {
+      const tbody = document.getElementById('ops-calendar-body');
+      if (!tbody) return;
+
+      const fixHeights = () =>
+        document.querySelectorAll('.fixed-eq')
+          .forEach(el => el.style.height =
+            getComputedStyle(document.documentElement)
+              .getPropertyValue('--card-fixed-h'));
+      fixHeights();
+
+      const makeOnShift = (cell) => {
+        cell.textContent = '';
+        const span = document.createElement('span');
+        span.className = 'pill-on';
+        span.textContent = 'ON SHIFT';
+        cell.appendChild(span);
+      };
+
+      const process = () => {
+        const rows = Array.from(tbody.querySelectorAll('tr'))
+          .filter(r => r.querySelectorAll('td').length >= 3);
+
+        let visible = 0;
+        rows.forEach(r => {
+          const tds = r.querySelectorAll('td');
+          const statusTxt = (tds[1].textContent || '').toLowerCase();
+          const isOn = /(working\s*now|on\s*shift|onshift)/.test(statusTxt);
+          if (isOn) { r.style.display=''; makeOnShift(tds[1]); visible++; }
+          else { r.style.display='none'; }
+        });
+
+        if (visible === 0) {
+          tbody.innerHTML = '<tr><td colspan="3">No engineers on shift right now.</td></tr>';
+        }
+      };
+
+      const mo = new MutationObserver(() => process());
+      mo.observe(tbody, { childList: true, subtree: true, characterData: true });
+
+      window.addEventListener('load', () => setTimeout(process, 400));
+    })();
+  </script>
+
+  <!-- CUSTOMER SENTIMENT DASHBOARD (overview + details) -->
+  <script src="customer-sentiment.js?v=5"></script>
+</body>
+</html>
