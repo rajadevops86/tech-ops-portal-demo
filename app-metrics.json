@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-11-12T03:06:55.467294+00:00",
+  "generated_utc": "2025-11-12T17:13:58.988029+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53097
       },
       "android": {
-        "rating": 4.4199657
+        "rating": 4.420064
       },
       "sentiment": {
-        "score": 0.52,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,6 +31,11 @@
         ],
         "topNegative": [
           {
+            "text": "worst app I am logout my account still money cut worst experience as Allu Arjun Fan ga. i give two time you can give refund i can file the case . # aha app.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Worst experience today videos not streaming.. Download videos Not Playing and when I am started playing the video my mobile was shutdown very worst app my amount was lost",
             "rating": 2,
             "platform": "Android"
@@ -38,11 +43,6 @@
           {
             "text": "worst",
             "rating": 2,
-            "platform": "Android"
-          },
-          {
-            "text": "Worst app it doesn't work well in my tv too lag and worst experience with the app I stopped my subscription and I don't want to use it anymore.",
-            "rating": 1,
             "platform": "Android"
           }
         ],
@@ -76,10 +76,10 @@
         "rating": 4.54202
       },
       "android": {
-        "rating": 4.6108913
+        "rating": 4.607346
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.562,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 1.75291
       },
       "android": {
-        "rating": 3.7910447
+        "rating": 3.7906976
       },
       "sentiment": {
-        "score": 0.543,
+        "score": 0.541,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -203,6 +203,282 @@
           },
           {
             "label": "ads",
+            "trend": "steady"
+          }
+        ]
+      }
+    },
+    {
+      "appName": "Univision",
+      "ios": {
+        "rating": 4.44792
+      },
+      "android": {
+        "rating": 3.6741827
+      },
+      "sentiment": {
+        "score": 0.507,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "I Loved It!",
+            "rating": 5,
+            "platform": "Android"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Univision Now 2.0, Terrible 1/10",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "terrible it's always twitching",
+            "rating": 1,
+            "platform": "Android"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          }
+        ]
+      }
+    },
+    {
+      "appName": "Univision Now",
+      "ios": {
+        "rating": 2.78727
+      },
+      "android": {
+        "rating": 3.5516796
+      },
+      "sentiment": {
+        "score": 0.489,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "Awesome!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "very good",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "It doesn’t work on my Roku device … paying a membership and not being able to use the services…. Please fix this asap",
+            "rating": 1,
+            "platform": "iOS"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "horrible actualización se pausa mucho",
+            "rating": 1,
+            "platform": "iOS"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "steady"
+          }
+        ]
+      }
+    },
+    {
+      "appName": "Canela.TV",
+      "ios": {
+        "rating": 4.75692
+      },
+      "android": {
+        "rating": 4.060109
+      },
+      "sentiment": {
+        "score": 0.567,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "Love this app!!!!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Best wishes",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Great shows and love all the video music content!!!",
+            "rating": 5,
+            "platform": "iOS"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "Too many ads. Demasiados anuncios si tan solo fueran al principio pues está bien pero cada 5 min? Es horrible",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "I hate the adds",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Horrible app.son puros comerciales",
+            "rating": 1,
+            "platform": "Android"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
+            "trend": "steady"
+          }
+        ]
+      }
+    },
+    {
+      "appName": "Cignal Play",
+      "ios": {
+        "rating": 4.36172
+      },
+      "android": {
+        "rating": 4.6202292
+      },
+      "sentiment": {
+        "score": 0.585,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "excellent 👌👍",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "great app!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Just pay and watch very good.",
+            "rating": 5,
+            "platform": "Android"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "Keeps lagging. Premium subscription but bad service.",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           }
         ]
