@@ -91,19 +91,24 @@
     .sev-p2 .n{color:var(--sev-p2)}
     .sev-p3 .n{color:var(--sev-p3)}
     .sev-p4 .n{color:var(--sev-p4)}
-    /* Concurrency */
-    .conc-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+
+    /* Equal-height cards + scrollable areas */
+    .fixed-eq{height:var(--card-fixed-h, 392px);display:flex;flex-direction:column}
+    .table-wrap{overflow:auto;margin-top:6px}
+    .conc-card{height:var(--card-fixed-h, 392px);display:flex;flex-direction:column}
+    .conc-header{flex:0 0 auto;margin:0 0 6px 0}
+    .conc-scroll{flex:1 1 auto;overflow:auto;padding-right:4px;-webkit-overflow-scrolling:touch}
+    .conc-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
     .conc-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--tile-bg);border:1px solid var(--card-border)}
     .conc-left{display:flex;align-items:center;gap:8px}
     .logo-sq{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;overflow:hidden;background:#fff;border:1px solid rgba(2,6,23,.06)}
     .logo-sq img{max-width:100%;max-height:100%;object-fit:contain;display:block}
     .badge{font-size:.78rem;border:1px solid rgba(248,250,252,.35);padding:2px 8px;border-radius:999px;display:inline-flex;gap:6px;align-items:center;background:var(--pill);color:var(--text)}
     .badge .v{color:#facc15;font-weight:800}
-    /* Equal-height cards + scrollable table body */
-    .fixed-eq{height:var(--card-fixed-h);display:flex;flex-direction:column}
-    .table-wrap{overflow:auto;margin-top:6px}
-    /* ON SHIFT pill */
+
+    /* “ON SHIFT” pill */
     .pill-on{display:inline-block;padding:2px 10px;border-radius:999px;font-weight:800;color:#16a34a;border:1px solid rgba(22,163,74,.35);background:rgba(22,163,74,.10)}
+
     /* Slot machine */
     .slot-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:18px;padding-bottom:18px}
     .slots{display:flex;gap:10px}
@@ -181,21 +186,23 @@
     <!-- RIGHT (on dashboard) -->
     <aside class="panel active right-col" id="panel-dashboard-right">
       <div class="grid-right">
-        <section class="card fixed-eq" id="concCard">
-          <h3>Customer concurrency</h3>
-          <ul class="conc-list" id="concList">
-            <!-- Each item uses your actual logo paths -->
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/aha_Logo.png" alt="Aha"></div><div>Aha</div></div><div class="badge">Live <span class="v">4.5K</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/PilipinasLive_Logo.png" alt="Philippinas Live"></div><div>Philippinas Live</div></div><div class="badge">Live <span class="v">1.8K</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Cignal_Logo.png" alt="Cignal"></div><div>Cignal</div></div><div class="badge">Live <span class="v">2.4K</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Unifi2.0_logo.png" alt="Unifi 2.0"></div><div>Unifi 2.0</div></div><div class="badge">Live <span class="v">1.1K</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Univision_logo.webp" alt="Univision"></div><div>Univision</div></div><div class="badge">Live <span class="v">2.0K</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/UnivisionNow_logo.png" alt="Univision Now"></div><div>Univision Now</div></div><div class="badge">Live <span class="v">900</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/LocalNow_Logo.png" alt="Local Now"></div><div>Local Now</div></div><div class="badge">Live <span class="v">700</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/TWC_Logo.png" alt="TWC (The Weather Channel)"></div><div>TWC (The Weather Channel)</div></div><div class="badge">Live <span class="v">1.6K</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/GOTHAM_Logo.png" alt="GOTHAM"></div><div>GOTHAM</div></div><div class="badge">Live <span class="v">400</span></div></li>
-            <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/CanelaTV_Logo.png" alt="Canela TV"></div><div>Canela TV</div></div><div class="badge">Live <span class="v">800</span></div></li>
-          </ul>
+        <section class="card conc-card" id="concCard">
+          <h3 class="conc-header">Customer concurrency</h3>
+          <div class="conc-scroll">
+            <ul class="conc-list" id="concList">
+              <!-- Actual logo paths -->
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/aha_Logo.png" alt="Aha"></div><div>Aha</div></div><div class="badge">Live <span class="v">4.5K</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/PilipinasLive_Logo.png" alt="Philippinas Live"></div><div>Philippinas Live</div></div><div class="badge">Live <span class="v">1.8K</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Cignal_Logo.png" alt="Cignal"></div><div>Cignal</div></div><div class="badge">Live <span class="v">2.4K</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Unifi2.0_logo.png" alt="Unifi 2.0"></div><div>Unifi 2.0</div></div><div class="badge">Live <span class="v">1.1K</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/Univision_logo.webp" alt="Univision"></div><div>Univision</div></div><div class="badge">Live <span class="v">2.0K</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/UnivisionNow_logo.png" alt="Univision Now"></div><div>Univision Now</div></div><div class="badge">Live <span class="v">900</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/LocalNow_Logo.png" alt="Local Now"></div><div>Local Now</div></div><div class="badge">Live <span class="v">700</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/TWC_Logo.png" alt="TWC (The Weather Channel)"></div><div>TWC (The Weather Channel)</div></div><div class="badge">Live <span class="v">1.6K</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/GOTHAM_Logo.png" alt="GOTHAM"></div><div>GOTHAM</div></div><div class="badge">Live <span class="v">400</span></div></li>
+              <li class="conc-item"><div class="conc-left"><div class="logo-sq"><img src="image/CanelaTV_Logo.png" alt="Canela TV"></div><div>Canela TV</div></div><div class="badge">Live <span class="v">800</span></div></li>
+            </ul>
+          </div>
         </section>
 
         <section class="card">
@@ -221,7 +228,9 @@
     <main class="panel" id="panel-cust">
       <section class="card">
         <h3>Customer Stats</h3>
-        <!-- The customer-sentiment.js will fully render here (overview table + click-to-expand details with mini gauge) -->
+        <!-- Fully rendered by customer-sentiment.js:
+             - Left: App Overview table (App / iOS / Android / Customer Sentiment)
+             - Right: On row click: speedometer + top/worst comments + attributing factors -->
         <div id="customer-sentiment-dashboard"></div>
       </section>
     </main>
@@ -239,11 +248,16 @@
     (function(){
       const root=document.documentElement,btn=document.getElementById('modeToggle');
       const saved=localStorage.getItem('techops-theme');
-      if(saved){root.setAttribute('data-theme',saved);btn.textContent=saved==='dark'?'Light':'Dark';document.body.classList.toggle('light-mode', saved==='light')}
+      if(saved){
+        root.setAttribute('data-theme',saved);
+        btn.textContent=saved==='dark'?'Light':'Dark';
+        document.body.classList.toggle('light-mode', saved==='light');
+      }
       btn.addEventListener('click',()=>{
         const cur=root.getAttribute('data-theme')||'dark';
         const next=cur==='dark'?'light':'dark';
-        root.setAttribute('data-theme',next);btn.textContent=next==='dark'?'Light':'Dark';
+        root.setAttribute('data-theme',next);
+        btn.textContent=next==='dark'?'Light':'Dark';
         localStorage.setItem('techops-theme',next);
         document.body.classList.toggle('light-mode', next==='light');
         document.getElementById('needle').setAttribute('stroke', next==='dark' ? '#ffffff' : '#111827');
@@ -266,10 +280,13 @@
         'panel-issues': document.getElementById('panel-issues'),
       };
       function show(id){
-        // left/right dashboard is a pair
         Object.values(panels).forEach(p=>p.classList.remove('active'));
-        if(id==='panel-dashboard'){panels['panel-dashboard'].classList.add('active');panels['panel-dashboard-right'].classList.add('active');}
-        else{panels[id].classList.add('active');}
+        if(id==='panel-dashboard'){
+          panels['panel-dashboard'].classList.add('active');
+          panels['panel-dashboard-right'].classList.add('active');
+        }else{
+          panels[id].classList.add('active');
+        }
       }
       nav.forEach(btn=>{
         btn.addEventListener('click',()=>{
@@ -292,16 +309,18 @@
       function makeCol(digit){
         const slot=document.createElement('div'); slot.className='slot';
         const col=document.createElement('div');  col.className='digit-col';
-        // 0..9 * 3 cycles for smooth spin
-        for(let c=0;c<3;c++){ for(let i=0;i<10;i++){ const e=document.createElement('div'); e.className='digit'; e.textContent=i; col.appendChild(e); } }
-        // final digit
+        // 0..9 x 3 cycles for smooth spin
+        for(let c=0;c<3;c++){
+          for(let i=0;i<10;i++){
+            const e=document.createElement('div'); e.className='digit'; e.textContent=i; col.appendChild(e);
+          }
+        }
         const last=document.createElement('div'); last.className='digit'; last.textContent=digit; col.appendChild(last);
         slot.appendChild(col);
         requestAnimationFrame(()=>{requestAnimationFrame(()=>{
           const end=30 + Number(digit); // 3 cycles + final
           col.style.transform=`translateY(-${end*H}px)`;
         })});
-        col.addEventListener('transitionend',()=>{ col.style.transition='none'; });
         return slot;
       }
       TARGET.split('').forEach(d=>wrap.appendChild(makeCol(d)));
@@ -332,67 +351,79 @@
     })();
   </script>
 
-  <!-- GOOGLE SHEETS OPS CALENDAR (your implementation) -->
+  <!-- GOOGLE SHEETS OPS CALENDAR -->
   <script src="ops-calendar.js"></script>
-  <!-- Post-process ops table: show only Working/On Shift and style the badge; keep fixed height -->
- <!-- Post-process ops table: show only Working/On Shift and style the badge; keep fixed height -->
-<script>
-  (function () {
-    const tbody = document.getElementById('ops-calendar-body');
 
-    // Ensure the equal heights stay locked
-    const fixHeights = () =>
-      document.querySelectorAll('.fixed-eq')
-        .forEach(el => el.style.height =
-          getComputedStyle(document.documentElement)
-            .getPropertyValue('--card-fixed-h'));
-    fixHeights();
+  <!-- Safe post-processing: show ONLY people on shift; debounce & disconnect observer to avoid infinite loops -->
+  <script>
+    (function () {
+      const tbody = document.getElementById('ops-calendar-body');
+      if(!tbody) return;
 
-    const makeOnShift = (cell) => {
-      // Replace whatever text is there with a green pill
-      cell.textContent = '';
-      const span = document.createElement('span');
-      span.className = 'pill-on';
-      span.textContent = 'ON SHIFT';
-      cell.appendChild(span);
-    };
+      const setHeightsLocked = () => {
+        const h = getComputedStyle(document.documentElement)
+          .getPropertyValue('--card-fixed-h') || '392px';
+        document.querySelectorAll('.fixed-eq,.conc-card').forEach(el => el.style.height = h.trim());
+      };
+      setHeightsLocked();
+      window.addEventListener('resize', setHeightsLocked);
 
-    const process = () => {
-      const rows = Array.from(tbody.querySelectorAll('tr'))
-        .filter(r => r.querySelectorAll('td').length >= 3);
+      let busy = false, pending = false, observer;
 
-      let visible = 0;
-      rows.forEach(r => {
-        const tds = r.querySelectorAll('td');
-        const statusTxt = (tds[1].textContent || '').toLowerCase();
-        const isOn = /(working\s*now|on\s*shift|onshift)/.test(statusTxt);
+      const makeOnShift = (cell) => {
+        cell.textContent = '';
+        const span = document.createElement('span');
+        span.className = 'pill-on';
+        span.textContent = 'ON SHIFT';
+        cell.appendChild(span);
+      };
 
-        if (isOn) {
-          r.style.display = '';
-          makeOnShift(tds[1]);
-          visible++;
-        } else {
-          // Hide, don't remove (so we never wipe the table)
-          r.style.display = 'none';
+      const doProcess = () => {
+        if (busy) { pending = true; return; }
+        busy = true;
+        observer.disconnect(); // stop recursive triggers while we mutate
+
+        const rows = Array.from(tbody.querySelectorAll('tr'))
+          .filter(r => r.querySelectorAll('td').length >= 3);
+
+        let visible = 0;
+        rows.forEach(r => {
+          const tds = r.querySelectorAll('td');
+          const statusTxt = (tds[1].textContent || '').toLowerCase();
+          const isOn = /(working\s*now|on\s*shift|onshift)/.test(statusTxt);
+          if (isOn) {
+            r.style.display = '';
+            makeOnShift(tds[1]);
+            visible++;
+          } else {
+            r.style.display = 'none';
+          }
+        });
+
+        if (visible === 0) {
+          tbody.innerHTML = '<tr><td colspan="3">No engineers on shift right now.</td></tr>';
         }
+
+        busy = false;
+        observer.observe(tbody, { childList: true, subtree: true, characterData: true });
+        if (pending) { pending = false; queueMicrotask(doProcess); }
+      };
+
+      observer = new MutationObserver(() => {
+        // debounce to next frame to batch multiple DOM updates from ops-calendar.js
+        requestAnimationFrame(doProcess);
       });
 
-      if (visible === 0) {
-        tbody.innerHTML = '<tr><td colspan="3">No engineers on shift right now.</td></tr>';
-      }
-    };
+      // Start observing after load so ops-calendar.js can paint first
+      window.addEventListener('load', () => {
+        observer.observe(tbody, { childList: true, subtree: true, characterData: true });
+        // also run an initial pass in case rows are already present
+        setTimeout(doProcess, 300);
+      });
+    })();
+  </script>
 
-    // Run once after ops-calendar.js paints, and re-run on updates
-    const mo = new MutationObserver(() => process());
-    mo.observe(tbody, { childList: true, subtree: true, characterData: true });
-
-    // First pass (allow a short delay for external JS render)
-    window.addEventListener('load', () => setTimeout(process, 400));
-  })();
-</script>
-
-
-  <!-- CUSTOMER SENTIMENT DASHBOARD (overview + click-to-expand details with speedometer) -->
+  <!-- CUSTOMER SENTIMENT DASHBOARD (overview + click-to-expand with speedometer) -->
   <script src="customer-sentiment.js?v=3"></script>
 </body>
 </html>
