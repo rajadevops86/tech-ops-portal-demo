@@ -1,180 +1,224 @@
-// ops-calendar.js v5 — GID-based GViz, resilient parsing, on-shift filter
+// ops-calendar.js v3
+// ================= Operations Calendar – Google Sheet integration =================
 
-console.log("[OpsCalendar] v5 loaded");
+console.log("[OpsCalendar] v3 loaded");
 
-// === Sheet config (use gid to avoid name mismatches) ===
-const OPS_SHEET_ID  = "1tIggu_-kutucmc-owxhr0bwWCQKiK1n-bDzdEy8u4Vw";
-const OPS_SHEET_GID = "2113548477"; // <-- from your link
-const OPS_GVIZ_URL  =
-  `https://docs.google.com/spreadsheets/d/${OPS_SHEET_ID}/gviz/tq?gid=${OPS_SHEET_GID}&tqx=out:json&tq=`; // empty query returns whole sheet
+// Your sheet info
+const OPS_SHEET_ID   = "1tIggu_-kutucmc-owxhr0bwWCQKiK1n-bDzdEy8u4Vw";
+const OPS_SHEET_NAME = "November 2025";
+const OPS_GVIZ_URL =
+  `https://docs.google.com/spreadsheets/d/${OPS_SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(
+    OPS_SHEET_NAME
+  )}&tqx=out:json`;
 
-// DOM + timing
-const T_BODY_ID = "ops-calendar-body";
-const FETCH_TIMEOUT_MS = 10000;
-const REFRESH_MS       = 5 * 60 * 1000; // 5 minutes
-
-// Fixed UTC offsets (simple model; no DST for EST). Add as needed.
+// Fixed offsets in minutes from UTC for schedule timezones
+// (simple model, ignores DST for EST – OK for this dashboard)
 const ZONE_OFFSETS_MIN = {
-  IST: 330,  // UTC+5:30
-  MYT: 480,  // UTC+8
-  EST: -300, // UTC-5
-  GST: 240,  // UTC+4 (Dubai)
+  IST: 5 * 60 + 30,  // UTC+5:30
+  MYT: 8 * 60,       // UTC+8
+  EST: -5 * 60       // UTC-5
 };
 
-// ---------- helpers ----------
-function todayLabelUS() {
-  const d = new Date();
-  return new Intl.DateTimeFormat("en-US", {
-    weekday: "long", month: "long", day: "numeric", year: "numeric",
-  }).format(d);
+// Format today exactly like the header row: "Monday, November 10, 2025"
+function getTodayLabel() {
+  const today = new Date();
+  const fmt = new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+  return fmt.format(today);
 }
+
+// Strip emojis (⛔ etc) and trim
 function cleanCellText(str) {
   if (!str) return "";
-  return String(str)
-    .replace(/[\u2600-\u26FF\u{1F300}-\u{1FAFF}]/gu, "") // emojis/dingbats
-    .replace(/\s+/g, " ")
-    .trim();
+  return (
+    str
+      // emoji + dingbats etc
+      .replace(/[\u2600-\u26FF\u{1F300}-\u{1FAFF}]/gu, "")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
 }
+
+// Parse "11:00 AM" → minutes since midnight (0–1439) or null
 function parseTimeToMinutes(str) {
   if (!str) return null;
   const m = str.trim().match(/(\d{1,2}):(\d{2})\s*([AP]M)/i);
   if (!m) return null;
-  let h = +m[1], mm = +m[2], ap = m[3].toUpperCase();
-  if (ap === "PM" && h !== 12) h += 12;
-  if (ap === "AM" && h === 12)  h = 0;
-  return h * 60 + mm;
+  let hour = parseInt(m[1], 10);
+  const min = parseInt(m[2], 10);
+  const ampm = m[3].toUpperCase();
+
+  if (ampm === "PM" && hour !== 12) hour += 12;
+  if (ampm === "AM" && hour === 12) hour = 0;
+
+  return hour * 60 + min;
 }
-function classifyShift(txt) {
-  const v = (txt || "").toLowerCase();
-  if (!v) return { label: "—", css: "status-off" };
-  if (v.includes("sick")) return { label: "Sick", css: "status-sick" };
-  if (v.includes("pto"))  return { label: "PTO",  css: "status-pto"  };
-  if (v.includes("off"))  return { label: "Off",  css: "status-off"  };
+
+// High-level status (Working / Off / PTO / Sick / —)
+function classifyShift(text) {
+  const v = text.toLowerCase();
+  if (!v) {
+    return { label: "—", css: "status-off" };
+  }
+  if (v.includes("sick")) {
+    return { label: "Sick", css: "status-sick" };
+  }
+  if (v.includes("pto")) {
+    return { label: "PTO", css: "status-pto" };
+  }
+  if (v.includes("off")) {
+    return { label: "Off", css: "status-off" };
+  }
+  // Anything else is assumed to be a working shift like "11:00 AM - 08:00 PM IST"
   return { label: "Working", css: "status-working" };
 }
+
+// Check if the current time falls inside the shift window.
+// Expect shift like "11:00 AM - 08:00 PM IST"
 function isCurrentlyOnShift(shiftText) {
   if (!shiftText) return false;
-  const m = shiftText.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*(IST|MYT|EST|GST)/i);
-  if (!m) return false;
-  const startMin = parseTimeToMinutes(m[1]);
-  const endMin   = parseTimeToMinutes(m[2]);
-  const tz       = m[3].toUpperCase();
-  const offset   = ZONE_OFFSETS_MIN[tz];
-  if (startMin == null || endMin == null || offset == null) return false;
 
+  const regex =
+    /(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*(IST|MYT|EST)/i;
+  const m = shiftText.match(regex);
+  if (!m) {
+    console.log("[OpsCalendar] Could not parse shift:", shiftText);
+    return false;
+  }
+
+  const startStr = m[1];
+  const endStr = m[2];
+  const tzAbbrev = m[3].toUpperCase();
+
+  const offsetMin = ZONE_OFFSETS_MIN[tzAbbrev];
+  if (offsetMin == null) return false;
+
+  const startMin = parseTimeToMinutes(startStr);
+  const endMin = parseTimeToMinutes(endStr);
+  if (startMin == null || endMin == null) return false;
+
+  // Convert "now" to minutes-of-day in that timezone
   const now = new Date();
-  const nowUtc = now.getUTCHours() * 60 + now.getUTCMinutes();
-  const nowLocal = (nowUtc + offset + 1440) % 1440;
+  const nowUtcMin = now.getUTCHours() * 60 + now.getUTCMinutes();
+  const nowLocalMin =
+    (nowUtcMin + offsetMin + 24 * 60) % (24 * 60); // wrap 0–1439
 
-  return (startMin <= endMin)
-    ? nowLocal >= startMin && nowLocal < endMin
-    : nowLocal >= startMin || nowLocal < endMin; // overnight window
-}
-function renderMessage(html) {
-  const tbody = document.getElementById(T_BODY_ID);
-  if (tbody) tbody.innerHTML = `<tr><td colspan="3">${html}</td></tr>`;
-}
-
-async function fetchGViz(url, timeoutMs) {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), timeoutMs);
-  try {
-    // cache-bust to avoid any stale auth redirect caches
-    const bust = (url.includes("?") ? "&" : "?") + "_ts=" + Date.now();
-    const res = await fetch(url + bust, { cache: "no-store", signal: ctrl.signal, mode: "cors" });
-    if (!res.ok) throw new Error("HTTP_" + res.status);
-    const text = await res.text();
-
-    // Expected: google.visualization.Query.setResponse({...});
-    const m = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]+?)\);?\s*$/);
-    if (!m) throw new Error("GVIZ_WRAPPER_NOT_FOUND");
-    return JSON.parse(m[1]);
-  } finally {
-    clearTimeout(t);
-  }
-}
-
-// Prefer header in table.cols; fallback to first row (sheet header)
-function findTodayColumn(gv) {
-  const target = todayLabelUS();
-  const cols = gv.table?.cols || [];
-  for (let i = 1; i < cols.length; i++) {
-    const label = (cols[i]?.label || "").trim();
-    if (label === target) return i;
-  }
-  const rows = gv.table?.rows || [];
-  if (rows[0]?.c) {
-    for (let i = 1; i < rows[0].c.length; i++) {
-      const cell = rows[0].c[i];
-      const formatted = (cell?.f || cell?.v || "").toString().trim();
-      if (formatted === target) return i;
-    }
-  }
-  return -1;
-}
-
-function renderOnShift(gv, todayCol) {
-  const tbody = document.getElementById(T_BODY_ID);
-  if (!tbody) return;
-
-  const rows = gv.table?.rows || [];
-  const out = [];
-
-  // r=1 onwards (skip any literal header row in the sheet)
-  for (let r = 1; r < rows.length; r++) {
-    const rCells = rows[r].c || [];
-    const name = rCells[0]?.v;
-    if (!name) continue;
-
-    const cell = rCells[todayCol] || {};
-    const raw  = cell.f ?? cell.v ?? "";
-    const shiftText = cleanCellText(raw);
-    if (!shiftText) continue;
-
-    const base = classifyShift(shiftText);
-    if (base.label !== "Working") continue;
-    if (!isCurrentlyOnShift(shiftText)) continue;
-
-    out.push(
-      `<tr>
-        <td>${name}</td>
-        <td><span class="pill-on">ON SHIFT</span></td>
-        <td>${shiftText}</td>
-      </tr>`
-    );
+  let onShift;
+  if (startMin <= endMin) {
+    onShift = nowLocalMin >= startMin && nowLocalMin < endMin;
+  } else {
+    // Overnight shift
+    onShift = nowLocalMin >= startMin || nowLocalMin < endMin;
   }
 
-  tbody.innerHTML = out.length
-    ? out.join("")
-    : `<tr><td colspan="3">No engineers currently on shift for this time.</td></tr>`;
+  console.log(
+    `[OpsCalendar] shift "${shiftText}" in ${tzAbbrev}: start=${startMin}, end=${endMin}, nowLocal=${nowLocalMin}, onShift=${onShift}`
+  );
+
+  return onShift;
 }
 
 async function loadOpsCalendar() {
-  renderMessage("Loading schedule…");
+  const tbody = document.getElementById("ops-calendar-body");
+  if (!tbody) return;
+
   try {
-    const gv = await fetchGViz(OPS_GVIZ_URL, FETCH_TIMEOUT_MS);
+    tbody.innerHTML = `<tr><td colspan="3">Loading schedule…</td></tr>`;
 
-    // Basic sanity check: must have a table
-    if (!gv?.table?.rows?.length) {
-      renderMessage("No schedule data found in this sheet/tab.");
+    const res = await fetch(OPS_GVIZ_URL, { cache: "no-store" });
+    const text = await res.text();
+
+    // gviz wraps JSON in "google.visualization.Query.setResponse(...);"
+    const jsonStr = text.substring(text.indexOf("{"), text.lastIndexOf("}") + 1);
+    const data = JSON.parse(jsonStr);
+
+    const rows = data.table.rows || [];
+    if (!rows.length) {
+      tbody.innerHTML = `<tr><td colspan="3">No schedule data found.</td></tr>`;
       return;
     }
 
-    const col = findTodayColumn(gv);
-    if (col === -1) {
-      const wanted = todayLabelUS();
-      renderMessage(`Could not find a date column for <strong>${wanted}</strong> in this tab.`);
+    const todayLabel = getTodayLabel();
+    console.log("[OpsCalendar] Today label:", todayLabel);
+
+    // First row is header row with dates in columns 1..N
+    const headerRow = rows[0].c || [];
+    let todayColIndex = -1;
+
+    for (let i = 1; i < headerRow.length; i++) {
+      const cell = headerRow[i];
+      if (!cell) continue;
+
+      const formatted = (cell.f || cell.v || "").toString().trim();
+      console.log(`[OpsCalendar] header col ${i}: "${formatted}"`);
+
+      if (formatted === todayLabel) {
+        todayColIndex = i;
+        break;
+      }
+    }
+
+    if (todayColIndex === -1) {
+      console.warn(
+        "[OpsCalendar] Could not find column for today. Header row:",
+        headerRow
+      );
+      tbody.innerHTML = `<tr><td colspan="3">Could not find a column for "<strong>${todayLabel}</strong>" in the schedule sheet.</td></tr>`;
       return;
     }
 
-    renderOnShift(gv, col);
-  } catch (e) {
-    console.error("[OpsCalendar] load error:", e);
-    renderMessage("Error loading schedule from Google Sheets (network/format).");
+    console.log("[OpsCalendar] Using column index:", todayColIndex);
+
+    const out = [];
+    for (let r = 1; r < rows.length; r++) {
+      const row = rows[r].c || [];
+      const engineerName = row[0]?.v;
+      if (!engineerName) continue; // skip blank rows
+
+      const cell = row[todayColIndex] || {};
+      const rawCell = cell.v || cell.f || "";
+      const cleaned = cleanCellText(rawCell);
+      if (!cleaned) continue; // nothing scheduled today
+
+      const baseStatus = classifyShift(cleaned);
+
+      // Only consider Working status
+      if (baseStatus.label !== "Working") {
+        continue;
+      }
+
+      // Only keep engineers whose local time is currently within the shift
+      if (!isCurrentlyOnShift(cleaned)) {
+        continue;
+      }
+
+      out.push(`
+        <tr>
+          <td>${engineerName}</td>
+          <td class="status-working">Working now</td>
+          <td>${cleaned}</td>
+        </tr>
+      `);
+    }
+
+    if (!out.length) {
+      tbody.innerHTML = `<tr><td colspan="3">No engineers currently on shift for this time.</td></tr>`;
+    } else {
+      tbody.innerHTML = out.join("");
+    }
+  } catch (err) {
+    console.error("Failed to load ops calendar:", err);
+    tbody.innerHTML = `<tr><td colspan="3">Error loading schedule from Google Sheets.</td></tr>`;
   }
 }
 
+// Run once on load + refresh every 5 minutes
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("[OpsCalendar] DOMContentLoaded – loading now");
   loadOpsCalendar();
-  setInterval(loadOpsCalendar, REFRESH_MS);
+  setInterval(loadOpsCalendar, 5 * 60 * 1000); // refresh every 5 minutes
 });
