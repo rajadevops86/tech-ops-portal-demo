@@ -8,6 +8,8 @@
   <style>
     :root{
       --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+      /* Fixed dashboard card height so Ops Calendar == Concurrency */
+      --dashCardH: 392px;
       /* Dark theme */
       --bg: radial-gradient(1200px 700px at 15% 0%, #1e3a8a 0%, transparent 60%),
             radial-gradient(1200px 700px at 100% 0%, #7c3aed 0%, transparent 60%),
@@ -23,14 +25,8 @@
       --row-hover: rgba(37, 99, 235, .15);
       --tile-bg: rgba(12,18,30,.9);
       --accent:#f97316;
-
-      /* severity colors */
-      --p1: #ef4444;          /* red */
-      --p2: #fb923c;          /* orange */
-      --p3: #facc15;          /* dark yellow */
-      --p4: #b45309;          /* brown */
-
-      --conc-equal-height: 370px; /* matched height for Ops Calendar & Concurrency */
+      --p1:#ef4444; --p2:#f59e0b; --p3:#facc15; --p4:#a16207; /* red, orange, yellow, brown */
+      --onshift:#22c55e;
     }
     [data-theme="light"]{
       --bg: radial-gradient(1200px 700px at 15% 0%, #dbeafe 0%, transparent 60%),
@@ -45,14 +41,10 @@
       --table-head: rgba(248,250,252,.95);
       --row-alt: rgba(248,250,252,.82);
       --row-hover: rgba(2, 132, 199, .08);
-
-      /* keep severity readable */
-      --p1: #b91c1c;
-      --p2: #c2410c;
-      --p3: #a16207;
-      --p4: #78350f;
+      --tile-bg: rgba(255,255,255,.95);
+      --accent:#f59e0b;
+      --onshift:#16a34a; /* slightly darker for light mode */
     }
-
     *{box-sizing:border-box}
     body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);background-attachment:fixed}
     .top{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);background:linear-gradient(to bottom, rgba(12,18,30,.7), rgba(12,18,30,.35), transparent);border-bottom:1px solid var(--card-border)}
@@ -74,29 +66,26 @@
     .panel.active{display:block}
     .card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:22px;box-shadow:var(--shadow);padding:14px 16px;position:relative}
     h3{margin:6px 0 10px;font-size:1.08rem}
+
     .grid-center{display:grid;grid-template-rows:auto auto auto;gap:16px}
     .grid-right{display:grid;grid-template-rows:auto auto;gap:16px}
 
-    /* keep first-row cards aligned: calendar vs concurrency; second-row: total vs availability */
-    .equal-h{min-height:var(--conc-equal-height);display:flex;flex-direction:column}
-    .equal-h > *:last-child{margin-top:auto} /* keep footer notes at bottom if you add later */
-
+    /* Table base */
     table{width:100%;border-collapse:collapse;font-size:.9rem}
-    thead{background:var(--table-head)}
+    thead{background:var(--table-head); position:sticky; top:0; z-index:1}
     th,td{padding:8px 10px;border-bottom:1px solid var(--card-border);text-align:left}
     tbody tr:nth-child(even){background:var(--row-alt)}
     tbody tr:hover{background:var(--row-hover)}
 
-    .sev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .sev{background:var(--tile-bg);border:1px solid var(--card-border);border-radius:14px;padding:10px;text-align:center}
-    .sev h4{margin:2px 0 6px;font-size:.9rem;color:var(--muted)}
-    .sev .n{font-size:1.4rem;font-weight:800}
-    .sev.p1 .n{color:var(--p1)}
-    .sev.p2 .n{color:var(--p2)}
-    .sev.p3 .n{color:var(--p3)}
-    .sev.p4 .n{color:var(--p4)}
+    /* Fixed-height cards with scrollable body — same height for both */
+    .fixedH{height:var(--dashCardH);display:flex;flex-direction:column}
+    .fixedH .fill{flex:1;min-height:0;overflow:auto;border-radius:12px}
 
-    /* Concurrency */
+    /* ON SHIFT pill */
+    .status{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.82rem;padding:4px 10px;border-radius:999px;border:1px solid rgba(148,163,184,.35)}
+    .status.onshift{color:var(--onshift); border-color: rgba(34,197,94,.35);}
+
+    /* Concurrency list */
     .conc-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
     .conc-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--tile-bg);border:1px solid var(--card-border)}
     .conc-left{display:flex;align-items:center;gap:8px}
@@ -107,7 +96,7 @@
     .badge{font-size:.78rem;border:1px solid rgba(248,250,252,.35);padding:2px 8px;border-radius:999px;display:inline-flex;gap:6px;align-items:center;background:var(--pill);color:var(--text)}
     .badge .v{color:#facc15;font-weight:800}
 
-    /* Slot machine (horizontal, persistent digits) */
+    /* Slot machine */
     .slot-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:18px;padding-bottom:18px}
     .slots{display:flex;gap:10px}
     .slot{width:72px;height:92px;border-radius:14px;background:var(--tile-bg);border:1px solid var(--card-border);overflow:hidden;position:relative;box-shadow:inset 0 -10px 20px rgba(255,255,255,.03)}
@@ -115,25 +104,20 @@
     .digit{height:92px;display:grid;place-items:center;font-weight:800;font-size:2.35rem;color:var(--text)}
     .slot-sub{font-size:.86rem;color:var(--muted);text-align:center}
 
+    /* Incidents today colors */
+    .sev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .sev{background:var(--tile-bg);border:1px solid var(--card-border);border-radius:14px;padding:10px;text-align:center}
+    .sev h4{margin:2px 0 6px;font-size:.9rem;color:var(--muted)}
+    .sev .n{font-size:1.4rem;font-weight:800}
+    .sev.p1 .n{color:var(--p1)}
+    .sev.p2 .n{color:var(--p2)}
+    .sev.p3 .n{color:var(--p3)}
+    .sev.p4 .n{color:var(--p4)}
+
     /* Gauge */
     .gauge{width:100%;height:240px;display:block}
     .g-title{margin-bottom:8px}
     .g-label{position:absolute;bottom:14px;left:20px;font-size:1.8rem;font-weight:800}
-
-    /* Customer Stats */
-    .stats-table{width:100%}
-    .stats-wrap{display:flex;flex-direction:column;gap:12px}
-    .detail-card{display:none;margin-top:8px}
-    .detail-card.active{display:block}
-    .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .detail-col{background:var(--tile-bg);border:1px solid var(--card-border);border-radius:14px;padding:10px}
-    .tag{padding:2px 8px;border-radius:999px;border:1px solid var(--card-border);font-size:.78rem}
-    .tag.warn{background:rgba(245,158,11,.12);color:#fbbf24}
-    .tag.ok{background:rgba(59,130,246,.12);color:#93c5fd}
-
-    /* Mini gauge for customer sentiment (0..1) */
-    .mini-gauge{width:100%;height:110px}
-    .mini-label{font-weight:800}
   </style>
 </head>
 <body>
@@ -170,23 +154,29 @@
     <!-- CENTER PANELS -->
     <main class="panel active" id="panel-dashboard">
       <div class="grid-center">
-        <!-- Ops Calendar (fixed equal height) -->
-        <section class="card equal-h">
+        <!-- Ops Calendar (fixed height, top-aligned, scroll if overflow) -->
+        <section class="card fixedH" id="opsCard">
           <h3>Operations Calendar (Today)</h3>
-          <table>
-            <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
-            <tbody id="ops-calendar-body"><tr><td colspan="3">Loading schedule…</td></tr></tbody>
-          </table>
+          <div class="fill">
+            <table>
+              <thead>
+                <tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr>
+              </thead>
+              <tbody id="ops-calendar-body">
+                <tr><td colspan="3">Loading schedule…</td></tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
-        <!-- Slot machine aligned with Availability -->
+        <!-- Slot machine -->
         <section class="card slot-card">
           <h3 style="text-align:center">Total incidents since org inception</h3>
           <div class="slots" id="slotCounter"></div>
           <div class="slot-sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
         </section>
 
-        <!-- Severity below slot -->
+        <!-- Incidents today (colored) -->
         <section class="card">
           <h3>Incidents today</h3>
           <div class="sev-grid">
@@ -199,115 +189,133 @@
       </div>
     </main>
 
-    <!-- RIGHT (on dashboard) -->
+    <!-- RIGHT (dashboard pair) -->
     <aside class="panel active right-col" id="panel-dashboard-right">
       <div class="grid-right">
-        <section class="card equal-h">
+        <!-- Concurrency (fixed height matching ops card) -->
+        <section class="card fixedH" id="concCard">
           <h3>Customer concurrency</h3>
-          <ul class="conc-list" id="concList">
-            <!-- Items are created from the logos array below -->
-          </ul>
+          <div class="fill">
+            <ul class="conc-list" id="concList">
+              <!-- Use required logo paths -->
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="Aha">
+                    <img src="image/aha_Logo.png" alt="Aha"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Aha</div>
+                </div><div class="badge">Live <span class="v">4.5K</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="PL">
+                    <img src="image/PilipinasLive_Logo.png" alt="Philippinas Live"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Philippinas Live</div>
+                </div><div class="badge">Live <span class="v">1.8K</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="CG">
+                    <img src="image/Cignal_Logo.png" alt="Cignal"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Cignal</div>
+                </div><div class="badge">Live <span class="v">2.4K</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="U2">
+                    <img src="image/Unifi2.0_logo.png" alt="Unifi 2.0"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Unifi 2.0</div>
+                </div><div class="badge">Live <span class="v">1.1K</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="UV">
+                    <img src="image/Univision_logo.webp" alt="Univision"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Univision</div>
+                </div><div class="badge">Live <span class="v">2.0K</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="UN">
+                    <img src="image/UnivisionNow_logo.png" alt="Univision Now"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Univision Now</div>
+                </div><div class="badge">Live <span class="v">900</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="LN">
+                    <img src="image/LocalNow_Logo.png" alt="Local Now"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Local Now</div>
+                </div><div class="badge">Live <span class="v">700</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="TWC">
+                    <img src="image/TWC_Logo.png" alt="TWC"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>TWC (The Weather Channel)</div>
+                </div><div class="badge">Live <span class="v">1.6K</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="GT">
+                    <img src="image/GOTHAM_Logo.png" alt="GOTHAM"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>GOTHAM</div>
+                </div><div class="badge">Live <span class="v">400</span></div>
+              </li>
+              <li class="conc-item">
+                <div class="conc-left">
+                  <div class="logo-sq" data-initials="CL">
+                    <img src="image/CanelaTV_Logo.png" alt="Canela TV"
+                         onerror="this.parentElement.classList.add('fallback');this.remove()">
+                  </div>
+                  <div>Canela TV</div>
+                </div><div class="badge">Live <span class="v">800</span></div>
+              </li>
+            </ul>
+          </div>
         </section>
 
+        <!-- Availability -->
         <section class="card">
           <h3 class="g-title">Availability</h3>
           <svg id="gauge" class="gauge" viewBox="0 0 360 200">
             <defs>
               <linearGradient id="ggrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#ef4444"/>
-                <stop offset="50%" stop-color="#f59e0b"/>
+                <stop offset="0%"   stop-color="#ef4444"/>
+                <stop offset="50%"  stop-color="#f59e0b"/>
                 <stop offset="100%" stop-color="#22c55e"/>
               </linearGradient>
             </defs>
             <path d="M20,180 A160,160 0 0 1 340,180" stroke="rgba(148,163,184,.28)" stroke-width="18" fill="none"/>
             <path id="gArc" d="M20,180 A160,160 0 0 1 340,180" stroke="url(#ggrad)" stroke-width="18" fill="none" stroke-linecap="round" stroke-dasharray="0 503"/>
-            <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <line id="needle" x1="180" y1="180" x2="180" y2="40"
+                  stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
           </svg>
           <div class="g-label" id="gPct">0%</div>
         </section>
       </div>
     </aside>
 
-    <!-- CUSTOMER STATS PANEL -->
-    <main class="panel" id="panel-cust">
-      <section class="card">
-        <h3>Customer Stats — App Overview</h3>
-        <div class="stats-wrap">
-          <table class="stats-table" id="statsTable">
-            <thead>
-            <tr>
-              <th>App</th>
-              <th>iOS rating</th>
-              <th>Android rating</th>
-              <th>Customer sentiment (0–1)</th>
-            </tr>
-            </thead>
-            <tbody id="statsBody"><tr><td colspan="4">Loading…</td></tr></tbody>
-          </table>
-
-          <!-- Detail panel (appears on row click) -->
-          <div class="detail-card card" id="detailCard">
-            <h3 id="detailTitle">Details</h3>
-            <div class="detail-grid">
-              <div class="detail-col">
-                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
-                  <div>
-                    <div class="sub">iOS rating</div>
-                    <div style="font-weight:800;font-size:1.2rem" id="dIos">–</div>
-                    <div class="sub">App Store</div>
-                  </div>
-                  <div>
-                    <div class="sub">Android rating</div>
-                    <div style="font-weight:800;font-size:1.2rem" id="dAndroid">–</div>
-                    <div class="sub">Google Play</div>
-                  </div>
-                  <div>
-                    <div class="sub">Sentiment</div>
-                    <div style="font-weight:800;font-size:1.2rem" id="dSent">–</div>
-                    <div class="sub">0 = negative, 1 = positive</div>
-                  </div>
-                </div>
-
-                <!-- Mini sentiment gauge -->
-                <svg id="miniGauge" class="mini-gauge" viewBox="0 0 220 120">
-                  <defs>
-                    <linearGradient id="mgrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stop-color="#ef4444"/>
-                      <stop offset="50%" stop-color="#f59e0b"/>
-                      <stop offset="100%" stop-color="#22c55e"/>
-                    </linearGradient>
-                  </defs>
-                  <path d="M10,110 A100,100 0 0 1 210,110" stroke="rgba(148,163,184,.28)" stroke-width="14" fill="none"/>
-                  <path id="mArc" d="M10,110 A100,100 0 0 1 210,110" stroke="url(#mgrad)" stroke-width="14" fill="none" stroke-linecap="round" stroke-dasharray="0 314"/>
-                  <line id="mNeedle" x1="110" y1="110" x2="110" y2="30" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                </svg>
-                <div class="mini-label" id="mPct">0.00</div>
-              </div>
-
-              <div class="detail-col">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-                  <div>
-                    <div style="font-weight:700;margin-bottom:6px">Top positive comments</div>
-                    <ul id="posList" style="list-style:none;margin:0;padding:0"></ul>
-                  </div>
-                  <div>
-                    <div style="font-weight:700;margin-bottom:6px">Top negative comments</div>
-                    <ul id="negList" style="list-style:none;margin:0;padding:0"></ul>
-                  </div>
-                </div>
-                <div style="margin-top:10px">
-                  <div style="font-weight:700;margin-bottom:6px">Attributing factors</div>
-                  <div id="factorsRow" style="display:flex;flex-wrap:wrap;gap:8px"></div>
-                </div>
-              </div>
-            </div>
-          </div><!-- /detail-card -->
-        </div>
-      </section>
-    </main>
-
-    <!-- OTHER PANELS (placeholders but themed) -->
-    <main class="panel" id="panel-synth"><section class="card"><h3>Synthetic Monitoring</h3><p class="sub">Placeholder for live checks table / charts.</p></section></main>
+    <!-- OTHER PANELS (placeholders kept as before) -->
+    <main class="panel" id="panel-cust"><section class="card"><h3>Customer Stats</h3><p class="sub">App overview table and click-to-expand details live here.</p></section></main>
+    <main class="panel" id="panel-synth"><section class="card"><h3>Synthetic Monitoring</h3><p class="sub">Placeholder for checks table / charts.</p></section></main>
     <main class="panel" id="panel-manif"><section class="card"><h3>Manifest Check</h3><p class="sub">Placeholder for manifest results.</p></section></main>
     <main class="panel" id="panel-handoff"><section class="card"><h3>Shift Handoffs</h3><p class="sub">Placeholder for handoff notes.</p></section></main>
     <main class="panel" id="panel-rbac"><section class="card"><h3>RBAC</h3><p class="sub">Placeholder for roles matrix.</p></section></main>
@@ -324,7 +332,7 @@
     })();
   </script>
 
-  <!-- MENU ROUTER -->
+  <!-- MENU ROUTER (keeps dashboard left+right paired) -->
   <script>
     (function(){
       const nav = Array.from(document.querySelectorAll('.navbtn'));
@@ -353,49 +361,31 @@
     })();
   </script>
 
-  <!-- SLOT MACHINE (persistent) -->
+  <!-- SLOT MACHINE (robust init; digits remain visible after spin) -->
   <script>
     (function(){
-      const TARGET="654432";      // demo number; wire to ServiceNow total later
-      const H=92;                 // slot height (must match CSS)
+      const TARGET="654432";      // demo number
+      const H=92;
       const wrap=document.getElementById('slotCounter');
-      if(!wrap) return;
-      wrap.innerHTML='';
-
-      function makeCol(digit, delay){
-        const slot=document.createElement('div');
-        slot.className='slot';
-        const col=document.createElement('div');
-        col.className='digit-col';
-        for(let i=0;i<10;i++){
-          const e=document.createElement('div');
-          e.className='digit';
-          e.textContent=i;
-          col.appendChild(e);
-        }
+      function makeCol(digit){
+        const slot=document.createElement('div'); slot.className='slot';
+        const col=document.createElement('div'); col.className='digit-col';
+        for(let i=0;i<10;i++){const d=document.createElement('div'); d.className='digit'; d.textContent=i; col.appendChild(d);}
         slot.appendChild(col);
-
-        // Start after paint; animate to end; then lock at final position.
-        setTimeout(()=>{
-          const rounds=2+Math.floor(Math.random()*2); // 2-3 rounds
-          const end = rounds*10 + Number(digit);
-          col.style.transform = `translateY(-${end*H}px)`;
-          col.addEventListener('transitionend', ()=>{
-            // Remove transition and snap to exact digit within one reel height
-            col.style.transition = 'none';
-            const final = Number(digit)*H;
-            col.style.transform = `translateY(-${final}px)`;
-            // Force reflow to keep it
-            col.getBoundingClientRect();
-          }, {once:true});
-        }, delay);
+        // paint + animate
+        requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+          const rounds=2+Math.floor(Math.random()*2);
+          const end=rounds*10 + Number(digit);
+          col.style.transform=`translateY(-${end*H}px)`;
+        })});
         return slot;
       }
-      TARGET.split('').forEach((d,i)=>wrap.appendChild(makeCol(d, i*120)));
+      wrap.innerHTML='';
+      TARGET.split('').forEach(d=>wrap.appendChild(makeCol(d)));
     })();
   </script>
 
-  <!-- AVAILABILITY GAUGE -->
+  <!-- AVAILABILITY GAUGE (needle uses currentColor so it stays visible on light + dark) -->
   <script>
     (function(){
       const targetPct=96; // demo
@@ -417,186 +407,42 @@
     })();
   </script>
 
-  <!-- CONCURRENCY LIST (using your logo paths) -->
-  <script>
-    (function(){
-      const logos = [
-        {name:'Aha',                logo:'image/aha_Logo.png',                 val:'4.5K', initials:'Aha'},
-        {name:'Philippinas Live',   logo:'image/PilipinasLive_Logo.png',       val:'1.8K', initials:'PL'},
-        {name:'Cignal',             logo:'image/Cignal_Logo.png',             val:'2.4K', initials:'CG'},
-        {name:'Unifi 2.0',          logo:'image/Unifi2.0_logo.png',            val:'1.1K', initials:'U2'},
-        {name:'Univision',          logo:'image/Univision_logo.webp',          val:'2.0K', initials:'UV'},
-        {name:'Univision Now',      logo:'image/UnivisionNow_logo.png',        val:'900',  initials:'UN'},
-        {name:'Local Now',          logo:'image/LocalNow_Logo.png',            val:'700',  initials:'LN'},
-        {name:'TWC (The Weather Channel)', logo:'image/TWC_Logo.png',          val:'1.6K', initials:'TWC'},
-        {name:'GOTHAM',             logo:'image/GOTHAM_Logo.png',              val:'400',  initials:'GT'},
-        {name:'Canela TV',          logo:'image/CanelaTV_Logo.png',            val:'800',  initials:'CL'},
-      ];
-      const ul = document.getElementById('concList');
-      if(!ul) return;
-      ul.innerHTML = '';
-      logos.forEach(item=>{
-        const li = document.createElement('li');
-        li.className = 'conc-item';
-        li.innerHTML = `
-          <div class="conc-left">
-            <div class="logo-sq" data-initials="${item.initials}">
-              <img src="${item.logo}" alt="${item.name}" onerror="this.parentElement.classList.add('fallback');this.remove()">
-            </div>
-            <div>${item.name}</div>
-          </div>
-          <div class="badge">Live <span class="v">${item.val}</span></div>
-        `;
-        ul.appendChild(li);
-      });
-    })();
-  </script>
-
-  <!-- CUSTOMER STATS: Overview + Detail with mini gauge and comments -->
-  <script>
-    (function(){
-      // demo dataset (consistent but realistic)
-      const apps = [
-        {app:'Aha', ios:4.48, android:4.61, sent:0.66,
-         pos:['Great content!', 'UI is clean and fast', 'Love the originals', 'Chromecast works well', 'Smooth login'],
-         neg:['Playback failed once', 'Too many updates', 'Search needs work', 'Occasional buffer on 4G', 'Confusing error messages'],
-         factors:[['stream','Steady'],['buffer','Steady'],['ads','Steady'],['crash','Steady'],['slow','Worsening']]
-        },
-        {app:'Philippinas Live', ios:4.22, android:4.37, sent:0.54,
-         pos:['Awesome live streams','Good picture quality','Affordable plans','Easy to subscribe','Stable on Wi-Fi'],
-         neg:['Lag on mobile data','Too many ads','Login issues for some','Crashes on old phones','Audio out of sync sometimes'],
-         factors:[['stream','Worsening'],['buffer','Worsening'],['ads','Worsening'],['crash','Steady'],['slow','Steady']]
-        },
-        {app:'Cignal', ios:4.36, android:4.62, sent:0.58,
-         pos:['excellent 👌👍','great app!','Just pay and watch very good.','Nice channels','Family loves it'],
-         neg:['Keeps lagging. Premium subscription but bad service.','Worst app ever. subscription errors','Reached streaming limit','App crashes randomly','Worst customer service'],
-         factors:[['stream','Worsening'],['buffer','Worsening'],['ads','Worsening'],['crash','Steady'],['slow','Steady']]
-        },
-        {app:'Unifi 2.0', ios:4.40, android:4.52, sent:0.63,
-         pos:['New UI looks great','Playback smooth','Kids love the shows','Search improved','Downloads are quick'],
-         neg:['Login timeout once','Too many prompts','Minor subtitle delay','Payment page slow','Skip intro missing'],
-         factors:[['stream','Steady'],['buffer','Steady'],['ads','Steady'],['crash','Steady'],['slow','Steady']]
-        },
-        {app:'Univision', ios:4.30, android:4.44, sent:0.59,
-         pos:['Great sports coverage','Love the telenovelas','Spanish captions accurate','Good on Roku','Nice recommendations'],
-         neg:['Buffering on peak hours','Too many geo blocks','Billing confusion','App size big','Older TV app is slow'],
-         factors:[['stream','Steady'],['buffer','Worsening'],['ads','Steady'],['crash','Steady'],['slow','Worsening']]
-        },
-        {app:'Univision Now', ios:4.18, android:4.33, sent:0.52,
-         pos:['Good live TV','App works fine','Reasonable price','Family friendly','Casting is okay'],
-         neg:['Freeze sometimes','Audio desync','Subscription restore bug','App needs less ads','Login not persistent'],
-         factors:[['stream','Worsening'],['buffer','Worsening'],['ads','Worsening'],['crash','Steady'],['slow','Steady']]
-        },
-        {app:'Local Now', ios:4.10, android:4.20, sent:0.50,
-         pos:['Weather section is neat','Local news works','Layout simple','Alerts helpful','Widget is useful'],
-         neg:['Too many popups','Old phones crash','Playback stutters on LTE','Search limited','Some channels missing'],
-         factors:[['stream','Steady'],['buffer','Steady'],['ads','Worsening'],['crash','Steady'],['slow','Steady']]
-        },
-        {app:'TWC (The Weather Channel)', ios:4.45, android:4.50, sent:0.65,
-         pos:['Reliable forecasts','Maps are great','Fast load','No crashes','Clear UI'],
-         neg:['Ads feel intrusive','Live slows sometimes','Background battery use','Heavy install size','Some alerts late'],
-         factors:[['stream','Steady'],['buffer','Steady'],['ads','Worsening'],['crash','Steady'],['slow','Steady']]
-        },
-        {app:'GOTHAM', ios:4.05, android:4.15, sent:0.48,
-         pos:['Dark theme nice','Good catalog','Fair pricing','Works on TV','Controller support'],
-         neg:['Playback stops sometimes','UI not intuitive','Search weak','Bug on login','Captions small'],
-         factors:[['stream','Worsening'],['buffer','Worsening'],['ads','Steady'],['crash','Steady'],['slow','Worsening']]
-        },
-        {app:'Canela TV', ios:4.12, android:4.25, sent:0.53,
-         pos:['Latino content variety','Easy to use','Good picture','Kids enjoy it','Free channels'],
-         neg:['Ad frequency high','Buffer on 3G','App restarts occasionally','Subtitle mismatch','App heavy'],
-         factors:[['stream','Steady'],['buffer','Worsening'],['ads','Worsening'],['crash','Steady'],['slow','Steady']]
-        },
-      ];
-
-      // Fill overview table
-      const body = document.getElementById('statsBody');
-      body.innerHTML = '';
-      apps.forEach((a, idx)=>{
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${a.app}</td>
-          <td>${a.ios.toFixed(2)}</td>
-          <td>${a.android.toFixed(2)}</td>
-          <td>${a.sent.toFixed(2)}</td>
-        `;
-        tr.style.cursor = 'pointer';
-        tr.addEventListener('click', ()=>openDetail(idx));
-        body.appendChild(tr);
-      });
-
-      // Detail panel wiring
-      const card = document.getElementById('detailCard');
-      const t = (id)=>document.getElementById(id);
-      const mArc = t('mArc'), mNeedle = t('mNeedle'), mPct=t('mPct');
-
-      function openDetail(i){
-        const a = apps[i];
-        t('detailTitle').textContent = a.app;
-        t('dIos').textContent = a.ios.toFixed(2);
-        t('dAndroid').textContent = a.android.toFixed(2);
-        t('dSent').textContent = a.sent.toFixed(2);
-
-        // Lists
-        const pos = t('posList'), neg = t('negList'), fac = t('factorsRow');
-        pos.innerHTML = ''; neg.innerHTML = ''; fac.innerHTML = '';
-        a.pos.slice(0,5).forEach(s=>{ const li=document.createElement('li'); li.textContent = s; li.style.marginBottom='6px'; pos.appendChild(li); });
-        a.neg.slice(0,5).forEach(s=>{ const li=document.createElement('li'); li.textContent = s; li.style.marginBottom='6px'; neg.appendChild(li); });
-        a.factors.forEach(([name,state])=>{
-          const span = document.createElement('span');
-          span.className = 'tag ' + (state==='Worsening'?'warn':'ok');
-          span.textContent = `${name} • ${state}`;
-          fac.appendChild(span);
-        });
-
-        // Mini gauge animate (0..1 maps to 0..100%)
-        const pct = a.sent*100;
-        mPct.textContent = a.sent.toFixed(2);
-        const circ = 314; // dash-length of arc
-        const start = performance.now(), dur=800;
-        function step(now){
-          const t = Math.min(1,(now-start)/dur), eased = 1-Math.pow(1-t,3);
-          const cur = pct*eased;
-          const dash=(cur/100)*circ; mArc.setAttribute('stroke-dasharray',`${dash} ${circ-dash}`);
-          // needle
-          const cx=110, cy=110, len=70;
-          const deg = 180-(cur*1.8);
-          const rad = deg*Math.PI/180;
-          const x2=cx+len*Math.cos(rad), y2=cy-len*Math.sin(rad);
-          mNeedle.setAttribute('x2',x2); mNeedle.setAttribute('y2',y2);
-          if(t<1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-
-        card.classList.add('active');
-        card.scrollIntoView({behavior:'smooth', block:'nearest'});
-      }
-    })();
-  </script>
-
   <!-- GOOGLE SHEETS OPS CALENDAR -->
   <script src="ops-calendar.js"></script>
 
-  <!-- Botpress Chatbot -->
-  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <!-- Filter & style ops calendar: only show Working => ON SHIFT, hide others -->
   <script>
-    window.botpressWebChat.init({
-      composerPlaceholder: "Chat with TechOps Bot",
-      botConversationDescription: "Your AI assistant for TechOps 360",
-      botId: "56efefce-fa7c-41e6-9846-ec36c7c6704a",
-      hostUrl: "https://cdn.botpress.cloud/webchat/v1",
-      messagingUrl: "https://messaging.botpress.cloud",
-      clientId: "a7e5af98-3b12-4265-a9f9-6f3fcd500b93",
-      lazySocket: true,
-      themeName: "prism",
-      botName: "TechOps Assistant",
-      stylesheet: "https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
-      frontendVersion: "v1",
-      useSessionStorage: true,
-      enableConversationDeletion: true,
-      theme: "prism",
-      themeColor: "#2563eb"
-    });
+    (function(){
+      const body = document.getElementById('ops-calendar-body');
+
+      function refreshRows(){
+        if(!body) return;
+        const rows = Array.from(body.querySelectorAll('tr'));
+        rows.forEach(row=>{
+          const tds = row.querySelectorAll('td');
+          if(tds.length < 3) return;
+          const statusText = (tds[1].textContent||'').trim().toLowerCase();
+          const isWorking = statusText.startsWith('working');
+          if(!isWorking){
+            row.remove(); // hide non-working (off/pto/sick etc.)
+            return;
+          }
+          // Replace status with ON SHIFT pill
+          tds[1].innerHTML = '<span class="status onshift">ON&nbsp;SHIFT</span>';
+        });
+
+        // If after filtering we have no rows, keep table height with an empty row
+        if(!body.querySelector('tr')){
+          const tr=document.createElement('tr');
+          tr.innerHTML='<td colspan="3">No engineers on shift right now.</td>';
+          body.appendChild(tr);
+        }
+      }
+
+      // Observe for ops-calendar.js completion and then format
+      const mo = new MutationObserver(()=>refreshRows());
+      mo.observe(body, {childList:true, subtree:true});
+    })();
   </script>
 </body>
 </html>
