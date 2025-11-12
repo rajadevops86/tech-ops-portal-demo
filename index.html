@@ -3,258 +3,260 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechOps 360 - Portal</title>
+  <title>TechOps 360 – Portal</title>
 
-  <!-- Quickplay-like font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
-    /* THEME TOKENS --------------------------------------------------------- */
-    :root {
+    /* ================= THEME TOKENS (accessible) ================= */
+    :root{
       --font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 
-      /* shared tokens */
-      --radius-lg: 22px;
-      --radius-md: 14px;
-      --radius-sm: 10px;
-      --shadow-deep: 0 28px 80px rgba(0,0,0,.45);
-      --shadow-card: 0 20px 50px rgba(0,0,0,.35);
+      /* Light */
+      --bg: #f6f8fb;
+      --text: #0a0f1a;            /* 16:1 on white */
+      --muted: #445269;           /* WCAG AA on white */
+      --card: #ffffff;
+      --border: #d9e1ef;
+      --row: #f2f5fb;
+      --row-hover: #e8eefc;
+      --chip: #0a0f1a;
+      --chip-border: #c9d4ea;
+      --pill: #0a0f1a;
+      --pill-border: #c9d4ea;
 
-      /* light palette (overridden in [data-theme=dark]) */
-      --bg: #f7f7fb;
-      --text: #0b1220;
-      --text-muted: #475569;
-      --card: #fff;
-      --card-border: rgba(15,23,42,.08);
-      --chip: #0b1220;
-      --chip-border: rgba(15,23,42,.15);
-      --table-row: #f4f6fb;
-      --table-hover: #eef2ff;
-      --pill: #0b1220;
-      --pill-border: rgba(15,23,42,.18);
-      --accent: #ff7a18;
-      --acc-soft: rgba(255,122,24,.12);
-      --ok: #16a34a;
+      --ok: #12993f;
+      --warn: #c77c11;
+      --bad: #d73737;
+
+      --accent: #5b7cff;         /* Quickplay-friendly blue/violet */
+      --accent-ghost: rgba(91,124,255,.12);
+
+      --grad-bg: radial-gradient(900px 600px at 8% -10%, rgba(91,124,255,.35), transparent 60%),
+                 radial-gradient(800px 600px at 100% -20%, rgba(178,102,255,.35), transparent 60%),
+                 #eef2ff;
+    }
+
+    [data-theme="dark"]{
+      --bg: #060a17;
+      --text: #e8ebf2;
+      --muted: #aabbcc;
+      --card: #0b1021;
+      --border: #33415e;
+      --row: #121936;
+      --row-hover: #1b2550;
+      --chip: #0b1021;
+      --chip-border: #41527a;
+      --pill: #0b1021;
+      --pill-border: #41527a;
+
+      --ok: #22c55e;
       --warn: #f59e0b;
       --bad: #ef4444;
 
-      /* gradients (hero & footer band) */
-      --grad-a: radial-gradient(1000px 600px at 20% -10%, rgba(59,130,246,.5), transparent 60%),
-                radial-gradient(900px 600px at 90% -20%, rgba(168,85,247,.45), transparent 60%),
-                linear-gradient(135deg, #ec4899 0%, #7c3aed 50%, #3b82f6 100%);
-      --grad-footer: linear-gradient(90deg, #1cd1e0 0%, #f0922e 45%, #b96593 70%, #6b4df6 100%);
-    }
-    [data-theme="dark"]{
-      --bg: #030617;
-      --text: #e5e7eb;
-      --text-muted: #9aa4b2;
-      --card: rgba(11,18,32,.86);
-      --card-border: rgba(148,163,184,.28);
-      --chip: rgba(11,18,32,.96);
-      --chip-border: rgba(148,163,184,.35);
-      --table-row: rgba(15,23,42,.6);
-      --table-hover: rgba(37,99,235,.3);
-      --pill: rgba(11,18,32,.96);
-      --pill-border: rgba(148,163,184,.45);
-      --grad-a: radial-gradient(1200px 700px at 5% -10%, rgba(37,99,235,.5), transparent 60%),
-                radial-gradient(1000px 600px at 100% -20%, rgba(124,58,237,.5), transparent 60%),
-                radial-gradient(1200px 800px at 50% 130%, rgba(236,72,153,.45), transparent 65%),
-                #020617;
-      --grad-footer: linear-gradient(90deg, #10d8e0 0%, #ec8e2f 45%, #b45ea0 70%, #674ffc 100%);
+      --accent: #8da2ff;
+      --accent-ghost: rgba(141,162,255,.15);
+
+      --grad-bg: radial-gradient(1100px 700px at 3% -15%, rgba(91,124,255,.35), transparent 60%),
+                 radial-gradient(900px 600px at 100% -15%, rgba(178,102,255,.35), transparent 60%),
+                 #050814;
     }
 
-    /* BASE ----------------------------------------------------------------- */
+    /* ================= BASE ================= */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      font-family:var(--font);
+      margin:0; font-family:var(--font);
       color:var(--text);
-      background:var(--grad-a) fixed;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      font-size:17px; /* slightly larger overall */
+      background:var(--grad-bg) fixed;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      font-size:16.5px;
     }
 
-    /* TOP NAV -------------------------------------------------------------- */
-    .top {
-      position:sticky; top:0; z-index:40;
-      padding:16px 24px;
+    /* ================= TOP BAR ================= */
+    .top{
+      position:sticky; top:0; z-index:50;
       display:flex; align-items:center; justify-content:space-between;
-      backdrop-filter: blur(16px);
-      background: linear-gradient(to bottom, rgba(2,6,23,.65), transparent);
-      border-bottom:1px solid var(--card-border);
+      padding:14px 18px;
+      border-bottom:1px solid var(--border);
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(6,10,23,.65), rgba(6,10,23,.0));
     }
-    .brand{display:flex; gap:10px; align-items:center}
-    .brand img{height:32px;border-radius:999px;box-shadow:0 0 0 1px rgba(0,0,0,.3)}
-    .title{display:flex; flex-direction:column}
-    .title b{font-size:1.1rem}
-    .title small{color:var(--text-muted); font-size:.82rem}
-    .right{display:flex; gap:10px; align-items:center}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo-wrap{display:flex; align-items:center; gap:12px}
+    .logo{
+      height:44px; width:auto; border-radius:10px; /* larger logo */
+      background:#0a0f1a; padding:4px;
+      box-shadow:0 0 0 1px rgba(0,0,0,.25);
+    }
+    .titles{display:flex; flex-direction:column}
+    .titles .name{
+      font-weight:900; letter-spacing:.02em; font-size:1.3rem; color:var(--text);
+    }
+    .titles .desc{color:var(--muted); font-size:.9rem}
+
+    .top-actions{display:flex; align-items:center; gap:10px}
     .chip{
       display:inline-flex; gap:8px; align-items:center;
-      padding:6px 12px; border-radius:999px;
-      color:var(--text-muted);
+      padding:6px 12px; border-radius:999px; color:var(--muted);
       background:var(--chip); border:1px solid var(--chip-border)
     }
-    .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
-    .toggle{
-      padding:6px 12px; border-radius:999px; cursor:pointer;
-      border:1px solid var(--chip-border); background:var(--chip); color:var(--text)
+    .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.22)}
+    .btn{
+      padding:7px 12px; border-radius:10px; border:1px solid var(--chip-border);
+      background:var(--chip); color:var(--text); cursor:pointer
     }
+    .btn:hover{box-shadow:0 6px 18px rgba(0,0,0,.18)}
 
-    /* LAYOUT --------------------------------------------------------------- */
-    .shell{max-width:1380px;margin:0 auto;padding:18px;display:grid;grid-template-columns:260px 1fr;gap:18px}
-    @media (max-width:1000px){.shell{grid-template-columns:1fr}}
+    /* ================= LAYOUT ================= */
+    .shell{max-width:1400px; margin:0 auto; padding:16px; display:grid; grid-template-columns:260px 1fr; gap:16px}
+    @media (max-width:1040px){.shell{grid-template-columns:1fr}}
 
-    /* SIDE NAV */
+    /* ================= SIDE NAV (collapsible) ================= */
     .nav{
-      border:1px solid var(--card-border); background:var(--card);
-      border-radius:18px; box-shadow:var(--shadow-card);
-      padding:12px; display:flex; flex-direction:column; gap:8px; height:max-content
+      border:1px solid var(--border); background:var(--card);
+      border-radius:16px; padding:10px; height:max-content;
+      position:sticky; top:68px; box-shadow:0 18px 50px rgba(0,0,0,.25);
+      transition: width .2s ease, padding .2s ease;
     }
-    .nav h6{margin:6px 6px 2px; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted)}
-    .nav button{
-      display:flex; align-items:center; gap:8px; width:100%;
-      background:transparent; color:var(--text-muted); cursor:pointer;
-      border:1px solid transparent; border-radius:12px; padding:9px 10px; font-size:.92rem
+    .nav-head{
+      display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px
     }
-    .nav button:hover{background:var(--table-row); color:var(--text)}
-    .nav button.active{background:rgba(99,102,241,.18); color:var(--text); border-color:rgba(99,102,241,.45)}
-    .nav small{border:1px dashed var(--card-border); color:var(--text-muted); padding:8px; border-radius:12px}
+    .nav h6{margin:0; font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
+    .collapse-btn{border:1px solid var(--chip-border); background:var(--chip); color:var(--text); border-radius:8px; padding:5px 8px; cursor:pointer}
+    .navlist{display:flex; flex-direction:column; gap:6px}
+    .item{
+      display:flex; align-items:center; gap:10px; border-radius:12px;
+      border:1px solid transparent; padding:9px 10px; cursor:pointer;
+      color:var(--muted); background:transparent
+    }
+    .item:hover{background:var(--row); color:var(--text)}
+    .item.active{background:var(--accent-ghost); border-color:var(--accent); color:var(--text)}
+    .ico{
+      width:28px; height:28px; border-radius:8px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background:var(--row); color:var(--text)
+    }
+    .item span.label{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 
-    /* PANELS / CARDS ------------------------------------------------------- */
-    .main{display:flex; flex-direction:column; gap:16px}
+    /* collapsed (desktop) */
+    .nav.collapsed{width:74px; padding:10px 8px}
+    .nav.collapsed .nav-head h6, .nav.collapsed .item span.label, .nav.collapsed .nav-note{display:none}
+    .nav.collapsed .item{justify-content:center}
+
+    /* mobile drawer */
+    @media (max-width:1040px){
+      .nav{position:fixed; left:0; top:64px; bottom:0; width:260px; transform:translateX(-110%); transition: transform .25s ease; z-index:60}
+      .nav.open{transform:none}
+      .shell{grid-template-columns:1fr}
+    }
+    .nav-note{margin-top:8px; padding:8px; border:1px dashed var(--border); border-radius:12px; color:var(--muted); font-size:.82rem}
+
+    /* ================= PANELS / CARDS ================= */
+    .main{display:flex; flex-direction:column; gap:14px}
     .panel{display:none}
     .panel.active{display:block}
-    .panel h3{margin:.2rem 0 .1rem}
-    .panel p.sub{margin:.1rem 0 1rem; color:var(--text-muted); font-size:.9rem}
+    .panel h3{margin:.2rem 0 .1rem; font-size:1.25rem}
+    .panel p.sub{margin:.1rem 0 1rem; color:var(--muted)}
 
-    .grid{display:grid; grid-template-columns:1.45fr 1fr; gap:16px}
-    @media (max-width:1100px){.grid{grid-template-columns:1fr}}
+    .grid{display:grid; grid-template-columns:1.45fr 1fr; gap:14px}
+    @media(max-width:1100px){.grid{grid-template-columns:1fr}}
 
     .card{
-      border:1px solid var(--card-border); background:var(--card);
-      border-radius:var(--radius-lg); padding:16px 18px; position:relative; overflow:hidden;
-      box-shadow:var(--shadow-card)
+      border:1px solid var(--border); background:var(--card); border-radius:18px; padding:14px 16px; position:relative;
+      box-shadow:0 18px 50px rgba(0,0,0,.2)
     }
-    .card:before{
-      content:""; position:absolute; inset:0; pointer-events:none; opacity:.5;
-      background:linear-gradient(135deg, rgba(255,255,255,.06), transparent 40%, rgba(99,102,241,.09) 80%, transparent)
-    }
-    .card .hd{display:flex; justify-content:space-between; align-items:end; gap:10px; margin-bottom:10px}
-    .card .hd .ttl{font-weight:700; font-size:1rem}
-    .pill{padding:2px 8px; border-radius:999px; border:1px solid var(--pill-border); background:var(--pill); color:var(--text-muted); font-size:.72rem}
-    .note{color:var(--text-muted); font-size:.8rem; margin-top:.5rem; text-align:right}
+    .card .hd{display:flex; justify-content:space-between; gap:10px; align-items:end; margin-bottom:8px}
+    .ttl{font-weight:800; font-size:1rem}
+    .pill{border:1px solid var(--pill-border); background:var(--pill); color:var(--muted); border-radius:999px; padding:2px 8px; font-size:.74rem}
+    .note{color:var(--muted); font-size:.84rem; margin-top:.4rem; text-align:right}
 
-    /* TABLES */
+    /* tables */
     table{width:100%; border-collapse:collapse; font-size:.95rem}
-    thead{background:var(--table-row)}
-    th,td{padding:9px 10px; border-bottom:1px solid var(--card-border); text-align:left}
-    tbody tr:nth-child(even){background:var(--table-row)}
-    tbody tr:hover{background:var(--table-hover)}
+    thead{background:var(--row)}
+    th,td{padding:9px 10px; border-bottom:1px solid var(--border); text-align:left}
+    tbody tr:nth-child(even){background:var(--row)}
+    tbody tr:hover{background:var(--row-hover)}
     .ok{color:var(--ok); font-weight:700}
-    .bad{color:var(--bad); font-weight:700}
     .warn{color:var(--warn); font-weight:700}
+    .bad{color:var(--bad); font-weight:700}
 
-    /* CONCURRENCY TILES (BOTTOM STRIP) ------------------------------------ */
-    .tiles{
-      position:sticky; bottom:0; z-index:20; margin-top:18px;
-      backdrop-filter: blur(8px);
-      padding:14px 0 18px;
-      border-top:1px solid var(--card-border);
-      background: linear-gradient(to top, rgba(2,6,23,.65), rgba(2,6,23,.0));
-    }
-    .tiles .inner{max-width:1380px;margin:0 auto;padding:0 18px; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px}
-    @media (max-width:1200px){.tiles .inner{grid-template-columns:repeat(2, minmax(0,1fr))}}
-    @media (max-width:640px){.tiles .inner{grid-template-columns:1fr}}
-
+    /* bottom tiles */
+    .tiles{margin-top:14px}
+    .tilewrap{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px}
+    @media(max-width:1200px){.tilewrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:620px){.tilewrap{grid-template-columns:1fr}}
     .tile{
-      border:1px solid var(--card-border); background:var(--card); border-radius:16px; padding:10px 12px; box-shadow:var(--shadow-card);
-      display:grid; grid-template-columns:56px 1fr auto; gap:10px; align-items:center; position:relative; overflow:hidden
+      border:1px solid var(--border); background:var(--card); border-radius:14px; padding:10px 12px;
+      display:grid; grid-template-columns:58px 1fr auto; gap:10px; align-items:center
     }
-    .tile:after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(255,255,255,.03), transparent); pointer-events:none}
-    .tile .logo{width:42px;height:42px;border-radius:10px; background:#0b1220; display:flex; align-items:center; justify-content:center; overflow:hidden}
-    .tile .logo img{max-width:100%; max-height:100%; object-fit:contain}
-    .tile .meta{display:flex; flex-direction:column; gap:2px}
-    .tile .meta b{font-size:1rem}
-    .tile .meta small{color:var(--text-muted)}
-    .spark{width:140px; height:40px}
+    .tile .logo{width:46px;height:46px;border-radius:10px; background:#0a0f1a; display:flex; align-items:center; justify-content:center; overflow:hidden}
+    .tile .logo img{max-width:100%; max-height:100%}
+    .tile b{font-size:1rem}
     .badge{
-      padding:2px 8px; border-radius:999px; border:1px solid rgba(250, 204, 21,.45); background:rgba(250,204,21,.12);
-      color:#eab308; font-weight:700; font-size:.8rem
+      border:1px solid rgba(250,204,21,.5); background:rgba(250,204,21,.12); color:#b08900; padding:2px 8px; border-radius:999px; font-weight:800
     }
+    .spark{width:140px; height:40px}
 
-    /* FOOTER CTA BAND + SLOT COUNTER -------------------------------------- */
-    .cta {
-      margin-top:20px; border-top:2px solid var(--card-border);
-      background: var(--grad-footer);
-      padding:38px 18px 46px; text-align:center; color:#0b1220
-    }
-    .cta h2{font-weight:900; font-size:48px; letter-spacing:.02em; margin:0}
-    .cta .btn{
-      margin-top:16px; background:#fff; color:#0b1220; padding:12px 28px; border-radius:999px; display:inline-block; font-weight:800; box-shadow:0 15px 35px rgba(0,0,0,.18)
-    }
+    /* slot counter */
+    .slots{display:grid; grid-template-columns:2fr 1fr 1fr; gap:12px; margin-top:14px}
+    @media(max-width:1100px){ .slots{grid-template-columns:1fr} }
+    .slot-card{border:1px solid var(--border); background:var(--card); border-radius:18px; padding:14px 16px}
+    .slot-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px}
+    .digits{display:flex; gap:6px}
+    .digit{width:34px; height:48px; overflow:hidden; border:1px solid var(--border); border-radius:8px; background:#1b2a4b; box-shadow:inset 0 0 12px rgba(0,0,0,.28)}
+    .wheel{position:relative; top:0; transition:top .6s cubic-bezier(.18,.89,.32,1.28)}
+    .wheel div{height:48px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:900; font-size:28px}
 
-    .slots-wrap{max-width:1380px; margin:18px auto 0; padding:0 18px; display:grid; grid-template-columns:2fr 1fr 1fr; gap:12px}
-    @media (max-width:1100px){.slots-wrap{grid-template-columns:1fr}}
-    .slot-card{
-      border:1px solid var(--card-border); background:var(--card); border-radius:var(--radius-lg); padding:14px; box-shadow:var(--shadow-card)
-    }
-    .slot-card .hdline{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px}
-    .slot-card .hdline b{font-size:1rem}
-    .slot-row{display:flex; gap:6px; align-items:center}
-    .digit{
-      width:32px; height:46px; overflow:hidden; border-radius:6px; border:1px solid var(--card-border); background:#1e2a44;
-      box-shadow:inset 0 0 15px rgba(0,0,0,.35)
-    }
-    .digit .wheel{
-      position:relative; top:0; transition: top .6s cubic-bezier(.18,.89,.32,1.28)
-    }
-    .digit .wheel div{
-      height:46px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:28px
-    }
-
-    /* small tables for incident breakdown */
-    .mini table{font-size:.9rem}
+    /* helper */
+    .sr{position:absolute;left:-9999px}
   </style>
 </head>
 <body>
-  <!-- TOP -->
-  <header class="top">
+  <!-- ================= TOP ================= -->
+  <header class="top" role="banner">
     <div class="brand">
-      <img src="image/Quickplay.jpg" alt="Quickplay">
-      <div class="title">
-        <b>TechOps 360</b>
-        <small>Live operations view for Quickplay customers</small>
+      <div class="logo-wrap">
+        <img class="logo" src="image/Quickplay.jpg" alt="Quickplay logo">
+      </div>
+      <div class="titles">
+        <div class="name">TechOps 360</div>
+        <div class="desc">Operational intelligence for Quickplay customers</div>
       </div>
     </div>
-    <div class="right">
-      <span class="chip"><span class="dot"></span>24×7 follow-the-sun support</span>
-      <button id="themeToggle" class="toggle">🌙 Dark</button>
+    <div class="top-actions">
+      <button id="navToggle" class="btn" aria-controls="sidenav" aria-expanded="false">☰ Menu</button>
+      <span class="chip"><span class="dot"></span> 24×7 follow-the-sun</span>
+      <button id="themeToggle" class="btn">🌙 Dark</button>
     </div>
   </header>
 
-  <!-- APP -->
+  <!-- ================= APP LAYOUT ================= -->
   <div class="shell">
-    <!-- NAV -->
-    <aside class="nav">
-      <h6>Views</h6>
-      <button class="active" data-panel="dash">🏠 Dashboard</button>
-      <button data-panel="stats">📊 Customer Stats</button>
-      <button data-panel="synth">🩺 Synthetic Monitoring</button>
-      <button data-panel="manifests">📡 Manifest Check</button>
-      <button data-panel="handoff">📒 Shift Handoffs</button>
-      <button data-panel="rbac">🔐 RBAC</button>
-      <button data-panel="issues">🧠 Issue Search</button>
-      <small>This internal view blends live sources (Google Sheets) with placeholders you can wire to ServiceNow, Grafana, and NR.</small>
+    <!-- ===== Side Nav (collapsible + mobile drawer) ===== -->
+    <aside id="sidenav" class="nav" aria-label="Side navigation">
+      <div class="nav-head">
+        <h6>Views</h6>
+        <button id="collapseBtn" class="collapse-btn" title="Collapse side menu">«</button>
+      </div>
+      <div class="navlist">
+        <button class="item active" data-panel="dash"><span class="ico">🏠</span><span class="label">Dashboard</span></button>
+        <button class="item" data-panel="stats"><span class="ico">📊</span><span class="label">Customer Stats</span></button>
+        <button class="item" data-panel="synth"><span class="ico">🩺</span><span class="label">Synthetic Monitoring</span></button>
+        <button class="item" data-panel="manifests"><span class="ico">📡</span><span class="label">Manifest Check</span></button>
+        <button class="item" data-panel="handoff"><span class="ico">📒</span><span class="label">Shift Handoffs</span></button>
+        <button class="item" data-panel="rbac"><span class="ico">🔐</span><span class="label">RBAC</span></button>
+        <button class="item" data-panel="issues"><span class="ico">🧠</span><span class="label">Issue Search</span></button>
+      </div>
+      <div class="nav-note">Internal view. Live: Google Sheets ops calendar & app-store sentiment. Others: placeholders to wire to NR/Grafana/ServiceNow.</div>
     </aside>
 
-    <!-- MAIN -->
+    <!-- ===== Main ===== -->
     <main class="main">
-      <!-- DASH -->
-      <section id="dash" class="panel active">
-        <h3>Live Operations Dashboard</h3>
+      <!-- DASHBOARD -->
+      <section id="dash" class="panel active" aria-labelledby="dash-h">
+        <h3 id="dash-h">Live Operations Dashboard</h3>
         <p class="sub">Who is on shift right now and active customer concurrency across the platform.</p>
 
         <div class="grid">
@@ -264,7 +266,7 @@
               <div class="ttl">Current shift coverage <span class="pill">Today • auto-updated</span></div>
               <div class="pill">Local-window filter</div>
             </div>
-            <table>
+            <table aria-label="Current shift table">
               <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
               <tbody id="ops-calendar-body">
                 <tr><td colspan="3">Loading schedule…</td></tr>
@@ -273,79 +275,66 @@
             <div class="note">Coverage includes IST, MYT and EST rotations.</div>
           </div>
 
-          <!-- Concurrency snapshot (compact) -->
+          <!-- Compact concurrency table -->
           <div class="card">
             <div class="hd">
               <div class="ttl">Customer concurrency <span class="pill">Snapshot</span></div>
-              <div class="pill">Live tiles below</div>
+              <div class="pill">Tiles below</div>
             </div>
             <table>
               <thead><tr><th>Customer</th><th>Now</th><th>Notes</th></tr></thead>
-              <tbody id="conc-mini-body">
+              <tbody id="conc-table">
                 <tr><td>Aha</td><td><b>4.5K</b></td><td>Stable</td></tr>
                 <tr><td>RSM</td><td><b>1.2K</b></td><td>Stable</td></tr>
                 <tr><td>PLDT</td><td><b>3.0K</b></td><td>Peaking</td></tr>
                 <tr><td>Canela</td><td><b>800</b></td><td>Normal</td></tr>
               </tbody>
             </table>
-            <div class="note" style="text-align:left">Numbers are placeholders; wire your New Relic/Grafana API when ready.</div>
           </div>
         </div>
 
-        <!-- BOTTOM TILES: one per customer, with mini sparkline -->
+        <!-- Tiles -->
         <div class="tiles">
-          <div class="inner" id="tiles"></div>
+          <div class="tilewrap" id="tiles"></div>
         </div>
 
-        <!-- CTA band + counters -->
-        <section class="cta">
-          <h2>CURIOUS? LET’S TALK.</h2>
-          <a class="btn" href="#">CONTACT US</a>
-        </section>
-
-        <!-- Slot counters and daily breakdowns -->
-        <div class="slots-wrap">
+        <!-- Counters & breakdowns -->
+        <div class="slots">
           <div class="slot-card">
-            <div class="hdline"><b>Total incidents since org inception</b><span class="pill">slot-counter • placeholder</span></div>
-            <div class="slot-row" id="slotCounter"></div>
+            <div class="slot-head"><b>Total incidents since org inception</b><span class="pill">slot counter</span></div>
+            <div id="slotCounter" class="digits" aria-label="Total incidents" role="img"></div>
           </div>
-
-          <div class="slot-card mini">
-            <div class="hdline"><b>Today by category</b><span class="pill">placeholder</span></div>
-            <table>
-              <tbody id="todayCats">
-                <tr><td>Content</td><td style="text-align:right"><b>6</b></td></tr>
-                <tr><td>Playback/DRM</td><td style="text-align:right"><b>3</b></td></tr>
-                <tr><td>Identity</td><td style="text-align:right"><b>2</b></td></tr>
-                <tr><td>Payments</td><td style="text-align:right"><b>1</b></td></tr>
-              </tbody>
-            </table>
+          <div class="slot-card">
+            <div class="slot-head"><b>Today by category</b><span class="pill">placeholder</span></div>
+            <table><tbody id="todayCats">
+              <tr><td>Content</td><td style="text-align:right"><b>6</b></td></tr>
+              <tr><td>Playback/DRM</td><td style="text-align:right"><b>3</b></td></tr>
+              <tr><td>Identity</td><td style="text-align:right"><b>2</b></td></tr>
+              <tr><td>Payments</td><td style="text-align:right"><b>1</b></td></tr>
+            </tbody></table>
           </div>
-
-          <div class="slot-card mini">
-            <div class="hdline"><b>Today by customer</b><span class="pill">placeholder</span></div>
-            <table>
-              <tbody id="todayCust">
-                <tr><td>Aha</td><td style="text-align:right"><b>4</b></td></tr>
-                <tr><td>PLDT</td><td style="text-align:right"><b>3</b></td></tr>
-                <tr><td>RSM</td><td style="text-align:right"><b>3</b></td></tr>
-                <tr><td>Canela</td><td style="text-align:right"><b>2</b></td></tr>
-              </tbody>
-            </table>
+          <div class="slot-card">
+            <div class="slot-head"><b>Today by customer</b><span class="pill">placeholder</span></div>
+            <table><tbody id="todayCust">
+              <tr><td>Aha</td><td style="text-align:right"><b>4</b></td></tr>
+              <tr><td>PLDT</td><td style="text-align:right"><b>3</b></td></tr>
+              <tr><td>RSM</td><td style="text-align:right"><b>3</b></td></tr>
+              <tr><td>Canela</td><td style="text-align:right"><b>2</b></td></tr>
+            </tbody></table>
           </div>
         </div>
       </section>
 
       <!-- CUSTOMER STATS -->
-      <section id="stats" class="panel">
-        <h3>Customer Stats</h3>
+      <section id="stats" class="panel" aria-labelledby="stats-h">
+        <h3 id="stats-h">Customer Stats</h3>
         <p class="sub">App store ratings and customer sentiment (last 7 days).</p>
         <div class="card"><div id="customer-sentiment-dashboard"></div></div>
       </section>
 
       <!-- SYNTHETIC -->
-      <section id="synth" class="panel">
-        <h3>Synthetic Monitoring</h3>
+      <section id="synth" class="panel" aria-labelledby="synth-h">
+        <h3 id="synth-h">Synthetic Monitoring</h3>
         <p class="sub">Representative checks (sample data).</p>
         <div class="card">
           <table>
@@ -381,10 +370,10 @@
         <h3>Shift Handoffs</h3>
         <p class="sub">Incidents, changes & FYI (sample).</p>
         <div class="card">
-          <ul style="margin:0; padding-left:16px">
+          <ul style="margin:0; padding-left:18px">
             <li>Incidents opened: 7 • Closed: 4 • Updated: 28</li>
             <li>INC0195019 – Mobile loading issue</li>
-            <li>INC0195023 – Aha: subscribed user still sees “subscribe now”</li>
+            <li>INC0195023 – Aha: subscribed user sees “subscribe now”</li>
             <li>CHG0102910 – LocalNow HLS/EPG URL change – Completed</li>
             <li>Upcoming – CHG0102882 Aha web deployment 23:30 IST</li>
           </ul>
@@ -399,21 +388,21 @@
           <table>
             <thead><tr><th>Role</th><th>Description</th><th>Access</th></tr></thead>
             <tbody>
-              <tr><td>Admin</td><td>Full control and user management</td><td>All</td></tr>
-              <tr><td>Operations Lead</td><td>Dashboards + team management</td><td>View + scoped edit</td></tr>
-              <tr><td>Operations Engineer</td><td>Dashboards + operational tasks</td><td>View + limited edit</td></tr>
+              <tr><td>Admin</td><td>Full control & user management</td><td>All</td></tr>
+              <tr><td>Operations Lead</td><td>Dashboards & team management</td><td>View + scoped edit</td></tr>
+              <tr><td>Operations Engineer</td><td>Dashboards & ops tasks</td><td>View + limited edit</td></tr>
               <tr><td>Viewer</td><td>Read-only</td><td>View only</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <!-- ISSUES -->
+      <!-- ISSUE SEARCH -->
       <section id="issues" class="panel">
         <h3>Issue Resolution Search</h3>
         <p class="sub">Ops memory (simulated search).</p>
         <div class="card">
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--card-border); background:var(--card); color:var(--text)" placeholder="Search for past issues (e.g., ‘buffer timeout’)" />
+          <input aria-label="Search issues" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border); background:var(--card); color:var(--text)" placeholder="Search for past issues (e.g., ‘buffer timeout’)" />
           <table style="margin-top:10px">
             <thead><tr><th>ID</th><th>Summary</th><th>Customer</th><th>Resolved</th><th>Resolution</th><th>Owner</th></tr></thead>
             <tbody>
@@ -427,106 +416,105 @@
     </main>
   </div>
 
-  <!-- NAV LOGIC -->
+  <!-- ================= NAV + THEME JS ================= -->
   <script>
-    document.querySelectorAll('.nav button').forEach(btn=>{
+    // Panel switching
+    document.querySelectorAll('.item').forEach(btn=>{
       btn.addEventListener('click',()=>{
-        document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+        document.querySelectorAll('.item').forEach(b=>b.classList.remove('active'));
         btn.classList.add('active');
         const id = btn.dataset.panel;
         document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
         document.getElementById(id).classList.add('active');
+
+        // close drawer on mobile
+        document.getElementById('sidenav').classList.remove('open');
+        document.getElementById('navToggle').setAttribute('aria-expanded','false');
       });
     });
-  </script>
 
-  <!-- THEME TOGGLE -->
-  <script>
-    const root = document.documentElement;
+    // Collapse (desktop)
+    const sidenav = document.getElementById('sidenav');
+    document.getElementById('collapseBtn').addEventListener('click',()=>{
+      sidenav.classList.toggle('collapsed');
+    });
+
+    // Mobile drawer toggle
+    document.getElementById('navToggle').addEventListener('click',()=>{
+      const open = sidenav.classList.toggle('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', String(open));
+    });
+
+    // Theme toggle (persist)
     const toggleBtn = document.getElementById('themeToggle');
     function setTheme(mode){
       document.documentElement.setAttribute('data-theme', mode);
       toggleBtn.textContent = mode==='dark' ? '🌙 Dark' : '☀️ Light';
       localStorage.setItem('techops-theme', mode);
     }
-    const saved = localStorage.getItem('techops-theme');
-    setTheme(saved || 'dark');
+    setTheme(localStorage.getItem('techops-theme') || 'dark');
     toggleBtn.addEventListener('click', ()=>{
-      const next = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
-      setTheme(next);
+      setTheme(document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
     });
   </script>
 
-  <!-- GOOGLE SHEETS OPS CAL (your existing file keeps working) -->
-  <script src="ops-calendar.js?v=3"></script>
-
-  <!-- CUSTOMER SENTIMENT (your existing dark-aware CSS/JS) -->
-  <script src="customer-sentiment.js?v=3"></script>
-
-  <!-- CONCURRENCY TILES + SPARKLINES + SLOT COUNTER (placeholders) -->
+  <!-- ================= CONCURRENCY TILES + SLOT COUNTER (placeholders) ================= -->
   <script>
-    // --- placeholder data you can replace with NewRelic/Grafana API results
     const TILE_DATA = [
-      { name:'Aha', logo:'image/aha.jpg', now: 4500, series:[3400,3700,3900,4100,4200,4300,4400,4500]},
-      { name:'RSM', logo:'image/RSM_Logo.png', now: 1200, series:[950,980,1020,1070,1110,1150,1180,1200]},
-      { name:'PLDT', logo:'image/smart.png', now: 3000, series:[2200,2400,2550,2700,2850,2950,2975,3000]},
-      { name:'Canela', logo:'image/Canela.png', now: 800, series:[500,560,610,680,700,720,770,800]},
+      { name:'Aha',   logo:'image/aha.jpg',        now: 4500, series:[3400,3700,3900,4100,4200,4300,4400,4500]},
+      { name:'RSM',   logo:'image/RSM_Logo.png',   now: 1200, series:[950,980,1020,1070,1110,1150,1180,1200]},
+      { name:'PLDT',  logo:'image/smart.png',      now: 3000, series:[2200,2400,2550,2700,2850,2950,2975,3000]},
+      { name:'Canela',logo:'image/Canela.png',     now: 800,  series:[500,560,610,680,700,720,770,800]},
     ];
+    function formatK(n){return n>=1000?(n/1000).toFixed(n%1000===0?0:1)+'K':n}
 
-    function formatK(n){ return n>=1000 ? (n/1000).toFixed(n%1000===0?0:1)+'K' : n }
-
-    function drawSparkline(el, data){
-      const w = 140, h = 40, pad = 2;
-      const min = Math.min(...data), max = Math.max(...data);
-      const norm = v => (h - pad) - ( (v-min) / (max-min || 1) ) * (h - pad*2);
-      const step = (w - pad*2) / (data.length - 1);
-      let d = '';
-      data.forEach((v,i)=>{ const x = pad + i*step; const y = norm(v); d += (i? ' L':'M')+x+' '+y });
-      el.innerHTML =
-        `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
-          <path d="${d}" fill="none" stroke="currentColor" stroke-width="2" opacity=".9"></path>
-        </svg>`;
+    function drawSpark(el, data){
+      const w=140,h=40,p=2,min=Math.min(...data),max=Math.max(...data);
+      const norm=v=>(h-p)-((v-min)/(max-min||1))*(h-p*2);
+      const step=(w-p*2)/(data.length-1);
+      let d=''; data.forEach((v,i)=>{const x=p+i*step,y=norm(v); d+=(i?' L':'M')+x+' '+y});
+      el.innerHTML=`<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+        <path d="${d}" fill="none" stroke="currentColor" stroke-width="2" opacity=".9"></path>
+      </svg>`;
     }
 
     function buildTiles(){
-      const wrap = document.getElementById('tiles'); wrap.innerHTML='';
+      const wrap=document.getElementById('tiles'); wrap.innerHTML='';
       TILE_DATA.forEach(t=>{
-        const li = document.createElement('div'); li.className='tile';
-        li.innerHTML = `
-          <div class="logo"><img src="${t.logo}" alt="${t.name}"></div>
-          <div class="meta"><b>${t.name}</b><small>last 30 min</small></div>
-          <div style="display:flex; gap:10px; align-items:center">
-            <div class="badge">Live <span style="font-weight:800">${formatK(t.now)}</span></div>
-            <div class="spark-hold"></div>
+        const div=document.createElement('div'); div.className='tile';
+        div.innerHTML=`<div class="logo"><img src="${t.logo}" alt="${t.name}"></div>
+          <div><b>${t.name}</b><div style="color:var(--muted);font-size:.9rem">last 30 min</div></div>
+          <div style="display:flex;gap:10px;align-items:center">
+            <span class="badge">Live ${formatK(t.now)}</span>
+            <span class="spark-here"></span>
           </div>`;
-        wrap.appendChild(li);
-        drawSparkline(li.querySelector('.spark-hold'), t.series);
+        wrap.appendChild(div);
+        drawSpark(div.querySelector('.spark-here'), t.series);
       });
     }
     buildTiles();
 
-    // --- Slot machine counter (placeholder total)
-    function buildSlot(el, number){
-      const text = String(number);
-      el.innerHTML='';
-      for(const ch of text){
-        const d = document.createElement('div'); d.className='digit';
-        const wheel = document.createElement('div'); wheel.className='wheel';
-        // Build 0-9 plus the target at the end for a better roll feel
-        for(let i=0;i<=9;i++){ const cell=document.createElement('div'); cell.textContent=i; wheel.appendChild(cell) }
-        const final = document.createElement('div'); final.textContent=ch; wheel.appendChild(final);
+    // Slot machine counter (placeholder)
+    function buildSlot(el, n){
+      const s=String(n); el.innerHTML='';
+      for(const ch of s){
+        const d=document.createElement('div'); d.className='digit';
+        const wheel=document.createElement('div'); wheel.className='wheel';
+        for(let i=0;i<=9;i++){const cell=document.createElement('div'); cell.textContent=i; wheel.appendChild(cell)}
+        const fin=document.createElement('div'); fin.textContent=ch; wheel.appendChild(fin);
         d.appendChild(wheel); el.appendChild(d);
-        // animate
         requestAnimationFrame(()=>{
-          const idx = 10; // scroll through one full set
-          wheel.style.top = `-${46*idx}px`;
-          setTimeout(()=>{ wheel.style.top = `-${46*parseInt(ch,10)}px`; wheel.style.transition='top .45s ease' }, 620);
+          wheel.style.top=`-${48*10}px`;
+          setTimeout(()=>{ wheel.style.transition='top .45s ease'; wheel.style.top=`-${48*parseInt(ch,10)}px`}, 650);
         });
       }
     }
-    // Example: “since org started” placeholder (change to real value when wired)
     buildSlot(document.getElementById('slotCounter'), 65432);
   </script>
+
+  <!-- ================= Your existing data loaders ================= -->
+  <script src="ops-calendar.js?v=4"></script>
+  <script src="customer-sentiment.js?v=3"></script>
 
   <!-- Botpress (unchanged) -->
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
