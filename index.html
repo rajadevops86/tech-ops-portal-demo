@@ -368,39 +368,96 @@
   </script>
 
   <!-- SLOT MACHINE (robust + persistent) -->
-  <script>
-    (function(){
-      const TARGET="654432";      // placeholder total
-      const H=92;                 // must match .digit height
-      const wrap=document.getElementById('slotCounter');
-      wrap.innerHTML='';
+  <!-- SLOT MACHINE (robust + persistent + self-measuring) -->
+<script>
+(function(){
+  // You can override via window.TOTAL_INCIDENTS_PLACEHOLDER before this runs
+  const TARGET = String(window.TOTAL_INCIDENTS_PLACEHOLDER || "654432");
+  const wrap = document.getElementById("slotCounter");
+  if (!wrap) return;
 
-      function makeCol(digit){
-        const slot=document.createElement('div'); slot.className='slot';
-        const col=document.createElement('div');  col.className='digit-col';
-        // preload digits (3 full cycles 0..9) + final digit
-        for(let c=0;c<3;c++){
-          for(let i=0;i<10;i++){
-            const e=document.createElement('div'); e.className='digit'; e.textContent=i; col.appendChild(e);
-          }
-        }
-        const last=document.createElement('div'); last.className='digit'; last.textContent=digit; col.appendChild(last);
-        slot.appendChild(col);
+  // Clean slate
+  wrap.textContent = "";
 
-        // animate after paint
-        requestAnimationFrame(()=>{ requestAnimationFrame(()=>{
-          const end=30 + Number(digit); // 3 cycles (30) + final digit offset
-          col.style.transform=`translateY(-${end*H}px)`;
-        })});
+  function makeCol(digitChar){
+    const slot = document.createElement("div");
+    slot.className = "slot";
 
-        // lock final state after transition
-        col.addEventListener('transitionend',()=>{ col.style.transition='none'; });
+    const col = document.createElement("div");
+    col.className = "digit-col";
+    col.style.willChange = "transform"; // smoother on some GPUs
 
-        return slot;
+    const frag = document.createDocumentFragment();
+
+    // Build multiple cycles 0..9 so the spin looks legit
+    // 4 cycles (40 steps) + final digit
+    for (let r = 0; r < 4; r++){
+      for (let i = 0; i < 10; i++){
+        const d = document.createElement("div");
+        d.className = "digit";
+        d.textContent = i;
+        frag.appendChild(d);
       }
-      TARGET.split('').forEach(d=>wrap.appendChild(makeCol(d)));
-    })();
-  </script>
+    }
+    const final = document.createElement("div");
+    final.className = "digit";
+    final.textContent = digitChar;
+    frag.appendChild(final);
+
+    col.appendChild(frag);
+    slot.appendChild(col);
+
+    // After paint, measure a digit's height and animate
+    requestAnimationFrame(() => {
+      const firstDigit = col.querySelector(".digit");
+      const H = Math.round(firstDigit?.getBoundingClientRect().height || 92);
+      const endIndex = 40 + Number(digitChar); // 4 full cycles + final digit
+
+      // Ensure we start at 0 then animate next frame (prevents instant jump)
+      col.style.transition = "transform 1200ms cubic-bezier(.22,1,.36,1)";
+      col.style.transform = "translateY(0px)";
+      requestAnimationFrame(() => {
+        col.style.transform = `translateY(-${endIndex * H}px)`;
+      });
+
+      // When animation ends, normalize so the final digit stays visible forever
+      col.addEventListener("transitionend", () => {
+        // Stop animating
+        col.style.transition = "none";
+
+        // Optional: trim older nodes to keep DOM light
+        const nodes = Array.from(col.children);
+        const keepFrom = Math.max(0, nodes.length - 20); // keep last ~20
+        for (let i = 0; i < keepFrom; i++) col.removeChild(nodes[i]);
+
+        // Re-measure and reposition the column so the final digit is visible at rest
+        const d0 = col.querySelector(".digit");
+        const h2 = Math.round(d0?.getBoundingClientRect().height || H);
+
+        // Put column so that last node (final digit) is at the bottom…
+        const visibleCount = col.children.length;
+        col.style.transform = `translateY(-${(visibleCount - 1) * h2}px)`;
+
+        // …then, in the next tick, snap back to 0px (no transition),
+        // which visually keeps the final digit in place and prevents “blink”
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            col.style.transform = "translateY(0px)";
+          });
+        });
+      }, { once: true });
+    });
+
+    return slot;
+  }
+
+  // Build one column per digit
+  for (const ch of TARGET) {
+    wrap.appendChild(makeCol(ch));
+  }
+})();
+</script>
+
 
   <!-- AVAILABILITY GAUGE -->
   <script>
