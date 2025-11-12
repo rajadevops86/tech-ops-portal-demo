@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-11T03:08:01.049666+00:00",
+  "generated_utc": "2025-11-12T03:06:55.467294+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53096
+        "rating": 4.53097
       },
       "android": {
-        "rating": 4.419586
+        "rating": 4.4199657
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.52,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,29 +19,29 @@
             "platform": "iOS"
           },
           {
-            "text": "Very nice i simply loved it",
+            "text": "excellent",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Good entertainment movie",
+            "text": "hi superb",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst ever App! Even after 3 Adds the Movie doesn't Continue playing",
-            "rating": 1,
+            "text": "Worst experience today videos not streaming.. Download videos Not Playing and when I am started playing the video my mobile was shutdown very worst app my amount was lost",
+            "rating": 2,
             "platform": "Android"
           },
           {
-            "text": "very worst app I ever see",
-            "rating": 1,
+            "text": "worst",
+            "rating": 2,
             "platform": "Android"
           },
           {
-            "text": "worst conversation in help line",
+            "text": "Worst app it doesn't work well in my tv too lag and worst experience with the app I stopped my subscription and I don't want to use it anymore.",
             "rating": 1,
             "platform": "Android"
           }
@@ -60,11 +60,11 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "worsening"
+            "label": "buffer",
+            "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -76,10 +76,10 @@
         "rating": 4.54202
       },
       "android": {
-        "rating": 4.611672
+        "rating": 4.6108913
       },
       "sentiment": {
-        "score": 0.565,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -129,11 +129,11 @@
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -142,10 +142,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.75644
+        "rating": 1.75291
       },
       "android": {
-        "rating": 3.778626
+        "rating": 3.7910447
       },
       "sentiment": {
         "score": 0.543,
