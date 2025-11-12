@@ -199,7 +199,7 @@ async function loadOpsCalendar() {
       out.push(`
         <tr>
           <td>${engineerName}</td>
-          <td class="status-working">Working now</td>
+          <td class="status-working" style="font-weight: bold; color: green;">ON SHIFT</td>
           <td>${cleaned}</td>
         </tr>
       `);
