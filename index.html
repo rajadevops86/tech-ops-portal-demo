@@ -335,31 +335,62 @@
   <!-- GOOGLE SHEETS OPS CALENDAR (your implementation) -->
   <script src="ops-calendar.js"></script>
   <!-- Post-process ops table: show only Working/On Shift and style the badge; keep fixed height -->
-  <script>
-    (function(){
-      const tbody = document.getElementById('ops-calendar-body');
-      const fixHeights = ()=>document.querySelectorAll('.fixed-eq').forEach(el=>el.style.height=getComputedStyle(document.documentElement).getPropertyValue('--card-fixed-h'));
-      fixHeights();
+ <!-- Post-process ops table: show only Working/On Shift and style the badge; keep fixed height -->
+<script>
+  (function () {
+    const tbody = document.getElementById('ops-calendar-body');
 
-      const filterRows = ()=>{
-        const rows = Array.from(tbody.querySelectorAll('tr'));
-        rows.forEach(r=>{
-          const tds = r.querySelectorAll('td');
-          if(tds.length<3) return;
-          const statusTxt = (tds[1].textContent || '').trim().toLowerCase();
-          const isOn = statusTxt.includes('working') || statusTxt.includes('on shift') || statusTxt.includes('onshift');
-          if(!isOn){ r.remove(); return; }
-          tds[1].innerHTML = '<span class="pill-on">ON&nbsp;SHIFT</span>';
-        });
-        if(!tbody.querySelector('tr')) tbody.innerHTML = '<tr><td colspan="3">No engineers on shift right now.</td></tr>';
-      };
+    // Ensure the equal heights stay locked
+    const fixHeights = () =>
+      document.querySelectorAll('.fixed-eq')
+        .forEach(el => el.style.height =
+          getComputedStyle(document.documentElement)
+            .getPropertyValue('--card-fixed-h'));
+    fixHeights();
 
-      // Run once now, and again whenever ops-calendar.js updates the DOM
-      const mo = new MutationObserver(()=>filterRows());
-      mo.observe(tbody, {childList:true, subtree:true});
-      window.addEventListener('load', filterRows);
-    })();
-  </script>
+    const makeOnShift = (cell) => {
+      // Replace whatever text is there with a green pill
+      cell.textContent = '';
+      const span = document.createElement('span');
+      span.className = 'pill-on';
+      span.textContent = 'ON SHIFT';
+      cell.appendChild(span);
+    };
+
+    const process = () => {
+      const rows = Array.from(tbody.querySelectorAll('tr'))
+        .filter(r => r.querySelectorAll('td').length >= 3);
+
+      let visible = 0;
+      rows.forEach(r => {
+        const tds = r.querySelectorAll('td');
+        const statusTxt = (tds[1].textContent || '').toLowerCase();
+        const isOn = /(working\s*now|on\s*shift|onshift)/.test(statusTxt);
+
+        if (isOn) {
+          r.style.display = '';
+          makeOnShift(tds[1]);
+          visible++;
+        } else {
+          // Hide, don't remove (so we never wipe the table)
+          r.style.display = 'none';
+        }
+      });
+
+      if (visible === 0) {
+        tbody.innerHTML = '<tr><td colspan="3">No engineers on shift right now.</td></tr>';
+      }
+    };
+
+    // Run once after ops-calendar.js paints, and re-run on updates
+    const mo = new MutationObserver(() => process());
+    mo.observe(tbody, { childList: true, subtree: true, characterData: true });
+
+    // First pass (allow a short delay for external JS render)
+    window.addEventListener('load', () => setTimeout(process, 400));
+  })();
+</script>
+
 
   <!-- CUSTOMER SENTIMENT DASHBOARD (overview + click-to-expand details with speedometer) -->
   <script src="customer-sentiment.js?v=3"></script>
