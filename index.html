@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TechOps 360 – Portal</title>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
@@ -16,25 +15,27 @@
       /* Light */
       --bg: #f6f8fb;
       --text: #0a0f1a;            /* 16:1 on white */
-      --muted: #445269;           /* WCAG AA on white */
+      --muted: #445269;           /* WCAG AA */
       --card: #ffffff;
-      --border: #d9e1ef;
+      --border: #d8e0ee;
       --row: #f2f5fb;
       --row-hover: #e8eefc;
-      --chip: #0a0f1a;
-      --chip-border: #c9d4ea;
-      --pill: #0a0f1a;
-      --pill-border: #c9d4ea;
+
+      /* 🔁 key fixes for light mode readability */
+      --chip: #ffffff;            /* was dark; now white so text is readable */
+      --chip-border: #cfd7ea;     /* soft hairline */
+      --pill: #ffffff;
+      --pill-border: #cfd7ea;
 
       --ok: #12993f;
-      --warn: #c77c11;
-      --bad: #d73737;
+      --warn: #b66b0b;
+      --bad: #cf3838;
 
-      --accent: #5b7cff;         /* Quickplay-friendly blue/violet */
-      --accent-ghost: rgba(91,124,255,.12);
+      --accent: #5b7cff;
+      --accent-ghost: rgba(91,124,255,.10);
 
-      --grad-bg: radial-gradient(900px 600px at 8% -10%, rgba(91,124,255,.35), transparent 60%),
-                 radial-gradient(800px 600px at 100% -20%, rgba(178,102,255,.35), transparent 60%),
+      --grad-bg: radial-gradient(900px 600px at 8% -10%, rgba(91,124,255,.25), transparent 60%),
+                 radial-gradient(800px 600px at 100% -20%, rgba(178,102,255,.25), transparent 60%),
                  #eef2ff;
     }
 
@@ -46,6 +47,7 @@
       --border: #33415e;
       --row: #121936;
       --row-hover: #1b2550;
+
       --chip: #0b1021;
       --chip-border: #41527a;
       --pill: #0b1021;
@@ -81,33 +83,39 @@
       padding:14px 18px;
       border-bottom:1px solid var(--border);
       backdrop-filter: blur(10px);
+      /* light-friendly gradient so chips remain visible */
+      background: linear-gradient(to bottom, rgba(255,255,255,.85), rgba(255,255,255,.55), transparent);
+    }
+    [data-theme="dark"] .top{
       background: linear-gradient(to bottom, rgba(6,10,23,.65), rgba(6,10,23,.0));
     }
+
     .brand{display:flex; align-items:center; gap:12px}
     .logo-wrap{display:flex; align-items:center; gap:12px}
     .logo{
-      height:44px; width:auto; border-radius:10px; /* larger logo */
-      background:#0a0f1a; padding:4px;
-      box-shadow:0 0 0 1px rgba(0,0,0,.25);
+      height:44px; width:auto; border-radius:10px;
+      background: #ffffff;       /* light: white well; no dark box */
+      padding:4px;
+      border:1px solid var(--border);
     }
+    [data-theme="dark"] .logo{ background:#0a0f1a; border-color:rgba(0,0,0,.35) }
+
     .titles{display:flex; flex-direction:column}
-    .titles .name{
-      font-weight:900; letter-spacing:.02em; font-size:1.3rem; color:var(--text);
-    }
+    .titles .name{font-weight:900; letter-spacing:.02em; font-size:1.3rem; color:var(--text)}
     .titles .desc{color:var(--muted); font-size:.9rem}
 
     .top-actions{display:flex; align-items:center; gap:10px}
     .chip{
       display:inline-flex; gap:8px; align-items:center;
-      padding:6px 12px; border-radius:999px; color:var(--muted);
-      background:var(--chip); border:1px solid var(--chip-border)
+      padding:6px 12px; border-radius:999px; color:var(--text);
+      background:var(--chip); border:1px solid var(--chip-border);
     }
     .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.22)}
     .btn{
       padding:7px 12px; border-radius:10px; border:1px solid var(--chip-border);
       background:var(--chip); color:var(--text); cursor:pointer
     }
-    .btn:hover{box-shadow:0 6px 18px rgba(0,0,0,.18)}
+    .btn:hover{box-shadow:0 6px 18px rgba(0,0,0,.08)}
 
     /* ================= LAYOUT ================= */
     .shell{max-width:1400px; margin:0 auto; padding:16px; display:grid; grid-template-columns:260px 1fr; gap:16px}
@@ -117,35 +125,21 @@
     .nav{
       border:1px solid var(--border); background:var(--card);
       border-radius:16px; padding:10px; height:max-content;
-      position:sticky; top:68px; box-shadow:0 18px 50px rgba(0,0,0,.25);
+      position:sticky; top:68px; box-shadow:0 18px 50px rgba(0,0,0,.08);
       transition: width .2s ease, padding .2s ease;
     }
-    .nav-head{
-      display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px
-    }
+    .nav-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px}
     .nav h6{margin:0; font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
     .collapse-btn{border:1px solid var(--chip-border); background:var(--chip); color:var(--text); border-radius:8px; padding:5px 8px; cursor:pointer}
     .navlist{display:flex; flex-direction:column; gap:6px}
-    .item{
-      display:flex; align-items:center; gap:10px; border-radius:12px;
-      border:1px solid transparent; padding:9px 10px; cursor:pointer;
-      color:var(--muted); background:transparent
-    }
+    .item{display:flex; align-items:center; gap:10px; border-radius:12px; border:1px solid transparent; padding:9px 10px; cursor:pointer; color:var(--muted); background:transparent}
     .item:hover{background:var(--row); color:var(--text)}
     .item.active{background:var(--accent-ghost); border-color:var(--accent); color:var(--text)}
-    .ico{
-      width:28px; height:28px; border-radius:8px;
-      display:inline-flex; align-items:center; justify-content:center;
-      background:var(--row); color:var(--text)
-    }
+    .ico{width:28px; height:28px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; background:var(--row); color:var(--text)}
     .item span.label{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-
-    /* collapsed (desktop) */
     .nav.collapsed{width:74px; padding:10px 8px}
     .nav.collapsed .nav-head h6, .nav.collapsed .item span.label, .nav.collapsed .nav-note{display:none}
     .nav.collapsed .item{justify-content:center}
-
-    /* mobile drawer */
     @media (max-width:1040px){
       .nav{position:fixed; left:0; top:64px; bottom:0; width:260px; transform:translateX(-110%); transition: transform .25s ease; z-index:60}
       .nav.open{transform:none}
@@ -159,14 +153,9 @@
     .panel.active{display:block}
     .panel h3{margin:.2rem 0 .1rem; font-size:1.25rem}
     .panel p.sub{margin:.1rem 0 1rem; color:var(--muted)}
-
     .grid{display:grid; grid-template-columns:1.45fr 1fr; gap:14px}
     @media(max-width:1100px){.grid{grid-template-columns:1fr}}
-
-    .card{
-      border:1px solid var(--border); background:var(--card); border-radius:18px; padding:14px 16px; position:relative;
-      box-shadow:0 18px 50px rgba(0,0,0,.2)
-    }
+    .card{border:1px solid var(--border); background:var(--card); border-radius:18px; padding:14px 16px; position:relative; box-shadow:0 18px 50px rgba(0,0,0,.06)}
     .card .hd{display:flex; justify-content:space-between; gap:10px; align-items:end; margin-bottom:8px}
     .ttl{font-weight:800; font-size:1rem}
     .pill{border:1px solid var(--pill-border); background:var(--pill); color:var(--muted); border-radius:999px; padding:2px 8px; font-size:.74rem}
@@ -191,12 +180,19 @@
       border:1px solid var(--border); background:var(--card); border-radius:14px; padding:10px 12px;
       display:grid; grid-template-columns:58px 1fr auto; gap:10px; align-items:center
     }
-    .tile .logo{width:46px;height:46px;border-radius:10px; background:#0a0f1a; display:flex; align-items:center; justify-content:center; overflow:hidden}
+
+    /* ✅ light: white logo well; dark: deep well */
+    .tile .logo{
+      width:46px;height:46px;border-radius:10px;
+      background:#ffffff; display:flex; align-items:center; justify-content:center; overflow:hidden;
+      border:1px solid var(--border);
+    }
+    [data-theme="dark"] .tile .logo{ background:#0a0f1a; border-color:rgba(0,0,0,.35) }
+
     .tile .logo img{max-width:100%; max-height:100%}
     .tile b{font-size:1rem}
-    .badge{
-      border:1px solid rgba(250,204,21,.5); background:rgba(250,204,21,.12); color:#b08900; padding:2px 8px; border-radius:999px; font-weight:800
-    }
+    .badge{border:1px solid rgba(250,204,21,.45); background:rgba(250,204,21,.10); color:#8a6a00; padding:2px 8px; border-radius:999px; font-weight:800}
+    [data-theme="dark"] .badge{ color:#facc15; border-color:rgba(250,204,21,.5); background:rgba(250,204,21,.12) }
     .spark{width:140px; height:40px}
 
     /* slot counter */
@@ -206,10 +202,10 @@
     .slot-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px}
     .digits{display:flex; gap:6px}
     .digit{width:34px; height:48px; overflow:hidden; border:1px solid var(--border); border-radius:8px; background:#1b2a4b; box-shadow:inset 0 0 12px rgba(0,0,0,.28)}
+    [data-theme="light"] .digit{ background:#203355 }
     .wheel{position:relative; top:0; transition:top .6s cubic-bezier(.18,.89,.32,1.28)}
     .wheel div{height:48px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:900; font-size:28px}
 
-    /* helper */
     .sr{position:absolute;left:-9999px}
   </style>
 </head>
@@ -232,9 +228,8 @@
     </div>
   </header>
 
-  <!-- ================= APP LAYOUT ================= -->
   <div class="shell">
-    <!-- ===== Side Nav (collapsible + mobile drawer) ===== -->
+    <!-- Side nav -->
     <aside id="sidenav" class="nav" aria-label="Side navigation">
       <div class="nav-head">
         <h6>Views</h6>
@@ -252,11 +247,11 @@
       <div class="nav-note">Internal view. Live: Google Sheets ops calendar & app-store sentiment. Others: placeholders to wire to NR/Grafana/ServiceNow.</div>
     </aside>
 
-    <!-- ===== Main ===== -->
+    <!-- Main -->
     <main class="main">
       <!-- DASHBOARD -->
-      <section id="dash" class="panel active" aria-labelledby="dash-h">
-        <h3 id="dash-h">Live Operations Dashboard</h3>
+      <section id="dash" class="panel active">
+        <h3>Live Operations Dashboard</h3>
         <p class="sub">Who is on shift right now and active customer concurrency across the platform.</p>
 
         <div class="grid">
@@ -275,7 +270,7 @@
             <div class="note">Coverage includes IST, MYT and EST rotations.</div>
           </div>
 
-          <!-- Compact concurrency table -->
+          <!-- Concurrency table -->
           <div class="card">
             <div class="hd">
               <div class="ttl">Customer concurrency <span class="pill">Snapshot</span></div>
@@ -285,9 +280,15 @@
               <thead><tr><th>Customer</th><th>Now</th><th>Notes</th></tr></thead>
               <tbody id="conc-table">
                 <tr><td>Aha</td><td><b>4.5K</b></td><td>Stable</td></tr>
-                <tr><td>RSM</td><td><b>1.2K</b></td><td>Stable</td></tr>
-                <tr><td>PLDT</td><td><b>3.0K</b></td><td>Peaking</td></tr>
-                <tr><td>Canela</td><td><b>800</b></td><td>Normal</td></tr>
+                <tr><td>Philippinas Live</td><td><b>1.8K</b></td><td>Normal</td></tr>
+                <tr><td>Cignal</td><td><b>2.4K</b></td><td>Peaking</td></tr>
+                <tr><td>Unifi 2.0</td><td><b>1.1K</b></td><td>Stable</td></tr>
+                <tr><td>Univision</td><td><b>2.0K</b></td><td>Normal</td></tr>
+                <tr><td>Univision Now</td><td><b>0.9K</b></td><td>Rising</td></tr>
+                <tr><td>Local Now</td><td><b>0.7K</b></td><td>Normal</td></tr>
+                <tr><td>TWC (The Weather Channel)</td><td><b>1.6K</b></td><td>Normal</td></tr>
+                <tr><td>GOTHAM</td><td><b>0.4K</b></td><td>Stable</td></tr>
+                <tr><td>Canela TV</td><td><b>0.4K</b></td><td>Stable</td></tr>
               </tbody>
             </table>
           </div>
@@ -317,24 +318,24 @@
             <div class="slot-head"><b>Today by customer</b><span class="pill">placeholder</span></div>
             <table><tbody id="todayCust">
               <tr><td>Aha</td><td style="text-align:right"><b>4</b></td></tr>
-              <tr><td>PLDT</td><td style="text-align:right"><b>3</b></td></tr>
-              <tr><td>RSM</td><td style="text-align:right"><b>3</b></td></tr>
-              <tr><td>Canela</td><td style="text-align:right"><b>2</b></td></tr>
+              <tr><td>Philippinas Live</td><td style="text-align:right"><b>3</b></td></tr>
+              <tr><td>Cignal</td><td style="text-align:right"><b>3</b></td></tr>
+              <tr><td>Unifi 2.0</td><td style="text-align:right"><b>2</b></td></tr>
             </tbody></table>
           </div>
         </div>
       </section>
 
       <!-- CUSTOMER STATS -->
-      <section id="stats" class="panel" aria-labelledby="stats-h">
-        <h3 id="stats-h">Customer Stats</h3>
+      <section id="stats" class="panel">
+        <h3>Customer Stats</h3>
         <p class="sub">App store ratings and customer sentiment (last 7 days).</p>
         <div class="card"><div id="customer-sentiment-dashboard"></div></div>
       </section>
 
       <!-- SYNTHETIC -->
-      <section id="synth" class="panel" aria-labelledby="synth-h">
-        <h3 id="synth-h">Synthetic Monitoring</h3>
+      <section id="synth" class="panel">
+        <h3>Synthetic Monitoring</h3>
         <p class="sub">Representative checks (sample data).</p>
         <div class="card">
           <table>
@@ -416,7 +417,7 @@
     </main>
   </div>
 
-  <!-- ================= NAV + THEME JS ================= -->
+  <!-- NAV + THEME JS -->
   <script>
     // Panel switching
     document.querySelectorAll('.item').forEach(btn=>{
@@ -426,8 +427,6 @@
         const id = btn.dataset.panel;
         document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
         document.getElementById(id).classList.add('active');
-
-        // close drawer on mobile
         document.getElementById('sidenav').classList.remove('open');
         document.getElementById('navToggle').setAttribute('aria-expanded','false');
       });
@@ -435,9 +434,7 @@
 
     // Collapse (desktop)
     const sidenav = document.getElementById('sidenav');
-    document.getElementById('collapseBtn').addEventListener('click',()=>{
-      sidenav.classList.toggle('collapsed');
-    });
+    document.getElementById('collapseBtn').addEventListener('click',()=>{ sidenav.classList.toggle('collapsed'); });
 
     // Mobile drawer toggle
     document.getElementById('navToggle').addEventListener('click',()=>{
@@ -453,19 +450,25 @@
       localStorage.setItem('techops-theme', mode);
     }
     setTheme(localStorage.getItem('techops-theme') || 'dark');
-    toggleBtn.addEventListener('click', ()=>{
-      setTheme(document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
-    });
+    toggleBtn.addEventListener('click', ()=>{ setTheme(document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark'); });
   </script>
 
-  <!-- ================= CONCURRENCY TILES + SLOT COUNTER (placeholders) ================= -->
+  <!-- TILES + SLOT COUNTER (UPDATED CUSTOMERS) -->
   <script>
+    // 🔁 Replace these logo filenames with your actual assets anytime.
     const TILE_DATA = [
-      { name:'Aha',   logo:'image/aha.jpg',        now: 4500, series:[3400,3700,3900,4100,4200,4300,4400,4500]},
-      { name:'RSM',   logo:'image/RSM_Logo.png',   now: 1200, series:[950,980,1020,1070,1110,1150,1180,1200]},
-      { name:'PLDT',  logo:'image/smart.png',      now: 3000, series:[2200,2400,2550,2700,2850,2950,2975,3000]},
-      { name:'Canela',logo:'image/Canela.png',     now: 800,  series:[500,560,610,680,700,720,770,800]},
+      { name:'Aha',                logo:'image/aha_Logo.png',               now:4500, series:[3400,3700,3900,4100,4200,4300,4400,4500]},
+      { name:'Philippinas Live',   logo:'image/PilipinasLive_Logo.png',  now:1800, series:[1200,1300,1400,1500,1600,1700,1750,1800]},
+      { name:'Cignal',             logo:'image/Cignal_Logo.png',            now:2400, series:[1800,1900,2000,2100,2200,2300,2350,2400]},
+      { name:'Unifi 2.0',          logo:'image/Unifi2.0_logo.png',           now:1100, series:[800,850,900,950,1000,1050,1080,1100]},
+      { name:'Univision',          logo:'image/Univision_logo.webp',         now:2000, series:[1400,1500,1600,1700,1800,1900,1950,2000]},
+      { name:'Univision Now',      logo:'image/UnivisionNow_logo.png',     now: 900, series:[650,700,740,780,820,860,880,900]},
+      { name:'Local Now',          logo:'image/LocalNow_Logo.png',         now: 700, series:[500,540,570,600,630,660,680,700]},
+      { name:'TWC (The Weather Channel)', logo:'image/TWC_Logo.png',        now:1600, series:[1100,1200,1300,1400,1500,1550,1580,1600]},
+      { name:'GOTHAM',             logo:'image/GOTHAM_Logo.png',            now: 400, series:[250,280,300,320,340,360,380,400]},
+      { name:'Canela TV',          logo:'image/CanelaTV_Logo.png',         now: 800, series:[520,560,600,640,680,720,760,800]},
     ];
+
     function formatK(n){return n>=1000?(n/1000).toFixed(n%1000===0?0:1)+'K':n}
 
     function drawSpark(el, data){
@@ -482,7 +485,7 @@
       const wrap=document.getElementById('tiles'); wrap.innerHTML='';
       TILE_DATA.forEach(t=>{
         const div=document.createElement('div'); div.className='tile';
-        div.innerHTML=`<div class="logo"><img src="${t.logo}" alt="${t.name}"></div>
+        div.innerHTML=`<div class="logo"><img src="${t.logo}" alt="${t.name} logo"></div>
           <div><b>${t.name}</b><div style="color:var(--muted);font-size:.9rem">last 30 min</div></div>
           <div style="display:flex;gap:10px;align-items:center">
             <span class="badge">Live ${formatK(t.now)}</span>
@@ -494,7 +497,7 @@
     }
     buildTiles();
 
-    // Slot machine counter (placeholder)
+    // Slot counter (placeholder)
     function buildSlot(el, n){
       const s=String(n); el.innerHTML='';
       for(const ch of s){
@@ -512,11 +515,11 @@
     buildSlot(document.getElementById('slotCounter'), 65432);
   </script>
 
-  <!-- ================= Your existing data loaders ================= -->
+  <!-- Your existing data loaders -->
   <script src="ops-calendar.js?v=4"></script>
   <script src="customer-sentiment.js?v=3"></script>
 
-  <!-- Botpress (unchanged) -->
+  <!-- Botpress -->
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
   <script>
     window.botpressWebChat.init({
