@@ -106,15 +106,43 @@
   .off{color:var(--bad); font-weight:700}
   .muted{color:var(--muted)}
 
-  /* Slim slot machine (small width) */
-  .slots-wrap{display:flex; align-items:center; gap:10px}
-  .slots{display:flex; gap:6px; align-items:center}
-  .slot{
-    width:40px; height:52px; border-radius:10px; background:#0b1221; border:1px solid rgba(148,163,184,.45);
-    overflow:hidden; position:relative; box-shadow: inset 0 -8px 18px rgba(255,255,255,.02)
-  }
-  .digits{position:absolute; left:0; top:0; width:100%}
-  .digit{height:52px; display:grid; place-items:center; font-weight:800; font-size:1.35rem}
+  /* Slim slot machine — centered & larger */
+.slot-card-center {        /* add this to the incidents card */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:160px;        /* gives the card some height so the counter sits mid */
+}
+
+.slots-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;  /* true centering */
+  gap:12px;
+  width:100%;
+}
+
+.slots{display:flex; gap:10px; align-items:center}
+
+.slot{
+  width:68px;              /* wider */
+  height:86px;             /* taller */
+  border-radius:14px;
+  background:#0b1221;
+  border:1px solid rgba(148,163,184,.45);
+  overflow:hidden;
+  position:relative;
+  box-shadow: inset 0 -10px 20px rgba(255,255,255,.03);
+}
+
+.digits{position:absolute; left:0; top:0; width:100%}
+.digit{
+  height:86px;             /* matches slot height */
+  display:grid; place-items:center;
+  font-weight:800;
+  font-size:2.1rem;        /* bigger glyphs */
+  letter-spacing:.5px;
+}
 
   /* P1–P4 */
   .sev-row{display:grid; grid-template-columns: repeat(4,1fr); gap:10px}
@@ -191,14 +219,15 @@
       </table>
     </section>
 
-    <!-- Slim slot machine -->
-    <section class="card">
-      <h3>Total incidents since org inception</h3>
-      <div class="slots-wrap">
-        <div id="slotCounter" class="slots" aria-label="Total incidents animated counter"></div>
-      </div>
-      <div class="sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
-    </section>
+<!-- Slim slot machine (centered and larger) -->
+<section class="card slot-card-center">
+  <h3>Total incidents since org inception</h3>
+  <div class="slots-wrap">
+    <div id="slotCounter" class="slots" aria-label="Total incidents animated counter"></div>
+  </div>
+  <div class="sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
+</section>
+
 
     <!-- P1–P4 -->
     <section class="card">
@@ -366,35 +395,60 @@
 /* ========== AVAILABILITY GAUGE (animated sweep + arrow) ========== */
 (function(){
   const targetPct = 96; // TODO: wire to real availability
-  const path = document.getElementById('gArc');
-  const needle = document.getElementById('needle');
-  const label = document.getElementById('gPct');
 
-  const circumference = 503; // approximate arc length
-  const cx=180, cy=180, length=140;
+  const path   = document.getElementById('gArc');
+  const needle = document.getElementById('needle');
+  const label  = document.getElementById('gPct');
+
+  // Arc geometry
+  const circumference = 503;        // pre-measured for the SVG arc
+  const cx = 180, cy = 180;         // center
+  const len = 150;                  // needle length
+
+  // Helper: pct (0..100) -> angle in degrees along upper semicircle (left=180°, right=0°)
+  const pctToDeg = (p) => 180 - (p * 1.8);
 
   let t = 0;
-  const dur = 1200; // ms
+  const dur = 1200;                 // ms
   const start = performance.now();
 
   function step(now){
-    t = Math.min(1, (now-start)/dur);
-    const eased = 1 - Math.pow(1 - t, 3); // easeOutCubic
-    const pct = targetPct * eased;
+    t = Math.min(1, (now - start) / dur);
+    const eased = 1 - Math.pow(1 - t, 3);     // easeOutCubic
 
-    const dash = (pct/100) * circumference;
-    path.setAttribute('stroke-dasharray', `${dash} ${circumference-dash}`);
+    const pct = targetPct * eased;
     label.textContent = Math.round(pct) + '%';
 
-    const angle = -90 + (pct * 1.8);
-    const rad = angle * Math.PI/180;
-    const x2 = cx + length * Math.cos(rad);
-    const y2 = cy + length * Math.sin(rad);
+    // Animate arc
+    const dash = (pct / 100) * circumference;
+    path.setAttribute('stroke-dasharray', `${dash} ${circumference - dash}`);
+
+    // Animate needle (note the Y math: SVG down is +Y, so we subtract to go upward)
+    const deg = pctToDeg(pct);
+    const rad = deg * Math.PI / 180;
+    const x2  = cx + len * Math.cos(rad);
+    const y2  = cy - len * Math.sin(rad);     // subtract -> upward
+
+    needle.setAttribute('x1', cx);
+    needle.setAttribute('y1', cy);
     needle.setAttribute('x2', x2);
     needle.setAttribute('y2', y2);
 
     if (t < 1) requestAnimationFrame(step);
   }
+
+  // Optional: small hub at center (just once)
+  if (!document.getElementById('gHub')) {
+    const hub = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    hub.setAttribute('id','gHub');
+    hub.setAttribute('cx', cx);
+    hub.setAttribute('cy', cy);
+    hub.setAttribute('r', 6);
+    hub.setAttribute('fill', '#ffffff');
+    hub.setAttribute('opacity', '.9');
+    document.getElementById('gauge').appendChild(hub);
+  }
+
   requestAnimationFrame(step);
 })();
 
