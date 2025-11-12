@@ -1,399 +1,427 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechOps 360 - Portal</title>
-
-  <!-- Quickplay-style font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <title>TechOps 360</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --qp-font:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-
-      /* Dark defaults */
-      --bg:#020617;
-      --bg-card:#0b1220;
-      --border-card:#1f2937;
-      --text-main:#e5e7eb;
-      --text-muted:#9ca3af;
-      --tab-bg:#111827;
-      --tab-bg-active:#0b1220;
-      --tab-border:#1f2937;
-      --table-header-bg:#0e1726;
-      --table-header-text:#9ca3af;
-      --table-row-even:#0b1220;
-      --table-row-hover:#131c2d;
+      --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+      /* Dark theme */
+      --bg: radial-gradient(1200px 700px at 15% 0%, #1e3a8a 0%, transparent 60%),
+            radial-gradient(1200px 700px at 100% 0%, #7c3aed 0%, transparent 60%),
+            radial-gradient(1200px 800px at 50% 100%, #ec4899 0%, transparent 60%),
+            #0b1221;
+      --card-bg: rgba(10,14,25,.9);
+      --card-border: rgba(148,163,184,.35);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --text:#e7ecf4; --muted:#9aa4b2;
+      --pill: rgba(15,23,42,.9); --pill-border: rgba(148,163,184,.5);
+      --table-head: rgba(18,24,38,.95);
+      --row-alt: rgba(18,24,38,.7);
+      --row-hover: rgba(37, 99, 235, .15);
+      --tile-bg: rgba(12,18,30,.9);
       --accent:#f97316;
-
-      --header-gradient-start:#6A1B9A;
-      --header-gradient-end:#FF7043;
-
-      --needle:#ffffff; /* gauge needle (dark) */
     }
-    body.light-mode{
-      --bg:#E1E0FF;
-      --bg-card:#ffffff;
-      --border-card:#e5e7eb;
-      --text-main:#111827;
-      --text-muted:#4b5563;
-      --tab-bg:#eef2ff;
-      --tab-bg-active:#ffffff;
-      --tab-border:#d1d5db;
-      --table-header-bg:#f9fafb;
-      --table-header-text:#4b5563;
-      --table-row-even:#f9fafb;
-      --table-row-hover:#f3f4f6;
-
-      --needle:#111827; /* gauge needle (light) */
+    [data-theme="light"]{
+      --bg: radial-gradient(1200px 700px at 15% 0%, #dbeafe 0%, transparent 60%),
+            radial-gradient(1200px 700px at 100% 0%, #fde68a 0%, transparent 60%),
+            radial-gradient(1200px 800px at 50% 100%, #fef3c7 0%, transparent 60%),
+            #f8fafc;
+      --card-bg: rgba(255,255,255,.94);
+      --card-border: rgba(2,6,23,.12);
+      --shadow: 0 18px 50px rgba(2, 6, 23, .08);
+      --text:#0f172a; --muted:#475569;
+      --pill: rgba(255,255,255,.95); --pill-border: rgba(2,6,23,.12);
+      --table-head: rgba(248,250,252,.95);
+      --row-alt: rgba(248,250,252,.82);
+      --row-hover: rgba(2, 132, 199, .08);
+      --tile-bg: rgba(255,255,255,.95);
+      --accent:#f59e0b;
     }
-
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text-main);
-      font-family:var(--qp-font);
-      transition:background .25s,color .25s;
-    }
-
-    header{
-      background:linear-gradient(90deg,var(--header-gradient-start),var(--header-gradient-end));
-      color:#fff;padding:16px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10;
-      box-shadow:0 6px 14px rgba(0,0,0,.25);
-    }
-    header img.logo{height:40px;border-radius:8px}
-    header h1{margin:0;font-weight:800;letter-spacing:.3px}
-    .theme-toggle{
-      margin-left:auto;border:1px solid rgba(255,255,255,.4);background:rgba(15,23,42,.25);
-      color:#fff;border-radius:999px;padding:6px 12px;cursor:pointer
-    }
-
-    .container{max-width:1200px;margin:24px auto;padding:0 16px}
-
-    /* Tabs */
-    .tabs{display:flex;gap:6px;border-bottom:1px solid rgba(148,163,184,.35)}
-    .tab-button{
-      background:var(--tab-bg);border:1px solid var(--tab-border);border-bottom:none;
-      padding:10px 14px;border-top-left-radius:10px;border-top-right-radius:10px;color:var(--text-muted);
-      cursor:pointer;font-weight:600
-    }
-    .tab-button.active{background:var(--tab-bg-active);color:var(--text-main);position:relative;bottom:-1px;border-color:var(--border-card)}
-    .tab-content{display:none;background:var(--bg-card);border:1px solid var(--border-card);border-radius:16px;padding:18px;margin-top:-1px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
-    .tab-content.active{display:block}
-
-    h2{margin:0 0 10px 0;font-size:1.4rem}
-    .meta-note{margin:.5rem 0 0 0;color:var(--text-muted);font-size:.9rem}
-
-    /* Global tables */
-    table{width:100%;border-collapse:collapse;font-size:.92rem}
-    thead{background:var(--table-header-bg);color:var(--table-header-text)}
-    th,td{padding:10px;border-bottom:1px solid rgba(148,163,184,.3);text-align:left}
-    table:not(.cs-table) tbody tr:nth-child(even){background:var(--table-row-even)}
-    table:not(.cs-table) tbody tr:hover{background:var(--table-row-hover)}
-
-    /* Home dashboard layout */
-    .dashboard-grid{display:grid;grid-template-columns:1fr 380px;gap:18px}
-    .section{background:var(--bg-card);border:1px solid var(--border-card);border-radius:16px;padding:16px}
-    .ops-card{min-height:280px;max-height:280px;display:flex;flex-direction:column}
-    .ops-scroll{overflow:auto;border-radius:10px}
-
-    /* Slot machine */
-    .slot-card{text-align:center}
-    .slots{display:inline-flex;gap:10px}
-    .slot{width:72px;height:92px;border-radius:14px;background:rgba(15,23,42,.9);border:1px solid rgba(148,163,184,.45);position:relative;overflow:hidden;box-shadow:inset 0 -10px 20px rgba(255,255,255,.03)}
-    body.light-mode .slot{background:#fff;border-color:#e5e7eb}
-    .digit-col{position:absolute;inset:0 0 auto 0;height:920px;transition:transform 1000ms cubic-bezier(.22,1,.36,1)}
-    .digit{height:92px;display:grid;place-items:center;font-size:2.35rem;font-weight:800}
-
-    /* Incidents today */
+    body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);background-attachment:fixed}
+    .top{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);background:linear-gradient(to bottom, rgba(12,18,30,.7), rgba(12,18,30,.35), transparent);border-bottom:1px solid var(--card-border)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:40px;height:28px;border-radius:10px;background:#020617;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
+    .title{font-weight:800;letter-spacing:.2px}
+    .sub{font-size:.86rem;color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;color:var(--muted);padding:6px 10px;border:1px solid var(--pill-border);background:var(--pill);border-radius:999px}
+    .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
+    .toggle{border:1px solid var(--pill-border);background:var(--pill);border-radius:999px;padding:6px 12px;cursor:pointer;color:var(--text);font-weight:600}
+    .shell{display:grid;grid-template-columns:230px 1fr 380px;gap:18px;padding:18px;max-width:1400px;margin:0 auto}
+    @media(max-width:1200px){.shell{grid-template-columns:1fr}.right-col{order:3}}
+    .side{background:var(--card-bg);border:1px solid var(--card-border);border-radius:18px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:8px}
+    .side h6{margin:6px 8px;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .navbtn{display:flex;align-items:center;gap:10px;background:transparent;color:var(--muted);padding:10px 12px;border-radius:12px;border:1px solid transparent;cursor:pointer}
+    .navbtn.active,.navbtn:hover{color:var(--text);border-color:var(--card-border);background:var(--row-alt)}
+    .hr{height:1px;background:var(--card-border);border:none;margin:6px 0}
+    .panel{display:none}
+    .panel.active{display:block}
+    .card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:22px;box-shadow:var(--shadow);padding:14px 16px;position:relative}
+    h3{margin:6px 0 10px;font-size:1.08rem}
+    .grid-center{display:grid;grid-template-rows:auto auto auto;gap:16px}
+    .grid-right{display:grid;grid-template-rows:auto auto;gap:16px}
+    table{width:100%;border-collapse:collapse;font-size:.9rem}
+    thead{background:var(--table-head)}
+    th,td{padding:8px 10px;border-bottom:1px solid var(--card-border);text-align:left}
+    tbody tr:nth-child(even){background:var(--row-alt)}
+    tbody tr:hover{background:var(--row-hover)}
     .sev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .sev{border:1px solid var(--border-card);border-radius:12px;padding:14px;text-align:center}
-    .sev h4{margin:.2rem 0 .6rem;color:var(--text-muted)}
-    .sev .n{font-size:1.5rem;font-weight:800}
-
-    /* Availability gauge */
+    .sev{background:var(--tile-bg);border:1px solid var(--card-border);border-radius:14px;padding:10px;text-align:center}
+    .sev h4{margin:2px 0 6px;font-size:.9rem;color:var(--muted)}
+    .sev .n{font-size:1.4rem;font-weight:800}
+    /* Concurrency */
+    .conc-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+    .conc-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--tile-bg);border:1px solid var(--card-border)}
+    .conc-left{display:flex;align-items:center;gap:8px}
+    .logo-sq{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;overflow:hidden;background:#fff;border:1px solid rgba(2,6,23,.06)}
+    .logo-sq img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+    .logo-sq.fallback{background:linear-gradient(135deg,#dbeafe,#e9d5ff);color:#111827;font-weight:800}
+    .logo-sq.fallback::after{content:attr(data-initials)}
+    .badge{font-size:.78rem;border:1px solid rgba(248,250,252,.35);padding:2px 8px;border-radius:999px;display:inline-flex;gap:6px;align-items:center;background:var(--pill);color:var(--text)}
+    .badge .v{color:#facc15;font-weight:800}
+    /* Slot machine */
+    .slot-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:18px;padding-bottom:18px}
+    .slots{display:flex;gap:10px}
+    .slot{width:72px;height:92px;border-radius:14px;background:var(--tile-bg);border:1px solid var(--card-border);overflow:hidden;position:relative;box-shadow:inset 0 -10px 20px rgba(255,255,255,.03)}
+    .digit-col{position:absolute;left:0;top:0;width:100%;height:920px;transition:transform 1000ms cubic-bezier(.22,1,.36,1)}
+    .digit{height:92px;display:grid;place-items:center;font-weight:800;font-size:2.35rem;color:var(--text)}
+    .slot-sub{font-size:.86rem;color:var(--muted);text-align:center}
+    /* Gauge */
     .gauge{width:100%;height:240px;display:block}
-    .g-label{position:absolute;bottom:14px;left:16px;font-size:1.8rem;font-weight:800}
-    .gauge-box{position:relative}
-    :root{--needle:#ffffff}
-
-    /* Concurrency tiles */
-    .customer-concurrency-list{list-style:none;margin:10px 0 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
-    .customer-concurrency-item{background:rgba(15,23,42,.85);border:1px solid rgba(148,163,184,.45);padding:10px 12px;border-radius:12px;min-width:150px;display:flex;flex-direction:column;align-items:center;gap:6px}
-    body.light-mode .customer-concurrency-item{background:#f0f8ff;border-color:#cfe2ff}
-    .customer-logo{height:30px}
-    .concurrency-value{font-weight:800;color:var(--accent)}
-
-    .badge{padding:.2em .55em;border-radius:999px;font-weight:600}
-    .badge-success{background:rgba(22,163,74,.12);color:#4ade80}
-    .badge-danger{background:rgba(220,38,38,.18);color:#fecaca}
-    .badge-warning{background:rgba(245,158,11,.18);color:#fed7aa}
-
-    @media(max-width:1000px){.dashboard-grid{grid-template-columns:1fr}}
+    .g-title{margin-bottom:8px}
+    .g-label{position:absolute;bottom:14px;left:20px;font-size:1.8rem;font-weight:800}
+    /* keep design, but ensure needle is visible in light mode */
+    [data-theme="light"] #needle{stroke:#0f172a !important}
   </style>
 </head>
 <body>
-  <header>
-    <img src="image/Quickplay.jpg" class="logo" alt="Quickplay"/>
-    <h1>TechOps 360 - Portal</h1>
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">☀️ Light</button>
-  </header>
-
-  <div class="container">
-    <div class="tabs">
-      <button class="tab-button active" onclick="openTab(event,'Home')">Home</button>
-      <button class="tab-button" onclick="openTab(event,'CustomerStats')">Customer Stats</button>
-      <button class="tab-button" onclick="openTab(event,'SyntheticMonitoring')">Synthetic Monitoring</button>
-      <button class="tab-button" onclick="openTab(event,'ManifestCheck')">Manifest Check</button>
-      <button class="tab-button" onclick="openTab(event,'ShiftHandoffs')">Shift Handoffs</button>
-      <button class="tab-button" onclick="openTab(event,'RBAC')">RBAC</button>
-      <button class="tab-button" onclick="openTab(event,'IssueSearch')">Issue Search</button>
-    </div>
-
-    <!-- ========== HOME ========== -->
-    <div id="Home" class="tab-content active">
-      <div class="dashboard-grid">
-        <!-- Center column -->
-        <div>
-          <!-- Ops Calendar -->
-          <div class="section ops-card" style="margin:0;">
-            <h2>Operations Calendar (Today)</h2>
-            <div class="ops-scroll">
-              <table>
-                <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
-                <tbody id="ops-calendar-body"><tr><td colspan="3">Loading schedule…</td></tr></tbody>
-              </table>
-            </div>
-            <p class="meta-note">Current shift status for operations engineers (IST / MYT / EST coverage).</p>
-          </div>
-
-          <!-- Slot machine -->
-          <div class="section slot-card" style="margin-top:18px;">
-            <h2>Total incidents since org inception</h2>
-            <div id="slotCounter" class="slots" aria-label="Total incidents animated counter"></div>
-            <p class="meta-note">Demo rolls like a slot machine, then settles on today’s placeholder.</p>
-          </div>
-
-          <!-- Incidents today -->
-          <div class="section" style="margin-top:18px;">
-            <h2>Incidents today</h2>
-            <div class="sev-grid">
-              <div class="sev"><h4>P1</h4><div id="p1" class="n">1</div></div>
-              <div class="sev"><h4>P2</h4><div id="p2" class="n">3</div></div>
-              <div class="sev"><h4>P3</h4><div id="p3" class="n">4</div></div>
-              <div class="sev"><h4>P4</h4><div id="p4" class="n">6</div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right column -->
-        <div>
-          <!-- Availability -->
-          <div class="section gauge-box" style="margin:0;">
-            <h2>Availability</h2>
-            <svg id="gauge" class="gauge" viewBox="0 0 360 200" role="img" aria-label="Availability gauge">
-              <defs>
-                <linearGradient id="ggrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#ef4444"/>
-                  <stop offset="50%" stop-color="#f59e0b"/>
-                  <stop offset="100%" stop-color="#22c55e"/>
-                </linearGradient>
-              </defs>
-              <path d="M20,180 A160,160 0 0 1 340,180" stroke="rgba(148,163,184,.28)" stroke-width="18" fill="none"/>
-              <path id="gArc" d="M20,180 A160,160 0 0 1 340,180" stroke="url(#ggrad)" stroke-width="18" fill="none" stroke-linecap="round" stroke-dasharray="0 503"/>
-              <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="var(--needle)" stroke-width="4" stroke-linecap="round"/>
-            </svg>
-            <div class="g-label" id="gPct">0%</div>
-          </div>
-
-          <!-- Customer Concurrency -->
-          <div class="section" style="margin-top:18px;">
-            <h2>Customer Concurrency</h2>
-            <ul class="customer-concurrency-list" id="cc-list"></ul>
-            <p class="meta-note" style="margin-top:.5rem">Representative active concurrency values (demo).</p>
-          </div>
-        </div>
+  <!-- TOP -->
+  <header class="top">
+    <div class="brand">
+      <div class="logo"><img src="image/Quickplay.jpg" alt="Quickplay" style="height:18px"></div>
+      <div>
+        <div class="title">TechOps 360</div>
+        <div class="sub">Operational intelligence for Quickplay customers</div>
       </div>
     </div>
-
-    <!-- ========== CUSTOMER STATS ========== -->
-    <div id="CustomerStats" class="tab-content">
-      <h2>Customer Stats</h2>
-      <p class="meta-note" style="text-align:left">App store ratings and customer sentiment derived from app-store comments (last 7 days).</p>
-      <div id="customer-sentiment-dashboard"></div>
+    <div>
+      <span class="pill"><span class="dot"></span>24×7 follow-the-sun</span>
+      <button id="modeToggle" class="toggle" style="margin-left:8px">Light</button>
     </div>
+  </header>
 
-    <!-- ========== SYNTHETIC MONITORING ========== -->
-    <div id="SyntheticMonitoring" class="tab-content">
-      <h2>Synthetic Monitoring Results (Live Health Checks)</h2>
-      <table>
-        <thead><tr><th>Service Name</th><th>Component</th><th>SG Status</th><th>HK Status</th><th>Last Checked</th><th>Overall Status</th></tr></thead>
-        <tbody>
-          <tr><td>admin-search-service</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge badge-success">OK</span></td></tr>
-          <tr><td>cms-metadata</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge badge-success">OK</span></td></tr>
-          <tr><td>epg-ingestion-tm</td><td>CMS</td><td>401</td><td>503</td><td>2025-06-09 14:00 IST</td><td><span class="badge badge-danger">DOWN</span></td></tr>
-          <tr><td>sitemap-generator</td><td>Edge</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge badge-success">OK</span></td></tr>
-          <tr><td>syndication-ingestion-disney</td><td>CMS</td><td>503</td><td>503</td><td>2025-06-09 14:00 IST</td><td><span class="badge badge-danger">DOWN</span></td></tr>
-          <tr><td>user-settings-service</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge badge-success">OK</span></td></tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left">Health check statuses directly from service monitoring systems (sample data).</p>
-    </div>
+  <div class="shell">
+    <!-- SIDE NAV -->
+    <aside class="side">
+      <h6>Views</h6>
+      <button class="navbtn active" data-panel="panel-dashboard">Dashboard</button>
+      <button class="navbtn" data-panel="panel-cust">Customer Stats</button>
+      <button class="navbtn" data-panel="panel-synth">Synthetic Monitoring</button>
+      <button class="navbtn" data-panel="panel-manif">Manifest Check</button>
+      <button class="navbtn" data-panel="panel-handoff">Shift Handoffs</button>
+      <button class="navbtn" data-panel="panel-rbac">RBAC</button>
+      <button class="navbtn" data-panel="panel-issues">Issue Search</button>
+      <hr class="hr">
+      <div class="sub" style="padding:6px 8px">Internal view. Live: Ops calendar (Google Sheets). Others are placeholders to wire to NR/Grafana/ServiceNow.</div>
+    </aside>
 
-    <!-- ========== MANIFEST CHECK ========== -->
-    <div id="ManifestCheck" class="tab-content">
-      <h2>Manifest Check Results: RSM Channels</h2>
-      <table>
-        <thead><tr><th>Channel Name</th><th>Protocol</th><th>URL</th><th>Status</th><th>Details</th></tr></thead>
-        <tbody>
-          <tr><td>snohd</td><td>HLS</td><td>https://live-streaming-tma.live.rsm.firstlight.ai/snohd/snohd.isml/.m3u8</td><td><span class="badge badge-success">OK</span></td><td>Manifest loaded successfully.</td></tr>
-          <tr><td>snehd</td><td>HLS</td><td>https://live-streaming-tm.live.rsm.firstlight.ai/snehd/snehd.isml/.m3u8</td><td><span class="badge badge-danger">MISSING_STREAM</span></td><td>Missing audio-only variant.</td></tr>
-          <tr><td>wwehd</td><td>DASH</td><td>https://live-streaming-tm.live.rsm.firstlight.ai/wwehd/wwehd_cenc.isml/.mpd</td><td><span class="badge badge-success">OK</span></td><td>Manifest loaded successfully.</td></tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left">Data is a representative subset from <code>RSM_Manifest_URL.txt</code>.</p>
-    </div>
+    <!-- CENTER PANELS -->
+    <main class="panel active" id="panel-dashboard">
+      <div class="grid-center">
+        <!-- Ops Calendar -->
+        <section class="card">
+          <h3>Operations Calendar (Today)</h3>
+          <table>
+            <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
+            <tbody id="ops-calendar-body"><tr><td colspan="3">Loading schedule…</td></tr></tbody>
+          </table>
+        </section>
 
-    <!-- ========== SHIFT HANDOFFS ========== -->
-    <div id="ShiftHandoffs" class="tab-content">
-      <h2>Shift Handoffs (Morning)</h2>
-      <div class="section" style="margin:0">
-        <div class="meta-note" style="text-align:left">Summary provided by Praveen Kumar (sample).</div>
+        <!-- Slot machine -->
+        <section class="card slot-card">
+          <h3 style="text-align:center">Total incidents since org inception</h3>
+          <div class="slots" id="slotCounter"></div>
+          <div class="slot-sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
+        </section>
+
+        <!-- Severity -->
+        <section class="card">
+          <h3>Incidents today</h3>
+          <div class="sev-grid">
+            <div class="sev"><h4>P1</h4><div class="n" id="p1">1</div></div>
+            <div class="sev"><h4>P2</h4><div class="n" id="p2">3</div></div>
+            <div class="sev"><h4>P3</h4><div class="n" id="p3">4</div></div>
+            <div class="sev"><h4>P4</h4><div class="n" id="p4">6</div></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- RIGHT (on dashboard) -->
+    <aside class="panel active right-col" id="panel-dashboard-right">
+      <div class="grid-right">
+        <section class="card">
+          <h3>Customer concurrency</h3>
+          <ul class="conc-list" id="concList">
+            <!-- existing design items kept as-is -->
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="Aha"><img src="image/aha.jpg" alt="Aha" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Aha</div>
+              </div><div class="badge">Live <span class="v">4.5K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="PL"><img src="image/philippines-live.png" alt="Philippinas Live" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Philippinas Live</div>
+              </div><div class="badge">Live <span class="v">1.8K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="CG"><img src="image/cignal.png" alt="Cignal" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Cignal</div>
+              </div><div class="badge">Live <span class="v">2.4K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="U2"><img src="image/unifi.png" alt="Unifi 2.0" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Unifi 2.0</div>
+              </div><div class="badge">Live <span class="v">1.1K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="UV"><img src="image/univision.png" alt="Univision" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Univision</div>
+              </div><div class="badge">Live <span class="v">2.0K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="UN"><img src="image/univision-now.png" alt="Univision Now" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Univision Now</div>
+              </div><div class="badge">Live <span class="v">900</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="LN"><img src="image/localnow.png" alt="Local Now" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Local Now</div>
+              </div><div class="badge">Live <span class="v">700</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="TWC"><img src="image/twc.png" alt="TWC" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>TWC (The Weather Channel)</div>
+              </div><div class="badge">Live <span class="v">1.6K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="GT"><img src="image/gotham.png" alt="GOTHAM" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>GOTHAM</div>
+              </div><div class="badge">Live <span class="v">400</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="CL"><img src="image/canela.png" alt="Canela TV" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Canela TV</div>
+              </div><div class="badge">Live <span class="v">800</span></div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3 class="g-title">Availability</h3>
+          <svg id="gauge" class="gauge" viewBox="0 0 360 200">
+            <defs>
+              <linearGradient id="ggrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="50%" stop-color="#f59e0b"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <path d="M20,180 A160,160 0 0 1 340,180" stroke="rgba(148,163,184,.28)" stroke-width="18" fill="none"/>
+            <path id="gArc" d="M20,180 A160,160 0 0 1 340,180" stroke="url(#ggrad)" stroke-width="18" fill="none" stroke-linecap="round" stroke-dasharray="0 503"/>
+            <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="g-label" id="gPct">0%</div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- OTHER PANELS (now filled) -->
+    <main class="panel" id="panel-cust">
+      <section class="card">
+        <h3>Customer Stats</h3>
+        <p class="sub">App store ratings & sentiment (last 7 days). Powered by your <code>customer-sentiment.js</code>.</p>
+        <div id="customer-sentiment-dashboard"></div>
+      </section>
+    </main>
+
+    <main class="panel" id="panel-synth">
+      <section class="card">
+        <h3>Synthetic Monitoring Results (Live Health Checks)</h3>
+        <table>
+          <thead><tr><th>Service Name</th><th>Component</th><th>SG Status</th><th>HK Status</th><th>Last Checked</th><th>Overall Status</th></tr></thead>
+          <tbody>
+            <tr><td>admin-search-service</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge">OK</span></td></tr>
+            <tr><td>cms-metadata</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge">OK</span></td></tr>
+            <tr><td>epg-ingestion-tm</td><td>CMS</td><td>401</td><td>503</td><td>2025-06-09 14:00 IST</td><td><span class="badge">DOWN</span></td></tr>
+            <tr><td>sitemap-generator</td><td>Edge</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge">OK</span></td></tr>
+            <tr><td>syndication-ingestion-disney</td><td>CMS</td><td>503</td><td>503</td><td>2025-06-09 14:00 IST</td><td><span class="badge">DOWN</span></td></tr>
+            <tr><td>user-settings-service</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td><span class="badge">OK</span></td></tr>
+          </tbody>
+        </table>
+        <p class="sub">Health check statuses directly from service monitoring systems (sample).</p>
+      </section>
+    </main>
+
+    <main class="panel" id="panel-manif">
+      <section class="card">
+        <h3>Manifest Check Results: RSM Channels</h3>
+        <table>
+          <thead><tr><th>Channel Name</th><th>Protocol</th><th>URL</th><th>Status</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>snohd</td><td>HLS</td><td>https://live-streaming-tma.live.rsm.firstlight.ai/snohd/snohd.isml/.m3u8</td><td><span class="badge">OK</span></td><td>Manifest loaded successfully.</td></tr>
+            <tr><td>snehd</td><td>HLS</td><td>https://live-streaming-tm.live.rsm.firstlight.ai/snehd/snehd.isml/.m3u8</td><td><span class="badge">MISSING_STREAM</span></td><td>Missing audio-only variant.</td></tr>
+            <tr><td>wwehd</td><td>DASH</td><td>https://live-streaming-tm.live.rsm.firstlight.ai/wwehd/wwehd_cenc.isml/.mpd</td><td><span class="badge">OK</span></td><td>Manifest loaded successfully.</td></tr>
+          </tbody>
+        </table>
+        <p class="sub">Data is a representative subset from <code>RSM_Manifest_URL.txt</code>.</p>
+      </section>
+    </main>
+
+    <main class="panel" id="panel-handoff">
+      <section class="card">
+        <h3>Shift Handoffs (Morning)</h3>
+        <p class="sub">Summary provided by Praveen Kumar (sample).</p>
         <ul>
           <li><strong>Incidents opened:</strong> 7 &nbsp;•&nbsp; <strong>Resolved:</strong> 4 &nbsp;•&nbsp; <strong>Updated:</strong> 28</li>
         </ul>
-        <h3>Incidents</h3>
+        <h4>Incidents</h4>
         <ul>
           <li><strong>INC0195019:</strong> The customer is facing a loading issue on mobile.</li>
           <li><strong>INC0195023:</strong> [AHA] User already has subscription but sees “subscribe now”.</li>
         </ul>
-        <h3>Changes</h3>
+        <h4>Changes</h4>
         <ul>
           <li><strong>CHG0102910:</strong> [LocalNow] HLS &amp; EPG URL changes for one Live Channel – Completed.</li>
         </ul>
-        <h3>Upcoming CR</h3>
+        <h4>Upcoming CR</h4>
         <ul><li><strong>CHG0102882:</strong> [AHA] Web deployment of version.</li></ul>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- ========== RBAC ========== -->
-    <div id="RBAC" class="tab-content">
-      <h2>RBAC (Role-Based Access Control)</h2>
-      <table>
-        <thead><tr><th>Role</th><th>Description</th><th>Access Level</th></tr></thead>
-        <tbody>
-          <tr><td>Admin</td><td>Full control over all modules and user management.</td><td>All (View, Edit, Manage Users)</td></tr>
-          <tr><td>Operations Lead</td><td>Manage dashboards and team members.</td><td>All (View, Edit on assigned customers)</td></tr>
-          <tr><td>Operations Engineer</td><td>View dashboards and execute operational tasks.</td><td>View all, limited Edit</td></tr>
-          <tr><td>Viewer</td><td>Read-only access to dashboards.</td><td>View Only</td></tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left">Map these roles to your SSO groups in production.</p>
-    </div>
+    <main class="panel" id="panel-rbac">
+      <section class="card">
+        <h3>RBAC (Role-Based Access Control)</h3>
+        <table>
+          <thead><tr><th>Role</th><th>Description</th><th>Access Level</th></tr></thead>
+          <tbody>
+            <tr><td>Admin</td><td>Full control over all modules and user management.</td><td>All (View, Edit, Manage Users)</td></tr>
+            <tr><td>Operations Lead</td><td>Manage dashboards and team members.</td><td>All (View, Edit on assigned customers)</td></tr>
+            <tr><td>Operations Engineer</td><td>View dashboards and execute operational tasks.</td><td>View all, limited Edit</td></tr>
+            <tr><td>Viewer</td><td>Read-only access to dashboards.</td><td>View Only</td></tr>
+          </tbody>
+        </table>
+        <p class="sub">Map these roles to your SSO groups in production.</p>
+      </section>
+    </main>
 
-    <!-- ========== ISSUE SEARCH ========== -->
-    <div id="IssueSearch" class="tab-content">
-      <h2>Issue Resolution Search</h2>
-      <input type="text" class="search-input" placeholder="Search past issues (e.g., 'buffer timeout', 'payment gateway error')"/>
-      <table>
-        <thead><tr><th>Issue ID</th><th>Summary</th><th>Customer</th><th>Date Resolved</th><th>Resolution</th><th>Owner</th></tr></thead>
-        <tbody>
-          <tr><td>INC0195023</td><td>User has subscription but showing “subscribe now”.</td><td>Aha</td><td>2025-06-09</td><td>Investigating data sync.</td><td>Praveen K.</td></tr>
-          <tr><td>ISSUE-002</td><td>App crash on Android 12.</td><td>PLDT</td><td>2025-04-15</td><td>Hotfix v3.1.1 (memory leak).</td><td>Team Bravo</td></tr>
-          <tr><td>ISSUE-003</td><td>Synthetic login test failure.</td><td>RSM</td><td>2025-06-01</td><td>Updated stale credentials.</td><td>Team Alpha</td></tr>
-        </tbody>
-      </table>
-      <p class="meta-note" style="text-align:left">Search is simulated; wire to Elasticsearch/Postgres for production.</p>
-    </div>
+    <main class="panel" id="panel-issues">
+      <section class="card">
+        <h3>Issue Resolution Search</h3>
+        <input type="text" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--card-border);background:var(--tile-bg);color:var(--text)" placeholder="Search past issues (e.g., 'buffer timeout', 'payment gateway error')"/>
+        <table style="margin-top:10px">
+          <thead><tr><th>Issue ID</th><th>Summary</th><th>Customer</th><th>Date Resolved</th><th>Resolution</th><th>Owner</th></tr></thead>
+          <tbody>
+            <tr><td>INC0195023</td><td>User has subscription but showing “subscribe now”.</td><td>Aha</td><td>2025-06-09</td><td>Investigating data sync.</td><td>Praveen K.</td></tr>
+            <tr><td>ISSUE-002</td><td>App crash on Android 12.</td><td>PLDT</td><td>2025-04-15</td><td>Hotfix v3.1.1 (memory leak).</td><td>Team Bravo</td></tr>
+            <tr><td>ISSUE-003</td><td>Synthetic login test failure.</td><td>RSM</td><td>2025-06-01</td><td>Updated stale credentials.</td><td>Team Alpha</td></tr>
+          </tbody>
+        </table>
+        <p class="sub">Search is simulated; wire to Elasticsearch/Postgres for production.</p>
+      </section>
+    </main>
   </div>
 
-  <!-- Tabs + Theme -->
+  <!-- THEME TOGGLE -->
   <script>
-    function openTab(evt, id){
-      document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('active'));
-      document.querySelectorAll('.tab-button').forEach(b=>b.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      evt.currentTarget.classList.add('active');
-    }
-    function applyTheme(mode){
-      document.body.classList.toggle('light-mode', mode==='light');
-      const btn=document.getElementById('theme-toggle');
-      if(document.body.classList.contains('light-mode')){btn.textContent='🌙 Dark';btn.setAttribute('aria-label','Switch to dark')}
-      else{btn.textContent='☀️ Light';btn.setAttribute('aria-label','Switch to light')}
-    }
-    document.addEventListener('DOMContentLoaded',()=>{
-      const stored=localStorage.getItem('techops-theme');
-      const prefLight=matchMedia('(prefers-color-scheme: light)').matches;
-      applyTheme(stored || (prefLight?'light':'dark'));
-      document.getElementById('theme-toggle').addEventListener('click',()=>{
-        const next=document.body.classList.contains('light-mode')?'dark':'light';
-        localStorage.setItem('techops-theme',next);applyTheme(next);
-      });
-    });
+    (function(){
+      const root=document.documentElement,btn=document.getElementById('modeToggle');
+      const saved=localStorage.getItem('techops-theme');
+      if(saved){root.setAttribute('data-theme',saved);btn.textContent=saved==='dark'?'Light':'Dark'}
+      btn.addEventListener('click',()=>{const cur=root.getAttribute('data-theme')||'dark';const next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);btn.textContent=next==='dark'?'Light':'Dark';localStorage.setItem('techops-theme',next);});
+    })();
   </script>
 
-  <!-- Home page data: slot machine, gauge, concurrency tiles -->
+  <!-- MENU ROUTER -->
   <script>
-    // Concurrency tiles with your logo paths
-    const CUSTOMERS = [
-      {name:'Aha', logo:'image/aha_Logo.png', val:'4.5K'},
-      {name:'Philippinas Live', logo:'image/PilipinasLive_Logo.png', val:'1.8K'},
-      {name:'Cignal', logo:'image/Cignal_Logo.png', val:'2.4K'},
-      {name:'Unifi 2.0', logo:'image/Unifi2.0_logo.png', val:'1.1K'},
-      {name:'Univision', logo:'image/Univision_logo.webp', val:'2.0K'},
-      {name:'Univision Now', logo:'image/UnivisionNow_logo.png', val:'900'},
-      {name:'Local Now', logo:'image/LocalNow_Logo.png', val:'700'},
-      {name:'TWC (The Weather Channel)', logo:'image/TWC_Logo.png', val:'1.6K'},
-      {name:'GOTHAM', logo:'image/GOTHAM_Logo.png', val:'400'},
-      {name:'Canela TV', logo:'image/CanelaTV_Logo.png', val:'800'}
-    ];
-    document.addEventListener('DOMContentLoaded',()=>{
-      const ul=document.getElementById('cc-list');
-      if(ul){
-        CUSTOMERS.forEach(c=>{
-          const li=document.createElement('li');li.className='customer-concurrency-item';
-          li.innerHTML=`<img class="customer-logo" src="${c.logo}" alt=""><div>${c.name}</div><div class="concurrency-value">${c.val}</div>`;
-          ul.appendChild(li);
-        });
-      }
-    });
-
-    // Slot machine - horizontal columns, reliable paint+animate
     (function(){
-      const TARGET="654432"; // TODO: wire to live total
-      const H=92; const wrap=document.getElementById('slotCounter'); if(!wrap) return;
-      function mkCol(d){
+      const nav = Array.from(document.querySelectorAll('.navbtn'));
+      const panels = {
+        'panel-dashboard': document.getElementById('panel-dashboard'),
+        'panel-dashboard-right': document.getElementById('panel-dashboard-right'),
+        'panel-cust': document.getElementById('panel-cust'),
+        'panel-synth': document.getElementById('panel-synth'),
+        'panel-manif': document.getElementById('panel-manif'),
+        'panel-handoff': document.getElementById('panel-handoff'),
+        'panel-rbac': document.getElementById('panel-rbac'),
+        'panel-issues': document.getElementById('panel-issues'),
+      };
+      function show(id){
+        Object.values(panels).forEach(p=>p.classList.remove('active'));
+        if(id==='panel-dashboard'){panels['panel-dashboard'].classList.add('active');panels['panel-dashboard-right'].classList.add('active');}
+        else{panels[id].classList.add('active');}
+      }
+      nav.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          nav.forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+          show(btn.dataset.panel);
+        });
+      });
+    })();
+  </script>
+
+  <!-- SLOT MACHINE -->
+  <script>
+    (function(){
+      const TARGET="654432";      // TODO: replace with live total
+      const H=92;
+      const wrap=document.getElementById('slotCounter');
+      wrap.innerHTML='';
+      function makeCol(digit){
         const slot=document.createElement('div');slot.className='slot';
         const col=document.createElement('div');col.className='digit-col';
         for(let i=0;i<10;i++){const e=document.createElement('div');e.className='digit';e.textContent=i;col.appendChild(e);}
         slot.appendChild(col);
-        // two rafs ensures first frame renders before animation
-        requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        requestAnimationFrame(()=>{requestAnimationFrame(()=>{
           const rounds=2+Math.floor(Math.random()*2);
-          const end=rounds*10+Number(d);
+          const end=rounds*10 + Number(digit);
           col.style.transform=`translateY(-${end*H}px)`;
-        }));
+        })});
         return slot;
       }
-      wrap.innerHTML='';
-      TARGET.split('').forEach(d=>wrap.appendChild(mkCol(d)));
+      TARGET.split('').forEach(d=>wrap.appendChild(makeCol(d)));
     })();
+  </script>
 
-    // Gauge animation (theme-aware needle)
+  <!-- AVAILABILITY GAUGE -->
+  <script>
     (function(){
-      const target=96; // TODO: wire to live %
-      const arc=document.getElementById('gArc'); const needle=document.getElementById('needle'); const label=document.getElementById('gPct');
-      if(!arc||!needle) return;
+      const targetPct=96; // TODO: wire to live %
+      const path=document.getElementById('gArc');
+      const needle=document.getElementById('needle');
+      const label=document.getElementById('gPct');
       const circumference=503, cx=180, cy=180, len=130;
       const pctToDeg=p=>180-(p*1.8);
       const start=performance.now(), dur=1200;
       function step(now){
-        const t=Math.min(1,(now-start)/dur); const e=1-Math.pow(1-t,3); const pct=target*e;
+        const t=Math.min(1,(now-start)/dur), eased=1-Math.pow(1-t,3), pct=targetPct*eased;
         label.textContent=Math.round(pct)+'%';
-        const dash=(pct/100)*circumference; arc.setAttribute('stroke-dasharray',`${dash} ${circumference-dash}`);
-        const rad=pctToDeg(pct)*Math.PI/180; const x2=cx+len*Math.cos(rad); const y2=cy-len*Math.sin(rad);
+        const dash=(pct/100)*circumference; path.setAttribute('stroke-dasharray',`${dash} ${circumference-dash}`);
+        const rad=pctToDeg(pct)*Math.PI/180, x2=cx+len*Math.cos(rad), y2=cy-len*Math.sin(rad);
         needle.setAttribute('x2',x2); needle.setAttribute('y2',y2);
         if(t<1) requestAnimationFrame(step);
       }
@@ -401,10 +429,10 @@
     })();
   </script>
 
-  <!-- Ops calendar (Google Sheets) -->
-  <script src="ops-calendar.js?v=3"></script>
+  <!-- LIVE OPS CALENDAR -->
+  <script src="ops-calendar.js"></script>
 
-  <!-- Customer sentiment dashboard -->
+  <!-- CUSTOMER SENTIMENT DASHBOARD -->
   <script src="customer-sentiment.js?v=3"></script>
 
   <!-- Botpress Chatbot -->
