@@ -1,539 +1,421 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechOps 360 – Portal</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TechOps 360 • Dashboard</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Inter (or swap for your org font if needed) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
-  <style>
-    /* ================= THEME TOKENS (accessible) ================= */
-    :root{
-      --font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+<style>
+  :root{
+    /* brandy gradient + glass cards (same palette as your current site) */
+    --font:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --bg: radial-gradient(circle at top left,#1d4ed8 0,transparent 45%),
+          radial-gradient(circle at top right,#7c3aed 0,transparent 55%),
+          radial-gradient(circle at bottom,#ec4899 0,transparent 55%),
+          #0b1221;
+    --surface: rgba(17,24,39,.92);
+    --border: rgba(148,163,184,.35);
+    --muted: #9aa4b2;
+    --text: #e7eaf0;
+    --shadow: 0 24px 70px rgba(11,18,33,.85);
 
-      /* Light */
-      --bg: #f6f8fb;
-      --text: #0a0f1a;            /* 16:1 on white */
-      --muted: #445269;           /* WCAG AA */
-      --card: #ffffff;
-      --border: #d8e0ee;
-      --row: #f2f5fb;
-      --row-hover: #e8eefc;
+    --ok: #22c55e;
+    --warn:#f59e0b;
+    --bad:#ef4444;
+    --info:#38bdf8;
 
-      /* 🔁 key fixes for light mode readability */
-      --chip: #ffffff;            /* was dark; now white so text is readable */
-      --chip-border: #cfd7ea;     /* soft hairline */
-      --pill: #ffffff;
-      --pill-border: #cfd7ea;
+    /* light mode fallback (optional) */
+    color-scheme: dark;
+  }
 
-      --ok: #12993f;
-      --warn: #b66b0b;
-      --bad: #cf3838;
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font-family:var(--font); color:var(--text);
+    background:var(--bg); background-attachment:fixed;
+  }
 
-      --accent: #5b7cff;
-      --accent-ghost: rgba(91,124,255,.10);
+  /* Top bar */
+  .top{
+    position:sticky; top:0; z-index:40;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px; padding:14px 22px;
+    backdrop-filter:blur(18px);
+    background:linear-gradient(to bottom,rgba(2,6,23,.75),rgba(2,6,23,.35),transparent);
+    border-bottom:1px solid rgba(148,163,184,.25);
+  }
+  .brand{display:flex;align-items:center;gap:10px}
+  .logo{
+    height:36px; width:36px; border-radius:10px; overflow:hidden;
+    display:grid; place-items:center; background:#0b1221; border:1px solid rgba(148,163,184,.4)
+  }
+  .brand-title{display:flex;flex-direction:column}
+  .brand-title b{font-size:1.1rem; letter-spacing:.02em}
+  .brand-title small{color:var(--muted); font-size:.8rem}
+  .uptime{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.78rem; padding:6px 10px; border-radius:999px;
+    border:1px solid var(--border); background:rgba(2,6,23,.65); color:var(--text)
+  }
+  .dot{width:8px;height:8px;border-radius:999px;background:var(--ok);box-shadow:0 0 0 4px rgba(34,197,94,.25)}
 
-      --grad-bg: radial-gradient(900px 600px at 8% -10%, rgba(91,124,255,.25), transparent 60%),
-                 radial-gradient(800px 600px at 100% -20%, rgba(178,102,255,.25), transparent 60%),
-                 #eef2ff;
-    }
+  /* Shell */
+  .shell{max-width:1320px;margin:18px auto 40px;display:grid;grid-template-columns:240px 1fr;gap:16px;padding:0 16px}
 
-    [data-theme="dark"]{
-      --bg: #060a17;
-      --text: #e8ebf2;
-      --muted: #aabbcc;
-      --card: #0b1021;
-      --border: #33415e;
-      --row: #121936;
-      --row-hover: #1b2550;
+  /* Left side menu (collapsed look kept from your current) */
+  .side{
+    background:rgba(10,15,28,.9); border:1px solid var(--border);
+    border-radius:18px; padding:12px; box-shadow:var(--shadow)
+  }
+  .side h6{margin:4px 8px 8px; font-weight:700; font-size:.72rem; letter-spacing:.1em; color:var(--muted); text-transform:uppercase}
+  .nav-btn{
+    width:100%; display:flex; align-items:center; gap:10px;
+    padding:10px 12px; border-radius:12px; background:transparent; color:var(--text);
+    border:1px solid transparent; cursor:pointer; font-size:.92rem
+  }
+  .nav-btn:hover{background:rgba(255,255,255,.04); border-color:rgba(129,140,248,.55)}
+  .nav-btn.active{background:rgba(129,140,248,.18); border-color:rgba(129,140,248,.75)}
+  .nav-ic{width:22px;height:22px;display:grid;place-items:center;border-radius:999px;border:1px solid rgba(148,163,184,.45);background:rgba(10,15,28,.85);font-size:.85rem}
+  .side .note{
+    margin-top:10px; font-size:.74rem; color:var(--muted);
+    padding:10px; border:1px dashed var(--border); border-radius:12px; background:rgba(10,15,28,.85)
+  }
 
-      --chip: #0b1021;
-      --chip-border: #41527a;
-      --pill: #0b1021;
-      --pill-border: #41527a;
+  /* Main content grid for dashboard */
+  .main{display:grid; gap:16px}
+  /* Top row: 3 columns – Left total incidents, Center Ops calendar, Right Customer+Concurrency */
+  .row-top{display:grid; grid-template-columns: 320px 1fr 420px; gap:16px}
+  /* Bottom row: 2 columns centered (P1-P4 and Availability gauge) */
+  .row-bottom{display:grid; grid-template-columns: 1fr 1fr; gap:16px; align-items:start}
 
-      --ok: #22c55e;
-      --warn: #f59e0b;
-      --bad: #ef4444;
+  .card{
+    position:relative; overflow:hidden; border-radius:22px;
+    background:var(--surface); border:1px solid var(--border); box-shadow:var(--shadow); padding:14px 16px;
+  }
+  .card::before{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.45;
+    background:linear-gradient(135deg,rgba(248,250,252,.06),transparent 40%,rgba(56,189,248,.08) 70%,transparent)
+  }
+  .card h3{margin:2px 0 10px; font-size:1.05rem}
+  .sub{color:var(--muted); font-size:.82rem; margin-bottom:8px}
 
-      --accent: #8da2ff;
-      --accent-ghost: rgba(141,162,255,.15);
+  /* Table (calendar & right table share style) */
+  table{width:100%; border-collapse:collapse; font-size:.9rem}
+  thead{background:rgba(15,23,42,.96)}
+  th,td{padding:10px 10px; border-bottom:1px solid rgba(148,163,184,.25); text-align:left}
+  th{color:var(--muted); font-weight:600}
+  tbody tr:nth-child(even){background:rgba(15,23,42,.6)}
+  tbody tr:hover{background:rgba(30,64,175,.5)}
+  .ok{color:var(--ok); font-weight:700}
+  .off{color:var(--bad); font-weight:700}
+  .muted{color:var(--muted)}
 
-      --grad-bg: radial-gradient(1100px 700px at 3% -15%, rgba(91,124,255,.35), transparent 60%),
-                 radial-gradient(900px 600px at 100% -15%, rgba(178,102,255,.35), transparent 60%),
-                 #050814;
-    }
+  /* Right: Customers list with tiny logo + number */
+  .cust-row{display:flex; align-items:center; justify-content:space-between; padding:8px 6px; border-radius:12px; border:1px solid rgba(148,163,184,.25); background:rgba(10,15,28,.85); margin-bottom:8px}
+  .cust-left{display:flex; align-items:center; gap:8px}
+  .logo-sm{width:26px;height:26px;border-radius:6px;overflow:hidden;background:#0b1221;border:1px solid rgba(148,163,184,.4);display:grid;place-items:center}
+  .logo-sm img{max-width:100%;max-height:100%;object-fit:contain}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;border-radius:999px;border:1px solid rgba(248,250,252,.3);padding:4px 10px;background:rgba(15,23,42,.9)}
+  .badge .val{font-weight:700; color:#facc15}
 
-    /* ================= BASE ================= */
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family:var(--font);
-      color:var(--text);
-      background:var(--grad-bg) fixed;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      font-size:16.5px;
-    }
+  /* Slot machine total incidents */
+  .slots{display:flex; gap:8px; align-items:center}
+  .slot{
+    width:46px; height:58px; border-radius:10px; background:#0b1221; border:1px solid rgba(148,163,184,.45);
+    overflow:hidden; position:relative; box-shadow: inset 0 -8px 18px rgba(255,255,255,.02)
+  }
+  .digits{position:absolute; left:0; top:0; width:100%}
+  .digit{height:58px; display:grid; place-items:center; font-weight:800; font-size:1.5rem}
 
-    /* ================= TOP BAR ================= */
-    .top{
-      position:sticky; top:0; z-index:50;
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 18px;
-      border-bottom:1px solid var(--border);
-      backdrop-filter: blur(10px);
-      /* light-friendly gradient so chips remain visible */
-      background: linear-gradient(to bottom, rgba(255,255,255,.85), rgba(255,255,255,.55), transparent);
-    }
-    [data-theme="dark"] .top{
-      background: linear-gradient(to bottom, rgba(6,10,23,.65), rgba(6,10,23,.0));
-    }
+  /* P1–P4 widget */
+  .sev-row{display:grid; grid-template-columns: repeat(4,1fr); gap:10px}
+  .sev{
+    background:rgba(10,15,28,.85); border:1px solid rgba(148,163,184,.35); padding:14px; border-radius:14px;
+    display:flex; flex-direction:column; gap:8px; align-items:flex-start
+  }
+  .sev b{font-size:1.2rem}
+  .sev small{color:var(--muted)}
+  .sev.bad b{color:var(--bad)}
+  .sev.warn b{color:var(--warn)}
+  .sev.ok b{color:var(--ok)}
+  .sev.info b{color:var(--info)}
 
-    .brand{display:flex; align-items:center; gap:12px}
-    .logo-wrap{display:flex; align-items:center; gap:12px}
-    .logo{
-      height:44px; width:auto; border-radius:10px;
-      background: #ffffff;       /* light: white well; no dark box */
-      padding:4px;
-      border:1px solid var(--border);
-    }
-    [data-theme="dark"] .logo{ background:#0a0f1a; border-color:rgba(0,0,0,.35) }
+  /* Availability gauge (SVG semicircle) */
+  .g-wrap{display:grid; place-items:center; padding-top:8px}
+  .g-label{display:flex; align-items:baseline; gap:10px; justify-content:center; margin-top:6px}
+  .g-label b{font-size:2rem}
+  .g-label span{color:var(--muted)}
 
-    .titles{display:flex; flex-direction:column}
-    .titles .name{font-weight:900; letter-spacing:.02em; font-size:1.3rem; color:var(--text)}
-    .titles .desc{color:var(--muted); font-size:.9rem}
-
-    .top-actions{display:flex; align-items:center; gap:10px}
-    .chip{
-      display:inline-flex; gap:8px; align-items:center;
-      padding:6px 12px; border-radius:999px; color:var(--text);
-      background:var(--chip); border:1px solid var(--chip-border);
-    }
-    .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.22)}
-    .btn{
-      padding:7px 12px; border-radius:10px; border:1px solid var(--chip-border);
-      background:var(--chip); color:var(--text); cursor:pointer
-    }
-    .btn:hover{box-shadow:0 6px 18px rgba(0,0,0,.08)}
-
-    /* ================= LAYOUT ================= */
-    .shell{max-width:1400px; margin:0 auto; padding:16px; display:grid; grid-template-columns:260px 1fr; gap:16px}
-    @media (max-width:1040px){.shell{grid-template-columns:1fr}}
-
-    /* ================= SIDE NAV (collapsible) ================= */
-    .nav{
-      border:1px solid var(--border); background:var(--card);
-      border-radius:16px; padding:10px; height:max-content;
-      position:sticky; top:68px; box-shadow:0 18px 50px rgba(0,0,0,.08);
-      transition: width .2s ease, padding .2s ease;
-    }
-    .nav-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px}
-    .nav h6{margin:0; font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
-    .collapse-btn{border:1px solid var(--chip-border); background:var(--chip); color:var(--text); border-radius:8px; padding:5px 8px; cursor:pointer}
-    .navlist{display:flex; flex-direction:column; gap:6px}
-    .item{display:flex; align-items:center; gap:10px; border-radius:12px; border:1px solid transparent; padding:9px 10px; cursor:pointer; color:var(--muted); background:transparent}
-    .item:hover{background:var(--row); color:var(--text)}
-    .item.active{background:var(--accent-ghost); border-color:var(--accent); color:var(--text)}
-    .ico{width:28px; height:28px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; background:var(--row); color:var(--text)}
-    .item span.label{white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-    .nav.collapsed{width:74px; padding:10px 8px}
-    .nav.collapsed .nav-head h6, .nav.collapsed .item span.label, .nav.collapsed .nav-note{display:none}
-    .nav.collapsed .item{justify-content:center}
-    @media (max-width:1040px){
-      .nav{position:fixed; left:0; top:64px; bottom:0; width:260px; transform:translateX(-110%); transition: transform .25s ease; z-index:60}
-      .nav.open{transform:none}
-      .shell{grid-template-columns:1fr}
-    }
-    .nav-note{margin-top:8px; padding:8px; border:1px dashed var(--border); border-radius:12px; color:var(--muted); font-size:.82rem}
-
-    /* ================= PANELS / CARDS ================= */
-    .main{display:flex; flex-direction:column; gap:14px}
-    .panel{display:none}
-    .panel.active{display:block}
-    .panel h3{margin:.2rem 0 .1rem; font-size:1.25rem}
-    .panel p.sub{margin:.1rem 0 1rem; color:var(--muted)}
-    .grid{display:grid; grid-template-columns:1.45fr 1fr; gap:14px}
-    @media(max-width:1100px){.grid{grid-template-columns:1fr}}
-    .card{border:1px solid var(--border); background:var(--card); border-radius:18px; padding:14px 16px; position:relative; box-shadow:0 18px 50px rgba(0,0,0,.06)}
-    .card .hd{display:flex; justify-content:space-between; gap:10px; align-items:end; margin-bottom:8px}
-    .ttl{font-weight:800; font-size:1rem}
-    .pill{border:1px solid var(--pill-border); background:var(--pill); color:var(--muted); border-radius:999px; padding:2px 8px; font-size:.74rem}
-    .note{color:var(--muted); font-size:.84rem; margin-top:.4rem; text-align:right}
-
-    /* tables */
-    table{width:100%; border-collapse:collapse; font-size:.95rem}
-    thead{background:var(--row)}
-    th,td{padding:9px 10px; border-bottom:1px solid var(--border); text-align:left}
-    tbody tr:nth-child(even){background:var(--row)}
-    tbody tr:hover{background:var(--row-hover)}
-    .ok{color:var(--ok); font-weight:700}
-    .warn{color:var(--warn); font-weight:700}
-    .bad{color:var(--bad); font-weight:700}
-
-    /* bottom tiles */
-    .tiles{margin-top:14px}
-    .tilewrap{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px}
-    @media(max-width:1200px){.tilewrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:620px){.tilewrap{grid-template-columns:1fr}}
-    .tile{
-      border:1px solid var(--border); background:var(--card); border-radius:14px; padding:10px 12px;
-      display:grid; grid-template-columns:58px 1fr auto; gap:10px; align-items:center
-    }
-
-    /* ✅ light: white logo well; dark: deep well */
-    .tile .logo{
-      width:46px;height:46px;border-radius:10px;
-      background:#ffffff; display:flex; align-items:center; justify-content:center; overflow:hidden;
-      border:1px solid var(--border);
-    }
-    [data-theme="dark"] .tile .logo{ background:#0a0f1a; border-color:rgba(0,0,0,.35) }
-
-    .tile .logo img{max-width:100%; max-height:100%}
-    .tile b{font-size:1rem}
-    .badge{border:1px solid rgba(250,204,21,.45); background:rgba(250,204,21,.10); color:#8a6a00; padding:2px 8px; border-radius:999px; font-weight:800}
-    [data-theme="dark"] .badge{ color:#facc15; border-color:rgba(250,204,21,.5); background:rgba(250,204,21,.12) }
-    .spark{width:140px; height:40px}
-
-    /* slot counter */
-    .slots{display:grid; grid-template-columns:2fr 1fr 1fr; gap:12px; margin-top:14px}
-    @media(max-width:1100px){ .slots{grid-template-columns:1fr} }
-    .slot-card{border:1px solid var(--border); background:var(--card); border-radius:18px; padding:14px 16px}
-    .slot-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px}
-    .digits{display:flex; gap:6px}
-    .digit{width:34px; height:48px; overflow:hidden; border:1px solid var(--border); border-radius:8px; background:#1b2a4b; box-shadow:inset 0 0 12px rgba(0,0,0,.28)}
-    [data-theme="light"] .digit{ background:#203355 }
-    .wheel{position:relative; top:0; transition:top .6s cubic-bezier(.18,.89,.32,1.28)}
-    .wheel div{height:48px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:900; font-size:28px}
-
-    .sr{position:absolute;left:-9999px}
-  </style>
+  /* Responsive */
+  @media (max-width:1200px){
+    .row-top{grid-template-columns: 1fr; }
+    .row-bottom{grid-template-columns: 1fr}
+  }
+</style>
 </head>
 <body>
-  <!-- ================= TOP ================= -->
-  <header class="top" role="banner">
-    <div class="brand">
-      <div class="logo-wrap">
-        <img class="logo" src="image/Quickplay.jpg" alt="Quickplay logo">
-      </div>
-      <div class="titles">
-        <div class="name">TechOps 360</div>
-        <div class="desc">Operational intelligence for Quickplay customers</div>
-      </div>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo"><img src="image/Quickplay.jpg" alt="Quickplay" style="height:26px"/></div>
+    <div class="brand-title">
+      <b>TechOps 360</b>
+      <small>Operational intelligence for Quickplay customers</small>
     </div>
-    <div class="top-actions">
-      <button id="navToggle" class="btn" aria-controls="sidenav" aria-expanded="false">☰ Menu</button>
-      <span class="chip"><span class="dot"></span> 24×7 follow-the-sun</span>
-      <button id="themeToggle" class="btn">🌙 Dark</button>
-    </div>
-  </header>
-
-  <div class="shell">
-    <!-- Side nav -->
-    <aside id="sidenav" class="nav" aria-label="Side navigation">
-      <div class="nav-head">
-        <h6>Views</h6>
-        <button id="collapseBtn" class="collapse-btn" title="Collapse side menu">«</button>
-      </div>
-      <div class="navlist">
-        <button class="item active" data-panel="dash"><span class="ico">🏠</span><span class="label">Dashboard</span></button>
-        <button class="item" data-panel="stats"><span class="ico">📊</span><span class="label">Customer Stats</span></button>
-        <button class="item" data-panel="synth"><span class="ico">🩺</span><span class="label">Synthetic Monitoring</span></button>
-        <button class="item" data-panel="manifests"><span class="ico">📡</span><span class="label">Manifest Check</span></button>
-        <button class="item" data-panel="handoff"><span class="ico">📒</span><span class="label">Shift Handoffs</span></button>
-        <button class="item" data-panel="rbac"><span class="ico">🔐</span><span class="label">RBAC</span></button>
-        <button class="item" data-panel="issues"><span class="ico">🧠</span><span class="label">Issue Search</span></button>
-      </div>
-      <div class="nav-note">Internal view. Live: Google Sheets ops calendar & app-store sentiment. Others: placeholders to wire to NR/Grafana/ServiceNow.</div>
-    </aside>
-
-    <!-- Main -->
-    <main class="main">
-      <!-- DASHBOARD -->
-      <section id="dash" class="panel active">
-        <h3>Live Operations Dashboard</h3>
-        <p class="sub">Who is on shift right now and active customer concurrency across the platform.</p>
-
-        <div class="grid">
-          <!-- Current shift -->
-          <div class="card">
-            <div class="hd">
-              <div class="ttl">Current shift coverage <span class="pill">Today • auto-updated</span></div>
-              <div class="pill">Local-window filter</div>
-            </div>
-            <table aria-label="Current shift table">
-              <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
-              <tbody id="ops-calendar-body">
-                <tr><td colspan="3">Loading schedule…</td></tr>
-              </tbody>
-            </table>
-            <div class="note">Coverage includes IST, MYT and EST rotations.</div>
-          </div>
-
-          <!-- Concurrency table -->
-          <div class="card">
-            <div class="hd">
-              <div class="ttl">Customer concurrency <span class="pill">Snapshot</span></div>
-              <div class="pill">Tiles below</div>
-            </div>
-            <table>
-              <thead><tr><th>Customer</th><th>Now</th><th>Notes</th></tr></thead>
-              <tbody id="conc-table">
-                <tr><td>Aha</td><td><b>4.5K</b></td><td>Stable</td></tr>
-                <tr><td>Philippinas Live</td><td><b>1.8K</b></td><td>Normal</td></tr>
-                <tr><td>Cignal</td><td><b>2.4K</b></td><td>Peaking</td></tr>
-                <tr><td>Unifi 2.0</td><td><b>1.1K</b></td><td>Stable</td></tr>
-                <tr><td>Univision</td><td><b>2.0K</b></td><td>Normal</td></tr>
-                <tr><td>Univision Now</td><td><b>0.9K</b></td><td>Rising</td></tr>
-                <tr><td>Local Now</td><td><b>0.7K</b></td><td>Normal</td></tr>
-                <tr><td>TWC (The Weather Channel)</td><td><b>1.6K</b></td><td>Normal</td></tr>
-                <tr><td>GOTHAM</td><td><b>0.4K</b></td><td>Stable</td></tr>
-                <tr><td>Canela TV</td><td><b>0.4K</b></td><td>Stable</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Tiles -->
-        <div class="tiles">
-          <div class="tilewrap" id="tiles"></div>
-        </div>
-
-        <!-- Counters & breakdowns -->
-        <div class="slots">
-          <div class="slot-card">
-            <div class="slot-head"><b>Total incidents since org inception</b><span class="pill">slot counter</span></div>
-            <div id="slotCounter" class="digits" aria-label="Total incidents" role="img"></div>
-          </div>
-          <div class="slot-card">
-            <div class="slot-head"><b>Today by category</b><span class="pill">placeholder</span></div>
-            <table><tbody id="todayCats">
-              <tr><td>Content</td><td style="text-align:right"><b>6</b></td></tr>
-              <tr><td>Playback/DRM</td><td style="text-align:right"><b>3</b></td></tr>
-              <tr><td>Identity</td><td style="text-align:right"><b>2</b></td></tr>
-              <tr><td>Payments</td><td style="text-align:right"><b>1</b></td></tr>
-            </tbody></table>
-          </div>
-          <div class="slot-card">
-            <div class="slot-head"><b>Today by customer</b><span class="pill">placeholder</span></div>
-            <table><tbody id="todayCust">
-              <tr><td>Aha</td><td style="text-align:right"><b>4</b></td></tr>
-              <tr><td>Philippinas Live</td><td style="text-align:right"><b>3</b></td></tr>
-              <tr><td>Cignal</td><td style="text-align:right"><b>3</b></td></tr>
-              <tr><td>Unifi 2.0</td><td style="text-align:right"><b>2</b></td></tr>
-            </tbody></table>
-          </div>
-        </div>
-      </section>
-
-      <!-- CUSTOMER STATS -->
-      <section id="stats" class="panel">
-        <h3>Customer Stats</h3>
-        <p class="sub">App store ratings and customer sentiment (last 7 days).</p>
-        <div class="card"><div id="customer-sentiment-dashboard"></div></div>
-      </section>
-
-      <!-- SYNTHETIC -->
-      <section id="synth" class="panel">
-        <h3>Synthetic Monitoring</h3>
-        <p class="sub">Representative checks (sample data).</p>
-        <div class="card">
-          <table>
-            <thead><tr><th>Service</th><th>Component</th><th>SG</th><th>HK</th><th>Checked</th><th>Status</th></tr></thead>
-            <tbody>
-              <tr><td>admin-search-service</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td class="ok">OK</td></tr>
-              <tr><td>cms-metadata</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td class="ok">OK</td></tr>
-              <tr><td>epg-ingestion-tm</td><td>CMS</td><td>401</td><td>503</td><td>2025-06-09 14:00 IST</td><td class="bad">DOWN</td></tr>
-              <tr><td>syndication-ingestion-disney</td><td>CMS</td><td>503</td><td>503</td><td>2025-06-09 14:00 IST</td><td class="bad">DOWN</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- MANIFESTS -->
-      <section id="manifests" class="panel">
-        <h3>Manifest Check – RSM</h3>
-        <p class="sub">Subset of channels (sample data).</p>
-        <div class="card">
-          <table>
-            <thead><tr><th>Channel</th><th>Protocol</th><th>URL</th><th>Status</th><th>Details</th></tr></thead>
-            <tbody>
-              <tr><td>snohd</td><td>HLS</td><td>https://…/snohd.isml/.m3u8</td><td class="ok">OK</td><td>Manifest loaded successfully</td></tr>
-              <tr><td>snehd</td><td>HLS</td><td>https://…/snehd.isml/.m3u8</td><td class="bad">MISSING_STREAM</td><td>Missing audio-only variant</td></tr>
-              <tr><td>wwehd</td><td>DASH</td><td>https://…/wwehd_cenc.isml/.mpd</td><td class="ok">OK</td><td>Manifest loaded successfully</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- HANDOFFS -->
-      <section id="handoff" class="panel">
-        <h3>Shift Handoffs</h3>
-        <p class="sub">Incidents, changes & FYI (sample).</p>
-        <div class="card">
-          <ul style="margin:0; padding-left:18px">
-            <li>Incidents opened: 7 • Closed: 4 • Updated: 28</li>
-            <li>INC0195019 – Mobile loading issue</li>
-            <li>INC0195023 – Aha: subscribed user sees “subscribe now”</li>
-            <li>CHG0102910 – LocalNow HLS/EPG URL change – Completed</li>
-            <li>Upcoming – CHG0102882 Aha web deployment 23:30 IST</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- RBAC -->
-      <section id="rbac" class="panel">
-        <h3>RBAC Overview</h3>
-        <p class="sub">Simulated roles (map to SSO/Keycloak in prod).</p>
-        <div class="card">
-          <table>
-            <thead><tr><th>Role</th><th>Description</th><th>Access</th></tr></thead>
-            <tbody>
-              <tr><td>Admin</td><td>Full control & user management</td><td>All</td></tr>
-              <tr><td>Operations Lead</td><td>Dashboards & team management</td><td>View + scoped edit</td></tr>
-              <tr><td>Operations Engineer</td><td>Dashboards & ops tasks</td><td>View + limited edit</td></tr>
-              <tr><td>Viewer</td><td>Read-only</td><td>View only</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- ISSUE SEARCH -->
-      <section id="issues" class="panel">
-        <h3>Issue Resolution Search</h3>
-        <p class="sub">Ops memory (simulated search).</p>
-        <div class="card">
-          <input aria-label="Search issues" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border); background:var(--card); color:var(--text)" placeholder="Search for past issues (e.g., ‘buffer timeout’)" />
-          <table style="margin-top:10px">
-            <thead><tr><th>ID</th><th>Summary</th><th>Customer</th><th>Resolved</th><th>Resolution</th><th>Owner</th></tr></thead>
-            <tbody>
-              <tr><td>INC0195023</td><td>Subscribed user sees “subscribe now”</td><td>Aha</td><td>2025-06-09</td><td>Investigating: data sync</td><td>Praveen K.</td></tr>
-              <tr><td>ISSUE-002</td><td>Android 12 crash</td><td>PLDT</td><td>2025-04-15</td><td>Hotfix v3.1.1</td><td>Team Bravo</td></tr>
-              <tr><td>ISSUE-003</td><td>Synthetic login failed</td><td>RSM</td><td>2025-06-01</td><td>Updated credentials</td><td>Team Alpha</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
   </div>
+  <div class="uptime"><span class="dot"></span> 24×7 follow-the-sun</div>
+</header>
 
-  <!-- NAV + THEME JS -->
-  <script>
-    // Panel switching
-    document.querySelectorAll('.item').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        document.querySelectorAll('.item').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        const id = btn.dataset.panel;
-        document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
-        document.getElementById('sidenav').classList.remove('open');
-        document.getElementById('navToggle').setAttribute('aria-expanded','false');
-      });
+<div class="shell">
+  <!-- Side menu (kept) -->
+  <aside class="side">
+    <h6>Views</h6>
+    <button class="nav-btn active"><span class="nav-ic">🏠</span>Dashboard</button>
+    <button class="nav-btn"><span class="nav-ic">📊</span>Customer Stats</button>
+    <button class="nav-btn"><span class="nav-ic">🩺</span>Synthetic Monitoring</button>
+    <button class="nav-btn"><span class="nav-ic">📡</span>Manifest Check</button>
+    <button class="nav-btn"><span class="nav-ic">📒</span>Shift Handoffs</button>
+    <button class="nav-btn"><span class="nav-ic">🔐</span>RBAC</button>
+    <button class="nav-btn"><span class="nav-ic">🧠</span>Issue Search</button>
+    <div class="note">Internal view. Live: Ops calendar (Google Sheets). Others are placeholders to wire to NR/Grafana/ServiceNow.</div>
+  </aside>
+
+  <!-- Main dashboard -->
+  <main class="main">
+
+    <!-- Top row -->
+    <section class="row-top">
+
+      <!-- Left: Total incidents since inception (slot machine) -->
+      <div class="card">
+        <h3>Total incidents since org inception</h3>
+        <div id="slotCounter" class="slots" aria-label="Total incidents animated counter"></div>
+        <div class="sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
+      </div>
+
+      <!-- Center: Operations calendar (who is on now – local window) -->
+      <div class="card">
+        <h3>Current shift coverage</h3>
+        <div class="sub">Showing only engineers currently within their local shift window (IST / MYT / EST).</div>
+        <table>
+          <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
+          <tbody id="ops-calendar-body">
+            <tr><td colspan="3" class="muted">Loading schedule…</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Right: Customers + concurrency (no mini line graphs) -->
+      <div class="card">
+        <h3>Customer concurrency</h3>
+        <div class="sub">Snapshot of active concurrency (mini tiles removed for clarity).</div>
+
+        <div id="custList">
+          <!-- Example rows – replace logo file names as needed -->
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/aha.png" alt="Aha"></div>
+              <div>Aha</div>
+            </div>
+            <div class="badge">Live <span class="val">4.5K</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/philippinas-live.png" alt="Philippinas Live"></div>
+              <div>Philippinas Live</div>
+            </div>
+            <div class="badge">Live <span class="val">1.8K</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/cignal.png" alt="Cignal"></div>
+              <div>Cignal</div>
+            </div>
+            <div class="badge">Live <span class="val">2.4K</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/unifi-2.png" alt="Unifi 2.0"></div>
+              <div>Unifi 2.0</div>
+            </div>
+            <div class="badge">Live <span class="val">1.1K</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/univision.png" alt="Univision"></div>
+              <div>Univision</div>
+            </div>
+            <div class="badge">Live <span class="val">2.0K</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/univision-now.png" alt="Univision Now"></div>
+              <div>Univision Now</div>
+            </div>
+            <div class="badge">Live <span class="val">900</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/local-now.png" alt="Local Now"></div>
+              <div>Local Now</div>
+            </div>
+            <div class="badge">Live <span class="val">700</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/twc.png" alt="TWC"></div>
+              <div>TWC (The Weather Channel)</div>
+            </div>
+            <div class="badge">Live <span class="val">1.6K</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/gotham.png" alt="GOTHAM"></div>
+              <div>GOTHAM</div>
+            </div>
+            <div class="badge">Live <span class="val">400</span></div>
+          </div>
+
+          <div class="cust-row">
+            <div class="cust-left">
+              <div class="logo-sm"><img src="image/canela-tv.png" alt="Canela TV"></div>
+              <div>Canela TV</div>
+            </div>
+            <div class="badge">Live <span class="val">800</span></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Bottom row -->
+    <section class="row-bottom">
+
+      <!-- P1–P4 counts -->
+      <div class="card">
+        <h3>Incidents today</h3>
+        <div class="sub">Totals by severity for the current day.</div>
+        <div class="sev-row" id="sevRow">
+          <div class="sev bad"><small>P1</small><b id="p1">0</b></div>
+          <div class="sev warn"><small>P2</small><b id="p2">0</b></div>
+          <div class="sev info"><small>P3</small><b id="p3">0</b></div>
+          <div class="sev ok"><small>P4</small><b id="p4">0</b></div>
+        </div>
+      </div>
+
+      <!-- Availability gauge -->
+      <div class="card">
+        <h3>Availability</h3>
+        <div class="sub">Overall availability across monitored services (0–100%).</div>
+        <div class="g-wrap">
+          <!-- semicircle 180° gauge -->
+          <svg id="gauge" width="360" height="200" viewBox="0 0 360 200" aria-label="Availability gauge">
+            <!-- track -->
+            <path d="M20,180 A160,160 0 0,1 340,180" fill="none" stroke="rgba(148,163,184,.25)" stroke-width="22" stroke-linecap="round"/>
+            <!-- value arc -->
+            <path id="gArc" d="M20,180 A160,160 0 0,1 340,180" fill="none" stroke="url(#grad)" stroke-width="22" stroke-linecap="round" stroke-dasharray="0 503"/>
+            <defs>
+              <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="50%" stop-color="#f59e0b"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <!-- needle -->
+            <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="g-label"><b id="gPct">95%</b><span>last 30 min</span></div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<!-- Ops calendar (Google Sheets loader you already have) -->
+<script src="ops-calendar.js?v=4"></script>
+
+<script>
+/* =========================
+   Slot-machine total counter
+   ========================= */
+(function(){
+  const target = 654432; // placeholder total; replace when wired
+  const holder = document.getElementById('slotCounter');
+  const digits = String(target).split('');
+  const rollTimes = 2; // how many spins before settling
+
+  digits.forEach((d,i)=>{
+    const slot = document.createElement('div');
+    slot.className = 'slot';
+    const column = document.createElement('div');
+    column.className = 'digits';
+    // build 0-9 repeated + final digit
+    const seq = [];
+    for(let r=0;r<rollTimes;r++){ for(let n=0;n<10;n++){ seq.push(n); } }
+    seq.push(0,1,2,3,4,5,6,7,8,9); // final pass to be safe
+    seq.push(+d);
+    column.innerHTML = seq.map(n=>`<div class="digit">${n}</div>`).join('');
+    slot.appendChild(column);
+    holder.appendChild(slot);
+
+    // animate via translateY
+    requestAnimationFrame(()=>{
+      const h = 58; // digit height
+      const offset = (seq.length-1) * h;
+      column.style.transition = `transform ${2 + i*0.15}s cubic-bezier(.22,.61,.36,1)`;
+      column.style.transform = `translateY(-${offset}px)`;
     });
+  });
+})();
 
-    // Collapse (desktop)
-    const sidenav = document.getElementById('sidenav');
-    document.getElementById('collapseBtn').addEventListener('click',()=>{ sidenav.classList.toggle('collapsed'); });
+/* =========================
+   Availability Gauge demo
+   ========================= */
+(function(){
+  const pct = 95; // placeholder; wire to uptime calc
+  const path = document.getElementById('gArc');
+  const needle = document.getElementById('needle');
+  const label = document.getElementById('gPct');
 
-    // Mobile drawer toggle
-    document.getElementById('navToggle').addEventListener('click',()=>{
-      const open = sidenav.classList.toggle('open');
-      document.getElementById('navToggle').setAttribute('aria-expanded', String(open));
-    });
+  const circumference = 503; // arc length for our semicircle path (approx)
+  const show = Math.max(0, Math.min(100, pct));
+  const dash = (show/100) * circumference;
 
-    // Theme toggle (persist)
-    const toggleBtn = document.getElementById('themeToggle');
-    function setTheme(mode){
-      document.documentElement.setAttribute('data-theme', mode);
-      toggleBtn.textContent = mode==='dark' ? '🌙 Dark' : '☀️ Light';
-      localStorage.setItem('techops-theme', mode);
-    }
-    setTheme(localStorage.getItem('techops-theme') || 'dark');
-    toggleBtn.addEventListener('click', ()=>{ setTheme(document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark'); });
-  </script>
+  path.setAttribute('stroke-dasharray', `${dash} ${circumference-dash}`);
+  label.textContent = show.toFixed(0) + '%';
 
-  <!-- TILES + SLOT COUNTER (UPDATED CUSTOMERS) -->
-  <script>
-    // 🔁 Replace these logo filenames with your actual assets anytime.
-    const TILE_DATA = [
-      { name:'Aha',                logo:'image/aha_Logo.png',               now:4500, series:[3400,3700,3900,4100,4200,4300,4400,4500]},
-      { name:'Philippinas Live',   logo:'image/PilipinasLive_Logo.png',  now:1800, series:[1200,1300,1400,1500,1600,1700,1750,1800]},
-      { name:'Cignal',             logo:'image/Cignal_Logo.png',            now:2400, series:[1800,1900,2000,2100,2200,2300,2350,2400]},
-      { name:'Unifi 2.0',          logo:'image/Unifi2.0_logo.png',           now:1100, series:[800,850,900,950,1000,1050,1080,1100]},
-      { name:'Univision',          logo:'image/Univision_logo.webp',         now:2000, series:[1400,1500,1600,1700,1800,1900,1950,2000]},
-      { name:'Univision Now',      logo:'image/UnivisionNow_logo.png',     now: 900, series:[650,700,740,780,820,860,880,900]},
-      { name:'Local Now',          logo:'image/LocalNow_Logo.png',         now: 700, series:[500,540,570,600,630,660,680,700]},
-      { name:'TWC (The Weather Channel)', logo:'image/TWC_Logo.png',        now:1600, series:[1100,1200,1300,1400,1500,1550,1580,1600]},
-      { name:'GOTHAM',             logo:'image/GOTHAM_Logo.png',            now: 400, series:[250,280,300,320,340,360,380,400]},
-      { name:'Canela TV',          logo:'image/CanelaTV_Logo.png',         now: 800, series:[520,560,600,640,680,720,760,800]},
-    ];
+  // rotate needle around (180deg span; 0% = -90deg, 100% = +90deg)
+  const angle = -90 + (show * 1.8);
+  const cx=180, cy=180, length=140;
+  const rad = angle * Math.PI/180;
+  const x2 = cx + length * Math.cos(rad);
+  const y2 = cy + length * Math.sin(rad);
+  needle.setAttribute('x2', x2); needle.setAttribute('y2', y2);
+})();
 
-    function formatK(n){return n>=1000?(n/1000).toFixed(n%1000===0?0:1)+'K':n}
-
-    function drawSpark(el, data){
-      const w=140,h=40,p=2,min=Math.min(...data),max=Math.max(...data);
-      const norm=v=>(h-p)-((v-min)/(max-min||1))*(h-p*2);
-      const step=(w-p*2)/(data.length-1);
-      let d=''; data.forEach((v,i)=>{const x=p+i*step,y=norm(v); d+=(i?' L':'M')+x+' '+y});
-      el.innerHTML=`<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
-        <path d="${d}" fill="none" stroke="currentColor" stroke-width="2" opacity=".9"></path>
-      </svg>`;
-    }
-
-    function buildTiles(){
-      const wrap=document.getElementById('tiles'); wrap.innerHTML='';
-      TILE_DATA.forEach(t=>{
-        const div=document.createElement('div'); div.className='tile';
-        div.innerHTML=`<div class="logo"><img src="${t.logo}" alt="${t.name} logo"></div>
-          <div><b>${t.name}</b><div style="color:var(--muted);font-size:.9rem">last 30 min</div></div>
-          <div style="display:flex;gap:10px;align-items:center">
-            <span class="badge">Live ${formatK(t.now)}</span>
-            <span class="spark-here"></span>
-          </div>`;
-        wrap.appendChild(div);
-        drawSpark(div.querySelector('.spark-here'), t.series);
-      });
-    }
-    buildTiles();
-
-    // Slot counter (placeholder)
-    function buildSlot(el, n){
-      const s=String(n); el.innerHTML='';
-      for(const ch of s){
-        const d=document.createElement('div'); d.className='digit';
-        const wheel=document.createElement('div'); wheel.className='wheel';
-        for(let i=0;i<=9;i++){const cell=document.createElement('div'); cell.textContent=i; wheel.appendChild(cell)}
-        const fin=document.createElement('div'); fin.textContent=ch; wheel.appendChild(fin);
-        d.appendChild(wheel); el.appendChild(d);
-        requestAnimationFrame(()=>{
-          wheel.style.top=`-${48*10}px`;
-          setTimeout(()=>{ wheel.style.transition='top .45s ease'; wheel.style.top=`-${48*parseInt(ch,10)}px`}, 650);
-        });
-      }
-    }
-    buildSlot(document.getElementById('slotCounter'), 65432);
-  </script>
-
-  <!-- Your existing data loaders -->
-  <script src="ops-calendar.js?v=4"></script>
-  <script src="customer-sentiment.js?v=3"></script>
-
-  <!-- Botpress -->
-  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-  <script>
-    window.botpressWebChat.init({
-      composerPlaceholder:"Chat with TechOps Bot",
-      botConversationDescription:"Your AI assistant for TechOps 360",
-      botId:"56efefce-fa7c-41e6-9846-ec36c7c6704a",
-      hostUrl:"https://cdn.botpress.cloud/webchat/v1",
-      messagingUrl:"https://messaging.botpress.cloud",
-      clientId:"a7e5af98-3b12-4265-a9f9-6f3fcd500b93",
-      lazySocket:true, themeName:"prism", botName:"TechOps Assistant",
-      stylesheet:"https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
-      frontendVersion:"v1", useSessionStorage:true, enableConversationDeletion:true,
-      theme:"prism", themeColor:"#2563eb"
-    });
-  </script>
+/* =========================
+   Today’s P1–P4 demo values
+   ========================= */
+(function(){
+  const vals = { p1:1, p2:3, p3:4, p4:6 }; // placeholders; wire to API
+  ['p1','p2','p3','p4'].forEach(k=>{
+    const el = document.getElementById(k);
+    if(el){ el.textContent = vals[k]; }
+  });
+})();
+</script>
 </body>
 </html>
