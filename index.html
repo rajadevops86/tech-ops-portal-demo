@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TechOps 360</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
   <style>
-    :root {
-      --font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-
-      /* Dark */
+    :root{
+      --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+      /* Dark theme */
       --bg: radial-gradient(1200px 700px at 15% 0%, #1e3a8a 0%, transparent 60%),
             radial-gradient(1200px 700px at 100% 0%, #7c3aed 0%, transparent 60%),
             radial-gradient(1200px 800px at 50% 100%, #ec4899 0%, transparent 60%),
@@ -18,173 +16,87 @@
       --card-bg: rgba(10,14,25,.9);
       --card-border: rgba(148,163,184,.35);
       --shadow: 0 18px 60px rgba(0,0,0,.45);
-      --text: #e7ecf4;
-      --muted: #9aa4b2;
-      --pill: rgba(15,23,42,.9);
-      --pill-border: rgba(148,163,184,.5);
+      --text:#e7ecf4; --muted:#9aa4b2;
+      --pill: rgba(15,23,42,.9); --pill-border: rgba(148,163,184,.5);
       --table-head: rgba(18,24,38,.95);
       --row-alt: rgba(18,24,38,.7);
       --row-hover: rgba(37, 99, 235, .15);
       --tile-bg: rgba(12,18,30,.9);
-      --logo-shadow: drop-shadow(0 0 0 rgba(0,0,0,0));
-      --accent: #f97316;
+      --accent:#f97316;
     }
-
-    [data-theme="light"] {
+    [data-theme="light"]{
       --bg: radial-gradient(1200px 700px at 15% 0%, #dbeafe 0%, transparent 60%),
             radial-gradient(1200px 700px at 100% 0%, #fde68a 0%, transparent 60%),
             radial-gradient(1200px 800px at 50% 100%, #fef3c7 0%, transparent 60%),
             #f8fafc;
-      --card-bg: rgba(255,255,255,.9);
-      --card-border: rgba(15,23,42,.12);
+      --card-bg: rgba(255,255,255,.94);
+      --card-border: rgba(2,6,23,.12);
       --shadow: 0 18px 50px rgba(2, 6, 23, .08);
-      --text: #0f172a;
-      --muted: #475569;
-      --pill: rgba(255,255,255,.9);
-      --pill-border: rgba(2,6,23,.12);
-      --table-head: rgba(248,250,252,.9);
-      --row-alt: rgba(248,250,252,.8);
+      --text:#0f172a; --muted:#475569;
+      --pill: rgba(255,255,255,.95); --pill-border: rgba(2,6,23,.12);
+      --table-head: rgba(248,250,252,.95);
+      --row-alt: rgba(248,250,252,.82);
       --row-hover: rgba(2, 132, 199, .08);
-      --tile-bg: rgba(255,255,255,.9);
-      --logo-shadow: drop-shadow(0 0 0 rgba(0,0,0,0));
-      --accent: #f59e0b;
+      --tile-bg: rgba(255,255,255,.95);
+      --accent:#f59e0b;
     }
-
-    * { box-sizing: border-box; }
-    body {
-      margin:0; font-family:var(--font); color:var(--text);
-      background: var(--bg); background-attachment: fixed;
-      -webkit-font-smoothing: antialiased; 
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    .top {
-      display:flex; align-items:center; justify-content:space-between;
-      padding:16px 22px; position:sticky; top:0; z-index:40;
-      backdrop-filter: blur(14px);
-      background: linear-gradient(to bottom, rgba(12,18,30,.7), rgba(12,18,30,.35), transparent);
-      border-bottom:1px solid var(--card-border);
-    }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo {
-      width:40px; height:28px; border-radius:10px; 
-      background:#020617; display:grid; place-items:center;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
-      overflow:hidden;
-    }
-    .title { font-weight:800; letter-spacing:.2px; }
-    .sub { font-size:.86rem; color:var(--muted); }
-
-    .top-right { display:flex; align-items:center; gap:10px; }
-    .pill {
-      display:inline-flex; align-items:center; gap:8px;
-      font-size:.8rem; color:var(--muted);
-      padding:6px 10px; border:1px solid var(--pill-border);
-      background:var(--pill); border-radius:999px;
-    }
-    .dot { width:7px; height:7px; border-radius:999px; background:#22c55e; box-shadow:0 0 0 4px rgba(34,197,94,.25); }
-    .toggle {
-      border:1px solid var(--pill-border); background:var(--pill);
-      border-radius:999px; padding:6px 12px; cursor:pointer;
-      color:var(--text); font-weight:600;
-    }
-
-    .shell { display:grid; grid-template-columns: 230px 1fr 380px; gap:18px; padding:18px; max-width:1400px; margin:0 auto; }
-    @media (max-width: 1200px) {
-      .shell { grid-template-columns: 1fr; }
-      .right-col { order:3; }
-    }
-
-    /* Side menu */
-    .side {
-      background:var(--card-bg); border:1px solid var(--card-border);
-      border-radius:18px; box-shadow:var(--shadow); padding:12px;
-      display:flex; flex-direction:column; gap:8px;
-    }
-    .side h6 { margin:6px 8px; font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
-    .navbtn {
-      display:flex; align-items:center; gap:10px;
-      background:transparent; color:var(--muted); 
-      padding:10px 12px; border-radius:12px; border:1px solid transparent; cursor:pointer;
-    }
-    .navbtn.active, .navbtn:hover { color:var(--text); border-color:var(--card-border); background:var(--row-alt); }
-
-    /* Cards */
-    .card {
-      background:var(--card-bg); border:1px solid var(--card-border);
-      border-radius:22px; box-shadow:var(--shadow); padding:14px 16px; position:relative; overflow:hidden;
-    }
-    h3 { margin:6px 0 10px; font-size:1.08rem; }
-    table { width:100%; border-collapse:collapse; font-size:.9rem; }
-    thead { background:var(--table-head); }
-    th, td { padding:8px 10px; border-bottom:1px solid var(--card-border); text-align:left; }
-    tbody tr:nth-child(even){ background:var(--row-alt); }
-    tbody tr:hover { background:var(--row-hover); }
-
-    .grid-center { display:grid; grid-template-rows: auto auto auto; gap:16px; }
-    .grid-right  { display:grid; grid-template-rows: auto auto; gap:16px; }
-
-    .status-ok{ color:#22c55e; font-weight:700; }
-    .status-off{ color:#ef4444; font-weight:700; }
-    .status-pto{ color:#f59e0b; font-weight:700; }
-    .status-sick{ color:#ef4444; font-weight:700; }
-
-    /* Concurrency list */
-    .conc-list { list-style:none; padding:0; margin:8px 0 0; display:flex; flex-direction:column; gap:8px; }
-    .conc-item {
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      padding:8px 10px; border-radius:12px; background:var(--tile-bg); border:1px solid var(--card-border);
-    }
-    .conc-left{ display:flex; align-items:center; gap:8px; }
-    .logo-sq {
-      width:26px; height:26px; border-radius:7px; overflow:hidden; background:#fff;
-      display:grid; place-items:center; filter: var(--logo-shadow);
-      border:1px solid rgba(2,6,23,.05);
-    }
-    .logo-sq img{ max-width:100%; max-height:100%; object-fit:contain; }
-    .badge {
-      font-size:.78rem; border:1px solid rgba(248,250,252,.35);
-      padding:2px 8px; border-radius:999px; display:inline-flex; gap:6px; align-items:center;
-      background:var(--pill); color:var(--text);
-    }
-    .badge .v { color:#facc15; font-weight:700; }
-
-    /* P1-P4 */
-    .sev-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
-    .sev { background:var(--tile-bg); border:1px solid var(--card-border); border-radius:14px; padding:10px; text-align:center; }
-    .sev h4 { margin:2px 0 6px; font-size:.9rem; color:var(--muted); }
-    .sev .n { font-size:1.4rem; font-weight:800; }
-
-    /* Slot machine counter (horizontal, boxed, rolling inside) */
-    .slot-card { display:flex; flex-direction:column; align-items:center; gap:10px; padding-top:18px; padding-bottom:18px; }
-    .slots { display:flex; gap:10px; }
-    .slot {
-      width:72px; height:92px; border-radius:14px;
-      background:var(--tile-bg); border:1px solid var(--card-border); overflow:hidden;
-      position:relative; box-shadow: inset 0 -10px 20px rgba(255,255,255,.03);
-    }
-    .digit-col {
-      position:absolute; left:0; top:0; width:100%;
-      height:calc(10 * 92px); /* 10 rows of the same height */
-      transition: transform 1s cubic-bezier(.22,1,.36,1);
-    }
-    .digit {
-      height:92px; display:grid; place-items:center;
-      font-weight:800; font-size:2.35rem;
-    }
-    .slot-sub { font-size:.86rem; color:var(--muted); text-align:center; }
-
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);background-attachment:fixed}
+    .top{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);background:linear-gradient(to bottom, rgba(12,18,30,.7), rgba(12,18,30,.35), transparent);border-bottom:1px solid var(--card-border)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:40px;height:28px;border-radius:10px;background:#020617;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
+    .title{font-weight:800;letter-spacing:.2px}
+    .sub{font-size:.86rem;color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;color:var(--muted);padding:6px 10px;border:1px solid var(--pill-border);background:var(--pill);border-radius:999px}
+    .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
+    .toggle{border:1px solid var(--pill-border);background:var(--pill);border-radius:999px;padding:6px 12px;cursor:pointer;color:var(--text);font-weight:600}
+    .shell{display:grid;grid-template-columns:230px 1fr 380px;gap:18px;padding:18px;max-width:1400px;margin:0 auto}
+    @media(max-width:1200px){.shell{grid-template-columns:1fr}.right-col{order:3}}
+    .side{background:var(--card-bg);border:1px solid var(--card-border);border-radius:18px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:8px}
+    .side h6{margin:6px 8px;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .navbtn{display:flex;align-items:center;gap:10px;background:transparent;color:var(--muted);padding:10px 12px;border-radius:12px;border:1px solid transparent;cursor:pointer}
+    .navbtn.active,.navbtn:hover{color:var(--text);border-color:var(--card-border);background:var(--row-alt)}
+    .hr{height:1px;background:var(--card-border);border:none;margin:6px 0}
+    .panel{display:none}
+    .panel.active{display:block}
+    .card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:22px;box-shadow:var(--shadow);padding:14px 16px;position:relative}
+    h3{margin:6px 0 10px;font-size:1.08rem}
+    .grid-center{display:grid;grid-template-rows:auto auto auto;gap:16px}
+    .grid-right{display:grid;grid-template-rows:auto auto;gap:16px}
+    table{width:100%;border-collapse:collapse;font-size:.9rem}
+    thead{background:var(--table-head)}
+    th,td{padding:8px 10px;border-bottom:1px solid var(--card-border);text-align:left}
+    tbody tr:nth-child(even){background:var(--row-alt)}
+    tbody tr:hover{background:var(--row-hover)}
+    .sev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .sev{background:var(--tile-bg);border:1px solid var(--card-border);border-radius:14px;padding:10px;text-align:center}
+    .sev h4{margin:2px 0 6px;font-size:.9rem;color:var(--muted)}
+    .sev .n{font-size:1.4rem;font-weight:800}
+    /* Concurrency */
+    .conc-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+    .conc-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--tile-bg);border:1px solid var(--card-border)}
+    .conc-left{display:flex;align-items:center;gap:8px}
+    .logo-sq{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;overflow:hidden;background:#fff;border:1px solid rgba(2,6,23,.06)}
+    .logo-sq img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+    .logo-sq.fallback{background:linear-gradient(135deg,#dbeafe,#e9d5ff);color:#111827;font-weight:800}
+    .logo-sq.fallback::after{content:attr(data-initials)}
+    .badge{font-size:.78rem;border:1px solid rgba(248,250,252,.35);padding:2px 8px;border-radius:999px;display:inline-flex;gap:6px;align-items:center;background:var(--pill);color:var(--text)}
+    .badge .v{color:#facc15;font-weight:800}
+    /* Slot machine (horizontal boxes, visible digits) */
+    .slot-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:18px;padding-bottom:18px}
+    .slots{display:flex;gap:10px}
+    .slot{width:72px;height:92px;border-radius:14px;background:var(--tile-bg);border:1px solid var(--card-border);overflow:hidden;position:relative;box-shadow:inset 0 -10px 20px rgba(255,255,255,.03)}
+    .digit-col{position:absolute;left:0;top:0;width:100%;height:920px; /* 10 * slot height */ transition:transform 1000ms cubic-bezier(.22,1,.36,1)}
+    .digit{height:92px;display:grid;place-items:center;font-weight:800;font-size:2.35rem;color:var(--text)}
+    .slot-sub{font-size:.86rem;color:var(--muted);text-align:center}
     /* Gauge */
-    .gauge-wrap { padding-top:6px; }
-    .gauge { width:100%; height:240px; display:block; }
-    .g-title { margin-bottom:8px; }
-    .g-label { position:absolute; bottom:14px; left:20px; font-size:1.8rem; font-weight:800; }
-
-    /* Light/Dark friendly hr */
-    .hr { height:1px; background:var(--card-border); margin:8px 0; border:none; }
+    .gauge{width:100%;height:240px;display:block}
+    .g-title{margin-bottom:8px}
+    .g-label{position:absolute;bottom:14px;left:20px;font-size:1.8rem;font-weight:800}
   </style>
 </head>
 <body>
+  <!-- TOP -->
   <header class="top">
     <div class="brand">
       <div class="logo"><img src="image/Quickplay.jpg" alt="Quickplay" style="height:18px"></div>
@@ -193,253 +105,247 @@
         <div class="sub">Operational intelligence for Quickplay customers</div>
       </div>
     </div>
-    <div class="top-right">
-      <div class="pill"><span class="dot"></span> 24×7 follow-the-sun</div>
-      <button id="modeToggle" class="toggle" aria-label="Toggle light/dark">Light</button>
+    <div>
+      <span class="pill"><span class="dot"></span>24×7 follow-the-sun</span>
+      <button id="modeToggle" class="toggle" style="margin-left:8px">Light</button>
     </div>
   </header>
 
   <div class="shell">
-    <!-- SIDE -->
+    <!-- SIDE NAV -->
     <aside class="side">
       <h6>Views</h6>
-      <button class="navbtn active">Dashboard</button>
-      <button class="navbtn">Customer Stats</button>
-      <button class="navbtn">Synthetic Monitoring</button>
-      <button class="navbtn">Manifest Check</button>
-      <button class="navbtn">Shift Handoffs</button>
-      <button class="navbtn">RBAC</button>
-      <button class="navbtn">Issue Search</button>
+      <button class="navbtn active" data-panel="panel-dashboard">Dashboard</button>
+      <button class="navbtn" data-panel="panel-cust">Customer Stats</button>
+      <button class="navbtn" data-panel="panel-synth">Synthetic Monitoring</button>
+      <button class="navbtn" data-panel="panel-manif">Manifest Check</button>
+      <button class="navbtn" data-panel="panel-handoff">Shift Handoffs</button>
+      <button class="navbtn" data-panel="panel-rbac">RBAC</button>
+      <button class="navbtn" data-panel="panel-issues">Issue Search</button>
       <hr class="hr">
-      <div class="sub" style="padding:6px 8px;">
-        Internal view. Live: Ops calendar (Google Sheets). Others are placeholders to wire to NR/Grafana/ServiceNow.
+      <div class="sub" style="padding:6px 8px">Internal view. Live: Ops calendar (Google Sheets). Others are placeholders to wire to NR/Grafana/ServiceNow.</div>
+    </aside>
+
+    <!-- CENTER PANELS -->
+    <main class="panel active" id="panel-dashboard">
+      <div class="grid-center">
+        <!-- Ops Calendar -->
+        <section class="card">
+          <h3>Operations Calendar (Today)</h3>
+          <table>
+            <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
+            <tbody id="ops-calendar-body"><tr><td colspan="3">Loading schedule…</td></tr></tbody>
+          </table>
+        </section>
+
+        <!-- Slot machine -->
+        <section class="card slot-card">
+          <h3 style="text-align:center">Total incidents since org inception</h3>
+          <div class="slots" id="slotCounter"></div>
+          <div class="slot-sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
+        </section>
+
+        <!-- Severity -->
+        <section class="card">
+          <h3>Incidents today</h3>
+          <div class="sev-grid">
+            <div class="sev"><h4>P1</h4><div class="n" id="p1">1</div></div>
+            <div class="sev"><h4>P2</h4><div class="n" id="p2">3</div></div>
+            <div class="sev"><h4>P3</h4><div class="n" id="p3">4</div></div>
+            <div class="sev"><h4>P4</h4><div class="n" id="p4">6</div></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- RIGHT (on dashboard) -->
+    <aside class="panel active right-col" id="panel-dashboard-right">
+      <div class="grid-right">
+        <section class="card">
+          <h3>Customer concurrency</h3>
+          <ul class="conc-list" id="concList">
+            <!-- Each item: if the image fails, we show initials (set in data-initials) -->
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="Aha"><img src="image/aha.jpg" alt="Aha" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Aha</div>
+              </div><div class="badge">Live <span class="v">4.5K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="PL"><img src="image/philippines-live.png" alt="Philippinas Live" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Philippinas Live</div>
+              </div><div class="badge">Live <span class="v">1.8K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="CG"><img src="image/cignal.png" alt="Cignal" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Cignal</div>
+              </div><div class="badge">Live <span class="v">2.4K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="U2"><img src="image/unifi.png" alt="Unifi 2.0" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Unifi 2.0</div>
+              </div><div class="badge">Live <span class="v">1.1K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="UV"><img src="image/univision.png" alt="Univision" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Univision</div>
+              </div><div class="badge">Live <span class="v">2.0K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="UN"><img src="image/univision-now.png" alt="Univision Now" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Univision Now</div>
+              </div><div class="badge">Live <span class="v">900</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="LN"><img src="image/localnow.png" alt="Local Now" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Local Now</div>
+              </div><div class="badge">Live <span class="v">700</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="TWC"><img src="image/twc.png" alt="TWC" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>TWC (The Weather Channel)</div>
+              </div><div class="badge">Live <span class="v">1.6K</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="GT"><img src="image/gotham.png" alt="GOTHAM" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>GOTHAM</div>
+              </div><div class="badge">Live <span class="v">400</span></div>
+            </li>
+            <li class="conc-item">
+              <div class="conc-left">
+                <div class="logo-sq" data-initials="CL"><img src="image/canela.png" alt="Canela TV" onerror="this.parentElement.classList.add('fallback');this.remove()"></div>
+                <div>Canela TV</div>
+              </div><div class="badge">Live <span class="v">800</span></div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3 class="g-title">Availability</h3>
+          <svg id="gauge" class="gauge" viewBox="0 0 360 200">
+            <defs>
+              <linearGradient id="ggrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="50%" stop-color="#f59e0b"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <path d="M20,180 A160,160 0 0 1 340,180" stroke="rgba(148,163,184,.28)" stroke-width="18" fill="none"/>
+            <path id="gArc" d="M20,180 A160,160 0 0 1 340,180" stroke="url(#ggrad)" stroke-width="18" fill="none" stroke-linecap="round" stroke-dasharray="0 503"/>
+            <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="g-label" id="gPct">0%</div>
+        </section>
       </div>
     </aside>
 
-    <!-- CENTER -->
-    <main class="grid-center">
-      <!-- Ops calendar TODAY -->
-      <section class="card">
-        <h3>Operations Calendar (Today)</h3>
-        <table>
-          <thead>
-            <tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr>
-          </thead>
-          <tbody id="ops-calendar-body">
-            <tr><td colspan="3">Loading schedule…</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Total incidents (slot machine) -->
-      <section class="card slot-card">
-        <h3 class="g-title" style="text-align:center;">Total incidents since org inception</h3>
-        <div class="slots" id="slotCounter">
-          <!-- JS builds digit columns -->
-        </div>
-        <div class="slot-sub">Demo rolls like a slot machine, then settles on today’s placeholder.</div>
-      </section>
-
-      <!-- Severity today -->
-      <section class="card">
-        <h3>Incidents today</h3>
-        <div class="sev-grid">
-          <div class="sev"><h4>P1</h4><div class="n" id="p1">1</div></div>
-          <div class="sev"><h4>P2</h4><div class="n" id="p2">3</div></div>
-          <div class="sev"><h4>P3</h4><div class="n" id="p3">4</div></div>
-          <div class="sev"><h4>P4</h4><div class="n" id="p4">6</div></div>
-        </div>
-      </section>
-    </main>
-
-    <!-- RIGHT -->
-    <aside class="grid-right right-col">
-      <!-- Concurrency -->
-      <section class="card">
-        <h3>Customer concurrency</h3>
-        <ul class="conc-list">
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/aha.jpg" alt="Aha"></div>
-              <div>Aha</div>
-            </div>
-            <div class="badge">Live <span class="v">4.5K</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/philippines-live.png" alt="Philippinas Live"></div>
-              <div>Philippinas Live</div>
-            </div>
-            <div class="badge">Live <span class="v">1.8K</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/cignal.png" alt="Cignal"></div>
-              <div>Cignal</div>
-            </div>
-            <div class="badge">Live <span class="v">2.4K</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/unifi.png" alt="Unifi 2.0"></div>
-              <div>Unifi 2.0</div>
-            </div>
-            <div class="badge">Live <span class="v">1.1K</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/univision.png" alt="Univision"></div>
-              <div>Univision</div>
-            </div>
-            <div class="badge">Live <span class="v">2.0K</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/univision-now.png" alt="Univision Now"></div>
-              <div>Univision Now</div>
-            </div>
-            <div class="badge">Live <span class="v">900</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/localnow.png" alt="Local Now"></div>
-              <div>Local Now</div>
-            </div>
-            <div class="badge">Live <span class="v">700</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/twc.png" alt="TWC"></div>
-              <div>TWC (The Weather Channel)</div>
-            </div>
-            <div class="badge">Live <span class="v">1.6K</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/gotham.png" alt="GOTHAM"></div>
-              <div>GOTHAM</div>
-            </div>
-            <div class="badge">Live <span class="v">400</span></div>
-          </li>
-          <li class="conc-item">
-            <div class="conc-left">
-              <div class="logo-sq"><img src="image/canela.png" alt="Canela TV"></div>
-              <div>Canela TV</div>
-            </div>
-            <div class="badge">Live <span class="v">800</span></div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Availability gauge -->
-      <section class="card gauge-wrap">
-        <h3 class="g-title">Availability</h3>
-        <svg id="gauge" class="gauge" viewBox="0 0 360 200">
-          <!-- Arc background -->
-          <defs>
-            <linearGradient id="ggrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#ef4444"/>
-              <stop offset="50%" stop-color="#f59e0b"/>
-              <stop offset="100%" stop-color="#22c55e"/>
-            </linearGradient>
-          </defs>
-          <path d="M20,180 A160,160 0 0 1 340,180" stroke="rgba(148,163,184,.28)" stroke-width="18" fill="none" />
-          <path id="gArc" d="M20,180 A160,160 0 0 1 340,180" stroke="url(#ggrad)" stroke-width="18" fill="none"
-                stroke-linecap="round" stroke-dasharray="0 503"/>
-          <line id="needle" x1="180" y1="180" x2="180" y2="40" stroke="#fff" stroke-width="4" stroke-linecap="round" />
-        </svg>
-        <div class="g-label" id="gPct">0%</div>
-      </section>
-    </aside>
+    <!-- OTHER PANELS (placeholders) -->
+    <main class="panel" id="panel-cust"><section class="card"><h3>Customer Stats</h3><p class="sub">Placeholder. Wire your existing customer-sentiment widget here.</p></section></main>
+    <main class="panel" id="panel-synth"><section class="card"><h3>Synthetic Monitoring</h3><p class="sub">Placeholder for checks table / charts.</p></section></main>
+    <main class="panel" id="panel-manif"><section class="card"><h3>Manifest Check</h3><p class="sub">Placeholder for manifest results.</p></section></main>
+    <main class="panel" id="panel-handoff"><section class="card"><h3>Shift Handoffs</h3><p class="sub">Placeholder for handoff notes.</p></section></main>
+    <main class="panel" id="panel-rbac"><section class="card"><h3>RBAC</h3><p class="sub">Placeholder for roles matrix.</p></section></main>
+    <main class="panel" id="panel-issues"><section class="card"><h3>Issue Search</h3><p class="sub">Placeholder for incident memory search.</p></section></main>
   </div>
 
-  <!-- Light/Dark toggle -->
+  <!-- THEME TOGGLE -->
   <script>
     (function(){
-      const root = document.documentElement;
-      const btn  = document.getElementById('modeToggle');
-      const saved = localStorage.getItem('techops-theme');
-      if (saved) { root.setAttribute('data-theme', saved); btn.textContent = saved==='dark' ? 'Light' : 'Dark'; }
-      btn.addEventListener('click', () => {
-        const cur = root.getAttribute('data-theme') || 'dark';
-        const next = cur === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        btn.textContent = next==='dark' ? 'Light' : 'Dark';
-        localStorage.setItem('techops-theme', next);
+      const root=document.documentElement,btn=document.getElementById('modeToggle');
+      const saved=localStorage.getItem('techops-theme');
+      if(saved){root.setAttribute('data-theme',saved);btn.textContent=saved==='dark'?'Light':'Dark'}
+      btn.addEventListener('click',()=>{const cur=root.getAttribute('data-theme')||'dark';const next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);btn.textContent=next==='dark'?'Light':'Dark';localStorage.setItem('techops-theme',next);});
+    })();
+  </script>
+
+  <!-- MENU ROUTER -->
+  <script>
+    (function(){
+      const nav = Array.from(document.querySelectorAll('.navbtn'));
+      const panels = {
+        'panel-dashboard': document.getElementById('panel-dashboard'),
+        'panel-dashboard-right': document.getElementById('panel-dashboard-right'),
+        'panel-cust': document.getElementById('panel-cust'),
+        'panel-synth': document.getElementById('panel-synth'),
+        'panel-manif': document.getElementById('panel-manif'),
+        'panel-handoff': document.getElementById('panel-handoff'),
+        'panel-rbac': document.getElementById('panel-rbac'),
+        'panel-issues': document.getElementById('panel-issues'),
+      };
+      function show(id){
+        // left/right dashboard is a pair
+        Object.values(panels).forEach(p=>p.classList.remove('active'));
+        if(id==='panel-dashboard'){panels['panel-dashboard'].classList.add('active');panels['panel-dashboard-right'].classList.add('active');}
+        else{panels[id].classList.add('active');}
+      }
+      nav.forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          nav.forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+          show(btn.dataset.panel);
+        });
       });
     })();
   </script>
 
-  <!-- Slot machine (digits roll inside boxes) -->
+  <!-- SLOT MACHINE (fixed height + delayed transform) -->
   <script>
     (function(){
-      const TARGET = "654432";              // TODO: wire to real total
-      const H = 92;                          // slot height (sync with CSS)
-      const container = document.getElementById('slotCounter');
+      const TARGET="654432";      // TODO: wire to a real backend/ServiceNow total
+      const H=92;                 // slot height (must match CSS .slot height)
+      const wrap=document.getElementById('slotCounter');
+      wrap.innerHTML='';
 
-      function makeColumn(targetDigit) {
-        const slot = document.createElement('div');
-        slot.className = 'slot';
-        const col = document.createElement('div');
-        col.className = 'digit-col';
-        // build 0..9
-        for (let i=0;i<10;i++){
-          const d = document.createElement('div');
-          d.className = 'digit';
-          d.textContent = i;
-          col.appendChild(d);
-        }
+      function makeCol(digit){
+        const slot=document.createElement('div');
+        slot.className='slot';
+        const col=document.createElement('div');
+        col.className='digit-col';
+        for(let i=0;i<10;i++){const e=document.createElement('div');e.className='digit';e.textContent=i;col.appendChild(e);}
         slot.appendChild(col);
-        // spin a few rounds then land on target
-        const rounds = 2 + Math.floor(Math.random()*2); // 2-3 rounds
-        const end = rounds*10 + Number(targetDigit);
-        requestAnimationFrame(()=> { col.style.transform = `translateY(-${end * H}px)`; });
+        // Force layout, then animate so the numbers are painted before transition
+        requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+          const rounds=2+Math.floor(Math.random()*2); // 2-3 rounds
+          const end=rounds*10 + Number(digit);
+          col.style.transform=`translateY(-${end*H}px)`;
+        })});
         return slot;
       }
-
-      // Build columns
-      TARGET.split('').forEach(d => container.appendChild(makeColumn(d)));
+      TARGET.split('').forEach(d=>wrap.appendChild(makeCol(d)));
     })();
   </script>
 
-  <!-- Availability gauge (animated sweep + correct needle) -->
+  <!-- AVAILABILITY GAUGE -->
   <script>
     (function(){
-      const targetPct = 96; // TODO wire to live
-      const path   = document.getElementById('gArc');
-      const needle = document.getElementById('needle');
-      const label  = document.getElementById('gPct');
-
-      const circumference = 503;          // length of arc path
-      const cx=180, cy=180, len=130;
-
-      const pctToDeg = (p) => 180 - (p * 1.8);   // 0->180°, 100->0°
-      const start = performance.now();
-      const dur = 1200;
-
+      const targetPct=96; // TODO: wire to live
+      const path=document.getElementById('gArc');
+      const needle=document.getElementById('needle');
+      const label=document.getElementById('gPct');
+      const circumference=503, cx=180, cy=180, len=130;
+      const start=performance.now(), dur=1200;
+      const pctToDeg=p=>180-(p*1.8);
       function step(now){
-        const t = Math.min(1, (now-start)/dur);
-        const eased = 1 - Math.pow(1 - t, 3);
-        const pct = targetPct * eased;
-        label.textContent = Math.round(pct) + '%';
-
-        const dash = (pct/100)*circumference;
-        path.setAttribute('stroke-dasharray', `${dash} ${circumference-dash}`);
-
-        const deg = pctToDeg(pct);
-        const rad = deg*Math.PI/180;
-        const x2 = cx + len*Math.cos(rad);
-        const y2 = cy - len*Math.sin(rad); // minus -> upward
-        needle.setAttribute('x2', x2);
-        needle.setAttribute('y2', y2);
-
-        if (t<1) requestAnimationFrame(step);
+        const t=Math.min(1,(now-start)/dur), eased=1-Math.pow(1-t,3), pct=targetPct*eased;
+        label.textContent=Math.round(pct)+'%';
+        const dash=(pct/100)*circumference; path.setAttribute('stroke-dasharray',`${dash} ${circumference-dash}`);
+        const rad=pctToDeg(pct)*Math.PI/180, x2=cx+len*Math.cos(rad), y2=cy-len*Math.sin(rad);
+        needle.setAttribute('x2',x2); needle.setAttribute('y2',y2);
+        if(t<1) requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
     })();
   </script>
 
-  <!-- Ops calendar from Google Sheets (your existing file) -->
+  <!-- GOOGLE SHEETS OPS CALENDAR (your existing implementation) -->
   <script src="ops-calendar.js"></script>
 </body>
 </html>
