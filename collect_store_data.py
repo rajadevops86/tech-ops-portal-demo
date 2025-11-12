@@ -46,6 +46,54 @@ APPS = [
             "country": "my",
         },
     },
+    {
+        "app_name": "Univision",
+        "apple": {
+            "app_id": "425226754",
+            "country": "us",
+        },
+        "google": {
+            "package": "com.univision.android",
+            "lang": "en",
+            "country": "us",
+        },
+    },
+    {
+        "app_name": "Univision Now",
+        "apple": {
+            "app_id": "1049321283",
+            "country": "us",
+        },
+        "google": {
+            "package": "com.univision.univisionnow",
+            "lang": "en",
+            "country": "us",
+        },
+    },
+    {
+        "app_name": "Canela.TV",
+        "apple": {
+            "app_id": "1507429168",
+            "country": "us",
+        },
+        "google": {
+            "package": "com.canela.ott",
+            "lang": "en",
+            "country": "us",
+        },
+    },
+    {
+        "app_name": "Cignal Play",
+        "apple": {
+            "app_id": "1293561677",
+            "country": "ph",
+        },
+        "google": {
+            "package": "tv.cignal.cignalplay",
+            "lang": "en",
+            "country": "ph",
+        },
+    },
 ]
 
 
