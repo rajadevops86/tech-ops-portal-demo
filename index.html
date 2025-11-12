@@ -1,1006 +1,548 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TechOps 360 - Portal</title>
 
-  <!-- Quickplay-style font (adjust if your org uses a different one) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Quickplay-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
+    /* THEME TOKENS --------------------------------------------------------- */
     :root {
-      --qp-font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 
-      --bg-gradient: radial-gradient(circle at top left, #1d4ed8 0, transparent 45%),
-                      radial-gradient(circle at top right, #7c3aed 0, transparent 55%),
-                      radial-gradient(circle at bottom, #ec4899 0, transparent 55%),
-                      #020617;
-      --card-bg: rgba(15, 23, 42, 0.92);
-      --card-border: rgba(148, 163, 184, 0.35);
-      --card-shadow: 0 24px 70px rgba(15, 23, 42, 0.9);
-      --text-main: #e5e7eb;
-      --text-muted: #9ca3af;
-      --accent: #f97316;
-      --accent-soft: rgba(248, 113, 113, 0.35);
-      --divider: rgba(148, 163, 184, 0.35);
-      --nav-bg: rgba(15, 23, 42, 0.95);
-      --nav-border: rgba(148, 163, 184, 0.35);
-      --nav-active: rgba(129, 140, 248, 0.25);
-      --pill-bg: rgba(15, 23, 42, 0.9);
-      --pill-border: rgba(148, 163, 184, 0.5);
-      --table-header-bg: rgba(15, 23, 42, 0.98);
-      --table-row-alt: rgba(15, 23, 42, 0.7);
-      --table-row-hover: rgba(30, 64, 175, 0.55);
+      /* shared tokens */
+      --radius-lg: 22px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --shadow-deep: 0 28px 80px rgba(0,0,0,.45);
+      --shadow-card: 0 20px 50px rgba(0,0,0,.35);
+
+      /* light palette (overridden in [data-theme=dark]) */
+      --bg: #f7f7fb;
+      --text: #0b1220;
+      --text-muted: #475569;
+      --card: #fff;
+      --card-border: rgba(15,23,42,.08);
+      --chip: #0b1220;
+      --chip-border: rgba(15,23,42,.15);
+      --table-row: #f4f6fb;
+      --table-hover: #eef2ff;
+      --pill: #0b1220;
+      --pill-border: rgba(15,23,42,.18);
+      --accent: #ff7a18;
+      --acc-soft: rgba(255,122,24,.12);
+      --ok: #16a34a;
+      --warn: #f59e0b;
+      --bad: #ef4444;
+
+      /* gradients (hero & footer band) */
+      --grad-a: radial-gradient(1000px 600px at 20% -10%, rgba(59,130,246,.5), transparent 60%),
+                radial-gradient(900px 600px at 90% -20%, rgba(168,85,247,.45), transparent 60%),
+                linear-gradient(135deg, #ec4899 0%, #7c3aed 50%, #3b82f6 100%);
+      --grad-footer: linear-gradient(90deg, #1cd1e0 0%, #f0922e 45%, #b96593 70%, #6b4df6 100%);
+    }
+    [data-theme="dark"]{
+      --bg: #030617;
+      --text: #e5e7eb;
+      --text-muted: #9aa4b2;
+      --card: rgba(11,18,32,.86);
+      --card-border: rgba(148,163,184,.28);
+      --chip: rgba(11,18,32,.96);
+      --chip-border: rgba(148,163,184,.35);
+      --table-row: rgba(15,23,42,.6);
+      --table-hover: rgba(37,99,235,.3);
+      --pill: rgba(11,18,32,.96);
+      --pill-border: rgba(148,163,184,.45);
+      --grad-a: radial-gradient(1200px 700px at 5% -10%, rgba(37,99,235,.5), transparent 60%),
+                radial-gradient(1000px 600px at 100% -20%, rgba(124,58,237,.5), transparent 60%),
+                radial-gradient(1200px 800px at 50% 130%, rgba(236,72,153,.45), transparent 65%),
+                #020617;
+      --grad-footer: linear-gradient(90deg, #10d8e0 0%, #ec8e2f 45%, #b45ea0 70%, #674ffc 100%);
     }
 
-    * {
-      box-sizing: border-box;
+    /* BASE ----------------------------------------------------------------- */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:var(--grad-a) fixed;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:17px; /* slightly larger overall */
     }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: var(--qp-font);
-      color: var(--text-main);
-      background: var(--bg-gradient);
-      background-attachment: fixed;
+    /* TOP NAV -------------------------------------------------------------- */
+    .top {
+      position:sticky; top:0; z-index:40;
+      padding:16px 24px;
+      display:flex; align-items:center; justify-content:space-between;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(2,6,23,.65), transparent);
+      border-bottom:1px solid var(--card-border);
+    }
+    .brand{display:flex; gap:10px; align-items:center}
+    .brand img{height:32px;border-radius:999px;box-shadow:0 0 0 1px rgba(0,0,0,.3)}
+    .title{display:flex; flex-direction:column}
+    .title b{font-size:1.1rem}
+    .title small{color:var(--text-muted); font-size:.82rem}
+    .right{display:flex; gap:10px; align-items:center}
+    .chip{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:6px 12px; border-radius:999px;
+      color:var(--text-muted);
+      background:var(--chip); border:1px solid var(--chip-border)
+    }
+    .dot{width:7px;height:7px;border-radius:999px;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
+    .toggle{
+      padding:6px 12px; border-radius:999px; cursor:pointer;
+      border:1px solid var(--chip-border); background:var(--chip); color:var(--text)
     }
 
-    /* Top bar */
+    /* LAYOUT --------------------------------------------------------------- */
+    .shell{max-width:1380px;margin:0 auto;padding:18px;display:grid;grid-template-columns:260px 1fr;gap:18px}
+    @media (max-width:1000px){.shell{grid-template-columns:1fr}}
 
-    .top-nav {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      padding: 16px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      backdrop-filter: blur(18px);
-      background: linear-gradient(
-        to bottom,
-        rgba(15, 23, 42, 0.9),
-        rgba(15, 23, 42, 0.6),
-        transparent
-      );
-      border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    /* SIDE NAV */
+    .nav{
+      border:1px solid var(--card-border); background:var(--card);
+      border-radius:18px; box-shadow:var(--shadow-card);
+      padding:12px; display:flex; flex-direction:column; gap:8px; height:max-content
+    }
+    .nav h6{margin:6px 6px 2px; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted)}
+    .nav button{
+      display:flex; align-items:center; gap:8px; width:100%;
+      background:transparent; color:var(--text-muted); cursor:pointer;
+      border:1px solid transparent; border-radius:12px; padding:9px 10px; font-size:.92rem
+    }
+    .nav button:hover{background:var(--table-row); color:var(--text)}
+    .nav button.active{background:rgba(99,102,241,.18); color:var(--text); border-color:rgba(99,102,241,.45)}
+    .nav small{border:1px dashed var(--card-border); color:var(--text-muted); padding:8px; border-radius:12px}
+
+    /* PANELS / CARDS ------------------------------------------------------- */
+    .main{display:flex; flex-direction:column; gap:16px}
+    .panel{display:none}
+    .panel.active{display:block}
+    .panel h3{margin:.2rem 0 .1rem}
+    .panel p.sub{margin:.1rem 0 1rem; color:var(--text-muted); font-size:.9rem}
+
+    .grid{display:grid; grid-template-columns:1.45fr 1fr; gap:16px}
+    @media (max-width:1100px){.grid{grid-template-columns:1fr}}
+
+    .card{
+      border:1px solid var(--card-border); background:var(--card);
+      border-radius:var(--radius-lg); padding:16px 18px; position:relative; overflow:hidden;
+      box-shadow:var(--shadow-card)
+    }
+    .card:before{
+      content:""; position:absolute; inset:0; pointer-events:none; opacity:.5;
+      background:linear-gradient(135deg, rgba(255,255,255,.06), transparent 40%, rgba(99,102,241,.09) 80%, transparent)
+    }
+    .card .hd{display:flex; justify-content:space-between; align-items:end; gap:10px; margin-bottom:10px}
+    .card .hd .ttl{font-weight:700; font-size:1rem}
+    .pill{padding:2px 8px; border-radius:999px; border:1px solid var(--pill-border); background:var(--pill); color:var(--text-muted); font-size:.72rem}
+    .note{color:var(--text-muted); font-size:.8rem; margin-top:.5rem; text-align:right}
+
+    /* TABLES */
+    table{width:100%; border-collapse:collapse; font-size:.95rem}
+    thead{background:var(--table-row)}
+    th,td{padding:9px 10px; border-bottom:1px solid var(--card-border); text-align:left}
+    tbody tr:nth-child(even){background:var(--table-row)}
+    tbody tr:hover{background:var(--table-hover)}
+    .ok{color:var(--ok); font-weight:700}
+    .bad{color:var(--bad); font-weight:700}
+    .warn{color:var(--warn); font-weight:700}
+
+    /* CONCURRENCY TILES (BOTTOM STRIP) ------------------------------------ */
+    .tiles{
+      position:sticky; bottom:0; z-index:20; margin-top:18px;
+      backdrop-filter: blur(8px);
+      padding:14px 0 18px;
+      border-top:1px solid var(--card-border);
+      background: linear-gradient(to top, rgba(2,6,23,.65), rgba(2,6,23,.0));
+    }
+    .tiles .inner{max-width:1380px;margin:0 auto;padding:0 18px; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:12px}
+    @media (max-width:1200px){.tiles .inner{grid-template-columns:repeat(2, minmax(0,1fr))}}
+    @media (max-width:640px){.tiles .inner{grid-template-columns:1fr}}
+
+    .tile{
+      border:1px solid var(--card-border); background:var(--card); border-radius:16px; padding:10px 12px; box-shadow:var(--shadow-card);
+      display:grid; grid-template-columns:56px 1fr auto; gap:10px; align-items:center; position:relative; overflow:hidden
+    }
+    .tile:after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(255,255,255,.03), transparent); pointer-events:none}
+    .tile .logo{width:42px;height:42px;border-radius:10px; background:#0b1220; display:flex; align-items:center; justify-content:center; overflow:hidden}
+    .tile .logo img{max-width:100%; max-height:100%; object-fit:contain}
+    .tile .meta{display:flex; flex-direction:column; gap:2px}
+    .tile .meta b{font-size:1rem}
+    .tile .meta small{color:var(--text-muted)}
+    .spark{width:140px; height:40px}
+    .badge{
+      padding:2px 8px; border-radius:999px; border:1px solid rgba(250, 204, 21,.45); background:rgba(250,204,21,.12);
+      color:#eab308; font-weight:700; font-size:.8rem
     }
 
-    .top-nav-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    /* FOOTER CTA BAND + SLOT COUNTER -------------------------------------- */
+    .cta {
+      margin-top:20px; border-top:2px solid var(--card-border);
+      background: var(--grad-footer);
+      padding:38px 18px 46px; text-align:center; color:#0b1220
+    }
+    .cta h2{font-weight:900; font-size:48px; letter-spacing:.02em; margin:0}
+    .cta .btn{
+      margin-top:16px; background:#fff; color:#0b1220; padding:12px 28px; border-radius:999px; display:inline-block; font-weight:800; box-shadow:0 15px 35px rgba(0,0,0,.18)
     }
 
-    .top-nav-logo {
-      height: 32px;
-      border-radius: 999px;
-      overflow: hidden;
-      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.7);
-      background: #020617;
+    .slots-wrap{max-width:1380px; margin:18px auto 0; padding:0 18px; display:grid; grid-template-columns:2fr 1fr 1fr; gap:12px}
+    @media (max-width:1100px){.slots-wrap{grid-template-columns:1fr}}
+    .slot-card{
+      border:1px solid var(--card-border); background:var(--card); border-radius:var(--radius-lg); padding:14px; box-shadow:var(--shadow-card)
+    }
+    .slot-card .hdline{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px}
+    .slot-card .hdline b{font-size:1rem}
+    .slot-row{display:flex; gap:6px; align-items:center}
+    .digit{
+      width:32px; height:46px; overflow:hidden; border-radius:6px; border:1px solid var(--card-border); background:#1e2a44;
+      box-shadow:inset 0 0 15px rgba(0,0,0,.35)
+    }
+    .digit .wheel{
+      position:relative; top:0; transition: top .6s cubic-bezier(.18,.89,.32,1.28)
+    }
+    .digit .wheel div{
+      height:46px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:28px
     }
 
-    .top-nav-title-block {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .top-nav-title {
-      font-size: 1.05rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-
-    .top-nav-subtitle {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    .top-nav-right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .pill-badge {
-      font-size: 0.75rem;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--pill-border);
-      background: var(--pill-bg);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--text-muted);
-    }
-
-    .pill-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: #22c55e;
-      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
-    }
-
-    /* App shell */
-
-    .app-shell {
-      display: flex;
-      max-width: 1320px;
-      margin: 0 auto;
-      padding: 20px;
-      gap: 18px;
-    }
-
-    /* Side nav */
-
-    .side-nav {
-      width: 220px;
-      min-width: 190px;
-      padding: 14px 12px;
-      border-radius: 18px;
-      background: var(--nav-bg);
-      border: 1px solid var(--nav-border);
-      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.8);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .side-nav-section-label {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      padding: 4px 8px 6px;
-    }
-
-    .side-nav-item {
-      border-radius: 12px;
-      border: 1px solid transparent;
-      background: transparent;
-      padding: 8px 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      cursor: pointer;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease,
-        transform 0.08s ease;
-    }
-
-    .side-nav-item-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.78rem;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.4);
-    }
-
-    .side-nav-item-label {
-      flex: 1;
-      text-align: left;
-    }
-
-    .side-nav-item:hover {
-      background: rgba(15, 23, 42, 0.9);
-      border-color: rgba(129, 140, 248, 0.6);
-      color: #e5e7eb;
-      transform: translateY(-1px);
-    }
-
-    .side-nav-item.active {
-      background: var(--nav-active);
-      border-color: rgba(129, 140, 248, 0.9);
-      color: #e5e7eb;
-    }
-
-    .side-nav-footer {
-      margin-top: 8px;
-      padding: 8px;
-      border-radius: 12px;
-      border: 1px dashed rgba(148, 163, 184, 0.45);
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      background: rgba(15, 23, 42, 0.9);
-    }
-
-    /* Main content */
-
-    .main-content {
-      flex: 1;
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .panel {
-      display: none;
-    }
-    .panel.active {
-      display: block;
-    }
-
-    .panel-header {
-      margin-bottom: 8px;
-    }
-
-    .panel-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
-
-    .panel-subtitle {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-    }
-
-    .panel-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 16px;
-    }
-
-    @media (max-width: 960px) {
-      .app-shell {
-        flex-direction: column;
-      }
-      .side-nav {
-        width: 100%;
-        max-width: none;
-        flex-direction: row;
-        overflow-x: auto;
-      }
-      .side-nav-item {
-        white-space: nowrap;
-      }
-      .side-nav-footer {
-        display: none;
-      }
-      .panel-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Cards */
-
-    .card {
-      border-radius: 22px;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      box-shadow: var(--card-shadow);
-      padding: 16px 18px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: 0.45;
-      background: linear-gradient(
-        135deg,
-        rgba(248, 250, 252, 0.06),
-        transparent 40%,
-        rgba(56, 189, 248, 0.08) 70%,
-        transparent 100%
-      );
-      pointer-events: none;
-    }
-
-    .card-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .card-title span.badge-pill {
-      font-size: 0.7rem;
-      padding: 2px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--text-muted);
-    }
-
-    .card-meta {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-
-    /* Global table styling used by all tables on page */
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.84rem;
-      margin-top: 6px;
-    }
-
-    thead {
-      background: var(--table-header-bg);
-    }
-
-    th, td {
-      padding: 8px 10px;
-      text-align: left;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.3);
-    }
-
-    th {
-      font-weight: 500;
-      color: var(--text-muted);
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: var(--table-row-alt);
-    }
-
-    tbody tr:hover {
-      background-color: var(--table-row-hover);
-    }
-
-    .status-working {
-      color: #22c55e;
-      font-weight: 600;
-    }
-
-    .status-off {
-      color: #f97373;
-      font-weight: 600;
-    }
-
-    .status-pto {
-      color: #fbbf24;
-      font-weight: 600;
-    }
-
-    .status-sick {
-      color: #f97373;
-      font-weight: 600;
-    }
-
-    .card-footer-note {
-      margin-top: 6px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-align: right;
-    }
-
-    /* Concurrency list */
-
-    .concurrency-list {
-      list-style: none;
-      padding: 0;
-      margin: 4px 0 0;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .concurrency-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 7px 9px;
-      border-radius: 12px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.4);
-    }
-
-    .concurrency-left {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .concurrency-logo {
-      width: 26px;
-      height: 26px;
-      border-radius: 7px;
-      overflow: hidden;
-      background: #020617;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .concurrency-logo img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
-    .concurrency-name {
-      font-weight: 500;
-      font-size: 0.86rem;
-    }
-
-    .concurrency-badge {
-      font-size: 0.78rem;
-      padding: 2px 9px;
-      border-radius: 999px;
-      border: 1px solid rgba(248, 250, 252, 0.3);
-      background: rgba(15, 23, 42, 0.9);
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .concurrency-badge span.value {
-      font-weight: 600;
-      color: #facc15;
-    }
-
-    /* Secondary panels use the same cards */
-
-    .panel-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .meta-note {
-      margin-top: 6px;
-      font-size: 0.74rem;
-      color: var(--text-muted);
-    }
+    /* small tables for incident breakdown */
+    .mini table{font-size:.9rem}
   </style>
 </head>
 <body>
-  <!-- Top bar -->
-  <header class="top-nav">
-    <div class="top-nav-left">
-      <div class="top-nav-logo">
-        <img src="image/Quickplay.jpg" alt="Quickplay Logo" style="height: 32px; display: block;">
-      </div>
-      <div class="top-nav-title-block">
-        <div class="top-nav-title">TechOps 360</div>
-        <div class="top-nav-subtitle">Live operations view for Quickplay customers</div>
+  <!-- TOP -->
+  <header class="top">
+    <div class="brand">
+      <img src="image/Quickplay.jpg" alt="Quickplay">
+      <div class="title">
+        <b>TechOps 360</b>
+        <small>Live operations view for Quickplay customers</small>
       </div>
     </div>
-    <div class="top-nav-right">
-      <div class="pill-badge">
-        <span class="pill-dot"></span>
-        <span>24×7 follow-the-sun support</span>
-      </div>
+    <div class="right">
+      <span class="chip"><span class="dot"></span>24×7 follow-the-sun support</span>
+      <button id="themeToggle" class="toggle">🌙 Dark</button>
     </div>
   </header>
 
-  <div class="app-shell">
-    <!-- Side navigation -->
-    <aside class="side-nav">
-      <div class="side-nav-section-label">Views</div>
-
-      <button class="side-nav-item active" data-panel="panel-dashboard">
-        <span class="side-nav-item-icon">🏠</span>
-        <span class="side-nav-item-label">Dashboard</span>
-      </button>
-
-      <button class="side-nav-item" data-panel="panel-customer-stats">
-        <span class="side-nav-item-icon">📊</span>
-        <span class="side-nav-item-label">Customer Stats</span>
-      </button>
-
-      <button class="side-nav-item" data-panel="panel-synth">
-        <span class="side-nav-item-icon">🩺</span>
-        <span class="side-nav-item-label">Synthetic Monitoring</span>
-      </button>
-
-      <button class="side-nav-item" data-panel="panel-manifests">
-        <span class="side-nav-item-icon">📡</span>
-        <span class="side-nav-item-label">Manifest Check</span>
-      </button>
-
-      <button class="side-nav-item" data-panel="panel-handoffs">
-        <span class="side-nav-item-icon">📒</span>
-        <span class="side-nav-item-label">Shift Handoffs</span>
-      </button>
-
-      <button class="side-nav-item" data-panel="panel-rbac">
-        <span class="side-nav-item-icon">🔐</span>
-        <span class="side-nav-item-label">RBAC</span>
-      </button>
-
-      <button class="side-nav-item" data-panel="panel-issues">
-        <span class="side-nav-item-icon">🧠</span>
-        <span class="side-nav-item-label">Issue Search</span>
-      </button>
-
-      <div class="side-nav-footer">
-        This is an internal TechOps view. Data is simulated for demo except where wired to live sources (Google Sheets, app-store sentiment).
-      </div>
+  <!-- APP -->
+  <div class="shell">
+    <!-- NAV -->
+    <aside class="nav">
+      <h6>Views</h6>
+      <button class="active" data-panel="dash">🏠 Dashboard</button>
+      <button data-panel="stats">📊 Customer Stats</button>
+      <button data-panel="synth">🩺 Synthetic Monitoring</button>
+      <button data-panel="manifests">📡 Manifest Check</button>
+      <button data-panel="handoff">📒 Shift Handoffs</button>
+      <button data-panel="rbac">🔐 RBAC</button>
+      <button data-panel="issues">🧠 Issue Search</button>
+      <small>This internal view blends live sources (Google Sheets) with placeholders you can wire to ServiceNow, Grafana, and NR.</small>
     </aside>
 
-    <!-- Main content -->
-    <main class="main-content">
+    <!-- MAIN -->
+    <main class="main">
+      <!-- DASH -->
+      <section id="dash" class="panel active">
+        <h3>Live Operations Dashboard</h3>
+        <p class="sub">Who is on shift right now and active customer concurrency across the platform.</p>
 
-      <!-- MAIN DASHBOARD: current shift + concurrency -->
-      <section id="panel-dashboard" class="panel active">
-        <div class="panel-header">
-          <div class="panel-title">Live Operations Dashboard</div>
-          <div class="panel-subtitle">
-            Who is on shift right now and active customer concurrency across the platform.
+        <div class="grid">
+          <!-- Current shift -->
+          <div class="card">
+            <div class="hd">
+              <div class="ttl">Current shift coverage <span class="pill">Today • auto-updated</span></div>
+              <div class="pill">Local-window filter</div>
+            </div>
+            <table>
+              <thead><tr><th>Engineer Name</th><th>Status</th><th>Shift (local time)</th></tr></thead>
+              <tbody id="ops-calendar-body">
+                <tr><td colspan="3">Loading schedule…</td></tr>
+              </tbody>
+            </table>
+            <div class="note">Coverage includes IST, MYT and EST rotations.</div>
+          </div>
+
+          <!-- Concurrency snapshot (compact) -->
+          <div class="card">
+            <div class="hd">
+              <div class="ttl">Customer concurrency <span class="pill">Snapshot</span></div>
+              <div class="pill">Live tiles below</div>
+            </div>
+            <table>
+              <thead><tr><th>Customer</th><th>Now</th><th>Notes</th></tr></thead>
+              <tbody id="conc-mini-body">
+                <tr><td>Aha</td><td><b>4.5K</b></td><td>Stable</td></tr>
+                <tr><td>RSM</td><td><b>1.2K</b></td><td>Stable</td></tr>
+                <tr><td>PLDT</td><td><b>3.0K</b></td><td>Peaking</td></tr>
+                <tr><td>Canela</td><td><b>800</b></td><td>Normal</td></tr>
+              </tbody>
+            </table>
+            <div class="note" style="text-align:left">Numbers are placeholders; wire your New Relic/Grafana API when ready.</div>
           </div>
         </div>
 
-        <div class="panel-grid">
-          <!-- Card: current shift -->
-          <div class="card">
-            <div class="card-content">
-              <div class="card-header">
-                <div class="card-title">
-                  Current shift coverage
-                  <span class="badge-pill">Today • auto-updated</span>
-                </div>
-                <div class="card-meta">
-                  Showing only engineers currently within their local shift window.
-                </div>
-              </div>
+        <!-- BOTTOM TILES: one per customer, with mini sparkline -->
+        <div class="tiles">
+          <div class="inner" id="tiles"></div>
+        </div>
 
-              <table>
-                <thead>
-                  <tr>
-                    <th>Engineer Name</th>
-                    <th>Status</th>
-                    <th>Shift (local time)</th>
-                  </tr>
-                </thead>
-                <tbody id="ops-calendar-body">
-                  <tr>
-                    <td colspan="3">Loading schedule…</td>
-                  </tr>
-                </tbody>
-              </table>
+        <!-- CTA band + counters -->
+        <section class="cta">
+          <h2>CURIOUS? LET’S TALK.</h2>
+          <a class="btn" href="#">CONTACT US</a>
+        </section>
 
-              <div class="card-footer-note">
-                Coverage includes IST, MYT and EST rotations.
-              </div>
-            </div>
+        <!-- Slot counters and daily breakdowns -->
+        <div class="slots-wrap">
+          <div class="slot-card">
+            <div class="hdline"><b>Total incidents since org inception</b><span class="pill">slot-counter • placeholder</span></div>
+            <div class="slot-row" id="slotCounter"></div>
           </div>
 
-          <!-- Card: concurrency -->
-          <div class="card">
-            <div class="card-content">
-              <div class="card-header">
-                <div class="card-title">
-                  Customer concurrency
-                  <span class="badge-pill">Snapshot</span>
-                </div>
-                <div class="card-meta">
-                  Representative active concurrency across key customers.
-                </div>
-              </div>
+          <div class="slot-card mini">
+            <div class="hdline"><b>Today by category</b><span class="pill">placeholder</span></div>
+            <table>
+              <tbody id="todayCats">
+                <tr><td>Content</td><td style="text-align:right"><b>6</b></td></tr>
+                <tr><td>Playback/DRM</td><td style="text-align:right"><b>3</b></td></tr>
+                <tr><td>Identity</td><td style="text-align:right"><b>2</b></td></tr>
+                <tr><td>Payments</td><td style="text-align:right"><b>1</b></td></tr>
+              </tbody>
+            </table>
+          </div>
 
-              <ul class="concurrency-list">
-                <li class="concurrency-item">
-                  <div class="concurrency-left">
-                    <div class="concurrency-logo">
-                      <img src="image/aha.jpg" alt="Aha">
-                    </div>
-                    <div class="concurrency-name">Aha</div>
-                  </div>
-                  <div class="concurrency-badge">
-                    Live
-                    <span class="value">4.5K</span>
-                  </div>
-                </li>
-
-                <li class="concurrency-item">
-                  <div class="concurrency-left">
-                    <div class="concurrency-logo">
-                      <img src="image/RSM_Logo.png" alt="RSM">
-                    </div>
-                    <div class="concurrency-name">RSM</div>
-                  </div>
-                  <div class="concurrency-badge">
-                    Live
-                    <span class="value">1.2K</span>
-                  </div>
-                </li>
-
-                <li class="concurrency-item">
-                  <div class="concurrency-left">
-                    <div class="concurrency-logo">
-                      <img src="image/smart.png" alt="PLDT">
-                    </div>
-                    <div class="concurrency-name">PLDT</div>
-                  </div>
-                  <div class="concurrency-badge">
-                    Live
-                    <span class="value">3.0K</span>
-                  </div>
-                </li>
-
-                <li class="concurrency-item">
-                  <div class="concurrency-left">
-                    <div class="concurrency-logo">
-                      <img src="image/Canela.png" alt="Canela">
-                    </div>
-                    <div class="concurrency-name">Canela</div>
-                  </div>
-                  <div class="concurrency-badge">
-                    Live
-                    <span class="value">800</span>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="card-footer-note" style="text-align:left;">
-                Values are demo numbers; wire to real metrics API when ready.
-              </div>
-            </div>
+          <div class="slot-card mini">
+            <div class="hdline"><b>Today by customer</b><span class="pill">placeholder</span></div>
+            <table>
+              <tbody id="todayCust">
+                <tr><td>Aha</td><td style="text-align:right"><b>4</b></td></tr>
+                <tr><td>PLDT</td><td style="text-align:right"><b>3</b></td></tr>
+                <tr><td>RSM</td><td style="text-align:right"><b>3</b></td></tr>
+                <tr><td>Canela</td><td style="text-align:right"><b>2</b></td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      <!-- CUSTOMER STATS PANEL -->
-      <section id="panel-customer-stats" class="panel">
-        <div class="panel-header">
-          <div class="panel-title">Customer Stats</div>
-          <div class="panel-subtitle">
-            App store ratings and customer sentiment derived from app-store comments (last 7 days).
-          </div>
-        </div>
+      <!-- CUSTOMER STATS -->
+      <section id="stats" class="panel">
+        <h3>Customer Stats</h3>
+        <p class="sub">App store ratings and customer sentiment (last 7 days).</p>
+        <div class="card"><div id="customer-sentiment-dashboard"></div></div>
+      </section>
 
-        <div class="panel-stack">
-          <div class="card">
-            <div class="card-content">
-              <div id="customer-sentiment-dashboard"></div>
-            </div>
-          </div>
+      <!-- SYNTHETIC -->
+      <section id="synth" class="panel">
+        <h3>Synthetic Monitoring</h3>
+        <p class="sub">Representative checks (sample data).</p>
+        <div class="card">
+          <table>
+            <thead><tr><th>Service</th><th>Component</th><th>SG</th><th>HK</th><th>Checked</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>admin-search-service</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td class="ok">OK</td></tr>
+              <tr><td>cms-metadata</td><td>CMS</td><td>200</td><td>200</td><td>2025-06-09 14:00 IST</td><td class="ok">OK</td></tr>
+              <tr><td>epg-ingestion-tm</td><td>CMS</td><td>401</td><td>503</td><td>2025-06-09 14:00 IST</td><td class="bad">DOWN</td></tr>
+              <tr><td>syndication-ingestion-disney</td><td>CMS</td><td>503</td><td>503</td><td>2025-06-09 14:00 IST</td><td class="bad">DOWN</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
-      <!-- SYNTHETIC MONITORING PANEL -->
-      <section id="panel-synth" class="panel">
-        <div class="panel-header">
-          <div class="panel-title">Synthetic Monitoring</div>
-          <div class="panel-subtitle">
-            Representative synthetic checks against key CMS / Edge endpoints.
-          </div>
-        </div>
-
-        <div class="panel-stack">
-          <div class="card">
-            <div class="card-content">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Service Name</th>
-                    <th>Component</th>
-                    <th>SG Status</th>
-                    <th>HK Status</th>
-                    <th>Last Checked</th>
-                    <th>Overall Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>admin-search-service</td>
-                    <td>CMS</td>
-                    <td>200</td>
-                    <td>200</td>
-                    <td>2025-06-09 14:00 IST</td>
-                    <td><span class="status-working">OK</span></td>
-                  </tr>
-                  <tr>
-                    <td>cms-metadata</td>
-                    <td>CMS</td>
-                    <td>200</td>
-                    <td>200</td>
-                    <td>2025-06-09 14:00 IST</td>
-                    <td><span class="status-working">OK</span></td>
-                  </tr>
-                  <tr>
-                    <td>epg-ingestion-tm</td>
-                    <td>CMS</td>
-                    <td>401</td>
-                    <td>503</td>
-                    <td>2025-06-09 14:00 IST</td>
-                    <td><span class="status-off">DOWN</span></td>
-                  </tr>
-                  <tr>
-                    <td>syndication-ingestion-disney</td>
-                    <td>CMS</td>
-                    <td>503</td>
-                    <td>503</td>
-                    <td>2025-06-09 14:00 IST</td>
-                    <td><span class="status-off">DOWN</span></td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="meta-note">
-                Health check statuses directly from service monitoring systems (sample data).
-              </p>
-            </div>
-          </div>
+      <!-- MANIFESTS -->
+      <section id="manifests" class="panel">
+        <h3>Manifest Check – RSM</h3>
+        <p class="sub">Subset of channels (sample data).</p>
+        <div class="card">
+          <table>
+            <thead><tr><th>Channel</th><th>Protocol</th><th>URL</th><th>Status</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr><td>snohd</td><td>HLS</td><td>https://…/snohd.isml/.m3u8</td><td class="ok">OK</td><td>Manifest loaded successfully</td></tr>
+              <tr><td>snehd</td><td>HLS</td><td>https://…/snehd.isml/.m3u8</td><td class="bad">MISSING_STREAM</td><td>Missing audio-only variant</td></tr>
+              <tr><td>wwehd</td><td>DASH</td><td>https://…/wwehd_cenc.isml/.mpd</td><td class="ok">OK</td><td>Manifest loaded successfully</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
-      <!-- MANIFEST CHECK PANEL -->
-      <section id="panel-manifests" class="panel">
-        <div class="panel-header">
-          <div class="panel-title">Manifest Check – RSM</div>
-          <div class="panel-subtitle">
-            Manifest integrity for a subset of RSM channels (HLS / DASH).
-          </div>
-        </div>
-
-        <div class="panel-stack">
-          <div class="card">
-            <div class="card-content">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Channel Name</th>
-                    <th>Protocol</th>
-                    <th>URL</th>
-                    <th>Status</th>
-                    <th>Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>snohd</td>
-                    <td>HLS</td>
-                    <td>https://live-streaming-tma.live.rsm.firstlight.ai/snohd/snohd.isml/.m3u8</td>
-                    <td><span class="status-working">OK</span></td>
-                    <td>Manifest loaded successfully.</td>
-                  </tr>
-                  <tr>
-                    <td>snehd</td>
-                    <td>HLS</td>
-                    <td>https://live-streaming-tm.live.rsm.firstlight.ai/snehd/snehd.isml/.m3u8</td>
-                    <td><span class="status-off">MISSING_STREAM</span></td>
-                    <td>Detected missing 'audio-only' stream variant.</td>
-                  </tr>
-                  <tr>
-                    <td>wwehd</td>
-                    <td>DASH</td>
-                    <td>https://live-streaming-tm.live.rsm.firstlight.ai/wwehd/wwehd_cenc.isml/.mpd</td>
-                    <td><span class="status-working">OK</span></td>
-                    <td>Manifest loaded successfully.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="meta-note">
-                Data is a representative subset from <code>RSM_Manifest_URL.txt</code>.
-              </p>
-            </div>
-          </div>
+      <!-- HANDOFFS -->
+      <section id="handoff" class="panel">
+        <h3>Shift Handoffs</h3>
+        <p class="sub">Incidents, changes & FYI (sample).</p>
+        <div class="card">
+          <ul style="margin:0; padding-left:16px">
+            <li>Incidents opened: 7 • Closed: 4 • Updated: 28</li>
+            <li>INC0195019 – Mobile loading issue</li>
+            <li>INC0195023 – Aha: subscribed user still sees “subscribe now”</li>
+            <li>CHG0102910 – LocalNow HLS/EPG URL change – Completed</li>
+            <li>Upcoming – CHG0102882 Aha web deployment 23:30 IST</li>
+          </ul>
         </div>
       </section>
 
-      <!-- SHIFT HANDOFFS PANEL -->
-      <section id="panel-handoffs" class="panel">
-        <div class="panel-header">
-          <div class="panel-title">Shift Handoffs</div>
-          <div class="panel-subtitle">
-            Morning shift handoff summary – incidents, changes and FYI items.
-          </div>
-        </div>
-
-        <div class="panel-stack">
-          <div class="card">
-            <div class="card-content">
-              <p class="meta-note" style="text-align:left;margin-bottom:6px;">
-                Detailed shift log provided by Praveen Kumar (sample data).
-              </p>
-              <ul style="list-style:none;padding:0;margin:0;font-size:0.85rem;">
-                <li style="margin-bottom:10px;">
-                  <strong>Incidents opened:</strong> 7 &nbsp;•&nbsp; <strong>Resolved/Closed:</strong> 4 &nbsp;•&nbsp; <strong>Updated:</strong> 28
-                </li>
-                <li style="margin-bottom:6px;"><strong>INC0195019:</strong> The customer is facing a loading issue in the mobile</li>
-                <li style="margin-bottom:6px;"><strong>INC0195020:</strong> Customer is facing a loading issue in the mobile</li>
-                <li style="margin-bottom:6px;"><strong>INC0195021:</strong> Loading issue on mobile</li>
-                <li style="margin-bottom:6px;"><strong>INC0195022:</strong> App stuck issue on mobile</li>
-                <li style="margin-bottom:6px;"><strong>INC0195023:</strong> [AHA] user already has subscription but still seeing “subscribe now”</li>
-                <li style="margin-top:8px;margin-bottom:4px;"><strong>Change log:</strong></li>
-                <li style="margin-bottom:4px;"><strong>CHG0102910:</strong> [LocalNow] HLS &amp; EPG URL changes for one Live Channel in AMD – Completed</li>
-                <li style="margin-bottom:4px;"><strong>[AHA]</strong> Indian Idol Audition portal – Telugu Indian Idol – Update</li>
-                <li style="margin-top:8px;margin-bottom:4px;"><strong>Upcoming CR:</strong> <strong>CHG0102882</strong> [AHA] Web deployment of version</li>
-                <li style="margin-top:8px;">
-                  <strong>FYI:</strong> Manifest alerts for Cignal &amp; Plive created; all 83 Cignal channels (HLS + DASH) wired; health alerts configured for Telekom Malaysia endpoints.
-                </li>
-              </ul>
-            </div>
-          </div>
+      <!-- RBAC -->
+      <section id="rbac" class="panel">
+        <h3>RBAC Overview</h3>
+        <p class="sub">Simulated roles (map to SSO/Keycloak in prod).</p>
+        <div class="card">
+          <table>
+            <thead><tr><th>Role</th><th>Description</th><th>Access</th></tr></thead>
+            <tbody>
+              <tr><td>Admin</td><td>Full control and user management</td><td>All</td></tr>
+              <tr><td>Operations Lead</td><td>Dashboards + team management</td><td>View + scoped edit</td></tr>
+              <tr><td>Operations Engineer</td><td>Dashboards + operational tasks</td><td>View + limited edit</td></tr>
+              <tr><td>Viewer</td><td>Read-only</td><td>View only</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
-      <!-- RBAC PANEL -->
-      <section id="panel-rbac" class="panel">
-        <div class="panel-header">
-          <div class="panel-title">RBAC Overview</div>
-          <div class="panel-subtitle">
-            Simulated role-based access model for TechOps 360 (wire to SSO/Keycloak in production).
-          </div>
-        </div>
-
-        <div class="panel-stack">
-          <div class="card">
-            <div class="card-content">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Role</th>
-                    <th>Description</th>
-                    <th>Access Level</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Admin</td>
-                    <td>Full control over all modules and user management.</td>
-                    <td>All (View, Edit, Manage Users)</td>
-                  </tr>
-                  <tr>
-                    <td>Operations Lead</td>
-                    <td>Access to all operational dashboards, manage team members.</td>
-                    <td>All (View, Edit on assigned customers)</td>
-                  </tr>
-                  <tr>
-                    <td>Operations Engineer</td>
-                    <td>View dashboards, perform specific operational tasks.</td>
-                    <td>View all, Edit limited to assigned customers</td>
-                  </tr>
-                  <tr>
-                    <td>Viewer</td>
-                    <td>Read-only access to all dashboards.</td>
-                    <td>View Only</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="meta-note" style="text-align:left;">
-                Map these roles to your SSO groups or identity provider for enforcement.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ISSUE SEARCH PANEL -->
-      <section id="panel-issues" class="panel">
-        <div class="panel-header">
-          <div class="panel-title">Issue Resolution Search</div>
-          <div class="panel-subtitle">
-            Ops memory for past incidents and how they were resolved (simulated search UX).
-          </div>
-        </div>
-
-        <div class="panel-stack">
-          <div class="card">
-            <div class="card-content">
-              <input
-                type="text"
-                placeholder="Search for past issues (e.g., 'buffer timeout', 'payment gateway error')"
-                style="width:100%;padding:9px 10px;border-radius:10px;border:1px solid rgba(148,163,184,0.6);background:rgba(15,23,42,0.9);color:#e5e7eb;font-size:0.85rem;margin-bottom:10px;"
-              />
-
-              <table>
-                <thead>
-                  <tr>
-                    <th>Issue ID</th>
-                    <th>Summary</th>
-                    <th>Customer</th>
-                    <th>Date Resolved</th>
-                    <th>Resolution</th>
-                    <th>Owner</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>INC0195023</td>
-                    <td>User has subscription but showing “subscribe now”</td>
-                    <td>Aha</td>
-                    <td>2025-06-09</td>
-                    <td>Investigating: Likely data sync issue.</td>
-                    <td>Praveen K.</td>
-                  </tr>
-                  <tr>
-                    <td>ISSUE-002</td>
-                    <td>App crashing on Android 12</td>
-                    <td>PLDT</td>
-                    <td>2025-04-15</td>
-                    <td>Deployed hotfix v3.1.1 to address memory leak.</td>
-                    <td>Team Bravo</td>
-                  </tr>
-                  <tr>
-                    <td>ISSUE-003</td>
-                    <td>Synthetic login test failure</td>
-                    <td>RSM</td>
-                    <td>2025-06-01</td>
-                    <td>Updated stale credentials in monitoring system.</td>
-                    <td>Team Alpha</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="meta-note" style="text-align:left;">
-                Search functionality is simulated. Real implementation would use Elasticsearch/PostgreSQL full-text search.
-              </p>
-            </div>
-          </div>
+      <!-- ISSUES -->
+      <section id="issues" class="panel">
+        <h3>Issue Resolution Search</h3>
+        <p class="sub">Ops memory (simulated search).</p>
+        <div class="card">
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--card-border); background:var(--card); color:var(--text)" placeholder="Search for past issues (e.g., ‘buffer timeout’)" />
+          <table style="margin-top:10px">
+            <thead><tr><th>ID</th><th>Summary</th><th>Customer</th><th>Resolved</th><th>Resolution</th><th>Owner</th></tr></thead>
+            <tbody>
+              <tr><td>INC0195023</td><td>Subscribed user sees “subscribe now”</td><td>Aha</td><td>2025-06-09</td><td>Investigating: data sync</td><td>Praveen K.</td></tr>
+              <tr><td>ISSUE-002</td><td>Android 12 crash</td><td>PLDT</td><td>2025-04-15</td><td>Hotfix v3.1.1</td><td>Team Bravo</td></tr>
+              <tr><td>ISSUE-003</td><td>Synthetic login failed</td><td>RSM</td><td>2025-06-01</td><td>Updated credentials</td><td>Team Alpha</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>
   </div>
 
-  <!-- Simple JS: side nav panel switching -->
+  <!-- NAV LOGIC -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const navItems = Array.from(document.querySelectorAll('.side-nav-item'));
-      const panels = Array.from(document.querySelectorAll('.panel'));
-
-      navItems.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const targetId = btn.getAttribute('data-panel');
-
-          navItems.forEach((b) => b.classList.remove('active'));
-          btn.classList.add('active');
-
-          panels.forEach((p) => {
-            if (p.id === targetId) {
-              p.classList.add('active');
-            } else {
-              p.classList.remove('active');
-            }
-          });
-        });
+    document.querySelectorAll('.nav button').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const id = btn.dataset.panel;
+        document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
       });
     });
   </script>
 
-  <!-- Ops calendar (Google Sheets) -->
-  <script src="ops-calendar.js?v=3"></script>
-
-  <!-- Botpress -->
-  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <!-- THEME TOGGLE -->
   <script>
-    window.botpressWebChat.init({
-      composerPlaceholder: "Chat with TechOps Bot",
-      botConversationDescription: "Your AI assistant for TechOps 360",
-      botId: "56efefce-fa7c-41e6-9846-ec36c7c6704a",
-      hostUrl: "https://cdn.botpress.cloud/webchat/v1",
-      messagingUrl: "https://messaging.botpress.cloud",
-      clientId: "a7e5af98-3b12-4265-a9f9-6f3fcd500b93",
-      lazySocket: true,
-      themeName: "prism",
-      botName: "TechOps Assistant",
-      stylesheet: "https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
-      frontendVersion: "v1",
-      useSessionStorage: true,
-      enableConversationDeletion: true,
-      theme: "prism",
-      themeColor: "#2563eb"
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('themeToggle');
+    function setTheme(mode){
+      document.documentElement.setAttribute('data-theme', mode);
+      toggleBtn.textContent = mode==='dark' ? '🌙 Dark' : '☀️ Light';
+      localStorage.setItem('techops-theme', mode);
+    }
+    const saved = localStorage.getItem('techops-theme');
+    setTheme(saved || 'dark');
+    toggleBtn.addEventListener('click', ()=>{
+      const next = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+      setTheme(next);
     });
   </script>
 
-  <!-- Customer sentiment dashboard -->
+  <!-- GOOGLE SHEETS OPS CAL (your existing file keeps working) -->
+  <script src="ops-calendar.js?v=3"></script>
+
+  <!-- CUSTOMER SENTIMENT (your existing dark-aware CSS/JS) -->
   <script src="customer-sentiment.js?v=3"></script>
+
+  <!-- CONCURRENCY TILES + SPARKLINES + SLOT COUNTER (placeholders) -->
+  <script>
+    // --- placeholder data you can replace with NewRelic/Grafana API results
+    const TILE_DATA = [
+      { name:'Aha', logo:'image/aha.jpg', now: 4500, series:[3400,3700,3900,4100,4200,4300,4400,4500]},
+      { name:'RSM', logo:'image/RSM_Logo.png', now: 1200, series:[950,980,1020,1070,1110,1150,1180,1200]},
+      { name:'PLDT', logo:'image/smart.png', now: 3000, series:[2200,2400,2550,2700,2850,2950,2975,3000]},
+      { name:'Canela', logo:'image/Canela.png', now: 800, series:[500,560,610,680,700,720,770,800]},
+    ];
+
+    function formatK(n){ return n>=1000 ? (n/1000).toFixed(n%1000===0?0:1)+'K' : n }
+
+    function drawSparkline(el, data){
+      const w = 140, h = 40, pad = 2;
+      const min = Math.min(...data), max = Math.max(...data);
+      const norm = v => (h - pad) - ( (v-min) / (max-min || 1) ) * (h - pad*2);
+      const step = (w - pad*2) / (data.length - 1);
+      let d = '';
+      data.forEach((v,i)=>{ const x = pad + i*step; const y = norm(v); d += (i? ' L':'M')+x+' '+y });
+      el.innerHTML =
+        `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+          <path d="${d}" fill="none" stroke="currentColor" stroke-width="2" opacity=".9"></path>
+        </svg>`;
+    }
+
+    function buildTiles(){
+      const wrap = document.getElementById('tiles'); wrap.innerHTML='';
+      TILE_DATA.forEach(t=>{
+        const li = document.createElement('div'); li.className='tile';
+        li.innerHTML = `
+          <div class="logo"><img src="${t.logo}" alt="${t.name}"></div>
+          <div class="meta"><b>${t.name}</b><small>last 30 min</small></div>
+          <div style="display:flex; gap:10px; align-items:center">
+            <div class="badge">Live <span style="font-weight:800">${formatK(t.now)}</span></div>
+            <div class="spark-hold"></div>
+          </div>`;
+        wrap.appendChild(li);
+        drawSparkline(li.querySelector('.spark-hold'), t.series);
+      });
+    }
+    buildTiles();
+
+    // --- Slot machine counter (placeholder total)
+    function buildSlot(el, number){
+      const text = String(number);
+      el.innerHTML='';
+      for(const ch of text){
+        const d = document.createElement('div'); d.className='digit';
+        const wheel = document.createElement('div'); wheel.className='wheel';
+        // Build 0-9 plus the target at the end for a better roll feel
+        for(let i=0;i<=9;i++){ const cell=document.createElement('div'); cell.textContent=i; wheel.appendChild(cell) }
+        const final = document.createElement('div'); final.textContent=ch; wheel.appendChild(final);
+        d.appendChild(wheel); el.appendChild(d);
+        // animate
+        requestAnimationFrame(()=>{
+          const idx = 10; // scroll through one full set
+          wheel.style.top = `-${46*idx}px`;
+          setTimeout(()=>{ wheel.style.top = `-${46*parseInt(ch,10)}px`; wheel.style.transition='top .45s ease' }, 620);
+        });
+      }
+    }
+    // Example: “since org started” placeholder (change to real value when wired)
+    buildSlot(document.getElementById('slotCounter'), 65432);
+  </script>
+
+  <!-- Botpress (unchanged) -->
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      composerPlaceholder:"Chat with TechOps Bot",
+      botConversationDescription:"Your AI assistant for TechOps 360",
+      botId:"56efefce-fa7c-41e6-9846-ec36c7c6704a",
+      hostUrl:"https://cdn.botpress.cloud/webchat/v1",
+      messagingUrl:"https://messaging.botpress.cloud",
+      clientId:"a7e5af98-3b12-4265-a9f9-6f3fcd500b93",
+      lazySocket:true, themeName:"prism", botName:"TechOps Assistant",
+      stylesheet:"https://webchat-styler-widgets.botpress.app/prod/v1/themes/prism.css",
+      frontendVersion:"v1", useSessionStorage:true, enableConversationDeletion:true,
+      theme:"prism", themeColor:"#2563eb"
+    });
+  </script>
 </body>
 </html>
