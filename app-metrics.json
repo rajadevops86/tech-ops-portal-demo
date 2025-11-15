@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-14T03:07:35.856361+00:00",
+  "generated_utc": "2025-11-15T03:01:22.291477+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5309
+        "rating": 4.53089
       },
       "android": {
-        "rating": 4.420099
+        "rating": 4.419944
       },
       "sentiment": {
-        "score": 0.53,
+        "score": 0.537,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "Android"
           },
           {
-            "text": "hi superb",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "worst app always hanging and log in issue",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "worst app video madhyalo fist ki vellipothundhi and video kanna adds ekkuva...full worst",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst ott app i have ever met worst app",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app I am logout my account still money cut worst experience as Allu Arjun Fan ga. i give two time you can give refund i can file the case . # aha app.",
             "rating": 1,
             "platform": "Android"
           }
@@ -56,15 +56,15 @@
             "trend": "worsening"
           },
           {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
             "label": "login",
             "trend": "worsening"
           },
           {
             "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -76,10 +76,10 @@
         "rating": 4.54029
       },
       "android": {
-        "rating": 4.607362
+        "rating": 4.606629
       },
       "sentiment": {
-        "score": 0.559,
+        "score": 0.56,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -93,8 +93,8 @@
             "platform": "Android"
           },
           {
-            "text": "ung quality ng videos sa led tv is not as good cignal play. sayang binayad kong pera kala ko maganda ung clarity sa tv. i would not suggest for anyone to buy this app kung sa led tv kayo manonood. this app is just meant for phones or tablets.",
-            "rating": 1,
+            "text": "very good",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -145,10 +145,10 @@
         "rating": 1.75291
       },
       "android": {
-        "rating": 3.7985075
+        "rating": 3.7769232
       },
       "sentiment": {
-        "score": 0.549,
+        "score": 0.555,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7568
+        "rating": 4.75678
       },
       "android": {
         "rating": 4.054945
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36293
+        "rating": 4.36299
       },
       "android": {
-        "rating": 4.617689
+        "rating": 4.6124883
       },
       "sentiment": {
-        "score": 0.581,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
