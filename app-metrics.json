@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2025-11-15T03:01:22.291477+00:00",
+  "generated_utc": "2025-11-16T03:12:26.010065+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53089
+        "rating": 4.5309
       },
       "android": {
-        "rating": 4.419944
+        "rating": 4.41994
       },
       "sentiment": {
         "score": 0.537,
@@ -52,15 +52,15 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "slow",
             "trend": "worsening"
           },
           {
             "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
             "trend": "worsening"
           },
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.54029
+        "rating": 4.54054
       },
       "android": {
-        "rating": 4.606629
+        "rating": 4.60742
       },
       "sentiment": {
         "score": 0.56,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.75291
+        "rating": 1.7806
       },
       "android": {
-        "rating": 3.7769232
+        "rating": 3.7555556
       },
       "sentiment": {
-        "score": 0.555,
+        "score": 0.531,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,31 +157,31 @@
             "platform": "Android"
           },
           {
-            "text": "\"App baru ni memang best! Lagi cepat load, banyak pilihan rancangan dan kualiti video mantap. Rasa macam ada pawagam mini sendiri!\" 🍿📱",
+            "text": "best lah",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "best lah",
+            "text": "great app. can watch anywhere",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Whoever designed the ui is need to go back to school. Horrible user experience trying to navigate across channels",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "Tolong la. Useless sangat. Nak buka channels langsung tak boleh. Chat dgn agent asyik terkeluar. Seminggu tak boleh buka",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "Who is your vendor for this apps? Your project manager? Stupid apps ever!",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "horrible interface. terrible experience. changing tv channel is a nightmare.",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44801
+        "rating": 4.44804
       },
       "android": {
-        "rating": 3.6722972
+        "rating": 3.6707866
       },
       "sentiment": {
         "score": 0.507,
@@ -280,10 +280,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78739
+        "rating": 2.78788
       },
       "android": {
-        "rating": 3.5509875
+        "rating": 3.551411
       },
       "sentiment": {
         "score": 0.489,
@@ -352,10 +352,10 @@
         "rating": 4.75678
       },
       "android": {
-        "rating": 4.054945
+        "rating": 4.060109
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.572,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -369,9 +369,9 @@
             "platform": "Android"
           },
           {
-            "text": "Great shows and love all the video music content!!!",
+            "text": "Excellent",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36299
+        "rating": 4.36404
       },
       "android": {
-        "rating": 4.6124883
+        "rating": 4.6136255
       },
       "sentiment": {
         "score": 0.579,
