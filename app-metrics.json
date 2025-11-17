@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-16T03:12:26.010065+00:00",
+  "generated_utc": "2025-11-17T03:09:48.731247+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5309
+        "rating": 4.53091
       },
       "android": {
-        "rating": 4.41994
+        "rating": 4.420113
       },
       "sentiment": {
-        "score": 0.537,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "Android"
           },
           {
-            "text": "excellent",
-            "rating": 5,
+            "text": "very good",
+            "rating": 4,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Really pathetic app movies are not showing up don't buy this, as before buying all the movies were showing in catalogue",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "worst app always hanging and log in issue",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst app video madhyalo fist ki vellipothundhi and video kanna adds ekkuva...full worst",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst ott app i have ever met worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -52,20 +52,20 @@
             "trend": "worsening"
           },
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
             "label": "slow",
             "trend": "worsening"
           },
           {
             "label": "login",
             "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.54054
+        "rating": 4.54014
       },
       "android": {
-        "rating": 4.60742
+        "rating": 4.61031
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.559,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,7 +145,7 @@
         "rating": 1.7806
       },
       "android": {
-        "rating": 3.7555556
+        "rating": 3.7407408
       },
       "sentiment": {
         "score": 0.531,
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44804
+        "rating": 4.44797
       },
       "android": {
         "rating": 3.6707866
@@ -280,10 +280,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78788
+        "rating": 2.78799
       },
       "android": {
-        "rating": 3.551411
+        "rating": 3.5494149
       },
       "sentiment": {
         "score": 0.489,
@@ -352,7 +352,7 @@
         "rating": 4.75678
       },
       "android": {
-        "rating": 4.060109
+        "rating": 4.054945
       },
       "sentiment": {
         "score": 0.572,
@@ -418,15 +418,20 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36404
+        "rating": 4.36449
       },
       "android": {
-        "rating": 4.6136255
+        "rating": 4.6138096
       },
       "sentiment": {
-        "score": 0.579,
+        "score": 0.581,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "The best entertainment and sports app in one app,,, the greatest 😍",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "excellent 👌👍",
             "rating": 5,
@@ -434,11 +439,6 @@
           },
           {
             "text": "great app!",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Just pay and watch very good.",
             "rating": 5,
             "platform": "Android"
           }
