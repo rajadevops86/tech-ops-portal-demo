@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2025-11-17T03:09:48.731247+00:00",
+  "generated_utc": "2025-11-18T03:06:58.260711+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53091
+        "rating": 4.53087
       },
       "android": {
-        "rating": 4.420113
+        "rating": 4.4200416
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.543,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Awesome singing show",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "Excellent",
             "rating": 5,
@@ -22,26 +27,21 @@
             "text": "excellent",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "very good",
-            "rating": 4,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
+            "text": "worst app",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst app it is always stuck",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Really pathetic app movies are not showing up don't buy this, as before buying all the movies were showing in catalogue",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app always hanging and log in issue",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app video madhyalo fist ki vellipothundhi and video kanna adds ekkuva...full worst",
             "rating": 1,
             "platform": "Android"
           }
@@ -49,6 +49,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "worsening"
           },
           {
@@ -62,10 +66,6 @@
           {
             "label": "slow",
             "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
           }
         ]
       }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.54014
+        "rating": 4.53983
       },
       "android": {
-        "rating": 4.61031
+        "rating": 4.609577
       },
       "sentiment": {
         "score": 0.559,
@@ -145,10 +145,10 @@
         "rating": 1.7806
       },
       "android": {
-        "rating": 3.7407408
+        "rating": 3.778626
       },
       "sentiment": {
-        "score": 0.531,
+        "score": 0.541,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,6 +169,11 @@
         ],
         "topNegative": [
           {
+            "text": "Tolong la. Useless sangat. Nak buka channels langsung tak boleh. Chat dgn agent asyik terkeluar. Seminggu tak boleh buka",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
             "rating": 1,
             "platform": "iOS"
@@ -177,11 +182,6 @@
             "text": "Who is your vendor for this apps? Your project manager? Stupid apps ever!",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "horrible interface. terrible experience. changing tv channel is a nightmare.",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44797
+        "rating": 4.44804
       },
       "android": {
         "rating": 3.6707866
@@ -283,7 +283,7 @@
         "rating": 2.78799
       },
       "android": {
-        "rating": 3.5494149
+        "rating": 3.5498862
       },
       "sentiment": {
         "score": 0.489,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75678
+        "rating": 4.75677
       },
       "android": {
-        "rating": 4.054945
+        "rating": 4.0434785
       },
       "sentiment": {
         "score": 0.572,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36449
+        "rating": 4.36494
       },
       "android": {
-        "rating": 4.6138096
+        "rating": 4.6124105
       },
       "sentiment": {
         "score": 0.581,
