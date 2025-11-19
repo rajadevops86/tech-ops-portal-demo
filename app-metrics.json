@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2025-11-18T03:06:58.260711+00:00",
+  "generated_utc": "2025-11-19T03:06:21.760184+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53087
+        "rating": 4.5309
       },
       "android": {
-        "rating": 4.4200416
+        "rating": 4.420357
       },
       "sentiment": {
         "score": 0.543,
@@ -65,7 +65,7 @@
           },
           {
             "label": "slow",
-            "trend": "worsening"
+            "trend": "steady"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53983
+        "rating": 4.53917
       },
       "android": {
-        "rating": 4.609577
+        "rating": 4.6074805
       },
       "sentiment": {
-        "score": 0.559,
+        "score": 0.556,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.7806
+        "rating": 1.77315
       },
       "android": {
-        "rating": 3.778626
+        "rating": 3.7761195
       },
       "sentiment": {
-        "score": 0.541,
+        "score": 0.53,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -162,17 +162,12 @@
             "platform": "Android"
           },
           {
-            "text": "great app. can watch anywhere",
+            "text": "Excellent app. Easy to navigate",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
-          {
-            "text": "Tolong la. Useless sangat. Nak buka channels langsung tak boleh. Chat dgn agent asyik terkeluar. Seminggu tak boleh buka",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
             "rating": 1,
@@ -182,6 +177,11 @@
             "text": "Who is your vendor for this apps? Your project manager? Stupid apps ever!",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "horrible interface. terrible experience. changing tv channel is a nightmare.",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44804
+        "rating": 4.44801
       },
       "android": {
-        "rating": 3.6707866
+        "rating": 3.6708004
       },
       "sentiment": {
         "score": 0.507,
@@ -283,7 +283,7 @@
         "rating": 2.78799
       },
       "android": {
-        "rating": 3.5498862
+        "rating": 3.5503573
       },
       "sentiment": {
         "score": 0.489,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75677
+        "rating": 4.75671
       },
       "android": {
-        "rating": 4.0434785
+        "rating": 4.048649
       },
       "sentiment": {
         "score": 0.572,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36494
+        "rating": 4.36509
       },
       "android": {
-        "rating": 4.6124105
+        "rating": 4.6112432
       },
       "sentiment": {
         "score": 0.581,
