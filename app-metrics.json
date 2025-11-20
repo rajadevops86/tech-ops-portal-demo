@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-19T03:06:21.760184+00:00",
+  "generated_utc": "2025-11-20T03:04:24.576303+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5309
+        "rating": 4.53092
       },
       "android": {
-        "rating": 4.420357
+        "rating": 4.420148
       },
       "sentiment": {
-        "score": 0.543,
+        "score": 0.536,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,8 +24,8 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent",
-            "rating": 5,
+            "text": "very good",
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53917
+        "rating": 4.53859
       },
       "android": {
-        "rating": 4.6074805
+        "rating": 4.6119533
       },
       "sentiment": {
-        "score": 0.556,
+        "score": 0.561,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,17 +100,17 @@
         ],
         "topNegative": [
           {
+            "text": "The software engineers of the app need to fix this bug. Wtf",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "I already paid. They already deducted ₱160 on my account (supposedly ₱149) BUT STILL NO SUBSCRIPTION!! VERY POOR APP!!",
             "rating": 5,
             "platform": "iOS"
           },
           {
             "text": "i cant reach out to any support team even though im paying a subscriptiions but i dont  bad support very disappointed re error i exceeded the limit of device although im just using one device",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "Useless!!! Di nag papalabas ng quality games!!! Trash!!!",
             "rating": 1,
             "platform": "iOS"
           }
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.77315
+        "rating": 1.7806
       },
       "android": {
-        "rating": 3.7761195
+        "rating": 3.8076923
       },
       "sentiment": {
-        "score": 0.53,
+        "score": 0.541,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,6 +169,11 @@
         ],
         "topNegative": [
           {
+            "text": "Tolong la. Useless sangat. Nak buka channels langsung tak boleh. Chat dgn agent asyik terkeluar. Seminggu tak boleh buka",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
             "rating": 1,
             "platform": "iOS"
@@ -177,11 +182,6 @@
             "text": "Who is your vendor for this apps? Your project manager? Stupid apps ever!",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "horrible interface. terrible experience. changing tv channel is a nightmare.",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44801
+        "rating": 4.44794
       },
       "android": {
         "rating": 3.6708004
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78799
+        "rating": 2.7886
       },
       "android": {
         "rating": 3.5503573
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75671
+        "rating": 4.75683
       },
       "android": {
-        "rating": 4.048649
+        "rating": 4.0434785
       },
       "sentiment": {
         "score": 0.572,
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36509
+        "rating": 4.36445
       },
       "android": {
-        "rating": 4.6112432
+        "rating": 4.6113496
       },
       "sentiment": {
-        "score": 0.581,
+        "score": 0.588,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -445,9 +445,9 @@
         ],
         "topNegative": [
           {
-            "text": "Keeps lagging. Premium subscription but bad service.",
+            "text": "2025 na wala pa rin landscape mode yung app nyo. ang awkward gamitin sa tablet.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
