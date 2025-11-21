@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-11-20T03:04:24.576303+00:00",
+  "generated_utc": "2025-11-21T03:05:07.106272+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53092
       },
       "android": {
-        "rating": 4.420148
+        "rating": 4.4202404
       },
       "sentiment": {
-        "score": 0.536,
+        "score": 0.546,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "worst ott platform 😭 30 mins 3 adds",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "worst app",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "worst app it is always stuck",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Really pathetic app movies are not showing up don't buy this, as before buying all the movies were showing in catalogue",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53859
+        "rating": 4.53894
       },
       "android": {
-        "rating": 4.6119533
+        "rating": 4.6132526
       },
       "sentiment": {
-        "score": 0.561,
+        "score": 0.559,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,12 +145,17 @@
         "rating": 1.7806
       },
       "android": {
-        "rating": 3.8076923
+        "rating": 3.7925925
       },
       "sentiment": {
-        "score": 0.541,
+        "score": 0.556,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "This apps is undoubtedly one of the best streaming app on the market.",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "Best TV streaming apps",
             "rating": 5,
@@ -160,11 +165,6 @@
             "text": "best lah",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Excellent app. Easy to navigate",
-            "rating": 5,
-            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -190,11 +190,11 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "worsening"
           },
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44794
+        "rating": 4.44791
       },
       "android": {
-        "rating": 3.6708004
+        "rating": 3.6753101
       },
       "sentiment": {
         "score": 0.507,
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7886
+        "rating": 2.78909
       },
       "android": {
         "rating": 3.5503573
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75683
+        "rating": 4.75687
       },
       "android": {
         "rating": 4.0434785
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36445
+        "rating": 4.36488
       },
       "android": {
-        "rating": 4.6113496
+        "rating": 4.610926
       },
       "sentiment": {
         "score": 0.588,
