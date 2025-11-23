@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-22T02:58:58.690086+00:00",
+  "generated_utc": "2025-11-23T03:20:59.958852+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53087
+        "rating": 4.53088
       },
       "android": {
-        "rating": 4.4203324
+        "rating": 4.4203095
       },
       "sentiment": {
-        "score": 0.542,
+        "score": 0.548,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "worst app and content",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "worst ott platform 😭 30 mins 3 adds",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53827
+        "rating": 4.5377
       },
       "android": {
-        "rating": 4.6161485
+        "rating": 4.616855
       },
       "sentiment": {
         "score": 0.559,
@@ -142,10 +142,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.7788
+        "rating": 1.7844
       },
       "android": {
-        "rating": 3.7575758
+        "rating": 3.711111
       },
       "sentiment": {
         "score": 0.553,
@@ -190,11 +190,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44794
+        "rating": 4.44768
       },
       "android": {
-        "rating": 3.676802
+        "rating": 3.6723163
       },
       "sentiment": {
         "score": 0.507,
@@ -280,13 +280,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78909
+        "rating": 2.78838
       },
       "android": {
         "rating": 3.5508282
       },
       "sentiment": {
-        "score": 0.489,
+        "score": 0.488,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36562
+        "rating": 4.36711
       },
       "android": {
-        "rating": 4.6097674
+        "rating": 4.608468
       },
       "sentiment": {
         "score": 0.588,
