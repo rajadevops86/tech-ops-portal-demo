@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-25T03:09:10.190849+00:00",
+  "generated_utc": "2025-11-26T03:09:03.721278+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53085
+        "rating": 4.53078
       },
       "android": {
-        "rating": 4.4204297
+        "rating": 4.4203167
       },
       "sentiment": {
-        "score": 0.576,
+        "score": 0.565,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,11 +31,6 @@
         ],
         "topNegative": [
           {
-            "text": "We are watching aha on LG TV.\n\nThe video pauses for every 3-5 minutes which is so annoying while watching any movie or show.",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
             "platform": "iOS"
@@ -44,6 +39,11 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "very boring content and disgusting app and adds",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -52,16 +52,16 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
             "trend": "worsening"
           },
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53719
+        "rating": 4.53679
       },
       "android": {
-        "rating": 4.6139293
+        "rating": 4.610781
       },
       "sentiment": {
-        "score": 0.558,
+        "score": 0.556,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -94,7 +94,7 @@
           },
           {
             "text": "Good",
-            "rating": 5,
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -125,15 +125,15 @@
             "trend": "worsening"
           },
           {
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
             "label": "login",
             "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -145,10 +145,10 @@
         "rating": 1.7844
       },
       "android": {
-        "rating": 3.6969697
+        "rating": 3.6934307
       },
       "sentiment": {
-        "score": 0.552,
+        "score": 0.551,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,7 +169,7 @@
         ],
         "topNegative": [
           {
-            "text": "Tolong la. Useless sangat. Nak buka channels langsung tak boleh. Chat dgn agent asyik terkeluar. Seminggu tak boleh buka",
+            "text": "Worse services too bad services",
             "rating": 1,
             "platform": "Android"
           },
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75674
+        "rating": 4.75662
       },
       "android": {
-        "rating": 4.0594597
+        "rating": 4.064516
       },
       "sentiment": {
         "score": 0.57,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36771
+        "rating": 4.36815
       },
       "android": {
-        "rating": 4.6095824
+        "rating": 4.61
       },
       "sentiment": {
         "score": 0.588,
