@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-26T03:09:03.721278+00:00",
+  "generated_utc": "2025-11-27T03:05:40.777985+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53078
+        "rating": 4.53081
       },
       "android": {
-        "rating": 4.4203167
+        "rating": 4.4200954
       },
       "sentiment": {
-        "score": 0.565,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53679
+        "rating": 4.53695
       },
       "android": {
-        "rating": 4.610781
+        "rating": 4.6102195
       },
       "sentiment": {
-        "score": 0.556,
+        "score": 0.557,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,12 +145,17 @@
         "rating": 1.7844
       },
       "android": {
-        "rating": 3.6934307
+        "rating": 3.692857
       },
       "sentiment": {
-        "score": 0.551,
+        "score": 0.552,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Best app to stream movies! Anywhere, anytime 😄",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "This apps is undoubtedly one of the best streaming app on the market.",
             "rating": 5,
@@ -158,11 +163,6 @@
           },
           {
             "text": "Best TV streaming apps",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "best lah",
             "rating": 5,
             "platform": "Android"
           }
@@ -190,11 +190,11 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "worsening"
           },
           {
@@ -214,7 +214,7 @@
         "rating": 4.44773
       },
       "android": {
-        "rating": 3.673815
+        "rating": 3.6775649
       },
       "sentiment": {
         "score": 0.507,
@@ -283,7 +283,7 @@
         "rating": 2.78778
       },
       "android": {
-        "rating": 3.5490708
+        "rating": 3.5495436
       },
       "sentiment": {
         "score": 0.488,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75662
+        "rating": 4.75664
       },
       "android": {
-        "rating": 4.064516
+        "rating": 4.0274725
       },
       "sentiment": {
         "score": 0.57,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.36815
+        "rating": 4.36781
       },
       "android": {
-        "rating": 4.61
+        "rating": 4.6090474
       },
       "sentiment": {
         "score": 0.588,
