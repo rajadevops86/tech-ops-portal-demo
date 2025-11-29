@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-11-28T03:05:43.268325+00:00",
+  "generated_utc": "2025-11-29T03:05:23.547691+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53081
+        "rating": 4.53083
       },
       "android": {
-        "rating": 4.4204063
+        "rating": 4.420197
       },
       "sentiment": {
-        "score": 0.543,
+        "score": 0.529,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -65,7 +65,7 @@
           },
           {
             "label": "slow",
-            "trend": "steady"
+            "trend": "worsening"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53683
+        "rating": 4.537
       },
       "android": {
-        "rating": 4.6100707
+        "rating": 4.613562
       },
       "sentiment": {
-        "score": 0.548,
+        "score": 0.544,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,15 +142,20 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.78539
+        "rating": 1.78719
       },
       "android": {
-        "rating": 3.675862
+        "rating": 3.6577182
       },
       "sentiment": {
-        "score": 0.555,
+        "score": 0.556,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Best app ever!!",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "Best app to stream movies! Anywhere, anytime 😄",
             "rating": 5,
@@ -158,11 +163,6 @@
           },
           {
             "text": "This apps is undoubtedly one of the best streaming app on the market.",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Best TV streaming apps",
             "rating": 5,
             "platform": "Android"
           }
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44773
+        "rating": 4.44761
       },
       "android": {
-        "rating": 3.6881356
+        "rating": 3.6870058
       },
       "sentiment": {
         "score": 0.507,
@@ -283,7 +283,7 @@
         "rating": 2.78778
       },
       "android": {
-        "rating": 3.5510604
+        "rating": 3.550734
       },
       "sentiment": {
         "score": 0.488,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75664
+        "rating": 4.75652
       },
       "android": {
-        "rating": 4.0439563
+        "rating": 4.0274725
       },
       "sentiment": {
         "score": 0.57,
@@ -421,7 +421,7 @@
         "rating": 4.36869
       },
       "android": {
-        "rating": 4.605801
+        "rating": 4.606176
       },
       "sentiment": {
         "score": 0.588,
