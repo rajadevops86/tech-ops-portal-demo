@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-03T03:11:23.882594+00:00",
+  "generated_utc": "2025-12-04T03:12:58.132962+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53076
+        "rating": 4.53077
       },
       "android": {
-        "rating": 4.4206505
+        "rating": 4.4207077
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.565,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,26 +24,26 @@
             "platform": "iOS"
           },
           {
-            "text": "Very nice i simply loved it",
+            "text": "great app",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "Worst and worst application i have ever seen",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "worst app of all time",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Worst OTT app I think we are paying to watch adds not movies 😂😂😂 I would recommend not to subscribe Aha movies play in between adds",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -64,8 +64,8 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
-            "trend": "worsening"
+            "label": "stream",
+            "trend": "steady"
           }
         ]
       }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53684
+        "rating": 4.53674
       },
       "android": {
-        "rating": 4.6180058
+        "rating": 4.619247
       },
       "sentiment": {
         "score": 0.558,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.79271
+        "rating": 1.79091
       },
       "android": {
-        "rating": 3.6962962
+        "rating": 3.7153285
       },
       "sentiment": {
-        "score": 0.561,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44766
+        "rating": 4.44735
       },
       "android": {
-        "rating": 3.6927438
+        "rating": 3.6867197
       },
       "sentiment": {
         "score": 0.507,
@@ -263,15 +263,15 @@
             "trend": "worsening"
           },
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
             "label": "login",
             "trend": "worsening"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78729
+        "rating": 2.78778
       },
       "android": {
         "rating": 3.5489557
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75673
+        "rating": 4.75676
       },
       "android": {
         "rating": 4.0274725
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37265
+        "rating": 4.37233
       },
       "android": {
-        "rating": 4.6041865
+        "rating": 4.6045628
       },
       "sentiment": {
         "score": 0.588,
