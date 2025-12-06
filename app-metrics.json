@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-05T03:12:58.068884+00:00",
+  "generated_utc": "2025-12-06T03:03:10.967088+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53078
       },
       "android": {
-        "rating": 4.420683
+        "rating": 4.42105
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.573,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "great app",
+            "text": "superb",
             "rating": 5,
             "platform": "Android"
           }
@@ -52,16 +52,16 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
             "label": "slow",
             "trend": "worsening"
           },
           {
             "label": "login",
             "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "steady"
           },
           {
             "label": "stream",
@@ -73,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53592
+        "rating": 4.5361
       },
       "android": {
-        "rating": 4.630213
+        "rating": 4.629945
       },
       "sentiment": {
-        "score": 0.556,
+        "score": 0.557,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "awesome",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "this thing is the best to watch NBA",
             "rating": 5,
@@ -90,11 +95,6 @@
           {
             "text": "very good",
             "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Good",
-            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -145,33 +145,33 @@
         "rating": 1.79138
       },
       "android": {
-        "rating": 3.6666667
+        "rating": 3.9214287
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.619,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Best app ever!!",
+            "text": "Best tv app!!",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Best app to stream movies! Anywhere, anytime 😄",
+            "text": "Best experience",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "This apps is undoubtedly one of the best streaming app on the market.",
+            "text": "Best connection in town",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worse services too bad services",
+            "text": "Whoever designed the ui is need to go back to school. Horrible user experience trying to navigate across channels",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75684
+        "rating": 4.75685
       },
       "android": {
         "rating": 4.0439563
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37283
+        "rating": 4.37317
       },
       "android": {
-        "rating": 4.6047506
+        "rating": 4.6043644
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.592,
         "scoreDelta": 0,
         "topPositive": [
           {
