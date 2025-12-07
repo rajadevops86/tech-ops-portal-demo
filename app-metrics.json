@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-06T03:03:10.967088+00:00",
+  "generated_utc": "2025-12-07T03:20:26.193452+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53078
+        "rating": 4.53077
       },
       "android": {
-        "rating": 4.42105
+        "rating": 4.420722
       },
       "sentiment": {
-        "score": 0.573,
+        "score": 0.586,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "Worst and worst application i have ever seen",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
           },
           {
-            "text": "worst app of all time",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Worst OTT app I think we are paying to watch adds not movies 😂😂😂 I would recommend not to subscribe Aha movies play in between adds",
+            "text": "offer subscribe doesn't happen worst software support",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,27 +73,27 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5361
+        "rating": 4.53554
       },
       "android": {
-        "rating": 4.629945
+        "rating": 4.6331086
       },
       "sentiment": {
-        "score": 0.557,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "excellent",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "excellent",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
             "text": "awesome",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "this thing is the best to watch NBA",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -142,27 +142,27 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.79138
+        "rating": 1.91285
       },
       "android": {
-        "rating": 3.9214287
+        "rating": 3.9
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.648,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "One if the best content provider in Malaysia ✨",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Best!",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
             "text": "Best tv app!!",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Best experience",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Best connection in town",
             "rating": 5,
             "platform": "Android"
           }
@@ -195,7 +195,7 @@
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44735
+        "rating": 4.44757
       },
       "android": {
-        "rating": 3.687075
+        "rating": 3.6909091
       },
       "sentiment": {
         "score": 0.507,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75685
+        "rating": 4.75664
       },
       "android": {
-        "rating": 4.0439563
+        "rating": 4.0604396
       },
       "sentiment": {
         "score": 0.57,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37317
+        "rating": 4.37329
       },
       "android": {
-        "rating": 4.6043644
+        "rating": 4.605674
       },
       "sentiment": {
         "score": 0.592,
