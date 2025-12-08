@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-07T03:20:26.193452+00:00",
+  "generated_utc": "2025-12-08T03:15:12.223014+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53077
       },
       "android": {
-        "rating": 4.420722
+        "rating": 4.420785
       },
       "sentiment": {
-        "score": 0.586,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -76,14 +76,14 @@
         "rating": 4.53554
       },
       "android": {
-        "rating": 4.6331086
+        "rating": 4.63353
       },
       "sentiment": {
-        "score": 0.566,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "excellent",
+            "text": "Awesome!",
             "rating": 5,
             "platform": "Android"
           },
@@ -93,7 +93,7 @@
             "platform": "Android"
           },
           {
-            "text": "awesome",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           }
@@ -145,17 +145,12 @@
         "rating": 1.91285
       },
       "android": {
-        "rating": 3.9
+        "rating": 3.9071429
       },
       "sentiment": {
-        "score": 0.648,
+        "score": 0.643,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "One if the best content provider in Malaysia ✨",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "Best!",
             "rating": 5,
@@ -163,6 +158,11 @@
           },
           {
             "text": "Best tv app!!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Best experience",
             "rating": 5,
             "platform": "Android"
           }
@@ -283,7 +283,7 @@
         "rating": 2.78778
       },
       "android": {
-        "rating": 3.5474167
+        "rating": 3.5470588
       },
       "sentiment": {
         "score": 0.49,
@@ -421,7 +421,7 @@
         "rating": 4.37329
       },
       "android": {
-        "rating": 4.605674
+        "rating": 4.6065497
       },
       "sentiment": {
         "score": 0.592,
