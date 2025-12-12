@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-11T03:18:20.773645+00:00",
+  "generated_utc": "2025-12-12T03:17:11.761721+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53081
       },
       "android": {
-        "rating": 4.42075
+        "rating": 4.4209685
       },
       "sentiment": {
-        "score": 0.542,
+        "score": 0.547,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "iOS"
           },
           {
-            "text": "very good 👍",
+            "text": "superb",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "worst app , premium pay chesi 2 days avutundi videos emi play avvadam ledu paniki malina app",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst app",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "offer subscribe doesn't happen worst software support",
             "rating": 1,
             "platform": "Android"
           }
@@ -52,7 +52,7 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "buffer",
             "trend": "worsening"
           },
           {
@@ -60,7 +60,7 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "slow",
             "trend": "steady"
           },
           {
@@ -73,22 +73,22 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53444
+        "rating": 4.53396
       },
       "android": {
-        "rating": 4.633716
+        "rating": 4.6290727
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Awesome!",
+            "text": "awesome",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "excellent",
+            "text": "Awesome!",
             "rating": 5,
             "platform": "Android"
           },
@@ -133,7 +133,7 @@
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44764
+        "rating": 4.44745
       },
       "android": {
-        "rating": 3.6893425
+        "rating": 3.6825938
       },
       "sentiment": {
         "score": 0.507,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7565
+        "rating": 4.75645
       },
       "android": {
         "rating": 4.043716
@@ -421,7 +421,7 @@
         "rating": 4.37145
       },
       "android": {
-        "rating": 4.606635
+        "rating": 4.604629
       },
       "sentiment": {
         "score": 0.592,
