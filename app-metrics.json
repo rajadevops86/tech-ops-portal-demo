@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-15T03:23:28.663027+00:00",
+  "generated_utc": "2025-12-16T03:17:36.528285+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53078
       },
       "android": {
-        "rating": 4.4211044
+        "rating": 4.4214115
       },
       "sentiment": {
-        "score": 0.544,
+        "score": 0.56,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,8 +24,8 @@
             "platform": "iOS"
           },
           {
-            "text": "superb",
-            "rating": 5,
+            "text": "superb quality",
+            "rating": 3,
             "platform": "Android"
           }
         ],
@@ -52,12 +52,12 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "buffer",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -76,7 +76,7 @@
         "rating": 4.53326
       },
       "android": {
-        "rating": 4.6372304
+        "rating": 4.6414475
       },
       "sentiment": {
         "score": 0.561,
@@ -145,10 +145,10 @@
         "rating": 1.89738
       },
       "android": {
-        "rating": 3.7887323
+        "rating": 3.7919464
       },
       "sentiment": {
-        "score": 0.63,
+        "score": 0.623,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -194,11 +194,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "slow",
             "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -214,7 +214,7 @@
         "rating": 4.44733
       },
       "android": {
-        "rating": 3.6810935
+        "rating": 3.6845102
       },
       "sentiment": {
         "score": 0.507,
@@ -283,10 +283,10 @@
         "rating": 2.78729
       },
       "android": {
-        "rating": 3.546169
+        "rating": 3.547003
       },
       "sentiment": {
-        "score": 0.49,
+        "score": 0.487,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -349,13 +349,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75643
+        "rating": 4.75634
       },
       "android": {
-        "rating": 4.054945
+        "rating": 4.048913
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.565,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -369,9 +369,9 @@
             "platform": "Android"
           },
           {
-            "text": "Excellent",
+            "text": "Great shows and love all the video music content!!!",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -421,7 +421,7 @@
         "rating": 4.37328
       },
       "android": {
-        "rating": 4.60689
+        "rating": 4.609065
       },
       "sentiment": {
         "score": 0.595,
