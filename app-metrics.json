@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-16T03:17:36.528285+00:00",
+  "generated_utc": "2025-12-17T03:14:14.098313+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53078
+        "rating": 4.53073
       },
       "android": {
-        "rating": 4.4214115
+        "rating": 4.4213405
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.554,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -36,12 +36,12 @@
             "platform": "iOS"
           },
           {
-            "text": "Worst App",
+            "text": "worst application subscribe chesthe dabbulu bokka asalu work avadhu repeated ga stuck ipothundhi",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app",
+            "text": "Worst App",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53326
+        "rating": 4.53343
       },
       "android": {
-        "rating": 4.6414475
+        "rating": 4.645393
       },
       "sentiment": {
         "score": 0.561,
@@ -125,15 +125,15 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "steady"
-          },
-          {
             "label": "slow",
             "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.89738
+        "rating": 1.90217
       },
       "android": {
-        "rating": 3.7919464
+        "rating": 3.7762237
       },
       "sentiment": {
-        "score": 0.623,
+        "score": 0.62,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -195,7 +195,7 @@
           },
           {
             "label": "slow",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
@@ -211,13 +211,13 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44733
+        "rating": 4.44712
       },
       "android": {
-        "rating": 3.6845102
+        "rating": 3.6799545
       },
       "sentiment": {
-        "score": 0.507,
+        "score": 0.508,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -283,10 +283,10 @@
         "rating": 2.78729
       },
       "android": {
-        "rating": 3.547003
+        "rating": 3.5447981
       },
       "sentiment": {
-        "score": 0.487,
+        "score": 0.488,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75634
+        "rating": 4.75631
       },
       "android": {
         "rating": 4.048913
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37328
+        "rating": 4.37411
       },
       "android": {
-        "rating": 4.609065
+        "rating": 4.6102176
       },
       "sentiment": {
-        "score": 0.595,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
