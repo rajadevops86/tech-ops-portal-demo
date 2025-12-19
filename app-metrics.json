@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-18T03:14:58.412256+00:00",
+  "generated_utc": "2025-12-19T03:17:04.721059+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53073
+        "rating": 4.53069
       },
       "android": {
-        "rating": 4.421774
+        "rating": 4.422157
       },
       "sentiment": {
-        "score": 0.566,
+        "score": 0.542,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,21 +24,21 @@
             "platform": "iOS"
           },
           {
-            "text": "superb quality",
-            "rating": 3,
+            "text": "very good",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst and worst application i have ever seen",
+            "text": "worst experience lot of ads",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "Worst app in Play Store in all time hanging app",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst application subscribe chesthe dabbulu bokka asalu work avadhu repeated ga stuck ipothundhi",
@@ -56,15 +56,15 @@
             "trend": "worsening"
           },
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
             "label": "buffer",
             "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53343
+        "rating": 4.53362
       },
       "android": {
-        "rating": 4.6579056
+        "rating": 4.6617827
       },
       "sentiment": {
-        "score": 0.561,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.90217
+        "rating": 1.90022
       },
       "android": {
-        "rating": 3.7054794
+        "rating": 3.7222223
       },
       "sentiment": {
-        "score": 0.609,
+        "score": 0.607,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44712
+        "rating": 4.44715
       },
       "android": {
         "rating": 3.692483
@@ -280,13 +280,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78729
+        "rating": 2.78741
       },
       "android": {
-        "rating": 3.5447981
+        "rating": 3.5439632
       },
       "sentiment": {
-        "score": 0.488,
+        "score": 0.486,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75631
+        "rating": 4.75626
       },
       "android": {
         "rating": 4.048913
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37411
+        "rating": 4.37626
       },
       "android": {
-        "rating": 4.608655
+        "rating": 4.6143665
       },
       "sentiment": {
-        "score": 0.599,
+        "score": 0.605,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -474,11 +474,11 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
+            "label": "slow",
             "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "crash",
             "trend": "steady"
           }
         ]
