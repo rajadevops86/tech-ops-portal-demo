@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-21T03:22:37.138644+00:00",
+  "generated_utc": "2025-12-22T03:25:23.155335+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53069
+        "rating": 4.53067
       },
       "android": {
-        "rating": 4.4224176
+        "rating": 4.4226804
       },
       "sentiment": {
-        "score": 0.553,
+        "score": 0.543,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "Worst and worst application i have ever seen",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
           },
           {
             "text": "worst experience lot of ads",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Worst app in Play Store in all time hanging app",
             "rating": 1,
             "platform": "Android"
           }
@@ -56,15 +56,15 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
             "label": "buffer",
             "trend": "steady"
           },
           {
             "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53362
+        "rating": 4.53437
       },
       "android": {
-        "rating": 4.668847
+        "rating": 4.6722245
       },
       "sentiment": {
         "score": 0.571,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.90022
+        "rating": 1.89827
       },
       "android": {
-        "rating": 3.6293707
+        "rating": 3.6319444
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.593,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44715
+        "rating": 4.44733
       },
       "android": {
-        "rating": 3.6894977
+        "rating": 3.686073
       },
       "sentiment": {
         "score": 0.508,
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78741
+        "rating": 2.7879
       },
       "android": {
         "rating": 3.5439632
@@ -349,13 +349,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75626
+        "rating": 4.7563
       },
       "android": {
-        "rating": 4.048913
+        "rating": 4.060109
       },
       "sentiment": {
-        "score": 0.565,
+        "score": 0.563,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -369,9 +369,9 @@
             "platform": "Android"
           },
           {
-            "text": "Great shows and love all the video music content!!!",
+            "text": "Great Apps 💯 ✝️ 🙏👍",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37626
+        "rating": 4.37754
       },
       "android": {
-        "rating": 4.6127357
+        "rating": 4.613101
       },
       "sentiment": {
         "score": 0.602,
