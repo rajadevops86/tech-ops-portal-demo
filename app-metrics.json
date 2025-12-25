@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-24T03:17:32.724091+00:00",
+  "generated_utc": "2025-12-25T03:20:11.384641+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53062
+        "rating": 4.53069
       },
       "android": {
-        "rating": 4.4229164
+        "rating": 4.422989
       },
       "sentiment": {
-        "score": 0.539,
+        "score": 0.538,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -60,11 +60,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "worsening"
+            "label": "buffer",
+            "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53446
+        "rating": 4.53454
       },
       "android": {
-        "rating": 4.6739306
+        "rating": 4.6724415
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.57,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.89633
+        "rating": 1.8944
       },
       "android": {
-        "rating": 3.6054423
+        "rating": 3.6013987
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.584,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +214,7 @@
         "rating": 4.44683
       },
       "android": {
-        "rating": 3.6883562
+        "rating": 3.6872146
       },
       "sentiment": {
         "score": 0.508,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75633
+        "rating": 4.75617
       },
       "android": {
-        "rating": 4.060109
+        "rating": 4.054945
       },
       "sentiment": {
         "score": 0.563,
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.3776
+        "rating": 4.37774
       },
       "android": {
-        "rating": 4.6113477
+        "rating": 4.612447
       },
       "sentiment": {
-        "score": 0.602,
+        "score": 0.597,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -445,8 +445,8 @@
         ],
         "topNegative": [
           {
-            "text": "2025 na wala pa rin landscape mode yung app nyo. ang awkward gamitin sa tablet.",
-            "rating": 1,
+            "text": "It's a bad update and it's too laggy when I picking a channel",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -474,11 +474,11 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "update",
             "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "slow",
             "trend": "steady"
           }
         ]
