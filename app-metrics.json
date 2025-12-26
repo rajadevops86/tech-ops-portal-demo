@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-25T03:20:11.384641+00:00",
+  "generated_utc": "2025-12-26T03:18:06.624131+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53069
+        "rating": 4.53074
       },
       "android": {
-        "rating": 4.422989
+        "rating": 4.423143
       },
       "sentiment": {
-        "score": 0.538,
+        "score": 0.537,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -52,16 +52,16 @@
             "trend": "worsening"
           },
           {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
             "label": "slow",
             "trend": "worsening"
           },
           {
             "label": "login",
             "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
           },
           {
             "label": "stream",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53454
+        "rating": 4.53501
       },
       "android": {
-        "rating": 4.6724415
+        "rating": 4.6728373
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.571,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,7 +145,7 @@
         "rating": 1.8944
       },
       "android": {
-        "rating": 3.6013987
+        "rating": 3.5931034
       },
       "sentiment": {
         "score": 0.584,
@@ -214,7 +214,7 @@
         "rating": 4.44683
       },
       "android": {
-        "rating": 3.6872146
+        "rating": 3.6857142
       },
       "sentiment": {
         "score": 0.508,
@@ -280,10 +280,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78719
+        "rating": 2.78659
       },
       "android": {
-        "rating": 3.5434854
+        "rating": 3.5396512
       },
       "sentiment": {
         "score": 0.486,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75617
+        "rating": 4.75621
       },
       "android": {
         "rating": 4.054945
@@ -421,7 +421,7 @@
         "rating": 4.37774
       },
       "android": {
-        "rating": 4.612447
+        "rating": 4.6121583
       },
       "sentiment": {
         "score": 0.597,
