@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-26T03:18:06.624131+00:00",
+  "generated_utc": "2025-12-27T03:16:59.714682+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53074
       },
       "android": {
-        "rating": 4.423143
+        "rating": 4.4231467
       },
       "sentiment": {
-        "score": 0.537,
+        "score": 0.549,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "worst app don't use it",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "Don't Buy paid membership worst customer support error code 400208",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "keep on loading the worst application",
             "rating": 1,
             "platform": "Android"
           }
@@ -56,12 +56,12 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "slow",
+            "trend": "steady"
           },
           {
             "label": "stream",
@@ -76,10 +76,10 @@
         "rating": 4.53501
       },
       "android": {
-        "rating": 4.6728373
+        "rating": 4.6724977
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 1.8944
       },
       "android": {
-        "rating": 3.5931034
+        "rating": 3.6666667
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.577,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,9 +169,9 @@
         ],
         "topNegative": [
           {
-            "text": "Whoever designed the ui is need to go back to school. Horrible user experience trying to navigate across channels",
+            "text": "hang..bukak app je terus hang takleh tekan pape. useless updrage",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Ap bodo aku kena ada 2 apps nak log in version 1 kena login pastu kena login version 2.. ridiculous!!!!",
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44683
+        "rating": 4.44679
       },
       "android": {
         "rating": 3.6857142
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75621
+        "rating": 4.75629
       },
       "android": {
-        "rating": 4.054945
+        "rating": 4.0382514
       },
       "sentiment": {
         "score": 0.563,
@@ -421,7 +421,7 @@
         "rating": 4.37774
       },
       "android": {
-        "rating": 4.6121583
+        "rating": 4.6110325
       },
       "sentiment": {
         "score": 0.597,
