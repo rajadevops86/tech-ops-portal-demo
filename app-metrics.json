@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2025-12-27T03:16:59.714682+00:00",
+  "generated_utc": "2025-12-28T03:40:27.892241+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53074
+        "rating": 4.5307
       },
       "android": {
-        "rating": 4.4231467
+        "rating": 4.4238443
       },
       "sentiment": {
-        "score": 0.549,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,24 +24,24 @@
             "platform": "iOS"
           },
           {
-            "text": "very good",
+            "text": "superb",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
+            "text": "Worst and worst application i have ever seen",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
           },
           {
-            "text": "worst app don't use it",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Don't Buy paid membership worst customer support error code 400208",
+            "text": "worst application",
             "rating": 1,
             "platform": "Android"
           }
@@ -56,11 +56,11 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "slow",
+            "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -73,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53501
+        "rating": 4.535
       },
       "android": {
-        "rating": 4.6724977
+        "rating": 4.673428
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.572,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "excellent",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "the best pinoy sports channel",
             "rating": 5,
@@ -89,11 +94,6 @@
           },
           {
             "text": "awesome",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Awesome!",
             "rating": 5,
             "platform": "Android"
           }
@@ -145,7 +145,7 @@
         "rating": 1.8944
       },
       "android": {
-        "rating": 3.6666667
+        "rating": 3.6689656
       },
       "sentiment": {
         "score": 0.577,
@@ -283,7 +283,7 @@
         "rating": 2.78659
       },
       "android": {
-        "rating": 3.5396512
+        "rating": 3.538715
       },
       "sentiment": {
         "score": 0.486,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75629
+        "rating": 4.75617
       },
       "android": {
         "rating": 4.0382514
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37774
+        "rating": 4.37826
       },
       "android": {
-        "rating": 4.6110325
+        "rating": 4.6108236
       },
       "sentiment": {
         "score": 0.597,
