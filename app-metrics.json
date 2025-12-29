@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-28T03:40:27.892241+00:00",
+  "generated_utc": "2025-12-29T03:41:33.963682+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.5307
       },
       "android": {
-        "rating": 4.4238443
+        "rating": 4.4237795
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.577,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -56,11 +56,11 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "slow",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.535
+        "rating": 4.53517
       },
       "android": {
-        "rating": 4.673428
+        "rating": 4.6691175
       },
       "sentiment": {
-        "score": 0.572,
+        "score": 0.57,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 1.8944
       },
       "android": {
-        "rating": 3.6689656
+        "rating": 3.6413794
       },
       "sentiment": {
-        "score": 0.577,
+        "score": 0.571,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,12 +157,12 @@
             "platform": "iOS"
           },
           {
-            "text": "Best tv app!!",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "great app to watch tv",
             "rating": 5,
             "platform": "Android"
           }
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44679
+        "rating": 4.44683
       },
       "android": {
         "rating": 3.6857142
@@ -283,7 +283,7 @@
         "rating": 2.78659
       },
       "android": {
-        "rating": 3.538715
+        "rating": 3.5382333
       },
       "sentiment": {
         "score": 0.486,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75617
+        "rating": 4.75619
       },
       "android": {
         "rating": 4.0382514
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37826
+        "rating": 4.37898
       },
       "android": {
-        "rating": 4.6108236
+        "rating": 4.610719
       },
       "sentiment": {
         "score": 0.597,
