@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-29T03:41:33.963682+00:00",
+  "generated_utc": "2025-12-30T03:21:07.515123+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,7 +7,7 @@
         "rating": 4.5307
       },
       "android": {
-        "rating": 4.4237795
+        "rating": 4.4244456
       },
       "sentiment": {
         "score": 0.577,
@@ -52,11 +52,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "buffer",
             "trend": "worsening"
           },
           {
@@ -76,7 +76,7 @@
         "rating": 4.53517
       },
       "android": {
-        "rating": 4.6691175
+        "rating": 4.670712
       },
       "sentiment": {
         "score": 0.57,
@@ -145,10 +145,10 @@
         "rating": 1.8944
       },
       "android": {
-        "rating": 3.6413794
+        "rating": 3.6597223
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.573,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +214,7 @@
         "rating": 4.44683
       },
       "android": {
-        "rating": 3.6857142
+        "rating": 3.6872852
       },
       "sentiment": {
         "score": 0.508,
@@ -283,7 +283,7 @@
         "rating": 2.78659
       },
       "android": {
-        "rating": 3.5382333
+        "rating": 3.5366337
       },
       "sentiment": {
         "score": 0.486,
@@ -352,7 +352,7 @@
         "rating": 4.75619
       },
       "android": {
-        "rating": 4.0382514
+        "rating": 4.0434785
       },
       "sentiment": {
         "score": 0.563,
@@ -421,10 +421,10 @@
         "rating": 4.37898
       },
       "android": {
-        "rating": 4.610719
+        "rating": 4.613604
       },
       "sentiment": {
-        "score": 0.597,
+        "score": 0.588,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -445,9 +445,9 @@
         ],
         "topNegative": [
           {
-            "text": "It's a bad update and it's too laggy when I picking a channel",
-            "rating": 5,
-            "platform": "Android"
+            "text": "This is a terrible app that does not work! All it say is error.",
+            "rating": 1,
+            "platform": "iOS"
           },
           {
             "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
