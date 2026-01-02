@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-01-01T03:43:13.321010+00:00",
+  "generated_utc": "2026-01-02T03:23:32.293032+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53059
       },
       "android": {
-        "rating": 4.4240584
+        "rating": 4.423837
       },
       "sentiment": {
-        "score": 0.575,
+        "score": 0.598,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -56,12 +56,12 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "slow",
             "trend": "worsening"
           },
           {
-            "label": "slow",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
             "label": "stream",
@@ -76,7 +76,7 @@
         "rating": 4.53559
       },
       "android": {
-        "rating": 4.6722894
+        "rating": 4.671971
       },
       "sentiment": {
         "score": 0.57,
@@ -145,10 +145,10 @@
         "rating": 1.8944
       },
       "android": {
-        "rating": 3.6780822
+        "rating": 3.7172413
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.571,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,12 +157,12 @@
             "platform": "iOS"
           },
           {
-            "text": "very good",
+            "text": "We want more Fattmira!!!! Moga banyak lagi shows n cerita2 best masuk sini. Come on, Yunni!",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "great app to watch tv",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -214,7 +214,7 @@
         "rating": 4.44679
       },
       "android": {
-        "rating": 3.6872852
+        "rating": 3.690367
       },
       "sentiment": {
         "score": 0.508,
@@ -421,10 +421,10 @@
         "rating": 4.38048
       },
       "android": {
-        "rating": 4.612842
+        "rating": 4.611321
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.583,
         "scoreDelta": 0,
         "topPositive": [
           {
