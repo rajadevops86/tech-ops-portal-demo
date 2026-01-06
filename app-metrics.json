@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-05T03:47:47.391617+00:00",
+  "generated_utc": "2026-01-06T03:22:36.502479+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5305
+        "rating": 4.53052
       },
       "android": {
-        "rating": 4.423892
+        "rating": 4.4237
       },
       "sentiment": {
-        "score": 0.572,
+        "score": 0.545,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,21 +24,21 @@
             "platform": "iOS"
           },
           {
-            "text": "perfect",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst and worst application i have ever seen",
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
           },
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "worst experience ever",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "very worst experience, I subscribe 3 month pack no video playing in the app. customer support didn't satisfy. I have feel very worst again this app",
@@ -52,15 +52,15 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
             "label": "slow",
             "trend": "worsening"
           },
           {
             "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -76,7 +76,7 @@
         "rating": 4.53568
       },
       "android": {
-        "rating": 4.6697693
+        "rating": 4.6711893
       },
       "sentiment": {
         "score": 0.569,
@@ -145,10 +145,10 @@
         "rating": 1.88197
       },
       "android": {
-        "rating": 3.687075
+        "rating": 3.704698
       },
       "sentiment": {
-        "score": 0.565,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44672
+        "rating": 4.44676
       },
       "android": {
-        "rating": 3.6949542
+        "rating": 3.696449
       },
       "sentiment": {
         "score": 0.508,
@@ -283,7 +283,7 @@
         "rating": 2.7878
       },
       "android": {
-        "rating": 3.535844
+        "rating": 3.5363276
       },
       "sentiment": {
         "score": 0.486,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75664
+        "rating": 4.75671
       },
       "android": {
         "rating": 4.0491805
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.37984
+        "rating": 4.38119
       },
       "android": {
-        "rating": 4.6119475
+        "rating": 4.6146617
       },
       "sentiment": {
         "score": 0.583,
