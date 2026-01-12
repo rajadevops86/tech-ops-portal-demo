@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-01-11T03:43:07.677154+00:00",
+  "generated_utc": "2026-01-12T03:41:47.959157+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53035
       },
       "android": {
-        "rating": 4.4243045
+        "rating": 4.4244165
       },
       "sentiment": {
-        "score": 0.563,
+        "score": 0.571,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,6 +31,11 @@
         ],
         "topNegative": [
           {
+            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
             "platform": "iOS"
@@ -39,11 +44,6 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "worst fellow",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -76,7 +76,7 @@
         "rating": 4.53626
       },
       "android": {
-        "rating": 4.672211
+        "rating": 4.672588
       },
       "sentiment": {
         "score": 0.58,
@@ -145,7 +145,7 @@
         "rating": 1.87846
       },
       "android": {
-        "rating": 3.6351352
+        "rating": 3.6442952
       },
       "sentiment": {
         "score": 0.563,
@@ -283,7 +283,7 @@
         "rating": 2.78927
       },
       "android": {
-        "rating": 3.5327814
+        "rating": 3.5339742
       },
       "sentiment": {
         "score": 0.489,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75678
+        "rating": 4.75675
       },
       "android": {
         "rating": 4.076087
@@ -421,7 +421,7 @@
         "rating": 4.38372
       },
       "android": {
-        "rating": 4.616
+        "rating": 4.6169014
       },
       "sentiment": {
         "score": 0.586,
