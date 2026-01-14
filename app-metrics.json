@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-01-13T03:21:28.808925+00:00",
+  "generated_utc": "2026-01-14T03:29:56.745234+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53038
       },
       "android": {
-        "rating": 4.4243236
+        "rating": 4.4244
       },
       "sentiment": {
-        "score": 0.575,
+        "score": 0.558,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,26 +24,26 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent app",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "Worst and worst application i have ever seen",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "they are doing froud payment worst app don't download don't subscribe",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst app.this app not working proper.every time buffer screen, error occurred.",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -53,7 +53,7 @@
           },
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -76,7 +76,7 @@
         "rating": 4.53606
       },
       "android": {
-        "rating": 4.6741395
+        "rating": 4.6730537
       },
       "sentiment": {
         "score": 0.586,
@@ -214,7 +214,7 @@
         "rating": 4.44717
       },
       "android": {
-        "rating": 3.6991963
+        "rating": 3.7021763
       },
       "sentiment": {
         "score": 0.509,
@@ -283,10 +283,10 @@
         "rating": 2.78927
       },
       "android": {
-        "rating": 3.534151
+        "rating": 3.5368037
       },
       "sentiment": {
-        "score": 0.489,
+        "score": 0.494,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -300,7 +300,7 @@
             "platform": "Android"
           },
           {
-            "text": "Great 👍",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -352,7 +352,7 @@
         "rating": 4.75671
       },
       "android": {
-        "rating": 4.076087
+        "rating": 4.0710382
       },
       "sentiment": {
         "score": 0.564,
@@ -421,7 +421,7 @@
         "rating": 4.38441
       },
       "android": {
-        "rating": 4.6163225
+        "rating": 4.6167216
       },
       "sentiment": {
         "score": 0.586,
