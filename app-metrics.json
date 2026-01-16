@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-01-15T03:23:49.665617+00:00",
+  "generated_utc": "2026-01-16T03:23:08.937703+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53034
       },
       "android": {
-        "rating": 4.424806
+        "rating": 4.424715
       },
       "sentiment": {
-        "score": 0.549,
+        "score": 0.544,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -56,15 +56,15 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "slow",
             "trend": "steady"
           },
           {
             "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -76,10 +76,10 @@
         "rating": 4.53622
       },
       "android": {
-        "rating": 4.6723456
+        "rating": 4.6692033
       },
       "sentiment": {
-        "score": 0.586,
+        "score": 0.589,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,7 +145,7 @@
         "rating": 1.86994
       },
       "android": {
-        "rating": 3.641892
+        "rating": 3.6510067
       },
       "sentiment": {
         "score": 0.566,
@@ -214,7 +214,7 @@
         "rating": 4.44715
       },
       "android": {
-        "rating": 3.7037888
+        "rating": 3.7041285
       },
       "sentiment": {
         "score": 0.509,
@@ -352,7 +352,7 @@
         "rating": 4.7567
       },
       "android": {
-        "rating": 4.076087
+        "rating": 4.0710382
       },
       "sentiment": {
         "score": 0.564,
@@ -421,7 +421,7 @@
         "rating": 4.38468
       },
       "android": {
-        "rating": 4.6169715
+        "rating": 4.6163936
       },
       "sentiment": {
         "score": 0.586,
