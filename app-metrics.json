@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-19T03:42:44.720628+00:00",
+  "generated_utc": "2026-01-20T03:26:56.931980+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53024
+        "rating": 4.53026
       },
       "android": {
-        "rating": 4.4250665
+        "rating": 4.4254246
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.535,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "iOS"
           },
           {
-            "text": "best entertinment",
+            "text": "Good excellent app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
@@ -39,11 +44,6 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "worst app...don't use this...app",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -53,11 +53,11 @@
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "buffer",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -76,10 +76,10 @@
         "rating": 4.53535
       },
       "android": {
-        "rating": 4.669743
+        "rating": 4.6689515
       },
       "sentiment": {
-        "score": 0.589,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,10 +142,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.86994
+        "rating": 1.8766
       },
       "android": {
-        "rating": 3.687075
+        "rating": 3.7414966
       },
       "sentiment": {
         "score": 0.566,
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44686
+        "rating": 4.4469
       },
       "android": {
-        "rating": 3.70771
+        "rating": 3.7073734
       },
       "sentiment": {
         "score": 0.509,
@@ -283,7 +283,7 @@
         "rating": 2.78818
       },
       "android": {
-        "rating": 3.5374918
+        "rating": 3.5360584
       },
       "sentiment": {
         "score": 0.496,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75674
+        "rating": 4.75678
       },
       "android": {
         "rating": 4.076087
@@ -418,15 +418,20 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38624
+        "rating": 4.38651
       },
       "android": {
-        "rating": 4.6175785
+        "rating": 4.6170707
       },
       "sentiment": {
-        "score": 0.585,
+        "score": 0.59,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "best app for me",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "The best entertainment and sports app in one app,,, the greatest 😍",
             "rating": 5,
@@ -434,11 +439,6 @@
           },
           {
             "text": "excellent 👌👍",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "It's A Very Good TV Experience",
             "rating": 5,
             "platform": "Android"
           }
