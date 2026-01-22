@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-21T03:26:25.247804+00:00",
+  "generated_utc": "2026-01-22T03:30:06.319544+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53026
+        "rating": 4.53024
       },
       "android": {
-        "rating": 4.425407
+        "rating": 4.4255395
       },
       "sentiment": {
-        "score": 0.536,
+        "score": 0.569,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "it is very good",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -52,15 +52,15 @@
             "trend": "worsening"
           },
           {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
             "trend": "steady"
           },
           {
             "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53535
+        "rating": 4.53544
       },
       "android": {
-        "rating": 4.669607
+        "rating": 4.669996
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.594,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,7 +145,7 @@
         "rating": 1.86994
       },
       "android": {
-        "rating": 3.7785234
+        "rating": 3.7972972
       },
       "sentiment": {
         "score": 0.569,
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44693
+        "rating": 4.44686
       },
       "android": {
-        "rating": 3.7073734
+        "rating": 3.7119815
       },
       "sentiment": {
         "score": 0.509,
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78851
+        "rating": 2.7896
       },
       "android": {
         "rating": 3.5360584
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75678
+        "rating": 4.75659
       },
       "android": {
-        "rating": 4.0756755
+        "rating": 4.0491805
       },
       "sentiment": {
         "score": 0.564,
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38665
+        "rating": 4.38747
       },
       "android": {
-        "rating": 4.6161427
+        "rating": 4.6161757
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.589,
         "scoreDelta": 0,
         "topPositive": [
           {
