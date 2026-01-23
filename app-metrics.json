@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-22T03:30:06.319544+00:00",
+  "generated_utc": "2026-01-23T03:25:59.843997+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53024
+        "rating": 4.53021
       },
       "android": {
-        "rating": 4.4255395
+        "rating": 4.4257164
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53544
+        "rating": 4.53559
       },
       "android": {
-        "rating": 4.669996
+        "rating": 4.667725
       },
       "sentiment": {
         "score": 0.594,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.86994
+        "rating": 1.87049
       },
       "android": {
-        "rating": 3.7972972
+        "rating": 3.7483444
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7896
+        "rating": 2.79032
       },
       "android": {
         "rating": 3.5360584
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75659
+        "rating": 4.75663
       },
       "android": {
         "rating": 4.0491805
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38747
+        "rating": 4.38788
       },
       "android": {
-        "rating": 4.6161757
+        "rating": 4.6183777
       },
       "sentiment": {
-        "score": 0.589,
+        "score": 0.588,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -475,10 +475,6 @@
           },
           {
             "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           }
         ]
