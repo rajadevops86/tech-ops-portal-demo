@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-23T03:25:59.843997+00:00",
+  "generated_utc": "2026-01-24T03:20:07.093018+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53021
+        "rating": 4.53023
       },
       "android": {
-        "rating": 4.4257164
+        "rating": 4.42573
       },
       "sentiment": {
-        "score": 0.566,
+        "score": 0.557,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,11 +31,6 @@
         ],
         "topNegative": [
           {
-            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
             "platform": "iOS"
@@ -44,6 +39,11 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "This is the worst app.",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -76,7 +76,7 @@
         "rating": 4.53559
       },
       "android": {
-        "rating": 4.667725
+        "rating": 4.66693
       },
       "sentiment": {
         "score": 0.594,
@@ -145,7 +145,7 @@
         "rating": 1.87049
       },
       "android": {
-        "rating": 3.7483444
+        "rating": 3.7302632
       },
       "sentiment": {
         "score": 0.568,
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44686
+        "rating": 4.44677
       },
       "android": {
         "rating": 3.7119815
@@ -283,7 +283,7 @@
         "rating": 2.79032
       },
       "android": {
-        "rating": 3.5360584
+        "rating": 3.5355482
       },
       "sentiment": {
         "score": 0.496,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75663
+        "rating": 4.75664
       },
       "android": {
         "rating": 4.0491805
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38788
+        "rating": 4.38816
       },
       "android": {
-        "rating": 4.6183777
+        "rating": 4.6189137
       },
       "sentiment": {
         "score": 0.588,
