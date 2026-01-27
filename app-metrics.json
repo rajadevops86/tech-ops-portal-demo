@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-26T03:49:31.319118+00:00",
+  "generated_utc": "2026-01-27T03:40:34.620636+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53017
+        "rating": 4.53019
       },
       "android": {
-        "rating": 4.4256063
+        "rating": 4.4257674
       },
       "sentiment": {
-        "score": 0.546,
+        "score": 0.526,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -41,8 +41,8 @@
             "platform": "iOS"
           },
           {
-            "text": "This is the worst app.",
-            "rating": 1,
+            "text": "worst UI",
+            "rating": 2,
             "platform": "Android"
           }
         ],
@@ -56,15 +56,15 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53559
+        "rating": 4.5354
       },
       "android": {
-        "rating": 4.66733
+        "rating": 4.665465
       },
       "sentiment": {
-        "score": 0.593,
+        "score": 0.592,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,7 +145,7 @@
         "rating": 1.87049
       },
       "android": {
-        "rating": 3.7115386
+        "rating": 3.7371795
       },
       "sentiment": {
         "score": 0.567,
@@ -283,7 +283,7 @@
         "rating": 2.79032
       },
       "android": {
-        "rating": 3.535155
+        "rating": 3.5342238
       },
       "sentiment": {
         "score": 0.496,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7566
+        "rating": 4.75671
       },
       "android": {
         "rating": 4.0491805
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38828
+        "rating": 4.38934
       },
       "android": {
-        "rating": 4.6149907
+        "rating": 4.6142063
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.587,
         "scoreDelta": 0,
         "topPositive": [
           {
