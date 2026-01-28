@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-27T03:40:34.620636+00:00",
+  "generated_utc": "2026-01-28T03:28:23.886604+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53019
+        "rating": 4.53017
       },
       "android": {
-        "rating": 4.4257674
+        "rating": 4.4260755
       },
       "sentiment": {
-        "score": 0.526,
+        "score": 0.517,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "superb",
+            "text": "superb app",
             "rating": 5,
             "platform": "Android"
           }
@@ -76,12 +76,17 @@
         "rating": 4.5354
       },
       "android": {
-        "rating": 4.665465
+        "rating": 4.66866
       },
       "sentiment": {
-        "score": 0.592,
+        "score": 0.599,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "superb",
+            "rating": 4,
+            "platform": "Android"
+          },
           {
             "text": "excellent",
             "rating": 5,
@@ -89,11 +94,6 @@
           },
           {
             "text": "the best pinoy sports channel",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "awesome",
             "rating": 5,
             "platform": "Android"
           }
@@ -145,10 +145,10 @@
         "rating": 1.87049
       },
       "android": {
-        "rating": 3.7371795
+        "rating": 3.7763975
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +214,7 @@
         "rating": 4.44679
       },
       "android": {
-        "rating": 3.7070358
+        "rating": 3.713956
       },
       "sentiment": {
         "score": 0.509,
@@ -283,7 +283,7 @@
         "rating": 2.79032
       },
       "android": {
-        "rating": 3.5342238
+        "rating": 3.5350702
       },
       "sentiment": {
         "score": 0.496,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75671
+        "rating": 4.75678
       },
       "android": {
         "rating": 4.0491805
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38934
+        "rating": 4.38947
       },
       "android": {
-        "rating": 4.6142063
+        "rating": 4.613583
       },
       "sentiment": {
         "score": 0.587,
