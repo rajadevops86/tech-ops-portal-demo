@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-01-29T04:00:44.616070+00:00",
+  "generated_utc": "2026-01-30T04:01:06.214365+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53017
+        "rating": 4.53019
       },
       "android": {
-        "rating": 4.426293
+        "rating": 4.4265165
       },
       "sentiment": {
-        "score": 0.51,
+        "score": 0.524,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "iOS"
           },
           {
-            "text": "superb app",
+            "text": "superb",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Worst and worst application i have ever seen",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
@@ -38,11 +43,6 @@
           {
             "text": "worst experience",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst UI",
-            "rating": 2,
             "platform": "Android"
           }
         ],
@@ -56,15 +56,15 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
             "trend": "worsening"
           },
           {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5354
+        "rating": 4.5365
       },
       "android": {
-        "rating": 4.6682634
+        "rating": 4.6768804
       },
       "sentiment": {
-        "score": 0.599,
+        "score": 0.602,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.87049
+        "rating": 1.86864
       },
       "android": {
-        "rating": 3.7964072
+        "rating": 3.7941177
       },
       "sentiment": {
-        "score": 0.572,
+        "score": 0.575,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,12 +157,12 @@
             "platform": "iOS"
           },
           {
-            "text": "We want more Fattmira!!!! Moga banyak lagi shows n cerita2 best masuk sini. Come on, Yunni!",
+            "text": "unifi the best service",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "We want more Fattmira!!!! Moga banyak lagi shows n cerita2 best masuk sini. Come on, Yunni!",
             "rating": 5,
             "platform": "Android"
           }
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44679
+        "rating": 4.44684
       },
       "android": {
-        "rating": 3.7174163
+        "rating": 3.717742
       },
       "sentiment": {
         "score": 0.509,
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79032
+        "rating": 2.78989
       },
       "android": {
         "rating": 3.534938
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75678
+        "rating": 4.75655
       },
       "android": {
         "rating": 4.0491805
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.38947
+        "rating": 4.38994
       },
       "android": {
-        "rating": 4.614199
+        "rating": 4.6131897
       },
       "sentiment": {
-        "score": 0.587,
+        "score": 0.588,
         "scoreDelta": 0,
         "topPositive": [
           {
