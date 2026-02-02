@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-02-01T04:22:08.422111+00:00",
+  "generated_utc": "2026-02-02T04:14:41.482287+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,7 +7,7 @@
         "rating": 4.53015
       },
       "android": {
-        "rating": 4.42646
+        "rating": 4.426694
       },
       "sentiment": {
         "score": 0.532,
@@ -31,6 +31,11 @@
         ],
         "topNegative": [
           {
+            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
             "platform": "iOS"
@@ -39,11 +44,6 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "worst experience",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -56,12 +56,12 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           },
           {
             "label": "login",
@@ -76,12 +76,17 @@
         "rating": 4.53683
       },
       "android": {
-        "rating": 4.683835
+        "rating": 4.690599
       },
       "sentiment": {
-        "score": 0.608,
+        "score": 0.609,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "perfect",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "superb",
             "rating": 4,
@@ -89,11 +94,6 @@
           },
           {
             "text": "excellent",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "the best pinoy sports channel",
             "rating": 5,
             "platform": "Android"
           }
@@ -145,10 +145,10 @@
         "rating": 1.88186
       },
       "android": {
-        "rating": 3.7714286
+        "rating": 3.7912087
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.574,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -352,7 +352,7 @@
         "rating": 4.75643
       },
       "android": {
-        "rating": 4.0326085
+        "rating": 4.0216217
       },
       "sentiment": {
         "score": 0.564,
@@ -421,7 +421,7 @@
         "rating": 4.39102
       },
       "android": {
-        "rating": 4.610904
+        "rating": 4.608736
       },
       "sentiment": {
         "score": 0.591,
