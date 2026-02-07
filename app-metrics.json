@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-02-06T04:06:42.455164+00:00",
+  "generated_utc": "2026-02-07T04:00:36.307205+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53008
       },
       "android": {
-        "rating": 4.4269905
+        "rating": 4.427025
       },
       "sentiment": {
-        "score": 0.545,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "superb",
+            "text": "wonderful",
             "rating": 5,
             "platform": "Android"
           }
@@ -52,11 +52,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "slow",
             "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "buffer",
             "trend": "worsening"
           },
           {
@@ -76,10 +76,10 @@
         "rating": 4.53441
       },
       "android": {
-        "rating": 4.6975455
+        "rating": 4.699803
       },
       "sentiment": {
-        "score": 0.608,
+        "score": 0.607,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +214,7 @@
         "rating": 4.44689
       },
       "android": {
-        "rating": 3.7205544
+        "rating": 3.7236993
       },
       "sentiment": {
         "score": 0.509,
@@ -283,7 +283,7 @@
         "rating": 2.79169
       },
       "android": {
-        "rating": 3.5372734
+        "rating": 3.5377643
       },
       "sentiment": {
         "score": 0.498,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75638
+        "rating": 4.75647
       },
       "android": {
         "rating": 4.0216217
@@ -421,7 +421,7 @@
         "rating": 4.39193
       },
       "android": {
-        "rating": 4.6126337
+        "rating": 4.6119404
       },
       "sentiment": {
         "score": 0.591,
