@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-08T04:26:52.646703+00:00",
+  "generated_utc": "2026-02-09T04:17:36.219513+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53008
+        "rating": 4.53003
       },
       "android": {
-        "rating": 4.427017
+        "rating": 4.426848
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -56,11 +56,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
+            "label": "stream",
+            "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53441
+        "rating": 4.53388
       },
       "android": {
-        "rating": 4.700982
+        "rating": 4.7026606
       },
       "sentiment": {
         "score": 0.607,
@@ -148,7 +148,7 @@
         "rating": 3.506579
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.57,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44689
+        "rating": 4.44674
       },
       "android": {
         "rating": 3.7236993
@@ -283,7 +283,7 @@
         "rating": 2.79169
       },
       "android": {
-        "rating": 3.5376852
+        "rating": 3.536906
       },
       "sentiment": {
         "score": 0.498,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75647
+        "rating": 4.75638
       },
       "android": {
         "rating": 4.0216217
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39193
+        "rating": 4.39255
       },
       "android": {
-        "rating": 4.608716
+        "rating": 4.6082716
       },
       "sentiment": {
-        "score": 0.587,
+        "score": 0.588,
         "scoreDelta": 0,
         "topPositive": [
           {
