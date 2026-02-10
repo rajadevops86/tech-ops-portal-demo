@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-02-09T04:17:36.219513+00:00",
+  "generated_utc": "2026-02-10T04:25:07.541323+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.53003
       },
       "android": {
-        "rating": 4.426848
+        "rating": 4.4268236
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.577,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "wonderful",
+            "text": "Excellent",
             "rating": 5,
             "platform": "Android"
           }
@@ -60,11 +60,11 @@
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "login",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -76,7 +76,7 @@
         "rating": 4.53388
       },
       "android": {
-        "rating": 4.7026606
+        "rating": 4.7019267
       },
       "sentiment": {
         "score": 0.607,
@@ -421,10 +421,10 @@
         "rating": 4.39255
       },
       "android": {
-        "rating": 4.6082716
+        "rating": 4.609722
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.589,
         "scoreDelta": 0,
         "topPositive": [
           {
