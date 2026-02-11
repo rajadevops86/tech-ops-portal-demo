@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-10T04:25:07.541323+00:00",
+  "generated_utc": "2026-02-11T04:23:01.695782+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53003
+        "rating": 4.53005
       },
       "android": {
-        "rating": 4.4268236
+        "rating": 4.426525
       },
       "sentiment": {
-        "score": 0.577,
+        "score": 0.569,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,17 +24,12 @@
             "platform": "iOS"
           },
           {
-            "text": "Excellent",
+            "text": "best entertainment watching this app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
@@ -44,6 +39,11 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "worst",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -56,11 +56,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53388
+        "rating": 4.53413
       },
       "android": {
-        "rating": 4.7019267
+        "rating": 4.7021527
       },
       "sentiment": {
-        "score": 0.607,
+        "score": 0.603,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 1.88842
       },
       "android": {
-        "rating": 3.506579
+        "rating": 3.5197368
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.571,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44674
+        "rating": 4.44671
       },
       "android": {
-        "rating": 3.7236993
+        "rating": 3.7210648
       },
       "sentiment": {
         "score": 0.509,
@@ -283,7 +283,7 @@
         "rating": 2.79169
       },
       "android": {
-        "rating": 3.536906
+        "rating": 3.5355818
       },
       "sentiment": {
         "score": 0.498,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75638
+        "rating": 4.75643
       },
       "android": {
-        "rating": 4.0216217
+        "rating": 4.0163045
       },
       "sentiment": {
         "score": 0.567,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39255
+        "rating": 4.39235
       },
       "android": {
-        "rating": 4.609722
+        "rating": 4.6149907
       },
       "sentiment": {
         "score": 0.589,
