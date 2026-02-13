@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-12T04:14:54.954831+00:00",
+  "generated_utc": "2026-02-13T04:11:46.548489+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.53005
+        "rating": 4.52998
       },
       "android": {
-        "rating": 4.426402
+        "rating": 4.4262347
       },
       "sentiment": {
-        "score": 0.553,
+        "score": 0.55,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "best entertainment watching this app",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           }
@@ -52,6 +52,10 @@
             "trend": "worsening"
           },
           {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
             "label": "slow",
             "trend": "worsening"
           },
@@ -62,10 +66,6 @@
           {
             "label": "login",
             "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
           }
         ]
       }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53413
+        "rating": 4.53383
       },
       "android": {
-        "rating": 4.701953
+        "rating": 4.701324
       },
       "sentiment": {
         "score": 0.603,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.88842
+        "rating": 1.8847
       },
       "android": {
-        "rating": 3.493421
+        "rating": 3.4679487
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -211,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44671
+        "rating": 4.44677
       },
       "android": {
-        "rating": 3.7210648
+        "rating": 3.7195828
       },
       "sentiment": {
         "score": 0.509,
@@ -280,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79169
+        "rating": 2.79229
       },
       "android": {
         "rating": 3.5345933
@@ -352,7 +352,7 @@
         "rating": 4.75643
       },
       "android": {
-        "rating": 4
+        "rating": 4.0054054
       },
       "sentiment": {
         "score": 0.567,
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39235
+        "rating": 4.39214
       },
       "android": {
-        "rating": 4.6171694
+        "rating": 4.616628
       },
       "sentiment": {
-        "score": 0.586,
+        "score": 0.584,
         "scoreDelta": 0,
         "topPositive": [
           {
