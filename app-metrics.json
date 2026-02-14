@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-02-13T04:11:46.548489+00:00",
+  "generated_utc": "2026-02-14T04:01:51.972786+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52998
       },
       "android": {
-        "rating": 4.4262347
+        "rating": 4.4262543
       },
       "sentiment": {
-        "score": 0.55,
+        "score": 0.538,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent",
+            "text": "best app",
             "rating": 5,
             "platform": "Android"
           }
@@ -76,10 +76,10 @@
         "rating": 4.53383
       },
       "android": {
-        "rating": 4.701324
+        "rating": 4.704181
       },
       "sentiment": {
-        "score": 0.603,
+        "score": 0.601,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 1.8847
       },
       "android": {
-        "rating": 3.4679487
+        "rating": 3.5163398
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -186,11 +186,11 @@
         ],
         "drivers": [
           {
-            "label": "login",
+            "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "login",
             "trend": "worsening"
           },
           {
@@ -214,7 +214,7 @@
         "rating": 4.44677
       },
       "android": {
-        "rating": 3.7195828
+        "rating": 3.7161067
       },
       "sentiment": {
         "score": 0.509,
@@ -352,7 +352,7 @@
         "rating": 4.75643
       },
       "android": {
-        "rating": 4.0054054
+        "rating": 4.0107527
       },
       "sentiment": {
         "score": 0.567,
@@ -421,10 +421,10 @@
         "rating": 4.39214
       },
       "android": {
-        "rating": 4.616628
+        "rating": 4.6163754
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.581,
         "scoreDelta": 0,
         "topPositive": [
           {
