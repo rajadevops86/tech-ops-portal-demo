@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-16T04:15:04.219120+00:00",
+  "generated_utc": "2026-02-17T04:10:27.298806+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52988
+        "rating": 4.52989
       },
       "android": {
-        "rating": 4.42611
+        "rating": 4.4260097
       },
       "sentiment": {
-        "score": 0.515,
+        "score": 0.535,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,24 +24,24 @@
             "platform": "iOS"
           },
           {
-            "text": "best app",
-            "rating": 5,
+            "text": "Best",
+            "rating": 2,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worst app. fully ads",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst application",
+            "text": "Worst app my payment debited but subscription not activated till now",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "worst app",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst app. fully ads",
             "rating": 1,
             "platform": "Android"
           }
@@ -60,12 +60,12 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "stream",
+            "trend": "steady"
           }
         ]
       }
@@ -73,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53542
+        "rating": 4.53537
       },
       "android": {
-        "rating": 4.70422
+        "rating": 4.6986985
       },
       "sentiment": {
-        "score": 0.597,
+        "score": 0.589,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "excellent",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "perfect",
             "rating": 5,
@@ -90,11 +95,6 @@
           {
             "text": "superb",
             "rating": 4,
-            "platform": "Android"
-          },
-          {
-            "text": "excellent",
-            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -105,14 +105,14 @@
             "platform": "iOS"
           },
           {
-            "text": "I already paid. They already deducted ₱160 on my account (supposedly ₱149) BUT STILL NO SUBSCRIPTION!! VERY POOR APP!!",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
             "text": "i cant reach out to any support team even though im paying a subscriptiions but i dont  bad support very disappointed re error i exceeded the limit of device although im just using one device",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "worst app",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -145,7 +145,7 @@
         "rating": 1.89876
       },
       "android": {
-        "rating": 3.5359478
+        "rating": 3.5
       },
       "sentiment": {
         "score": 0.566,
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44677
+        "rating": 4.44678
       },
       "android": {
         "rating": 3.7161067
@@ -283,7 +283,7 @@
         "rating": 2.79163
       },
       "android": {
-        "rating": 3.533311
+        "rating": 3.5326786
       },
       "sentiment": {
         "score": 0.499,
@@ -352,7 +352,7 @@
         "rating": 4.75631
       },
       "android": {
-        "rating": 4.0160427
+        "rating": 4.0107527
       },
       "sentiment": {
         "score": 0.567,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39428
+        "rating": 4.39376
       },
       "android": {
-        "rating": 4.6185474
+        "rating": 4.620109
       },
       "sentiment": {
         "score": 0.581,
