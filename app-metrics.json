@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-18T04:12:22.675379+00:00",
+  "generated_utc": "2026-02-19T04:11:18.984740+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52989
+        "rating": 4.52986
       },
       "android": {
-        "rating": 4.4257646
+        "rating": 4.425604
       },
       "sentiment": {
-        "score": 0.542,
+        "score": 0.543,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
-            "text": "I traveled to UK. I have ensured my subscription with India number is canceled after all the terrible experience and now after a year I am getting this message saying will be auto renewed and I can not login using my India number. I regret for registering and subscribing once with aha, now it is haunting me.",
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "worst experience",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "Worst app my payment debited but subscription not activated till now",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -60,11 +60,11 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "update",
+            "trend": "steady"
           },
           {
-            "label": "update",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53537
+        "rating": 4.53543
       },
       "android": {
-        "rating": 4.697444
+        "rating": 4.6990438
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.582,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.89876
+        "rating": 1.90144
       },
       "android": {
-        "rating": 3.5
+        "rating": 3.448052
       },
       "sentiment": {
-        "score": 0.566,
+        "score": 0.555,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -162,9 +162,9 @@
             "platform": "Android"
           },
           {
-            "text": "We want more Fattmira!!!! Moga banyak lagi shows n cerita2 best masuk sini. Come on, Yunni!",
+            "text": "Good Apps",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -280,10 +280,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79163
+        "rating": 2.7912
       },
       "android": {
-        "rating": 3.5328145
+        "rating": 3.5326786
       },
       "sentiment": {
         "score": 0.499,
@@ -349,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75631
+        "rating": 4.75638
       },
       "android": {
         "rating": 4
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39376
+        "rating": 4.39346
       },
       "android": {
-        "rating": 4.620799
+        "rating": 4.622449
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
