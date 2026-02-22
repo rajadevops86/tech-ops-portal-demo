@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-21T03:58:14.813381+00:00",
+  "generated_utc": "2026-02-22T04:08:13.680042+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52989
+        "rating": 4.52992
       },
       "android": {
-        "rating": 4.4252377
+        "rating": 4.4253454
       },
       "sentiment": {
-        "score": 0.542,
+        "score": 0.549,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,9 +31,9 @@
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "worst app response",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "I traveled to UK. I have ensured my subscription with India number is canceled after all the terrible experience and now after a year I am getting this message still below and I can not login using my India number. I regret for registering and subscribing once with aha, now it is haunting me. Your aha subscription will be auto renewed on 19 Feb 2026 for 149.00 Quarterly Mobile - Team aha.",
@@ -52,15 +52,15 @@
             "trend": "worsening"
           },
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
             "label": "slow",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "worsening"
           },
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5353
+        "rating": 4.5348
       },
       "android": {
-        "rating": 4.6973486
+        "rating": 4.6969924
       },
       "sentiment": {
         "score": 0.596,
@@ -142,10 +142,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.90144
+        "rating": 1.90593
       },
       "android": {
-        "rating": 3.4113925
+        "rating": 3.401274
       },
       "sentiment": {
         "score": 0.558,
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44678
+        "rating": 4.44674
       },
       "android": {
         "rating": 3.7224157
@@ -280,10 +280,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7912
+        "rating": 2.79109
       },
       "android": {
-        "rating": 3.5325425
+        "rating": 3.5342605
       },
       "sentiment": {
         "score": 0.499,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75631
+        "rating": 4.75643
       },
       "android": {
-        "rating": 4.0054054
+        "rating": 4
       },
       "sentiment": {
         "score": 0.567,
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39438
+        "rating": 4.39555
       },
       "android": {
-        "rating": 4.62117
+        "rating": 4.6222224
       },
       "sentiment": {
-        "score": 0.582,
+        "score": 0.584,
         "scoreDelta": 0,
         "topPositive": [
           {
