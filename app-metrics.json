@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-02-24T04:09:39.550000+00:00",
+  "generated_utc": "2026-02-25T04:11:14.955751+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.5298
       },
       "android": {
-        "rating": 4.425188
+        "rating": 4.42538
       },
       "sentiment": {
-        "score": 0.541,
+        "score": 0.536,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -25,15 +25,15 @@
           },
           {
             "text": "good",
-            "rating": 5,
+            "rating": 4,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "worst experience 👎🏻👎🏻👎🏻👎🏻👎🏻👎🏻",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst app response",
@@ -61,7 +61,7 @@
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
@@ -76,10 +76,10 @@
         "rating": 4.52951
       },
       "android": {
-        "rating": 4.6953244
+        "rating": 4.694677
       },
       "sentiment": {
-        "score": 0.587,
+        "score": 0.588,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 1.90593
       },
       "android": {
-        "rating": 3.3607595
+        "rating": 3.3664596
       },
       "sentiment": {
-        "score": 0.558,
+        "score": 0.554,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +214,7 @@
         "rating": 4.44674
       },
       "android": {
-        "rating": 3.727907
+        "rating": 3.7264261
       },
       "sentiment": {
         "score": 0.509,
@@ -352,7 +352,7 @@
         "rating": 4.7565
       },
       "android": {
-        "rating": 3.9945946
+        "rating": 4.0434785
       },
       "sentiment": {
         "score": 0.567,
@@ -421,7 +421,7 @@
         "rating": 4.39669
       },
       "android": {
-        "rating": 4.6173353
+        "rating": 4.6127086
       },
       "sentiment": {
         "score": 0.584,
