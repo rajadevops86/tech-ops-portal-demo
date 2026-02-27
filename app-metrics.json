@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-02-26T04:07:50.704995+00:00",
+  "generated_utc": "2026-02-27T04:04:17.917238+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52984
+        "rating": 4.52985
       },
       "android": {
-        "rating": 4.4254775
+        "rating": 4.425466
       },
       "sentiment": {
-        "score": 0.54,
+        "score": 0.542,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "iOS"
           },
           {
-            "text": "good 👍👍",
-            "rating": 5,
+            "text": "good",
+            "rating": 3,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "worst experience 👎🏻👎🏻👎🏻👎🏻👎🏻👎🏻",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst app response",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "I traveled to UK. I have ensured my subscription with India number is canceled after all the terrible experience and now after a year I am getting this message still below and I can not login using my India number. I regret for registering and subscribing once with aha, now it is haunting me. Your aha subscription will be auto renewed on 19 Feb 2026 for 149.00 Quarterly Mobile - Team aha.",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52924
+        "rating": 4.52886
       },
       "android": {
-        "rating": 4.694193
+        "rating": 4.692222
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.578,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,9 +100,9 @@
         ],
         "topNegative": [
           {
-            "text": "UAAP game is on but not showing in the app. 🤷",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "wrong username or password kahit tama naman🙄",
+            "rating": 2,
+            "platform": "Android"
           },
           {
             "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 1.90669
+        "rating": 1.90688
       },
       "android": {
-        "rating": 3.371951
+        "rating": 3.477707
       },
       "sentiment": {
-        "score": 0.551,
+        "score": 0.549,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +214,7 @@
         "rating": 4.44671
       },
       "android": {
-        "rating": 3.7287543
+        "rating": 3.7351224
       },
       "sentiment": {
         "score": 0.509,
@@ -283,7 +283,7 @@
         "rating": 2.7906
       },
       "android": {
-        "rating": 3.5341256
+        "rating": 3.534852
       },
       "sentiment": {
         "score": 0.499,
@@ -418,13 +418,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39717
+        "rating": 4.39757
       },
       "android": {
-        "rating": 4.6132903
+        "rating": 4.6146026
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.586,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -472,6 +472,10 @@
           {
             "label": "ads",
             "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
           },
           {
             "label": "update",
