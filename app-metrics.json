@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-01T04:13:46.941866+00:00",
+  "generated_utc": "2026-03-02T04:05:10.629981+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52979
       },
       "android": {
-        "rating": 4.4250345
+        "rating": 4.424952
       },
       "sentiment": {
-        "score": 0.532,
+        "score": 0.522,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,9 +19,9 @@
             "platform": "iOS"
           },
           {
-            "text": "Excellent",
+            "text": "superb",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "very nice wonderful story",
@@ -36,12 +36,12 @@
             "platform": "iOS"
           },
           {
-            "text": "worst experience on my TV. App is always pushing runtime error and closing automatically comming to add's,move is playing in between adds",
+            "text": "worst streaming in tv",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst experience 👎🏻👎🏻👎🏻👎🏻👎🏻👎🏻",
+            "text": "worst experience on my TV. App is always pushing runtime error and closing automatically comming to add's,move is playing in between adds",
             "rating": 1,
             "platform": "Android"
           }
@@ -76,10 +76,10 @@
         "rating": 4.52977
       },
       "android": {
-        "rating": 4.695554
+        "rating": 4.695072
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.576,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -131,10 +131,6 @@
           {
             "label": "slow",
             "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
           }
         ]
       }
@@ -145,10 +141,10 @@
         "rating": 1.92786
       },
       "android": {
-        "rating": 3.5625
+        "rating": 3.5696204
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,7 +210,7 @@
         "rating": 4.44674
       },
       "android": {
-        "rating": 3.7339556
+        "rating": 3.7354312
       },
       "sentiment": {
         "score": 0.509,
@@ -352,10 +348,10 @@
         "rating": 4.75599
       },
       "android": {
-        "rating": 4.037838
+        "rating": 4.0430107
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.563,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -421,7 +417,7 @@
         "rating": 4.39913
       },
       "android": {
-        "rating": 4.6124425
+        "rating": 4.6134067
       },
       "sentiment": {
         "score": 0.586,
