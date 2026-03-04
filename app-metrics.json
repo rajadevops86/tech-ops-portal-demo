@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-03T04:06:01.457676+00:00",
+  "generated_utc": "2026-03-04T04:00:32.043939+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52977
       },
       "android": {
-        "rating": 4.4249
+        "rating": 4.4248953
       },
       "sentiment": {
-        "score": 0.505,
+        "score": 0.523,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "Worst and worst application i have ever seen",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
           },
           {
             "text": "worst streaming in tv",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst experience on my TV. App is always pushing runtime error and closing automatically comming to add's,move is playing in between adds",
             "rating": 1,
             "platform": "Android"
           }
@@ -64,7 +64,7 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -76,7 +76,7 @@
         "rating": 4.52993
       },
       "android": {
-        "rating": 4.693657
+        "rating": 4.6938243
       },
       "sentiment": {
         "score": 0.563,
@@ -141,10 +141,10 @@
         "rating": 1.92786
       },
       "android": {
-        "rating": 3.6086957
+        "rating": 3.6358025
       },
       "sentiment": {
-        "score": 0.562,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -417,7 +417,7 @@
         "rating": 4.39857
       },
       "android": {
-        "rating": 4.6118784
+        "rating": 4.6121883
       },
       "sentiment": {
         "score": 0.588,
