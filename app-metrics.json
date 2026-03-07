@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-06T04:01:30.410540+00:00",
+  "generated_utc": "2026-03-07T03:52:12.748394+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52974
+        "rating": 4.5297
       },
       "android": {
-        "rating": 4.4253917
+        "rating": 4.425487
       },
       "sentiment": {
-        "score": 0.507,
+        "score": 0.516,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,21 +19,21 @@
             "platform": "iOS"
           },
           {
+            "text": "superb",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
             "text": "Good",
             "rating": 5,
             "platform": "iOS"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "the worst app i nevar see very very worst app don't install",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52862
+        "rating": 4.52879
       },
       "android": {
-        "rating": 4.6928988
+        "rating": 4.691466
       },
       "sentiment": {
-        "score": 0.563,
+        "score": 0.56,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -138,10 +138,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.02335
+        "rating": 2.0289
       },
       "android": {
-        "rating": 3.7300613
+        "rating": 3.8757396
       },
       "sentiment": {
         "score": 0.58,
@@ -165,14 +165,14 @@
         ],
         "topNegative": [
           {
+            "text": "Weird sign up bug glitches, every time try press \"Start here\" keep looping in infinity",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "keep getting worst, waste money pay monthly.",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "Bad",
-            "rating": 1,
-            "platform": "Android"
           },
           {
             "text": "Who is your vendor for this apps? Your project manager? Stupid apps ever!",
@@ -186,11 +186,11 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "worsening"
           },
           {
@@ -207,7 +207,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44672
+        "rating": 4.44665
       },
       "android": {
         "rating": 3.7362893
@@ -345,10 +345,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75624
+        "rating": 4.75614
       },
       "android": {
-        "rating": 4.037838
+        "rating": 4.0430107
       },
       "sentiment": {
         "score": 0.563,
@@ -414,13 +414,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.39991
+        "rating": 4.40069
       },
       "android": {
-        "rating": 4.6121325
+        "rating": 4.6102705
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -434,7 +434,7 @@
             "platform": "Android"
           },
           {
-            "text": "The best entertainment and sports app in one app,,, the greatest 😍",
+            "text": "very good 👍",
             "rating": 5,
             "platform": "Android"
           }
