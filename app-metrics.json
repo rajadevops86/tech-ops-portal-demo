@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-08T04:02:45.236630+00:00",
+  "generated_utc": "2026-03-09T04:08:02.648660+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5297
+        "rating": 4.52968
       },
       "android": {
-        "rating": 4.4254446
+        "rating": 4.425812
       },
       "sentiment": {
-        "score": 0.522,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,14 +19,14 @@
             "platform": "iOS"
           },
           {
-            "text": "superb",
+            "text": "this aha excellent platform",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Good",
+            "text": "superb",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
@@ -65,7 +65,7 @@
           },
           {
             "label": "buffer",
-            "trend": "worsening"
+            "trend": "steady"
           }
         ]
       }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52897
+        "rating": 4.52843
       },
       "android": {
-        "rating": 4.690407
+        "rating": 4.690325
       },
       "sentiment": {
         "score": 0.561,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.04798
+        "rating": 2.08712
       },
       "android": {
-        "rating": 3.9766083
+        "rating": 4.029762
       },
       "sentiment": {
-        "score": 0.582,
+        "score": 0.587,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,7 +169,7 @@
         ],
         "topNegative": [
           {
-            "text": "Weird sign up bug glitches, every time try press \"Start here\" keep looping in infinity",
+            "text": "This apl say i don't have any account..and that weird because before this i already has an account almost 3 years",
             "rating": 1,
             "platform": "Android"
           },
@@ -186,20 +186,20 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
+            "label": "update",
+            "trend": "steady"
+          },
+          {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7561
+        "rating": 4.75619
       },
       "android": {
-        "rating": 4.0430107
+        "rating": 4.048649
       },
       "sentiment": {
         "score": 0.563,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40052
+        "rating": 4.4009
       },
       "android": {
-        "rating": 4.6090155
+        "rating": 4.607554
       },
       "sentiment": {
         "score": 0.58,
