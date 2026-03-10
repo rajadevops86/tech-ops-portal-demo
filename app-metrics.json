@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-09T04:08:02.648660+00:00",
+  "generated_utc": "2026-03-10T04:00:35.874648+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52968
+        "rating": 4.52966
       },
       "android": {
-        "rating": 4.425812
+        "rating": 4.425667
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.54,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,12 +19,12 @@
             "platform": "iOS"
           },
           {
-            "text": "this aha excellent platform",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "superb",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           }
@@ -64,7 +64,7 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52843
+        "rating": 4.52888
       },
       "android": {
-        "rating": 4.690325
+        "rating": 4.687778
       },
       "sentiment": {
-        "score": 0.561,
+        "score": 0.56,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.08712
+        "rating": 2.09057
       },
       "android": {
-        "rating": 4.029762
+        "rating": 4.337209
       },
       "sentiment": {
-        "score": 0.587,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,19 +157,19 @@
             "platform": "iOS"
           },
           {
-            "text": "best gila senang... dh ada apps ni semua hunung jari je nk tgk n semua rancangam faveret",
+            "text": "UNIFI THE BEST",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Good Apps",
+            "text": "very good",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "This apl say i don't have any account..and that weird because before this i already has an account almost 3 years",
+            "text": "OMG.. What happen with Unifi TV 2.0 version? During Ramadhan times becomes worse.. Please fix it ASAP..",
             "rating": 1,
             "platform": "Android"
           },
@@ -198,11 +198,11 @@
             "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "slow",
             "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -214,7 +214,7 @@
         "rating": 4.4467
       },
       "android": {
-        "rating": 3.739645
+        "rating": 3.7461448
       },
       "sentiment": {
         "score": 0.509,
@@ -280,10 +280,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79192
+        "rating": 2.7924
       },
       "android": {
-        "rating": 3.5357144
+        "rating": 3.5352113
       },
       "sentiment": {
         "score": 0.494,
@@ -349,10 +349,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75619
+        "rating": 4.7562
       },
       "android": {
-        "rating": 4.048649
+        "rating": 4.0376344
       },
       "sentiment": {
         "score": 0.563,
@@ -418,10 +418,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.4009
+        "rating": 4.40008
       },
       "android": {
-        "rating": 4.607554
+        "rating": 4.6084557
       },
       "sentiment": {
         "score": 0.58,
