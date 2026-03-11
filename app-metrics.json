@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-10T04:00:35.874648+00:00",
+  "generated_utc": "2026-03-11T04:01:22.663679+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52966
       },
       "android": {
-        "rating": 4.425667
+        "rating": 4.425287
       },
       "sentiment": {
-        "score": 0.54,
+        "score": 0.544,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,7 +19,7 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent",
+            "text": "wonderful",
             "rating": 5,
             "platform": "Android"
           },
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "2 to 3 mints pause watching regularly worst service",
+            "rating": 3,
+            "platform": "Android"
+          },
+          {
+            "text": "worst application, not recommended",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "the worst app i nevar see very very worst app don't install",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app ever",
             "rating": 1,
             "platform": "Android"
           }
@@ -76,10 +76,10 @@
         "rating": 4.52888
       },
       "android": {
-        "rating": 4.687778
+        "rating": 4.685978
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.559,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -131,10 +131,6 @@
           {
             "label": "slow",
             "trend": "steady"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
           }
         ]
       }
@@ -142,13 +138,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.09057
+        "rating": 2.13383
       },
       "android": {
-        "rating": 4.337209
+        "rating": 4.418605
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.612,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,12 +153,12 @@
             "platform": "iOS"
           },
           {
-            "text": "UNIFI THE BEST",
+            "text": "excellent apps",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "UNIFI THE BEST",
             "rating": 5,
             "platform": "Android"
           }
@@ -198,10 +194,6 @@
             "trend": "steady"
           },
           {
-            "label": "slow",
-            "trend": "steady"
-          },
-          {
             "label": "crash",
             "trend": "steady"
           }
@@ -211,10 +203,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4467
+        "rating": 4.44665
       },
       "android": {
-        "rating": 3.7461448
+        "rating": 3.745541
       },
       "sentiment": {
         "score": 0.509,
@@ -280,10 +272,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7924
+        "rating": 2.79192
       },
       "android": {
-        "rating": 3.5352113
+        "rating": 3.5342512
       },
       "sentiment": {
         "score": 0.494,
@@ -349,10 +341,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7562
+        "rating": 4.75621
       },
       "android": {
-        "rating": 4.0376344
+        "rating": 4.0324326
       },
       "sentiment": {
         "score": 0.563,
@@ -418,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40008
+        "rating": 4.40086
       },
       "android": {
-        "rating": 4.6084557
+        "rating": 4.6075196
       },
       "sentiment": {
         "score": 0.58,
