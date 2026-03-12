@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-11T04:01:22.663679+00:00",
+  "generated_utc": "2026-03-12T04:05:45.914293+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52966
       },
       "android": {
-        "rating": 4.425287
+        "rating": 4.4256296
       },
       "sentiment": {
-        "score": 0.544,
+        "score": 0.54,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "worst app I have ever seen in",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "2 to 3 mints pause watching regularly worst service",
             "rating": 3,
             "platform": "Android"
           },
           {
             "text": "worst application, not recommended",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "the worst app i nevar see very very worst app don't install",
             "rating": 1,
             "platform": "Android"
           }
@@ -76,7 +76,7 @@
         "rating": 4.52888
       },
       "android": {
-        "rating": 4.685978
+        "rating": 4.685097
       },
       "sentiment": {
         "score": 0.559,
@@ -138,13 +138,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.13383
+        "rating": 2.16453
       },
       "android": {
-        "rating": 4.418605
+        "rating": 4.5657144
       },
       "sentiment": {
-        "score": 0.612,
+        "score": 0.619,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -278,7 +278,7 @@
         "rating": 3.5342512
       },
       "sentiment": {
-        "score": 0.494,
+        "score": 0.491,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -341,7 +341,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75621
+        "rating": 4.75605
       },
       "android": {
         "rating": 4.0324326
@@ -410,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40086
+        "rating": 4.40137
       },
       "android": {
-        "rating": 4.6075196
+        "rating": 4.606019
       },
       "sentiment": {
         "score": 0.58,
