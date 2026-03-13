@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-12T04:05:45.914293+00:00",
+  "generated_utc": "2026-03-13T04:03:47.374614+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52966
+        "rating": 4.52967
       },
       "android": {
-        "rating": 4.4256296
+        "rating": 4.4257073
       },
       "sentiment": {
-        "score": 0.54,
+        "score": 0.548,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -56,11 +56,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "stream",
             "trend": "worsening"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52888
+        "rating": 4.52839
       },
       "android": {
-        "rating": 4.685097
+        "rating": 4.680788
       },
       "sentiment": {
-        "score": 0.559,
+        "score": 0.557,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -138,13 +138,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.16453
+        "rating": 2.1953
       },
       "android": {
-        "rating": 4.5657144
+        "rating": 4.535519
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.63,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -165,17 +165,17 @@
         ],
         "topNegative": [
           {
+            "text": "total failure app. supposed to replace Unifi tv box but this app is unusable for tv. extremely disappointed since my Unifi package includes tv.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "OMG.. What happen with Unifi TV 2.0 version? During Ramadhan times becomes worse.. Please fix it ASAP..",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "keep getting worst, waste money pay monthly.",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "Who is your vendor for this apps? Your project manager? Stupid apps ever!",
             "rating": 1,
             "platform": "iOS"
           }
@@ -341,7 +341,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75605
+        "rating": 4.75607
       },
       "android": {
         "rating": 4.0324326
@@ -410,13 +410,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40137
+        "rating": 4.40128
       },
       "android": {
-        "rating": 4.606019
+        "rating": 4.602482
       },
       "sentiment": {
-        "score": 0.58,
+        "score": 0.577,
         "scoreDelta": 0,
         "topPositive": [
           {
