@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-13T04:03:47.374614+00:00",
+  "generated_utc": "2026-03-14T04:02:35.408613+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52967
+        "rating": 4.52968
       },
       "android": {
-        "rating": 4.4257073
+        "rating": 4.425426
       },
       "sentiment": {
-        "score": 0.548,
+        "score": 0.522,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -76,7 +76,7 @@
         "rating": 4.52839
       },
       "android": {
-        "rating": 4.680788
+        "rating": 4.678598
       },
       "sentiment": {
         "score": 0.557,
@@ -138,13 +138,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.1953
+        "rating": 2.25
       },
       "android": {
-        "rating": 4.535519
+        "rating": 4.5480227
       },
       "sentiment": {
-        "score": 0.63,
+        "score": 0.629,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -187,7 +187,7 @@
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
@@ -203,7 +203,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44665
+        "rating": 4.44676
       },
       "android": {
         "rating": 3.745541
@@ -341,7 +341,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75607
+        "rating": 4.7561
       },
       "android": {
         "rating": 4.0324326
@@ -410,15 +410,20 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40128
+        "rating": 4.40154
       },
       "android": {
-        "rating": 4.602482
+        "rating": 4.6036615
       },
       "sentiment": {
-        "score": 0.577,
+        "score": 0.58,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "great app!!!",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "Excellent Service",
             "rating": 5,
@@ -426,11 +431,6 @@
           },
           {
             "text": "best app for me",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "very good 👍",
             "rating": 5,
             "platform": "Android"
           }
