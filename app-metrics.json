@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-15T04:25:06.350727+00:00",
+  "generated_utc": "2026-03-16T04:32:28.926937+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.5297
       },
       "android": {
-        "rating": 4.4253902
+        "rating": 4.425556
       },
       "sentiment": {
-        "score": 0.519,
+        "score": 0.524,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,6 +31,11 @@
         ],
         "topNegative": [
           {
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "one of the worst aap always video buffering",
             "rating": 1,
             "platform": "Android"
@@ -38,11 +43,6 @@
           {
             "text": "worst app I have ever seen in",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "2 to 3 mints pause watching regularly worst service",
-            "rating": 3,
             "platform": "Android"
           }
         ],
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53036
+        "rating": 4.5259
       },
       "android": {
-        "rating": 4.682002
+        "rating": 4.6787133
       },
       "sentiment": {
-        "score": 0.559,
+        "score": 0.552,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -121,19 +121,19 @@
             "trend": "worsening"
           },
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
             "label": "ads",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "steady"
-          },
-          {
-            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -142,15 +142,20 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25749
+        "rating": 2.28147
       },
       "android": {
-        "rating": 4.5444446
+        "rating": 4.519553
       },
       "sentiment": {
-        "score": 0.643,
+        "score": 0.648,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Service the best",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "Best!",
             "rating": 5,
@@ -158,11 +163,6 @@
           },
           {
             "text": "excellent services",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "best trial 👍, attend by tmpoint tg malim staff nama Ain tq",
             "rating": 5,
             "platform": "Android"
           }
@@ -190,6 +190,10 @@
             "trend": "worsening"
           },
           {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
             "label": "update",
             "trend": "steady"
           }
@@ -199,7 +203,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44665
+        "rating": 4.44669
       },
       "android": {
         "rating": 3.747031
@@ -268,10 +272,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7924
+        "rating": 2.79159
       },
       "android": {
-        "rating": 3.5339072
+        "rating": 3.5340674
       },
       "sentiment": {
         "score": 0.491,
@@ -337,7 +341,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75619
+        "rating": 4.75621
       },
       "android": {
         "rating": 4.0324326
@@ -406,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40205
+        "rating": 4.40209
       },
       "android": {
-        "rating": 4.6039557
+        "rating": 4.60431
       },
       "sentiment": {
         "score": 0.581,
