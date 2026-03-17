@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-16T04:32:28.926937+00:00",
+  "generated_utc": "2026-03-17T04:08:52.591330+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5297
+        "rating": 4.52969
       },
       "android": {
-        "rating": 4.425556
+        "rating": 4.4260097
       },
       "sentiment": {
-        "score": 0.524,
+        "score": 0.514,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,29 +19,29 @@
             "platform": "iOS"
           },
           {
-            "text": "it is very good OTT app",
+            "text": "very nice app I'm very impressed this app",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very nice app I'm very impressed this app",
+            "text": "very nice 👍",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "one of the worst aap always video buffering",
+            "text": "worst aap",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app I have ever seen in",
+            "text": "worst app",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "one of the worst aap always video buffering",
             "rating": 1,
             "platform": "Android"
           }
@@ -60,11 +60,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "worsening"
           }
         ]
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5259
+        "rating": 4.52558
       },
       "android": {
-        "rating": 4.6787133
+        "rating": 4.67532
       },
       "sentiment": {
         "score": 0.552,
@@ -142,24 +142,24 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.28147
+        "rating": 2.26232
       },
       "android": {
-        "rating": 4.519553
+        "rating": 4.505435
       },
       "sentiment": {
-        "score": 0.648,
+        "score": 0.646,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Service the best",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "Best!",
             "rating": 5,
             "platform": "iOS"
+          },
+          {
+            "text": "the best app",
+            "rating": 5,
+            "platform": "Android"
           },
           {
             "text": "excellent services",
@@ -169,14 +169,14 @@
         ],
         "topNegative": [
           {
-            "text": "Terrible app. There’s an issue logging in on two devices. It always asks for a code, but after requesting it many times due to repeated prompts, I’ve reached the limit. I have to wait 30 minutes. Then when I request the code again, it doesn’t even arrive in my email.",
+            "text": "Both the interface and the way to navigate the apps and the tv box has been a major issue! The design and interface somehow become very much USER UNFRIENDLY especially when the slightly user as my parents its frustrated all as the outcome of it. Not to mention the constant black screen or stuck non stop!",
             "rating": 1,
             "platform": "iOS"
           },
           {
-            "text": "OMG.. What happen with Unifi TV 2.0 version? During Ramadhan times becomes worse.. Please fix it ASAP..",
+            "text": "Terrible app. There’s an issue logging in on two devices. It always asks for a code, but after requesting it many times due to repeated prompts, I’ve reached the limit. I have to wait 30 minutes. Then when I request the code again, it doesn’t even arrive in my email.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "keep getting worst, waste money pay monthly.",
@@ -203,7 +203,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44669
+        "rating": 4.4465
       },
       "android": {
         "rating": 3.747031
@@ -272,7 +272,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79159
+        "rating": 2.79062
       },
       "android": {
         "rating": 3.5340674
@@ -341,7 +341,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75621
+        "rating": 4.75622
       },
       "android": {
         "rating": 4.0324326
@@ -410,13 +410,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40209
+        "rating": 4.40212
       },
       "android": {
-        "rating": 4.60431
+        "rating": 4.6022987
       },
       "sentiment": {
-        "score": 0.581,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
