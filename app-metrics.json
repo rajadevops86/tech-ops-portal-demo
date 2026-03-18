@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-17T04:08:52.591330+00:00",
+  "generated_utc": "2026-03-18T04:14:44.058084+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52969
       },
       "android": {
-        "rating": 4.4260097
+        "rating": 4.4260406
       },
       "sentiment": {
-        "score": 0.514,
+        "score": 0.511,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,12 +19,12 @@
             "platform": "iOS"
           },
           {
-            "text": "very nice app I'm very impressed this app",
+            "text": "best entertainment",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very nice 👍",
+            "text": "very nice app I'm very impressed this app",
             "rating": 5,
             "platform": "Android"
           }
@@ -48,11 +48,15 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "slow",
             "trend": "worsening"
           },
           {
-            "label": "ads",
+            "label": "stream",
             "trend": "worsening"
           },
           {
@@ -61,10 +65,6 @@
           },
           {
             "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
             "trend": "worsening"
           }
         ]
@@ -76,7 +76,7 @@
         "rating": 4.52558
       },
       "android": {
-        "rating": 4.67532
+        "rating": 4.6751637
       },
       "sentiment": {
         "score": 0.552,
@@ -145,7 +145,7 @@
         "rating": 2.26232
       },
       "android": {
-        "rating": 4.505435
+        "rating": 4.508108
       },
       "sentiment": {
         "score": 0.646,
@@ -206,7 +206,7 @@
         "rating": 4.4465
       },
       "android": {
-        "rating": 3.747031
+        "rating": 3.7431629
       },
       "sentiment": {
         "score": 0.509,
@@ -275,7 +275,7 @@
         "rating": 2.79062
       },
       "android": {
-        "rating": 3.5340674
+        "rating": 3.533563
       },
       "sentiment": {
         "score": 0.491,
@@ -413,7 +413,7 @@
         "rating": 4.40212
       },
       "android": {
-        "rating": 4.6022987
+        "rating": 4.603393
       },
       "sentiment": {
         "score": 0.579,
