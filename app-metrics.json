@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-21T03:56:45.479355+00:00",
+  "generated_utc": "2026-03-22T04:11:04.716278+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52967
+        "rating": 4.52963
       },
       "android": {
-        "rating": 4.4260283
+        "rating": 4.42624
       },
       "sentiment": {
-        "score": 0.525,
+        "score": 0.516,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,9 +24,9 @@
             "platform": "Android"
           },
           {
-            "text": "best entertainment",
+            "text": "Superb bt more epsoide plz",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -36,12 +36,12 @@
             "platform": "iOS"
           },
           {
-            "text": "worst app",
+            "text": "one of the worst app please not download",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app. Even after cancelling auto-pay and deleting the account money gets deducted.",
+            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -61,7 +61,7 @@
           },
           {
             "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "buffer",
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52586
+        "rating": 4.52593
       },
       "android": {
-        "rating": 4.6698217
+        "rating": 4.664697
       },
       "sentiment": {
         "score": 0.54,
@@ -88,7 +88,7 @@
             "platform": "Android"
           },
           {
-            "text": "perfect",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           },
@@ -145,7 +145,7 @@
         "rating": 2.28696
       },
       "android": {
-        "rating": 4.431694
+        "rating": 4.4130435
       },
       "sentiment": {
         "score": 0.651,
@@ -206,7 +206,7 @@
         "rating": 4.4465
       },
       "android": {
-        "rating": 3.742586
+        "rating": 3.7382953
       },
       "sentiment": {
         "score": 0.508,
@@ -275,7 +275,7 @@
         "rating": 2.79154
       },
       "android": {
-        "rating": 3.5345716
+        "rating": 3.5258412
       },
       "sentiment": {
         "score": 0.486,
@@ -341,7 +341,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7563
+        "rating": 4.75624
       },
       "android": {
         "rating": 4.0324326
@@ -413,7 +413,7 @@
         "rating": 4.40217
       },
       "android": {
-        "rating": 4.6048646
+        "rating": 4.607061
       },
       "sentiment": {
         "score": 0.575,
