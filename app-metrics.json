@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-03-24T04:09:26.079348+00:00",
+  "generated_utc": "2026-03-25T04:10:58.240369+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52962
+        "rating": 4.52959
       },
       "android": {
-        "rating": 4.4262047
+        "rating": 4.426374
       },
       "sentiment": {
-        "score": 0.535,
+        "score": 0.547,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "****** app worst app ever",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "worst one this......auto debit cancel చేసిన డబ్బులు cut అయినాయి......",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "one of the worst app please not download",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -64,7 +64,7 @@
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -76,10 +76,10 @@
         "rating": 4.52536
       },
       "android": {
-        "rating": 4.6648374
+        "rating": 4.665077
       },
       "sentiment": {
-        "score": 0.547,
+        "score": 0.546,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,7 +142,7 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2825
+        "rating": 2.27778
       },
       "android": {
         "rating": 4.4162164
@@ -203,7 +203,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44641
+        "rating": 4.44644
       },
       "android": {
         "rating": 3.739808
@@ -410,13 +410,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40284
+        "rating": 4.40245
       },
       "android": {
-        "rating": 4.6031094
+        "rating": 4.602459
       },
       "sentiment": {
-        "score": 0.575,
+        "score": 0.571,
         "scoreDelta": 0,
         "topPositive": [
           {
