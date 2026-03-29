@@ -1,70 +1,58 @@
 {
-  "generated_utc": "2026-03-28T04:10:42.651220+00:00",
+  "generated_utc": "2026-03-29T04:29:51.866329+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52963
+        "rating": 4.52966
       },
       "android": {
-        "rating": 4.426044
+        "rating": 4.4261093
       },
       "sentiment": {
-        "score": 0.558,
+        "score": 0.666,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "very good",
-            "rating": 4,
+            "text": "best",
+            "rating": 3,
             "platform": "Android"
           },
           {
             "text": "very nice",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good aha",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "text": "very worst application in phone and also in TV is also it's very slow sometimes the app even not working properly. Waste of money to buy subscription in aha.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst and worst application i have ever seen",
+            "text": "I got error code while laying any movie. this is worst experience within few minutes after purchased plan",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "very worst app.. don't waste money .",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
-            "label": "update",
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -76,10 +64,10 @@
         "rating": 4.52359
       },
       "android": {
-        "rating": 4.6618943
+        "rating": 4.659707
       },
       "sentiment": {
-        "score": 0.541,
+        "score": 0.601,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,14 +88,14 @@
         ],
         "topNegative": [
           {
-            "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
+            "text": "is not for free.stupid app...more corrupt",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "wrong username or password kahit tama naman🙄",
+            "rating": 2,
+            "platform": "Android"
           },
           {
             "text": "worst app",
@@ -118,22 +106,6 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -142,20 +114,15 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27807
+        "rating": 2.28276
       },
       "android": {
-        "rating": 4.379679
+        "rating": 4.3910613
       },
       "sentiment": {
-        "score": 0.646,
+        "score": 0.676,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Best!",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "the best app",
             "rating": 5,
@@ -165,30 +132,31 @@
             "text": "excellent services",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "best trial 👍, attend by tmpoint tg malim staff nama Ain tq",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "transfer of tm unifi installation from one house to another takes less than 3 working days",
+            "text": "perkhidmatan yang diberikan memuaskan hati.",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Terrible app. There’s an issue logging in on two devices. It always asks for a code, but after requesting it many times due to repeated prompts, I’ve reached the limit. I have to wait 30 minutes. Then when I request the code again, it doesn’t even arrive in my email.",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "terbaik",
+            "rating": 5,
+            "platform": "Android"
           },
           {
-            "text": "keep getting worst, waste money pay monthly.",
+            "text": "worse app.. i keep install and uninstall even i update my phone, the apps keep blank.. and previous experience also too many bugs and lack.. 5 thumbs down",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
           {
             "label": "update",
             "trend": "steady"
@@ -209,14 +177,9 @@
         "rating": 3.739808
       },
       "sentiment": {
-        "score": 0.508,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -224,6 +187,11 @@
           },
           {
             "text": "I Loved It!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -247,23 +215,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -278,7 +242,7 @@
         "rating": 3.5279417
       },
       "sentiment": {
-        "score": 0.486,
+        "score": 0.502,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -299,37 +263,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -341,13 +305,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75616
+        "rating": 4.75608
       },
       "android": {
         "rating": 4.032258
       },
       "sentiment": {
-        "score": 0.563,
+        "score": 0.586,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -389,10 +353,6 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
             "label": "crash",
             "trend": "steady"
           },
@@ -410,13 +370,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.4027
+        "rating": 4.40333
       },
       "android": {
-        "rating": 4.6031094
+        "rating": 4.6029277
       },
       "sentiment": {
-        "score": 0.573,
+        "score": 0.627,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -437,36 +397,32 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "It does not work on smart TV. Useless.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "adding ads becomes more horrible",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "It's a bad update and it's too laggy when I picking a channel",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "worsening"
+            "label": "crash",
+            "trend": "steady"
           },
           {
             "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "stream",
             "trend": "steady"
           },
           {
