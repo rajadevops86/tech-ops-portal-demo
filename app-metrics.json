@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-29T04:29:51.866329+00:00",
+  "generated_utc": "2026-03-30T04:37:31.642159+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52966
       },
       "android": {
-        "rating": 4.4261093
+        "rating": 4.4260836
       },
       "sentiment": {
-        "score": 0.666,
+        "score": 0.642,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,34 +19,38 @@
             "platform": "Android"
           },
           {
-            "text": "very nice",
+            "text": "Very good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good aha",
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "very worst application in phone and also in TV is also it's very slow sometimes the app even not working properly. Waste of money to buy subscription in aha.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "I got error code while laying any movie. this is worst experience within few minutes after purchased plan",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "very worst app.. don't waste money .",
+            "text": "bad 😔",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst app is buffering app is stuck",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
+          {
+            "label": "buffer",
+            "trend": "steady"
+          },
           {
             "label": "ads",
             "trend": "steady"
@@ -61,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52359
+        "rating": 4.52392
       },
       "android": {
-        "rating": 4.659707
+        "rating": 4.657038
       },
       "sentiment": {
         "score": 0.601,
@@ -114,10 +118,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.28276
+        "rating": 2.27807
       },
       "android": {
-        "rating": 4.3910613
+        "rating": 4.383333
       },
       "sentiment": {
         "score": 0.676,
@@ -171,7 +175,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44648
+        "rating": 4.44641
       },
       "android": {
         "rating": 3.739808
@@ -305,7 +309,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75608
+        "rating": 4.75599
       },
       "android": {
         "rating": 4.032258
@@ -370,10 +374,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40333
+        "rating": 4.40329
       },
       "android": {
-        "rating": 4.6029277
+        "rating": 4.604758
       },
       "sentiment": {
         "score": 0.627,
