@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-03T04:22:15.001488+00:00",
+  "generated_utc": "2026-04-04T04:08:31.502059+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52963
       },
       "android": {
-        "rating": 4.42572
+        "rating": 4.4259324
       },
       "sentiment": {
-        "score": 0.653,
+        "score": 0.652,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -36,12 +36,12 @@
             "platform": "Android"
           },
           {
-            "text": "worst app in our world",
+            "text": "pathetic connectivity",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app. always getting error code 400208. Wast of money and time",
+            "text": "worst app in our world",
             "rating": 1,
             "platform": "Android"
           }
@@ -57,10 +57,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52352
+        "rating": 4.5236
       },
       "android": {
-        "rating": 4.65521
+        "rating": 4.6554747
       },
       "sentiment": {
         "score": 0.605,
@@ -110,13 +110,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27835
+        "rating": 2.27179
       },
       "android": {
-        "rating": 4.2974358
+        "rating": 4.290323
       },
       "sentiment": {
-        "score": 0.663,
+        "score": 0.652,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -155,7 +155,7 @@
         "drivers": [
           {
             "label": "update",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "buffer",
@@ -175,7 +175,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44654
+        "rating": 4.4465
       },
       "android": {
         "rating": 3.740024
@@ -309,13 +309,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7563
+        "rating": 4.75645
       },
       "android": {
-        "rating": 4.0537634
+        "rating": 4.016129
       },
       "sentiment": {
-        "score": 0.582,
+        "score": 0.591,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -336,7 +336,7 @@
         ],
         "topNegative": [
           {
-            "text": "Too many ads. Demasiados anuncios si tan solo fueran al principio pues está bien pero cada 5 min? Es horrible",
+            "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
             "rating": 1,
             "platform": "Android"
           },
@@ -354,7 +354,7 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
@@ -374,10 +374,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40286
+        "rating": 4.40311
       },
       "android": {
-        "rating": 4.604119
+        "rating": 4.6042805
       },
       "sentiment": {
         "score": 0.639,
