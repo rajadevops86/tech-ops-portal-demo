@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-04T04:08:31.502059+00:00",
+  "generated_utc": "2026-04-05T04:29:28.380890+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52963
       },
       "android": {
-        "rating": 4.4259324
+        "rating": 4.4260964
       },
       "sentiment": {
-        "score": 0.652,
+        "score": 0.664,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "worst Experience The Devoloper So lazy 🙄",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "Worst app i had seen there subscription is worst they had given there 1plan is given as only we can see in the mobile they introduced the app because they want lots of money they don't want people think",
             "rating": 1,
@@ -39,14 +44,13 @@
             "text": "pathetic connectivity",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "worst app in our world",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
+          {
+            "label": "update",
+            "trend": "steady"
+          },
           {
             "label": "ads",
             "trend": "steady"
@@ -60,7 +64,7 @@
         "rating": 4.5236
       },
       "android": {
-        "rating": 4.6554747
+        "rating": 4.6556125
       },
       "sentiment": {
         "score": 0.605,
@@ -113,10 +117,10 @@
         "rating": 2.27179
       },
       "android": {
-        "rating": 4.290323
+        "rating": 4.3081083
       },
       "sentiment": {
-        "score": 0.652,
+        "score": 0.659,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -175,7 +179,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4465
+        "rating": 4.44646
       },
       "android": {
         "rating": 3.740024
@@ -243,7 +247,7 @@
         "rating": 2.79225
       },
       "android": {
-        "rating": 3.5277193
+        "rating": 3.5282357
       },
       "sentiment": {
         "score": 0.5,
@@ -309,10 +313,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75645
+        "rating": 4.75647
       },
       "android": {
-        "rating": 4.016129
+        "rating": 4.0215054
       },
       "sentiment": {
         "score": 0.591,
@@ -374,10 +378,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40311
+        "rating": 4.40336
       },
       "android": {
-        "rating": 4.6042805
+        "rating": 4.605
       },
       "sentiment": {
         "score": 0.639,
