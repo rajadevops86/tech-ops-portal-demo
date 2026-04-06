@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-05T04:29:28.380890+00:00",
+  "generated_utc": "2026-04-06T04:37:03.117806+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52963
       },
       "android": {
-        "rating": 4.4260964
+        "rating": 4.4261284
       },
       "sentiment": {
-        "score": 0.664,
+        "score": 0.646,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "Android"
           },
           {
-            "text": "very nice",
+            "text": "good show",
             "rating": 5,
             "platform": "Android"
           }
@@ -36,7 +36,7 @@
             "platform": "Android"
           },
           {
-            "text": "Worst app i had seen there subscription is worst they had given there 1plan is given as only we can see in the mobile they introduced the app because they want lots of money they don't want people think",
+            "text": "over loading, worst app",
             "rating": 1,
             "platform": "Android"
           },
@@ -50,10 +50,6 @@
           {
             "label": "update",
             "trend": "steady"
-          },
-          {
-            "label": "ads",
-            "trend": "steady"
           }
         ]
       }
@@ -61,13 +57,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5236
+        "rating": 4.52369
       },
       "android": {
-        "rating": 4.6556125
+        "rating": 4.656455
       },
       "sentiment": {
-        "score": 0.605,
+        "score": 0.545,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -88,14 +84,14 @@
         ],
         "topNegative": [
           {
-            "text": "is not for free.stupid app...more corrupt",
+            "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "wrong username or password kahit tama naman🙄",
-            "rating": 2,
-            "platform": "Android"
+            "text": "Worst app",
+            "rating": 1,
+            "platform": "iOS"
           },
           {
             "text": "worst app",
@@ -106,6 +102,22 @@
         "drivers": [
           {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -117,12 +129,17 @@
         "rating": 2.27179
       },
       "android": {
-        "rating": 4.3081083
+        "rating": 4.2727275
       },
       "sentiment": {
-        "score": 0.659,
+        "score": 0.621,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Best!",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "Best! 🥳",
             "rating": 5,
@@ -132,41 +149,36 @@
             "text": "the best app",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "excellent services",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worse app.. i keep install and uninstall even i update my phone, the apps keep blank.. and previous experience also too many bugs and lack.. 5 thumbs down",
+            "text": "Terrible app. There’s an issue logging in on two devices. It always asks for a code, but after requesting it many times due to repeated prompts, I’ve reached the limit. I have to wait 30 minutes. Then when I request the code again, it doesn’t even arrive in my email.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I didn't change my password but somehow my current password is wrong, how is that even logical not to mention the app keep logging out after a while, creating a problem everytime I decided to open this app.",
+            "text": "Everything went wrong with this app.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Can even load the app. Open it and all I get is a black screen",
+            "text": "keep getting worst, waste money pay monthly.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
           {
             "label": "update",
             "trend": "worsening"
           },
           {
             "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -182,7 +194,7 @@
         "rating": 4.44646
       },
       "android": {
-        "rating": 3.740024
+        "rating": 3.7424426
       },
       "sentiment": {
         "score": 0.506,
@@ -247,10 +259,10 @@
         "rating": 2.79225
       },
       "android": {
-        "rating": 3.5282357
+        "rating": 3.5272026
       },
       "sentiment": {
-        "score": 0.5,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -271,37 +283,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -313,13 +325,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75647
+        "rating": 4.75633
       },
       "android": {
-        "rating": 4.0215054
+        "rating": 4.032258
       },
       "sentiment": {
-        "score": 0.591,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -358,6 +370,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -378,13 +394,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40336
+        "rating": 4.40261
       },
       "android": {
-        "rating": 4.605
+        "rating": 4.602895
       },
       "sentiment": {
-        "score": 0.639,
+        "score": 0.64,
         "scoreDelta": 0,
         "topPositive": [
           {
