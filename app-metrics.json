@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-06T04:37:03.117806+00:00",
+  "generated_utc": "2026-04-07T04:26:10.394680+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52963
       },
       "android": {
-        "rating": 4.4261284
+        "rating": 4.4261875
       },
       "sentiment": {
-        "score": 0.646,
+        "score": 0.642,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,14 +24,14 @@
             "platform": "Android"
           },
           {
-            "text": "good show",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worst Experience The Devoloper So lazy 🙄",
+            "text": "worst app ever.cannot update profile.ask for help keep on asking for payment screenshot.i told them cannot download.still keep on asking for payment screenshot.customer service not helpful at all.dont waste your money subscribe thiss app.",
             "rating": 1,
             "platform": "Android"
           },
@@ -60,10 +60,10 @@
         "rating": 4.52369
       },
       "android": {
-        "rating": 4.656455
+        "rating": 4.658661
       },
       "sentiment": {
-        "score": 0.545,
+        "score": 0.605,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -84,14 +84,14 @@
         ],
         "topNegative": [
           {
-            "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
+            "text": "is not for free.stupid app...more corrupt",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "wrong username or password kahit tama naman🙄",
+            "rating": 2,
+            "platform": "Android"
           },
           {
             "text": "worst app",
@@ -102,22 +102,6 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -129,10 +113,10 @@
         "rating": 2.27179
       },
       "android": {
-        "rating": 4.2727275
+        "rating": 4.2789474
       },
       "sentiment": {
-        "score": 0.621,
+        "score": 0.618,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -170,11 +154,11 @@
         ],
         "drivers": [
           {
-            "label": "login",
+            "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "login",
             "trend": "worsening"
           },
           {
@@ -194,10 +178,10 @@
         "rating": 4.44646
       },
       "android": {
-        "rating": 3.7424426
+        "rating": 3.7412333
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.501,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -262,7 +246,7 @@
         "rating": 3.5272026
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.498,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -283,37 +267,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -331,7 +315,7 @@
         "rating": 4.032258
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.593,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -370,10 +354,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -397,7 +377,7 @@
         "rating": 4.40261
       },
       "android": {
-        "rating": 4.602895
+        "rating": 4.600731
       },
       "sentiment": {
         "score": 0.64,
