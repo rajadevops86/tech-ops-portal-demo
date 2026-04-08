@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-04-07T04:26:10.394680+00:00",
+  "generated_utc": "2026-04-08T04:29:14.836001+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52963
+        "rating": 4.5296
       },
       "android": {
-        "rating": 4.4261875
+        "rating": 4.426372
       },
       "sentiment": {
-        "score": 0.642,
+        "score": 0.619,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "superb app for entertainment 🙏",
-            "rating": 5,
+            "text": "very good",
+            "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "Chandrashekar Chandrashekarjaligar best comedy",
+            "text": "Good",
             "rating": 5,
             "platform": "Android"
           },
@@ -57,13 +57,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52369
+        "rating": 4.52426
       },
       "android": {
-        "rating": 4.658661
+        "rating": 4.658163
       },
       "sentiment": {
-        "score": 0.605,
+        "score": 0.549,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -77,21 +77,21 @@
             "platform": "Android"
           },
           {
-            "text": "great 😊",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "is not for free.stupid app...more corrupt",
+            "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "wrong username or password kahit tama naman🙄",
-            "rating": 2,
-            "platform": "Android"
+            "text": "Worst app",
+            "rating": 1,
+            "platform": "iOS"
           },
           {
             "text": "worst app",
@@ -102,6 +102,22 @@
         "drivers": [
           {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -110,20 +126,15 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27179
+        "rating": 2.26962
       },
       "android": {
-        "rating": 4.2789474
+        "rating": 4.173913
       },
       "sentiment": {
-        "score": 0.618,
+        "score": 0.621,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Best!",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "Best! 🥳",
             "rating": 5,
@@ -133,23 +144,28 @@
             "text": "the best app",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "excellent services",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Terrible app. There’s an issue logging in on two devices. It always asks for a code, but after requesting it many times due to repeated prompts, I’ve reached the limit. I have to wait 30 minutes. Then when I request the code again, it doesn’t even arrive in my email.",
+            "text": "Can even load the app. Open it and all I get is a black screen",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Everything went wrong with this app.",
+            "text": "These apps really make me sick. Every time I want to use them, the screen is black, I can't see anything, even using another phone, it's the same. I've cleared the cache and everything is the same.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "keep getting worst, waste money pay monthly.",
+            "text": "unable to use the apps at all",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -158,15 +174,15 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
+            "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -175,13 +191,13 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44646
+        "rating": 4.44654
       },
       "android": {
-        "rating": 3.7412333
+        "rating": 3.7376058
       },
       "sentiment": {
-        "score": 0.501,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -240,10 +256,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79225
+        "rating": 2.79171
       },
       "android": {
-        "rating": 3.5272026
+        "rating": 3.5257986
       },
       "sentiment": {
         "score": 0.498,
@@ -309,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75633
+        "rating": 4.75624
       },
       "android": {
-        "rating": 4.032258
+        "rating": 4.0215054
       },
       "sentiment": {
         "score": 0.593,
@@ -374,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40261
+        "rating": 4.40268
       },
       "android": {
-        "rating": 4.600731
+        "rating": 4.600913
       },
       "sentiment": {
         "score": 0.64,
