@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-08T04:29:14.836001+00:00",
+  "generated_utc": "2026-04-09T04:25:44.815060+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,33 +7,33 @@
         "rating": 4.5296
       },
       "android": {
-        "rating": 4.426372
+        "rating": 4.4260626
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.542,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Awesome singing show",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "very good",
             "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "Good",
+            "text": "Superb bt more epsoide plz",
             "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
           {
-            "text": "worst app ever.cannot update profile.ask for help keep on asking for payment screenshot.i told them cannot download.still keep on asking for payment screenshot.customer service not helpful at all.dont waste your money subscribe thiss app.",
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "over loading, worst app",
@@ -48,6 +48,22 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
             "label": "update",
             "trend": "steady"
           }
@@ -60,7 +76,7 @@
         "rating": 4.52426
       },
       "android": {
-        "rating": 4.658163
+        "rating": 4.6591477
       },
       "sentiment": {
         "score": 0.549,
@@ -129,12 +145,17 @@
         "rating": 2.26962
       },
       "android": {
-        "rating": 4.173913
+        "rating": 4.155914
       },
       "sentiment": {
-        "score": 0.621,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Best!",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "Best! 🥳",
             "rating": 5,
@@ -144,41 +165,36 @@
             "text": "the best app",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "excellent services",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Can even load the app. Open it and all I get is a black screen",
+            "text": "Everything went wrong with this app.",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "These apps really make me sick. Every time I want to use them, the screen is black, I can't see anything, even using another phone, it's the same. I've cleared the cache and everything is the same.",
-            "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "unable to use the apps at all",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "keep getting worst, waste money pay monthly.",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
           {
             "label": "update",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -197,9 +213,14 @@
         "rating": 3.7376058
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.508,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -207,11 +228,6 @@
           },
           {
             "text": "I Loved It!",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -235,19 +251,23 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -262,7 +282,7 @@
         "rating": 3.5257986
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -283,37 +303,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -328,10 +348,10 @@
         "rating": 4.75624
       },
       "android": {
-        "rating": 4.0215054
+        "rating": 4.026738
       },
       "sentiment": {
-        "score": 0.593,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -370,6 +390,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -393,7 +417,7 @@
         "rating": 4.40268
       },
       "android": {
-        "rating": 4.600913
+        "rating": 4.601185
       },
       "sentiment": {
         "score": 0.64,
