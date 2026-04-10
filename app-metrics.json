@@ -1,22 +1,22 @@
 {
-  "generated_utc": "2026-04-09T04:25:44.815060+00:00",
+  "generated_utc": "2026-04-10T04:39:30.559513+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5296
+        "rating": 4.52961
       },
       "android": {
-        "rating": 4.4260626
+        "rating": 4.4262223
       },
       "sentiment": {
-        "score": 0.542,
+        "score": 0.646,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Awesome singing show",
+            "text": "very good",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "very good",
@@ -24,44 +24,32 @@
             "platform": "Android"
           },
           {
-            "text": "Superb bt more epsoide plz",
+            "text": "good",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "over loading, worst app",
+            "text": "worst app ever.cannot update profile.ask for help keep on asking for payment screenshot.i told them cannot download.still keep on asking for payment screenshot.customer service not helpful at all.dont waste your money subscribe thiss app.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "pathetic connectivity",
+            "text": "worst app I have subscription but i am trying to login in mobile it was always saying something went wrong",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "over loading, worst app",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
@@ -73,20 +61,15 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52426
+        "rating": 4.52379
       },
       "android": {
-        "rating": 4.6591477
+        "rating": 4.653179
       },
       "sentiment": {
-        "score": 0.549,
+        "score": 0.622,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "excellent",
-            "rating": 5,
-            "platform": "Android"
-          },
           {
             "text": "excellent",
             "rating": 5,
@@ -96,44 +79,33 @@
             "text": "very good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "great 😊",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
+            "text": "WALANG MAAYOS AT MATINONG CUSTOMER SERVICE! HINDI MAKAPAG COMPLAINT NG MAAYOS! DAPAT NEGATIVE ANG REVIEW SA APP NINYO!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app",
+            "text": "is not for free.stupid app...more corrupt",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "worst app",
-            "rating": 1,
+            "text": "wrong username or password kahit tama naman🙄",
+            "rating": 2,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -142,20 +114,15 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26962
+        "rating": 2.26531
       },
       "android": {
         "rating": 4.155914
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.614,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Best!",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "Best! 🥳",
             "rating": 5,
@@ -165,36 +132,41 @@
             "text": "the best app",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "excellent services",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Everything went wrong with this app.",
+            "text": "Can even load the app. Open it and all I get is a black screen",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
+          },
+          {
+            "text": "These apps really make me sick. Every time I want to use them, the screen is black, I can't see anything, even using another phone, it's the same. I've cleared the cache and everything is the same.",
+            "rating": 1,
+            "platform": "Android"
           },
           {
             "text": "unable to use the apps at all",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "keep getting worst, waste money pay monthly.",
-            "rating": 1,
-            "platform": "iOS"
           }
         ],
         "drivers": [
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
           {
             "label": "update",
             "trend": "worsening"
           },
           {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -207,20 +179,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44654
+        "rating": 4.44686
       },
       "android": {
-        "rating": 3.7376058
+        "rating": 3.7412333
       },
       "sentiment": {
-        "score": 0.508,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -228,6 +195,11 @@
           },
           {
             "text": "I Loved It!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -251,23 +223,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -276,13 +244,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79171
+        "rating": 2.79198
       },
       "android": {
-        "rating": 3.5257986
+        "rating": 3.525965
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.498,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -303,37 +271,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -345,13 +313,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75624
+        "rating": 4.756
       },
       "android": {
         "rating": 4.026738
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.593,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -390,10 +358,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -414,10 +378,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40268
+        "rating": 4.40448
       },
       "android": {
-        "rating": 4.601185
+        "rating": 4.600272
       },
       "sentiment": {
         "score": 0.64,
