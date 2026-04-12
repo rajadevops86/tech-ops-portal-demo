@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-04-11T04:12:35.904150+00:00",
+  "generated_utc": "2026-04-12T04:40:09.024248+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5296
+        "rating": 4.52956
       },
       "android": {
-        "rating": 4.4263377
+        "rating": 4.426578
       },
       "sentiment": {
-        "score": 0.659,
+        "score": 0.642,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,19 +24,19 @@
             "platform": "Android"
           },
           {
-            "text": "Good",
+            "text": "Good 👍🏻",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worst enduku ante movie chesetappudu same advertisement enni sarlu vastai alantappudu subscribe avasarama West",
+            "text": "worst app I have subscription but i am trying to login in mobile it was always saying something went wrong",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app I have subscription but i am trying to login in mobile it was always saying something went wrong",
+            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           },
@@ -61,10 +61,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52379
+        "rating": 4.5243
       },
       "android": {
-        "rating": 4.653194
+        "rating": 4.654182
       },
       "sentiment": {
         "score": 0.622,
@@ -117,10 +117,10 @@
         "rating": 2.26531
       },
       "android": {
-        "rating": 4.1542554
+        "rating": 4.1368423
       },
       "sentiment": {
-        "score": 0.607,
+        "score": 0.592,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -141,17 +141,17 @@
         ],
         "topNegative": [
           {
-            "text": "Can even load the app. Open it and all I get is a black screen",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "These apps really make me sick. Every time I want to use them, the screen is black, I can't see anything, even using another phone, it's the same. I've cleared the cache and everything is the same.",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "unable to use the apps at all",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Annoying apps. already blocked all notifications in apps setting but still received and notifications pop up on my screen.",
             "rating": 1,
             "platform": "Android"
           }
@@ -179,7 +179,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44668
+        "rating": 4.44693
       },
       "android": {
         "rating": 3.738815
@@ -244,7 +244,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79198
+        "rating": 2.79247
       },
       "android": {
         "rating": 3.525965
@@ -316,7 +316,7 @@
         "rating": 4.75599
       },
       "android": {
-        "rating": 4.0319147
+        "rating": 4.042781
       },
       "sentiment": {
         "score": 0.601,
@@ -378,10 +378,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40473
+        "rating": 4.40501
       },
       "android": {
-        "rating": 4.6013575
+        "rating": 4.6016407
       },
       "sentiment": {
         "score": 0.64,
