@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-12T04:40:09.024248+00:00",
+  "generated_utc": "2026-04-13T04:51:28.246725+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,12 +7,17 @@
         "rating": 4.52956
       },
       "android": {
-        "rating": 4.426578
+        "rating": 4.426477
       },
       "sentiment": {
-        "score": 0.642,
+        "score": 0.659,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "superb",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "very good",
             "rating": 5,
@@ -22,14 +27,14 @@
             "text": "very good",
             "rating": 3,
             "platform": "Android"
-          },
-          {
-            "text": "Good 👍🏻",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "very very wrost customer service. they dont care about customer while in chating are in phone. just like that they will end chatting and we need to be line like hours hours but we will not get connected that customer service which its shows 24/7. really worst and egoistic attitude.",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "worst app I have subscription but i am trying to login in mobile it was always saying something went wrong",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst app",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "over loading, worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -61,13 +61,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5243
+        "rating": 4.52339
       },
       "android": {
-        "rating": 4.654182
+        "rating": 4.6469736
       },
       "sentiment": {
-        "score": 0.622,
+        "score": 0.594,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -88,8 +88,8 @@
         ],
         "topNegative": [
           {
-            "text": "WALANG MAAYOS AT MATINONG CUSTOMER SERVICE! HINDI MAKAPAG COMPLAINT NG MAAYOS! DAPAT NEGATIVE ANG REVIEW SA APP NINYO!",
-            "rating": 1,
+            "text": "frustrating for a paid app.",
+            "rating": 2,
             "platform": "Android"
           },
           {
@@ -106,6 +106,18 @@
         "drivers": [
           {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -117,10 +129,10 @@
         "rating": 2.26531
       },
       "android": {
-        "rating": 4.1368423
+        "rating": 4.120419
       },
       "sentiment": {
-        "score": 0.592,
+        "score": 0.591,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -182,7 +194,7 @@
         "rating": 4.44693
       },
       "android": {
-        "rating": 3.738815
+        "rating": 3.737805
       },
       "sentiment": {
         "score": 0.506,
@@ -244,10 +256,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79247
+        "rating": 2.79198
       },
       "android": {
-        "rating": 3.525965
+        "rating": 3.5254903
       },
       "sentiment": {
         "score": 0.498,
@@ -313,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75599
+        "rating": 4.756
       },
       "android": {
-        "rating": 4.042781
+        "rating": 4.0478725
       },
       "sentiment": {
         "score": 0.601,
@@ -378,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40501
+        "rating": 4.40524
       },
       "android": {
-        "rating": 4.6016407
+        "rating": 4.600911
       },
       "sentiment": {
         "score": 0.64,
