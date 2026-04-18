@@ -1,44 +1,44 @@
 {
-  "generated_utc": "2026-04-17T04:42:03.844013+00:00",
+  "generated_utc": "2026-04-18T04:24:28.110671+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52954
+        "rating": 4.52955
       },
       "android": {
-        "rating": 4.426654
+        "rating": 4.4267116
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.664,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "superb",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "superb",
+            "text": "very good",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "very good app i love this aha",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Worst and worst application i have ever seen",
+            "text": "Worst experience with the annoying Ads... continuously we have to watch for minutes 3 out dated/old products Ads. Should be provided with Skip option immediately...",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "bad appp",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst maintenance every time lagging",
@@ -49,22 +49,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
             "trend": "steady"
           }
         ]
@@ -73,13 +57,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52308
+        "rating": 4.52271
       },
       "android": {
-        "rating": 4.64649
+        "rating": 4.6472054
       },
       "sentiment": {
-        "score": 0.614,
+        "score": 0.625,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,6 +84,11 @@
         ],
         "topNegative": [
           {
+            "text": "WALANG MAAYOS AT MATINONG CUSTOMER SERVICE! HINDI MAKAPAG COMPLAINT NG MAAYOS! DAPAT NEGATIVE ANG REVIEW SA APP NINYO!",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "frustrating for a paid app.",
             "rating": 2,
             "platform": "Android"
@@ -107,11 +96,6 @@
           {
             "text": "is not for free.stupid app...more corrupt",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "wrong username or password kahit tama naman🙄",
-            "rating": 2,
             "platform": "Android"
           }
         ],
@@ -145,10 +129,10 @@
         "rating": 2.26531
       },
       "android": {
-        "rating": 4.0964465
+        "rating": 4.0653267
       },
       "sentiment": {
-        "score": 0.586,
+        "score": 0.587,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -207,10 +191,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44692
+        "rating": 4.44672
       },
       "android": {
-        "rating": 3.7423687
+        "rating": 3.740244
       },
       "sentiment": {
         "score": 0.506,
@@ -272,7 +256,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79307
+        "rating": 2.79366
       },
       "android": {
         "rating": 3.5297704
@@ -341,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75608
+        "rating": 4.75607
       },
       "android": {
-        "rating": 4.05291
+        "rating": 4.0478725
       },
       "sentiment": {
         "score": 0.601,
@@ -406,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.4051
+        "rating": 4.40441
       },
       "android": {
-        "rating": 4.6016335
+        "rating": 4.6046405
       },
       "sentiment": {
         "score": 0.64,
