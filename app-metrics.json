@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-20T04:51:28.347730+00:00",
+  "generated_utc": "2026-04-21T04:41:37.207252+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,36 +7,36 @@
         "rating": 4.52953
       },
       "android": {
-        "rating": 4.426625
+        "rating": 4.4266315
       },
       "sentiment": {
-        "score": 0.543,
+        "score": 0.632,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "the app is very good clarity",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Superb bt more epsoide plz",
+            "text": "very good app i love this aha",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worst app",
+            "text": "worst UI",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app I have ever seen. I have to leave my home and relatives after watching the content in this app",
+            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           },
@@ -52,18 +52,6 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
             "label": "update",
             "trend": "steady"
           }
@@ -73,13 +61,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5216
+        "rating": 4.52208
       },
       "android": {
-        "rating": 4.635387
+        "rating": 4.635361
       },
       "sentiment": {
-        "score": 0.62,
+        "score": 0.625,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,6 +88,11 @@
         ],
         "topNegative": [
           {
+            "text": "Blocking and viewing.sana paki ayos ng app. (1) Dati, pag nag bblock hindi mo na mababasa messages ngyn, need i exit ang app. (2) pag sa iPad, hindi sya na aautomatic sync sa dapat na view pag open ng app, need mo pa i click yung icon sa side kapag nasa game kn",
+            "rating": 4,
+            "platform": "Android"
+          },
+          {
             "text": "WALANG MAAYOS AT MATINONG CUSTOMER SERVICE! HINDI MAKAPAG COMPLAINT NG MAAYOS! DAPAT NEGATIVE ANG REVIEW SA APP NINYO!",
             "rating": 1,
             "platform": "Android"
@@ -107,11 +100,6 @@
           {
             "text": "frustrating for a paid app.",
             "rating": 2,
-            "platform": "Android"
-          },
-          {
-            "text": "is not for free.stupid app...more corrupt",
-            "rating": 1,
             "platform": "Android"
           }
         ],
@@ -142,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25888
+        "rating": 2.26101
       },
       "android": {
-        "rating": 4.064039
+        "rating": 4.0536585
       },
       "sentiment": {
-        "score": 0.587,
+        "score": 0.573,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,7 +157,7 @@
         ],
         "topNegative": [
           {
-            "text": "These apps really make me sick. Every time I want to use them, the screen is black, I can't see anything, even using another phone, it's the same. I've cleared the cache and everything is the same.",
+            "text": "WHERE! THE HELL IS THE MENU BUTTON IN THE MOBILE APP? Terrible App ..Still Prefer the old App even though it is clunky. How is my children to watch TV it need my phone t scan QR code to sign In???I am away to work and my phone ever with me.",
             "rating": 1,
             "platform": "Android"
           },
@@ -207,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44676
+        "rating": 4.44672
       },
       "android": {
         "rating": 3.7429621
@@ -344,7 +332,7 @@
         "rating": 4.75593
       },
       "android": {
-        "rating": 4.0478725
+        "rating": 4.05291
       },
       "sentiment": {
         "score": 0.601,
@@ -406,10 +394,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40461
+        "rating": 4.40381
       },
       "android": {
-        "rating": 4.6036363
+        "rating": 4.604356
       },
       "sentiment": {
         "score": 0.634,
