@@ -1,23 +1,18 @@
 {
-  "generated_utc": "2026-04-22T04:39:33.268622+00:00",
+  "generated_utc": "2026-04-23T04:44:30.759795+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52953
+        "rating": 4.52949
       },
       "android": {
-        "rating": 4.426444
+        "rating": 4.426566
       },
       "sentiment": {
-        "score": 0.544,
+        "score": 0.636,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "its best",
             "rating": 5,
@@ -27,13 +22,18 @@
             "text": "the app is very good clarity",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "very good app i love this aha",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "I am trying to activate the package, but I am not receiving the OTP. I have already made four complaints, but I have not received any response. This is very disappointing, and the service from the Aha team has been poor.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst UI",
@@ -53,14 +53,6 @@
           },
           {
             "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -73,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52123
+        "rating": 4.5218
       },
       "android": {
-        "rating": 4.6360426
+        "rating": 4.6312413
       },
       "sentiment": {
-        "score": 0.625,
+        "score": 0.624,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +137,10 @@
         "rating": 2.26101
       },
       "android": {
-        "rating": 4.0536585
+        "rating": 4.005435
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.573,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -169,14 +161,14 @@
         ],
         "topNegative": [
           {
-            "text": "unable to use the apps at all",
+            "text": "WHERE! THE HELL IS THE MENU BUTTON IN THE MOBILE APP? Terrible App ..Still Prefer the old App even though it is clunky. How is my children to watch TV it need my phone t scan QR code to sign In???I am away to work and my phone ever with me.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "keep getting worst, waste money pay monthly.",
+            "text": "unable to use the apps at all",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Annoying apps. already blocked all notifications in apps setting but still received and notifications pop up on my screen.",
@@ -190,11 +182,11 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "stream",
+            "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -207,20 +199,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4467
+        "rating": 4.44665
       },
       "android": {
-        "rating": 3.7448108
+        "rating": 3.7380662
       },
       "sentiment": {
-        "score": 0.508,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -228,6 +215,11 @@
           },
           {
             "text": "I Loved It!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -251,23 +243,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -276,10 +264,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79339
+        "rating": 2.79307
       },
       "android": {
-        "rating": 3.5311368
+        "rating": 3.5326798
       },
       "sentiment": {
         "score": 0.498,
@@ -345,13 +333,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75588
+        "rating": 4.75587
       },
       "android": {
-        "rating": 4.05291
+        "rating": 4.0687833
       },
       "sentiment": {
-        "score": 0.601,
+        "score": 0.591,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,12 +348,12 @@
             "platform": "Android"
           },
           {
-            "text": "Best wishes",
+            "text": "Great 👍",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Great 👍",
+            "text": "Great Apps 💯 ✝️ 🙏👍",
             "rating": 5,
             "platform": "Android"
           }
@@ -410,13 +398,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40299
+        "rating": 4.40306
       },
       "android": {
-        "rating": 4.607451
+        "rating": 4.606803
       },
       "sentiment": {
-        "score": 0.577,
+        "score": 0.633,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -437,36 +425,32 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "A totally waste of time and effort downloading and trying to link my account to this app! It will only show you the \"premium\" so you do not have a choice but grab the said additional subscription they want you to sign-up. It will not show you your channels from what you have from your TV.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "It does not work on smart TV. Useless.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
+            "text": "adding ads becomes more horrible",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
