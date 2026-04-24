@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-04-23T04:44:30.759795+00:00",
+  "generated_utc": "2026-04-24T04:48:11.129408+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52949
+        "rating": 4.52953
       },
       "android": {
-        "rating": 4.426566
+        "rating": 4.4264812
       },
       "sentiment": {
-        "score": 0.636,
+        "score": 0.633,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -52,11 +52,11 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "update",
             "trend": "steady"
           },
           {
-            "label": "update",
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -65,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5218
+        "rating": 4.52135
       },
       "android": {
-        "rating": 4.6312413
+        "rating": 4.631504
       },
       "sentiment": {
         "score": 0.624,
@@ -137,7 +137,7 @@
         "rating": 2.26101
       },
       "android": {
-        "rating": 4.005435
+        "rating": 4.010811
       },
       "sentiment": {
         "score": 0.573,
@@ -202,7 +202,7 @@
         "rating": 4.44665
       },
       "android": {
-        "rating": 3.7380662
+        "rating": 3.7368422
       },
       "sentiment": {
         "score": 0.506,
@@ -267,7 +267,7 @@
         "rating": 2.79307
       },
       "android": {
-        "rating": 3.5326798
+        "rating": 3.5323637
       },
       "sentiment": {
         "score": 0.498,
@@ -333,7 +333,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75587
+        "rating": 4.7558
       },
       "android": {
         "rating": 4.0687833
@@ -398,10 +398,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40306
+        "rating": 4.40294
       },
       "android": {
-        "rating": 4.606803
+        "rating": 4.607159
       },
       "sentiment": {
         "score": 0.633,
