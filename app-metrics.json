@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-04-30T05:23:06.417635+00:00",
+  "generated_utc": "2026-05-01T05:35:02.394621+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52953
+        "rating": 4.52952
       },
       "android": {
-        "rating": 4.4260826
+        "rating": 4.4259396
       },
       "sentiment": {
-        "score": 0.543,
+        "score": 0.478,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -65,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51818
+        "rating": 4.5185
       },
       "android": {
-        "rating": 4.617814
+        "rating": 4.6119986
       },
       "sentiment": {
-        "score": 0.604,
+        "score": 0.583,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -80,19 +80,19 @@
             "platform": "Android"
           },
           {
-            "text": "excellent",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "very good apps",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Very disappointing experience. I subscribed and paid for 3 months, but my account is still not upgraded to premium due to an error during activation. I keep seeing the message: “We’re sorry, but a problem has occurred when trying to activate your subscription.” I also cannot find a way to contact support easily. Please fix this issue as soon as possible.",
+            "text": "Very disappointing experience with Pilipinas Live. Even though I only have one device logged in, it keeps saying that I’ve already reached the maximum number of devices allowed, which is clearly not true. On top of that, the app is extremely buggy—it constantly shows errors, crashes randomly, and sometimes won’t load at all. It also loads very slowly, making the whole streaming experience frustrating and inconvenient. Definitely not worth the money in its current state.",
             "rating": 1,
             "platform": "Android"
           },
@@ -134,10 +134,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26182
+        "rating": 2.26006
       },
       "android": {
-        "rating": 3.9693878
+        "rating": 3.9543147
       },
       "sentiment": {
         "score": 0.556,
@@ -199,15 +199,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44655
+        "rating": 4.44632
       },
       "android": {
         "rating": 3.7267158
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.508,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -215,11 +220,6 @@
           },
           {
             "text": "I Loved It!",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -243,19 +243,23 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -333,10 +337,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75561
+        "rating": 4.75562
       },
       "android": {
-        "rating": 4.042328
+        "rating": 4.0265956
       },
       "sentiment": {
         "score": 0.591,
@@ -398,13 +402,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40441
+        "rating": 4.40465
       },
       "android": {
         "rating": 4.605787
       },
       "sentiment": {
-        "score": 0.633,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -425,32 +429,36 @@
         ],
         "topNegative": [
           {
-            "text": "A totally waste of time and effort downloading and trying to link my account to this app! It will only show you the \"premium\" so you do not have a choice but grab the said additional subscription they want you to sign-up. It will not show you your channels from what you have from your TV.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "It does not work on smart TV. Useless.",
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "adding ads becomes more horrible",
+            "text": "Worst customer service",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
