@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-01T05:35:02.394621+00:00",
+  "generated_utc": "2026-05-02T04:52:55.508809+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52952
       },
       "android": {
-        "rating": 4.4259396
+        "rating": 4.4258475
       },
       "sentiment": {
-        "score": 0.478,
+        "score": 0.473,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -65,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5185
+        "rating": 4.5179
       },
       "android": {
-        "rating": 4.6119986
+        "rating": 4.6121364
       },
       "sentiment": {
         "score": 0.583,
@@ -137,10 +137,10 @@
         "rating": 2.26006
       },
       "android": {
-        "rating": 3.9543147
+        "rating": 3.9648242
       },
       "sentiment": {
-        "score": 0.556,
+        "score": 0.549,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -205,14 +205,9 @@
         "rating": 3.7267158
       },
       "sentiment": {
-        "score": 0.508,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -220,6 +215,11 @@
           },
           {
             "text": "I Loved It!",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -243,23 +243,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -268,10 +264,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79291
+        "rating": 2.79215
       },
       "android": {
-        "rating": 3.5300329
+        "rating": 3.529112
       },
       "sentiment": {
         "score": 0.498,
@@ -337,10 +333,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75562
+        "rating": 4.75555
       },
       "android": {
-        "rating": 4.0265956
+        "rating": 4.031746
       },
       "sentiment": {
         "score": 0.591,
@@ -402,10 +398,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40465
+        "rating": 4.40502
       },
       "android": {
-        "rating": 4.605787
+        "rating": 4.6059647
       },
       "sentiment": {
         "score": 0.579,
