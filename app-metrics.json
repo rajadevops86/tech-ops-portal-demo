@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-02T04:52:55.508809+00:00",
+  "generated_utc": "2026-05-03T05:23:11.963683+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52952
+        "rating": 4.52948
       },
       "android": {
-        "rating": 4.4258475
+        "rating": 4.4257417
       },
       "sentiment": {
-        "score": 0.473,
+        "score": 0.476,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "worst service. No refund policy for cancellations",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "worst app ever. always get stuck",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "worst UI",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           }
@@ -65,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5179
+        "rating": 4.51694
       },
       "android": {
-        "rating": 4.6121364
+        "rating": 4.6060715
       },
       "sentiment": {
-        "score": 0.583,
+        "score": 0.578,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -137,7 +137,7 @@
         "rating": 2.26006
       },
       "android": {
-        "rating": 3.9648242
+        "rating": 3.9452736
       },
       "sentiment": {
         "score": 0.549,
@@ -202,7 +202,7 @@
         "rating": 4.44632
       },
       "android": {
-        "rating": 3.7267158
+        "rating": 3.7274969
       },
       "sentiment": {
         "score": 0.506,
@@ -264,13 +264,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79215
+        "rating": 2.79167
       },
       "android": {
-        "rating": 3.529112
+        "rating": 3.5374124
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.497,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -333,13 +333,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75555
+        "rating": 4.75559
       },
       "android": {
         "rating": 4.031746
       },
       "sentiment": {
-        "score": 0.591,
+        "score": 0.565,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,9 +360,9 @@
         ],
         "topNegative": [
           {
-            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
             "rating": 2,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -378,6 +378,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -398,7 +402,7 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40502
+        "rating": 4.40603
       },
       "android": {
         "rating": 4.6059647
