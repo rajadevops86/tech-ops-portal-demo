@@ -1,32 +1,32 @@
 {
-  "generated_utc": "2026-05-03T05:23:11.963683+00:00",
+  "generated_utc": "2026-05-04T05:26:15.230243+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52948
+        "rating": 4.52949
       },
       "android": {
-        "rating": 4.4257417
+        "rating": 4.425583
       },
       "sentiment": {
-        "score": 0.476,
+        "score": 0.458,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Awesome singing show",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "its best",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "Superb bt more epsoide plz",
             "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -48,16 +48,24 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "slow",
             "trend": "worsening"
           },
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
             "label": "update",
-            "trend": "steady"
+            "trend": "worsening"
           }
         ]
       }
@@ -65,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51694
+        "rating": 4.51665
       },
       "android": {
-        "rating": 4.6060715
+        "rating": 4.602857
       },
       "sentiment": {
-        "score": 0.578,
+        "score": 0.574,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -97,7 +105,7 @@
             "platform": "Android"
           },
           {
-            "text": "WALANG MAAYOS AT MATINONG CUSTOMER SERVICE! HINDI MAKAPAG COMPLAINT NG MAAYOS! DAPAT NEGATIVE ANG REVIEW SA APP NINYO!",
+            "text": "Useless app. Registration required but unable to watch live games. Puro loading lang the whole time.",
             "rating": 1,
             "platform": "Android"
           },
@@ -134,7 +142,7 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26006
+        "rating": 2.25796
       },
       "android": {
         "rating": 3.9452736
@@ -199,10 +207,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44632
+        "rating": 4.44629
       },
       "android": {
-        "rating": 3.7274969
+        "rating": 3.727723
       },
       "sentiment": {
         "score": 0.506,
@@ -264,10 +272,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79167
+        "rating": 2.79215
       },
       "android": {
-        "rating": 3.5374124
+        "rating": 3.5385466
       },
       "sentiment": {
         "score": 0.497,
@@ -333,13 +341,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75559
+        "rating": 4.75556
       },
       "android": {
         "rating": 4.031746
       },
       "sentiment": {
-        "score": 0.565,
+        "score": 0.591,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,9 +368,9 @@
         ],
         "topNegative": [
           {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
             "rating": 2,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -378,10 +386,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -402,10 +406,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.40603
+        "rating": 4.40852
       },
       "android": {
-        "rating": 4.6059647
+        "rating": 4.606047
       },
       "sentiment": {
         "score": 0.579,
