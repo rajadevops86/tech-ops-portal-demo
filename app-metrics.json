@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-08T04:48:06.431555+00:00",
+  "generated_utc": "2026-05-09T05:15:05.170103+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52952
+        "rating": 4.52949
       },
       "android": {
-        "rating": 4.425527
+        "rating": 4.4254303
       },
       "sentiment": {
-        "score": 0.486,
+        "score": 0.518,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,17 +19,22 @@
             "platform": "iOS"
           },
           {
+            "text": "very good platform",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
             "text": "Superb bt more epsoide plz",
             "rating": 5,
             "platform": "iOS"
-          },
-          {
-            "text": "super experience and quality very good awesome",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "worst",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "worst app in play store",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst service. No refund policy for cancellations",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app ever. always get stuck",
             "rating": 1,
             "platform": "Android"
           }
@@ -61,7 +61,7 @@
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
@@ -76,10 +76,10 @@
         "rating": 4.51376
       },
       "android": {
-        "rating": 4.6052446
+        "rating": 4.6072435
       },
       "sentiment": {
-        "score": 0.524,
+        "score": 0.531,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -93,7 +93,7 @@
             "platform": "Android"
           },
           {
-            "text": "very good apps",
+            "text": "Great apps",
             "rating": 5,
             "platform": "Android"
           }
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25753
+        "rating": 2.2621
       },
       "android": {
-        "rating": 3.868421
+        "rating": 3.871134
       },
       "sentiment": {
-        "score": 0.537,
+        "score": 0.536,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -279,7 +279,7 @@
         "rating": 2.79215
       },
       "android": {
-        "rating": 3.5397413
+        "rating": 3.5388026
       },
       "sentiment": {
         "score": 0.479,
@@ -345,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75551
+        "rating": 4.75552
       },
       "android": {
         "rating": 4.010638
@@ -414,10 +414,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41005
+        "rating": 4.40986
       },
       "android": {
-        "rating": 4.602789
+        "rating": 4.6030536
       },
       "sentiment": {
         "score": 0.577,
