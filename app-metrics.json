@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-13T05:41:13.813167+00:00",
+  "generated_utc": "2026-05-14T05:40:31.638094+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52935
+        "rating": 4.52934
       },
       "android": {
-        "rating": 4.4266057
+        "rating": 4.426401
       },
       "sentiment": {
-        "score": 0.551,
+        "score": 0.526,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50879
+        "rating": 4.50837
       },
       "android": {
-        "rating": 4.6050363
+        "rating": 4.6009684
       },
       "sentiment": {
-        "score": 0.526,
+        "score": 0.53,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 2.26622
       },
       "android": {
-        "rating": 3.8412697
+        "rating": 3.8307693
       },
       "sentiment": {
-        "score": 0.537,
+        "score": 0.53,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,21 +157,21 @@
             "platform": "Android"
           },
           {
-            "text": "the best app",
+            "text": "Enjoy layan Unifi TV 😍 Banyak cerita best & tak lag. Memang best untuk family time...lurveee",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Enjoy layan Unifi TV 😍 Banyak cerita best & tak lag. Memang best untuk family time...lurveee",
+            "text": "ok the Best",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "keep getting worst, waste money pay monthly.",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "Siaran buffering²... bayar bulanan mahal² tapi bila nak tonton layan lag2...kadang kala terus error... betul² bad... kalau hujan pun sekarang dah jd spt Astro...bulanan mahal tapi siaran asyik ulang² movie cerita sama 3-4 bulan... kalau nk guna internet Unifi nie bagus la tp kalau utk siaran Tv channel ke ape...buruk...apps Chanel spt nexflix oke laaa ada sesetengah channel bayar sekalipun bila nk tonton kne daftar sekali lagi dan bayar...",
+            "rating": 2,
+            "platform": "Android"
           },
           {
             "text": "Stupid apps ever. Unifi tv on tv cannot be play at all. Bodoh giler",
@@ -194,11 +194,11 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -279,7 +279,7 @@
         "rating": 2.79215
       },
       "android": {
-        "rating": 3.5428255
+        "rating": 3.541744
       },
       "sentiment": {
         "score": 0.479,
@@ -414,10 +414,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41012
+        "rating": 4.41071
       },
       "android": {
-        "rating": 4.6075892
+        "rating": 4.6075726
       },
       "sentiment": {
         "score": 0.576,
