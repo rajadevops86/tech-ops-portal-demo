@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-14T05:40:31.638094+00:00",
+  "generated_utc": "2026-05-15T05:47:01.593450+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52934
+        "rating": 4.52935
       },
       "android": {
-        "rating": 4.426401
+        "rating": 4.4264584
       },
       "sentiment": {
-        "score": 0.526,
+        "score": 0.546,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,17 +19,22 @@
             "platform": "iOS"
           },
           {
-            "text": "excellent",
-            "rating": 5,
+            "text": "superb",
+            "rating": 4,
             "platform": "Android"
           },
           {
-            "text": "best",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Worst and worst application i have ever seen",
             "rating": 1,
@@ -39,11 +44,6 @@
             "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "One of worst application I ever seen",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50837
+        "rating": 4.5087
       },
       "android": {
-        "rating": 4.6009684
+        "rating": 4.6006837
       },
       "sentiment": {
-        "score": 0.53,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,10 +145,10 @@
         "rating": 2.26622
       },
       "android": {
-        "rating": 3.8307693
+        "rating": 3.78
       },
       "sentiment": {
-        "score": 0.53,
+        "score": 0.521,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -162,9 +162,9 @@
             "platform": "Android"
           },
           {
-            "text": "ok the Best",
+            "text": "TM Bukit Raja Service the best good. Package and plan TM pun okay👍🏻",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -345,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75537
+        "rating": 4.75545
       },
       "android": {
         "rating": 4.010638
@@ -414,10 +414,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41071
+        "rating": 4.4109
       },
       "android": {
-        "rating": 4.6075726
+        "rating": 4.6091394
       },
       "sentiment": {
         "score": 0.576,
