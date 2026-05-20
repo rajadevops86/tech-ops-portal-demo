@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-19T05:58:53.044780+00:00",
+  "generated_utc": "2026-05-20T05:58:12.381899+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52933
+        "rating": 4.52931
       },
       "android": {
-        "rating": 4.42652
+        "rating": 4.4266686
       },
       "sentiment": {
-        "score": 0.649,
+        "score": 0.645,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,13 +19,13 @@
             "platform": "Android"
           },
           {
-            "text": "superb",
-            "rating": 4,
+            "text": "very good",
+            "rating": 5,
             "platform": "Android"
           },
           {
             "text": "very good",
-            "rating": 5,
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -52,20 +52,15 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50811
+        "rating": 4.50835
       },
       "android": {
-        "rating": 4.603354
+        "rating": 4.6004844
       },
       "sentiment": {
-        "score": 0.527,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Most of the time error! Refund!!!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "very good",
             "rating": 5,
@@ -75,44 +70,37 @@
             "text": "Great apps",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "fake walang nba dito",
+            "text": "Useless app. Registration required but unable to watch live games. Puro loading lang the whole time.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Just subscribed and already got the confirmation via email. It even says ‘Active’ on the ‘Manage Plan’ tab. However, the app doesn’t seem to reflect that I already got premium. I can’t watch anything since everything is locked. Very disappointed.",
+            "text": "This app is a scam, you have to pay for subscription just to watch but once you do, there is no live or sports content other than random interviews and commercials.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app",
+            "text": "fake walang nba dito",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -121,10 +109,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26866
+        "rating": 2.26656
       },
       "android": {
-        "rating": 3.5661376
+        "rating": 3.5885417
       },
       "sentiment": {
         "score": 0.501,
@@ -254,10 +242,10 @@
         "rating": 2.79243
       },
       "android": {
-        "rating": 3.5414035
+        "rating": 3.539405
       },
       "sentiment": {
-        "score": 0.478,
+        "score": 0.497,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -278,37 +266,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -320,7 +308,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75572
+        "rating": 4.75563
       },
       "android": {
         "rating": 4.021053
@@ -385,10 +373,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41167
+        "rating": 4.41131
       },
       "android": {
-        "rating": 4.6086764
+        "rating": 4.609558
       },
       "sentiment": {
         "score": 0.628,
