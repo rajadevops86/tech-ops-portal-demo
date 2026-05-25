@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-24T05:53:50.904415+00:00",
+  "generated_utc": "2026-05-25T06:17:57.390737+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52931
+        "rating": 4.52932
       },
       "android": {
-        "rating": 4.427161
+        "rating": 4.4271145
       },
       "sentiment": {
-        "score": 0.683,
+        "score": 0.709,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,29 +24,33 @@
             "platform": "Android"
           },
           {
-            "text": "Best is yet to come",
-            "rating": 4,
+            "text": "very good",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worst",
+            "text": "The app initially showed that a movie is present and to watch it I need to subscribe. After subscribing, the app shows that the movie is not present due to some error. Unethical ways to get a person to subscribe! Bogus app! The movie name is Krishnarjun Yuddham. I clicked the link from chrome and then it opened the aha app.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst",
-            "rating": 3,
+            "text": "Very disappointing experience with Aha. I cancelled my subscription well before the renewal date, but the amount still got auto-debited through PhonePe AutoPay. Even worse, the AutoPay mandate cannot be removed because of an issue from the merchant side. Customer support is practically non-existent — no proper response or assistance for billing issues. This is extremely frustrating and unacceptable for a paid service. Please fix your payment system and provide real customer support.",
+            "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app.even though I cancelled my subscription it renew automatically worst service",
-            "rating": 1,
+            "text": "Quality of Content is not great",
+            "rating": 2,
             "platform": "Android"
           }
         ],
         "drivers": [
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
           {
             "label": "ads",
             "trend": "steady"
@@ -60,10 +64,10 @@
         "rating": 4.5076
       },
       "android": {
-        "rating": 4.591684
+        "rating": 4.5901527
       },
       "sentiment": {
-        "score": 0.574,
+        "score": 0.58,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -101,11 +105,11 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -117,12 +121,17 @@
         "rating": 2.26689
       },
       "android": {
-        "rating": 3.56
+        "rating": 3.4818652
       },
       "sentiment": {
-        "score": 0.483,
+        "score": 0.476,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "smooth streaming",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "Can We Watch Full Matches of FIFA WORLD CUP 2026 Here?",
             "rating": 3,
@@ -132,19 +141,9 @@
             "text": "signing up was a great hassle. was waiting for my OTP since last night. didnt receive it until now (the next morning). what a joke",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "Download this app on tv, what appears on screen is no internet connection error code 109. But when i open yt, it working just fine. Is it true that this is caused by internet connection problem?",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "unable to use the apps at all",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "Siaran buffering²... bayar bulanan mahal² tapi bila nak tonton layan lag2...kadang kala terus error... betul² bad... kalau hujan pun sekarang dah jd spt Astro...bulanan mahal tapi siaran asyik ulang² movie cerita sama 3-4 bulan... kalau nk guna internet Unifi nie bagus la tp kalau utk siaran Tv channel ke ape...buruk...apps Chanel spt nexflix oke laaa ada sesetengah channel bayar sekalipun bila nk tonton kne daftar sekali lagi dan bayar...",
             "rating": 2,
@@ -152,6 +151,11 @@
           },
           {
             "text": "Annoying apps. already blocked all notifications in apps setting but still received and notifications pop up on my screen.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "The 2.0 update is the worst. Susah nak tengoknlive tv. Now it's not working on my tv and my mobiles. Camna nak tengok F1, bil dah bayar",
             "rating": 1,
             "platform": "Android"
           }
@@ -162,11 +166,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -179,7 +183,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44575
+        "rating": 4.44571
       },
       "android": {
         "rating": 3.7303798
@@ -247,7 +251,7 @@
         "rating": 2.79195
       },
       "android": {
-        "rating": 3.543454
+        "rating": 3.544403
       },
       "sentiment": {
         "score": 0.497,
@@ -313,7 +317,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75551
+        "rating": 4.75544
       },
       "android": {
         "rating": 3.9895833
@@ -378,10 +382,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41097
+        "rating": 4.41124
       },
       "android": {
-        "rating": 4.607975
+        "rating": 4.6082106
       },
       "sentiment": {
         "score": 0.631,
