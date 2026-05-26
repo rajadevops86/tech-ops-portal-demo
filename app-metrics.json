@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-25T06:17:57.390737+00:00",
+  "generated_utc": "2026-05-26T05:58:28.281087+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52932
+        "rating": 4.52931
       },
       "android": {
-        "rating": 4.4271145
+        "rating": 4.427065
       },
       "sentiment": {
-        "score": 0.709,
+        "score": 0.668,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,36 +19,40 @@
             "platform": "Android"
           },
           {
-            "text": "superb superb superb",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "very good app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "The app initially showed that a movie is present and to watch it I need to subscribe. After subscribing, the app shows that the movie is not present due to some error. Unethical ways to get a person to subscribe! Bogus app! The movie name is Krishnarjun Yuddham. I clicked the link from chrome and then it opened the aha app.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Very disappointing experience with Aha. I cancelled my subscription well before the renewal date, but the amount still got auto-debited through PhonePe AutoPay. Even worse, the AutoPay mandate cannot be removed because of an issue from the merchant side. Customer support is practically non-existent — no proper response or assistance for billing issues. This is extremely frustrating and unacceptable for a paid service. Please fix your payment system and provide real customer support.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "Quality of Content is not great",
             "rating": 2,
+            "platform": "Android"
+          },
+          {
+            "text": "very poor experience video was buffering very much poor",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst service waste time and Waste Money",
+            "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -61,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5076
+        "rating": 4.50776
       },
       "android": {
-        "rating": 4.5901527
+        "rating": 4.5913835
       },
       "sentiment": {
         "score": 0.58,
@@ -118,7 +122,7 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26689
+        "rating": 2.26898
       },
       "android": {
         "rating": 3.4818652
@@ -183,10 +187,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44571
+        "rating": 4.44575
       },
       "android": {
-        "rating": 3.7303798
+        "rating": 3.7319849
       },
       "sentiment": {
         "score": 0.506,
@@ -251,7 +255,7 @@
         "rating": 2.79195
       },
       "android": {
-        "rating": 3.544403
+        "rating": 3.54593
       },
       "sentiment": {
         "score": 0.497,
@@ -317,10 +321,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75544
+        "rating": 4.75545
       },
       "android": {
-        "rating": 3.9895833
+        "rating": 4.047619
       },
       "sentiment": {
         "score": 0.583,
@@ -382,13 +386,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41124
+        "rating": 4.41171
       },
       "android": {
-        "rating": 4.6082106
+        "rating": 4.612584
       },
       "sentiment": {
-        "score": 0.631,
+        "score": 0.575,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -409,32 +413,36 @@
         ],
         "topNegative": [
           {
-            "text": "It does not work on smart TV. Useless.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "adding ads becomes more horrible",
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
