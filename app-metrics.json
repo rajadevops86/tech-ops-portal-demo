@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-26T05:58:28.281087+00:00",
+  "generated_utc": "2026-05-27T06:09:44.527912+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52931
+        "rating": 4.52935
       },
       "android": {
-        "rating": 4.427065
+        "rating": 4.4272203
       },
       "sentiment": {
-        "score": 0.668,
+        "score": 0.679,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -54,10 +54,6 @@
           {
             "label": "buffer",
             "trend": "steady"
-          },
-          {
-            "label": "ads",
-            "trend": "steady"
           }
         ]
       }
@@ -65,10 +61,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50776
+        "rating": 4.50751
       },
       "android": {
-        "rating": 4.5913835
+        "rating": 4.5912685
       },
       "sentiment": {
         "score": 0.58,
@@ -122,13 +118,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26898
+        "rating": 2.26689
       },
       "android": {
-        "rating": 3.4818652
+        "rating": 3.4591837
       },
       "sentiment": {
-        "score": 0.476,
+        "score": 0.478,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -176,10 +172,6 @@
           {
             "label": "buffer",
             "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
           }
         ]
       }
@@ -190,12 +182,17 @@
         "rating": 4.44575
       },
       "android": {
-        "rating": 3.7319849
+        "rating": 3.7303798
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.503,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -205,18 +202,13 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -231,19 +223,23 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -255,7 +251,7 @@
         "rating": 2.79195
       },
       "android": {
-        "rating": 3.54593
+        "rating": 3.544403
       },
       "sentiment": {
         "score": 0.497,
@@ -321,10 +317,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75545
+        "rating": 4.75526
       },
       "android": {
-        "rating": 4.047619
+        "rating": 4.0575914
       },
       "sentiment": {
         "score": 0.583,
@@ -386,13 +382,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41171
+        "rating": 4.41188
       },
       "android": {
-        "rating": 4.612584
+        "rating": 4.6146913
       },
       "sentiment": {
-        "score": 0.575,
+        "score": 0.632,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -413,36 +409,32 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "adding ads becomes more horrible",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
