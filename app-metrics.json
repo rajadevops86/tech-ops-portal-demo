@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-05-27T06:09:44.527912+00:00",
+  "generated_utc": "2026-05-28T06:02:18.303014+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52935
+        "rating": 4.52934
       },
       "android": {
-        "rating": 4.4272203
+        "rating": 4.427495
       },
       "sentiment": {
-        "score": 0.679,
+        "score": 0.66,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "best",
+            "rating": 3,
+            "platform": "Android"
+          },
           {
             "text": "Awesome",
             "rating": 5,
@@ -22,19 +27,9 @@
             "text": "very good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "very good app",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "Quality of Content is not great",
-            "rating": 2,
-            "platform": "Android"
-          },
           {
             "text": "very poor experience video was buffering very much poor",
             "rating": 1,
@@ -42,6 +37,11 @@
           },
           {
             "text": "worst service waste time and Waste Money",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst",
             "rating": 1,
             "platform": "Android"
           }
@@ -64,10 +64,10 @@
         "rating": 4.50751
       },
       "android": {
-        "rating": 4.5912685
+        "rating": 4.586066
       },
       "sentiment": {
-        "score": 0.58,
+        "score": 0.582,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -121,10 +121,10 @@
         "rating": 2.26689
       },
       "android": {
-        "rating": 3.4591837
+        "rating": 3.3782384
       },
       "sentiment": {
-        "score": 0.478,
+        "score": 0.483,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -185,14 +185,9 @@
         "rating": 3.7303798
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -202,13 +197,18 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -223,23 +223,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -317,10 +313,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75526
+        "rating": 4.75527
       },
       "android": {
-        "rating": 4.0575914
+        "rating": 4.0625
       },
       "sentiment": {
         "score": 0.583,
@@ -385,7 +381,7 @@
         "rating": 4.41188
       },
       "android": {
-        "rating": 4.6146913
+        "rating": 4.614865
       },
       "sentiment": {
         "score": 0.632,
