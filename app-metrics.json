@@ -1,39 +1,39 @@
 {
-  "generated_utc": "2026-05-31T06:08:52.906655+00:00",
+  "generated_utc": "2026-06-01T06:45:52.614251+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52926
+        "rating": 4.52918
       },
       "android": {
-        "rating": 4.427456
+        "rating": 4.427599
       },
       "sentiment": {
-        "score": 0.608,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "wonderful 👍👍👍👍",
-            "rating": 4,
-            "platform": "Android"
+            "text": "Awesome singing show",
+            "rating": 5,
+            "platform": "iOS"
           },
           {
-            "text": "best",
+            "text": "excellent",
             "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "i happy ciris",
-            "rating": 5,
+            "text": "wonderful 👍👍👍👍",
+            "rating": 4,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "not working properly very bad",
+            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst",
@@ -48,11 +48,23 @@
         ],
         "drivers": [
           {
-            "label": "buffer",
-            "trend": "steady"
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
           },
           {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -61,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50635
+        "rating": 4.50445
       },
       "android": {
-        "rating": 4.5846786
+        "rating": 4.5782638
       },
       "sentiment": {
-        "score": 0.539,
+        "score": 0.543,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -109,11 +121,11 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           },
           {
@@ -121,7 +133,7 @@
             "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -130,41 +142,41 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2648
+        "rating": 2.28059
       },
       "android": {
-        "rating": 3.2239583
+        "rating": 3.1692307
       },
       "sentiment": {
-        "score": 0.496,
+        "score": 0.508,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "smooth streaming",
+            "text": "TM Bukit Raja Service the best good. Package and plan TM pun okay👍🏻",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Can We Watch Full Matches of FIFA WORLD CUP 2026 Here?",
+            "text": "Would be good if the compatibility is extended to Apple TV",
             "rating": 3,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "signing up was a great hassle. was waiting for my OTP since last night. didnt receive it until now (the next morning). what a joke",
-            "rating": 1,
-            "platform": "Android"
+            "text": "good",
+            "rating": 5,
+            "platform": "iOS"
           }
         ],
         "topNegative": [
           {
-            "text": "WHERE! THE HELL IS THE MENU BUTTON IN THE MOBILE APP? Terrible App ..Still Prefer the old App even though it is clunky. How is my children to watch TV it need my phone t scan QR code to sign In???I am away to work and my phone ever with me.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "Siaran buffering²... bayar bulanan mahal² tapi bila nak tonton layan lag2...kadang kala terus error... betul² bad... kalau hujan pun sekarang dah jd spt Astro...bulanan mahal tapi siaran asyik ulang² movie cerita sama 3-4 bulan... kalau nk guna internet Unifi nie bagus la tp kalau utk siaran Tv channel ke ape...buruk...apps Chanel spt nexflix oke laaa ada sesetengah channel bayar sekalipun bila nk tonton kne daftar sekali lagi dan bayar...",
             "rating": 2,
             "platform": "Android"
+          },
+          {
+            "text": "Stupid apps ever. Unifi tv on tv cannot be play at all. Bodoh giler",
+            "rating": 1,
+            "platform": "iOS"
           },
           {
             "text": "The 2.0 update is the worst. Susah nak tengoknlive tv. Now it's not working on my tv and my mobiles. Camna nak tengok F1, bil dah bayar",
@@ -178,7 +190,15 @@
             "trend": "worsening"
           },
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           },
           {
@@ -191,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44587
+        "rating": 4.44566
       },
       "android": {
-        "rating": 3.7309644
+        "rating": 3.729352
       },
       "sentiment": {
         "score": 0.503,
@@ -263,10 +283,10 @@
         "rating": 2.79254
       },
       "android": {
-        "rating": 3.5426211
+        "rating": 3.5420737
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.478,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -287,37 +307,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -329,13 +349,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75512
+        "rating": 4.75507
       },
       "android": {
         "rating": 4.0473685
       },
       "sentiment": {
-        "score": 0.593,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -356,9 +376,9 @@
         ],
         "topNegative": [
           {
-            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
             "rating": 2,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -374,6 +394,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -397,10 +421,10 @@
         "rating": 4.41235
       },
       "android": {
-        "rating": 4.61186
+        "rating": 4.6129613
       },
       "sentiment": {
-        "score": 0.642,
+        "score": 0.581,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -421,32 +445,36 @@
         ],
         "topNegative": [
           {
-            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "adding ads becomes more horrible",
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
