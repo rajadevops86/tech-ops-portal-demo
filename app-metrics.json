@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-02T06:27:54.510554+00:00",
+  "generated_utc": "2026-06-03T06:44:17.198444+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52916
       },
       "android": {
-        "rating": 4.427785
+        "rating": 4.427783
       },
       "sentiment": {
-        "score": 0.637,
+        "score": 0.639,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -64,7 +64,7 @@
         "rating": 4.50362
       },
       "android": {
-        "rating": 4.5791993
+        "rating": 4.5792704
       },
       "sentiment": {
         "score": 0.59,
@@ -118,10 +118,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.28293
+        "rating": 2.28317
       },
       "android": {
-        "rating": 3.1197917
+        "rating": 3.1243522
       },
       "sentiment": {
         "score": 0.493,
@@ -183,7 +183,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44566
+        "rating": 4.44562
       },
       "android": {
         "rating": 3.7309644
@@ -251,7 +251,7 @@
         "rating": 2.79254
       },
       "android": {
-        "rating": 3.5420737
+        "rating": 3.5426211
       },
       "sentiment": {
         "score": 0.497,
@@ -317,13 +317,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75515
+        "rating": 4.75511
       },
       "android": {
         "rating": 4.0473685
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -344,9 +344,9 @@
         ],
         "topNegative": [
           {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
             "rating": 2,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -362,10 +362,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -386,10 +382,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41281
+        "rating": 4.41305
       },
       "android": {
-        "rating": 4.6134114
+        "rating": 4.613453
       },
       "sentiment": {
         "score": 0.642,
