@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-03T06:44:17.198444+00:00",
+  "generated_utc": "2026-06-04T06:28:11.729720+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52916
+        "rating": 4.52919
       },
       "android": {
-        "rating": 4.427783
+        "rating": 4.42801
       },
       "sentiment": {
-        "score": 0.639,
+        "score": 0.645,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "worst app not working properly",
+            "text": "worst app ever in this entire world i neveer has seen wastee always collecting money 💵 dont use ever and neverrrrrrr 𝓫𝓪𝓭 𝓮𝔃𝓹𝓲𝓻𝓮𝓷𝓬𝓮 𝓯𝓸𝓻𝓮𝓿𝓮𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻𝓻 𝓶𝔂 𝓵𝓲𝓯𝓮 𝓶𝔂",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "not working properly very bad",
+            "text": "worst app not working properly",
             "rating": 1,
             "platform": "Android"
           },
@@ -64,7 +64,7 @@
         "rating": 4.50362
       },
       "android": {
-        "rating": 4.5792704
+        "rating": 4.5789475
       },
       "sentiment": {
         "score": 0.59,
@@ -118,13 +118,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.28317
+        "rating": 2.28341
       },
       "android": {
-        "rating": 3.1243522
+        "rating": 3.0959597
       },
       "sentiment": {
-        "score": 0.493,
+        "score": 0.488,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -166,6 +166,10 @@
             "trend": "worsening"
           },
           {
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
             "label": "login",
             "trend": "steady"
           },
@@ -183,10 +187,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44562
+        "rating": 4.4455
       },
       "android": {
-        "rating": 3.7309644
+        "rating": 3.729352
       },
       "sentiment": {
         "score": 0.506,
@@ -251,7 +255,7 @@
         "rating": 2.79254
       },
       "android": {
-        "rating": 3.5426211
+        "rating": 3.541933
       },
       "sentiment": {
         "score": 0.497,
@@ -317,7 +321,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75511
+        "rating": 4.75495
       },
       "android": {
         "rating": 4.0473685
@@ -382,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41305
+        "rating": 4.41324
       },
       "android": {
-        "rating": 4.613453
+        "rating": 4.614145
       },
       "sentiment": {
         "score": 0.642,
