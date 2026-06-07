@@ -1,39 +1,39 @@
 {
-  "generated_utc": "2026-06-06T05:46:53.518446+00:00",
+  "generated_utc": "2026-06-07T06:14:29.420472+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52914
+        "rating": 4.52913
       },
       "android": {
-        "rating": 4.4281907
+        "rating": 4.4282975
       },
       "sentiment": {
-        "score": 0.547,
+        "score": 0.635,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "excellent",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "excellent",
-            "rating": 3,
+            "text": "good quality",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "very bad",
+            "rating": 2,
+            "platform": "Android"
           },
           {
             "text": "The worst app don't download it.....still loading... wast of money and time...",
@@ -48,22 +48,6 @@
         ],
         "drivers": [
           {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
             "label": "buffer",
             "trend": "steady"
           }
@@ -73,13 +57,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49704
+        "rating": 4.49662
       },
       "android": {
-        "rating": 4.564985
+        "rating": 4.556463
       },
       "sentiment": {
-        "score": 0.589,
+        "score": 0.576,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -88,12 +72,12 @@
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "great",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "great",
+            "text": "great app",
             "rating": 5,
             "platform": "Android"
           }
@@ -110,7 +94,7 @@
             "platform": "Android"
           },
           {
-            "text": "fake walang nba dito",
+            "text": "fake apps karmahin sana kayo",
             "rating": 1,
             "platform": "Android"
           }
@@ -137,38 +121,38 @@
         "rating": 2.27929
       },
       "android": {
-        "rating": 3.044335
+        "rating": 2.9489796
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.483,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "TM Bukit Raja Service the best good. Package and plan TM pun okay👍🏻",
+            "text": "smooth streaming",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Would be good if the compatibility is extended to Apple TV",
+            "text": "Can We Watch Full Matches of FIFA WORLD CUP 2026 Here?",
             "rating": 3,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 5,
-            "platform": "iOS"
+            "text": "Download this app on tv, what appears on screen is no internet connection error code 109. But when i open yt, it working just fine. Is it true that this is caused by internet connection problem?",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Siaran buffering²... bayar bulanan mahal² tapi bila nak tonton layan lag2...kadang kala terus error... betul² bad... kalau hujan pun sekarang dah jd spt Astro...bulanan mahal tapi siaran asyik ulang² movie cerita sama 3-4 bulan... kalau nk guna internet Unifi nie bagus la tp kalau utk siaran Tv channel ke ape...buruk...apps Chanel spt nexflix oke laaa ada sesetengah channel bayar sekalipun bila nk tonton kne daftar sekali lagi dan bayar...",
-            "rating": 2,
+            "text": "keeps asking me to activate. can't watch anything. multiple log in variations, idiotic.",
+            "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Stupid apps ever. Unifi tv on tv cannot be play at all. Bodoh giler",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "Siaran buffering²... bayar bulanan mahal² tapi bila nak tonton layan lag2...kadang kala terus error... betul² bad... kalau hujan pun sekarang dah jd spt Astro...bulanan mahal tapi siaran asyik ulang² movie cerita sama 3-4 bulan... kalau nk guna internet Unifi nie bagus la tp kalau utk siaran Tv channel ke ape...buruk...apps Chanel spt nexflix oke laaa ada sesetengah channel bayar sekalipun bila nk tonton kne daftar sekali lagi dan bayar...",
+            "rating": 2,
+            "platform": "Android"
           },
           {
             "text": "The 2.0 update is the worst. Susah nak tengoknlive tv. Now it's not working on my tv and my mobiles. Camna nak tengok F1, bil dah bayar",
@@ -182,15 +166,15 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "slow",
             "trend": "steady"
           },
           {
             "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -203,10 +187,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4455
+        "rating": 4.44546
       },
       "android": {
-        "rating": 3.7309644
+        "rating": 3.7312102
       },
       "sentiment": {
         "score": 0.506,
@@ -271,7 +255,7 @@
         "rating": 2.79254
       },
       "android": {
-        "rating": 3.5413845
+        "rating": 3.542501
       },
       "sentiment": {
         "score": 0.497,
@@ -337,7 +321,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75516
+        "rating": 4.75521
       },
       "android": {
         "rating": 4.0523562
@@ -402,13 +386,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41334
+        "rating": 4.41289
       },
       "android": {
-        "rating": 4.6182146
+        "rating": 4.6165247
       },
       "sentiment": {
-        "score": 0.58,
+        "score": 0.641,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -429,36 +413,32 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "adding ads becomes more horrible",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
