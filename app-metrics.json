@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-07T06:14:29.420472+00:00",
+  "generated_utc": "2026-06-08T06:28:14.041049+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52913
+        "rating": 4.52914
       },
       "android": {
-        "rating": 4.4282975
+        "rating": 4.428231
       },
       "sentiment": {
-        "score": 0.635,
+        "score": 0.61,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,8 +19,8 @@
             "platform": "Android"
           },
           {
-            "text": "good quality",
-            "rating": 5,
+            "text": "good",
+            "rating": 4,
             "platform": "Android"
           },
           {
@@ -57,15 +57,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49662
+        "rating": 4.49664
       },
       "android": {
-        "rating": 4.556463
+        "rating": 4.563048
       },
       "sentiment": {
-        "score": 0.576,
+        "score": 0.58,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -73,11 +78,6 @@
           },
           {
             "text": "great",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "great app",
             "rating": 5,
             "platform": "Android"
           }
@@ -118,23 +118,23 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27929
+        "rating": 2.27113
       },
       "android": {
-        "rating": 2.9489796
+        "rating": 2.751269
       },
       "sentiment": {
-        "score": 0.483,
+        "score": 0.487,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "smooth streaming",
-            "rating": 5,
+            "text": "kenapa semua error ni?haritu ok je tgok siaran lansung...ni tiba2 semua tak dapat nk buka...harap ada update akan datang untuk menyelesaikan masalah ni....",
+            "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Can We Watch Full Matches of FIFA WORLD CUP 2026 Here?",
-            "rating": 3,
+            "text": "smooth streaming",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -145,13 +145,13 @@
         ],
         "topNegative": [
           {
-            "text": "keeps asking me to activate. can't watch anything. multiple log in variations, idiotic.",
+            "text": "it seems that the new update make thing worse. It's so complicated and keep loading for nothing, even on the tv box 2.0. it's too complicated.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Siaran buffering²... bayar bulanan mahal² tapi bila nak tonton layan lag2...kadang kala terus error... betul² bad... kalau hujan pun sekarang dah jd spt Astro...bulanan mahal tapi siaran asyik ulang² movie cerita sama 3-4 bulan... kalau nk guna internet Unifi nie bagus la tp kalau utk siaran Tv channel ke ape...buruk...apps Chanel spt nexflix oke laaa ada sesetengah channel bayar sekalipun bila nk tonton kne daftar sekali lagi dan bayar...",
-            "rating": 2,
+            "text": "keeps asking me to activate. can't watch anything. multiple log in variations, idiotic.",
+            "rating": 1,
             "platform": "Android"
           },
           {
@@ -176,10 +176,6 @@
           {
             "label": "stream",
             "trend": "steady"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
           }
         ]
       }
@@ -187,7 +183,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44546
+        "rating": 4.44543
       },
       "android": {
         "rating": 3.7312102
@@ -321,13 +317,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75521
+        "rating": 4.75525
       },
       "android": {
-        "rating": 4.0523562
+        "rating": 4.0473685
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.565,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -348,9 +344,9 @@
         ],
         "topNegative": [
           {
-            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
             "rating": 2,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -366,6 +362,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -386,13 +386,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41289
+        "rating": 4.41308
       },
       "android": {
-        "rating": 4.6165247
+        "rating": 4.614901
       },
       "sentiment": {
-        "score": 0.641,
+        "score": 0.634,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -431,6 +431,10 @@
         "drivers": [
           {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
