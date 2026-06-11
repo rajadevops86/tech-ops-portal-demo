@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-10T06:14:16.733111+00:00",
+  "generated_utc": "2026-06-11T06:40:17.752487+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52902
+        "rating": 4.52901
       },
       "android": {
-        "rating": 4.428215
+        "rating": 4.428273
       },
       "sentiment": {
-        "score": 0.643,
+        "score": 0.639,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,12 +19,12 @@
             "platform": "Android"
           },
           {
-            "text": "excellent",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "exllent good",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -52,13 +52,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49673
+        "rating": 4.49566
       },
       "android": {
-        "rating": 4.5550675
+        "rating": 4.5517473
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -113,13 +113,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27143
+        "rating": 2.27345
       },
       "android": {
-        "rating": 2.621212
+        "rating": 2.64
       },
       "sentiment": {
-        "score": 0.492,
+        "score": 0.493,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -133,19 +133,19 @@
             "platform": "Android"
           },
           {
-            "text": "smooth streaming",
-            "rating": 5,
+            "text": "So far, this apps look good",
+            "rating": 4,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "it seems that the new update make thing worse. It's so complicated and keep loading for nothing, even on the tv box 2.0. it's too complicated.",
+            "text": "keeps asking me to activate. can't watch anything. multiple log in variations, idiotic.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "keeps asking me to activate. can't watch anything. multiple log in variations, idiotic.",
+            "text": "STUPID AND TERRIBLE. INSTALLED BUT OPEN ALL BLACK AND STAGNANT. WASTING TIMES. MOREOVER PAID RM 50 FOR WORLD CUP. SCAMMED.",
             "rating": 1,
             "platform": "Android"
           },
@@ -178,7 +178,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44543
+        "rating": 4.44564
       },
       "android": {
         "rating": 3.7314577
@@ -246,7 +246,7 @@
         "rating": 2.79254
       },
       "android": {
-        "rating": 3.5424242
+        "rating": 3.5429761
       },
       "sentiment": {
         "score": 0.497,
@@ -312,7 +312,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7553
+        "rating": 4.75506
       },
       "android": {
         "rating": 4.0523562
@@ -377,10 +377,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41261
+        "rating": 4.41235
       },
       "android": {
-        "rating": 4.620179
+        "rating": 4.621246
       },
       "sentiment": {
         "score": 0.634,
