@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-11T06:40:17.752487+00:00",
+  "generated_utc": "2026-06-12T06:25:31.443121+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52901
+        "rating": 4.529
       },
       "android": {
-        "rating": 4.428273
+        "rating": 4.428031
       },
       "sentiment": {
-        "score": 0.639,
+        "score": 0.661,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,13 +19,13 @@
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "excellent",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 5,
+            "text": "sow beautiful lk",
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -52,13 +52,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49566
+        "rating": 4.49599
       },
       "android": {
-        "rating": 4.5517473
+        "rating": 4.5528893
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -116,10 +116,10 @@
         "rating": 2.27345
       },
       "android": {
-        "rating": 2.64
+        "rating": 2.5778894
       },
       "sentiment": {
-        "score": 0.493,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -140,17 +140,17 @@
         ],
         "topNegative": [
           {
-            "text": "keeps asking me to activate. can't watch anything. multiple log in variations, idiotic.",
+            "text": "I really hate when it always gave me an error when I tried to watch TV3 channel. Can unifi please fix the error and not waste someone's time trying to figure out the error itself? It's very annoying and this thing have been stressing me and my family. We pays but still an error occurred, why? I'm hoping that this issue will be fixed soon.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "I am a Unifi user. Already bought the WC pass and Unifi already sent whatsapp to confirm it and yet I am still unable to get the link. Kept on asking to \"BUY THE PASS\" When I tried the 2nd time, confirmation pop up saying already bought the package. What is goong on, Unifi? Your system really sucks!!!!!",
             "rating": 1,
             "platform": "Android"
           },
           {
             "text": "STUPID AND TERRIBLE. INSTALLED BUT OPEN ALL BLACK AND STAGNANT. WASTING TIMES. MOREOVER PAID RM 50 FOR WORLD CUP. SCAMMED.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "The 2.0 update is the worst. Susah nak tengoknlive tv. Now it's not working on my tv and my mobiles. Camna nak tengok F1, bil dah bayar",
             "rating": 1,
             "platform": "Android"
           }
@@ -167,10 +167,6 @@
           {
             "label": "login",
             "trend": "steady"
-          },
-          {
-            "label": "stream",
-            "trend": "steady"
           }
         ]
       }
@@ -184,9 +180,14 @@
         "rating": 3.7314577
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.503,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -196,18 +197,13 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -222,19 +218,23 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -246,7 +246,7 @@
         "rating": 2.79254
       },
       "android": {
-        "rating": 3.5429761
+        "rating": 3.5441456
       },
       "sentiment": {
         "score": 0.497,
@@ -318,7 +318,7 @@
         "rating": 4.0523562
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.568,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -339,9 +339,9 @@
         ],
         "topNegative": [
           {
-            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
             "rating": 2,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -357,6 +357,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -380,10 +384,10 @@
         "rating": 4.41235
       },
       "android": {
-        "rating": 4.621246
+        "rating": 4.621646
       },
       "sentiment": {
-        "score": 0.634,
+        "score": 0.576,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -404,36 +408,36 @@
         ],
         "topNegative": [
           {
-            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "adding ads becomes more horrible",
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
