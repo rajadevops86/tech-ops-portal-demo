@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-12T06:25:31.443121+00:00",
+  "generated_utc": "2026-06-13T06:08:12.062709+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.529
+        "rating": 4.52897
       },
       "android": {
-        "rating": 4.428031
+        "rating": 4.4279776
       },
       "sentiment": {
-        "score": 0.661,
+        "score": 0.646,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "I have cancelled my subscription to AHA. But still the amount got debited from my bank account. Not fair.",
+            "text": "Useless app",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Useless app",
+            "text": "one of the worst app ,For payment related issues,poor quality, No new content , Worst app design",
             "rating": 1,
             "platform": "Android"
           },
@@ -52,10 +52,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49599
+        "rating": 4.49608
       },
       "android": {
-        "rating": 4.5528893
+        "rating": 4.5539813
       },
       "sentiment": {
         "score": 0.566,
@@ -113,13 +113,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27345
+        "rating": 2.25
       },
       "android": {
-        "rating": 2.5778894
+        "rating": 2.4356437
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.456,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -128,8 +128,8 @@
             "platform": "Android"
           },
           {
-            "text": "kenapa semua error ni?haritu ok je tgok siaran lansung...ni tiba2 semua tak dapat nk buka...harap ada update akan datang untuk menyelesaikan masalah ni....",
-            "rating": 1,
+            "text": "So Far its So Good. i dont know why others rate below. I think It already update for FIFA 2026.",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -140,11 +140,6 @@
         ],
         "topNegative": [
           {
-            "text": "I really hate when it always gave me an error when I tried to watch TV3 channel. Can unifi please fix the error and not waste someone's time trying to figure out the error itself? It's very annoying and this thing have been stressing me and my family. We pays but still an error occurred, why? I'm hoping that this issue will be fixed soon.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "I am a Unifi user. Already bought the WC pass and Unifi already sent whatsapp to confirm it and yet I am still unable to get the link. Kept on asking to \"BUY THE PASS\" When I tried the 2nd time, confirmation pop up saying already bought the package. What is goong on, Unifi? Your system really sucks!!!!!",
             "rating": 1,
             "platform": "Android"
@@ -153,12 +148,21 @@
             "text": "STUPID AND TERRIBLE. INSTALLED BUT OPEN ALL BLACK AND STAGNANT. WASTING TIMES. MOREOVER PAID RM 50 FOR WORLD CUP. SCAMMED.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "very bad apps. cannot send to subscribe .",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "update",
             "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -174,20 +178,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44564
+        "rating": 4.44571
       },
       "android": {
-        "rating": 3.7314577
+        "rating": 3.7263427
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.501,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -197,13 +196,18 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -218,23 +222,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -243,13 +243,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79254
+        "rating": 2.79206
       },
       "android": {
-        "rating": 3.5441456
+        "rating": 3.541114
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -318,7 +318,7 @@
         "rating": 4.0523562
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -339,9 +339,9 @@
         ],
         "topNegative": [
           {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
             "rating": 2,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -357,10 +357,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -381,13 +377,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41235
+        "rating": 4.41261
       },
       "android": {
-        "rating": 4.621646
+        "rating": 4.620813
       },
       "sentiment": {
-        "score": 0.576,
+        "score": 0.639,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -408,36 +404,36 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "adding ads becomes more horrible",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "buffer",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
