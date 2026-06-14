@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-13T06:08:12.062709+00:00",
+  "generated_utc": "2026-06-14T06:25:38.123910+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52897
+        "rating": 4.52894
       },
       "android": {
-        "rating": 4.4279776
+        "rating": 4.4275417
       },
       "sentiment": {
-        "score": 0.646,
+        "score": 0.65,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "Useless app",
+            "text": "one of the worst app ,For payment related issues,poor quality, No new content , Worst app design",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "one of the worst app ,For payment related issues,poor quality, No new content , Worst app design",
+            "text": "stupid app. worst customer service. downloaded movies but downloaded content has been disappeared. waste of data. always stucks. agents endhuku the chat when we explain issue waste of money",
             "rating": 1,
             "platform": "Android"
           },
@@ -55,10 +55,10 @@
         "rating": 4.49608
       },
       "android": {
-        "rating": 4.5539813
+        "rating": 4.5581
       },
       "sentiment": {
-        "score": 0.566,
+        "score": 0.57,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -113,17 +113,17 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25
+        "rating": 2.2381
       },
       "android": {
-        "rating": 2.4356437
+        "rating": 2.276699
       },
       "sentiment": {
-        "score": 0.456,
+        "score": 0.44,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Awesome 👍👍👍👍",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
@@ -133,8 +133,8 @@
             "platform": "Android"
           },
           {
-            "text": "So far, this apps look good",
-            "rating": 4,
+            "text": "apps sampah !! nk play live asyik error je ! kt tv sama, fon pon sama ! haram jadahh aku takkan halalkan duit aku !",
+            "rating": 1,
             "platform": "Android"
           }
         ],
@@ -145,7 +145,7 @@
             "platform": "Android"
           },
           {
-            "text": "STUPID AND TERRIBLE. INSTALLED BUT OPEN ALL BLACK AND STAGNANT. WASTING TIMES. MOREOVER PAID RM 50 FOR WORLD CUP. SCAMMED.",
+            "text": "black screen never stop buffering wasting of time terrible apps",
             "rating": 1,
             "platform": "Android"
           },
@@ -157,15 +157,19 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "steady"
           },
           {
             "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           },
           {
@@ -312,7 +316,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75506
+        "rating": 4.75505
       },
       "android": {
         "rating": 4.0523562
@@ -377,10 +381,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41261
+        "rating": 4.41307
       },
       "android": {
-        "rating": 4.620813
+        "rating": 4.621246
       },
       "sentiment": {
         "score": 0.639,

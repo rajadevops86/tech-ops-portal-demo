@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-13T06:08:03.310194+00:00",
+  "generated_utc": "2026-06-14T06:25:31.703948+00:00",
   "apps": [
     {
       "app_name": "Aha",
@@ -8,10 +8,6 @@
         "country": "in",
         "summary": {
           "raw": {
-            "features": [
-              "iosUniversal"
-            ],
-            "isGameCenterEnabled": false,
             "artistViewUrl": "https://apps.apple.com/in/developer/arha-media-and-broadcasting-pvt-ltd/id1488739000?uo=4",
             "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/43/dc/dc43dc60-1be6-efc5-ac88-7be9af04626a/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/60x60bb.jpg",
             "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/43/dc/dc43dc60-1be6-efc5-ac88-7be9af04626a/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/100x100bb.jpg",
@@ -28,6 +24,7 @@
             "ipadScreenshotUrls": [],
             "appletvScreenshotUrls": [],
             "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/43/dc/dc43dc60-1be6-efc5-ac88-7be9af04626a/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.jpg",
+            "isGameCenterEnabled": false,
             "supportedDevices": [
               "iPhone5s-iPhone5s",
               "iPadAir-iPadAir",
@@ -166,46 +163,49 @@
               "Infrequent/Mild Realistic Violence"
             ],
             "kind": "software",
-            "bundleId": "com.aha.ahaflix",
-            "averageUserRating": 4.52897,
+            "features": [
+              "iosUniversal"
+            ],
             "trackCensoredName": "aha - 100% Local Entertainment",
             "trackViewUrl": "https://apps.apple.com/in/app/aha-100-local-entertainment/id1488739001?uo=4",
-            "averageUserRatingForCurrentVersion": 4.52897,
             "contentAdvisoryRating": "17+",
+            "averageUserRatingForCurrentVersion": 4.52894,
+            "userRatingCountForCurrentVersion": 182597,
+            "trackContentRating": "17+",
             "languageCodesISO2A": [
               "EN"
             ],
+            "averageUserRating": 4.52894,
             "fileSizeBytes": "141312000",
             "formattedPrice": "Free",
-            "userRatingCountForCurrentVersion": 182594,
-            "trackContentRating": "17+",
-            "genres": [
-              "Entertainment"
-            ],
+            "minimumOsVersion": "12.4",
+            "bundleId": "com.aha.ahaflix",
             "artistId": 1488739000,
             "artistName": "Arha Media and Broadcasting Pvt Ltd",
-            "sellerName": "ARHA MEDIA & BROADCASTING PRIVATE LIMITED",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
-            "releaseDate": "2019-12-31T08:00:00Z",
             "trackName": "aha - 100% Local Entertainment",
             "trackId": 1488739001,
+            "releaseNotes": "- Enhancements",
             "genreIds": [
               "6016"
             ],
+            "releaseDate": "2019-12-31T08:00:00Z",
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "sellerName": "ARHA MEDIA & BROADCASTING PRIVATE LIMITED",
+            "isVppDeviceBasedLicensingEnabled": true,
             "currentVersionReleaseDate": "2026-06-10T08:51:51Z",
-            "releaseNotes": "- Enhancements",
             "version": "3.30",
             "wrapperType": "software",
             "currency": "INR",
             "description": "Welcome to aha, your platform for powerful Telugu and Tamil stories, now offering even more content to explore.\n\naha consolidates the best of Telugu and Tamil movies and shows into a single OTT app, simplifying content discovery while enriching your viewing experience. Whether you enjoy emotional dramas, popular entertainment, gripping reality shows, or original series, aha helps you find stories that resonate with your language preferences.\n\nThis platform is designed with viewers in mind. Telugu and Tamil storytelling now coexist to expand your access without altering your viewing habits. Your language preferences remain unchanged, giving you full control over what you watch and how you enjoy it.\n\nWith aha, you can:\n•\tWatch Telugu and Tamil movies and original series in one app\n•\tDiscover more popular Telugu & Tamil together entertainment effortlessly\n•\tExperience a unified OTT platform without compromising your language choices\n•\tExplore regional stories across genres and generations in greater depth\n\naha believes that local stories are most impactful when told with care and cultural depth. By integrating Telugu and Tamil worlds, aha broadens the concept of “local,” while remaining proudly rooted in its cultural origins.\n\nThis update emphasizes more stories, more choices, and no compromises. It is an evolution designed to help audiences discover content they might not have encountered before, without sacrificing familiarity or comfort.\n\nFrom the latest movies to beloved classics, from innovative originals to fan-favorite non-fiction formats, aha continues to celebrate the richness of Telugu and Tamil storytelling. Every feature aims to facilitate easier discovery, smoother navigation, and a more enjoyable viewing experience.\n\nIf you want to watch Telugu and Tamil movies, explore Telugu and Tamil non-fiction entertainment, or use a trusted OTT app that prioritizes regional pride, aha is your destination.\n•\tMore stories, No Compromise.\n•\tSame homegrown Soul.\n•\tEntertainment that truly speaks your language.",
-            "minimumOsVersion": "12.4",
             "price": 0.0,
-            "userRatingCount": 182594
+            "genres": [
+              "Entertainment"
+            ],
+            "userRatingCount": 182597
           },
-          "average_rating": 4.52897,
-          "rating_count": 182594,
+          "average_rating": 4.52894,
+          "rating_count": 182597,
           "version": "3.30",
           "current_version_release_date": "2026-06-10T08:51:51Z",
           "track_name": "aha - 100% Local Entertainment",
@@ -224,16 +224,16 @@
             "summary": "Watch Telugu and Tamil World Digital Premieres, Web Series and Exclusive Movies.",
             "installs": "10,000,000+",
             "minInstalls": 10000000,
-            "realInstalls": 37371062,
-            "score": 4.4279776,
-            "ratings": 1335350,
-            "reviews": 139772,
+            "realInstalls": 37386403,
+            "score": 4.4275417,
+            "ratings": 1335503,
+            "reviews": 139771,
             "histogram": [
-              81546,
-              28941,
-              75611,
-              199610,
-              949636
+              81658,
+              28959,
+              75646,
+              199709,
+              949525
             ],
             "price": 0,
             "free": true,
@@ -307,14 +307,77 @@
             "appId": "ahaflix.tv",
             "url": "https://play.google.com/store/apps/details?id=ahaflix.tv&hl=en&gl=in"
           },
-          "average_rating": 4.4279776,
-          "rating_count": 1335350,
+          "average_rating": 4.4275417,
+          "rating_count": 1335503,
           "version": "Varies with device",
           "installs": "10,000,000+",
           "title": "aha - 100% Local Entertainment",
           "developer": "Arha Media & Broadcasting Private Limited"
         },
         "reviews": [
+          {
+            "author": "Nanajee Boddapati",
+            "title": "4.0.175",
+            "text": "good",
+            "rating": 5,
+            "updated": "2026-06-13T05:20:19",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Srikanth Sri",
+            "title": "4.0.175",
+            "text": "good",
+            "rating": 3,
+            "updated": "2026-06-13T04:14:44",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Mayani Pandu",
+            "title": "4.0.188",
+            "text": "gd night aaaaaaha",
+            "rating": 5,
+            "updated": "2026-06-13T01:48:29",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "nadimpalli sravanthi",
+            "title": "",
+            "text": "stupid app. worst customer service. downloaded movies but downloaded content has been disappeared. waste of data. always stucks. agents endhuku the chat when we explain issue waste of money",
+            "rating": 1,
+            "updated": "2026-06-12T17:52:06",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Jaipal Nayak",
+            "title": "4.0.175",
+            "text": "No recent movies e",
+            "rating": 1,
+            "updated": "2026-06-12T15:09:32",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Eernapati Vijaydev",
+            "title": "4.0.175",
+            "text": "good",
+            "rating": 3,
+            "updated": "2026-06-12T13:38:59",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Praba Sarathi",
+            "title": "4.0.169",
+            "text": "not now",
+            "rating": 4,
+            "updated": "2026-06-12T07:40:11",
+            "platform": "Android",
+            "store": "google_play"
+          },
           {
             "author": "Appalanaidu Ponnada",
             "title": "4.0.175",
@@ -701,69 +764,6 @@
             "updated": "2026-06-07T07:28:44",
             "platform": "Android",
             "store": "google_play"
-          },
-          {
-            "author": "Laxmi Ramaswamy",
-            "title": "4.0.175",
-            "text": "we can't watch Aha Already we paid money.they took from auto payment",
-            "rating": 5,
-            "updated": "2026-06-07T07:18:57",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "GOLLA RAJENDRA",
-            "title": "4.0.175",
-            "text": "good",
-            "rating": 4,
-            "updated": "2026-06-07T05:24:27",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "chandra sekar rao villa",
-            "title": "5.0.71",
-            "text": "i paid Rs.499/- through auto pay for one year subscription.But the great Aha swallowed my amount.Now Aha saying to pay subscription.This aha is waste.They could not able to know whether the subscriber paid the amount or not",
-            "rating": 1,
-            "updated": "2026-06-07T05:12:50",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Kastrui E kasturi",
-            "title": "4.0.175",
-            "text": "super",
-            "rating": 5,
-            "updated": "2026-06-07T04:03:36",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Salai Geethan S",
-            "title": "4.0.175",
-            "text": "Useless app",
-            "rating": 1,
-            "updated": "2026-06-06T20:46:05",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Joshithomas G",
-            "title": "4.0.169",
-            "text": "super",
-            "rating": 5,
-            "updated": "2026-06-06T18:44:32",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Abhi Gowda",
-            "title": "4.0.175",
-            "text": "airtel recharge aha app ka not working",
-            "rating": 1,
-            "updated": "2026-06-06T17:58:53",
-            "platform": "Android",
-            "store": "google_play"
           }
         ]
       }
@@ -776,18 +776,28 @@
         "summary": {
           "raw": {
             "isGameCenterEnabled": false,
+            "screenshotUrls": [
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/c5/e7/17c5e763-fb46-31ec-aa60-a599ff18412d/iphone_5.5_inch_1.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/5e/eb/b25eebb6-e9b1-572c-e1db-96ff39b1c7b8/iphone_5.5_inch_4.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/1a/6b/c61a6b65-d60e-6379-54f9-5325411dab83/iphone_5.5_inch_5.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/81/6c/8d/816c8d67-a4b8-3c11-fdad-c959a6ee7f37/iphone_5.5_inch_2.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/e7/1f/27e71fdc-b2b5-0594-7f72-df2f2ac0333c/iphone_5.5_inch_3.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/02/a8/fc02a8b5-358a-4c7c-6a9a-7861233939a3/iphone_5.5_inch_7.png/392x696bb.png"
+            ],
+            "ipadScreenshotUrls": [
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/92/18/41/92184162-0639-170b-6db3-d623aa46d2b3/IMG_0281.png/576x768bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/11/d5/ac11d568-4632-a621-3cc2-cf5951fbbb66/IMG_0282.png/576x768bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/74/0d/3e740dc1-3557-7fb9-8667-6aabc1cf69f8/IMG_0286.png/576x768bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5b/38/96/5b38960b-0f8e-8639-ce5b-5e435f1082a2/IMG_0287.png/576x768bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2a/d3/62/2ad362e9-c733-7de2-646c-ac2071f3e5d2/IMG_0285.png/576x768bb.png"
+            ],
+            "appletvScreenshotUrls": [],
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/76/46/a77646e1-af36-e68f-059f-31cf001f126c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/76/46/a77646e1-af36-e68f-059f-31cf001f126c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/76/46/a77646e1-af36-e68f-059f-31cf001f126c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "artistViewUrl": "https://apps.apple.com/ph/developer/cignal-tv-inc/id675465914?uo=4",
             "features": [
               "iosUniversal"
-            ],
-            "advisories": [
-              "Infrequent/Mild Medical/Treatment Information",
-              "Infrequent/Mild Profanity or Crude Humour",
-              "Infrequent/Mild Mature/Suggestive Themes",
-              "Infrequent/Mild Sexual Content and Nudity",
-              "Infrequent/Mild Horror/Fear Themes",
-              "Infrequent/Mild Realistic Violence",
-              "Infrequent/Mild Cartoon or Fantasy Violence",
-              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References"
             ],
             "supportedDevices": [
               "iPhone5s-iPhone5s",
@@ -918,52 +928,18 @@
               "iPadAir13M4-iPadAir13M4",
               "iPadAir13M4Cellular-iPadAir13M4Cellular"
             ],
+            "advisories": [
+              "Infrequent/Mild Medical/Treatment Information",
+              "Infrequent/Mild Profanity or Crude Humour",
+              "Infrequent/Mild Mature/Suggestive Themes",
+              "Infrequent/Mild Sexual Content and Nudity",
+              "Infrequent/Mild Horror/Fear Themes",
+              "Infrequent/Mild Realistic Violence",
+              "Infrequent/Mild Cartoon or Fantasy Violence",
+              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References"
+            ],
             "kind": "software",
-            "screenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/c5/e7/17c5e763-fb46-31ec-aa60-a599ff18412d/iphone_5.5_inch_1.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/5e/eb/b25eebb6-e9b1-572c-e1db-96ff39b1c7b8/iphone_5.5_inch_4.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c6/1a/6b/c61a6b65-d60e-6379-54f9-5325411dab83/iphone_5.5_inch_5.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/81/6c/8d/816c8d67-a4b8-3c11-fdad-c959a6ee7f37/iphone_5.5_inch_2.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/e7/1f/27e71fdc-b2b5-0594-7f72-df2f2ac0333c/iphone_5.5_inch_3.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/02/a8/fc02a8b5-358a-4c7c-6a9a-7861233939a3/iphone_5.5_inch_7.png/392x696bb.png"
-            ],
-            "ipadScreenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/92/18/41/92184162-0639-170b-6db3-d623aa46d2b3/IMG_0281.png/576x768bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ac/11/d5/ac11d568-4632-a621-3cc2-cf5951fbbb66/IMG_0282.png/576x768bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/74/0d/3e740dc1-3557-7fb9-8667-6aabc1cf69f8/IMG_0286.png/576x768bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5b/38/96/5b38960b-0f8e-8639-ce5b-5e435f1082a2/IMG_0287.png/576x768bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2a/d3/62/2ad362e9-c733-7de2-646c-ac2071f3e5d2/IMG_0285.png/576x768bb.png"
-            ],
-            "appletvScreenshotUrls": [],
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/76/46/a77646e1-af36-e68f-059f-31cf001f126c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/76/46/a77646e1-af36-e68f-059f-31cf001f126c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a7/76/46/a77646e1-af36-e68f-059f-31cf001f126c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/ph/developer/cignal-tv-inc/id675465914?uo=4",
-            "minimumOsVersion": "14.0",
-            "artistId": 675465914,
-            "artistName": "Cignal TV, Inc.",
-            "price": 0.0,
-            "bundleId": "tv.pilipinaslive.app",
-            "primaryGenreName": "Sports",
-            "primaryGenreId": 6004,
-            "releaseDate": "2023-06-22T07:00:00Z",
-            "sellerName": "Cignal TV, Inc.",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "genreIds": [
-              "6004"
-            ],
-            "trackName": "Pilipinas Live",
-            "trackId": 1673495447,
-            "currentVersionReleaseDate": "2026-06-03T05:50:34Z",
-            "releaseNotes": "- App optimizations\n- Bug fixes and enhancements",
-            "version": "2.1.18.133",
-            "wrapperType": "software",
-            "currency": "PHP",
-            "description": "Pilipinas Live App is your ultimate destination for Filipino sports fans. Watch live games, catch up on highlights, news and exclusive videos from top sports leagues in the Philippines. Subscribe for premium access to enjoy all the action from anywhere on any digital screen. Visit www.pilipinaslive.com for more information.\n\nKEY FEATURES\n● Live and Upcoming Filipino Sports Content: Discover the ultimate Filipino sports content with our live and upcoming games, so you can catch up on the go.\n\n● Enjoy live games tailored to your preferences: Delve into the complete game experience, including extended pre and post-game coverage; Watch with multiple screens, granting you the ability to witness extraordinary plays from various camera angles; Gain fresh insights from special hosts and \n\ndistinguished guests who provide unique perspectives on the game, while also having the opportunity to share your own opinions. \n● Have control on how you watch the game: Pause, restart, or rewinding live and on demand content to make sure you do not miss a thing. \n\n● Personalized Experience: Build your own list of favorite games and leagues and sign up for even more benefits to personalize your viewing experience.\n\n● Stay informed and share your reactions: Get the latest sports news, scores, stats, and standings and share your comments and reactions with the available interactive features, and more.\n\nTerms of Use: https://pilipinaslive.com/mobile/terms-and-conditions\nData Privacy:  https://pilipinaslive.com/mobile/data-privacy",
-            "trackViewUrl": "https://apps.apple.com/ph/app/pilipinas-live/id1673495447?uo=4",
-            "trackContentRating": "12+",
             "sellerUrl": "http://www.cignal.tv",
-            "averageUserRatingForCurrentVersion": 4.49608,
             "averageUserRating": 4.49608,
             "trackCensoredName": "Pilipinas Live",
             "languageCodesISO2A": [
@@ -973,9 +949,33 @@
             "formattedPrice": "Free",
             "contentAdvisoryRating": "12+",
             "userRatingCountForCurrentVersion": 6118,
+            "trackViewUrl": "https://apps.apple.com/ph/app/pilipinas-live/id1673495447?uo=4",
+            "trackContentRating": "12+",
+            "averageUserRatingForCurrentVersion": 4.49608,
+            "minimumOsVersion": "14.0",
+            "artistId": 675465914,
+            "artistName": "Cignal TV, Inc.",
+            "price": 0.0,
+            "bundleId": "tv.pilipinaslive.app",
+            "releaseDate": "2023-06-22T07:00:00Z",
+            "primaryGenreName": "Sports",
+            "primaryGenreId": 6004,
+            "isVppDeviceBasedLicensingEnabled": true,
+            "genreIds": [
+              "6004"
+            ],
+            "sellerName": "Cignal TV, Inc.",
+            "currentVersionReleaseDate": "2026-06-03T05:50:34Z",
+            "releaseNotes": "- App optimizations\n- Bug fixes and enhancements",
+            "version": "2.1.18.133",
+            "wrapperType": "software",
+            "currency": "PHP",
+            "description": "Pilipinas Live App is your ultimate destination for Filipino sports fans. Watch live games, catch up on highlights, news and exclusive videos from top sports leagues in the Philippines. Subscribe for premium access to enjoy all the action from anywhere on any digital screen. Visit www.pilipinaslive.com for more information.\n\nKEY FEATURES\n● Live and Upcoming Filipino Sports Content: Discover the ultimate Filipino sports content with our live and upcoming games, so you can catch up on the go.\n\n● Enjoy live games tailored to your preferences: Delve into the complete game experience, including extended pre and post-game coverage; Watch with multiple screens, granting you the ability to witness extraordinary plays from various camera angles; Gain fresh insights from special hosts and \n\ndistinguished guests who provide unique perspectives on the game, while also having the opportunity to share your own opinions. \n● Have control on how you watch the game: Pause, restart, or rewinding live and on demand content to make sure you do not miss a thing. \n\n● Personalized Experience: Build your own list of favorite games and leagues and sign up for even more benefits to personalize your viewing experience.\n\n● Stay informed and share your reactions: Get the latest sports news, scores, stats, and standings and share your comments and reactions with the available interactive features, and more.\n\nTerms of Use: https://pilipinaslive.com/mobile/terms-and-conditions\nData Privacy:  https://pilipinaslive.com/mobile/data-privacy",
             "genres": [
               "Sports"
             ],
+            "trackId": 1673495447,
+            "trackName": "Pilipinas Live",
             "userRatingCount": 6118
           },
           "average_rating": 4.49608,
@@ -998,16 +998,16 @@
             "summary": "Pilipinas Live App is your ultimate destination for Filipino sports fans.",
             "installs": "1,000,000+",
             "minInstalls": 1000000,
-            "realInstalls": 1201202,
-            "score": 4.5539813,
-            "ratings": 32039,
-            "reviews": 1294,
+            "realInstalls": 1202503,
+            "score": 4.5581,
+            "ratings": 32064,
+            "reviews": 1297,
             "histogram": [
-              2106,
+              2084,
               269,
-              1080,
-              2885,
-              25693
+              1068,
+              2883,
+              25756
             ],
             "price": 0,
             "free": true,
@@ -1078,8 +1078,8 @@
             "appId": "tv.pilipinalive.app",
             "url": "https://play.google.com/store/apps/details?id=tv.pilipinalive.app&hl=en&gl=ph"
           },
-          "average_rating": 4.5539813,
-          "rating_count": 32039,
+          "average_rating": 4.5581,
+          "rating_count": 32064,
           "version": "Varies with device",
           "installs": "1,000,000+",
           "title": "Pilipinas Live",
@@ -1384,15 +1384,6 @@
             "store": "google_play"
           },
           {
-            "author": "kenneth tinoy",
-            "title": "1.0.43",
-            "text": "bwesit na appps nag bayad pa ako wala hindi ka namn maka pa noud nang NBA live",
-            "rating": 1,
-            "updated": "2026-05-31T01:10:47",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
             "author": "trazontm2009",
             "title": "2.0.34",
             "text": "great",
@@ -1535,6 +1526,15 @@
             "updated": "2026-05-18T12:48:11",
             "platform": "Android",
             "store": "google_play"
+          },
+          {
+            "author": "Angelica Simporios",
+            "title": "2.0.34",
+            "text": "ok",
+            "rating": 5,
+            "updated": "2026-05-18T10:13:22",
+            "platform": "Android",
+            "store": "google_play"
           }
         ]
       }
@@ -1547,13 +1547,6 @@
         "summary": {
           "raw": {
             "isGameCenterEnabled": false,
-            "screenshotUrls": [],
-            "ipadScreenshotUrls": [],
-            "appletvScreenshotUrls": [],
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/65/d6/b465d6c4-612c-681a-1467-de1cb0414194/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/65/d6/b465d6c4-612c-681a-1467-de1cb0414194/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/65/d6/b465d6c4-612c-681a-1467-de1cb0414194/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/my/developer/telekom-malaysia-berhad/id627801664?uo=4",
             "supportedDevices": [
               "iPhone5s-iPhone5s",
               "iPadAir-iPadAir",
@@ -1694,36 +1687,29 @@
             "features": [
               "iosUniversal"
             ],
-            "minimumOsVersion": "15.1",
-            "averageUserRatingForCurrentVersion": 2.25,
-            "averageUserRating": 2.25,
-            "trackCensoredName": "Unifi TV 2.0",
-            "languageCodesISO2A": [
-              "EN"
-            ],
-            "fileSizeBytes": "112122880",
-            "formattedPrice": "Free",
-            "contentAdvisoryRating": "12+",
-            "userRatingCountForCurrentVersion": 644,
-            "trackViewUrl": "https://apps.apple.com/my/app/unifi-tv-2-0/id6739202371?uo=4",
-            "trackContentRating": "12+",
-            "artistId": 627801664,
-            "artistName": "Telekom Malaysia Berhad",
+            "screenshotUrls": [],
+            "ipadScreenshotUrls": [],
+            "appletvScreenshotUrls": [],
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/65/d6/b465d6c4-612c-681a-1467-de1cb0414194/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/65/d6/b465d6c4-612c-681a-1467-de1cb0414194/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/65/d6/b465d6c4-612c-681a-1467-de1cb0414194/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "artistViewUrl": "https://apps.apple.com/my/developer/telekom-malaysia-berhad/id627801664?uo=4",
             "genres": [
               "Entertainment",
               "Lifestyle"
             ],
             "price": 0.0,
+            "bundleId": "com.tm.unifitv.mobile",
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "releaseDate": "2025-07-02T07:00:00Z",
             "genreIds": [
               "6016",
               "6012"
             ],
-            "releaseDate": "2025-07-02T07:00:00Z",
-            "sellerName": "Telekom Malaysia Berhad",
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
             "trackName": "Unifi TV 2.0",
             "trackId": 6739202371,
+            "sellerName": "Telekom Malaysia Berhad",
             "isVppDeviceBasedLicensingEnabled": true,
             "currentVersionReleaseDate": "2026-05-29T06:20:25Z",
             "releaseNotes": "Improvements and Bug fixes.",
@@ -1731,11 +1717,25 @@
             "wrapperType": "software",
             "currency": "MYR",
             "description": "Unifi TV app is home to live channels and 20 streaming apps like Netflix, Disney+ Hotstar, Max, Viu and more. FREE download, FREE registration – just use your mobile number (available for everyone in Malaysia!).​\n\nIf you’re a Unifi TV customer, link your Unifi TV account (example@iptv) to unlock all your entitlements.​\n\nHere are some of the perks you can enjoy:​\n- Enjoy sample basic channels with no strings attached. When you're ready for more, explore our attractive channel packs​\n- View and access your favourite shows & movies across all channels and streaming apps.​\n- Watch the latest blockbuster movies, fresh from the cinema, on U PICK​.\n- Create multiple profiles – because who likes their algorithms being messed up?​\n- Download on multiple devices – iPhone and iPad. (If your device isn't compatible, maybe it’s time for an upgrade? Just kidding!)​\n\nWhat to watch, you say? Here’s our award-winning list: ​\n- Blockbuster movies​\n- Exclusive Unifi TV Originals series & movies​\n- Express drama series & reality shows​\n- Live sports action​\n- Cartoons & animation​\n- Documentaries & lifestyle programmes​\n- 24/7 global news coverage​\n\nBest viewed over a Wi-Fi connection. Mobile operator charges may apply.​\nContent rights for the Unifi TV app are limited to use within Malaysia.​\n\nWe welcome any questions, comments or suggestions at help@unifi.com.my.​\nFollow Unifi on Facebook, Instagram, TikTok and X. Visit www.unifi.com.my/tv for the latest info and promotions.",
-            "bundleId": "com.tm.unifitv.mobile",
-            "userRatingCount": 644
+            "minimumOsVersion": "15.1",
+            "averageUserRating": 2.2381,
+            "trackCensoredName": "Unifi TV 2.0",
+            "languageCodesISO2A": [
+              "EN"
+            ],
+            "fileSizeBytes": "112122880",
+            "formattedPrice": "Free",
+            "contentAdvisoryRating": "12+",
+            "userRatingCountForCurrentVersion": 651,
+            "trackViewUrl": "https://apps.apple.com/my/app/unifi-tv-2-0/id6739202371?uo=4",
+            "trackContentRating": "12+",
+            "averageUserRatingForCurrentVersion": 2.2381,
+            "artistId": 627801664,
+            "artistName": "Telekom Malaysia Berhad",
+            "userRatingCount": 651
           },
-          "average_rating": 2.25,
-          "rating_count": 644,
+          "average_rating": 2.2381,
+          "rating_count": 651,
           "version": "1.1.203",
           "current_version_release_date": "2026-05-29T06:20:25Z",
           "track_name": "Unifi TV 2.0",
@@ -1754,16 +1754,16 @@
             "summary": "The ONLY streaming app you need— now with live channels, apps and more!​",
             "installs": "1,000,000+",
             "minInstalls": 1000000,
-            "realInstalls": 1021786,
-            "score": 2.4356437,
-            "ratings": 2028,
-            "reviews": 1137,
+            "realInstalls": 1027995,
+            "score": 2.276699,
+            "ratings": 2064,
+            "reviews": 1149,
             "histogram": [
-              1143,
-              120,
+              1262,
+              110,
               100,
-              60,
-              602
+              40,
+              551
             ],
             "price": 0,
             "free": true,
@@ -1816,14 +1816,212 @@
             "appId": "com.tm.unifitv.mobile",
             "url": "https://play.google.com/store/apps/details?id=com.tm.unifitv.mobile&hl=en&gl=my"
           },
-          "average_rating": 2.4356437,
-          "rating_count": 2028,
+          "average_rating": 2.276699,
+          "rating_count": 2064,
           "version": "1.0.203",
           "installs": "1,000,000+",
           "title": "Unifi TV 2.0",
           "developer": "Telekom Malaysia Berhad"
         },
         "reviews": [
+          {
+            "author": "Muhamad Ridhuan Mohamad Zin",
+            "title": "1.0.203",
+            "text": "Dah langgan season pass world cup.. 50 ringgit ..dari pagi tak boleh tonton lagi live world cup 2026.. order dah complete dah ..",
+            "rating": 1,
+            "updated": "2026-06-13T05:46:21",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "MOHAN DASS RAMAN",
+            "title": "",
+            "text": "useless....getting black screen everytime I open through mobile. uninstalled and installed but still no avail....koyak",
+            "rating": 1,
+            "updated": "2026-06-13T05:45:58",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "ahmad izham",
+            "title": "1.0.203",
+            "text": "the service is terrible i pay to see world cup only for it to buffer and not be smooth Why? i already pay why is the service still bad...dont get this app",
+            "rating": 1,
+            "updated": "2026-06-13T02:58:28",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "hatta fitt",
+            "title": "",
+            "text": "makan modai.. dah subscribe tp tak boleh tgk😪bila buka app jadi blank, dah unistall, clear bagai masih tak boleh guna. sama juga dekat android tv app bila nk tonton jadi eror..",
+            "rating": 1,
+            "updated": "2026-06-13T02:39:21",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "al shafiq",
+            "title": "1.0.203",
+            "text": "kt tv lag, kt phone gelap.",
+            "rating": 1,
+            "updated": "2026-06-13T02:13:34",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Nazmie Shamri Miatim",
+            "title": "1.0.203",
+            "text": "it shows black screen...fix it...!",
+            "rating": 1,
+            "updated": "2026-06-13T01:55:26",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Daniel Den",
+            "title": "1.0.203",
+            "text": "Apps crash almost all the time, need to install and then uninstall then install and uninstall again to use the apps , should rename Unifi TV 2.0 to 'Install and Uninstall TV'",
+            "rating": 1,
+            "updated": "2026-06-12T23:41:57",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "adrian doison",
+            "title": "1.0.203",
+            "text": "kurang ajar! sy sudah bayar season pass pun tdk juga dpt tngok.. kasi balik duit sy",
+            "rating": 1,
+            "updated": "2026-06-12T19:36:15",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Mo Aizzat",
+            "title": "1.0.203",
+            "text": "App paling bangang setakat ni dalam Malaysia, beli mahal² playback error. BODOH",
+            "rating": 1,
+            "updated": "2026-06-12T19:17:38",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Balqis Ridzwan",
+            "title": "1.0.203",
+            "text": "cant even load. black screen.",
+            "rating": 1,
+            "updated": "2026-06-12T18:18:47",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Anand",
+            "title": "1.0.203",
+            "text": "Terrible app, waste of money. Telekom Malaysia no need to look into this. So many bad feedback means you are useless.! Just good at collecting money for nothing and looking into it. Don't subscribe to UnifiTV! Worst streaming app I have ever used.",
+            "rating": 1,
+            "updated": "2026-06-12T17:59:35",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Janaani Vanan",
+            "title": "1.0.203",
+            "text": "one of the stupidist app. I have subscribed to watch the World Cup. The app is so useless and I have calling unifi to know how this apps works. But no one is answering. Waste of time and money",
+            "rating": 1,
+            "updated": "2026-06-12T14:29:39",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "ko htwe",
+            "title": "1.0.203",
+            "text": "good",
+            "rating": 5,
+            "updated": "2026-06-12T13:50:01",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Iskandar Razali",
+            "title": "1.0.203",
+            "text": "The worst sign up process in the earth. please improve. thanks",
+            "rating": 1,
+            "updated": "2026-06-12T13:41:08",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Ming Lee",
+            "title": "1.0.203",
+            "text": "Terrible experience. After loading the Unifi TV logo, it shows black screen. Clearing cache or data, uninstall then reinstall all doesn't work. Go to customer, the tell me the same thing, reinstall app, clear cache. Please lah fix your app.",
+            "rating": 1,
+            "updated": "2026-06-12T13:12:28",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Satiaseelan Sivabutma",
+            "title": "1.0.203",
+            "text": "I paid for the season pass to watch Fifa 2026 games. however, I can't access the channels. its just loading and loading. Even in phone the screen is in black nothing coming out. I feel like I waste my money to subscribe season pass.",
+            "rating": 1,
+            "updated": "2026-06-12T12:52:22",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Afiq Zakaria",
+            "title": "1.0.203",
+            "text": "cant download for my smart tv.. wasting money.",
+            "rating": 1,
+            "updated": "2026-06-12T12:35:58",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "razali abd rahman",
+            "title": "1.0.203",
+            "text": "Saya rasa apps ini ada masalah, dah cuba uninstall & install semula apps, clear cache masa juga, black skrin sahaja.",
+            "rating": 1,
+            "updated": "2026-06-12T12:16:35",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Jelly Beans",
+            "title": "1.0.203",
+            "text": "mahal tapi jem",
+            "rating": 1,
+            "updated": "2026-06-12T11:27:39",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "ct jojo",
+            "title": "1.0.203",
+            "text": "black screen never stop buffering wasting of time terrible apps",
+            "rating": 1,
+            "updated": "2026-06-12T09:55:08",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Hj Andy",
+            "title": "",
+            "text": "Very very bad experience!!! Redemption of 30 days free trials TV pack needs 9 days to complete. It's fine, but after completing the redemption, they don't send me the confirmation email to activate the streaming apps like Disney plus, IQIYI and WeTV. I waited for 9 more days until today I also haven't got the email, yet these free trials started counting down the day already,I've missed 9 days without any compensation and I don't know how long I should wait again. Won't consider Unifi anymore",
+            "rating": 1,
+            "updated": "2026-06-12T06:32:13",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Anas Firdaus",
+            "title": "1.0.203",
+            "text": "subscribe unifi for fifa, but cannot watch what is this nonsense, it keeeps loading",
+            "rating": 1,
+            "updated": "2026-06-12T06:25:29",
+            "platform": "Android",
+            "store": "google_play"
+          },
           {
             "author": "Kavivanan Suppiah",
             "title": "1.0.203",
@@ -2075,204 +2273,6 @@
             "updated": "2026-06-10T17:36:46",
             "platform": "Android",
             "store": "google_play"
-          },
-          {
-            "author": "Amiera Syakira",
-            "title": "1.0.203",
-            "text": "app heng nak bukak pn x dpt🤬🤬🤬",
-            "rating": 1,
-            "updated": "2026-06-10T14:44:21",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Syarul Azmer",
-            "title": "1.0.203",
-            "text": "app tak dapat digunakan selepas update..screen menjadi gelap..amat mengecewakan",
-            "rating": 1,
-            "updated": "2026-06-10T14:26:04",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Shah Boi",
-            "title": "1.0.203",
-            "text": "Black screen... hurmmm TM Unifi tv for black screen. 3 times uninstall and install back... Still persists to the blank screen. To log out and delete also freez on apps. Season Pass already buy done support UNIFI TV... but still no picture.... BLANK SCREEN. Please check and try.",
-            "rating": 1,
-            "updated": "2026-06-10T03:46:26",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Rich Chan",
-            "title": "1.0.203",
-            "text": "STUPID AND TERRIBLE. INSTALLED BUT OPEN ALL BLACK AND STAGNANT. WASTING TIMES. MOREOVER PAID RM 50 FOR WORLD CUP. SCAMMED.",
-            "rating": 1,
-            "updated": "2026-06-09T19:40:17",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Hasnan Abdullah",
-            "title": "",
-            "text": "So far, this apps look good",
-            "rating": 4,
-            "updated": "2026-06-09T14:08:00",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Mohd Azim",
-            "title": "1.0.203",
-            "text": "'Service unavailable in your region?'",
-            "rating": 1,
-            "updated": "2026-06-09T11:04:24",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Samir Gadaffi",
-            "title": "1.0.203",
-            "text": "nak bukak pun tkleh canne gaya ni....",
-            "rating": 1,
-            "updated": "2026-06-09T05:07:40",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Vijay Prakash",
-            "title": "1.0.203",
-            "text": "why all very bad reviews?am i choosing a worst app?is my rm 60 season pass for World Cup 2026 is worthy or just get scammed by missing my favorite games? why everytime my Malaysia like this?😪",
-            "rating": 1,
-            "updated": "2026-06-09T01:59:34",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Rezuan Mohamed",
-            "title": "1.0.203",
-            "text": "Worst Apps ever. When open, the apps going blank. clear cache, uninstall & install also same. come on Telekom!! 😡",
-            "rating": 1,
-            "updated": "2026-06-08T22:21:18",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "A. Aziz SM",
-            "title": "1.0.203",
-            "text": "first time install to watch world cup. list if issues: pay via credit card but failed 3 times. fpx is the only option to pay. Max device said 2 but seem only 1 work. so much problem",
-            "rating": 1,
-            "updated": "2026-06-08T16:35:16",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "LUQMAN",
-            "title": "1.0.203",
-            "text": "Saya tak boleh nak beli pack fifa world cup tu. Asyik redirect between app dan web. Ending dua² tak function.",
-            "rating": 1,
-            "updated": "2026-06-08T14:16:51",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Hariz Ridhwan",
-            "title": "1.0.203",
-            "text": "Could've been the best but no subtitles is a no go. pls improve your offerings. is it too hard to provide subtitles?????",
-            "rating": 2,
-            "updated": "2026-06-08T13:06:50",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Grayfox Helmy",
-            "title": "",
-            "text": "Black Screen only..what to do? Now cannot watch news anymore..🤬",
-            "rating": 1,
-            "updated": "2026-06-08T12:40:11",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Munh Muhd",
-            "title": "",
-            "text": "Awesome 👍👍👍👍",
-            "rating": 5,
-            "updated": "2026-06-08T08:59:47",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Abdul Aziz Jesni",
-            "title": "1.0.203",
-            "text": "nak subscribe world cup, tekan kat apps tak kluar option utk subscribe...just bagi link website...bila p website dia hntar balik ke apss...igt ka bug ka apa...terus uninstall & install balik...noohhh...gelap truih🤣🤣🤣🤣...uninstall & install balik kali kedua...sama jgk...camna la dapat hak siaran world cup...nanti rammai2bdok pakat tgk mampuih lag ka apa ka",
-            "rating": 1,
-            "updated": "2026-06-07T13:43:31",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Maseri Tu",
-            "title": "1.0.203",
-            "text": "Latest update for Unifi TV 2.0 seems not working properly using android (I'm using Samsung Galaxy S26 Ultra). Screen blank (black). However when I open using my ipad pro, seems no issue.",
-            "rating": 2,
-            "updated": "2026-06-07T12:40:15",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Luqman Hakim",
-            "title": "1.0.203",
-            "text": "Apa ni dah install then uninstall, clear cache semua dah buat, tapi still black screen. Macamana mau guna. please update ASAP",
-            "rating": 2,
-            "updated": "2026-06-07T05:00:29",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Hussin Mazidi",
-            "title": "1.0.203",
-            "text": "Black screen, already uninstalled, reinstalled, still no change, waste of time",
-            "rating": 1,
-            "updated": "2026-06-07T00:01:18",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Mizi Mohd Zain",
-            "title": "1.0.203",
-            "text": "kenapa tak boleh buat bayaran untuk season pass FIFA?",
-            "rating": 2,
-            "updated": "2026-06-06T23:29:55",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Bob Cyber",
-            "title": "",
-            "text": "How to buy fifa wc 2026 pass? when tap 'Buy Pass' just popup info appear??? what thisss??",
-            "rating": 1,
-            "updated": "2026-06-06T19:01:48",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Kalvin Ugie",
-            "title": "1.0.203",
-            "text": "it seems that the new update make thing worse. It's so complicated and keep loading for nothing, even on the tv box 2.0. it's too complicated.",
-            "rating": 1,
-            "updated": "2026-06-06T15:09:54",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Boon seong Lin",
-            "title": "1.0.203",
-            "text": "After installing, when open a black screen appear. Cannot open.",
-            "rating": 1,
-            "updated": "2026-06-06T14:00:59",
-            "platform": "Android",
-            "store": "google_play"
           }
         ]
       }
@@ -2284,13 +2284,6 @@
         "country": "us",
         "summary": {
           "raw": {
-            "screenshotUrls": [],
-            "ipadScreenshotUrls": [],
-            "appletvScreenshotUrls": [],
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e3/3b/d3e33bae-3097-5cd1-718a-1a2c966be37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e3/3b/d3e33bae-3097-5cd1-718a-1a2c966be37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e3/3b/d3e33bae-3097-5cd1-718a-1a2c966be37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
             "isGameCenterEnabled": false,
             "features": [
               "iosUniversal"
@@ -2429,9 +2422,40 @@
               "Infrequent/Mild Realistic Violence"
             ],
             "kind": "software",
+            "screenshotUrls": [],
+            "ipadScreenshotUrls": [],
+            "appletvScreenshotUrls": [],
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e3/3b/d3e33bae-3097-5cd1-718a-1a2c966be37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e3/3b/d3e33bae-3097-5cd1-718a-1a2c966be37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/e3/3b/d3e33bae-3097-5cd1-718a-1a2c966be37b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
+            "bundleId": "com.univision.iphone",
             "minimumOsVersion": "15.6",
-            "sellerUrl": "http://www.tv.univision.com",
-            "averageUserRatingForCurrentVersion": 4.44571,
+            "releaseNotes": "Our latest update includes general stability and bug fixes.\n\nStay tuned for more updates in the future!",
+            "genres": [
+              "Entertainment",
+              "Lifestyle"
+            ],
+            "artistId": 353665653,
+            "artistName": "Univision Communications Inc.",
+            "price": 0.0,
+            "genreIds": [
+              "6016",
+              "6012"
+            ],
+            "trackId": 425226754,
+            "sellerName": "Univision Communications Inc.",
+            "releaseDate": "2011-04-02T01:53:09Z",
+            "trackName": "Univision App",
+            "isVppDeviceBasedLicensingEnabled": true,
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "currentVersionReleaseDate": "2025-09-04T14:45:30Z",
+            "version": "13.4.9 (40)",
+            "wrapperType": "software",
+            "currency": "USD",
+            "description": "THE BEST IN ENTERTAINMENT, NEWS AND SPORTS IN SPANISH\nAll the live programming of Univision and UniMás and more live and on demand at your fingertips. You can access the Univision app with most TV services, including Comcast Xfinity, DirecTV, Dish, Spectrum, AT&T, Verizon FIOS, and others. \n\n\nWatch your way\n• ​ If you missed your favorite shows on Univision, Unimás, Galavisión and TUDN, now you can watch them on demand, one day after they are broadcast.\n\n• Watch all the Univision channels already included in your cable package, including Univision, UniMás, TUDN, and Galavisión,  Noticias 24/7, Zona TUDN and Canal ViX\n\n• You can watch live and on demand at home or on your laptops.\n\n• Log in with your TV provider to get access to the entire catalog of live and on demand content\n\n• Watch live programming from up to three days ago using the automatic DVR feature.\n\n• Don't you have television service? Try a subscription to the Univision Now app.\n\nAccess all your favorite shows:\n• Current Novelas \n• Classic Novelas\n• El Gordo y la Flaca\n• Despierta America\n• Noticiero Univision\n\nExclusive rights to football matches\n• Liga MX\n• UEFA Champions League\n• Mexican and US National soccer teams",
+            "userRatingCountForCurrentVersion": 15925,
             "averageUserRating": 4.44571,
             "trackCensoredName": "Univision App",
             "languageCodesISO2A": [
@@ -2440,34 +2464,10 @@
             "fileSizeBytes": "79221760",
             "formattedPrice": "Free",
             "contentAdvisoryRating": "12+",
-            "userRatingCountForCurrentVersion": 15925,
             "trackViewUrl": "https://apps.apple.com/us/app/univision-app/id425226754?uo=4",
             "trackContentRating": "12+",
-            "genres": [
-              "Entertainment",
-              "Lifestyle"
-            ],
-            "artistName": "Univision Communications Inc.",
-            "price": 0.0,
-            "releaseNotes": "Our latest update includes general stability and bug fixes.\n\nStay tuned for more updates in the future!",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "sellerName": "Univision Communications Inc.",
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
-            "releaseDate": "2011-04-02T01:53:09Z",
-            "genreIds": [
-              "6016",
-              "6012"
-            ],
-            "trackName": "Univision App",
-            "trackId": 425226754,
-            "currentVersionReleaseDate": "2025-09-04T14:45:30Z",
-            "version": "13.4.9 (40)",
-            "wrapperType": "software",
-            "currency": "USD",
-            "description": "THE BEST IN ENTERTAINMENT, NEWS AND SPORTS IN SPANISH\nAll the live programming of Univision and UniMás and more live and on demand at your fingertips. You can access the Univision app with most TV services, including Comcast Xfinity, DirecTV, Dish, Spectrum, AT&T, Verizon FIOS, and others. \n\n\nWatch your way\n• ​ If you missed your favorite shows on Univision, Unimás, Galavisión and TUDN, now you can watch them on demand, one day after they are broadcast.\n\n• Watch all the Univision channels already included in your cable package, including Univision, UniMás, TUDN, and Galavisión,  Noticias 24/7, Zona TUDN and Canal ViX\n\n• You can watch live and on demand at home or on your laptops.\n\n• Log in with your TV provider to get access to the entire catalog of live and on demand content\n\n• Watch live programming from up to three days ago using the automatic DVR feature.\n\n• Don't you have television service? Try a subscription to the Univision Now app.\n\nAccess all your favorite shows:\n• Current Novelas \n• Classic Novelas\n• El Gordo y la Flaca\n• Despierta America\n• Noticiero Univision\n\nExclusive rights to football matches\n• Liga MX\n• UEFA Champions League\n• Mexican and US National soccer teams",
-            "artistId": 353665653,
-            "bundleId": "com.univision.iphone",
+            "sellerUrl": "http://www.tv.univision.com",
+            "averageUserRatingForCurrentVersion": 4.44571,
             "userRatingCount": 15925
           },
           "average_rating": 4.44571,
@@ -2490,7 +2490,7 @@
             "summary": "The best novels, news and football in Spanish included with your TV service",
             "installs": "1,000,000+",
             "minInstalls": 1000000,
-            "realInstalls": 4755392,
+            "realInstalls": 4755815,
             "score": 3.7263427,
             "ratings": 22431,
             "reviews": 5441,
@@ -3169,26 +3169,25 @@
               "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References"
             ],
             "kind": "software",
-            "features": [
-              "iosUniversal"
-            ],
-            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/91/ca/f991ca86-c603-3c7d-2054-c8149989945c/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/91/ca/f991ca86-c603-3c7d-2054-c8149989945c/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
             "screenshotUrls": [],
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/91/ca/f991ca86-c603-3c7d-2054-c8149989945c/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
             "ipadScreenshotUrls": [],
             "appletvScreenshotUrls": [],
             "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/91/ca/f991ca86-c603-3c7d-2054-c8149989945c/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artistId": 353665653,
-            "artistName": "Univision Communications Inc.",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/91/ca/f991ca86-c603-3c7d-2054-c8149989945c/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
+            "features": [
+              "iosUniversal"
+            ],
             "genres": [
               "Entertainment",
               "Lifestyle"
             ],
-            "price": 0.0,
-            "releaseDate": "2015-11-17T23:56:17Z",
-            "trackId": 1049321283,
+            "artistId": 353665653,
+            "artistName": "Univision Communications Inc.",
             "trackName": "Univision Now",
+            "trackId": 1049321283,
+            "price": 0.0,
             "genreIds": [
               "6016",
               "6012"
@@ -3203,21 +3202,22 @@
             "wrapperType": "software",
             "currency": "USD",
             "description": "THE BEST OF ENTERTAINMENT, NEWS AND SPORTS IN SPANISH\n\n\nSubscribe to Univision Now to watch your favorite Univision and UniMás shows live and on demand for only $11.99 / month. Cancel at any time.\n\nWatch your way\n• Univision, UniMas, Noticias 24/7, Zona TUDN and Canal ViX live \n• Watch the latest episodes of the new Univision and UniMás shows the day after they air.\n• Watch live and on demand, at home or on the go.\n• Use any device, including TV or mobile, at home with Roku, Chromecast, and Apple TV.\n• Watch programming from up to three days ago with the automatic DVR feature.\n\nAccess all your favorite shows:\n• Current Novelas \n• Classic Novelas\n• El Gordo y la Flaca\n• Despierta América\n• Noticiero Univision\n\nExclusive rights to football matches\n• Liga MX\n• UEFA Champions League\n• Mexican and US National soccer teams\n\n\nTerms of Use: https://www.univisionnow.com/terms-of-use\n\nNot all programming is available.",
-            "bundleId": "com.univision.univisionnow",
-            "trackCensoredName": "Univision Now",
-            "trackViewUrl": "https://apps.apple.com/us/app/univision-now/id1049321283?uo=4",
-            "contentAdvisoryRating": "12+",
             "minimumOsVersion": "15.6",
-            "averageUserRating": 2.79206,
+            "trackCensoredName": "Univision Now",
             "languageCodesISO2A": [
               "EN"
             ],
             "fileSizeBytes": "80322560",
             "formattedPrice": "Free",
+            "contentAdvisoryRating": "12+",
             "userRatingCountForCurrentVersion": 3703,
+            "trackViewUrl": "https://apps.apple.com/us/app/univision-now/id1049321283?uo=4",
             "trackContentRating": "12+",
             "averageUserRatingForCurrentVersion": 2.79206,
             "sellerUrl": "http://www.univisionnow.com",
+            "averageUserRating": 2.79206,
+            "bundleId": "com.univision.univisionnow",
+            "releaseDate": "2015-11-17T23:56:17Z",
             "userRatingCount": 3703
           },
           "average_rating": 2.79206,
@@ -3240,7 +3240,7 @@
             "summary": "Univision y UniMás live and on demand without cable",
             "installs": "5,000,000+",
             "minInstalls": 5000000,
-            "realInstalls": 5552997,
+            "realInstalls": 5553532,
             "score": 3.541114,
             "ratings": 32250,
             "reviews": 10388,
@@ -3779,6 +3779,28 @@
         "country": "us",
         "summary": {
           "raw": {
+            "screenshotUrls": [
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/86/89/b5868980-ad05-4f3a-8a4e-6db1b5e1f97c/iPhone-1242x2208-7-LATAM.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f7/42/a0/f742a011-5eed-83ff-2126-6e6aed152983/iPhone-1242x2208-2-LATAM.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/00/51/bc0051c3-59bf-8515-0eb1-44290cf417df/iPhone-1242x2208-5-LATAM.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3b/3b/19/3b3b197f-476f-d0b0-21fe-011fcc75dcc0/iPhone-1242x2208-1-LATAM.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/03/c9/5f03c9a0-5b6c-beb9-0196-1757beae1e89/iPhone-1242x2208-6-LATAM.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/26/ac/6026ac6e-db24-3e3b-1e3e-04451d0c1e37/iPhone-1242x2208-3-LATAM.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/c6/09/8bc609b4-dc0d-baff-c3ee-fc04e4e54af9/iPhone-1242x2208-4-LATAM.jpg/392x696bb.jpg"
+            ],
+            "ipadScreenshotUrls": [
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/96/04/69960452-db06-1543-d0d7-d548b1c46af0/377a42ba-8bd3-4979-b920-a27ab3cbec7e_iPad-2048x2732-1-US.jpg/576x768bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cf/62/e8/cf62e882-639d-6c63-470f-3afd34088642/dfc82611-001c-4b92-88c7-e16025f5b83e_iPad-2048x2732-2-US.jpg/576x768bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/43/47/a0434756-e5c9-14a2-e5ec-eb936403b977/5e9f8b0d-fe24-485f-aae5-f1951089834b_iPad-2048x2732-3-US.jpg/576x768bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/62/1b/de621b4f-0633-3827-e0a8-b21e24f43000/8c8bca7a-4d88-40d0-82e6-bf09b7f64a1a_iPad-2048x2732-4-US.jpg/576x768bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/d0/02/05d00284-0e93-e866-78b7-6f00c545f9da/0d3e9ac8-92fb-43e5-9f0f-c3556039019f_iPad-2048x2732-5-US.jpg/576x768bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/c8/fd/d6c8fd1f-bb80-b6ca-5a15-9c92103a13e2/fe61cce8-778b-4d85-86b9-a2e19e07f82e_iPad-2048x2732-6-US.jpg/576x768bb.jpg"
+            ],
+            "appletvScreenshotUrls": [],
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/95/16/cd951622-45ba-51f8-0f70-25abedc31def/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/95/16/cd951622-45ba-51f8-0f70-25abedc31def/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/95/16/cd951622-45ba-51f8-0f70-25abedc31def/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "artistViewUrl": "https://apps.apple.com/us/developer/canela-media-inc/id1507429167?uo=4",
             "isGameCenterEnabled": false,
             "supportedDevices": [
               "iPhone5s-iPhone5s",
@@ -3909,6 +3931,10 @@
               "iPadAir13M4-iPadAir13M4",
               "iPadAir13M4Cellular-iPadAir13M4Cellular"
             ],
+            "kind": "software",
+            "features": [
+              "iosUniversal"
+            ],
             "advisories": [
               "Infrequent/Mild Horror/Fear Themes",
               "Infrequent/Mild Realistic Violence",
@@ -3917,32 +3943,20 @@
               "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
               "Infrequent/Mild Profanity or Crude Humor"
             ],
-            "kind": "software",
-            "features": [
-              "iosUniversal"
+            "averageUserRatingForCurrentVersion": 4.75505,
+            "averageUserRating": 4.75505,
+            "trackCensoredName": "Canela.TV - Series y Películas",
+            "languageCodesISO2A": [
+              "EN"
             ],
-            "screenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/86/89/b5868980-ad05-4f3a-8a4e-6db1b5e1f97c/iPhone-1242x2208-7-LATAM.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f7/42/a0/f742a011-5eed-83ff-2126-6e6aed152983/iPhone-1242x2208-2-LATAM.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/00/51/bc0051c3-59bf-8515-0eb1-44290cf417df/iPhone-1242x2208-5-LATAM.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3b/3b/19/3b3b197f-476f-d0b0-21fe-011fcc75dcc0/iPhone-1242x2208-1-LATAM.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/03/c9/5f03c9a0-5b6c-beb9-0196-1757beae1e89/iPhone-1242x2208-6-LATAM.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/26/ac/6026ac6e-db24-3e3b-1e3e-04451d0c1e37/iPhone-1242x2208-3-LATAM.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8b/c6/09/8bc609b4-dc0d-baff-c3ee-fc04e4e54af9/iPhone-1242x2208-4-LATAM.jpg/392x696bb.jpg"
-            ],
-            "ipadScreenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/96/04/69960452-db06-1543-d0d7-d548b1c46af0/377a42ba-8bd3-4979-b920-a27ab3cbec7e_iPad-2048x2732-1-US.jpg/576x768bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cf/62/e8/cf62e882-639d-6c63-470f-3afd34088642/dfc82611-001c-4b92-88c7-e16025f5b83e_iPad-2048x2732-2-US.jpg/576x768bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/43/47/a0434756-e5c9-14a2-e5ec-eb936403b977/5e9f8b0d-fe24-485f-aae5-f1951089834b_iPad-2048x2732-3-US.jpg/576x768bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/62/1b/de621b4f-0633-3827-e0a8-b21e24f43000/8c8bca7a-4d88-40d0-82e6-bf09b7f64a1a_iPad-2048x2732-4-US.jpg/576x768bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/05/d0/02/05d00284-0e93-e866-78b7-6f00c545f9da/0d3e9ac8-92fb-43e5-9f0f-c3556039019f_iPad-2048x2732-5-US.jpg/576x768bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/c8/fd/d6c8fd1f-bb80-b6ca-5a15-9c92103a13e2/fe61cce8-778b-4d85-86b9-a2e19e07f82e_iPad-2048x2732-6-US.jpg/576x768bb.jpg"
-            ],
-            "appletvScreenshotUrls": [],
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/95/16/cd951622-45ba-51f8-0f70-25abedc31def/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/95/16/cd951622-45ba-51f8-0f70-25abedc31def/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/95/16/cd951622-45ba-51f8-0f70-25abedc31def/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/us/developer/canela-media-inc/id1507429167?uo=4",
+            "fileSizeBytes": "75641856",
+            "sellerUrl": "https://www.canela.tv",
+            "formattedPrice": "Free",
+            "contentAdvisoryRating": "17+",
+            "userRatingCountForCurrentVersion": 42237,
+            "trackViewUrl": "https://apps.apple.com/us/app/canela-tv-series-y-pel%C3%ADculas/id1507429168?uo=4",
+            "trackContentRating": "17+",
+            "minimumOsVersion": "14.0",
             "artistId": 1507429167,
             "artistName": "Canela Media, Inc.",
             "genres": [
@@ -3950,42 +3964,28 @@
               "Lifestyle"
             ],
             "price": 0.0,
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
             "releaseDate": "2020-05-02T07:00:00Z",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "sellerName": "Canela Media, Inc.",
-            "currentVersionReleaseDate": "2026-06-10T06:43:09Z",
             "trackId": 1507429168,
             "trackName": "Canela.TV - Series y Películas",
+            "currentVersionReleaseDate": "2026-06-10T06:43:09Z",
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "genreIds": [
+              "6016",
+              "6012"
+            ],
+            "sellerName": "Canela Media, Inc.",
+            "isVppDeviceBasedLicensingEnabled": true,
             "releaseNotes": "- Bug Fixes & Performance Improvements.",
             "version": "16.1.26",
             "wrapperType": "software",
             "currency": "USD",
             "description": "Canela.TV es tu aplicación de televisión en español. Disfruta de una amplia variedad de entretenimiento para toda la familia y un programa de lealtad donde ganas puntos viendo tus shows favoritos. Disponible ¡SIEMPRE GRATIS!\n \nMás de 35,000 horas de contenido, incluyendo: series originales, telenovelas icónicas, películas de Hollywood, clásicos del Cine de Oro, telenovelas turcas y brasileñas, programas diarios de entretenimiento, estilo de vida, deportes y noticias. Además, secciones dedicadas a música, deportes y contenido infantil para toda la familia.\n\nCLUB CANELA es el programa de lealtad de Canela.TV donde ganas puntos viendo tu contenido favorito y puedes cambiarlos por recompesas. Siempre es gratis, solo necesitas crear tu perfil e iniciar sesión para comenzar a ganar puntos desde la app de la TV, móvil o sitio web. Ganas 5 puntos por cada 5 minutos de contenido consecutivo. Mientras más veas e interactúes con Canela.TV, más puntos ganas.\n \nSERIES ORIGINALES de todos los géneros, incluyendo Secretos de Villanas y Secretos de las Indomables, con la participación de estrellas icónicas de la televisión como Gaby Spanic, Laura Zapata, Cynthia Klitbo, Aylin Mujica, Sabine Moussier, Geraldine Bazán, Sarah Mintz, Yuri, Alicia Machado, Ninel Conde, Amara ‘La Negra’, Patricia Manterola y Zuleyka Rivera.\n \nCANALES EN VIVO siempre disponibles y dedicados a diferentes géneros y entretenimiento, seguro encuentras un canal para ti.\n \nPELÍCULAS Originales como Mi Perfecto Ex con Marjorie de Sousa y Mark Tacher; Cazadoras de Millonarios con Alicia Machado y Sherlyn. Clásicos del Cine de Oro como La Devoradora con María Félix; Me He de Comer Esa Tuna con Jorge Negrete; y Sor Tequila con La India María. Y lo mejor de Hollywood para todos los gustos: acción, comedia, romance, drama y más.\n \nTELENOVELAS desde las que marcaron toda una época hasta los más recientes éxitos. Novelas Turcas como Hercai, Infieles, El Secreto de Feriha y Me Robó Mi Vida, y telenovelas latinas como: Mirada de Mujer, Gata Salvaje y Eva Luna.\n \nCANELA MUSIC con videos musicales, shows originales, entrevistas y mixtapes seleccionados con los mejores videos de la música latina.\n \nCANELA DEPORTES te trae los mejores análisis deportivos con 100% Futbol y El Dugout; Historias de Leyendas y One on One, con entrevistas a grandes figuras como el Pibe Valderrama, Óscar Córdoba, Javier Zanetti y más. Además, disfruta de MASL y canales en vivo.\n \nCANELA KIDS te ofrece contenido infantil y 100% en español. Disfruta shows originales como Plaza Aventuras, SúperEllas y StoryBook, además de éxitos donde los pequeños aprenden jugando, como Barbie Dreamtopia, El Mundo de Ryan, Hola Romi y Love Diana.\n \n¿Qué puedes hacer dentro de Canela.TV?\n \n- Disfrutar de todo el contenido disponible con acceso 100% gratuito.\n- Filtrar contenido para encontrar justo lo que quieres ver.\n- Recibir notificaciones personalizadas para seguir descubriendo más entretenimiento.\n- Recibir recomendaciones personalizadas alineadas a tus gustos.\n- Guardar tu contenido favorito.\n- Recibir acceso anticipado a contenido exclusivo.\n- Controlar el acceso a contenido que ven tus hijos.\n- Si eres parte de Club Canela, podrás ganar puntos por ver tu contenido favorito, que puedes cambiar por contenido exclusivo, entradas a sorteos y nuevas sorpresas todo el tiempo; además podrás completar divertidos retos y trivias que te harán ganar puntos extras.\n \nEl mejor entretenimiento en español en un solo lugar. ¡Descarga la app ahora!\n \nCanela.TV - Televisión gratis y en español\nMás información en https://www.canela.tv",
             "bundleId": "com.canela.ott",
-            "averageUserRatingForCurrentVersion": 4.75506,
-            "sellerUrl": "https://www.canela.tv",
-            "averageUserRating": 4.75506,
-            "trackCensoredName": "Canela.TV - Series y Películas",
-            "languageCodesISO2A": [
-              "EN"
-            ],
-            "fileSizeBytes": "75641856",
-            "formattedPrice": "Free",
-            "contentAdvisoryRating": "17+",
-            "userRatingCountForCurrentVersion": 42223,
-            "trackViewUrl": "https://apps.apple.com/us/app/canela-tv-series-y-pel%C3%ADculas/id1507429168?uo=4",
-            "trackContentRating": "17+",
-            "minimumOsVersion": "14.0",
-            "genreIds": [
-              "6016",
-              "6012"
-            ],
-            "userRatingCount": 42223
+            "userRatingCount": 42237
           },
-          "average_rating": 4.75506,
-          "rating_count": 42223,
+          "average_rating": 4.75505,
+          "rating_count": 42237,
           "version": "16.1.26",
           "current_version_release_date": "2026-06-10T06:43:09Z",
           "track_name": "Canela.TV - Series y Películas",
@@ -4004,14 +4004,14 @@
             "summary": "Entretenimiento gratis en español: Series, películas, novelas, deportes y más",
             "installs": "10,000,000+",
             "minInstalls": 10000000,
-            "realInstalls": 21162338,
+            "realInstalls": 21164259,
             "score": 4.0523562,
-            "ratings": 14369,
+            "ratings": 14370,
             "reviews": 749,
             "histogram": [
               2175,
               669,
-              970,
+              971,
               895,
               9627
             ],
@@ -4078,7 +4078,7 @@
             "url": "https://play.google.com/store/apps/details?id=com.canela.ott&hl=en&gl=us"
           },
           "average_rating": 4.0523562,
-          "rating_count": 14369,
+          "rating_count": 14370,
           "version": "16.1.26",
           "installs": "10,000,000+",
           "title": "Canela.TV - Series y Películas",
@@ -4546,20 +4546,6 @@
         "summary": {
           "raw": {
             "isGameCenterEnabled": false,
-            "features": [
-              "iosUniversal"
-            ],
-            "advisories": [
-              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
-              "Infrequent/Mild Profanity or Crude Humour",
-              "Infrequent/Mild Horror/Fear Themes",
-              "Infrequent/Mild Realistic Violence",
-              "Infrequent/Mild Mature/Suggestive Themes",
-              "Infrequent/Mild Cartoon or Fantasy Violence",
-              "Infrequent/Mild Sexual Content and Nudity",
-              "Infrequent/Mild Medical/Treatment Information"
-            ],
-            "kind": "software",
             "screenshotUrls": [
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/e3/ac/e7e3accd-4e82-0608-6163-bdf87071cc5a/95391d39-53a5-4e73-93f1-4d22a048ab92_5.5-inch_1.png/392x696bb.png",
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/00/09/ed00098a-78bd-edb5-9a5b-7fd8ab880766/b010cb3c-cf80-4f38-9f37-15cada4b7996_5.5-inch_2.png/392x696bb.png",
@@ -4704,27 +4690,24 @@
               "iPadAir13M4-iPadAir13M4",
               "iPadAir13M4Cellular-iPadAir13M4Cellular"
             ],
-            "price": 0.0,
-            "artistId": 675465914,
-            "artistName": "Cignal TV, Inc.",
-            "trackId": 1293561677,
-            "trackName": "Cignal Play",
-            "releaseNotes": "- Bug fixes and enhancements\n- App optimizations",
-            "genreIds": [
-              "6016"
+            "advisories": [
+              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
+              "Infrequent/Mild Profanity or Crude Humour",
+              "Infrequent/Mild Horror/Fear Themes",
+              "Infrequent/Mild Realistic Violence",
+              "Infrequent/Mild Mature/Suggestive Themes",
+              "Infrequent/Mild Cartoon or Fantasy Violence",
+              "Infrequent/Mild Sexual Content and Nudity",
+              "Infrequent/Mild Medical/Treatment Information"
             ],
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
-            "sellerName": "Cignal TV, Inc.",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "currentVersionReleaseDate": "2026-05-11T09:22:20Z",
-            "version": "3.96.76",
-            "wrapperType": "software",
-            "currency": "PHP",
-            "description": "Take some of the best content from the country’s leading satellite service provider, Cignal, with you wherever, whenever. Cignal Play, awesome content everywhere.\n\nTerms of Use: https://www.cignalplay.com/mobile/terms-and-conditions\nData Privacy: https://www.cignalplay.com/data-privacy",
+            "kind": "software",
+            "features": [
+              "iosUniversal"
+            ],
+            "minimumOsVersion": "15.1",
             "sellerUrl": "http://www.cignal.tv",
-            "averageUserRatingForCurrentVersion": 4.41261,
-            "averageUserRating": 4.41261,
+            "averageUserRatingForCurrentVersion": 4.41307,
+            "averageUserRating": 4.41307,
             "trackCensoredName": "Cignal Play",
             "languageCodesISO2A": [
               "EN"
@@ -4732,19 +4715,36 @@
             "fileSizeBytes": "57484288",
             "formattedPrice": "Free",
             "contentAdvisoryRating": "12+",
+            "userRatingCountForCurrentVersion": 5096,
             "trackViewUrl": "https://apps.apple.com/ph/app/cignal-play/id1293561677?uo=4",
             "trackContentRating": "12+",
-            "userRatingCountForCurrentVersion": 5092,
-            "bundleId": "tv.cignal.cignalplayapp",
-            "minimumOsVersion": "15.1",
-            "releaseDate": "2018-07-29T04:48:43Z",
+            "artistId": 675465914,
+            "artistName": "Cignal TV, Inc.",
             "genres": [
               "Entertainment"
             ],
-            "userRatingCount": 5092
+            "price": 0.0,
+            "genreIds": [
+              "6016"
+            ],
+            "isVppDeviceBasedLicensingEnabled": true,
+            "sellerName": "Cignal TV, Inc.",
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "trackId": 1293561677,
+            "trackName": "Cignal Play",
+            "releaseDate": "2018-07-29T04:48:43Z",
+            "currentVersionReleaseDate": "2026-05-11T09:22:20Z",
+            "releaseNotes": "- Bug fixes and enhancements\n- App optimizations",
+            "version": "3.96.76",
+            "wrapperType": "software",
+            "currency": "PHP",
+            "description": "Take some of the best content from the country’s leading satellite service provider, Cignal, with you wherever, whenever. Cignal Play, awesome content everywhere.\n\nTerms of Use: https://www.cignalplay.com/mobile/terms-and-conditions\nData Privacy: https://www.cignalplay.com/data-privacy",
+            "bundleId": "tv.cignal.cignalplayapp",
+            "userRatingCount": 5096
           },
-          "average_rating": 4.41261,
-          "rating_count": 5092,
+          "average_rating": 4.41307,
+          "rating_count": 5096,
           "version": "3.96.76",
           "current_version_release_date": "2026-05-11T09:22:20Z",
           "track_name": "Cignal Play",
@@ -4763,16 +4763,16 @@
             "summary": "Play your daily dose of awesome entertainment anywhere you go.",
             "installs": "1,000,000+",
             "minInstalls": 1000000,
-            "realInstalls": 1445734,
-            "score": 4.620813,
-            "ratings": 22332,
+            "realInstalls": 1446451,
+            "score": 4.621246,
+            "ratings": 22340,
             "reviews": 3248,
             "histogram": [
-              1056,
-              298,
-              827,
-              1685,
-              18461
+              1050,
+              299,
+              830,
+              1692,
+              18464
             ],
             "price": 0,
             "free": true,
@@ -4831,8 +4831,8 @@
             "appId": "tv.cignal.cignalplay",
             "url": "https://play.google.com/store/apps/details?id=tv.cignal.cignalplay&hl=en&gl=ph"
           },
-          "average_rating": 4.620813,
-          "rating_count": 22332,
+          "average_rating": 4.621246,
+          "rating_count": 22340,
           "version": "Varies with device",
           "installs": "1,000,000+",
           "title": "Cignal Play",
