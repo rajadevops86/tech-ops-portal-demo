@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-14T06:25:38.123910+00:00",
+  "generated_utc": "2026-06-15T07:08:32.097108+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52894
+        "rating": 4.52895
       },
       "android": {
-        "rating": 4.4275417
+        "rating": 4.4275374
       },
       "sentiment": {
-        "score": 0.65,
+        "score": 0.629,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "one of the worst app ,For payment related issues,poor quality, No new content , Worst app design",
+            "text": "stupid app. worst customer service. downloaded movies but downloaded content has been disappeared. waste of data. always stucks. agents endhuku the chat when we explain issue waste of money",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "stupid app. worst customer service. downloaded movies but downloaded content has been disappeared. waste of data. always stucks. agents endhuku the chat when we explain issue waste of money",
+            "text": "worst",
             "rating": 1,
             "platform": "Android"
           },
@@ -46,19 +46,24 @@
             "platform": "Android"
           }
         ],
-        "drivers": []
+        "drivers": [
+          {
+            "label": "crash",
+            "trend": "steady"
+          }
+        ]
       }
     },
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49608
+        "rating": 4.49484
       },
       "android": {
-        "rating": 4.5581
+        "rating": 4.5462527
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.561,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -113,13 +118,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2381
+        "rating": 2.22039
       },
       "android": {
-        "rating": 2.276699
+        "rating": 2.294686
       },
       "sentiment": {
-        "score": 0.44,
+        "score": 0.446,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -133,14 +138,14 @@
             "platform": "Android"
           },
           {
-            "text": "apps sampah !! nk play live asyik error je ! kt tv sama, fon pon sama ! haram jadahh aku takkan halalkan duit aku !",
+            "text": "cant download for my smart tv.. wasting money.",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "I am a Unifi user. Already bought the WC pass and Unifi already sent whatsapp to confirm it and yet I am still unable to get the link. Kept on asking to \"BUY THE PASS\" When I tried the 2nd time, confirmation pop up saying already bought the package. What is goong on, Unifi? Your system really sucks!!!!!",
+            "text": "very bad ... blank screen.",
             "rating": 1,
             "platform": "Android"
           },
@@ -161,11 +166,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "steady"
+            "label": "slow",
+            "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -182,7 +187,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44571
+        "rating": 4.44568
       },
       "android": {
         "rating": 3.7263427
@@ -250,7 +255,7 @@
         "rating": 2.79206
       },
       "android": {
-        "rating": 3.541114
+        "rating": 3.5410023
       },
       "sentiment": {
         "score": 0.499,
@@ -316,7 +321,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75505
+        "rating": 4.75509
       },
       "android": {
         "rating": 4.0523562
@@ -381,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41307
+        "rating": 4.41227
       },
       "android": {
-        "rating": 4.621246
+        "rating": 4.6218147
       },
       "sentiment": {
         "score": 0.639,
