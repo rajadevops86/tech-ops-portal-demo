@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-17T06:59:28.021466+00:00",
+  "generated_utc": "2026-06-18T06:43:53.861910+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52891
+        "rating": 4.52888
       },
       "android": {
-        "rating": 4.4273677
+        "rating": 4.427418
       },
       "sentiment": {
-        "score": 0.645,
+        "score": 0.643,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,8 +24,8 @@
             "platform": "Android"
           },
           {
-            "text": "sow beautiful lk",
-            "rating": 4,
+            "text": "she is good app",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -60,7 +60,7 @@
         "rating": 4.49535
       },
       "android": {
-        "rating": 4.544389
+        "rating": 4.545822
       },
       "sentiment": {
         "score": 0.56,
@@ -118,13 +118,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.21162
+        "rating": 2.21311
       },
       "android": {
-        "rating": 2.259434
+        "rating": 2.2641509
       },
       "sentiment": {
-        "score": 0.45,
+        "score": 0.455,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -155,26 +155,26 @@
             "platform": "Android"
           },
           {
-            "text": "black screen never stop buffering wasting of time terrible apps",
+            "text": "So inconvenient",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "steady"
           },
           {
             "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -252,10 +252,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79206
+        "rating": 2.79266
       },
       "android": {
-        "rating": 3.5387537
+        "rating": 3.5374951
       },
       "sentiment": {
         "score": 0.507,
@@ -321,10 +321,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75518
+        "rating": 4.75519
       },
       "android": {
-        "rating": 4.0572915
+        "rating": 4.062176
       },
       "sentiment": {
         "score": 0.596,
@@ -386,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41296
+        "rating": 4.41303
       },
       "android": {
-        "rating": 4.620197
+        "rating": 4.6202416
       },
       "sentiment": {
         "score": 0.639,
