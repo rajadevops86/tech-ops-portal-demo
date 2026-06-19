@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-18T06:43:53.861910+00:00",
+  "generated_utc": "2026-06-19T06:56:42.934521+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52888
+        "rating": 4.52884
       },
       "android": {
-        "rating": 4.427418
+        "rating": 4.427347
       },
       "sentiment": {
-        "score": 0.643,
+        "score": 0.645,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,12 +19,12 @@
             "platform": "Android"
           },
           {
-            "text": "excellent",
+            "text": "Good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "she is good app",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -57,15 +57,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49535
+        "rating": 4.49551
       },
       "android": {
-        "rating": 4.545822
+        "rating": 4.550017
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -75,19 +80,9 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "great",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "KUNG MAY KALAHATING STAR KALAHATI PA NG KALAHATING STAR IBIBIGAY KUNG RATE BASAG YUNG TUNOG MINSANAN LANG NBA GAME MINSAN BASAG PA YUNG TUNOG UMAY 🤦😡😡😡",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "fake apps karmahin sana kayo",
             "rating": 1,
@@ -97,6 +92,11 @@
             "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Worst app",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -105,11 +105,19 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -118,13 +126,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.21311
+        "rating": 2.20387
       },
       "android": {
-        "rating": 2.2641509
+        "rating": 2.3349056
       },
       "sentiment": {
-        "score": 0.455,
+        "score": 0.46,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -138,7 +146,7 @@
             "platform": "Android"
           },
           {
-            "text": "cant download for my smart tv.. wasting money.",
+            "text": "honor 400 smart tak dapat nak buka pun hang semua gelap",
             "rating": 1,
             "platform": "Android"
           }
@@ -162,12 +170,12 @@
         ],
         "drivers": [
           {
-            "label": "login",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -187,10 +195,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44568
+        "rating": 4.44562
       },
       "android": {
-        "rating": 3.725641
+        "rating": 3.726923
       },
       "sentiment": {
         "score": 0.501,
@@ -252,13 +260,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79266
+        "rating": 2.79482
       },
       "android": {
-        "rating": 3.5374951
+        "rating": 3.534857
       },
       "sentiment": {
-        "score": 0.507,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -321,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75519
+        "rating": 4.75518
       },
       "android": {
         "rating": 4.062176
@@ -386,10 +394,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41303
+        "rating": 4.41317
       },
       "android": {
-        "rating": 4.6202416
+        "rating": 4.6193027
       },
       "sentiment": {
         "score": 0.639,
