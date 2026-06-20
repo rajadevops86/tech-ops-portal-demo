@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-19T06:56:42.934521+00:00",
+  "generated_utc": "2026-06-20T06:11:10.535773+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52884
+        "rating": 4.52881
       },
       "android": {
-        "rating": 4.427347
+        "rating": 4.4272833
       },
       "sentiment": {
-        "score": 0.645,
+        "score": 0.652,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,7 +19,7 @@
             "platform": "Android"
           },
           {
-            "text": "Good",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
@@ -31,7 +31,7 @@
         ],
         "topNegative": [
           {
-            "text": "one of the worst app ,For payment related issues,poor quality, No new content , Worst app design",
+            "text": "worst app automatically coming back it always getting crashed",
             "rating": 1,
             "platform": "Android"
           },
@@ -48,6 +48,22 @@
         ],
         "drivers": [
           {
+            "label": "buffer",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
+            "trend": "steady"
+          },
+          {
             "label": "crash",
             "trend": "steady"
           }
@@ -57,20 +73,15 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49551
+        "rating": 4.49543
       },
       "android": {
-        "rating": 4.550017
+        "rating": 4.5505843
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.56,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Most of the time error! Refund!!!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -80,9 +91,19 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "great",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "KUNG MAY KALAHATING STAR KALAHATI PA NG KALAHATING STAR IBIBIGAY KUNG RATE BASAG YUNG TUNOG MINSANAN LANG NBA GAME MINSAN BASAG PA YUNG TUNOG UMAY 🤦😡😡😡",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "fake apps karmahin sana kayo",
             "rating": 1,
@@ -92,11 +113,6 @@
             "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "Worst app",
-            "rating": 1,
-            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -105,19 +121,11 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "update",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -126,27 +134,27 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.20387
+        "rating": 2.20475
       },
       "android": {
-        "rating": 2.3349056
+        "rating": 2.3474178
       },
       "sentiment": {
-        "score": 0.46,
+        "score": 0.445,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Kerap berlaku network error. sedangkan bila buka apps lain seperti youtube dan netflix ok. sudah cuba pelbagai cara untuk selesaikan masalah ini tetapi tidak membantu.",
+            "text": "honor 400 smart tak dapat nak buka pun hang semua gelap",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "honor 400 smart tak dapat nak buka pun hang semua gelap",
+            "text": "Tried to install the app on my samsung s26 ultra handphone, so I can watch the world cup, but when I open the app, a blank screen comes out. It was ok when the app was the 1.0 version. Despite clearing the cache and data storage and reinstalling the app, I still got a blank screen... what gives?",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Dah langgan season pass world cup.. 50 ringgit ..dari pagi tak boleh tonton lagi live world cup 2026.. order dah complete dah ..",
             "rating": 1,
             "platform": "Android"
           }
@@ -195,10 +203,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44562
+        "rating": 4.44548
       },
       "android": {
-        "rating": 3.726923
+        "rating": 3.728553
       },
       "sentiment": {
         "score": 0.501,
@@ -260,13 +268,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79482
+        "rating": 2.79422
       },
       "android": {
-        "rating": 3.534857
+        "rating": 3.5339694
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -287,37 +295,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -329,10 +337,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75518
+        "rating": 4.75527
       },
       "android": {
-        "rating": 4.062176
+        "rating": 4.0942407
       },
       "sentiment": {
         "score": 0.596,
@@ -394,13 +402,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41317
+        "rating": 4.41397
       },
       "android": {
-        "rating": 4.6193027
+        "rating": 4.6198125
       },
       "sentiment": {
-        "score": 0.639,
+        "score": 0.578,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -421,36 +429,36 @@
         ],
         "topNegative": [
           {
-            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "adding ads becomes more horrible",
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
