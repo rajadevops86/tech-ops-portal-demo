@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-21T06:43:19.927774+00:00",
+  "generated_utc": "2026-06-22T07:11:24.112952+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52879
+        "rating": 4.52874
       },
       "android": {
-        "rating": 4.4273024
+        "rating": 4.427497
       },
       "sentiment": {
-        "score": 0.654,
+        "score": 0.656,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "superb very nice",
             "rating": 5,
             "platform": "Android"
           }
@@ -73,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49551
+        "rating": 4.49535
       },
       "android": {
-        "rating": 4.5510473
+        "rating": 4.555221
       },
       "sentiment": {
-        "score": 0.56,
+        "score": 0.527,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -91,19 +96,9 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "great",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "KUNG MAY KALAHATING STAR KALAHATI PA NG KALAHATING STAR IBIBIGAY KUNG RATE BASAG YUNG TUNOG MINSANAN LANG NBA GAME MINSAN BASAG PA YUNG TUNOG UMAY 🤦😡😡😡",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "fake apps karmahin sana kayo",
             "rating": 1,
@@ -113,6 +108,11 @@
             "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Worst app",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -121,11 +121,19 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -134,15 +142,20 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.20475
+        "rating": 2.19941
       },
       "android": {
-        "rating": 2.3534884
+        "rating": 2.370892
       },
       "sentiment": {
-        "score": 0.455,
+        "score": 0.46,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "cant open the apps anymore...always get network error even installed it many time..",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "honor 400 smart tak dapat nak buka pun hang semua gelap",
             "rating": 1,
@@ -150,11 +163,6 @@
           },
           {
             "text": "Tried to install the app on my samsung s26 ultra handphone, so I can watch the world cup, but when I open the app, a blank screen comes out. It was ok when the app was the 1.0 version. Despite clearing the cache and data storage and reinstalling the app, I still got a blank screen... what gives?",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Dah langgan season pass world cup.. 50 ringgit ..dari pagi tak boleh tonton lagi live world cup 2026.. order dah complete dah ..",
             "rating": 1,
             "platform": "Android"
           }
@@ -192,10 +200,6 @@
           {
             "label": "buffer",
             "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
           }
         ]
       }
@@ -203,10 +207,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4455
+        "rating": 4.44567
       },
       "android": {
-        "rating": 3.7287917
+        "rating": 3.7284427
       },
       "sentiment": {
         "score": 0.501,
@@ -268,10 +272,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79422
+        "rating": 2.79363
       },
       "android": {
-        "rating": 3.5341473
+        "rating": 3.5338173
       },
       "sentiment": {
         "score": 0.509,
@@ -337,10 +341,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75508
+        "rating": 4.75509
       },
       "android": {
-        "rating": 4.0942407
+        "rating": 4.1151834
       },
       "sentiment": {
         "score": 0.596,
@@ -402,13 +406,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41366
+        "rating": 4.4155
       },
       "android": {
-        "rating": 4.62049
+        "rating": 4.618133
       },
       "sentiment": {
-        "score": 0.65,
+        "score": 0.583,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -429,29 +433,33 @@
         ],
         "topNegative": [
           {
-            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "no categorized channels for a postpaid plan vs premium plan vs other plans.",
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "worsening"
           },
           {
             "label": "crash",
