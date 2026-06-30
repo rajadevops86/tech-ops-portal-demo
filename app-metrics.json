@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-29T06:28:46.052297+00:00",
+  "generated_utc": "2026-06-30T06:02:19.619660+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52858
       },
       "android": {
-        "rating": 4.4269605
+        "rating": 4.4269204
       },
       "sentiment": {
-        "score": 0.553,
+        "score": 0.523,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,30 +19,30 @@
             "platform": "Android"
           },
           {
-            "text": "good 👍",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Good",
-            "rating": 4,
+            "text": "good 👍",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "optimization is bad",
-            "rating": 3,
+            "text": "to much of annoying add",
+            "rating": 4,
             "platform": "Android"
           },
           {
-            "text": "worst ott platform I have subscription but my account automatically logout and I'm unable to login again.",
+            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "to much of annoying add",
-            "rating": 4,
+            "text": "worst experience",
+            "rating": 1,
             "platform": "Android"
           }
         ],
@@ -52,7 +52,7 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "ads",
             "trend": "steady"
           },
           {
@@ -60,11 +60,11 @@
             "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "buffer",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -76,7 +76,7 @@
         "rating": 4.48829
       },
       "android": {
-        "rating": 4.5471573
+        "rating": 4.547214
       },
       "sentiment": {
         "score": 0.545,
@@ -137,10 +137,10 @@
         "rating": 2.26667
       },
       "android": {
-        "rating": 2.427928
+        "rating": 2.4222221
       },
       "sentiment": {
-        "score": 0.483,
+        "score": 0.49,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -161,6 +161,11 @@
         ],
         "topNegative": [
           {
+            "text": "Unable to open the app. Crazy, I already subscribe World Cup pass and can't even watch it on the website.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "useless app 😭😭😔😔😭😭😭😭",
             "rating": 1,
             "platform": "Android"
@@ -169,20 +174,15 @@
             "text": "after updating still black screen. cant work on samsung ultra 25. worst app. paid world cup and cant watch on the app. useless.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "Another useless app from TM. I got the Max Pack package but was not able to stream HBO from the app. I need to download a separate HBO Max app. So why the heck do I need a UniFi TV 2.0 app then? And it kept saying that I need to activate it in UniFi UniVerse. I have downloaded the app, but the activation is nowhere to be seen. You guys are the worst provider in Malaysia. I called your customer service, and for 104 min call, can't even solve my issue. What's the point of having customers service?",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "stream",
+            "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -195,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44548
+        "rating": 4.44543
       },
       "android": {
         "rating": 3.727742
@@ -263,7 +263,7 @@
         "rating": 2.79287
       },
       "android": {
-        "rating": 3.5366795
+        "rating": 3.534236
       },
       "sentiment": {
         "score": 0.509,
@@ -329,13 +329,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75511
+        "rating": 4.75505
       },
       "android": {
         "rating": 4.141361
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -356,9 +356,9 @@
         ],
         "topNegative": [
           {
-            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
             "rating": 2,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -374,6 +374,10 @@
         "drivers": [
           {
             "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -394,13 +398,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41701
+        "rating": 4.41784
       },
       "android": {
-        "rating": 4.6180277
+        "rating": 4.617438
       },
       "sentiment": {
-        "score": 0.647,
+        "score": 0.583,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -421,29 +425,33 @@
         ],
         "topNegative": [
           {
-            "text": "Honestly, magandang app siya para sa gusto microdrama gaya ng mga reels na Chinese microdrama and ang laki ng potential sumikat sa pinas. Pero base sa experience kahit naka-subscribed ay interrupted pa rin panonood mo. Yes, walang adds pero may mga episodes naman na tagal mag loading at hindi nagplay kaya interrupted pa rin kaya lalaktaw ka ng episode at ma-missed mo. sana maayos.",
-            "rating": 2,
-            "platform": "Android"
-          },
-          {
-            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "worsening"
           },
           {
             "label": "crash",
