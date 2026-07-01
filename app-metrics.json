@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-30T06:02:19.619660+00:00",
+  "generated_utc": "2026-07-01T06:17:15.638213+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52858
       },
       "android": {
-        "rating": 4.4269204
+        "rating": 4.4267163
       },
       "sentiment": {
-        "score": 0.523,
+        "score": 0.519,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -53,11 +53,7 @@
           },
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "buffer",
@@ -65,6 +61,10 @@
           },
           {
             "label": "update",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -76,10 +76,10 @@
         "rating": 4.48829
       },
       "android": {
-        "rating": 4.547214
+        "rating": 4.5476904
       },
       "sentiment": {
-        "score": 0.545,
+        "score": 0.541,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -137,10 +137,10 @@
         "rating": 2.26667
       },
       "android": {
-        "rating": 2.4222221
+        "rating": 2.3818183
       },
       "sentiment": {
-        "score": 0.49,
+        "score": 0.498,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -195,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44543
+        "rating": 4.4455
       },
       "android": {
         "rating": 3.727742
@@ -260,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79287
+        "rating": 2.79239
       },
       "android": {
-        "rating": 3.534236
+        "rating": 3.5336688
       },
       "sentiment": {
         "score": 0.509,
@@ -329,13 +329,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75505
+        "rating": 4.75499
       },
       "android": {
-        "rating": 4.141361
+        "rating": 4.150259
       },
       "sentiment": {
-        "score": 0.567,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -356,9 +356,9 @@
         ],
         "topNegative": [
           {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
             "rating": 2,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -374,10 +374,6 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -398,13 +394,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41784
+        "rating": 4.4183
       },
       "android": {
-        "rating": 4.617438
+        "rating": 4.616793
       },
       "sentiment": {
-        "score": 0.583,
+        "score": 0.647,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -425,33 +421,29 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "Honestly, magandang app siya para sa gusto microdrama gaya ng mga reels na Chinese microdrama and ang laki ng potential sumikat sa pinas. Pero base sa experience kahit naka-subscribed ay interrupted pa rin panonood mo. Yes, walang adds pero may mga episodes naman na tagal mag loading at hindi nagplay kaya interrupted pa rin kaya lalaktaw ka ng episode at ma-missed mo. sana maayos.",
+            "rating": 2,
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
