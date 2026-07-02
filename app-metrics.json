@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-01T06:17:15.638213+00:00",
+  "generated_utc": "2026-07-02T05:50:07.327421+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52858
       },
       "android": {
-        "rating": 4.4267163
+        "rating": 4.4267
       },
       "sentiment": {
-        "score": 0.519,
+        "score": 0.552,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,20 +19,20 @@
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "good entertainment",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good 👍",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "to much of annoying add",
-            "rating": 4,
+            "text": "worst app seen ever even it is not opening want to watch but if app not opens how to watch allu arjun anna take care anna veela valla kadu inka",
+            "rating": 2,
             "platform": "Android"
           },
           {
@@ -48,23 +48,15 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
             "label": "ads",
             "trend": "worsening"
           },
           {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
             "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -73,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48829
+        "rating": 4.48838
       },
       "android": {
-        "rating": 4.5476904
+        "rating": 4.548344
       },
       "sentiment": {
         "score": 0.541,
@@ -134,13 +126,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26667
+        "rating": 2.27054
       },
       "android": {
-        "rating": 2.3818183
+        "rating": 2.3486238
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -161,7 +153,7 @@
         ],
         "topNegative": [
           {
-            "text": "Unable to open the app. Crazy, I already subscribe World Cup pass and can't even watch it on the website.",
+            "text": "This is the worst experience. I have paid the subscription fee to watch the world cup with the help of your customer care staffs and when I try to go into the app with my mobile phone it is blank. I cannot scan the QR code . I have installed and installed several times and switch off and on my phone but alas nothing works. The staff then told me to use another phone and try. I told them that I want a refund and they are not helpful.",
             "rating": 1,
             "platform": "Android"
           },
@@ -195,10 +187,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4455
+        "rating": 4.44543
       },
       "android": {
-        "rating": 3.727742
+        "rating": 3.7293816
       },
       "sentiment": {
         "score": 0.501,
@@ -263,7 +255,7 @@
         "rating": 2.79239
       },
       "android": {
-        "rating": 3.5336688
+        "rating": 3.536642
       },
       "sentiment": {
         "score": 0.509,
@@ -329,7 +321,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75499
+        "rating": 4.75474
       },
       "android": {
         "rating": 4.150259
@@ -394,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.4183
+        "rating": 4.41892
       },
       "android": {
-        "rating": 4.616793
+        "rating": 4.615693
       },
       "sentiment": {
         "score": 0.647,
