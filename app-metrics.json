@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-02T05:50:07.327421+00:00",
+  "generated_utc": "2026-07-03T05:43:55.293729+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52858
       },
       "android": {
-        "rating": 4.4267
+        "rating": 4.4263873
       },
       "sentiment": {
-        "score": 0.552,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -52,11 +52,15 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "buffer",
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -68,7 +72,7 @@
         "rating": 4.48838
       },
       "android": {
-        "rating": 4.548344
+        "rating": 4.5498996
       },
       "sentiment": {
         "score": 0.541,
@@ -129,10 +133,10 @@
         "rating": 2.27054
       },
       "android": {
-        "rating": 2.3486238
+        "rating": 2.347032
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.516,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -190,7 +194,7 @@
         "rating": 4.44543
       },
       "android": {
-        "rating": 3.7293816
+        "rating": 3.7297297
       },
       "sentiment": {
         "score": 0.501,
@@ -252,7 +256,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79239
+        "rating": 2.79347
       },
       "android": {
         "rating": 3.536642
@@ -324,10 +328,10 @@
         "rating": 4.75474
       },
       "android": {
-        "rating": 4.150259
+        "rating": 4.171875
       },
       "sentiment": {
-        "score": 0.596,
+        "score": 0.597,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -348,8 +352,8 @@
         ],
         "topNegative": [
           {
-            "text": "Recent update signed me out and I'm not able to sign in because it keeps saying parental controls are on which I never activated so it won't reset the password",
-            "rating": 2,
+            "text": "This app would be five stars if they would just give it closed captions.",
+            "rating": 1,
             "platform": "Android"
           },
           {
@@ -375,10 +379,6 @@
           {
             "label": "stream",
             "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
           }
         ]
       }
@@ -389,10 +389,10 @@
         "rating": 4.41892
       },
       "android": {
-        "rating": 4.615693
+        "rating": 4.6175423
       },
       "sentiment": {
-        "score": 0.647,
+        "score": 0.585,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -413,29 +413,33 @@
         ],
         "topNegative": [
           {
-            "text": "Honestly, magandang app siya para sa gusto microdrama gaya ng mga reels na Chinese microdrama and ang laki ng potential sumikat sa pinas. Pero base sa experience kahit naka-subscribed ay interrupted pa rin panonood mo. Yes, walang adds pero may mga episodes naman na tagal mag loading at hindi nagplay kaya interrupted pa rin kaya lalaktaw ka ng episode at ma-missed mo. sana maayos.",
-            "rating": 2,
-            "platform": "Android"
-          },
-          {
-            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Worst customer service",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "worsening"
           },
           {
             "label": "crash",
