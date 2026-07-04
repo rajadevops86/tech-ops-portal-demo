@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-03T05:43:55.293729+00:00",
+  "generated_utc": "2026-07-04T05:37:35.127104+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,19 +7,19 @@
         "rating": 4.52858
       },
       "android": {
-        "rating": 4.4263873
+        "rating": 4.426345
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.575,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "excellent",
-            "rating": 4,
+            "text": "best",
+            "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good entertainment",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
@@ -49,14 +49,14 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
             "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -69,10 +69,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48838
+        "rating": 4.48855
       },
       "android": {
-        "rating": 4.5498996
+        "rating": 4.5497174
       },
       "sentiment": {
         "score": 0.541,
@@ -133,7 +133,7 @@
         "rating": 2.27054
       },
       "android": {
-        "rating": 2.347032
+        "rating": 2.3603604
       },
       "sentiment": {
         "score": 0.516,
@@ -191,10 +191,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44543
+        "rating": 4.44557
       },
       "android": {
-        "rating": 3.7297297
+        "rating": 3.7251613
       },
       "sentiment": {
         "score": 0.501,
@@ -325,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75474
+        "rating": 4.75467
       },
       "android": {
-        "rating": 4.171875
+        "rating": 4.1770835
       },
       "sentiment": {
         "score": 0.597,
@@ -386,13 +386,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.41892
+        "rating": 4.42014
       },
       "android": {
-        "rating": 4.6175423
+        "rating": 4.6150756
       },
       "sentiment": {
-        "score": 0.585,
+        "score": 0.652,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -413,33 +413,29 @@
         ],
         "topNegative": [
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "Honestly, magandang app siya para sa gusto microdrama gaya ng mga reels na Chinese microdrama and ang laki ng potential sumikat sa pinas. Pero base sa experience kahit naka-subscribed ay interrupted pa rin panonood mo. Yes, walang adds pero may mga episodes naman na tagal mag loading at hindi nagplay kaya interrupted pa rin kaya lalaktaw ka ng episode at ma-missed mo. sana maayos.",
+            "rating": 2,
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst customer service",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
