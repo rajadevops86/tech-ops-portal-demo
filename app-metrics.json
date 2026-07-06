@@ -1,35 +1,40 @@
 {
-  "generated_utc": "2026-07-05T05:55:40.664495+00:00",
+  "generated_utc": "2026-07-06T06:19:09.089504+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52855
+        "rating": 4.52853
       },
       "android": {
-        "rating": 4.4261713
+        "rating": 4.426086
       },
       "sentiment": {
-        "score": 0.582,
+        "score": 0.613,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "superb",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "best",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 3,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
+            "text": "Good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "plz dabbuvu isthunaru ani worst movies pettakandi.... instead dabbulu adagandi istam.... enduku OTT maintchestharo teliyadu....",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "worst app seen ever even it is not opening want to watch but if app not opens how to watch allu arjun anna take care anna veela valla kadu inka",
             "rating": 2,
@@ -39,20 +44,15 @@
             "text": "worst app",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "worst experience",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
+            "label": "buffer",
+            "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "ads",
             "trend": "steady"
           },
           {
@@ -69,13 +69,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48888
+        "rating": 4.48864
       },
       "android": {
-        "rating": 4.553892
+        "rating": 4.551989
       },
       "sentiment": {
-        "score": 0.541,
+        "score": 0.529,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -89,7 +89,7 @@
             "platform": "Android"
           },
           {
-            "text": "great",
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           }
@@ -130,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26874
+        "rating": 2.26695
       },
       "android": {
-        "rating": 2.3839285
+        "rating": 2.3859649
       },
       "sentiment": {
-        "score": 0.516,
+        "score": 0.517,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -191,7 +191,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44557
+        "rating": 4.4458
       },
       "android": {
         "rating": 3.7222223
@@ -259,7 +259,7 @@
         "rating": 2.79277
       },
       "android": {
-        "rating": 3.536642
+        "rating": 3.5360744
       },
       "sentiment": {
         "score": 0.509,
@@ -325,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75462
+        "rating": 4.75465
       },
       "android": {
-        "rating": 4.1770835
+        "rating": 4.1813474
       },
       "sentiment": {
         "score": 0.597,
@@ -386,13 +386,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42189
+        "rating": 4.42024
       },
       "android": {
-        "rating": 4.6127453
+        "rating": 4.611482
       },
       "sentiment": {
-        "score": 0.652,
+        "score": 0.65,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -406,7 +406,7 @@
             "platform": "Android"
           },
           {
-            "text": "Excellent Service",
+            "text": "Great App!!! Shows are very entertaining and informative.",
             "rating": 5,
             "platform": "Android"
           }
