@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-07-06T06:19:09.089504+00:00",
+  "generated_utc": "2026-07-07T05:59:03.095444+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52853
+        "rating": 4.52852
       },
       "android": {
-        "rating": 4.426086
+        "rating": 4.4262066
       },
       "sentiment": {
-        "score": 0.613,
+        "score": 0.632,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "best app",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "superb",
             "rating": 5,
@@ -22,14 +27,14 @@
             "text": "best",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "ads over BAD",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "plz dabbuvu isthunaru ani worst movies pettakandi.... instead dabbulu adagandi istam.... enduku OTT maintchestharo teliyadu....",
             "rating": 1,
@@ -39,20 +44,15 @@
             "text": "worst app seen ever even it is not opening want to watch but if app not opens how to watch allu arjun anna take care anna veela valla kadu inka",
             "rating": 2,
             "platform": "Android"
-          },
-          {
-            "text": "worst app",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "buffer",
-            "trend": "steady"
+            "label": "ads",
+            "trend": "worsening"
           },
           {
-            "label": "ads",
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -69,10 +69,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48864
+        "rating": 4.48895
       },
       "android": {
-        "rating": 4.551989
+        "rating": 4.553631
       },
       "sentiment": {
         "score": 0.529,
@@ -130,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26695
+        "rating": 2.26515
       },
       "android": {
-        "rating": 2.3859649
+        "rating": 2.4035873
       },
       "sentiment": {
-        "score": 0.517,
+        "score": 0.516,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -191,10 +191,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4458
+        "rating": 4.44583
       },
       "android": {
-        "rating": 3.7222223
+        "rating": 3.723871
       },
       "sentiment": {
         "score": 0.501,
@@ -259,7 +259,7 @@
         "rating": 2.79277
       },
       "android": {
-        "rating": 3.5360744
+        "rating": 3.5376844
       },
       "sentiment": {
         "score": 0.509,
@@ -325,7 +325,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75465
+        "rating": 4.75466
       },
       "android": {
         "rating": 4.1813474
@@ -386,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42024
+        "rating": 4.42088
       },
       "android": {
-        "rating": 4.611482
+        "rating": 4.6135354
       },
       "sentiment": {
         "score": 0.65,
