@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-07T05:59:03.095444+00:00",
+  "generated_utc": "2026-07-08T05:11:41.728233+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52852
       },
       "android": {
-        "rating": 4.4262066
+        "rating": 4.426027
       },
       "sentiment": {
-        "score": 0.632,
+        "score": 0.65,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -48,11 +48,11 @@
         ],
         "drivers": [
           {
-            "label": "ads",
+            "label": "buffer",
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "ads",
             "trend": "steady"
           },
           {
@@ -69,13 +69,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48895
+        "rating": 4.48921
       },
       "android": {
-        "rating": 4.553631
+        "rating": 4.555003
       },
       "sentiment": {
-        "score": 0.529,
+        "score": 0.526,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -133,7 +133,7 @@
         "rating": 2.26515
       },
       "android": {
-        "rating": 2.4035873
+        "rating": 2.3876653
       },
       "sentiment": {
         "score": 0.516,
@@ -191,7 +191,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44583
+        "rating": 4.44604
       },
       "android": {
         "rating": 3.723871
@@ -325,7 +325,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75466
+        "rating": 4.7546
       },
       "android": {
         "rating": 4.1813474
@@ -386,13 +386,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42088
+        "rating": 4.42149
       },
       "android": {
-        "rating": 4.6135354
+        "rating": 4.611408
       },
       "sentiment": {
-        "score": 0.65,
+        "score": 0.642,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -413,8 +413,8 @@
         ],
         "topNegative": [
           {
-            "text": "Honestly, magandang app siya para sa gusto microdrama gaya ng mga reels na Chinese microdrama and ang laki ng potential sumikat sa pinas. Pero base sa experience kahit naka-subscribed ay interrupted pa rin panonood mo. Yes, walang adds pero may mga episodes naman na tagal mag loading at hindi nagplay kaya interrupted pa rin kaya lalaktaw ka ng episode at ma-missed mo. sana maayos.",
-            "rating": 2,
+            "text": "Misleading exclusivity. If a channel is not available to be streamed, don't add it at the selection or place a proper ideal label or tagging especially since no refund policy in place. App is buggy, delays and bad UI. Awful experience. Alerts are lacking description. Just generic messages that doesn't give proper details. Cancellation doesn't appear in-app apparently. Needs to login on web first.",
+            "rating": 1,
             "platform": "Android"
           },
           {
@@ -431,6 +431,10 @@
         "drivers": [
           {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
