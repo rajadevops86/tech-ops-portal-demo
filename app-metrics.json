@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-08T05:11:41.728233+00:00",
+  "generated_utc": "2026-07-09T05:56:12.592229+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,12 +7,17 @@
         "rating": 4.52852
       },
       "android": {
-        "rating": 4.426027
+        "rating": 4.4261003
       },
       "sentiment": {
-        "score": 0.65,
+        "score": 0.66,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "best one",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "best app",
             "rating": 5,
@@ -22,14 +27,14 @@
             "text": "superb",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "best",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "worst experience after buying gold premium plan I'm not even able to a watch a single movie without buffering it's not worthy for money those who want to purchase just don't subscribe worst app worst service also",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "ads over BAD",
             "rating": 1,
@@ -38,11 +43,6 @@
           {
             "text": "plz dabbuvu isthunaru ani worst movies pettakandi.... instead dabbulu adagandi istam.... enduku OTT maintchestharo teliyadu....",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app seen ever even it is not opening want to watch but if app not opens how to watch allu arjun anna take care anna veela valla kadu inka",
-            "rating": 2,
             "platform": "Android"
           }
         ],
@@ -53,6 +53,10 @@
           },
           {
             "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           },
           {
@@ -69,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48921
+        "rating": 4.48937
       },
       "android": {
-        "rating": 4.555003
+        "rating": 4.5553718
       },
       "sentiment": {
         "score": 0.526,
@@ -130,13 +134,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26515
+        "rating": 2.26338
       },
       "android": {
-        "rating": 2.3876653
+        "rating": 2.4212766
       },
       "sentiment": {
-        "score": 0.516,
+        "score": 0.505,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,11 +161,6 @@
         ],
         "topNegative": [
           {
-            "text": "This is the worst experience. I have paid the subscription fee to watch the world cup with the help of your customer care staffs and when I try to go into the app with my mobile phone it is blank. I cannot scan the QR code . I have installed and installed several times and switch off and on my phone but alas nothing works. The staff then told me to use another phone and try. I told them that I want a refund and they are not helpful.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "useless app 😭😭😔😔😭😭😭😭",
             "rating": 1,
             "platform": "Android"
@@ -170,12 +169,21 @@
             "text": "after updating still black screen. cant work on samsung ultra 25. worst app. paid world cup and cant watch on the app. useless.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Can't watch the game! apahal ni weh! I'm connected to my wifi and yet it says no network!",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "update",
             "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
           },
           {
             "label": "stream",
@@ -191,7 +199,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44604
+        "rating": 4.44536
       },
       "android": {
         "rating": 3.723871
@@ -256,7 +264,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79277
+        "rating": 2.79336
       },
       "android": {
         "rating": 3.5376844
@@ -325,7 +333,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7546
+        "rating": 4.75462
       },
       "android": {
         "rating": 4.1813474
@@ -386,10 +394,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42149
+        "rating": 4.42204
       },
       "android": {
-        "rating": 4.611408
+        "rating": 4.6122723
       },
       "sentiment": {
         "score": 0.642,
