@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-11T04:54:46.379540+00:00",
+  "generated_utc": "2026-07-12T05:17:51.840391+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52852
+        "rating": 4.52855
       },
       "android": {
-        "rating": 4.426124
+        "rating": 4.4262686
       },
       "sentiment": {
-        "score": 0.655,
+        "score": 0.649,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -52,11 +52,11 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
+            "label": "slow",
             "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "ads",
             "trend": "steady"
           },
           {
@@ -72,7 +72,7 @@
         "rating": 4.4897
       },
       "android": {
-        "rating": 4.554225
+        "rating": 4.5557027
       },
       "sentiment": {
         "score": 0.534,
@@ -130,10 +130,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2616
+        "rating": 2.25983
       },
       "android": {
-        "rating": 2.5418503
+        "rating": 2.5526316
       },
       "sentiment": {
         "score": 0.509,
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75464
+        "rating": 4.75467
       },
       "android": {
-        "rating": 4.19171
+        "rating": 4.216495
       },
       "sentiment": {
         "score": 0.597,
@@ -390,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42213
+        "rating": 4.42321
       },
       "android": {
-        "rating": 4.6139803
+        "rating": 4.6164446
       },
       "sentiment": {
         "score": 0.642,
