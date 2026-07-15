@@ -1,47 +1,47 @@
 {
-  "generated_utc": "2026-07-14T04:41:22.986964+00:00",
+  "generated_utc": "2026-07-15T04:41:18.087131+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52853
+        "rating": 4.52855
       },
       "android": {
-        "rating": 4.4258738
+        "rating": 4.425897
       },
       "sentiment": {
-        "score": 0.55,
+        "score": 0.655,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "best one",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "best app",
+            "text": "feel joy",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "very nice app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
-            "rating": 1,
-            "platform": "iOS"
-          },
-          {
-            "text": "worst app ee app subscription Enduku teesukunnanu ani roju badha paduthu unta okka manchi content ledhu teesai ra babu ee app ni🙏🙏",
+            "text": "worst experience after buying gold premium plan I'm not even able to a watch a single movie without buffering it's not worthy for money those who want to purchase just don't subscribe worst app worst service also",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "plz dabbuvu isthunaru ani worst movies pettakandi.... instead dabbulu adagandi istam.... enduku OTT maintchestharo teliyadu....",
+            "text": "Very irritating app that I never use.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "worst app ee app subscription Enduku teesukunnanu ani roju badha paduthu unta okka manchi content ledhu teesai ra babu ee app ni🙏🙏",
             "rating": 1,
             "platform": "Android"
           }
@@ -49,22 +49,14 @@
         "drivers": [
           {
             "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
             "trend": "steady"
           },
           {
             "label": "buffer",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -73,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48981
+        "rating": 4.48973
       },
       "android": {
-        "rating": 4.5568447
+        "rating": 4.5578704
       },
       "sentiment": {
         "score": 0.528,
@@ -137,7 +129,7 @@
         "rating": 2.26189
       },
       "android": {
-        "rating": 2.5696204
+        "rating": 2.6
       },
       "sentiment": {
         "score": 0.515,
@@ -199,20 +191,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44536
+        "rating": 4.44541
       },
       "android": {
-        "rating": 3.7275097
+        "rating": 3.732725
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.501,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -222,13 +209,18 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -243,23 +235,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -271,7 +259,7 @@
         "rating": 2.79336
       },
       "android": {
-        "rating": 3.5478468
+        "rating": 3.5519168
       },
       "sentiment": {
         "score": 0.509,
@@ -337,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7546
+        "rating": 4.75462
       },
       "android": {
-        "rating": 4.2124352
+        "rating": 4.2176166
       },
       "sentiment": {
         "score": 0.597,
@@ -398,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42283
+        "rating": 4.42316
       },
       "android": {
-        "rating": 4.619831
+        "rating": 4.621946
       },
       "sentiment": {
         "score": 0.646,
