@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-16T04:51:28.552954+00:00",
+  "generated_utc": "2026-07-17T04:54:42.362428+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52855
+        "rating": 4.52853
       },
       "android": {
-        "rating": 4.425969
+        "rating": 4.4258614
       },
       "sentiment": {
-        "score": 0.642,
+        "score": 0.645,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,14 +24,14 @@
             "platform": "Android"
           },
           {
-            "text": "good quality",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "worst experience after buying gold premium plan I'm not even able to a watch a single movie without buffering it's not worthy for money those who want to purchase just don't subscribe worst app worst service also",
+            "text": "very poor. They don't support in unsubscribing. Amount will auto debit but Aha customer care is irresponsible and they will ask us to contact the bank.",
             "rating": 1,
             "platform": "Android"
           },
@@ -52,15 +52,15 @@
             "trend": "steady"
           },
           {
-            "label": "buffer",
-            "trend": "steady"
-          },
-          {
             "label": "login",
             "trend": "steady"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -72,7 +72,7 @@
         "rating": 4.48981
       },
       "android": {
-        "rating": 4.5578947
+        "rating": 4.560185
       },
       "sentiment": {
         "score": 0.528,
@@ -130,10 +130,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26189
+        "rating": 2.26359
       },
       "android": {
-        "rating": 2.6115704
+        "rating": 2.6504066
       },
       "sentiment": {
         "score": 0.515,
@@ -195,20 +195,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44543
+        "rating": 4.44541
       },
       "android": {
-        "rating": 3.733073
+        "rating": 3.734987
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.501,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -218,13 +213,18 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -239,23 +239,19 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -267,7 +263,7 @@
         "rating": 2.79336
       },
       "android": {
-        "rating": 3.5515175
+        "rating": 3.5486584
       },
       "sentiment": {
         "score": 0.509,
@@ -333,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75452
+        "rating": 4.75455
       },
       "android": {
         "rating": 4.2176166
@@ -394,20 +390,15 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42332
+        "rating": 4.42171
       },
       "android": {
-        "rating": 4.622054
+        "rating": 4.622893
       },
       "sentiment": {
-        "score": 0.592,
+        "score": 0.646,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Ok na talaga sana itong Cignal Play ehh. Andito na sana lahat. Pasikat na at lahat na sana onboard gamitin ang Cignal Play. Kaya lang naging mukhang pera mga nagpatakbo. Linre na manood biglang may bayad na sa dami ng gustong nanonood. Sayang tlga!!!\nPuro pera lagi iniisip!!",
-            "rating": 4,
-            "platform": "iOS"
-          },
           {
             "text": "awesome! 👍 I like this app",
             "rating": 5,
@@ -417,23 +408,28 @@
             "text": "great app!!!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "Great App!!! Shows are very entertaining and informative.",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "This is very annoying considering I purchased premium so I can watch any channels I’d like. \n\nI always encounter this issue and I really never watched anything and it is very disappointing and waste of money. \n\n🤮🤮🙏🏻",
+            "text": "Misleading exclusivity. If a channel is not available to be streamed, don't add it at the selection or place a proper ideal label or tagging especially since no refund policy in place. App is buggy, delays and bad UI. Awful experience. Alerts are lacking description. Just generic messages that doesn't give proper details. Cancellation doesn't appear in-app apparently. Needs to login on web first.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -442,15 +438,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
