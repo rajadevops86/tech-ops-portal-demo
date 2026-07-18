@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-17T04:54:42.362428+00:00",
+  "generated_utc": "2026-07-18T04:39:25.385686+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52853
+        "rating": 4.52851
       },
       "android": {
-        "rating": 4.4258614
+        "rating": 4.425555
       },
       "sentiment": {
-        "score": 0.645,
+        "score": 0.618,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,8 +19,8 @@
             "platform": "Android"
           },
           {
-            "text": "best one",
-            "rating": 5,
+            "text": "good",
+            "rating": 4,
             "platform": "Android"
           },
           {
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "very poor. They don't support in unsubscribing. Amount will auto debit but Aha customer care is irresponsible and they will ask us to contact the bank.",
+            "text": "Very irritating app that I never use.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Very irritating app that I never use.",
+            "text": "worst app..i was changed the phone .when i try to login..it was not even opening..from past 1 mnt i was trying...",
             "rating": 1,
             "platform": "Android"
           },
@@ -48,11 +48,11 @@
         ],
         "drivers": [
           {
-            "label": "slow",
+            "label": "login",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "slow",
             "trend": "steady"
           },
           {
@@ -60,7 +60,7 @@
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -72,7 +72,7 @@
         "rating": 4.48981
       },
       "android": {
-        "rating": 4.560185
+        "rating": 4.5617385
       },
       "sentiment": {
         "score": 0.528,
@@ -130,10 +130,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26359
+        "rating": 2.26183
       },
       "android": {
-        "rating": 2.6504066
+        "rating": 2.6506023
       },
       "sentiment": {
         "score": 0.515,
@@ -195,10 +195,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44541
+        "rating": 4.44548
       },
       "android": {
-        "rating": 3.734987
+        "rating": 3.7333333
       },
       "sentiment": {
         "score": 0.501,
@@ -260,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79336
+        "rating": 2.79288
       },
       "android": {
-        "rating": 3.5486584
+        "rating": 3.5479343
       },
       "sentiment": {
         "score": 0.509,
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75455
+        "rating": 4.7545
       },
       "android": {
-        "rating": 4.2176166
+        "rating": 4.2020726
       },
       "sentiment": {
         "score": 0.614,
@@ -390,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42171
+        "rating": 4.4212
       },
       "android": {
-        "rating": 4.622893
+        "rating": 4.6238327
       },
       "sentiment": {
         "score": 0.646,
