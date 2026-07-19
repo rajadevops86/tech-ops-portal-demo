@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-18T04:39:25.385686+00:00",
+  "generated_utc": "2026-07-19T05:12:10.811633+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52851
       },
       "android": {
-        "rating": 4.425555
+        "rating": 4.425549
       },
       "sentiment": {
-        "score": 0.618,
+        "score": 0.6,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -20,12 +20,12 @@
           },
           {
             "text": "good",
-            "rating": 4,
+            "rating": 5,
             "platform": "Android"
           },
           {
             "text": "good",
-            "rating": 5,
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -72,7 +72,7 @@
         "rating": 4.48981
       },
       "android": {
-        "rating": 4.5617385
+        "rating": 4.5632787
       },
       "sentiment": {
         "score": 0.528,
@@ -130,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26183
+        "rating": 2.26565
       },
       "android": {
-        "rating": 2.6506023
+        "rating": 2.6587303
       },
       "sentiment": {
-        "score": 0.515,
+        "score": 0.52,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -195,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44548
+        "rating": 4.44555
       },
       "android": {
         "rating": 3.7333333
@@ -260,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79288
+        "rating": 2.7924
       },
       "android": {
-        "rating": 3.5479343
+        "rating": 3.550422
       },
       "sentiment": {
         "score": 0.509,
@@ -329,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7545
+        "rating": 4.75439
       },
       "android": {
         "rating": 4.2020726
@@ -390,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.4212
+        "rating": 4.42167
       },
       "android": {
-        "rating": 4.6238327
+        "rating": 4.6237226
       },
       "sentiment": {
         "score": 0.646,
