@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-20T05:32:35.380039+00:00",
+  "generated_utc": "2026-07-21T04:59:51.866499+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52853
+        "rating": 4.52852
       },
       "android": {
-        "rating": 4.4256735
+        "rating": 4.42516
       },
       "sentiment": {
-        "score": 0.588,
+        "score": 0.576,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,13 +19,13 @@
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "good service",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 4,
+            "text": "good movies",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -41,22 +41,22 @@
             "platform": "Android"
           },
           {
-            "text": "worst app ee app subscription Enduku teesukunnanu ani roju badha paduthu unta okka manchi content ledhu teesai ra babu ee app ni🙏🙏",
+            "text": "worst app",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
             "label": "login",
             "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
@@ -69,10 +69,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48876
+        "rating": 4.48909
       },
       "android": {
-        "rating": 4.5649476
+        "rating": 4.56559
       },
       "sentiment": {
         "score": 0.528,
@@ -130,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26565
+        "rating": 2.26389
       },
       "android": {
-        "rating": 2.652174
+        "rating": 2.702222
       },
       "sentiment": {
-        "score": 0.523,
+        "score": 0.531,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,12 +157,12 @@
         ],
         "topNegative": [
           {
-            "text": "useless app 😭😭😔😔😭😭😭😭",
-            "rating": 1,
+            "text": "The \"free\" preview sucks! So stupid!",
+            "rating": 4,
             "platform": "Android"
           },
           {
-            "text": "after updating still black screen. cant work on samsung ultra 25. worst app. paid world cup and cant watch on the app. useless.",
+            "text": "bad i cant even open it in my phone. samsung galaxy s24 ultra",
             "rating": 1,
             "platform": "Android"
           },
@@ -195,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44557
+        "rating": 4.44545
       },
       "android": {
         "rating": 3.7333333
@@ -260,7 +260,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7924
+        "rating": 2.79299
       },
       "android": {
         "rating": 3.549698
@@ -329,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7542
+        "rating": 4.75394
       },
       "android": {
         "rating": 4.2020726
@@ -390,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42135
+        "rating": 4.42189
       },
       "android": {
-        "rating": 4.6230016
+        "rating": 4.6221137
       },
       "sentiment": {
         "score": 0.646,
@@ -443,10 +443,6 @@
           },
           {
             "label": "buffer",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           }
         ]
