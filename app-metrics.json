@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-21T04:59:51.866499+00:00",
+  "generated_utc": "2026-07-22T04:59:23.006436+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52852
+        "rating": 4.52853
       },
       "android": {
-        "rating": 4.42516
+        "rating": 4.425284
       },
       "sentiment": {
-        "score": 0.576,
+        "score": 0.553,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,24 +19,24 @@
             "platform": "Android"
           },
           {
-            "text": "good service",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good movies",
+            "text": "good service",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Very irritating app that I never use.",
+            "text": "worst app..i was changed the phone .when i try to login..it was not even opening..from past 1 mnt i was trying...",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app..i was changed the phone .when i try to login..it was not even opening..from past 1 mnt i was trying...",
+            "text": "im very disappointed ,pls let me know how to unsubscribe, I didn't received any ott to unsubscribe, app is worst",
             "rating": 1,
             "platform": "Android"
           },
@@ -48,11 +48,11 @@
         ],
         "drivers": [
           {
-            "label": "crash",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
@@ -72,12 +72,17 @@
         "rating": 4.48909
       },
       "android": {
-        "rating": 4.56559
+        "rating": 4.566019
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.514,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -87,23 +92,18 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "very nice",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "fake apps karmahin sana kayo",
+            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "Worst app",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "i already deactivated this app but still continue diducting ng funds in my ewallet! so disgusting! you deserved 1 star!",
@@ -117,11 +117,19 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -130,13 +138,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26389
+        "rating": 2.26491
       },
       "android": {
-        "rating": 2.702222
+        "rating": 2.6798246
       },
       "sentiment": {
-        "score": 0.531,
+        "score": 0.533,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -184,10 +192,6 @@
           {
             "label": "login",
             "trend": "steady"
-          },
-          {
-            "label": "slow",
-            "trend": "steady"
           }
         ]
       }
@@ -195,10 +199,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44545
+        "rating": 4.44548
       },
       "android": {
-        "rating": 3.7333333
+        "rating": 3.7352555
       },
       "sentiment": {
         "score": 0.501,
@@ -263,7 +267,7 @@
         "rating": 2.79299
       },
       "android": {
-        "rating": 3.549698
+        "rating": 3.55178
       },
       "sentiment": {
         "score": 0.509,
@@ -329,10 +333,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75394
+        "rating": 4.75384
       },
       "android": {
-        "rating": 4.2020726
+        "rating": 4.2061853
       },
       "sentiment": {
         "score": 0.614,
@@ -390,10 +394,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42189
+        "rating": 4.42192
       },
       "android": {
-        "rating": 4.6221137
+        "rating": 4.6193433
       },
       "sentiment": {
         "score": 0.646,
