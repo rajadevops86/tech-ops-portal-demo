@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-22T04:59:23.006436+00:00",
+  "generated_utc": "2026-07-23T05:16:32.677138+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52853
+        "rating": 4.52852
       },
       "android": {
-        "rating": 4.425284
+        "rating": 4.42537
       },
       "sentiment": {
-        "score": 0.553,
+        "score": 0.541,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -69,20 +69,15 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48909
+        "rating": 4.48918
       },
       "android": {
-        "rating": 4.566019
+        "rating": 4.5671153
       },
       "sentiment": {
-        "score": 0.514,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Most of the time error! Refund!!!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -92,18 +87,23 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "very nice",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "fake apps karmahin sana kayo",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Worst app",
+            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "i already deactivated this app but still continue diducting ng funds in my ewallet! so disgusting! you deserved 1 star!",
@@ -117,19 +117,11 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "update",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -141,10 +133,10 @@
         "rating": 2.26491
       },
       "android": {
-        "rating": 2.6798246
+        "rating": 2.6869564
       },
       "sentiment": {
-        "score": 0.533,
+        "score": 0.532,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -199,10 +191,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44548
+        "rating": 4.4455
       },
       "android": {
-        "rating": 3.7352555
+        "rating": 3.736911
       },
       "sentiment": {
         "score": 0.501,
@@ -264,10 +256,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79299
+        "rating": 2.79348
       },
       "android": {
-        "rating": 3.55178
+        "rating": 3.5488844
       },
       "sentiment": {
         "score": 0.509,
@@ -333,10 +325,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75384
+        "rating": 4.75387
       },
       "android": {
-        "rating": 4.2061853
+        "rating": 4.1897435
       },
       "sentiment": {
         "score": 0.614,
@@ -394,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42192
+        "rating": 4.42171
       },
       "android": {
-        "rating": 4.6193433
+        "rating": 4.6194496
       },
       "sentiment": {
         "score": 0.646,
