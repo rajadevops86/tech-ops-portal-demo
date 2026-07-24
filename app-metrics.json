@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-07-23T05:16:32.677138+00:00",
+  "generated_utc": "2026-07-24T05:11:54.061009+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52852
+        "rating": 4.52851
       },
       "android": {
-        "rating": 4.42537
+        "rating": 4.4255404
       },
       "sentiment": {
-        "score": 0.541,
+        "score": 0.558,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "excellent",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "superb",
             "rating": 5,
@@ -20,11 +25,6 @@
           },
           {
             "text": "good",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "good service",
             "rating": 5,
             "platform": "Android"
           }
@@ -56,6 +56,10 @@
             "trend": "steady"
           },
           {
+            "label": "buffer",
+            "trend": "steady"
+          },
+          {
             "label": "slow",
             "trend": "steady"
           },
@@ -72,7 +76,7 @@
         "rating": 4.48918
       },
       "android": {
-        "rating": 4.5671153
+        "rating": 4.5679216
       },
       "sentiment": {
         "score": 0.528,
@@ -130,10 +134,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26491
+        "rating": 2.26316
       },
       "android": {
-        "rating": 2.6869564
+        "rating": 2.6724892
       },
       "sentiment": {
         "score": 0.532,
@@ -191,10 +195,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4455
+        "rating": 4.44548
       },
       "android": {
-        "rating": 3.736911
+        "rating": 3.738845
       },
       "sentiment": {
         "score": 0.501,
@@ -256,13 +260,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79348
+        "rating": 2.79288
       },
       "android": {
         "rating": 3.5488844
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -283,37 +287,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -325,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75387
+        "rating": 4.75391
       },
       "android": {
-        "rating": 4.1897435
+        "rating": 4.205128
       },
       "sentiment": {
         "score": 0.614,
@@ -386,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42171
+        "rating": 4.42102
       },
       "android": {
-        "rating": 4.6194496
+        "rating": 4.618246
       },
       "sentiment": {
         "score": 0.646,
