@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-24T05:11:54.061009+00:00",
+  "generated_utc": "2026-07-25T04:57:25.620918+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52851
+        "rating": 4.52852
       },
       "android": {
-        "rating": 4.4255404
+        "rating": 4.4255223
       },
       "sentiment": {
-        "score": 0.558,
+        "score": 0.564,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,7 +19,7 @@
             "platform": "Android"
           },
           {
-            "text": "superb",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48918
+        "rating": 4.48926
       },
       "android": {
-        "rating": 4.5679216
+        "rating": 4.5687437
       },
       "sentiment": {
         "score": 0.528,
@@ -137,10 +137,10 @@
         "rating": 2.26316
       },
       "android": {
-        "rating": 2.6724892
+        "rating": 2.6826086
       },
       "sentiment": {
-        "score": 0.532,
+        "score": 0.535,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -183,7 +183,7 @@
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "login",
@@ -195,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44548
+        "rating": 4.44529
       },
       "android": {
         "rating": 3.738845
@@ -263,10 +263,10 @@
         "rating": 2.79288
       },
       "android": {
-        "rating": 3.5488844
+        "rating": 3.5482955
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -287,37 +287,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75391
+        "rating": 4.75392
       },
       "android": {
-        "rating": 4.205128
+        "rating": 4.1897435
       },
       "sentiment": {
         "score": 0.614,
@@ -390,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42102
+        "rating": 4.42105
       },
       "android": {
-        "rating": 4.618246
+        "rating": 4.617322
       },
       "sentiment": {
         "score": 0.646,
