@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-25T04:57:25.620918+00:00",
+  "generated_utc": "2026-07-26T05:22:27.736309+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52852
+        "rating": 4.52853
       },
       "android": {
-        "rating": 4.4255223
+        "rating": 4.4254494
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -49,7 +49,7 @@
         "drivers": [
           {
             "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
@@ -76,7 +76,7 @@
         "rating": 4.48926
       },
       "android": {
-        "rating": 4.5687437
+        "rating": 4.567612
       },
       "sentiment": {
         "score": 0.528,
@@ -137,10 +137,10 @@
         "rating": 2.26316
       },
       "android": {
-        "rating": 2.6826086
+        "rating": 2.6753247
       },
       "sentiment": {
-        "score": 0.535,
+        "score": 0.542,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -161,13 +161,13 @@
         ],
         "topNegative": [
           {
-            "text": "The \"free\" preview sucks! So stupid!",
-            "rating": 4,
+            "text": "i cant open the app and stuck at the loading page when i open the app. pls fix it as i have subscribed your WC plan and cant watch the game!!!",
+            "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "bad i cant even open it in my phone. samsung galaxy s24 ultra",
-            "rating": 1,
+            "text": "The \"free\" preview sucks! So stupid!",
+            "rating": 4,
             "platform": "Android"
           },
           {
@@ -183,6 +183,10 @@
           },
           {
             "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           },
           {
@@ -260,7 +264,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79288
+        "rating": 2.79228
       },
       "android": {
         "rating": 3.5482955
@@ -329,7 +333,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75392
+        "rating": 4.75383
       },
       "android": {
         "rating": 4.1897435
@@ -390,10 +394,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42105
+        "rating": 4.42181
       },
       "android": {
-        "rating": 4.617322
+        "rating": 4.6200624
       },
       "sentiment": {
         "score": 0.646,
