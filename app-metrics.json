@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-27T05:40:38.924285+00:00",
+  "generated_utc": "2026-07-28T04:55:02.944107+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,33 +7,33 @@
         "rating": 4.52851
       },
       "android": {
-        "rating": 4.4250593
+        "rating": 4.425087
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.584,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Awesome singing show",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "excellent",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Very good",
+            "text": "good 😊",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
+          },
+          {
+            "text": "good pogrms",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Literally worst OTT platform ever seen ,Downloaded videos are asking for network connection.Never ever i repeat my subscription,repeated errors occurred",
+            "text": "im very disappointed ,pls let me know how to unsubscribe, I didn't received any ott to unsubscribe, app is worst",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "❤️ da looo App work avvatlaa chee worst app I have ever seen",
@@ -48,23 +48,19 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
+            "label": "buffer",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -76,17 +72,12 @@
         "rating": 4.48926
       },
       "android": {
-        "rating": 4.568466
+        "rating": 4.569779
       },
       "sentiment": {
-        "score": 0.514,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Most of the time error! Refund!!!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -96,18 +87,23 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "very nice",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "fake apps karmahin sana kayo",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Worst app",
+            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "i already deactivated this app but still continue diducting ng funds in my ewallet! so disgusting! you deserved 1 star!",
@@ -121,19 +117,11 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "update",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -145,10 +133,10 @@
         "rating": 2.26279
       },
       "android": {
-        "rating": 2.6738198
+        "rating": 2.6638298
       },
       "sentiment": {
-        "score": 0.532,
+        "score": 0.527,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -162,8 +150,8 @@
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 5,
+            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
+            "rating": 1,
             "platform": "Android"
           }
         ],
@@ -207,10 +195,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44529
+        "rating": 4.44527
       },
       "android": {
-        "rating": 3.738845
+        "rating": 3.736911
       },
       "sentiment": {
         "score": 0.501,
@@ -405,7 +393,7 @@
         "rating": 4.42128
       },
       "android": {
-        "rating": 4.6205673
+        "rating": 4.621286
       },
       "sentiment": {
         "score": 0.646,
