@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-28T04:55:02.944107+00:00",
+  "generated_utc": "2026-07-29T04:59:50.276198+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52851
+        "rating": 4.52848
       },
       "android": {
-        "rating": 4.425087
+        "rating": 4.42518
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.57,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -69,10 +69,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48926
+        "rating": 4.48894
       },
       "android": {
-        "rating": 4.569779
+        "rating": 4.5700626
       },
       "sentiment": {
         "score": 0.528,
@@ -130,10 +130,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26279
+        "rating": 2.25931
       },
       "android": {
-        "rating": 2.6638298
+        "rating": 2.6737287
       },
       "sentiment": {
         "score": 0.527,
@@ -195,10 +195,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44527
+        "rating": 4.44529
       },
       "android": {
-        "rating": 3.736911
+        "rating": 3.73219
       },
       "sentiment": {
         "score": 0.501,
@@ -263,7 +263,7 @@
         "rating": 2.79228
       },
       "android": {
-        "rating": 3.5482955
+        "rating": 3.5523183
       },
       "sentiment": {
         "score": 0.509,
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75383
+        "rating": 4.75379
       },
       "android": {
-        "rating": 4.1897435
+        "rating": 4.2010307
       },
       "sentiment": {
         "score": 0.614,
@@ -390,15 +390,20 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42128
+        "rating": 4.42166
       },
       "android": {
-        "rating": 4.621286
+        "rating": 4.622173
       },
       "sentiment": {
-        "score": 0.646,
+        "score": 0.592,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Ok na talaga sana itong Cignal Play ehh. Andito na sana lahat. Pasikat na at lahat na sana onboard gamitin ang Cignal Play. Kaya lang naging mukhang pera mga nagpatakbo. Linre na manood biglang may bayad na sa dami ng gustong nanonood. Sayang tlga!!!\nPuro pera lagi iniisip!!",
+            "rating": 4,
+            "platform": "iOS"
+          },
           {
             "text": "awesome! 👍 I like this app",
             "rating": 5,
@@ -408,28 +413,23 @@
             "text": "great app!!!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Great App!!! Shows are very entertaining and informative.",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Misleading exclusivity. If a channel is not available to be streamed, don't add it at the selection or place a proper ideal label or tagging especially since no refund policy in place. App is buggy, delays and bad UI. Awful experience. Alerts are lacking description. Just generic messages that doesn't give proper details. Cancellation doesn't appear in-app apparently. Needs to login on web first.",
+            "text": "This is very annoying considering I purchased premium so I can watch any channels I’d like. \n\nI always encounter this issue and I really never watched anything and it is very disappointing and waste of money. \n\n🤮🤮🙏🏻",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -438,11 +438,15 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           }
         ]
