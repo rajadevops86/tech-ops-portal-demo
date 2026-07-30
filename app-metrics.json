@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-29T04:59:50.276198+00:00",
+  "generated_utc": "2026-07-30T04:48:29.849706+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52848
       },
       "android": {
-        "rating": 4.42518
+        "rating": 4.425191
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.622,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,17 +19,22 @@
             "platform": "Android"
           },
           {
-            "text": "good 😊",
-            "rating": 5,
+            "text": "good nice awesome",
+            "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "good pogrms",
-            "rating": 5,
+            "text": "good",
+            "rating": 4,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "its too buffering, app issues and some times it doesn't respond. bad experience. need to enhance its performance.",
+            "rating": 3,
+            "platform": "Android"
+          },
           {
             "text": "im very disappointed ,pls let me know how to unsubscribe, I didn't received any ott to unsubscribe, app is worst",
             "rating": 1,
@@ -39,17 +44,12 @@
             "text": "❤️ da looo App work avvatlaa chee worst app I have ever seen",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "worst app",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -58,10 +58,6 @@
           {
             "label": "login",
             "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
           }
         ]
       }
@@ -69,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48894
+        "rating": 4.48942
       },
       "android": {
-        "rating": 4.5700626
+        "rating": 4.570629
       },
       "sentiment": {
         "score": 0.528,
@@ -133,17 +129,12 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.6737287
+        "rating": 2.6764705
       },
       "sentiment": {
-        "score": 0.527,
+        "score": 0.517,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "sangat power best tengok world cup",
-            "rating": 5,
-            "platform": "Android"
-          },
           {
             "text": "good",
             "rating": 4,
@@ -152,6 +143,11 @@
           {
             "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
             "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "ok",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -195,7 +191,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44529
+        "rating": 4.44522
       },
       "android": {
         "rating": 3.73219
@@ -260,7 +256,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79228
+        "rating": 2.79288
       },
       "android": {
         "rating": 3.5523183
@@ -329,7 +325,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75379
+        "rating": 4.75369
       },
       "android": {
         "rating": 4.2010307
@@ -390,20 +386,15 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42166
+        "rating": 4.4222
       },
       "android": {
-        "rating": 4.622173
+        "rating": 4.621908
       },
       "sentiment": {
-        "score": 0.592,
+        "score": 0.646,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Ok na talaga sana itong Cignal Play ehh. Andito na sana lahat. Pasikat na at lahat na sana onboard gamitin ang Cignal Play. Kaya lang naging mukhang pera mga nagpatakbo. Linre na manood biglang may bayad na sa dami ng gustong nanonood. Sayang tlga!!!\nPuro pera lagi iniisip!!",
-            "rating": 4,
-            "platform": "iOS"
-          },
           {
             "text": "awesome! 👍 I like this app",
             "rating": 5,
@@ -413,23 +404,28 @@
             "text": "great app!!!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "Great App!!! Shows are very entertaining and informative.",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "This is very annoying considering I purchased premium so I can watch any channels I’d like. \n\nI always encounter this issue and I really never watched anything and it is very disappointing and waste of money. \n\n🤮🤮🙏🏻",
+            "text": "Misleading exclusivity. If a channel is not available to be streamed, don't add it at the selection or place a proper ideal label or tagging especially since no refund policy in place. App is buggy, delays and bad UI. Awful experience. Alerts are lacking description. Just generic messages that doesn't give proper details. Cancellation doesn't appear in-app apparently. Needs to login on web first.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "This is a terrible app that does not work! All it say is error.",
+            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -438,15 +434,11 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
