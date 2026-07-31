@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-30T04:48:29.849706+00:00",
+  "generated_utc": "2026-07-31T05:26:31.347802+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52848
+        "rating": 4.52844
       },
       "android": {
-        "rating": 4.425191
+        "rating": 4.42556
       },
       "sentiment": {
-        "score": 0.622,
+        "score": 0.651,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -25,23 +25,23 @@
           },
           {
             "text": "good",
-            "rating": 4,
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "bad",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "its too buffering, app issues and some times it doesn't respond. bad experience. need to enhance its performance.",
             "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "im very disappointed ,pls let me know how to unsubscribe, I didn't received any ott to unsubscribe, app is worst",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "❤️ da looo App work avvatlaa chee worst app I have ever seen",
+            "text": "Worst Experience....Total Ads Ads Ads ....Chirrrrak dobbindi ads chuda leka .....i never recommend this ....",
             "rating": 1,
             "platform": "Android"
           }
@@ -52,11 +52,11 @@
             "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -65,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48942
+        "rating": 4.48951
       },
       "android": {
-        "rating": 4.570629
+        "rating": 4.5704412
       },
       "sentiment": {
         "score": 0.528,
@@ -129,7 +129,7 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.6764705
+        "rating": 2.7012448
       },
       "sentiment": {
         "score": 0.517,
@@ -256,7 +256,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79288
+        "rating": 2.7924
       },
       "android": {
         "rating": 3.5523183
@@ -325,7 +325,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75369
+        "rating": 4.75375
       },
       "android": {
         "rating": 4.2010307
@@ -386,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.4222
+        "rating": 4.42239
       },
       "android": {
-        "rating": 4.621908
+        "rating": 4.62234
       },
       "sentiment": {
         "score": 0.646,
