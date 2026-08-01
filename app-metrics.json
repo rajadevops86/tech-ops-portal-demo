@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-07-31T05:26:31.347802+00:00",
+  "generated_utc": "2026-08-01T05:18:59.757133+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52844
+        "rating": 4.52847
       },
       "android": {
-        "rating": 4.42556
+        "rating": 4.4255123
       },
       "sentiment": {
-        "score": 0.651,
+        "score": 0.622,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "excellent",
-            "rating": 5,
+            "text": "good nice awesome",
+            "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "good nice awesome",
-            "rating": 3,
+            "text": "good",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -48,11 +48,11 @@
         ],
         "drivers": [
           {
-            "label": "buffer",
-            "trend": "worsening"
+            "label": "ads",
+            "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "buffer",
             "trend": "steady"
           },
           {
@@ -68,7 +68,7 @@
         "rating": 4.48951
       },
       "android": {
-        "rating": 4.5704412
+        "rating": 4.571522
       },
       "sentiment": {
         "score": 0.528,
@@ -129,7 +129,7 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.7012448
+        "rating": 2.7083333
       },
       "sentiment": {
         "score": 0.517,
@@ -191,10 +191,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44522
+        "rating": 4.44524
       },
       "android": {
-        "rating": 3.73219
+        "rating": 3.7261906
       },
       "sentiment": {
         "score": 0.501,
@@ -259,7 +259,7 @@
         "rating": 2.7924
       },
       "android": {
-        "rating": 3.5523183
+        "rating": 3.5526643
       },
       "sentiment": {
         "score": 0.509,
@@ -386,10 +386,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42239
+        "rating": 4.42293
       },
       "android": {
-        "rating": 4.62234
+        "rating": 4.623227
       },
       "sentiment": {
         "score": 0.646,
