@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-01T05:18:59.757133+00:00",
+  "generated_utc": "2026-08-02T05:17:55.464304+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52847
+        "rating": 4.52848
       },
       "android": {
-        "rating": 4.4255123
+        "rating": 4.4255166
       },
       "sentiment": {
-        "score": 0.622,
+        "score": 0.6,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -49,10 +49,14 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "buffer",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -65,13 +69,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48951
+        "rating": 4.48862
       },
       "android": {
-        "rating": 4.571522
+        "rating": 4.569641
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.526,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -85,8 +89,8 @@
             "platform": "Android"
           },
           {
-            "text": "very nice",
-            "rating": 5,
+            "text": "it's great as the app shows good",
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -129,17 +133,12 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.7083333
+        "rating": 2.7137096
       },
       "sentiment": {
-        "score": 0.517,
+        "score": 0.506,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "good",
-            "rating": 4,
-            "platform": "Android"
-          },
           {
             "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
             "rating": 1,
@@ -149,12 +148,17 @@
             "text": "ok",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "to many error",
+            "rating": 1,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "The \"free\" preview sucks! So stupid!",
-            "rating": 4,
+            "text": "installed this apps now it wont launch except giving the black screen, will terminate this service soon!!!!",
+            "rating": 1,
             "platform": "Android"
           },
           {
@@ -325,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75375
+        "rating": 4.75379
       },
       "android": {
         "rating": 4.2010307
@@ -386,10 +390,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.42293
+        "rating": 4.4218
       },
       "android": {
-        "rating": 4.623227
+        "rating": 4.6261063
       },
       "sentiment": {
         "score": 0.646,
