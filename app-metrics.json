@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-06T04:56:15.486072+00:00",
+  "generated_utc": "2026-08-07T04:18:50.551987+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,33 +7,33 @@
         "rating": 4.52846
       },
       "android": {
-        "rating": 4.425334
+        "rating": 4.4254313
       },
       "sentiment": {
-        "score": 0.598,
+        "score": 0.516,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "best",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
             "text": "very good",
             "rating": 4,
-            "platform": "Android"
-          },
-          {
-            "text": "happy service",
-            "rating": 4,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "cannot get otp very terrible, not easy to download this app, wasting time to wake the otp",
+            "text": "Worst and worst application i have ever seen",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst streaming",
@@ -48,15 +48,23 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "ads",
+            "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
           },
           {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -68,12 +76,17 @@
         "rating": 4.48839
       },
       "android": {
-        "rating": 4.571056
+        "rating": 4.571382
       },
       "sentiment": {
-        "score": 0.519,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -83,23 +96,18 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "fake apps karmahin sana kayo",
+            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "Worst app",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "i already deactivated this app but still continue diducting ng funds in my ewallet! so disgusting! you deserved 1 star!",
@@ -113,11 +121,19 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -129,38 +145,38 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.7149122
+        "rating": 2.7272727
       },
       "sentiment": {
-        "score": 0.506,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "ok",
+            "text": "Best App for FIFA",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "to many error",
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "installed this apps now it wont launch except giving the black screen, will terminate this service soon!!!!",
+            "text": "Very bad",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Can't watch the game! apahal ni weh! I'm connected to my wifi and yet it says no network!",
+            "text": "The worst always the worst…forever",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst tv apps",
@@ -170,20 +186,20 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
+            "label": "update",
+            "trend": "worsening"
           }
         ]
       }
@@ -194,12 +210,17 @@
         "rating": 4.44524
       },
       "android": {
-        "rating": 3.727873
+        "rating": 3.7211156
       },
       "sentiment": {
-        "score": 0.501,
+        "score": 0.498,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -209,18 +230,13 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -235,19 +251,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -256,10 +276,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79348
+        "rating": 2.79299
       },
       "android": {
-        "rating": 3.5594347
+        "rating": 3.559301
       },
       "sentiment": {
         "score": 0.509,
@@ -325,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75372
+        "rating": 4.75364
       },
       "android": {
         "rating": 4.1907215
@@ -390,15 +410,20 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.43238
+        "rating": 4.43437
       },
       "android": {
-        "rating": 4.628584
+        "rating": 4.6323466
       },
       "sentiment": {
-        "score": 0.641,
+        "score": 0.59,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Ok na talaga sana itong Cignal Play ehh. Andito na sana lahat. Pasikat na at lahat na sana onboard gamitin ang Cignal Play. Kaya lang naging mukhang pera mga nagpatakbo. Linre na manood biglang may bayad na sa dami ng gustong nanonood. Sayang tlga!!!\nPuro pera lagi iniisip!!",
+            "rating": 4,
+            "platform": "iOS"
+          },
           {
             "text": "awesome! 👍 I like this app",
             "rating": 5,
@@ -408,28 +433,23 @@
             "text": "great app!!!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Great App!!! Shows are very entertaining and informative.",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Misleading exclusivity. If a channel is not available to be streamed, don't add it at the selection or place a proper ideal label or tagging especially since no refund policy in place. App is buggy, delays and bad UI. Awful experience. Alerts are lacking description. Just generic messages that doesn't give proper details. Cancellation doesn't appear in-app apparently. Needs to login on web first.",
+            "text": "This is very annoying considering I purchased premium so I can watch any channels I’d like. \n\nI always encounter this issue and I really never watched anything and it is very disappointing and waste of money. \n\n🤮🤮🙏🏻",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -438,11 +458,15 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           }
         ]
