@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-07T04:18:50.551987+00:00",
+  "generated_utc": "2026-08-08T03:16:31.122660+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52846
+        "rating": 4.52844
       },
       "android": {
-        "rating": 4.4254313
+        "rating": 4.425162
       },
       "sentiment": {
-        "score": 0.516,
+        "score": 0.515,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,9 +31,9 @@
         ],
         "topNegative": [
           {
-            "text": "Worst and worst application i have ever seen",
+            "text": "worst customer care theyclose chat by them self",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst streaming",
@@ -48,11 +48,11 @@
         ],
         "drivers": [
           {
-            "label": "ads",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "worsening"
           },
           {
@@ -76,7 +76,7 @@
         "rating": 4.48839
       },
       "android": {
-        "rating": 4.571382
+        "rating": 4.57217
       },
       "sentiment": {
         "score": 0.509,
@@ -145,7 +145,7 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.7272727
+        "rating": 2.7198277
       },
       "sentiment": {
         "score": 0.499,
@@ -282,7 +282,7 @@
         "rating": 3.559301
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -303,37 +303,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -348,7 +348,7 @@
         "rating": 4.75364
       },
       "android": {
-        "rating": 4.1907215
+        "rating": 4.194872
       },
       "sentiment": {
         "score": 0.574,
@@ -413,7 +413,7 @@
         "rating": 4.43437
       },
       "android": {
-        "rating": 4.6323466
+        "rating": 4.6310678
       },
       "sentiment": {
         "score": 0.59,
