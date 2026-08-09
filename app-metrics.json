@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-08T03:16:31.122660+00:00",
+  "generated_utc": "2026-08-09T03:24:05.994655+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52844
       },
       "android": {
-        "rating": 4.425162
+        "rating": 4.4251328
       },
       "sentiment": {
-        "score": 0.515,
+        "score": 0.522,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -64,8 +64,8 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           }
         ]
       }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48839
+        "rating": 4.48847
       },
       "android": {
-        "rating": 4.57217
+        "rating": 4.5726914
       },
       "sentiment": {
         "score": 0.509,
@@ -210,7 +210,7 @@
         "rating": 4.44524
       },
       "android": {
-        "rating": 3.7211156
+        "rating": 3.7228117
       },
       "sentiment": {
         "score": 0.498,
@@ -279,7 +279,7 @@
         "rating": 2.79299
       },
       "android": {
-        "rating": 3.559301
+        "rating": 3.557965
       },
       "sentiment": {
         "score": 0.484,
@@ -345,10 +345,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75364
+        "rating": 4.75369
       },
       "android": {
-        "rating": 4.194872
+        "rating": 4.1907215
       },
       "sentiment": {
         "score": 0.574,
@@ -410,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.43437
+        "rating": 4.43742
       },
       "android": {
-        "rating": 4.6310678
+        "rating": 4.630722
       },
       "sentiment": {
         "score": 0.59,
