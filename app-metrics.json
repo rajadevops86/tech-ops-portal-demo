@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-09T03:24:05.994655+00:00",
+  "generated_utc": "2026-08-10T03:43:14.001644+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52844
+        "rating": 4.52832
       },
       "android": {
-        "rating": 4.4251328
+        "rating": 4.425346
       },
       "sentiment": {
-        "score": 0.522,
+        "score": 0.54,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "worst customer care theyclose chat by them self",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst streaming",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app ever i seen",
             "rating": 1,
             "platform": "Android"
           }
@@ -60,12 +60,12 @@
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
+            "label": "stream",
+            "trend": "steady"
           }
         ]
       }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48847
+        "rating": 4.48895
       },
       "android": {
-        "rating": 4.5726914
+        "rating": 4.5750165
       },
       "sentiment": {
         "score": 0.509,
@@ -145,10 +145,10 @@
         "rating": 2.25931
       },
       "android": {
-        "rating": 2.7198277
+        "rating": 2.7222223
       },
       "sentiment": {
-        "score": 0.499,
+        "score": 0.498,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -207,7 +207,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44524
+        "rating": 4.44515
       },
       "android": {
         "rating": 3.7228117
@@ -279,7 +279,7 @@
         "rating": 2.79299
       },
       "android": {
-        "rating": 3.557965
+        "rating": 3.557877
       },
       "sentiment": {
         "score": 0.484,
@@ -345,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75369
+        "rating": 4.75394
       },
       "android": {
         "rating": 4.1907215
@@ -410,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.43742
+        "rating": 4.43801
       },
       "android": {
-        "rating": 4.630722
+        "rating": 4.6316023
       },
       "sentiment": {
         "score": 0.59,
