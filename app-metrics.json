@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-10T03:43:14.001644+00:00",
+  "generated_utc": "2026-08-11T03:26:03.384310+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52832
+        "rating": 4.52826
       },
       "android": {
-        "rating": 4.425346
+        "rating": 4.4255285
       },
       "sentiment": {
-        "score": 0.54,
+        "score": 0.531,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,8 +24,8 @@
             "platform": "iOS"
           },
           {
-            "text": "very good",
-            "rating": 4,
+            "text": "great",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -52,15 +52,15 @@
             "trend": "worsening"
           },
           {
+            "label": "buffer",
+            "trend": "worsening"
+          },
+          {
             "label": "ads",
             "trend": "worsening"
           },
           {
             "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
             "trend": "worsening"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48895
+        "rating": 4.48904
       },
       "android": {
-        "rating": 4.5750165
+        "rating": 4.5789127
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.512,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25931
+        "rating": 2.26105
       },
       "android": {
-        "rating": 2.7222223
+        "rating": 2.731915
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.497,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -207,7 +207,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44515
+        "rating": 4.44519
       },
       "android": {
         "rating": 3.7228117
@@ -410,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.43801
+        "rating": 4.43851
       },
       "android": {
-        "rating": 4.6316023
+        "rating": 4.6274767
       },
       "sentiment": {
         "score": 0.59,
