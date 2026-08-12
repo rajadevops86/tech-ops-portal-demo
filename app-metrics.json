@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-11T03:26:03.384310+00:00",
+  "generated_utc": "2026-08-12T03:55:04.335375+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,17 +7,12 @@
         "rating": 4.52826
       },
       "android": {
-        "rating": 4.4255285
+        "rating": 4.425533
       },
       "sentiment": {
-        "score": 0.531,
+        "score": 0.533,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "best",
-            "rating": 5,
-            "platform": "Android"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -27,18 +22,23 @@
             "text": "great",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "very nice",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
+            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
             "rating": 1,
             "platform": "iOS"
           },
           {
-            "text": "Worst app, even after paying sometimes bug is there and video is getting stuck, even if i refresh and restart the video isn’t playing",
+            "text": "worst experience ever ott app,this is worst worst worst.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst customer care theyclose chat by them self",
@@ -52,15 +52,15 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
             "label": "ads",
             "trend": "worsening"
           },
           {
             "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
             "trend": "worsening"
           },
           {
@@ -76,7 +76,7 @@
         "rating": 4.48904
       },
       "android": {
-        "rating": 4.5789127
+        "rating": 4.579137
       },
       "sentiment": {
         "score": 0.512,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26105
+        "rating": 2.25931
       },
       "android": {
-        "rating": 2.731915
+        "rating": 2.7245762
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.491,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -210,7 +210,7 @@
         "rating": 4.44519
       },
       "android": {
-        "rating": 3.7228117
+        "rating": 3.7177098
       },
       "sentiment": {
         "score": 0.498,
@@ -279,7 +279,7 @@
         "rating": 2.79299
       },
       "android": {
-        "rating": 3.557877
+        "rating": 3.5534143
       },
       "sentiment": {
         "score": 0.484,
@@ -345,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75394
+        "rating": 4.75391
       },
       "android": {
         "rating": 4.1907215
@@ -410,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.43851
+        "rating": 4.4398
       },
       "android": {
-        "rating": 4.6274767
+        "rating": 4.6276407
       },
       "sentiment": {
         "score": 0.59,
