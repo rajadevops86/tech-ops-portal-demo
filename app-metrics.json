@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-13T04:00:04.509369+00:00",
+  "generated_utc": "2026-08-14T03:55:57.693630+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52827
+        "rating": 4.52824
       },
       "android": {
-        "rating": 4.4254823
+        "rating": 4.4256377
       },
       "sentiment": {
-        "score": 0.648,
+        "score": 0.562,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,12 +19,12 @@
             "platform": "Android"
           },
           {
-            "text": "great app",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "great",
+            "text": "great app",
             "rating": 5,
             "platform": "Android"
           }
@@ -36,12 +36,12 @@
             "platform": "Android"
           },
           {
-            "text": "worst experience ever ott app,this is worst worst worst.",
+            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "worst customer care theyclose chat by them self",
+            "text": "worst experience ever ott app,this is worst worst worst.",
             "rating": 1,
             "platform": "Android"
           }
@@ -52,7 +52,19 @@
             "trend": "worsening"
           },
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
             "label": "buffer",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -61,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48904
+        "rating": 4.48913
       },
       "android": {
-        "rating": 4.5795827
+        "rating": 4.5798097
       },
       "sentiment": {
-        "score": 0.525,
+        "score": 0.512,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
             "rating": 5,
@@ -79,23 +96,18 @@
             "text": "Very good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "fake apps karmahin sana kayo",
+            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "Worst app",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "i already deactivated this app but still continue diducting ng funds in my ewallet! so disgusting! you deserved 1 star!",
@@ -109,11 +121,19 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -122,41 +142,41 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25931
+        "rating": 2.26309
       },
       "android": {
-        "rating": 2.7148936
+        "rating": 2.7245762
       },
       "sentiment": {
-        "score": 0.496,
+        "score": 0.491,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "ok",
+            "text": "Best App for FIFA",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "to many error",
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
+            "text": "Very bad",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Can't watch the game! apahal ni weh! I'm connected to my wifi and yet it says no network!",
+            "text": "The worst always the worst…forever",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst tv apps",
@@ -166,20 +186,20 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
+            "label": "update",
+            "trend": "worsening"
           }
         ]
       }
@@ -187,15 +207,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44515
+        "rating": 4.44512
       },
       "android": {
-        "rating": 3.7177098
+        "rating": 3.7140958
       },
       "sentiment": {
-        "score": 0.501,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -205,18 +230,13 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -231,19 +251,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -255,10 +279,10 @@
         "rating": 2.7924
       },
       "android": {
-        "rating": 3.552345
+        "rating": 3.5527089
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -279,37 +303,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -321,13 +345,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75373
+        "rating": 4.75377
       },
       "android": {
         "rating": 4.1907215
       },
       "sentiment": {
-        "score": 0.614,
+        "score": 0.574,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -348,14 +372,14 @@
         ],
         "topNegative": [
           {
-            "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
+            "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "This app would be five stars if they would just give it closed captions.",
-            "rating": 1,
-            "platform": "Android"
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "rating": 2,
+            "platform": "iOS"
           },
           {
             "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
@@ -366,10 +390,14 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -382,15 +410,20 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.44001
+        "rating": 4.43964
       },
       "android": {
-        "rating": 4.628132
+        "rating": 4.6312776
       },
       "sentiment": {
-        "score": 0.638,
+        "score": 0.59,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Ok na talaga sana itong Cignal Play ehh. Andito na sana lahat. Pasikat na at lahat na sana onboard gamitin ang Cignal Play. Kaya lang naging mukhang pera mga nagpatakbo. Linre na manood biglang may bayad na sa dami ng gustong nanonood. Sayang tlga!!!\nPuro pera lagi iniisip!!",
+            "rating": 4,
+            "platform": "iOS"
+          },
           {
             "text": "awesome! 👍 I like this app",
             "rating": 5,
@@ -400,28 +433,23 @@
             "text": "great app!!!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Great App!!! Shows are very entertaining and informative.",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Misleading exclusivity. If a channel is not available to be streamed, don't add it at the selection or place a proper ideal label or tagging especially since no refund policy in place. App is buggy, delays and bad UI. Awful experience. Alerts are lacking description. Just generic messages that doesn't give proper details. Cancellation doesn't appear in-app apparently. Needs to login on web first.",
+            "text": "This is very annoying considering I purchased premium so I can watch any channels I’d like. \n\nI always encounter this issue and I really never watched anything and it is very disappointing and waste of money. \n\n🤮🤮🙏🏻",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "can't even open. i already install an uninstall. always loading. it's just a waste of time.",
+            "text": "This is a terrible app that does not work! All it say is error.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "I wish Cignal Play would also reflect all the channel line up that I happen to have on my Cignal TV channel line up subscription. The only reason I am using Cignal Play is because my Cignal TV satellite subscription is terrible now (because of interference) and was hoping that the Cignal Play app will be an alternative.",
-            "rating": 3,
-            "platform": "Android"
+            "text": "Worst app ever. Subscribe to premium but always have a error that i reached the streaming limit",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -430,11 +458,15 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           }
         ]
