@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-16T02:51:56.714381+00:00",
+  "generated_utc": "2026-08-17T02:52:00.156007+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.5282
       },
       "android": {
-        "rating": 4.4252553
+        "rating": 4.4251885
       },
       "sentiment": {
-        "score": 0.568,
+        "score": 0.552,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,14 +31,14 @@
         ],
         "topNegative": [
           {
-            "text": "bad 😞😔",
-            "rating": 2,
-            "platform": "Android"
-          },
-          {
             "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
             "platform": "iOS"
+          },
+          {
+            "text": "worst experience ever ott app,this is worst worst worst.app not working since subscription.",
+            "rating": 1,
+            "platform": "Android"
           },
           {
             "text": "forward and backward are worst, please remove exit app popup, which is not allowing to press yes or no",
@@ -61,7 +61,7 @@
           },
           {
             "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48945
+        "rating": 4.48922
       },
       "android": {
-        "rating": 4.5805926
+        "rating": 4.582471
       },
       "sentiment": {
         "score": 0.517,
@@ -142,41 +142,41 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26511
+        "rating": 2.25992
       },
       "android": {
-        "rating": 2.7245762
+        "rating": 2.7299578
       },
       "sentiment": {
-        "score": 0.496,
+        "score": 0.491,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "ok",
+            "text": "Best App for FIFA",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "to many error",
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
+            "text": "Very bad",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Can't watch the game! apahal ni weh! I'm connected to my wifi and yet it says no network!",
+            "text": "The worst always the worst…forever",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst tv apps",
@@ -186,20 +186,20 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
+            "label": "update",
+            "trend": "worsening"
           }
         ]
       }
@@ -207,10 +207,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44512
+        "rating": 4.44515
       },
       "android": {
-        "rating": 3.7163782
+        "rating": 3.7167554
       },
       "sentiment": {
         "score": 0.499,
@@ -345,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75391
+        "rating": 4.75399
       },
       "android": {
         "rating": 4.1907215
@@ -410,13 +410,13 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.44029
+        "rating": 4.44156
       },
       "android": {
-        "rating": 4.6304445
+        "rating": 4.627089
       },
       "sentiment": {
-        "score": 0.59,
+        "score": 0.587,
         "scoreDelta": 0,
         "topPositive": [
           {
