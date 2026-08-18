@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-17T02:52:00.156007+00:00",
+  "generated_utc": "2026-08-18T02:47:07.097465+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.5282
       },
       "android": {
-        "rating": 4.4251885
+        "rating": 4.424693
       },
       "sentiment": {
-        "score": 0.552,
+        "score": 0.542,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "iOS"
           },
           {
-            "text": "great app",
+            "text": "so great to see",
             "rating": 5,
             "platform": "Android"
           }
@@ -48,11 +48,11 @@
         ],
         "drivers": [
           {
-            "label": "login",
+            "label": "ads",
             "trend": "worsening"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "worsening"
           },
           {
@@ -76,7 +76,7 @@
         "rating": 4.48922
       },
       "android": {
-        "rating": 4.582471
+        "rating": 4.581613
       },
       "sentiment": {
         "score": 0.517,
@@ -145,7 +145,7 @@
         "rating": 2.25992
       },
       "android": {
-        "rating": 2.7299578
+        "rating": 2.7136564
       },
       "sentiment": {
         "score": 0.491,
@@ -210,7 +210,7 @@
         "rating": 4.44515
       },
       "android": {
-        "rating": 3.7167554
+        "rating": 3.7186666
       },
       "sentiment": {
         "score": 0.499,
@@ -279,7 +279,7 @@
         "rating": 2.7924
       },
       "android": {
-        "rating": 3.5527089
+        "rating": 3.5503583
       },
       "sentiment": {
         "score": 0.484,
@@ -410,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.44156
+        "rating": 4.44187
       },
       "android": {
-        "rating": 4.627089
+        "rating": 4.627245
       },
       "sentiment": {
         "score": 0.587,
