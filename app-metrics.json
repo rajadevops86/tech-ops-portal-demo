@@ -1,27 +1,27 @@
 {
-  "generated_utc": "2026-08-19T02:48:59.931814+00:00",
+  "generated_utc": "2026-08-20T02:48:07.229212+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52827
+        "rating": 4.52824
       },
       "android": {
-        "rating": 4.4245057
+        "rating": 4.4246793
       },
       "sentiment": {
-        "score": 0.543,
+        "score": 0.536,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "superb quality movies in this app",
-            "rating": 5,
-            "platform": "Android"
-          },
           {
             "text": "Very good",
             "rating": 5,
             "platform": "iOS"
+          },
+          {
+            "text": "very good",
+            "rating": 4,
+            "platform": "Android"
           },
           {
             "text": "veerey good very good",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.4893
+        "rating": 4.48937
       },
       "android": {
-        "rating": 4.580885
+        "rating": 4.581425
       },
       "sentiment": {
-        "score": 0.517,
+        "score": 0.516,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -145,7 +145,7 @@
         "rating": 2.2582
       },
       "android": {
-        "rating": 2.7086957
+        "rating": 2.7017543
       },
       "sentiment": {
         "score": 0.482,
@@ -207,15 +207,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4451
+        "rating": 4.44503
       },
       "android": {
-        "rating": 3.7150466
+        "rating": 3.7205882
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -225,18 +230,13 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -251,15 +251,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -271,7 +279,7 @@
         "rating": 2.79191
       },
       "android": {
-        "rating": 3.550737
+        "rating": 3.5554612
       },
       "sentiment": {
         "score": 0.484,
@@ -337,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75387
+        "rating": 4.7539
       },
       "android": {
         "rating": 4.1907215
@@ -402,10 +410,10 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.44245
+        "rating": 4.44414
       },
       "android": {
-        "rating": 4.6257696
+        "rating": 4.6285467
       },
       "sentiment": {
         "score": 0.587,
