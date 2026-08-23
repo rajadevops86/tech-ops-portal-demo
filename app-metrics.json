@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-22T02:45:36.325820+00:00",
+  "generated_utc": "2026-08-23T02:54:08.562236+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52827
+        "rating": 4.52825
       },
       "android": {
-        "rating": 4.424949
+        "rating": 4.424858
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.529,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,17 +31,17 @@
         ],
         "topNegative": [
           {
+            "text": "Bad aha",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
             "platform": "iOS"
           },
           {
             "text": "worst experience ever ott app,this is worst worst worst.app not working since subscription.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "forward and backward are worst, please remove exit app popup, which is not allowing to press yes or no",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48963
+        "rating": 4.4897
       },
       "android": {
-        "rating": 4.583093
+        "rating": 4.583067
       },
       "sentiment": {
-        "score": 0.517,
+        "score": 0.521,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2582
+        "rating": 2.26194
       },
       "android": {
-        "rating": 2.7316017
+        "rating": 2.7339056
       },
       "sentiment": {
-        "score": 0.482,
+        "score": 0.483,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -210,7 +210,7 @@
         "rating": 4.44486
       },
       "android": {
-        "rating": 3.72
+        "rating": 3.7148595
       },
       "sentiment": {
         "score": 0.499,
@@ -279,7 +279,7 @@
         "rating": 2.79191
       },
       "android": {
-        "rating": 3.553905
+        "rating": 3.5514297
       },
       "sentiment": {
         "score": 0.484,
@@ -345,7 +345,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75404
+        "rating": 4.75383
       },
       "android": {
         "rating": 4.1907215
@@ -410,7 +410,7 @@
     {
       "appName": "Cignal Play",
       "ios": {
-        "rating": 4.44357
+        "rating": 4.44355
       },
       "android": {
         "rating": 4.6280384
