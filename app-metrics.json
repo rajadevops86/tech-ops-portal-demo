@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-24T02:55:00.157467+00:00",
+  "generated_utc": "2026-08-25T02:50:28.042440+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52824
+        "rating": 4.52822
       },
       "android": {
-        "rating": 4.425111
+        "rating": 4.4249344
       },
       "sentiment": {
-        "score": 0.53,
+        "score": 0.545,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,6 +31,11 @@
         ],
         "topNegative": [
           {
+            "text": "aha OTT IS VERY SLOW AND LAG very bad",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Bad aha",
             "rating": 1,
             "platform": "iOS"
@@ -39,11 +44,6 @@
             "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
             "platform": "iOS"
-          },
-          {
-            "text": "worst experience ever ott app,this is worst worst worst.app not working since subscription.",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -60,11 +60,11 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
+            "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48987
+        "rating": 4.48995
       },
       "android": {
-        "rating": 4.582855
+        "rating": 4.5812917
       },
       "sentiment": {
         "score": 0.522,
@@ -145,10 +145,10 @@
         "rating": 2.26022
       },
       "android": {
-        "rating": 2.7435896
+        "rating": 2.7627118
       },
       "sentiment": {
-        "score": 0.48,
+        "score": 0.481,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -207,20 +207,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44486
+        "rating": 4.44489
       },
       "android": {
-        "rating": 3.7148595
+        "rating": 3.7131367
       },
       "sentiment": {
-        "score": 0.499,
+        "score": 0.503,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -230,13 +225,18 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -251,23 +251,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -276,10 +268,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79251
+        "rating": 2.79299
       },
       "android": {
-        "rating": 3.5514297
+        "rating": 3.5543199
       },
       "sentiment": {
         "score": 0.484,
@@ -345,13 +337,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75405
+        "rating": 4.75403
       },
       "android": {
-        "rating": 4.194872
+        "rating": 4.1989794
       },
       "sentiment": {
-        "score": 0.574,
+        "score": 0.578,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -372,6 +364,11 @@
         ],
         "topNegative": [
           {
+            "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
@@ -380,11 +377,6 @@
             "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
             "rating": 2,
             "platform": "iOS"
-          },
-          {
-            "text": "Cada vez que el anuncio de neutrogena aparese tengo que resetear la app, por que aparese una black screen y tengo que lidear co ese problema cadavez que aparesen los anuncios, es frustrante lideor asta por mas de 10 minutos tratando de mirar tu serie faborita. Con esta clase de problemas no se puede disfrutar la progamacion que ofrese esta app. Por fabor quiten ese anuncio que solo arruina todo, esto pasa cuando uso el Amazon fire tv.",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
@@ -413,10 +405,10 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.626788
+        "rating": 4.6253242
       },
       "sentiment": {
-        "score": 0.64,
+        "score": 0.642,
         "scoreDelta": 0,
         "topPositive": [
           {
