@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-08-27T12:09:42.881616+00:00",
+  "generated_utc": "2026-08-28T13:33:38.248173+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52819
+        "rating": 4.52818
       },
       "android": {
-        "rating": 4.424759
+        "rating": 4.4246855
       },
       "sentiment": {
-        "score": 0.593,
+        "score": 0.612,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "This app is best for movie",
+            "text": "With all the best content Thanking you",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 4,
+            "text": "This app is best for movie",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -31,8 +31,8 @@
         ],
         "topNegative": [
           {
-            "text": "sad",
-            "rating": 5,
+            "text": "when compared to other OTT apps it's worst ..too many adds .. The worst experience",
+            "rating": 1,
             "platform": "Android"
           },
           {
@@ -56,7 +56,7 @@
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48839
+        "rating": 4.48847
       },
       "android": {
-        "rating": 4.5820556
+        "rating": 4.5804467
       },
       "sentiment": {
-        "score": 0.552,
+        "score": 0.551,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -121,15 +121,15 @@
             "trend": "worsening"
           },
           {
+            "label": "update",
+            "trend": "steady"
+          },
+          {
             "label": "crash",
             "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
             "trend": "steady"
           }
         ]
@@ -138,20 +138,15 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.25916
+        "rating": 2.26115
       },
       "android": {
-        "rating": 2.792531
+        "rating": 2.7875
       },
       "sentiment": {
-        "score": 0.485,
+        "score": 0.479,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "this app should be given zero star. uninstall and reinstall more than 5 times and the app is still unusable. Please fully refund everyone!",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "Ok",
             "rating": 5,
@@ -159,6 +154,11 @@
           },
           {
             "text": "stream bagi lah clear macam astro! ni kalau kat fon ok! kat tv pecah2 !",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "(-100000) BINTANG SEMAKIN HARI SEMAKIN SANGKUT KITA BAYAR CASH BUKAN FREE 😡",
             "rating": 1,
             "platform": "Android"
           }
@@ -203,7 +203,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44465
+        "rating": 4.44474
       },
       "android": {
         "rating": 3.7114093
@@ -267,7 +267,7 @@
         "rating": 2.79386
       },
       "android": {
-        "rating": 3.5577502
+        "rating": 3.5579896
       },
       "sentiment": {
         "score": 0.509,
@@ -333,13 +333,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75401
+        "rating": 4.75404
       },
       "android": {
         "rating": 4.2153845
       },
       "sentiment": {
-        "score": 0.622,
+        "score": 0.623,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -397,7 +397,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6237926
+        "rating": 4.622534
       },
       "sentiment": {
         "score": 0.634,
