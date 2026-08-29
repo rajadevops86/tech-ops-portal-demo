@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-28T13:33:38.248173+00:00",
+  "generated_utc": "2026-08-29T08:26:03.251141+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52818
+        "rating": 4.52816
       },
       "android": {
-        "rating": 4.4246855
+        "rating": 4.4248414
       },
       "sentiment": {
-        "score": 0.612,
+        "score": 0.594,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "when compared to other OTT apps it's worst ..too many adds .. The worst experience",
+            "text": "worst App I have ever had, Buffering Buffering every min, worst customer service, Time waste money waste don't waste your money",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst App I have ever had, Buffering Buffering every min, worst customer service, Time waste money waste don't waste your money",
+            "text": "worst app the vedio gets beuffered all the things need to be turned off and on after one movie or episode is completed all the things in this app are worst",
             "rating": 1,
             "platform": "Android"
           },
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48847
+        "rating": 4.48839
       },
       "android": {
-        "rating": 4.5804467
+        "rating": 4.582262
       },
       "sentiment": {
-        "score": 0.551,
+        "score": 0.55,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -88,7 +88,7 @@
             "platform": "Android"
           },
           {
-            "text": "This is very good apps to keep watching and support Philippines sport thank for this opportunity to rate this apps.",
+            "text": "It's downloadable now in my Chromecast with Google tv. it's working good now on my tv, phone and laptop. Good job!",
             "rating": 5,
             "platform": "Android"
           },
@@ -141,7 +141,7 @@
         "rating": 2.26115
       },
       "android": {
-        "rating": 2.7875
+        "rating": 2.7933884
       },
       "sentiment": {
         "score": 0.479,
@@ -182,11 +182,11 @@
         ],
         "drivers": [
           {
-            "label": "update",
-            "trend": "steady"
+            "label": "stream",
+            "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "steady"
           },
           {
@@ -203,10 +203,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44474
+        "rating": 4.44471
       },
       "android": {
-        "rating": 3.7114093
+        "rating": 3.7117963
       },
       "sentiment": {
         "score": 0.503,
@@ -270,7 +270,7 @@
         "rating": 3.5579896
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -291,37 +291,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -333,10 +333,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75404
+        "rating": 4.75394
       },
       "android": {
-        "rating": 4.2153845
+        "rating": 4.2256413
       },
       "sentiment": {
         "score": 0.623,
@@ -397,7 +397,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.622534
+        "rating": 4.6205535
       },
       "sentiment": {
         "score": 0.634,
