@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-29T08:26:03.251141+00:00",
+  "generated_utc": "2026-08-30T07:40:07.855780+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52816
+        "rating": 4.52817
       },
       "android": {
-        "rating": 4.4248414
+        "rating": 4.4249177
       },
       "sentiment": {
-        "score": 0.594,
+        "score": 0.587,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -48,19 +48,19 @@
         ],
         "drivers": [
           {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
             "label": "buffer",
             "trend": "steady"
           },
           {
-            "label": "slow",
-            "trend": "steady"
-          },
-          {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -73,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48839
+        "rating": 4.48873
       },
       "android": {
-        "rating": 4.582262
+        "rating": 4.5788107
       },
       "sentiment": {
-        "score": 0.55,
+        "score": 0.556,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "very good 👍",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "very good",
             "rating": 4,
@@ -91,21 +96,16 @@
             "text": "It's downloadable now in my Chromecast with Google tv. it's working good now on my tv, phone and laptop. Good job!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "doesn't show NBA finals kahit na Naka advertise sa kanila. false advertising malala",
+            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "bad",
             "rating": 1,
             "platform": "Android"
           },
@@ -138,10 +138,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26115
+        "rating": 2.26216
       },
       "android": {
-        "rating": 2.7933884
+        "rating": 2.8024693
       },
       "sentiment": {
         "score": 0.479,
@@ -267,10 +267,10 @@
         "rating": 2.79386
       },
       "android": {
-        "rating": 3.5579896
+        "rating": 3.5591908
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -291,37 +291,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -333,13 +333,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75394
+        "rating": 4.75397
       },
       "android": {
-        "rating": 4.2256413
+        "rating": 4.205128
       },
       "sentiment": {
-        "score": 0.623,
+        "score": 0.578,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,11 +360,6 @@
         ],
         "topNegative": [
           {
-            "text": "I don't even use this🤪",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -373,15 +368,24 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "rating": 2,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -397,7 +401,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6205535
+        "rating": 4.620009
       },
       "sentiment": {
         "score": 0.634,
