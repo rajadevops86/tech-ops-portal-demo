@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-30T07:40:07.855780+00:00",
+  "generated_utc": "2026-08-31T07:54:06.349703+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52817
+        "rating": 4.52816
       },
       "android": {
-        "rating": 4.4249177
+        "rating": 4.4251213
       },
       "sentiment": {
-        "score": 0.587,
+        "score": 0.591,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48873
+        "rating": 4.4885
       },
       "android": {
-        "rating": 4.5788107
+        "rating": 4.5785575
       },
       "sentiment": {
         "score": 0.556,
@@ -141,7 +141,7 @@
         "rating": 2.26216
       },
       "android": {
-        "rating": 2.8024693
+        "rating": 2.8640351
       },
       "sentiment": {
         "score": 0.479,
@@ -203,15 +203,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44471
+        "rating": 4.44474
       },
       "android": {
-        "rating": 3.7117963
+        "rating": 3.7083333
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -221,18 +226,13 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -247,15 +247,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -264,10 +272,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79386
+        "rating": 2.79337
       },
       "android": {
-        "rating": 3.5591908
+        "rating": 3.5579083
       },
       "sentiment": {
         "score": 0.509,
@@ -333,13 +341,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75397
+        "rating": 4.75376
       },
       "android": {
-        "rating": 4.205128
+        "rating": 4.2
       },
       "sentiment": {
-        "score": 0.578,
+        "score": 0.623,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,6 +368,11 @@
         ],
         "topNegative": [
           {
+            "text": "I don't even use this🤪",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -368,24 +381,15 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
-            "rating": 2,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
@@ -401,7 +405,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.620009
+        "rating": 4.6201754
       },
       "sentiment": {
         "score": 0.634,
