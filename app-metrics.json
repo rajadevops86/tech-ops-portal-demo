@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-31T07:54:06.349703+00:00",
+  "generated_utc": "2026-09-01T06:59:33.296105+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52816
       },
       "android": {
-        "rating": 4.4251213
+        "rating": 4.4249525
       },
       "sentiment": {
-        "score": 0.591,
+        "score": 0.569,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,28 +31,28 @@
         ],
         "topNegative": [
           {
-            "text": "worst App I have ever had, Buffering Buffering every min, worst customer service, Time waste money waste don't waste your money",
+            "text": "worst interface for tabs",
             "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "if you can stop advertisement in now and then very boring and time consuming then I can give 5 star",
+            "rating": 2,
             "platform": "Android"
           },
           {
             "text": "worst app the vedio gets beuffered all the things need to be turned off and on after one movie or episode is completed all the things in this app are worst",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "worst app",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "slow",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "slow",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.4885
+        "rating": 4.48805
       },
       "android": {
-        "rating": 4.5785575
+        "rating": 4.5855155
       },
       "sentiment": {
-        "score": 0.556,
+        "score": 0.566,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -141,7 +141,7 @@
         "rating": 2.26216
       },
       "android": {
-        "rating": 2.8640351
+        "rating": 2.8558953
       },
       "sentiment": {
         "score": 0.479,
@@ -203,20 +203,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44474
+        "rating": 4.44471
       },
       "android": {
-        "rating": 3.7083333
+        "rating": 3.706595
       },
       "sentiment": {
-        "score": 0.499,
+        "score": 0.503,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -226,13 +221,18 @@
             "text": "I Loved It!",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "good",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -247,23 +247,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -275,7 +267,7 @@
         "rating": 2.79337
       },
       "android": {
-        "rating": 3.5579083
+        "rating": 3.5593073
       },
       "sentiment": {
         "score": 0.509,
@@ -344,7 +336,7 @@
         "rating": 4.75376
       },
       "android": {
-        "rating": 4.2
+        "rating": 4.179487
       },
       "sentiment": {
         "score": 0.623,
@@ -405,7 +397,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6201754
+        "rating": 4.6186514
       },
       "sentiment": {
         "score": 0.634,
