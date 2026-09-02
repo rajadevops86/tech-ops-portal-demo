@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-09-01T06:59:33.296105+00:00",
+  "generated_utc": "2026-09-02T06:38:11.222415+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52816
+        "rating": 4.5281
       },
       "android": {
-        "rating": 4.4249525
+        "rating": 4.4249134
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.604,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "superb",
+            "rating": 4,
+            "platform": "Android"
+          },
           {
             "text": "With all the best content Thanking you",
             "rating": 5,
@@ -20,11 +25,6 @@
           },
           {
             "text": "This app is best for movie",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -56,15 +56,7 @@
             "trend": "steady"
           },
           {
-            "label": "buffer",
-            "trend": "steady"
-          },
-          {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
             "trend": "steady"
           }
         ]
@@ -73,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48805
+        "rating": 4.48733
       },
       "android": {
-        "rating": 4.5855155
+        "rating": 4.5951996
       },
       "sentiment": {
-        "score": 0.566,
+        "score": 0.577,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -138,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26216
+        "rating": 2.26244
       },
       "android": {
-        "rating": 2.8558953
+        "rating": 2.8405173
       },
       "sentiment": {
-        "score": 0.479,
+        "score": 0.473,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -158,7 +150,7 @@
             "platform": "Android"
           },
           {
-            "text": "(-100000) BINTANG SEMAKIN HARI SEMAKIN SANGKUT KITA BAYAR CASH BUKAN FREE 😡",
+            "text": "Rubbish UI not user friendly, often crashed, senior people have difficulties to use",
             "rating": 1,
             "platform": "Android"
           }
@@ -186,15 +178,15 @@
             "trend": "worsening"
           },
           {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
             "label": "update",
             "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           }
         ]
@@ -203,10 +195,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44471
+        "rating": 4.44474
       },
       "android": {
-        "rating": 3.706595
+        "rating": 3.7069893
       },
       "sentiment": {
         "score": 0.503,
@@ -264,10 +256,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79337
+        "rating": 2.79364
       },
       "android": {
-        "rating": 3.5593073
+        "rating": 3.5577757
       },
       "sentiment": {
         "score": 0.509,
@@ -333,13 +325,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75376
+        "rating": 4.75369
       },
       "android": {
-        "rating": 4.179487
+        "rating": 4.1734695
       },
       "sentiment": {
-        "score": 0.623,
+        "score": 0.629,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -397,7 +389,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6186514
+        "rating": 4.616667
       },
       "sentiment": {
         "score": 0.634,
