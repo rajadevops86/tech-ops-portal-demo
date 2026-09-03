@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-09-02T06:38:11.222415+00:00",
+  "generated_utc": "2026-09-03T06:40:23.281196+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5281
+        "rating": 4.52812
       },
       "android": {
-        "rating": 4.4249134
+        "rating": 4.424818
       },
       "sentiment": {
-        "score": 0.604,
+        "score": 0.602,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "ye app best hai ise download jarror kare",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "superb",
             "rating": 4,
@@ -20,11 +25,6 @@
           },
           {
             "text": "With all the best content Thanking you",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "This app is best for movie",
             "rating": 5,
             "platform": "Android"
           }
@@ -49,7 +49,11 @@
         "drivers": [
           {
             "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -65,15 +69,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48733
+        "rating": 4.48617
       },
       "android": {
-        "rating": 4.5951996
+        "rating": 4.5858846
       },
       "sentiment": {
-        "score": 0.577,
+        "score": 0.541,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "very good 👍",
             "rating": 5,
@@ -83,23 +92,18 @@
             "text": "very good",
             "rating": 4,
             "platform": "Android"
-          },
-          {
-            "text": "It's downloadable now in my Chromecast with Google tv. it's working good now on my tv, phone and laptop. Good job!",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Your World Cup stream sucks! The quality is bad. Sayang 2k!",
+            "text": "bad",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "bad",
+            "text": "Worst app",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "i already deactivated this app but still continue diducting ng funds in my ewallet! so disgusting! you deserved 1 star!",
@@ -113,11 +117,15 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "update",
             "trend": "steady"
           },
           {
@@ -130,10 +138,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26244
+        "rating": 2.26613
       },
       "android": {
-        "rating": 2.8405173
+        "rating": 2.8497853
       },
       "sentiment": {
         "score": 0.473,
@@ -262,7 +270,7 @@
         "rating": 3.5577757
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -283,37 +291,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -325,10 +333,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75369
+        "rating": 4.7537
       },
       "android": {
-        "rating": 4.1734695
+        "rating": 4.167513
       },
       "sentiment": {
         "score": 0.629,
@@ -389,7 +397,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.616667
+        "rating": 4.6164985
       },
       "sentiment": {
         "score": 0.634,
