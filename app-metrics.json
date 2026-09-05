@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-04T06:44:55.721904+00:00",
+  "generated_utc": "2026-09-05T06:30:54.997529+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52813
+        "rating": 4.52812
       },
       "android": {
-        "rating": 4.424785
+        "rating": 4.424838
       },
       "sentiment": {
-        "score": 0.571,
+        "score": 0.517,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,12 +24,17 @@
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
+          {
+            "text": "worst app worst content",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "worst interface for tabs",
             "rating": 1,
@@ -39,24 +44,27 @@
             "text": "if you can stop advertisement in now and then very boring and time consuming then I can give 5 star",
             "rating": 2,
             "platform": "Android"
-          },
-          {
-            "text": "worst app the vedio gets beuffered all the things need to be turned off and on after one movie or episode is completed all the things in this app are worst",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "ads",
+            "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
             "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -65,15 +73,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48597
+        "rating": 4.48675
       },
       "android": {
-        "rating": 4.5879316
+        "rating": 4.603604
       },
       "sentiment": {
-        "score": 0.581,
+        "score": 0.553,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "very good 👍",
             "rating": 5,
@@ -82,11 +95,6 @@
           {
             "text": "very good",
             "rating": 4,
-            "platform": "Android"
-          },
-          {
-            "text": "It's downloadable now in my Chromecast with Google tv. it's working good now on my tv, phone and laptop. Good job!",
-            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -113,11 +121,15 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "crash",
+            "label": "update",
             "trend": "steady"
           },
           {
@@ -130,41 +142,41 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26443
+        "rating": 2.26273
       },
       "android": {
-        "rating": 2.832618
+        "rating": 2.8170214
       },
       "sentiment": {
-        "score": 0.477,
+        "score": 0.487,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Ok",
+            "text": "Best App for FIFA",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "stream bagi lah clear macam astro! ni kalau kat fon ok! kat tv pecah2 !",
-            "rating": 1,
-            "platform": "Android"
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
           },
           {
-            "text": "(-100000) BINTANG SEMAKIN HARI SEMAKIN SANGKUT KITA BAYAR CASH BUKAN FREE 😡 PENIPU",
-            "rating": 1,
-            "platform": "Android"
+            "text": "Many channels. Very easy to use",
+            "rating": 5,
+            "platform": "iOS"
           }
         ],
         "topNegative": [
           {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Can't watch the game! apahal ni weh! I'm connected to my wifi and yet it says no network!",
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst tv apps",
@@ -174,19 +186,23 @@
         ],
         "drivers": [
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
             "label": "update",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
-            "label": "crash",
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -195,10 +211,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44489
+        "rating": 4.44442
       },
       "android": {
-        "rating": 3.703504
+        "rating": 3.703104
       },
       "sentiment": {
         "score": 0.499,
@@ -267,10 +283,10 @@
         "rating": 2.79364
       },
       "android": {
-        "rating": 3.5587468
+        "rating": 3.5581193
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -291,37 +307,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -333,13 +349,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75369
+        "rating": 4.75359
       },
       "android": {
-        "rating": 4.187817
+        "rating": 4.1887755
       },
       "sentiment": {
-        "score": 0.629,
+        "score": 0.581,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,11 +376,6 @@
         ],
         "topNegative": [
           {
-            "text": "I don't even use this🤪",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -373,15 +384,24 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "rating": 2,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -397,10 +417,10 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6162944
+        "rating": 4.6148443
       },
       "sentiment": {
-        "score": 0.634,
+        "score": 0.627,
         "scoreDelta": 0,
         "topPositive": [
           {
