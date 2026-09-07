@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-06T06:39:47.767065+00:00",
+  "generated_utc": "2026-09-07T06:48:25.800340+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52813
+        "rating": 4.52815
       },
       "android": {
-        "rating": 4.424865
+        "rating": 4.4249487
       },
       "sentiment": {
-        "score": 0.598,
+        "score": 0.623,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,18 +31,18 @@
         ],
         "topNegative": [
           {
+            "text": "not working app. don't know being a reputed company not even maintaining app. Unnecessarily subscribed year plan",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "don't subscribe this app my subscription ended by August and then by Autopay deducted from my bank account money but my aha account not activated such a disgusting app scammer",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "worst app worst content",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst interface for tabs",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "if you can stop advertisement in now and then very boring and time consuming then I can give 5 star",
-            "rating": 2,
             "platform": "Android"
           }
         ],
@@ -61,13 +61,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48701
+        "rating": 4.48571
       },
       "android": {
-        "rating": 4.6090965
+        "rating": 4.611163
       },
       "sentiment": {
-        "score": 0.606,
+        "score": 0.607,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -126,15 +126,20 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26104
+        "rating": 2.26203
       },
       "android": {
-        "rating": 2.8185654
+        "rating": 2.9041667
       },
       "sentiment": {
-        "score": 0.48,
+        "score": 0.494,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "i liked",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "ok",
             "rating": 5,
@@ -144,16 +149,11 @@
             "text": "Ok",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "stream bagi lah clear macam astro! ni kalau kat fon ok! kat tv pecah2 !",
-            "rating": 1,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Can't watch the game! apahal ni weh! I'm connected to my wifi and yet it says no network!",
+            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
             "rating": 1,
             "platform": "Android"
           },
@@ -198,7 +198,7 @@
         "rating": 4.44442
       },
       "android": {
-        "rating": 3.703104
+        "rating": 3.7048519
       },
       "sentiment": {
         "score": 0.503,
@@ -256,7 +256,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79299
+        "rating": 2.79251
       },
       "android": {
         "rating": 3.559529
@@ -325,7 +325,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75373
+        "rating": 4.75361
       },
       "android": {
         "rating": 4.1989794
@@ -389,7 +389,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6132574
+        "rating": 4.6125493
       },
       "sentiment": {
         "score": 0.614,
