@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-09T06:53:36.146779+00:00",
+  "generated_utc": "2026-09-10T06:49:50.106485+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52812
       },
       "android": {
-        "rating": 4.425162
+        "rating": 4.4253554
       },
       "sentiment": {
-        "score": 0.594,
+        "score": 0.617,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -25,7 +25,7 @@
           },
           {
             "text": "good",
-            "rating": 4,
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -52,11 +52,11 @@
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -65,15 +65,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48342
+        "rating": 4.48273
       },
       "android": {
-        "rating": 4.6021976
+        "rating": 4.601429
       },
       "sentiment": {
-        "score": 0.625,
+        "score": 0.567,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Most of the time error! Refund!!!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "very good 👍",
             "rating": 5,
@@ -82,11 +87,6 @@
           {
             "text": "very good",
             "rating": 4,
-            "platform": "Android"
-          },
-          {
-            "text": "great while others think it's laggy when watching TV5 HD it's not.",
-            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -109,15 +109,19 @@
         ],
         "drivers": [
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
             "label": "update",
             "trend": "steady"
           },
           {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
+            "label": "ads",
             "trend": "steady"
           },
           {
@@ -133,7 +137,7 @@
         "rating": 2.26799
       },
       "android": {
-        "rating": 2.8958333
+        "rating": 2.9356222
       },
       "sentiment": {
         "score": 0.492,
@@ -202,10 +206,10 @@
         "rating": 4.44428
       },
       "android": {
-        "rating": 3.6982408
+        "rating": 3.7017543
       },
       "sentiment": {
-        "score": 0.504,
+        "score": 0.5,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -214,13 +218,13 @@
             "platform": "Android"
           },
           {
-            "text": "I Loved It!",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 5,
+            "text": "Is ok",
+            "rating": 4,
             "platform": "Android"
           }
         ],
@@ -260,7 +264,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7931
+        "rating": 2.7937
       },
       "android": {
         "rating": 3.5609863
@@ -329,10 +333,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75364
+        "rating": 4.75366
       },
       "android": {
-        "rating": 4.1928935
+        "rating": 4.1887755
       },
       "sentiment": {
         "score": 0.629,
@@ -393,7 +397,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.613087
+        "rating": 4.613427
       },
       "sentiment": {
         "score": 0.614,
