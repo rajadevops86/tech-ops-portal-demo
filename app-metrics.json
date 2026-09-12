@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-11T06:49:52.340494+00:00",
+  "generated_utc": "2026-09-12T06:41:45.935278+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52811
+        "rating": 4.5281
       },
       "android": {
-        "rating": 4.4253583
+        "rating": 4.42553
       },
       "sentiment": {
-        "score": 0.535,
+        "score": 0.632,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,47 +24,39 @@
             "platform": "Android"
           },
           {
-            "text": "Very good",
+            "text": "Welcome to Gboard clipboard, any text you copy will be saved here.Tap on a clip to paste it in the text box.",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Bad aha",
+            "text": "not working app. don't know being a reputed company not even maintaining app. Unnecessarily subscribed year plan",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
+          },
+          {
+            "text": "this app is not good it's to bad",
+            "rating": 1,
+            "platform": "Android"
           },
           {
             "text": "Worst app, Don't Subscribe. Unable to Delete Autopay in Phonepe App. Tried All Methods, No Use.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
-            "rating": 1,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
+            "label": "buffer",
+            "trend": "steady"
           },
           {
             "label": "login",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -73,20 +65,15 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48353
+        "rating": 4.48346
       },
       "android": {
-        "rating": 4.6013536
+        "rating": 4.601447
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.622,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Most of the time error! Refund!!!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "very good 👍",
             "rating": 5,
@@ -95,6 +82,11 @@
           {
             "text": "very good",
             "rating": 4,
+            "platform": "Android"
+          },
+          {
+            "text": "great while others think it's laggy when watching TV5 HD it's not.",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -117,19 +109,15 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "worsening"
-          },
-          {
             "label": "update",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -145,38 +133,38 @@
         "rating": 2.26897
       },
       "android": {
-        "rating": 2.969957
+        "rating": 2.9831223
       },
       "sentiment": {
-        "score": 0.499,
+        "score": 0.488,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "Very good",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
             "text": "i liked",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "ok",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Ok",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
+            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst tv apps",
@@ -186,11 +174,7 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
+            "label": "update",
             "trend": "worsening"
           },
           {
@@ -198,11 +182,15 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
-            "trend": "worsening"
+            "label": "slow",
+            "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -211,20 +199,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44424
+        "rating": 4.44421
       },
       "android": {
         "rating": 3.7017543
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.5,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -234,13 +217,18 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "Is ok",
+            "rating": 4,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -255,23 +243,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -286,7 +266,7 @@
         "rating": 3.5609863
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -307,37 +287,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -349,13 +329,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75365
+        "rating": 4.75371
       },
       "android": {
-        "rating": 0
+        "rating": 4.1887755
       },
       "sentiment": {
-        "score": 0.581,
+        "score": 0.629,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -376,6 +356,11 @@
         ],
         "topNegative": [
           {
+            "text": "I don't even use this🤪",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -384,24 +369,15 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
-            "rating": 2,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
