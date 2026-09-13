@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-12T06:41:45.935278+00:00",
+  "generated_utc": "2026-09-13T06:59:06.246614+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,12 +7,17 @@
         "rating": 4.5281
       },
       "android": {
-        "rating": 4.42553
+        "rating": 4.4255342
       },
       "sentiment": {
-        "score": 0.632,
+        "score": 0.647,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "excellent",
+            "rating": 4,
+            "platform": "Android"
+          },
           {
             "text": "is very best 😄😄😄😄😄💓💓😄😄😄😄😄",
             "rating": 5,
@@ -20,11 +25,6 @@
           },
           {
             "text": "superb",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Welcome to Gboard clipboard, any text you copy will be saved here.Tap on a clip to paste it in the text box.",
             "rating": 5,
             "platform": "Android"
           }
@@ -49,7 +49,7 @@
         "drivers": [
           {
             "label": "buffer",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "login",
@@ -65,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48346
+        "rating": 4.48342
       },
       "android": {
-        "rating": 4.601447
+        "rating": 4.6041665
       },
       "sentiment": {
-        "score": 0.622,
+        "score": 0.616,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -109,15 +109,15 @@
         ],
         "drivers": [
           {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
             "label": "update",
             "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
             "trend": "steady"
           },
           {
@@ -130,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26897
+        "rating": 2.2726
       },
       "android": {
-        "rating": 2.9831223
+        "rating": 3.0213675
       },
       "sentiment": {
-        "score": 0.488,
+        "score": 0.481,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -157,12 +157,12 @@
         ],
         "topNegative": [
           {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
           },
@@ -199,7 +199,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44421
+        "rating": 4.44424
       },
       "android": {
         "rating": 3.7017543
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75371
+        "rating": 4.75366
       },
       "android": {
-        "rating": 4.1887755
+        "rating": 4.1969695
       },
       "sentiment": {
         "score": 0.629,
