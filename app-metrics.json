@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-13T06:59:06.246614+00:00",
+  "generated_utc": "2026-09-14T07:21:33.448223+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5281
+        "rating": 4.52806
       },
       "android": {
-        "rating": 4.4255342
+        "rating": 4.4257507
       },
       "sentiment": {
-        "score": 0.647,
+        "score": 0.545,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,19 +31,19 @@
         ],
         "topNegative": [
           {
-            "text": "not working app. don't know being a reputed company not even maintaining app. Unnecessarily subscribed year plan",
+            "text": "Bad aha",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "this app is not good it's to bad",
-            "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Worst app, Don't Subscribe. Unable to Delete Autopay in Phonepe App. Tried All Methods, No Use.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -52,11 +52,19 @@
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "ads",
+            "trend": "worsening"
           },
           {
-            "label": "ads",
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -65,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48342
+        "rating": 4.48329
       },
       "android": {
-        "rating": 4.6041665
+        "rating": 4.606422
       },
       "sentiment": {
-        "score": 0.616,
+        "score": 0.604,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -133,7 +141,7 @@
         "rating": 2.2726
       },
       "android": {
-        "rating": 3.0213675
+        "rating": 3.0338984
       },
       "sentiment": {
         "score": 0.481,
@@ -202,7 +210,7 @@
         "rating": 4.44424
       },
       "android": {
-        "rating": 3.7017543
+        "rating": 3.7054055
       },
       "sentiment": {
         "score": 0.5,
@@ -329,10 +337,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75366
+        "rating": 4.75364
       },
       "android": {
-        "rating": 4.1969695
+        "rating": 4.1776648
       },
       "sentiment": {
         "score": 0.629,
