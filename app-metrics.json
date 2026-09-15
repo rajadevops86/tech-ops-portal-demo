@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-09-14T07:21:33.448223+00:00",
+  "generated_utc": "2026-09-15T06:57:57.928803+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52806
+        "rating": 4.52812
       },
       "android": {
-        "rating": 4.4257507
+        "rating": 4.4259458
       },
       "sentiment": {
-        "score": 0.545,
+        "score": 0.649,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "best of best quality",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "excellent",
             "rating": 4,
@@ -22,28 +27,23 @@
             "text": "is very best 😄😄😄😄😄💓💓😄😄😄😄😄",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "superb",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Bad aha",
+            "text": "not working app. don't know being a reputed company not even maintaining app. Unnecessarily subscribed year plan",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
+          },
+          {
+            "text": "this app is not good it's to bad",
+            "rating": 1,
+            "platform": "Android"
           },
           {
             "text": "Worst app, Don't Subscribe. Unable to Delete Autopay in Phonepe App. Tried All Methods, No Use.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
-            "rating": 1,
-            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -52,16 +52,16 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "login",
             "trend": "worsening"
           },
           {
+            "label": "update",
+            "trend": "steady"
+          },
+          {
             "label": "slow",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48329
+        "rating": 4.48308
       },
       "android": {
-        "rating": 4.606422
+        "rating": 4.606174
       },
       "sentiment": {
-        "score": 0.604,
+        "score": 0.614,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -127,10 +127,6 @@
           {
             "label": "crash",
             "trend": "steady"
-          },
-          {
-            "label": "slow",
-            "trend": "steady"
           }
         ]
       }
@@ -141,10 +137,10 @@
         "rating": 2.2726
       },
       "android": {
-        "rating": 3.0338984
+        "rating": 3.0251045
       },
       "sentiment": {
-        "score": 0.481,
+        "score": 0.479,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -210,7 +206,7 @@
         "rating": 4.44424
       },
       "android": {
-        "rating": 3.7054055
+        "rating": 3.699594
       },
       "sentiment": {
         "score": 0.5,
