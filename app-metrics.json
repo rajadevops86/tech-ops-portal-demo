@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-09-15T06:57:57.928803+00:00",
+  "generated_utc": "2026-09-16T06:59:34.864855+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52812
+        "rating": 4.52815
       },
       "android": {
-        "rating": 4.4259458
+        "rating": 4.4259024
       },
       "sentiment": {
-        "score": 0.649,
+        "score": 0.636,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "excellent 👍👌",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "best of best quality",
             "rating": 5,
@@ -22,19 +27,9 @@
             "text": "excellent",
             "rating": 4,
             "platform": "Android"
-          },
-          {
-            "text": "is very best 😄😄😄😄😄💓💓😄😄😄😄😄",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "not working app. don't know being a reputed company not even maintaining app. Unnecessarily subscribed year plan",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "this app is not good it's to bad",
             "rating": 1,
@@ -42,6 +37,11 @@
           },
           {
             "text": "Worst app, Don't Subscribe. Unable to Delete Autopay in Phonepe App. Tried All Methods, No Use.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "it's very bad",
             "rating": 1,
             "platform": "Android"
           }
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48308
+        "rating": 4.48364
       },
       "android": {
-        "rating": 4.606174
+        "rating": 4.608305
       },
       "sentiment": {
         "score": 0.614,
@@ -134,13 +134,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2726
+        "rating": 2.27091
       },
       "android": {
-        "rating": 3.0251045
+        "rating": 3.0464134
       },
       "sentiment": {
-        "score": 0.479,
+        "score": 0.482,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -203,7 +203,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44424
+        "rating": 4.44428
       },
       "android": {
         "rating": 3.699594
@@ -264,7 +264,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7937
+        "rating": 2.79391
       },
       "android": {
         "rating": 3.5609863
@@ -333,7 +333,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75364
+        "rating": 4.75369
       },
       "android": {
         "rating": 4.1776648
