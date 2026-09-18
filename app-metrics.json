@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-17T06:55:04.625410+00:00",
+  "generated_utc": "2026-09-18T06:52:05.091021+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52812
       },
       "android": {
-        "rating": 4.426164
+        "rating": 4.4261155
       },
       "sentiment": {
-        "score": 0.552,
+        "score": 0.659,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,14 +31,14 @@
         ],
         "topNegative": [
           {
-            "text": "Worst app, Don't Subscribe. Unable to Delete Autopay in Phonepe App. Tried All Methods, No Use.",
+            "text": "not good",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
+            "text": "I paid 3 times but payment failed and your platform was not accepted. It's one of the worst moments of lyf such an irritated thing also please return my amount of the worst service",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "it's very bad",
@@ -48,20 +48,20 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
             "label": "buffer",
             "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "worsening"
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
+            "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
@@ -76,17 +76,12 @@
         "rating": 4.48335
       },
       "android": {
-        "rating": 4.607362
+        "rating": 4.6003046
       },
       "sentiment": {
-        "score": 0.57,
+        "score": 0.616,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Most of the time error! Refund!!!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "very good 👍",
             "rating": 5,
@@ -95,6 +90,11 @@
           {
             "text": "very good",
             "rating": 4,
+            "platform": "Android"
+          },
+          {
+            "text": "great while others think it's laggy when watching TV5 HD it's not.",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -117,19 +117,15 @@
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "worsening"
-          },
-          {
             "label": "update",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -141,7 +137,7 @@
         "rating": 2.26923
       },
       "android": {
-        "rating": 3.059322
+        "rating": 3.038298
       },
       "sentiment": {
         "score": 0.498,
@@ -213,14 +209,9 @@
         "rating": 3.699594
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.5,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -230,13 +221,18 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "Is ok",
+            "rating": 4,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -251,23 +247,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -279,7 +267,7 @@
         "rating": 2.79424
       },
       "android": {
-        "rating": 3.5616198
+        "rating": 3.5609863
       },
       "sentiment": {
         "score": 0.484,
@@ -345,13 +333,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75359
+        "rating": 4.75364
       },
       "android": {
         "rating": 4.1776648
       },
       "sentiment": {
-        "score": 0.581,
+        "score": 0.629,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -372,6 +360,11 @@
         ],
         "topNegative": [
           {
+            "text": "I don't even use this🤪",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -380,24 +373,15 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
-            "rating": 2,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
@@ -413,7 +397,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.613427
+        "rating": 4.612988
       },
       "sentiment": {
         "score": 0.614,
