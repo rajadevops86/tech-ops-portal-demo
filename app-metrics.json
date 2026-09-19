@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-18T06:52:05.091021+00:00",
+  "generated_utc": "2026-09-19T06:51:03.675636+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52812
+        "rating": 4.52811
       },
       "android": {
-        "rating": 4.4261155
+        "rating": 4.42619
       },
       "sentiment": {
-        "score": 0.659,
+        "score": 0.639,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,7 +31,7 @@
         ],
         "topNegative": [
           {
-            "text": "not good",
+            "text": "very worst app every time I open it getting loading loading.........",
             "rating": 1,
             "platform": "Android"
           },
@@ -48,12 +48,12 @@
         ],
         "drivers": [
           {
-            "label": "buffer",
+            "label": "login",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           },
           {
             "label": "update",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48335
+        "rating": 4.48216
       },
       "android": {
-        "rating": 4.6003046
+        "rating": 4.599394
       },
       "sentiment": {
-        "score": 0.616,
+        "score": 0.614,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -134,41 +134,41 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26923
+        "rating": 2.26852
       },
       "android": {
-        "rating": 3.038298
+        "rating": 3.0497925
       },
       "sentiment": {
-        "score": 0.498,
+        "score": 0.488,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "Very good",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
             "text": "i liked",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "ok",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "Ok",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst tv apps",
@@ -178,11 +178,7 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
+            "label": "update",
             "trend": "worsening"
           },
           {
@@ -190,11 +186,15 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
-            "trend": "worsening"
+            "label": "slow",
+            "trend": "steady"
           },
           {
-            "label": "slow",
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -203,10 +203,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44424
+        "rating": 4.44449
       },
       "android": {
-        "rating": 3.699594
+        "rating": 3.6953552
       },
       "sentiment": {
         "score": 0.5,
@@ -264,13 +264,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79424
+        "rating": 2.79375
       },
       "android": {
-        "rating": 3.5609863
+        "rating": 3.5634563
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -291,37 +291,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -333,10 +333,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75364
+        "rating": 4.75365
       },
       "android": {
-        "rating": 4.1776648
+        "rating": 4.182741
       },
       "sentiment": {
         "score": 0.629,
