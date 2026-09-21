@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-20T07:15:50.851903+00:00",
+  "generated_utc": "2026-09-21T07:25:23.590097+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5281
+        "rating": 4.52808
       },
       "android": {
-        "rating": 4.4261312
+        "rating": 4.4260836
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.617,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48217
+        "rating": 4.48165
       },
       "android": {
-        "rating": 4.5998197
+        "rating": 4.593581
       },
       "sentiment": {
-        "score": 0.618,
+        "score": 0.615,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -133,15 +133,15 @@
         "rating": 2.26852
       },
       "android": {
-        "rating": 3.1375
+        "rating": 3.2161016
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Sgt trukk apps!!!! Tu je blh ckp!! Tlg baca komen tuk upgrade!! Developer trsgt noob newbie xpower!! Tgok cth hbo maxxx very good video player!!!",
-            "rating": 1,
+            "text": "thanks a lot. keep going. y'all the best",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -174,11 +174,11 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "stream",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "worsening"
           },
           {
@@ -199,13 +199,13 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44452
+        "rating": 4.44431
       },
       "android": {
-        "rating": 3.6953552
+        "rating": 3.6935704
       },
       "sentiment": {
-        "score": 0.5,
+        "score": 0.503,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -263,7 +263,7 @@
         "rating": 2.79354
       },
       "android": {
-        "rating": 3.565867
+        "rating": 3.5703871
       },
       "sentiment": {
         "score": 0.509,
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75366
+        "rating": 4.75362
       },
       "android": {
-        "rating": 4.182741
+        "rating": 4.1979694
       },
       "sentiment": {
         "score": 0.619,
