@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-21T07:25:23.590097+00:00",
+  "generated_utc": "2026-09-22T07:03:05.543023+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52808
+        "rating": 4.5281
       },
       "android": {
-        "rating": 4.4260836
+        "rating": 4.4258065
       },
       "sentiment": {
-        "score": 0.617,
+        "score": 0.533,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,9 +31,9 @@
         ],
         "topNegative": [
           {
-            "text": "I paid 3 times but payment failed and your platform was not accepted. It's one of the worst moments of lyf such an irritated thing also please return my amount of the worst service",
+            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "very bad ott",
@@ -52,16 +52,16 @@
             "trend": "worsening"
           },
           {
-            "label": "buffer",
+            "label": "ads",
             "trend": "worsening"
           },
           {
-            "label": "update",
-            "trend": "steady"
+            "label": "slow",
+            "trend": "worsening"
           },
           {
-            "label": "slow",
-            "trend": "steady"
+            "label": "buffer",
+            "trend": "worsening"
           },
           {
             "label": "crash",
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48165
+        "rating": 4.48176
       },
       "android": {
-        "rating": 4.593581
+        "rating": 4.5938673
       },
       "sentiment": {
-        "score": 0.615,
+        "score": 0.609,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -130,10 +130,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26852
+        "rating": 2.26684
       },
       "android": {
-        "rating": 3.2161016
+        "rating": 3.2109704
       },
       "sentiment": {
         "score": 0.499,
@@ -199,15 +199,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44431
+        "rating": 4.44434
       },
       "android": {
         "rating": 3.6935704
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -217,18 +222,13 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Is ok",
-            "rating": 4,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -243,15 +243,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -329,7 +337,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75362
+        "rating": 4.75366
       },
       "android": {
         "rating": 4.1979694
