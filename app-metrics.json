@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-22T07:03:05.543023+00:00",
+  "generated_utc": "2026-09-23T06:59:13.591554+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5281
+        "rating": 4.52806
       },
       "android": {
-        "rating": 4.4258065
+        "rating": 4.425714
       },
       "sentiment": {
-        "score": 0.533,
+        "score": 0.632,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,16 +24,16 @@
             "platform": "Android"
           },
           {
-            "text": "excellent",
-            "rating": 4,
+            "text": "very good",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
+            "text": "I paid 3 times but payment failed and your platform was not accepted. It's one of the worst moments of lyf such an irritated thing also please return my amount of the worst service",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "very bad ott",
@@ -52,19 +52,11 @@
             "trend": "worsening"
           },
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
+            "label": "update",
+            "trend": "steady"
           },
           {
             "label": "buffer",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -73,23 +65,23 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48176
+        "rating": 4.48184
       },
       "android": {
-        "rating": 4.5938673
+        "rating": 4.593052
       },
       "sentiment": {
-        "score": 0.609,
+        "score": 0.617,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "very good 👍",
+            "text": "great app!!!",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
-            "rating": 4,
+            "text": "very good 👍",
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -117,11 +109,11 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -133,10 +125,10 @@
         "rating": 2.26684
       },
       "android": {
-        "rating": 3.2109704
+        "rating": 3.2259414
       },
       "sentiment": {
-        "score": 0.499,
+        "score": 0.504,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -150,7 +142,7 @@
             "platform": "Android"
           },
           {
-            "text": "ok",
+            "text": "thank you for my reviews !!!!!!! 🍃🌇🌃⏰🏕️clade team will love astro go app",
             "rating": 5,
             "platform": "Android"
           }
@@ -199,20 +191,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44434
+        "rating": 4.44421
       },
       "android": {
-        "rating": 3.6935704
+        "rating": 3.6941016
       },
       "sentiment": {
-        "score": 0.499,
+        "score": 0.503,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -222,13 +209,18 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "Is ok",
+            "rating": 4,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -243,23 +235,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -268,10 +252,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79354
+        "rating": 2.79306
       },
       "android": {
-        "rating": 3.5703871
+        "rating": 3.571102
       },
       "sentiment": {
         "score": 0.509,
@@ -337,10 +321,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75366
+        "rating": 4.75352
       },
       "android": {
-        "rating": 4.1979694
+        "rating": 4.218274
       },
       "sentiment": {
         "score": 0.619,
