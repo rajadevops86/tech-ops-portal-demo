@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-23T06:59:13.591554+00:00",
+  "generated_utc": "2026-09-24T06:56:48.629434+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52806
       },
       "android": {
-        "rating": 4.425714
+        "rating": 4.4256945
       },
       "sentiment": {
-        "score": 0.632,
+        "score": 0.63,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,12 +19,12 @@
             "platform": "Android"
           },
           {
-            "text": "best of best quality",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very good",
+            "text": "great",
             "rating": 5,
             "platform": "Android"
           }
@@ -65,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48184
+        "rating": 4.48193
       },
       "android": {
-        "rating": 4.593052
+        "rating": 4.5929537
       },
       "sentiment": {
-        "score": 0.617,
+        "score": 0.609,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -125,38 +125,38 @@
         "rating": 2.26684
       },
       "android": {
-        "rating": 3.2259414
+        "rating": 3.2083333
       },
       "sentiment": {
-        "score": 0.504,
+        "score": 0.508,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
             "text": "thanks a lot. keep going. y'all the best",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "i liked",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "thank you for my reviews !!!!!!! 🍃🌇🌃⏰🏕️clade team will love astro go app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst tv apps",
@@ -165,6 +165,14 @@
           }
         ],
         "drivers": [
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
+          },
           {
             "label": "stream",
             "trend": "worsening"
@@ -176,14 +184,6 @@
           {
             "label": "slow",
             "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
           }
         ]
       }
@@ -191,10 +191,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44421
+        "rating": 4.44406
       },
       "android": {
-        "rating": 3.6941016
+        "rating": 3.6886146
       },
       "sentiment": {
         "score": 0.503,
@@ -252,7 +252,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79306
+        "rating": 2.79257
       },
       "android": {
         "rating": 3.571102
@@ -321,13 +321,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75352
+        "rating": 4.75354
       },
       "android": {
         "rating": 4.218274
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.629,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -336,12 +336,12 @@
             "platform": "Android"
           },
           {
-            "text": "great",
+            "text": "Love this app!!!!",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Great 👍",
+            "text": "great",
             "rating": 5,
             "platform": "Android"
           }
