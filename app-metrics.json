@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-24T06:56:48.629434+00:00",
+  "generated_utc": "2026-09-25T06:51:06.498856+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,17 +7,12 @@
         "rating": 4.52806
       },
       "android": {
-        "rating": 4.4256945
+        "rating": 4.425626
       },
       "sentiment": {
-        "score": 0.63,
+        "score": 0.619,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "excellent 👍👌",
-            "rating": 5,
-            "platform": "Android"
-          },
           {
             "text": "very good",
             "rating": 5,
@@ -25,6 +20,11 @@
           },
           {
             "text": "great",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           }
@@ -41,7 +41,7 @@
             "platform": "Android"
           },
           {
-            "text": "it's very bad",
+            "text": "worst cant even login bz i am not receiving otp",
             "rating": 1,
             "platform": "Android"
           }
@@ -54,10 +54,6 @@
           {
             "label": "update",
             "trend": "steady"
-          },
-          {
-            "label": "buffer",
-            "trend": "steady"
           }
         ]
       }
@@ -68,7 +64,7 @@
         "rating": 4.48193
       },
       "android": {
-        "rating": 4.5929537
+        "rating": 4.5946794
       },
       "sentiment": {
         "score": 0.609,
@@ -125,38 +121,38 @@
         "rating": 2.26684
       },
       "android": {
-        "rating": 3.2083333
+        "rating": 3.2033195
       },
       "sentiment": {
-        "score": 0.508,
+        "score": 0.502,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "Very good",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
             "text": "thanks a lot. keep going. y'all the best",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "i liked",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "thank you for my reviews !!!!!!! 🍃🌇🌃⏰🏕️clade team will love astro go app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst tv apps",
@@ -165,14 +161,6 @@
           }
         ],
         "drivers": [
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "worsening"
-          },
           {
             "label": "stream",
             "trend": "worsening"
@@ -183,6 +171,14 @@
           },
           {
             "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -321,7 +317,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75354
+        "rating": 4.75359
       },
       "android": {
         "rating": 4.218274
@@ -385,7 +381,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.612988
+        "rating": 4.6131577
       },
       "sentiment": {
         "score": 0.614,
