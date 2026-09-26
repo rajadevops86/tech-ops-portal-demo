@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-09-25T06:51:06.498856+00:00",
+  "generated_utc": "2026-09-26T06:51:47.957558+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52806
+        "rating": 4.52809
       },
       "android": {
-        "rating": 4.425626
+        "rating": 4.425894
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.522,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "very good",
             "rating": 5,
@@ -22,21 +27,16 @@
             "text": "great",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "very nice",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "I paid 3 times but payment failed and your platform was not accepted. It's one of the worst moments of lyf such an irritated thing also please return my amount of the worst service",
+            "text": "All are very boring",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "very bad ott",
+            "text": "worst app all movies are not there don't download",
             "rating": 1,
             "platform": "Android"
           },
@@ -52,6 +52,18 @@
             "trend": "worsening"
           },
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
             "label": "update",
             "trend": "steady"
           }
@@ -61,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48193
+        "rating": 4.48163
       },
       "android": {
-        "rating": 4.5946794
+        "rating": 4.593099
       },
       "sentiment": {
-        "score": 0.609,
+        "score": 0.553,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -76,12 +88,12 @@
             "platform": "Android"
           },
           {
-            "text": "very good 👍",
+            "text": "great while others think it's laggy when watching TV5 HD it's not.",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "great while others think it's laggy when watching TV5 HD it's not.",
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           }
@@ -106,6 +118,18 @@
         "drivers": [
           {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -121,38 +145,38 @@
         "rating": 2.26684
       },
       "android": {
-        "rating": 3.2033195
+        "rating": 3.1958334
       },
       "sentiment": {
-        "score": 0.502,
+        "score": 0.508,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
             "text": "thanks a lot. keep going. y'all the best",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "i liked",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "thank you for my reviews !!!!!!! 🍃🌇🌃⏰🏕️clade team will love astro go app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "worst tv apps",
@@ -161,6 +185,14 @@
           }
         ],
         "drivers": [
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
+          },
           {
             "label": "stream",
             "trend": "worsening"
@@ -172,14 +204,6 @@
           {
             "label": "slow",
             "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
           }
         ]
       }
@@ -187,15 +211,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44406
+        "rating": 4.44399
       },
       "android": {
         "rating": 3.6886146
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -205,18 +234,13 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Is ok",
-            "rating": 4,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -231,15 +255,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -248,7 +280,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79257
+        "rating": 2.79209
       },
       "android": {
         "rating": 3.571102
@@ -317,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75359
+        "rating": 4.75352
       },
       "android": {
         "rating": 4.218274
