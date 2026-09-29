@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-28T07:58:39.974305+00:00",
+  "generated_utc": "2026-09-29T07:40:30.652172+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52813
+        "rating": 4.52812
       },
       "android": {
-        "rating": 4.4258647
+        "rating": 4.4259024
       },
       "sentiment": {
-        "score": 0.664,
+        "score": 0.666,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,15 +24,15 @@
             "platform": "Android"
           },
           {
-            "text": "great",
+            "text": "aha is in Telugu tv app are we great fully.",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "irritating app",
-            "rating": 1,
+            "text": "app was very slow",
+            "rating": 4,
             "platform": "Android"
           },
           {
@@ -52,6 +52,10 @@
             "trend": "steady"
           },
           {
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
             "label": "update",
             "trend": "steady"
           }
@@ -61,20 +65,15 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.48244
+        "rating": 4.48229
       },
       "android": {
-        "rating": 4.5892024
+        "rating": 4.588934
       },
       "sentiment": {
-        "score": 0.591,
+        "score": 0.582,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "great app!!!",
-            "rating": 5,
-            "platform": "Android"
-          },
           {
             "text": "great while others think it's laggy when watching TV5 HD it's not.",
             "rating": 5,
@@ -82,6 +81,11 @@
           },
           {
             "text": "very nice",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "good 👍",
             "rating": 5,
             "platform": "Android"
           }
@@ -105,15 +109,15 @@
         ],
         "drivers": [
           {
+            "label": "update",
+            "trend": "steady"
+          },
+          {
             "label": "stream",
             "trend": "steady"
           },
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
             "trend": "steady"
           }
         ]
@@ -125,7 +129,7 @@
         "rating": 2.26877
       },
       "android": {
-        "rating": 3.1950207
+        "rating": 3.2024794
       },
       "sentiment": {
         "score": 0.502,
@@ -252,7 +256,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79209
+        "rating": 2.7922
       },
       "android": {
         "rating": 3.571298
@@ -324,10 +328,10 @@
         "rating": 4.75364
       },
       "android": {
-        "rating": 4.1979694
+        "rating": 4.218274
       },
       "sentiment": {
-        "score": 0.629,
+        "score": 0.619,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -336,12 +340,12 @@
             "platform": "Android"
           },
           {
-            "text": "Love this app!!!!",
+            "text": "great",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "great",
+            "text": "Great 👍",
             "rating": 5,
             "platform": "Android"
           }
