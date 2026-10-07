@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-06T08:18:54.136327+00:00",
+  "generated_utc": "2026-10-07T07:55:52.066602+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52801
       },
       "android": {
-        "rating": 4.425963
+        "rating": 4.426012
       },
       "sentiment": {
-        "score": 0.599,
+        "score": 0.606,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,13 +19,13 @@
             "platform": "Android"
           },
           {
-            "text": "good😡🔥😳😜😐😢",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 3,
+            "text": "good😡🔥😳😜😐😢",
+            "rating": 5,
             "platform": "Android"
           }
         ],
@@ -76,7 +76,7 @@
         "rating": 4.49578
       },
       "android": {
-        "rating": 4.59441
+        "rating": 4.5944514
       },
       "sentiment": {
         "score": 0.607,
@@ -137,7 +137,7 @@
         "rating": 2.27141
       },
       "android": {
-        "rating": 3.3193278
+        "rating": 3.3333333
       },
       "sentiment": {
         "score": 0.499,
@@ -260,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79022
+        "rating": 2.79082
       },
       "android": {
-        "rating": 3.5648925
+        "rating": 3.5598674
       },
       "sentiment": {
         "score": 0.51,
@@ -329,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75363
+        "rating": 4.75368
       },
       "android": {
         "rating": 4.2222223
