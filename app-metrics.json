@@ -1,27 +1,27 @@
 {
-  "generated_utc": "2026-10-08T08:10:44.521443+00:00",
+  "generated_utc": "2026-10-09T08:10:40.021865+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52799
+        "rating": 4.52796
       },
       "android": {
-        "rating": 4.425939
+        "rating": 4.425878
       },
       "sentiment": {
-        "score": 0.604,
+        "score": 0.52,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "it's a great 👍",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "good",
+            "text": "Good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "good",
@@ -31,40 +31,40 @@
         ],
         "topNegative": [
           {
-            "text": "During the time of deactivate they did debit the extra charges very worst",
+            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "At the time of subscription they said ad free....but now they have changed rules as per their convenience. The answer provided is more wrong. My plan is annual telugu plan applicable to mobile and TV. I have subscribed today and tried to login but their aha gold page is buffering and the login page is not opening. worst worst app. pathetic customer care. money waste app.",
-            "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "quality is very very bad 😔",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "All are very boring",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "ads",
+            "trend": "worsening"
           },
           {
             "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49666
+        "rating": 4.49887
       },
       "android": {
-        "rating": 4.5947876
+        "rating": 4.596148
       },
       "sentiment": {
-        "score": 0.563,
+        "score": 0.559,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -142,37 +142,32 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26938
+        "rating": 2.26772
       },
       "android": {
-        "rating": 3.3319502
+        "rating": 3.3415637
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.51,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
             "text": "thanks a lot. keep going. y'all the best",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "i liked",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "thank you for my reviews !!!!!!! 🍃🌇🌃⏰🏕️clade team will love astro go app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
@@ -182,11 +177,24 @@
             "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
             "trend": "worsening"
           },
           {
@@ -196,10 +204,6 @@
           {
             "label": "slow",
             "trend": "steady"
-          },
-          {
-            "label": "login",
-            "trend": "steady"
           }
         ]
       }
@@ -207,15 +211,20 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.4436
+        "rating": 4.44381
       },
       "android": {
-        "rating": 3.6961327
+        "rating": 3.700831
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -225,18 +234,13 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Is ok",
-            "rating": 4,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -251,15 +255,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -268,13 +280,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79125
+        "rating": 2.79066
       },
       "android": {
         "rating": 3.5598674
       },
       "sentiment": {
-        "score": 0.51,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -295,37 +307,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -337,13 +349,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7535
+        "rating": 4.75315
       },
       "android": {
-        "rating": 4.218274
+        "rating": 4.2222223
       },
       "sentiment": {
-        "score": 0.629,
+        "score": 0.576,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -352,22 +364,17 @@
             "platform": "Android"
           },
           {
-            "text": "Love this app!!!!",
+            "text": "great",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "great",
+            "text": "Great 👍",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "I don't even use this🤪",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
@@ -377,15 +384,24 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "rating": 2,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
