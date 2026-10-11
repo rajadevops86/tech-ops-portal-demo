@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-10-10T07:54:29.840284+00:00",
+  "generated_utc": "2026-10-11T08:01:26.654773+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52797
+        "rating": 4.52798
       },
       "android": {
-        "rating": 4.4258037
+        "rating": 4.4255815
       },
       "sentiment": {
-        "score": 0.602,
+        "score": 0.607,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "good",
+            "text": "very good 💯",
             "rating": 5,
             "platform": "Android"
           },
@@ -24,7 +24,7 @@
             "platform": "Android"
           },
           {
-            "text": "good😡🔥😳😜😐😢",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -36,7 +36,7 @@
             "platform": "Android"
           },
           {
-            "text": "At the time of subscription they said ad free....but now they have changed rules as per their convenience. The answer provided is more wrong. My plan is annual telugu plan applicable to mobile and TV. I have subscribed today and tried to login but their aha gold page is buffering and the login page is not opening. worst worst app. pathetic customer care. money waste app.",
+            "text": "this app is not installing, i am seeing this bug from past 1 month. fix it soon, morons.",
             "rating": 1,
             "platform": "Android"
           },
@@ -52,19 +52,15 @@
             "trend": "worsening"
           },
           {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
             "label": "ads",
             "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -73,10 +69,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.49986
+        "rating": 4.50223
       },
       "android": {
-        "rating": 4.594553
+        "rating": 4.599814
       },
       "sentiment": {
         "score": 0.608,
@@ -134,13 +130,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26772
+        "rating": 2.26606
       },
       "android": {
-        "rating": 3.3415637
+        "rating": 3.3916667
       },
       "sentiment": {
-        "score": 0.509,
+        "score": 0.507,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -178,16 +174,16 @@
         ],
         "drivers": [
           {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
             "trend": "worsening"
           },
           {
             "label": "update",
             "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "steady"
           },
           {
             "label": "login",
@@ -202,12 +198,17 @@
         "rating": 4.44395
       },
       "android": {
-        "rating": 3.702628
+        "rating": 3.7012448
       },
       "sentiment": {
-        "score": 0.503,
+        "score": 0.499,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
+            "rating": 1,
+            "platform": "iOS"
+          },
           {
             "text": "Very good",
             "rating": 5,
@@ -217,18 +218,13 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "Is ok",
-            "rating": 4,
-            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -243,15 +239,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -260,7 +264,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79066
+        "rating": 2.79104
       },
       "android": {
         "rating": 3.5600379
