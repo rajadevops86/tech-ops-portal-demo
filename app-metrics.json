@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-12T08:17:26.735301+00:00",
+  "generated_utc": "2026-10-13T08:42:49.790008+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52797
+        "rating": 4.52798
       },
       "android": {
-        "rating": 4.4255
+        "rating": 4.4255834
       },
       "sentiment": {
-        "score": 0.532,
+        "score": 0.535,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -60,11 +60,11 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
+            "label": "stream",
+            "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "crash",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50839
+        "rating": 4.50959
       },
       "android": {
-        "rating": 4.604025
+        "rating": 4.607517
       },
       "sentiment": {
-        "score": 0.558,
+        "score": 0.559,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -88,12 +88,12 @@
             "platform": "Android"
           },
           {
-            "text": "great while others think it's laggy when watching TV5 HD it's not.",
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "very nice",
+            "text": "good",
             "rating": 5,
             "platform": "Android"
           }
@@ -142,37 +142,32 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.2644
+        "rating": 2.26632
       },
       "android": {
         "rating": 3.3983402
       },
       "sentiment": {
-        "score": 0.507,
+        "score": 0.509,
         "scoreDelta": 0,
         "topPositive": [
           {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
             "text": "thanks a lot. keep going. y'all the best",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "i liked",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "thank you for my reviews !!!!!!! 🍃🌇🌃⏰🏕️clade team will love astro go app",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
@@ -182,11 +177,16 @@
             "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
-            "label": "slow",
+            "label": "login",
             "trend": "worsening"
           },
           {
@@ -194,12 +194,16 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "crash",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           }
         ]
       }
@@ -210,7 +214,7 @@
         "rating": 4.44395
       },
       "android": {
-        "rating": 3.6957123
+        "rating": 3.7012448
       },
       "sentiment": {
         "score": 0.497,
@@ -279,7 +283,7 @@
         "rating": 2.79104
       },
       "android": {
-        "rating": 3.5593543
+        "rating": 3.5440965
       },
       "sentiment": {
         "score": 0.484,
@@ -345,7 +349,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7533
+        "rating": 4.75325
       },
       "android": {
         "rating": 4.218274
