@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-14T06:53:55.290481+00:00",
+  "generated_utc": "2026-10-15T06:43:39.248889+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52798
+        "rating": 4.52794
       },
       "android": {
-        "rating": 4.425706
+        "rating": 4.4258
       },
       "sentiment": {
-        "score": 0.613,
+        "score": 0.624,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -20,7 +20,7 @@
           },
           {
             "text": "good",
-            "rating": 2,
+            "rating": 5,
             "platform": "Android"
           },
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.50953
+        "rating": 4.51227
       },
       "android": {
-        "rating": 4.6124845
+        "rating": 4.6141977
       },
       "sentiment": {
         "score": 0.612,
@@ -134,37 +134,32 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26535
+        "rating": 2.26206
       },
       "android": {
-        "rating": 3.3900416
+        "rating": 3.3909464
       },
       "sentiment": {
-        "score": 0.518,
+        "score": 0.515,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "good",
             "rating": 3,
             "platform": "Android"
-          },
-          {
-            "text": "thanks a lot. keep going. y'all the best",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "i liked",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
-          {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
-            "rating": 1,
-            "platform": "Android"
-          },
           {
             "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
@@ -174,11 +169,16 @@
             "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
-            "label": "slow",
+            "label": "login",
             "trend": "worsening"
           },
           {
@@ -186,12 +186,16 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "crash",
             "trend": "worsening"
           },
           {
-            "label": "login",
-            "trend": "steady"
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           }
         ]
       }
@@ -199,10 +203,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44409
+        "rating": 4.444
       },
       "android": {
-        "rating": 3.707351
+        "rating": 3.704577
       },
       "sentiment": {
         "score": 0.5,
@@ -266,7 +270,7 @@
         "rating": 3.540213
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.51,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -287,37 +291,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -329,13 +333,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75335
+        "rating": 4.75347
       },
       "android": {
         "rating": 4.2222223
       },
       "sentiment": {
-        "score": 0.619,
+        "score": 0.576,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -356,11 +360,6 @@
         ],
         "topNegative": [
           {
-            "text": "I don't even use this🤪",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -369,15 +368,24 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "rating": 2,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
