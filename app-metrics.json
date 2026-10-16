@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-15T06:43:39.248889+00:00",
+  "generated_utc": "2026-10-16T06:34:05.251024+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52794
       },
       "android": {
-        "rating": 4.4258
+        "rating": 4.4259944
       },
       "sentiment": {
-        "score": 0.624,
+        "score": 0.635,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -20,24 +20,24 @@
           },
           {
             "text": "good",
-            "rating": 5,
+            "rating": 2,
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "good 👍",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "app not opened, might be crashed, unable to login",
+            "text": "Worst app interface ever for a streaming platform. why the hell do you even create such apps when people who pay cannot even download a video? 🤬🤬🤬🤬🤬🤬",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "iam unable to login my account please solve my problem",
-            "rating": 2,
+            "text": "app not opened, might be crashed, unable to login",
+            "rating": 1,
             "platform": "Android"
           },
           {
@@ -48,15 +48,15 @@
         ],
         "drivers": [
           {
-            "label": "login",
-            "trend": "worsening"
+            "label": "ads",
+            "trend": "steady"
           },
           {
             "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51227
+        "rating": 4.51309
       },
       "android": {
-        "rating": 4.6141977
+        "rating": 4.6148443
       },
       "sentiment": {
-        "score": 0.612,
+        "score": 0.614,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -117,11 +117,11 @@
         ],
         "drivers": [
           {
-            "label": "update",
+            "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "update",
             "trend": "steady"
           },
           {
@@ -137,29 +137,34 @@
         "rating": 2.26206
       },
       "android": {
-        "rating": 3.3909464
+        "rating": 3.3666666
       },
       "sentiment": {
-        "score": 0.515,
+        "score": 0.52,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "Very good",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "good",
             "rating": 3,
             "platform": "Android"
+          },
+          {
+            "text": "thanks a lot. keep going. y'all the best",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "i liked",
+            "rating": 5,
+            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
@@ -169,16 +174,11 @@
             "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
-            "rating": 1,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
-            "label": "login",
+            "label": "slow",
             "trend": "worsening"
           },
           {
@@ -186,16 +186,12 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
             "label": "update",
             "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
           }
         ]
       }
@@ -203,7 +199,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.444
+        "rating": 4.44395
       },
       "android": {
         "rating": 3.704577
@@ -270,7 +266,7 @@
         "rating": 3.540213
       },
       "sentiment": {
-        "score": 0.51,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -291,37 +287,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
