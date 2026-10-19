@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-18T06:48:08.182860+00:00",
+  "generated_utc": "2026-10-19T07:06:49.475280+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52796
       },
       "android": {
-        "rating": 4.4260736
+        "rating": 4.425902
       },
       "sentiment": {
-        "score": 0.654,
+        "score": 0.539,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,29 +19,29 @@
             "platform": "Android"
           },
           {
-            "text": "very good 💯",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "good",
+            "text": "Good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
           {
-            "text": "worst app, unable to open the app...keeps on browsing😡",
+            "text": "All are very boring",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "worst",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Worst app interface ever for a streaming platform. why the hell do you even create such apps when people who pay cannot even download a video? 🤬🤬🤬🤬🤬🤬",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "this app is not installing, i am seeing this bug from past 1 month. fix it soon, morons.",
+            "text": "worst app every time shows error",
             "rating": 1,
             "platform": "Android"
           }
@@ -49,11 +49,19 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
@@ -65,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51297
+        "rating": 4.51837
       },
       "android": {
-        "rating": 4.617015
+        "rating": 4.617431
       },
       "sentiment": {
-        "score": 0.612,
+        "score": 0.61,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -80,7 +88,7 @@
             "platform": "Android"
           },
           {
-            "text": "very nice",
+            "text": "very nice apps, just here for pvl.",
             "rating": 5,
             "platform": "Android"
           },
@@ -110,7 +118,7 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "update",
@@ -126,13 +134,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26206
+        "rating": 2.26042
       },
       "android": {
-        "rating": 3.3606558
+        "rating": 3.4149377
       },
       "sentiment": {
-        "score": 0.52,
+        "score": 0.519,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -191,10 +199,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44371
+        "rating": 4.44362
       },
       "android": {
-        "rating": 3.7083333
+        "rating": 3.7087379
       },
       "sentiment": {
         "score": 0.5,
@@ -252,13 +260,13 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79104
+        "rating": 2.79163
       },
       "android": {
         "rating": 3.5391006
       },
       "sentiment": {
-        "score": 0.51,
+        "score": 0.484,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -279,37 +287,37 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -321,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75301
+        "rating": 4.75311
       },
       "android": {
-        "rating": 4.2272725
+        "rating": 4.232323
       },
       "sentiment": {
         "score": 0.619,
