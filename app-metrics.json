@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-19T07:06:49.475280+00:00",
+  "generated_utc": "2026-10-20T06:51:43.908810+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52796
+        "rating": 4.52797
       },
       "android": {
-        "rating": 4.425902
+        "rating": 4.4256134
       },
       "sentiment": {
-        "score": 0.539,
+        "score": 0.592,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -19,21 +19,21 @@
             "platform": "Android"
           },
           {
-            "text": "Very good",
+            "text": "good 💯 good 💯 good 💯",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Good",
-            "rating": 5,
-            "platform": "iOS"
+            "text": "nit good stuff thesedays",
+            "rating": 3,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "All are very boring",
+            "text": "worst experience",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst",
@@ -49,22 +49,14 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
-            "label": "update",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -73,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51837
+        "rating": 4.51922
       },
       "android": {
-        "rating": 4.617431
+        "rating": 4.6353335
       },
       "sentiment": {
         "score": 0.61,
@@ -137,10 +129,10 @@
         "rating": 2.26042
       },
       "android": {
-        "rating": 3.4149377
+        "rating": 3.3950617
       },
       "sentiment": {
-        "score": 0.519,
+        "score": 0.527,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -161,7 +153,7 @@
         ],
         "topNegative": [
           {
-            "text": "the app is so bad, im having a struggle to turh my vokume up, increasing the brughtness, its not responsive at all",
+            "text": "bad",
             "rating": 1,
             "platform": "Android"
           },
@@ -199,7 +191,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44362
+        "rating": 4.44355
       },
       "android": {
         "rating": 3.7087379
@@ -266,7 +258,7 @@
         "rating": 3.5391006
       },
       "sentiment": {
-        "score": 0.484,
+        "score": 0.51,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -287,37 +279,37 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -329,7 +321,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75311
+        "rating": 4.75315
       },
       "android": {
         "rating": 4.232323
