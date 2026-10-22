@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-21T06:47:40.590339+00:00",
+  "generated_utc": "2026-10-22T06:49:18.087990+00:00",
   "apps": [
     {
       "app_name": "Aha",
@@ -9,18 +9,11 @@
         "summary": {
           "raw": {
             "artistViewUrl": "https://apps.apple.com/in/developer/arha-media-and-broadcasting-pvt-ltd/id1488739000?uo=4",
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/21/63/59216391-65ea-6f03-ae0c-6c41ebaa8d00/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/60x60bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/21/63/59216391-65ea-6f03-ae0c-6c41ebaa8d00/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/100x100bb.jpg",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ce/6f/42ce6f58-5d8f-c9f1-65bf-c91520c6940f/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ce/6f/42ce6f58-5d8f-c9f1-65bf-c91520c6940f/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/100x100bb.jpg",
+            "isGameCenterEnabled": false,
             "features": [
               "iosUniversal"
-            ],
-            "advisories": [
-              "Infrequent/Mild Realistic Violence",
-              "Infrequent/Mild Cartoon or Fantasy Violence",
-              "Infrequent/Mild Mature/Suggestive Themes",
-              "Unrestricted Web Access",
-              "Infrequent/Mild Horror/Fear Themes",
-              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References"
             ],
             "supportedDevices": [
               "iPhone5s-iPhone5s",
@@ -154,72 +147,82 @@
               "iPhone18ProMax-iPhone18ProMax",
               "iPhoneDuo-iPhoneDuo"
             ],
+            "advisories": [
+              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
+              "Infrequent/Mild Mature/Suggestive Themes",
+              "Unrestricted Web Access",
+              "Infrequent/Mild Horror/Fear Themes",
+              "Infrequent/Mild Cartoon or Fantasy Violence",
+              "Infrequent/Mild Realistic Violence"
+            ],
             "kind": "software",
             "screenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/13/16/ce131695-e92c-7ba7-6bc0-2b72adb6efe5/1.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/23/f1/0523f10b-6a1a-60c9-bd8f-dd6a02486f31/2.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/87/66/53876640-b378-24aa-aef2-715a4c98bf55/3.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6d/cd/93/6dcd9348-fcc3-e4ae-2015-5e06600bdf40/4.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/2c/bd/c42cbd1a-e0e9-d59c-8010-7b5989fe43c1/5.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/39/9e/c7/399ec79d-8dcf-38e4-5edc-d5729e88f8ed/6.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/b6/89/efb68917-cd3b-ef50-7799-bf6fb272678c/7.jpg/392x696bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/dd/ad/44ddad04-7b3d-c775-b5e5-77253e79d547/8.jpg/392x696bb.jpg"
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/44/67/b14467e1-993a-6364-7fb4-17b54c658c65/1.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a3/2e/04/a32e0445-1505-0ff7-0989-ab4acdae91e6/2.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/29/8b/97298b07-9476-2094-fe06-e05a38307a07/3.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fe/aa/ed/feaaed0d-2a1a-ca62-f05c-0f2cb88c91d6/4.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5f/1a/73/5f1a73cb-eef8-7ddc-1cf3-9b940bd4c77c/5.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/87/bd/d0/87bdd097-e43e-bf5f-f5d5-a1b31c7cac1d/6.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/f5/f4/e4f5f4c0-e4f6-05e4-ace0-b8f0d9b4c2a5/7.jpg/392x696bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/d1/fb/43d1fbf7-1bc8-d281-16fb-fc25d4f22d32/8.jpg/392x696bb.jpg"
             ],
             "ipadScreenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/0f/04/3e0f0487-ca11-d03f-6375-e913ea91166f/1.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bd/7c/2b/bd7c2b97-f0a4-fb9e-d970-0924d30e6c00/2.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/56/d7/0a/56d70a8c-b8d8-12b6-0cc8-0905257c8ed8/3.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0c/f3/c5/0cf3c588-08a4-d942-6f63-6d9ccda446d2/4.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/39/39/a8393938-0471-0002-a877-81d2340e0858/5.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/ff/be/9cffbeae-84dd-5b42-ca87-9bc3c1a7c519/6.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ca/bb/a3/cabba3da-8c83-59b5-9824-5ab2053ec143/7.jpg/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/39/92/92/39929229-5c2a-8b5e-cea7-dfac9e8656f0/8.jpg/360x480bb.jpg"
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c2/7b/81/c27b815a-422c-ac13-7ee5-1a80b15a050f/1.jpg/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/7b/7d/7b7b7d8a-fa79-26b3-5c5d-fa3f28602c2d/2.jpg/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/9b/8b/da9b8b37-4879-e2a0-8cf1-0faa0636712a/4.jpg/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/b2/cf/d3b2cf90-425d-1285-29a4-0b70f6eb6839/5.jpg/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d5/60/51/d5605194-50a2-6e91-7dcb-612c6dc85db8/6.jpg/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/9e/a3/d69ea308-2b1c-182f-4b37-f8205c4f4c7c/7.jpg/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/54/db/38/54db3813-9971-49d4-163f-a7ab801817f1/8.jpg/360x480bb.jpg"
             ],
             "appletvScreenshotUrls": [],
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/21/63/59216391-65ea-6f03-ae0c-6c41ebaa8d00/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.jpg",
-            "isGameCenterEnabled": false,
-            "contentAdvisoryRating": "17+",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/ce/6f/42ce6f58-5d8f-c9f1-65bf-c91520c6940f/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
             "trackCensoredName": "aha - 100% Local Entertainment",
             "trackViewUrl": "https://apps.apple.com/in/app/aha-100-local-entertainment/id1488739001?uo=4",
+            "contentAdvisoryRating": "17+",
             "averageUserRating": 4.52797,
-            "releaseNotes": "Enhancements and fixes.",
+            "releaseNotes": "Bug Fixes and Performance Improvements.",
             "price": 0.0,
-            "artistId": 1488739000,
-            "genres": [
-              "Entertainment"
-            ],
-            "artistName": "Arha Media and Broadcasting Pvt Ltd",
-            "releaseDate": "2019-12-31T08:00:00Z",
             "primaryGenreName": "Entertainment",
             "primaryGenreId": 6016,
-            "genreIds": [
-              "6016"
-            ],
+            "artistId": 1488739000,
+            "artistName": "Arha Media and Broadcasting Pvt Ltd",
             "sellerName": "ARHA MEDIA & BROADCASTING PRIVATE LIMITED",
+            "bundleId": "com.aha.ahaflix",
             "isVppDeviceBasedLicensingEnabled": true,
             "trackId": 1488739001,
             "trackName": "aha - 100% Local Entertainment",
-            "currentVersionReleaseDate": "2026-08-17T05:16:55Z",
-            "version": "3.33",
+            "minimumOsVersion": "15.0",
+            "releaseDate": "2019-12-31T08:00:00Z",
+            "currentVersionReleaseDate": "2026-10-21T17:08:12Z",
+            "version": "4.0",
             "wrapperType": "software",
             "currency": "INR",
-            "description": "Welcome to aha, your platform for powerful Telugu and Tamil stories, now offering even more content to explore.\n\naha consolidates the best of Telugu and Tamil movies and shows into a single OTT app, simplifying content discovery while enriching your viewing experience. Whether you enjoy emotional dramas, popular entertainment, gripping reality shows, or original series, aha helps you find stories that resonate with your language preferences.\n\nThis platform is designed with viewers in mind. Telugu and Tamil storytelling now coexist to expand your access without altering your viewing habits. Your language preferences remain unchanged, giving you full control over what you watch and how you enjoy it.\n\nWith aha, you can:\n•\tWatch Telugu and Tamil movies and original series in one app\n•\tDiscover more popular Telugu & Tamil together entertainment effortlessly\n•\tExperience a unified OTT platform without compromising your language choices\n•\tExplore regional stories across genres and generations in greater depth\n\naha believes that local stories are most impactful when told with care and cultural depth. By integrating Telugu and Tamil worlds, aha broadens the concept of “local,” while remaining proudly rooted in its cultural origins.\n\nThis update emphasizes more stories, more choices, and no compromises. It is an evolution designed to help audiences discover content they might not have encountered before, without sacrificing familiarity or comfort.\n\nFrom the latest movies to beloved classics, from innovative originals to fan-favorite non-fiction formats, aha continues to celebrate the richness of Telugu and Tamil storytelling. Every feature aims to facilitate easier discovery, smoother navigation, and a more enjoyable viewing experience.\n\nIf you want to watch Telugu and Tamil movies, explore Telugu and Tamil non-fiction entertainment, or use a trusted OTT app that prioritizes regional pride, aha is your destination.\n•\tMore stories, No Compromise.\n•\tSame homegrown Soul.\n•\tEntertainment that truly speaks your language.\n\nTerms of use: https://www.aha.video/tc \nPrivacy Policy: https://www.aha.video/privacy-policy",
-            "minimumOsVersion": "12.4",
-            "bundleId": "com.aha.ahaflix",
-            "averageUserRatingForCurrentVersion": 4.52797,
+            "description": "Welcome to aha, your platform for powerful Telugu and Tamil stories, now offering even more content to explore.\n\naha consolidates the best of Telugu and Tamil movies and shows into a single OTT app, simplifying content discovery while enriching your viewing experience. Whether you enjoy emotional dramas, popular entertainment, gripping reality shows, or original series, aha helps you find stories that resonate with your language preferences.\n\nThis platform is designed with viewers in mind. Telugu and Tamil storytelling now coexist to expand your access without altering your viewing habits. Your language preferences remain unchanged, giving you full control over what you watch and how you enjoy it.\n\nWith aha, you can:\n•\tWatch Telugu and Tamil movies and original series in one app\n•\tDiscover more popular Telugu & Tamil together entertainment effortlessly\n•\tExperience a unified OTT platform without compromising your language choices\n•\tExplore regional stories across genres and generations in greater depth\n\naha believes that local stories are most impactful when told with care and cultural depth. By integrating Telugu and Tamil worlds, aha broadens the concept of “local,” while remaining proudly rooted in its cultural origins.\n\nThis update emphasizes more stories, more choices, and no compromises. It is an evolution designed to help audiences discover content they might not have encountered before, without sacrificing familiarity or comfort.\n\nFrom the latest movies to beloved classics, from innovative originals to fan-favorite non-fiction formats, aha continues to celebrate the richness of Telugu and Tamil storytelling. Every feature aims to facilitate easier discovery, smoother navigation, and a more enjoyable viewing experience.\n\nIf you want to watch Telugu and Tamil movies, explore Telugu and Tamil non-fiction entertainment, or use a trusted OTT app that prioritizes regional pride, aha is your destination.\n•\tMore stories, No Compromise.\n•\tSame homegrown Soul.\n•\tEntertainment that truly speaks your language.\n\nTerms of use: https://www.aha.video/tc \nPrivacy Policy: https://www.aha.video/privacy-policy \n\nTerms of Use (EULA):\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
             "languageCodesISO2A": [
-              "EN"
+              "EN",
+              "KN",
+              "ML",
+              "TA",
+              "TE"
             ],
-            "fileSizeBytes": "90801152",
+            "fileSizeBytes": "87165952",
             "formattedPrice": "Free",
-            "userRatingCountForCurrentVersion": 183153,
+            "userRatingCountForCurrentVersion": 183163,
             "trackContentRating": "17+",
-            "userRatingCount": 183153
+            "averageUserRatingForCurrentVersion": 4.52797,
+            "genreIds": [
+              "6016"
+            ],
+            "genres": [
+              "Entertainment"
+            ],
+            "userRatingCount": 183163
           },
           "average_rating": 4.52797,
-          "rating_count": 183153,
-          "version": "3.33",
-          "current_version_release_date": "2026-08-17T05:16:55Z",
+          "rating_count": 183163,
+          "version": "4.0",
+          "current_version_release_date": "2026-10-21T17:08:12Z",
           "track_name": "aha - 100% Local Entertainment",
           "bundle_id": "com.aha.ahaflix"
         },
@@ -236,16 +239,16 @@
             "summary": "Watch Telugu and Tamil World Digital Premieres, Web Series and Exclusive Movies.",
             "installs": "10,000,000+",
             "minInstalls": 10000000,
-            "realInstalls": 39650416,
-            "score": 4.4257793,
-            "ratings": 1351878,
-            "reviews": 140294,
+            "realInstalls": 39679601,
+            "score": 4.4257684,
+            "ratings": 1351973,
+            "reviews": 140300,
             "histogram": [
-              83475,
-              29629,
-              75450,
-              202582,
-              960737
+              83486,
+              29665,
+              75437,
+              202524,
+              960856
             ],
             "price": 0,
             "free": true,
@@ -273,30 +276,30 @@
             "icon": "https://play-lh.googleusercontent.com/IkWgTZbx1Bmj1DN8YyWeF5GMMh7Uvx3YGf4I_7XCJBG5qgu1wcEGWSIhwp8JJ_qW5qOlURtzcy0KsVM5DklKtg",
             "headerImage": "https://play-lh.googleusercontent.com/vtUJp-5-79k7LQVKXDfOD4ns5HaLdXG_t1PO2v6wH4UdMDvaXeJri_ASoSR6vp5xj2wJy_VunP-djGW5fS-Iiw",
             "screenshots": [
-              "https://play-lh.googleusercontent.com/c2WkIorI9j4BF_O7ntK3H3k4uTWWPIoUAtPEl1CutYAprFt7UdUWurVhQfnu-ZZtcIRk8wAzvb6g49mtZAgdew",
-              "https://play-lh.googleusercontent.com/Yreb3rBDgXlQKUJjGG0PfdQj99y-JYN82SobkPUBE16u7BPMgueFA-yYIUcXCPF0oO2as2x2x2RZETa6geu_Fpo",
-              "https://play-lh.googleusercontent.com/_gsHDmyEUXXz2TITLYODSDyTNINMvdNgZPhRwX4D038Vtlql0s7N0caQbfWCLX7vfF-vbBYbVeS3kH0CA4GMi3Q",
-              "https://play-lh.googleusercontent.com/IKdYGaYQba4vX62QEqqfKgGYfEOTPCFnQySieIIDvY6WS05H9VCSckk1iDCnahfzChv1ThKr3O3kVYDBocTty4U",
-              "https://play-lh.googleusercontent.com/67UQXjcgrGQ2b_Fq8ELl7jVpTo_ML8PiXhEvRJ0NHIHjlfLIDdswyebiB2EPaeHUlw5P4XED92BN3Qx5xYqtZA",
-              "https://play-lh.googleusercontent.com/LcC5tsql9KVJmeIZYukWR-fNPUKAEs1JjFG8CZnDjes0RG4OdjsX_rtARUypoTDGJyYSf2L98VdXELna7tZjOg",
-              "https://play-lh.googleusercontent.com/akTzz2t6OCXyMzEPmOO6oh5Yz_JQlgjOV_x-ecLzFm16KiU7sa0fXyjCpDjs62Dz-yCApLdVMW_a3MKqv0jy",
-              "https://play-lh.googleusercontent.com/KYENMhbDvddPTMkokkilwXQMmsbtkMLFPmL--IE_HDgRk_SLE-2_n2tu76rQazHawKjTCGNjXXhvNNRYfKnY",
-              "https://play-lh.googleusercontent.com/jy4KmlrmZoWoAdccColHHy22Mz5xylaHVUGX7jto1FhGj1UfHvPkheXIJB-izEEi_IwV332nW0WllzqtkPiq",
-              "https://play-lh.googleusercontent.com/I67CGRfL03-45M2Q8Mqg4ETjhHoYf1ePyuUbtbBL5WRmV1hOZr_C9WHffUj2WCIkw2wzegmKXQGrvcvSUPGU",
-              "https://play-lh.googleusercontent.com/hzWISlSJfHg2Shi3dw5Wg6n1g0k7kNrnEGZQ730kGLKAai6prjLLj5DnrFxmx1z72uxtin2SgxZu8P-88dDghvs",
-              "https://play-lh.googleusercontent.com/oWN5J23G2PbJjGWLTjDaWwbNO7h__xImwWHbxrZg-rZyENgIopBSu3XY24zO6qIvrcZUk6gqpGVZ96XSg2XBfA",
-              "https://play-lh.googleusercontent.com/ufsjSZwKfdEm-OUvMzTqv_lJ6o2tAh-lDW1nuC5MP7Ts2Ym9-QsG4xMgbvert4aw6uvkIXr0OrOLRWReaJE5",
-              "https://play-lh.googleusercontent.com/CZB9kM_T21LE-XjQDiMFkGt0jJKiC-w7hKPm5fFkmO9vMqA-0HbnNqll_rvQjEft7-47-79fXiSuvBim0uT5",
-              "https://play-lh.googleusercontent.com/S5nTDhSKea7_RrQaniPrcdESUUETwclIPHNmoB15XevkQMRHgjtP3F2QndLBlMpE_ySXkD10qRRyNQwhu5ImIg",
-              "https://play-lh.googleusercontent.com/yVJjMFmTPS2VOdgQsmXK-mYf7zjFW6qKG9acU5jQ1iO9_f-SLEi-LF_va7XXCIDE0usqf36Tq2enWhfsHzlO",
-              "https://play-lh.googleusercontent.com/Ak0NUuC2oeh5B31G12RH1JgzDtFkoFaKloErv0Y2NDmWdfBAWDS1awHPZWePqT4aDmmk52HCQYrz5mAZvMeTxA",
-              "https://play-lh.googleusercontent.com/FdDMIStgGp8nCWTkl_O4enH-h14tr8x-zhuLoLv8WOgm-KPNeAiy58bvmOlTdAl37x_zg8xbqUy0hUkkWp7Pjg",
-              "https://play-lh.googleusercontent.com/vVLcJlvEtZuaLybYCyUX4WA-_JXM_zdSgjsJ3UXvDZ-JQOHxJi3-sR8Pbnm5skCUBLZc1O3p1iBo8ETJlqIbT5I",
-              "https://play-lh.googleusercontent.com/LJHvy6OyYGtdNZyPa5ftRd8Dhr5CsDMeYRPeeR_-51S5y8rVGvvzwTG66SbD_iAXJnwTtN4SBs1KQGFTBwWsmg",
-              "https://play-lh.googleusercontent.com/M1EJNfaV-PmcfkczvFPy79bKmMxskp9C8w80OKd3TmkjsbCkw7WGpk623vjmK-vnF8lQeuzCkMAKy_P4Lg05",
-              "https://play-lh.googleusercontent.com/gxfrgTNVOoOTkAhmehasC2Bu6mDJ2FXdfxvHmUxDqHGSnZx2BwCTa93y4O_XMFJ39bbbsqxwAVQRxfAWqXFe",
-              "https://play-lh.googleusercontent.com/Zjt_peZiKhY3knppjR4SzmAwbsZfgDjfRE5kKiNjYAQsuCDE25bCVzOpjMI-LXZRDoRqMjeWKXNVj1a-pNBj3Q",
-              "https://play-lh.googleusercontent.com/U8Z8EsKrpByxLfr6lG-4EYDqKy8ldzNmWWOe4eiurE298oDO9XhgCiY9jpycILOs4_mxfZETeS4pIoEbDdqe1w",
+              "https://play-lh.googleusercontent.com/rU5qyZ0I37S3aZrg0dZRKT3_EnZrqcZLDudnZKEIxREb2peesP1h8B3RDbhFOwj6YiRr5qG-jwXFdXY3sC0S_A",
+              "https://play-lh.googleusercontent.com/I59cwqaV7CCeEfdgYNT8CWHeRneVORNQuwMcerkGnlqv3wBYsqBrV0z_px_nF72mdyF5ejesP_5rkAC7BpsU",
+              "https://play-lh.googleusercontent.com/Uhq-ZVDo7qIrgVoYJHRkh2K1lNysLzMYf92HzlypN6S50WRfUUIzeVJ93Oi-_HZ61y3KghYJh4TjGzbcXK2-Efc",
+              "https://play-lh.googleusercontent.com/Zwvnp1dkD3EJSz99kGSu548rpmCmK19hP6uIV78Vl7Jyss-Fmrg47b0YzWhFS1Cw1yXCeKkxv9yX9PhYAIipsw",
+              "https://play-lh.googleusercontent.com/RsXekEF3bV_zI80RARswP1UU7e2xunPZ7j-YnQWvlWup5PrWh2e78NzkGML-g8Z6ZjCvwpL866_IokmIbcuT",
+              "https://play-lh.googleusercontent.com/FKWxFkI3HeNhoM5iVMPFrA2rffkHaSa0WsnSmsDQAgPVP_WSpmgpzsLwfNBj0nCFKF3iuHtxdGXZpDg9qDRS8kg",
+              "https://play-lh.googleusercontent.com/NEHaN9rvTwDUCyEXw8rKeepnSbtluCtNVqoarWHnBaSsmgnBuJs9Jb9hqUQvScASokBnnVdcGqcOPKOHcr4F-OM",
+              "https://play-lh.googleusercontent.com/FU0PaeJR7mQJilqRDr83Q-86gvQvVkgTp2FSR2ZYwCuSB2E77qIBu3YKFCG-VoTHCtt8CLSMRonXdcA4jVirZAE",
+              "https://play-lh.googleusercontent.com/xgC_rc-mtaviPNsDJKzTR7eqM-KV6OP9cp0WTXzPs1ok9g0ByTOdk6uQhmVCxy9M6UyOYfWF2w50GWHxtlOcDcU",
+              "https://play-lh.googleusercontent.com/sSU-FBQQtM4Nz9RxEUUp7JG6julVBlWkkrEVJ9AU_5G5sRac8rkW__1aR4Dgd-tYYH3KBx197dj2zYgaI-s0",
+              "https://play-lh.googleusercontent.com/8DLI0UQQzU-OVGt1-tS2Lr74LWc7orv7BvXiS6HDHQHh-GQ7bDncxRWoWfcipzLTvqOJ1sw1TI5MZ1xTlxcn",
+              "https://play-lh.googleusercontent.com/2JCr3UZcVqpv5ncpNM3eLr5713vGhmFudSODdXRU7un-fY6sGKEp4xPLcDk2Tzf5TXAKRClbkGtk5-JEjJmlxX4",
+              "https://play-lh.googleusercontent.com/ag7JPe5vDHaOzyhqMDJMnR7WUaMM2Oug4RraJqZxS8AHAdKauLEQntK7PFI5GzhcyI1G8AttrZ0w9dt1Tpcu",
+              "https://play-lh.googleusercontent.com/eMAo1irSiZet8ljtJMlDcOYLXIadbzeI-ANL_c6XrZz5vpPIkFjbxbupQ7UnMdgT0n5LXnjAyrpxqTGelhmx6g",
+              "https://play-lh.googleusercontent.com/FGfq0p4D9cBWE-tuJb3QFGCEnprCRzyxDeQAfBxl_CKtx7vn2KRb9kfnVTzo8mKvNIAxVrbcE_Xhxz7BNn5QhC0",
+              "https://play-lh.googleusercontent.com/FX8etmqtAFhEfbJNW5zoLFCVc6kgEDycluiMtMKTKnzuSbsGznWLPL6q1FkmToxXpcZmqOgOZ-ZD80kfKNP7",
+              "https://play-lh.googleusercontent.com/xgC_rc-mtaviPNsDJKzTR7eqM-KV6OP9cp0WTXzPs1ok9g0ByTOdk6uQhmVCxy9M6UyOYfWF2w50GWHxtlOcDcU",
+              "https://play-lh.googleusercontent.com/sSU-FBQQtM4Nz9RxEUUp7JG6julVBlWkkrEVJ9AU_5G5sRac8rkW__1aR4Dgd-tYYH3KBx197dj2zYgaI-s0",
+              "https://play-lh.googleusercontent.com/8DLI0UQQzU-OVGt1-tS2Lr74LWc7orv7BvXiS6HDHQHh-GQ7bDncxRWoWfcipzLTvqOJ1sw1TI5MZ1xTlxcn",
+              "https://play-lh.googleusercontent.com/2JCr3UZcVqpv5ncpNM3eLr5713vGhmFudSODdXRU7un-fY6sGKEp4xPLcDk2Tzf5TXAKRClbkGtk5-JEjJmlxX4",
+              "https://play-lh.googleusercontent.com/ag7JPe5vDHaOzyhqMDJMnR7WUaMM2Oug4RraJqZxS8AHAdKauLEQntK7PFI5GzhcyI1G8AttrZ0w9dt1Tpcu",
+              "https://play-lh.googleusercontent.com/eMAo1irSiZet8ljtJMlDcOYLXIadbzeI-ANL_c6XrZz5vpPIkFjbxbupQ7UnMdgT0n5LXnjAyrpxqTGelhmx6g",
+              "https://play-lh.googleusercontent.com/FGfq0p4D9cBWE-tuJb3QFGCEnprCRzyxDeQAfBxl_CKtx7vn2KRb9kfnVTzo8mKvNIAxVrbcE_Xhxz7BNn5QhC0",
+              "https://play-lh.googleusercontent.com/FX8etmqtAFhEfbJNW5zoLFCVc6kgEDycluiMtMKTKnzuSbsGznWLPL6q1FkmToxXpcZmqOgOZ-ZD80kfKNP7",
               "https://play-lh.googleusercontent.com/79l6-_6tnZTdw0Vu5uST8REc6UhWbsnjFcFelzAs7-UarmEHUQCNTK-rih3DUxlz701Ke3vTFqD543hmSZz7Zg",
               "https://play-lh.googleusercontent.com/wAgtK5aWK1FuUeDv55DsAZNG7_ETriT0eoQHFYbd-L8i3q6P8Tr3MRye6BvVsgzjqbIP28APcYvZDJwfJNYK",
               "https://play-lh.googleusercontent.com/DB6kYyJL48tOHTIDIFJNX6flSaJc9WDmSPrEPFza0520UbEHpprJMGb3KW8wP2A6_0SZAHs1uGnp25zx1urtkJY",
@@ -305,28 +308,73 @@
               "https://play-lh.googleusercontent.com/GuRtMwZptpxalIaev5aHSe8P_LzTiv2Akgyta0p1wGmNwLK-eR8hQHibLdJruEopN6oTFi7WTgj4x_QzcBd8KVs",
               "https://play-lh.googleusercontent.com/pEbRMHZ1jSp__WEtdxI8INdzBbRxk_wZE92Y3F6MUmFiAglbEpg8cRaUlLFOdckzlYn03331Hidzi0ksmpWc2w"
             ],
-            "video": "https://www.youtube.com/watch?v=h7rwT0dgwng",
+            "video": "https://www.youtube.com/watch?v=D54YfSCIPbI",
             "videoImage": "https://play-lh.googleusercontent.com/vtUJp-5-79k7LQVKXDfOD4ns5HaLdXG_t1PO2v6wH4UdMDvaXeJri_ASoSR6vp5xj2wJy_VunP-djGW5fS-Iiw",
             "contentRating": "Rated for 12+",
             "contentRatingDescription": "Parental Guidance Recommended",
             "adSupported": true,
             "containsAds": true,
             "released": "Dec 21, 2019",
-            "lastUpdatedOn": "Aug 7, 2026",
-            "updated": 1786085223,
+            "lastUpdatedOn": "Oct 21, 2026",
+            "updated": 1792621697,
             "version": "Varies with device",
             "comments": [],
             "appId": "ahaflix.tv",
             "url": "https://play.google.com/store/apps/details?id=ahaflix.tv&hl=en&gl=in"
           },
-          "average_rating": 4.4257793,
-          "rating_count": 1351878,
+          "average_rating": 4.4257684,
+          "rating_count": 1351973,
           "version": "Varies with device",
           "installs": "10,000,000+",
           "title": "aha - 100% Local Entertainment",
           "developer": "Arha Media & Broadcasting Private Limited"
         },
         "reviews": [
+          {
+            "author": "Jameela KV",
+            "title": "4.0.195",
+            "text": "ni Dr BH ni u bhi us hu Dr se c no se Dr hy ki pl,,",
+            "rating": 2,
+            "updated": "2026-10-20T16:25:33",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Nani Anil",
+            "title": "4.0.195",
+            "text": "adds problem",
+            "rating": 4,
+            "updated": "2026-10-20T12:09:05",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Kartik Gorle",
+            "title": "4.0.195",
+            "text": "jjddjdhhshes జషజు్షడ్స్దస్కస్ ఝాహషషదదథ్్థఙ్గడ్జిగషయూయూ్వ్వ్య్యేయయ్యియేయేయేయేయేయేయ్యియేయేయేయేయేయేయేయ్యియేయేయేయేయేయ్యియేయేయేసష్జఫస్వైజగ్్సడ్డ్జ్సకేజీహషష్షషథ్దదేహదచన్నజన్నజబీక్సబ్బక్సబక్సబ్బక్సహక్సహదదక్సహథ్ద్ధుదగ్గగ్గ్థఙ్గదగ్గ్థఙ్గ్థఙ్గదదథ్దదదదదదదదదదదదహ్హ్హ్హ్హ్హ్థ్దదథ్దదద్ధుహదదథ్దదదదదదదథ్ద్ధుథ్దద్ధుహదదదదథ్దదదదదదదదదథ్ద్ధుహదదథ్దదదదదదదదియ్య్యిస్కజదిజిదిజేజ్జ్డజూజీఇఇఇఇక్కక్కడ్జడూడ్జథ్దదదథ్దదహ్హ్హదదహ్హ్హదదదదదదథ్దదదథ్థ్దదదదథ్దడూయూదు్య్హ్హ్హ్హథ్దదేడైడైడు",
+            "rating": 5,
+            "updated": "2026-10-20T11:55:19",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Koppadi Kanaka maha Lakshmi",
+            "title": "4.0.195",
+            "text": "గుడ్ అప్",
+            "rating": 2,
+            "updated": "2026-10-20T11:07:25",
+            "platform": "Android",
+            "store": "google_play"
+          },
+          {
+            "author": "Vasupalli Ganesh",
+            "title": "4.0.195",
+            "text": "nice",
+            "rating": 5,
+            "updated": "2026-10-20T09:49:31",
+            "platform": "Android",
+            "store": "google_play"
+          },
           {
             "author": "Kashi Marati",
             "title": "5.0.52",
@@ -731,51 +779,6 @@
             "updated": "2026-10-14T05:59:16",
             "platform": "Android",
             "store": "google_play"
-          },
-          {
-            "author": "Juel Roito",
-            "title": "4.0.195",
-            "text": "nice",
-            "rating": 4,
-            "updated": "2026-10-14T05:55:37",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "merugu vardhangoud",
-            "title": "5.0.71",
-            "text": "కొత్త సినిమాలు త్వరగా రావడం లేదు త్వరగా వచ్చే ప్రయత్నం చేయండి",
-            "rating": 5,
-            "updated": "2026-10-14T01:34:26",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Sree Harshini",
-            "title": "4.0.192",
-            "text": "worst app, unable to open the app...keeps on browsing😡",
-            "rating": 1,
-            "updated": "2026-10-13T18:03:39",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Kedar Dalai",
-            "title": "4.0.195",
-            "text": "good",
-            "rating": 5,
-            "updated": "2026-10-13T14:42:30",
-            "platform": "Android",
-            "store": "google_play"
-          },
-          {
-            "author": "Venkatesh Venki",
-            "title": "5.0.71",
-            "text": "❤️❤️",
-            "rating": 5,
-            "updated": "2026-10-13T10:25:25",
-            "platform": "Android",
-            "store": "google_play"
           }
         ]
       }
@@ -787,28 +790,10 @@
         "country": "ph",
         "summary": {
           "raw": {
-            "artistViewUrl": "https://apps.apple.com/ph/developer/cignal-tv-inc/id675465914?uo=4",
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6b/56/ec6b56d6-1ef8-3ea1-613c-e5ff5b134fa5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/60x60bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6b/56/ec6b56d6-1ef8-3ea1-613c-e5ff5b134fa5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/100x100bb.jpg",
             "isGameCenterEnabled": false,
-            "screenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/31/53/ab31538a-8744-4d60-ca9f-8f47854b83a5/5.5_inch-2.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/a5/0d/dea50d1e-763e-69fc-3518-e55630aeded0/5.5_inch-3.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/0a/df/9a0adf0d-c610-904b-533b-76e1d9929968/5.5_inch-4.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0c/bc/0a/0cbc0ab3-28fe-a7d3-ca52-7b441ef1d5f6/5.5_inch-5.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/d8/25/b0d8257b-017f-4e33-a1bd-d609f0e879da/5.5_inch-6.png/392x696bb.png",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/1d/9e/931d9e38-c00b-82c0-9d36-a21c8cee27eb/5.5_inch-7.png/392x696bb.png"
+            "features": [
+              "iosUniversal"
             ],
-            "ipadScreenshotUrls": [
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/72/04/077204f9-8a4c-0ce5-dadc-235eb240a0af/13Inch-1.png/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/e6/8b/53e68bf8-07e7-a5be-16a7-cc8387de8b61/13Inch-2.png/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/6f/c7/556fc7dd-d8e5-93a3-ba45-148e0a631b34/13Inch-3.png/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/5f/4a/3a5f4af9-dbe4-c281-0a26-fe51ea85a9cf/13Inch-4.png/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/87/d2/c087d21c-0d9d-90b3-bccc-7d4a597ce845/13Inch-5.png/360x480bb.jpg",
-              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/50/bc/0650bcf3-32f7-8b6d-3de2-b2c0ca561400/13Inch-6.png/360x480bb.jpg"
-            ],
-            "appletvScreenshotUrls": [],
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6b/56/ec6b56d6-1ef8-3ea1-613c-e5ff5b134fa5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
             "supportedDevices": [
               "iPhone5s-iPhone5s",
               "iPadAir-iPadAir",
@@ -952,52 +937,70 @@
               "Infrequent/Mild Profanity or Crude Humour"
             ],
             "kind": "software",
-            "features": [
-              "iosUniversal"
+            "artistViewUrl": "https://apps.apple.com/ph/developer/cignal-tv-inc/id675465914?uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6b/56/ec6b56d6-1ef8-3ea1-613c-e5ff5b134fa5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6b/56/ec6b56d6-1ef8-3ea1-613c-e5ff5b134fa5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/100x100bb.jpg",
+            "screenshotUrls": [
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/31/53/ab31538a-8744-4d60-ca9f-8f47854b83a5/5.5_inch-2.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/a5/0d/dea50d1e-763e-69fc-3518-e55630aeded0/5.5_inch-3.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/0a/df/9a0adf0d-c610-904b-533b-76e1d9929968/5.5_inch-4.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0c/bc/0a/0cbc0ab3-28fe-a7d3-ca52-7b441ef1d5f6/5.5_inch-5.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/d8/25/b0d8257b-017f-4e33-a1bd-d609f0e879da/5.5_inch-6.png/392x696bb.png",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/1d/9e/931d9e38-c00b-82c0-9d36-a21c8cee27eb/5.5_inch-7.png/392x696bb.png"
             ],
-            "trackCensoredName": "Cignal Play",
-            "trackViewUrl": "https://apps.apple.com/ph/app/cignal-play/id1673495447?uo=4",
-            "contentAdvisoryRating": "12+",
-            "minimumOsVersion": "14.0",
-            "averageUserRating": 4.51922,
-            "currentVersionReleaseDate": "2026-09-30T06:17:36Z",
-            "languageCodesISO2A": [
-              "EN"
+            "ipadScreenshotUrls": [
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/72/04/077204f9-8a4c-0ce5-dadc-235eb240a0af/13Inch-1.png/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/e6/8b/53e68bf8-07e7-a5be-16a7-cc8387de8b61/13Inch-2.png/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/6f/c7/556fc7dd-d8e5-93a3-ba45-148e0a631b34/13Inch-3.png/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/5f/4a/3a5f4af9-dbe4-c281-0a26-fe51ea85a9cf/13Inch-4.png/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/87/d2/c087d21c-0d9d-90b3-bccc-7d4a597ce845/13Inch-5.png/360x480bb.jpg",
+              "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/50/bc/0650bcf3-32f7-8b6d-3de2-b2c0ca561400/13Inch-6.png/360x480bb.jpg"
             ],
-            "fileSizeBytes": "171447296",
-            "formattedPrice": "Free",
-            "userRatingCountForCurrentVersion": 7829,
-            "trackContentRating": "12+",
-            "sellerUrl": "http://www.cignal.tv",
-            "trackId": 1673495447,
-            "trackName": "Cignal Play",
-            "price": 0.0,
-            "sellerName": "Cignal TV, Inc.",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
+            "appletvScreenshotUrls": [],
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6b/56/ec6b56d6-1ef8-3ea1-613c-e5ff5b134fa5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
             "releaseNotes": "- Now with live & on-demand sports, live TV channels, local & international news, movies & series, and original microdramas.",
-            "averageUserRatingForCurrentVersion": 4.51922,
-            "releaseDate": "2023-06-22T07:00:00Z",
-            "version": "2.1.26.155",
-            "wrapperType": "software",
-            "currency": "PHP",
-            "description": "Cignal Play is the home of live sports, news, and entertainment in the Philippines—bringing live games, breaking news, live TV channels, movies, series, and exclusive content together in one powerful streaming experience.\n\nWatch the biggest sports leagues live, stay informed with local and international news, and enjoy a wide selection of live TV channels, blockbuster movies, binge-worthy series, and on-demand entertainment from Cignal.\n\nIt's your all-in-one streaming app that you can access wherever, whenever.\n\nKEY FEATURES:\n\n• LIVE & ON-DEMAND SPORTS THAT FILIPINOS LOVE – Stream live games, and sporting events from top local and international leagues such as PBA, UAAP, NCAA, PVL, NBA, FIBA, and more.\n\n• LOCAL & INTERNATIONAL NEWS – Stay up to date with breaking news, current affairs, and trusted coverage from leading local and global news networks.\n\n• LIVE TV CHANNELS – Access a wide range of live TV channels featuring news, movies, kids' shows, lifestyle, documentaries, and more.\n\n• ORIGINAL MICRODRAMAS - Discover short-form Filipino microdrama series, created for quick, on-the-go viewing.\n\n• MOVIES & SERIES ON DEMAND – Watch award-winning films, trending series, and exclusive content whenever you want.\n\n• ENHANCED SPORTS VIEWING EXPERIENCE – Enjoy extended pre-game and post-game coverage, interact with fellow fans as the games happen, and access exclusive sports shows and analysis.\n\nDownload Cignal Play and enjoy the best of sports, news, and entertainment—all in one place.\n\n\nTerms of Use: https://cignalplay.com/terms-and-conditions\nData Privacy:  https://cignalplay.com/data-privacy",
-            "genreIds": [
-              "6016",
-              "6004"
-            ],
             "artistId": 675465914,
             "artistName": "Cignal TV, Inc.",
             "genres": [
               "Entertainment",
               "Sports"
             ],
+            "price": 0.0,
             "bundleId": "tv.pilipinaslive.app",
-            "userRatingCount": 7829
+            "releaseDate": "2023-06-22T07:00:00Z",
+            "minimumOsVersion": "14.0",
+            "trackId": 1673495447,
+            "trackName": "Cignal Play",
+            "genreIds": [
+              "6016",
+              "6004"
+            ],
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "sellerName": "Cignal TV, Inc.",
+            "isVppDeviceBasedLicensingEnabled": true,
+            "currentVersionReleaseDate": "2026-09-30T06:17:36Z",
+            "version": "2.1.26.155",
+            "wrapperType": "software",
+            "currency": "PHP",
+            "description": "Cignal Play is the home of live sports, news, and entertainment in the Philippines—bringing live games, breaking news, live TV channels, movies, series, and exclusive content together in one powerful streaming experience.\n\nWatch the biggest sports leagues live, stay informed with local and international news, and enjoy a wide selection of live TV channels, blockbuster movies, binge-worthy series, and on-demand entertainment from Cignal.\n\nIt's your all-in-one streaming app that you can access wherever, whenever.\n\nKEY FEATURES:\n\n• LIVE & ON-DEMAND SPORTS THAT FILIPINOS LOVE – Stream live games, and sporting events from top local and international leagues such as PBA, UAAP, NCAA, PVL, NBA, FIBA, and more.\n\n• LOCAL & INTERNATIONAL NEWS – Stay up to date with breaking news, current affairs, and trusted coverage from leading local and global news networks.\n\n• LIVE TV CHANNELS – Access a wide range of live TV channels featuring news, movies, kids' shows, lifestyle, documentaries, and more.\n\n• ORIGINAL MICRODRAMAS - Discover short-form Filipino microdrama series, created for quick, on-the-go viewing.\n\n• MOVIES & SERIES ON DEMAND – Watch award-winning films, trending series, and exclusive content whenever you want.\n\n• ENHANCED SPORTS VIEWING EXPERIENCE – Enjoy extended pre-game and post-game coverage, interact with fellow fans as the games happen, and access exclusive sports shows and analysis.\n\nDownload Cignal Play and enjoy the best of sports, news, and entertainment—all in one place.\n\n\nTerms of Use: https://cignalplay.com/terms-and-conditions\nData Privacy:  https://cignalplay.com/data-privacy",
+            "contentAdvisoryRating": "12+",
+            "averageUserRating": 4.51969,
+            "trackCensoredName": "Cignal Play",
+            "trackViewUrl": "https://apps.apple.com/ph/app/cignal-play/id1673495447?uo=4",
+            "averageUserRatingForCurrentVersion": 4.51969,
+            "sellerUrl": "http://www.cignal.tv",
+            "languageCodesISO2A": [
+              "EN"
+            ],
+            "fileSizeBytes": "171447296",
+            "formattedPrice": "Free",
+            "userRatingCountForCurrentVersion": 7899,
+            "trackContentRating": "12+",
+            "userRatingCount": 7899
           },
-          "average_rating": 4.51922,
-          "rating_count": 7829,
+          "average_rating": 4.51969,
+          "rating_count": 7899,
           "version": "2.1.26.155",
           "current_version_release_date": "2026-09-30T06:17:36Z",
           "track_name": "Cignal Play",
@@ -1017,14 +1020,14 @@
             "installs": "1,000,000+",
             "minInstalls": 1000000,
             "realInstalls": 1278159,
-            "score": 4.634326,
-            "ratings": 35129,
-            "reviews": 1399,
+            "score": 4.63105,
+            "ratings": 35157,
+            "reviews": 1401,
             "histogram": [
-              1649,
-              388,
-              1099,
-              2878,
+              1668,
+              395,
+              1123,
+              2857,
               29109
             ],
             "price": 0,
@@ -1092,14 +1095,23 @@
             "appId": "tv.pilipinalive.app",
             "url": "https://play.google.com/store/apps/details?id=tv.pilipinalive.app&hl=en&gl=ph"
           },
-          "average_rating": 4.634326,
-          "rating_count": 35129,
+          "average_rating": 4.63105,
+          "rating_count": 35157,
           "version": "Varies with device",
           "installs": "1,000,000+",
           "title": "Cignal Play",
           "developer": "Cignal TV Inc"
         },
         "reviews": [
+          {
+            "author": "Moting Miao",
+            "title": "2.0.48",
+            "text": "quality videos",
+            "rating": 5,
+            "updated": "2026-10-21T06:08:59",
+            "platform": "Android",
+            "store": "google_play"
+          },
           {
             "author": "Ramon Manuel Miranda",
             "title": "2.0.48",
@@ -1540,15 +1552,6 @@
             "updated": "2026-09-08T12:15:30",
             "platform": "Android",
             "store": "google_play"
-          },
-          {
-            "author": "Amelita Racoma",
-            "title": "1.0.52",
-            "text": "i was charged 2x this month.and did not appear on my tv set",
-            "rating": 5,
-            "updated": "2026-09-08T08:17:36",
-            "platform": "Android",
-            "store": "google_play"
           }
         ]
       }
@@ -1573,6 +1576,9 @@
             ],
             "appletvScreenshotUrls": [],
             "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d2/1f/71/d21f7139-145c-90ba-7f61-6b8dcf771c4c/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+            "features": [
+              "iosUniversal"
+            ],
             "supportedDevices": [
               "iPhone5s-iPhone5s",
               "iPadAir-iPadAir",
@@ -1716,9 +1722,7 @@
             "artistViewUrl": "https://apps.apple.com/my/developer/telekom-malaysia-berhad/id627801664?uo=4",
             "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d2/1f/71/d21f7139-145c-90ba-7f61-6b8dcf771c4c/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
             "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d2/1f/71/d21f7139-145c-90ba-7f61-6b8dcf771c4c/AppIcon-Prod-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "features": [
-              "iosUniversal"
-            ],
+            "averageUserRatingForCurrentVersion": 2.26042,
             "languageCodesISO2A": [
               "EN"
             ],
@@ -1726,19 +1730,10 @@
             "formattedPrice": "Free",
             "userRatingCountForCurrentVersion": 768,
             "trackContentRating": "12+",
-            "minimumOsVersion": "15.1",
-            "averageUserRatingForCurrentVersion": 2.26042,
             "artistId": 627801664,
             "artistName": "Telekom Malaysia Berhad",
-            "genres": [
-              "Entertainment",
-              "Lifestyle"
-            ],
-            "price": 0.0,
             "releaseDate": "2025-07-02T07:00:00Z",
-            "trackId": 6739202371,
-            "trackName": "Unifi TV 2.0",
-            "releaseNotes": "Improvements and Bug fixes.",
+            "minimumOsVersion": "15.1",
             "genreIds": [
               "6016",
               "6012"
@@ -1748,6 +1743,7 @@
             "sellerName": "Telekom Malaysia Berhad",
             "isVppDeviceBasedLicensingEnabled": true,
             "currentVersionReleaseDate": "2026-08-25T16:00:52Z",
+            "releaseNotes": "Improvements and Bug fixes.",
             "version": "1.1.221",
             "wrapperType": "software",
             "currency": "MYR",
@@ -1757,6 +1753,13 @@
             "contentAdvisoryRating": "12+",
             "averageUserRating": 2.26042,
             "bundleId": "com.tm.unifitv.mobile",
+            "trackName": "Unifi TV 2.0",
+            "trackId": 6739202371,
+            "genres": [
+              "Entertainment",
+              "Lifestyle"
+            ],
+            "price": 0.0,
             "userRatingCount": 768
           },
           "average_rating": 2.26042,
@@ -1766,449 +1769,7 @@
           "track_name": "Unifi TV 2.0",
           "bundle_id": "com.tm.unifitv.mobile"
         },
-        "reviews": [
-          {
-            "author": "Syahiril46",
-            "title": "Subtitle",
-            "text": "Kejap ade subtitle kejap takde aduhhh peningnya tak consistent",
-            "rating": 1,
-            "updated": "2026-10-12T22:24:09-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "nhu.gar",
-            "title": "Not good at all",
-            "text": "I can't even sign in.. keep asking me to sign in.. even I've key in the OTP.. Useless..",
-            "rating": 1,
-            "updated": "2026-10-10T21:35:09-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Kucing0sem",
-            "title": "Sari kata",
-            "text": "Serabutnya sari kata selalu takde.",
-            "rating": 2,
-            "updated": "2026-10-06T06:14:19-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "xuxmaa",
-            "title": "Apple Tv",
-            "text": "Boleh install dekat apple tv tak?",
-            "rating": 3,
-            "updated": "2026-10-03T01:03:33-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "shopeeNo1",
-            "title": "Worse",
-            "text": "Baddd apps",
-            "rating": 1,
-            "updated": "2026-09-25T22:50:36-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Apis C14",
-            "title": "Can’t resolve technical error for live event.",
-            "text": "Can’t resolve technical error for live event.",
-            "rating": 1,
-            "updated": "2026-09-19T20:36:18-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "LegacyUserForever",
-            "title": "Legacy device forgotten feature?",
-            "text": "It appears that the app still support legacy device with Touch ID and not Face ID. I’m not sure how this pass qa testing where some places are dead stuck with the toast notification “open phone to continue”. Hello, phone screen is on? The lack of detecting presence of Touch ID and focusing on Face ID only code?",
-            "rating": 1,
-            "updated": "2026-09-16T07:07:48-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "yaposolon",
-            "title": "Bs app",
-            "text": "I can’t even login with my iptv id..\nWhen i try to login it shows the reset password interface then just jump to login page again..\nI paid the bill every month since the last three years..\nSo now i’m just paying without using the damn thing..\nF",
-            "rating": 1,
-            "updated": "2026-09-15T19:46:40-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Bullshit ig",
-            "title": "Bodoh",
-            "text": "Aku request berpuluh kali OTP tak dapat dapat",
-            "rating": 1,
-            "updated": "2026-09-14T08:15:31-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "mokhriz.mohammed",
-            "title": "Positivity To Be Improved",
-            "text": "I can see how 2.0 shown the general idea to compete in market - just some feedback I think quite important - a drastic effort for UX / UI improvement to facilitate those existing / new features of your services for the sake user’s experience in using UnifiTV 2.0.",
-            "rating": 3,
-            "updated": "2026-09-09T10:42:33-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "jsim888",
-            "title": "Unifitv",
-            "text": "I cannot use my iptv account to watch free movies as per described in the advertisement.",
-            "rating": 3,
-            "updated": "2026-09-05T01:29:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "kingcrashking",
-            "title": "Bs",
-            "text": "Full of bs",
-            "rating": 1,
-            "updated": "2026-09-04T05:22:00-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "hang2018",
-            "title": "Make it available on Apple lTV",
-            "text": "Make it available on Apple lTV",
-            "rating": 1,
-            "updated": "2026-08-31T08:11:44-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Sf.annn",
-            "title": "Very confusing app",
-            "text": "I have never experienced such complicated ways of trying to watch shows ever. Why would we need to activate here and there. Then we have the unifi universe app. What is that supposed to do? I cannot even watch hbo max on my tv anymore. It keeps asking me to activate in the unifi tv 2.0 but it didn’t work even after i entered the login page. What were u thinking when u drew out these processes. Why must be so complicated? Why not simplify? This is supposed to be entertainment. Why would i need to troubleshoot & think just to watch shows?",
-            "rating": 1,
-            "updated": "2026-08-31T00:32:28-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Cikgu Bebel",
-            "title": "HBOMax",
-            "text": "Why can't I watch HBOMax that is included in the offered package thru the Unifi 2.0 app? Have to download the HBOMax. Need to step up your game, Unifi",
-            "rating": 3,
-            "updated": "2026-08-27T16:07:49-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Stickdot",
-            "title": "Apabende la unifi tv ni",
-            "text": "Teruk.Buka apps tapi menunggu sampai brapa lama nak buka cerita.",
-            "rating": 1,
-            "updated": "2026-08-26T04:50:40-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Fortis Omega",
-            "title": "Very good",
-            "text": "Many channels. Very easy to use",
-            "rating": 5,
-            "updated": "2026-08-26T04:34:13-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Qenxbaks",
-            "title": "Home Screen yg berserabut",
-            "text": "Ndak nengok siaran TV jer. Letih ndak cari siaran. Berserabut nengok kat Home Screen.",
-            "rating": 1,
-            "updated": "2026-08-21T20:01:35-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Aduhaiiiiiii",
-            "title": "Can subscribe but impossible to unsubscribe",
-            "text": "Maya the bot assistant has no option to unsubscribe, need another app to manage account, still no ways to unsubscribe. Feels like losing my mind just to unsubscribe. Worst might need to make a trip to the physical store to get assistance. Subscribe online for online services, but require trip to physical store. Make it make sense????",
-            "rating": 1,
-            "updated": "2026-08-16T19:16:54-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "zms7718",
-            "title": "Keep crash",
-            "text": "New version keep crash & heating my phone drastically unlikely first version is more far better never have issues except auto logout",
-            "rating": 1,
-            "updated": "2026-08-10T05:19:31-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Izz 24",
-            "title": "Terrible Lag",
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
-            "rating": 1,
-            "updated": "2026-07-26T05:11:29-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "m@hat",
-            "title": "Apps always crash",
-            "text": "Apps crash so many time while watching",
-            "rating": 1,
-            "updated": "2026-07-21T18:52:28-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Apa2aje84",
-            "title": "Poor arrangement",
-            "text": "Previous version was easier to access channels compared to this version. Not user friendly and it is better to use each app separately compared to use it from unifi tv",
-            "rating": 3,
-            "updated": "2026-07-19T23:51:06-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "therealnofilter",
-            "title": "Lacking UHD 4K channels",
-            "text": "Least appeal due to lack 4K channels\n\nWatching World Cup 2026 now on 20/7/2026 3:05. Apps crashed and cannot start on google tv",
-            "rating": 1,
-            "updated": "2026-07-19T12:07:05-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "abcdefkkckapqpakzjzjdw",
-            "title": "tak boleh tengok di tv",
-            "text": "kenapa tak boleh tengok di tv?",
-            "rating": 1,
-            "updated": "2026-07-18T22:15:39-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": ")27£:8:£::£::&:!",
-            "title": "If inconvenience was an app",
-            "text": "Went through a tedious process of trying to figure out what to buy, setting up accounts just to purchase a pack to watch one singular programme but in the end facing error at point of sale, asking me to try again later or seek assistance from nearby unifi store.\n\nI think that unifi should focus on providing a more smoother experience for customers to easily choose what programmes there want and try to minimise as much bugs and increase app and website performance to not lose a potential customer that simply just wanted to watch a sport programme",
-            "rating": 1,
-            "updated": "2026-07-16T08:10:49-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Nounifi",
-            "title": "Useless",
-            "text": "Purchased daily pass to watch workd cup and it keep showing both, you have access and buy pass",
-            "rating": 1,
-            "updated": "2026-07-15T12:58:32-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "3ryn09",
-            "title": "Bad Network",
-            "text": "trying to watch the FC, subscribed long enough beforehand yet been waiting for an hour but still couldn't watch it as it only shows the preview. waste of money and time.",
-            "rating": 2,
-            "updated": "2026-07-15T12:53:19-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Samir Zoh",
-            "title": "Login error",
-            "text": "Keep showing unable to login - the whole purpose during this time is to watch WC2026 but total BS this app, cannot login",
-            "rating": 1,
-            "updated": "2026-07-08T07:20:29-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "pakleey",
-            "title": "USELESS",
-            "text": "SANGAT SUSAH NAK PAKAI BONGOK BETUL",
-            "rating": 1,
-            "updated": "2026-07-07T09:58:14-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Mzulss",
-            "title": "Keep crash",
-            "text": "Always shut off by itself when watching movie",
-            "rating": 1,
-            "updated": "2026-07-05T09:07:55-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "tech & innovation enthusiast",
-            "title": "Can't watch Fifa 2026",
-            "text": "Subscribed to watch Fifa 2026, and the channel just doesn't load, infinity loading indicator. Very disappointing given that I paid for this...",
-            "rating": 1,
-            "updated": "2026-07-02T16:44:34-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "RenSuren12",
-            "title": "FIFA",
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "updated": "2026-06-27T15:19:29-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "santut89",
-            "title": "Smart tv",
-            "text": "Please change the Unifi TV startup background to a darker color on Smart TVs. The current bright background is uncomfortable to look at when using the TV at night.",
-            "rating": 2,
-            "updated": "2026-06-26T12:26:27-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Banner0815",
-            "title": "Terrible app",
-            "text": "Worst 65 ringgit I ever spent on a streaming app. For that amount you’d expect a smooth loading streaming app but always have technical difficulties.",
-            "rating": 1,
-            "updated": "2026-06-25T19:06:30-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Ayam golek tergolek uuii",
-            "title": "Kecewa",
-            "text": "Lag dan susun atur app yang memeningkan . Develop u need to do better please lah",
-            "rating": 1,
-            "updated": "2026-06-25T07:51:06-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "anuar1987",
-            "title": "jangan kerap sangat lah piala dunia bab pasal bola ini",
-            "text": "tak minat langsung bola ini tolong hargai pelangan",
-            "rating": 1,
-            "updated": "2026-06-24T21:12:06-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "ako029",
-            "title": "FIFA WORLD CUP",
-            "text": "Very good",
-            "rating": 5,
-            "updated": "2026-06-24T20:12:40-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "abahhsjs",
-            "title": "Keep reloading",
-            "text": "Happen time and time again. When i watch a replay wc matct suddenly it reloading for no reason. Waste of time and money",
-            "rating": 1,
-            "updated": "2026-06-24T19:46:06-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "AppleJH721",
-            "title": "Useless app",
-            "text": "Keep showing playback error prevent concurrent stream on phone, even though i already removed all other linked device. Fix ur app",
-            "rating": 1,
-            "updated": "2026-06-20T10:29:31-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "kev78mk",
-            "title": "Very frustrating n poor experience",
-            "text": "Cant even login to the TV.",
-            "rating": 1,
-            "updated": "2026-06-19T16:20:27-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Fuady Samshi",
-            "title": "Developer cap ayam",
-            "text": "Kene uninstall, re-install baru bole tengok world cup. Zaliza ko punye solution lompat katak ya. awal advice login, aku defend login ko lompat kata peranti os. Pandai mengakal ko. Padahal migration data yang fail, cap ayam lenyek",
-            "rating": 1,
-            "updated": "2026-06-17T07:16:15-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Hahahahahshdhshzhxhxjxjd",
-            "title": "Log in",
-            "text": "Log in pun susah",
-            "rating": 1,
-            "updated": "2026-06-16T12:45:51-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "zahiredd",
-            "title": "subtitles world cup interview",
-            "text": "haloooo…kami tak paham la interview dlm bahasa selain english. mana subtitles???",
-            "rating": 2,
-            "updated": "2026-06-15T08:35:07-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "eyka89",
-            "title": "anjir",
-            "text": "tak boleh login dah kenapa lepas dah bayar dia tak boleh masuk",
-            "rating": 1,
-            "updated": "2026-06-14T10:08:13-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Whyuu00",
-            "title": "Stupid app ever created",
-            "text": "Limited to 2 devices only for pairing. I still can't watch via phone even already unpair remaining devices",
-            "rating": 1,
-            "updated": "2026-06-13T21:44:16-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Appbodounifi",
-            "title": "bug & crash",
-            "text": "Wasted on fifa subscription for dumb app",
-            "rating": 1,
-            "updated": "2026-06-13T15:57:05-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "dee2888dee",
-            "title": "World Cup Package",
-            "text": "Subscribed to the WC2026 package. After activation, I could access all channels for 12 hours. After which, I can even access any channel. Tried to delete and reinstall, it’s giving me a blank screen now.",
-            "rating": 1,
-            "updated": "2026-06-13T07:51:39-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Wildest west",
-            "title": "Unable FIFA World Cup 2026 Pass",
-            "text": "Fed up to call support 1-800-88-5059 i decided to uninstalled and reinstall the UniFi TV 2.0 apps using a New Password, and now I can watch the World Cup matches.",
-            "rating": 1,
-            "updated": "2026-06-13T04:48:50-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          }
-        ]
+        "reviews": []
       },
       "google": {
         "package": "com.tm.unifitv.mobile",
@@ -2221,16 +1782,16 @@
             "summary": "The ONLY streaming app you need— now with live channels, apps and more!​",
             "installs": "1,000,000+",
             "minInstalls": 1000000,
-            "realInstalls": 1258190,
-            "score": 3.4040816,
-            "ratings": 2420,
+            "realInstalls": 1258862,
+            "score": 3.429719,
+            "ratings": 2424,
             "reviews": 1305,
             "histogram": [
-              720,
-              148,
-              157,
-              217,
-              1174
+              710,
+              145,
+              155,
+              214,
+              1196
             ],
             "price": 0,
             "free": true,
@@ -2283,8 +1844,8 @@
             "appId": "com.tm.unifitv.mobile",
             "url": "https://play.google.com/store/apps/details?id=com.tm.unifitv.mobile&hl=en&gl=my"
           },
-          "average_rating": 3.4040816,
-          "rating_count": 2420,
+          "average_rating": 3.429719,
+          "rating_count": 2424,
           "version": "1.0.221",
           "installs": "1,000,000+",
           "title": "Unifi TV 2.0",
@@ -2751,6 +2312,23 @@
         "country": "us",
         "summary": {
           "raw": {
+            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/93/ca/a893caec-8019-a657-11e3-649198e84efa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/93/ca/a893caec-8019-a657-11e3-649198e84efa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "isGameCenterEnabled": false,
+            "features": [
+              "iosUniversal"
+            ],
+            "advisories": [
+              "Infrequent/Mild Mature/Suggestive Themes",
+              "Infrequent/Mild Realistic Violence",
+              "Infrequent/Mild Horror/Fear Themes",
+              "Infrequent/Mild Profanity or Crude Humor",
+              "Infrequent/Mild Medical/Treatment Information",
+              "Infrequent/Mild Sexual Content and Nudity"
+            ],
+            "kind": "software",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/93/ca/a893caec-8019-a657-11e3-649198e84efa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
             "screenshotUrls": [
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/1f/d8/081fd8dd-687e-ed20-205a-9e595d73997c/Home_Page.jpg/320x480bb.jpg",
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/18/c3/fb18c385-e77c-5760-d734-94069c3d4797/EPG_Page.jpg/320x480bb.jpg",
@@ -2766,23 +2344,6 @@
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/98/a2/6e98a25b-2a0e-dd6c-a877-c781657644e7/TVE.jpg/360x480bb.jpg"
             ],
             "appletvScreenshotUrls": [],
-            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/93/ca/a893caec-8019-a657-11e3-649198e84efa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/93/ca/a893caec-8019-a657-11e3-649198e84efa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/93/ca/a893caec-8019-a657-11e3-649198e84efa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "isGameCenterEnabled": false,
-            "advisories": [
-              "Infrequent/Mild Mature/Suggestive Themes",
-              "Infrequent/Mild Realistic Violence",
-              "Infrequent/Mild Horror/Fear Themes",
-              "Infrequent/Mild Profanity or Crude Humor",
-              "Infrequent/Mild Medical/Treatment Information",
-              "Infrequent/Mild Sexual Content and Nudity"
-            ],
-            "kind": "software",
-            "features": [
-              "iosUniversal"
-            ],
             "supportedDevices": [
               "iPhone5s-iPhone5s",
               "iPadAir-iPadAir",
@@ -2915,35 +2476,21 @@
               "iPhone18ProMax-iPhone18ProMax",
               "iPhoneDuo-iPhoneDuo"
             ],
-            "sellerUrl": "http://www.tv.univision.com",
-            "averageUserRating": 4.44355,
+            "averageUserRating": 4.44351,
+            "contentAdvisoryRating": "12+",
             "trackCensoredName": "Univision App",
             "trackViewUrl": "https://apps.apple.com/us/app/univision-app/id425226754?uo=4",
-            "contentAdvisoryRating": "12+",
-            "averageUserRatingForCurrentVersion": 4.44355,
-            "fileSizeBytes": "85948416",
-            "formattedPrice": "Free",
-            "userRatingCountForCurrentVersion": 15942,
-            "trackContentRating": "12+",
-            "languageCodesISO2A": [
-              "EN"
-            ],
-            "minimumOsVersion": "15.6",
-            "artistId": 353665653,
-            "artistName": "Univision Communications Inc.",
+            "releaseNotes": "Our latest update includes general stability and bug fixes.\n\nStay tuned for more updates in the future!",
             "genres": [
               "Entertainment",
               "Lifestyle"
             ],
+            "bundleId": "com.univision.iphone",
             "price": 0.0,
-            "genreIds": [
-              "6016",
-              "6012"
-            ],
-            "releaseNotes": "Our latest update includes general stability and bug fixes.\n\nStay tuned for more updates in the future!",
-            "releaseDate": "2011-04-02T01:53:09Z",
+            "minimumOsVersion": "15.6",
             "primaryGenreName": "Entertainment",
             "primaryGenreId": 6016,
+            "releaseDate": "2011-04-02T01:53:09Z",
             "sellerName": "Univision Communications Inc.",
             "isVppDeviceBasedLicensingEnabled": true,
             "currentVersionReleaseDate": "2026-09-11T16:24:34Z",
@@ -2951,461 +2498,33 @@
             "wrapperType": "software",
             "currency": "USD",
             "description": "THE BEST IN ENTERTAINMENT, NEWS AND SPORTS IN SPANISH\nAll the live programming of Univision and UniMás and more live and on demand at your fingertips. You can access the Univision app with most TV services, including Comcast Xfinity, DirecTV, Dish, Spectrum, AT&T, Verizon FIOS, and others. \n\n\nWatch your way\n• ​ If you missed your favorite shows on Univision, Unimás, Galavisión and TUDN, now you can watch them on demand, one day after they are broadcast.\n\n• Watch all the Univision channels already included in your cable package, including Univision, UniMás, TUDN, and Galavisión,  Noticias 24/7, Zona TUDN and Canal ViX\n\n• You can watch live and on demand at home or on your laptops.\n\n• Log in with your TV provider to get access to the entire catalog of live and on demand content\n\n• Watch live programming from up to three days ago using the automatic DVR feature.\n\n• Don't you have television service? Try a subscription to the Univision Now app.\n\nAccess all your favorite shows:\n• Current Novelas \n• Classic Novelas\n• El Gordo y la Flaca\n• Despierta America\n• Noticiero Univision\n\nExclusive rights to football matches\n• Liga MX\n• UEFA Champions League\n• Mexican and US National soccer teams",
-            "bundleId": "com.univision.iphone",
-            "trackName": "Univision App",
+            "averageUserRatingForCurrentVersion": 4.44351,
+            "sellerUrl": "http://www.tv.univision.com",
+            "languageCodesISO2A": [
+              "EN"
+            ],
+            "fileSizeBytes": "85948416",
+            "formattedPrice": "Free",
+            "userRatingCountForCurrentVersion": 15941,
+            "trackContentRating": "12+",
+            "genreIds": [
+              "6016",
+              "6012"
+            ],
             "trackId": 425226754,
-            "userRatingCount": 15942
+            "trackName": "Univision App",
+            "artistId": 353665653,
+            "artistName": "Univision Communications Inc.",
+            "userRatingCount": 15941
           },
-          "average_rating": 4.44355,
-          "rating_count": 15942,
+          "average_rating": 4.44351,
+          "rating_count": 15941,
           "version": "13.4.22(48.6)",
           "current_version_release_date": "2026-09-11T16:24:34Z",
           "track_name": "Univision App",
           "bundle_id": "com.univision.iphone"
         },
-        "reviews": [
-          {
-            "author": "Jewlz_127",
-            "title": "The worst tv App!",
-            "text": "I don’t know how there’s so many bad reviews from over 10yrs and this app is still terrible!  I use it for my mom’s Roku tv, she doesn’t have cable and it’s the only channel she watches. \nIt literally stops working and you have to try to log in again, but then sometimes it says my tv provider doesn’t allow this channel. Like what?! \nIt’ll take me over 5 mins trying to log in again, just for it to last a couple of days before it happens again. Makes me want to pull my hair out!!",
-            "rating": 1,
-            "updated": "2026-06-24T06:08:32-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "ChelaJunior",
-            "title": "Read",
-            "text": "Please Take Off Ads Please",
-            "rating": 4,
-            "updated": "2026-06-18T19:43:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Nin qa",
-            "title": "Not working",
-            "text": "App is no longer working with Verizon Fios tv subscription, when I open app on my iPhone to enter code from my chrome cast tv , code has numbers n letters n my iPhone only has numbers to enter , I’m unable to change to letters on keyboard",
-            "rating": 1,
-            "updated": "2026-05-20T02:20:27-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Voloxityy",
-            "title": "LOCKS ALL TV SHOWS EVEN WITH CABLE CONNECTED ALTHOUGH IT LETS ME WATCH ON THE WEBSITE",
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
-            "rating": 1,
-            "updated": "2025-12-02T09:59:06-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Ulisses209",
-            "title": "BAD",
-            "text": "Univision is a bad company to work for and very biased against americans and just are greedy money people who dont care. There’s no options for English CC, but they expect every other streaming company to have those available. Don’t waist your money.",
-            "rating": 1,
-            "updated": "2025-08-12T17:12:11-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Alibrie",
-            "title": "Pause break commercial",
-            "text": "I love this app but I’ve never thought I would experience issues with it.. You can’t really watch anything that’s live without it going into the break commercial pause that takes forever to come back then when it does it doesn’t even last not even 5 minutes when it’s back to it again.. This need to be fixed & improved way better since it’s annoying having to exit it out of the app refresh it & go back in & repeatedly have to keep doing it over & over! Not a happy camper as how this is being set up when there’s others app’s that work way better & properly then this one!!",
-            "rating": 1,
-            "updated": "2025-07-29T05:22:26-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Jdjdjdidilr",
-            "title": "App is scam",
-            "text": "You pay too watch soccer games, all the games and some games do not show , so for me thats scam and the app is pain jn the a.. to use, go get other app much better tban this sh..",
-            "rating": 1,
-            "updated": "2025-07-13T14:08:45-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Bere305",
-            "title": "Not reliable",
-            "text": "I get exited about watching a show in the app that aired the previous day and I keep getting an error code.  There is not support to fix the problem… very frustrating!",
-            "rating": 2,
-            "updated": "2025-03-18T19:40:25-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Good luck with Oliver",
-            "title": "I like that app",
-            "text": "No 1: it has a canal vix but that’s not the final broadcast\n\nNo 2: I can watch unimás , Galavision , TUDN and Univision.\n\nNo 3: my tv provider is Samsung\n\nNo 4 : They removed the 2019 version of gold cup.",
-            "rating": 4,
-            "updated": "2025-03-15T10:50:32-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Cita1950",
-            "title": "Won’t unlock after tv sub info",
-            "text": "I have logged out and logged back in multiple times with my YouTube TV acct and the app accepts it, shows it in the top right but refuses to unlock the episodes. Needs a fix till then goodbye.",
-            "rating": 1,
-            "updated": "2025-02-07T13:00:28-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Annoyed in the valley",
-            "title": "App not working",
-            "text": "App it stuck it just says cargando . Was working fine before, I deleted and added it again and nothing. Not sure what else I can do",
-            "rating": 1,
-            "updated": "2025-01-30T09:33:53-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "OGRacer",
-            "title": "App won’t load… Terrible Developer",
-            "text": "Developer or Univision…\n\nYou may want build a new app… Won’t load on any iPhone or Android Phone. Crashes way too many times! Time to trash and build from scratch!",
-            "rating": 1,
-            "updated": "2025-01-29T18:24:42-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "emilieeelovesmakeup",
-            "title": "not for satellite users.",
-            "text": "i thought this app would be like the Telemundo app but it’s not. you need a cable subscription for everything which makes it basically useless.",
-            "rating": 1,
-            "updated": "2025-01-28T18:10:27-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Sant Tinajero",
-            "title": "No funciona con YouTube Tv",
-            "text": "Primero funcionaba para ver programas pasados, pero no con los canales en vivo, ahora que ya añadieron más canales en vivo no funcionan ni los programas pasados. Arréglenlo por favor en youtube tv también pagamos una suscripción para acceder a los canales igual que con otras compañías",
-            "rating": 1,
-            "updated": "2025-01-28T16:34:40-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "que idiotes",
-            "title": "Not working",
-            "text": "Not sure why this app isn’t working anymore but for the past 2 days i been trying to login and it wont let me",
-            "rating": 2,
-            "updated": "2025-01-28T08:01:02-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "MsMart01",
-            "title": "Not able to open",
-            "text": "For the last 2 days or maybe longer; I’ve haven’t been able to open the app.  I tried to close and restart my device and still doesn’t want to open.  Is there a problem with the app if so please fix right away.",
-            "rating": 1,
-            "updated": "2025-01-28T05:31:37-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "5kidsathome",
-            "title": "!!!! FIX IT !!!!",
-            "text": "This was a great app until a couple of days ago was giving us problems and now all of a sudden you can’t even login.",
-            "rating": 1,
-            "updated": "2025-01-27T22:46:12-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "CarballoK",
-            "title": "App is not working",
-            "text": "Why is so much trouble with this app I even deleted the app and downloaded it again and it’s still working 😡",
-            "rating": 1,
-            "updated": "2025-01-27T16:36:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Tamborpata",
-            "title": "Problems.",
-            "text": "There is couple of days that I can’t watch any program . This is the first time that happened to me. Can you please fixed this problem ?",
-            "rating": 5,
-            "updated": "2025-01-27T12:52:42-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Cortoya39",
-            "title": "Adios Univision",
-            "text": "Cada vez mas y mas costos que no valen la pena, si tuvieran un plan anual reducido como lo hacen con vix Alomejor lo consideraría pero a mas de $12dls por mes es un abuso considerando que no tienen una programación extensa.",
-            "rating": 1,
-            "updated": "2025-01-14T15:56:58-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "jayjay 28",
-            "title": "Bad",
-            "text": "You only use this app id you some type of cable",
-            "rating": 2,
-            "updated": "2024-11-07T16:20:13-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "1_Jacob",
-            "title": "Bad",
-            "text": "This app is so annoying it keep lagging sends too many notifications I personally didn’t liked it.",
-            "rating": 1,
-            "updated": "2024-09-26T18:17:39-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Ms Mexi",
-            "title": "Does no work!",
-            "text": "Will not play episodes I am trying to watch. Just sits there loading. Just like the old days when an internet page was trying to load. The wheel just went round and round. Very disappointing!",
-            "rating": 1,
-            "updated": "2024-06-24T19:15:49-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "gurtyo67",
-            "title": "Cirila",
-            "text": "66667",
-            "rating": 4,
-            "updated": "2024-05-23T17:02:54-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Fltangel737",
-            "title": "It horrible",
-            "text": "I can’t seem to watch  what I like",
-            "rating": 1,
-            "updated": "2024-04-11T12:42:26-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "unknown 12345678, 9,10",
-            "title": "Juck app",
-            "text": "DO NOT GET THIS APP ITS A WASTE OF YOUR TIME AND IT FOES NOT WORK!!!!",
-            "rating": 1,
-            "updated": "2023-11-14T16:59:28-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Btmtx",
-            "title": "Now with commercials UGH",
-            "text": "This app worked fine until they started adding commercials. Totally ruined it.",
-            "rating": 3,
-            "updated": "2023-11-07T08:05:18-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "L. Rina",
-            "title": "JUNK APP!😒",
-            "text": "What’s the point of this app?! If you have cable or satellite you can record shows/novelas and watch on your own time and skip ads thru your provider, so you don’t ‘need’ this app. But if you don’t have cable or satellite, you need this app, and it COULD allow you to watch your fave shows/novelas and force you to watch ads… BUT THEY DON’T. Instead, this is a cable/satellite subscribers only app, even tho this channel is free on antenna. MAKES NO SENSE. Definitely not paying to watch novelas like on the NOW app they offer. If they want to make it hard for me to watch their novelas, then I guess I didn’t need to waste my time watching them in the first place. HUGE missed opportunity to get or keep viewers, as well as exposure to your advertisers.",
-            "rating": 1,
-            "updated": "2023-09-17T00:46:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "rfhtfvd",
-            "title": "It is very fun to watch",
-            "text": "I like to watch the Chivas play",
-            "rating": 5,
-            "updated": "2023-05-11T20:24:16-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "alyah08901",
-            "title": "Episodes",
-            "text": "Why is it that it takes 3-4 days for new episodes to post and sometimes some episodes are missing, it happens to different novelas not just one in particular, example right not I’m watching amor invencible",
-            "rating": 1,
-            "updated": "2023-04-25T09:59:29-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Itzelrositaunicornio",
-            "title": "Arreglen por favor 😕",
-            "text": "Tiene muchos programas y eso pero  yo estaba mirando un capítulo y mire que tenía un timer .Entonces pasa un comercial y el timer seguía después 2comercial pasaron y me quedé sin tiempo  arreglen por fa :(",
-            "rating": 3,
-            "updated": "2023-03-30T22:15:14-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "nvictoria1116",
-            "title": "Cancelar",
-            "text": "Saludos quiero darme de baja y no encuentro cómo hacerlo me indican que es a través de Apple",
-            "rating": 1,
-            "updated": "2023-03-02T05:17:48-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "sjsnr fjcnemekw",
-            "title": "Bad",
-            "text": "Signs me out every other day and manually have to put my cable provider info every time.",
-            "rating": 1,
-            "updated": "2022-12-25T10:41:12-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "wmr88",
-            "title": "Univision on Apple TV is BAD!!!",
-            "text": "Please fix the app on Apple TV, every-time I watch any live channel after commercials the description of the program appears at the bottom of the screen and never goes away and it is so annoying…",
-            "rating": 1,
-            "updated": "2022-11-30T18:13:27-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Cdr1986",
-            "title": "Basura",
-            "text": "16 3stupidos anuncios (ads) antes de dejarme ver television que estoy pagando que es gratis en el aire que también tiene anuncios, están bien p3ndejos. A la mi3rda basura de aplicación. No se porque tiene 4.5 que strellas. Cuando quiero ver algo antes de dejar ver la señal que estoy pagando por cable me tira 16 ads",
-            "rating": 5,
-            "updated": "2022-10-13T20:30:31-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "univision app fix",
-            "title": "Muy Lenta la App",
-            "text": "Tarda en subir los programas, novelas, etc. De un día anterior",
-            "rating": 1,
-            "updated": "2022-10-04T15:52:43-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "PeteMcPeterson",
-            "title": "Not updated frequently",
-            "text": "Currently the app freezes a lot on my Apple TV. I don’t have any problems with any other app except this one. I noticed that they don’t update frequently and they really need to start fixing bugs as they happen.",
-            "rating": 1,
-            "updated": "2022-09-28T06:14:11-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "LaNikky",
-            "title": "It’s horrible",
-            "text": "It’s such a horrible app to watch .. they don’t put out the show the next day like they should . So I have to just wait weeks which is not ok !!!",
-            "rating": 1,
-            "updated": "2022-08-24T10:13:59-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Skat-sensei",
-            "title": "Always having issues connecting to TV provider",
-            "text": "Extremely bad app, does not get significant updates and it is always glitching and having issues connecting to the TV provider why pay a premium to have this channel if you have to reinstall the app like 10 times before being able to watch a show",
-            "rating": 1,
-            "updated": "2022-06-30T20:20:52-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "¡Malfajada!",
-            "title": "Faltan programas/Demasiados anuncios",
-            "text": "Se me hace una idiotez obligar a los usuarios a pagar por cable para tener acceso a todo el contenido de esta aplicación, solo para hacerlos perder el tiempo viendo comerciales. Si tienen una cantidad limitada de capítulos o programas accesibles gratuitamente, es entendible que pasen comerciales. Pero el contenido que sólo se puede ver al ingresar la cuenta de cable o satélite no debería tener anuncios. \n\nAdemás, faltan varios capítulos de los programas que fueron transmitidos en vivo. Unos tienen más de una semana que no se actualizan en la aplicación. Que bien, tenemos que pagar para poder ver toda la programación y no suben todo. Y lo poco que tienen está lleno de anuncios enfadosos.\n\nToo many ads (even on subscription access programming) and content is missing.",
-            "rating": 1,
-            "updated": "2022-06-14T21:26:02-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "melysmooches",
-            "title": "Frustrated",
-            "text": "This app will only show fios as a tv provider and doesn’t allow for other tv providers to show 😡😡",
-            "rating": 2,
-            "updated": "2022-05-31T15:44:34-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Nena2029",
-            "title": "Cambio mi forma de ver televisión",
-            "text": "Antes ami me encantaba Univision app, asta que dejaran de poner los capitulos de las novelas. Yo normalmente los veo en la televisión pero hay veces que no puedo verlos y me ponía al día en la app, así no le perdía el gusto o el interes en seguir viendo la serie/novela que estaba viendo en ese momento,  en cambio ahora la verdad deje de ver las que estaba viendo. ojala en un futuro puedan arreglar eso y seguir poniendo los capítulos de cada novela como lo hacían antes",
-            "rating": 1,
-            "updated": "2022-05-10T08:36:54-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Meybyyy",
-            "title": "…",
-            "text": "Tiene más de una semana que no se pueden ver las novelas y los shows. No se an actualizado para ver al siguiente día.",
-            "rating": 1,
-            "updated": "2022-05-09T12:01:58-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "mytahoeowner",
-            "title": "No puedo ver capítulos nuevos",
-            "text": "Estaba muy contenta con el app por el motivo de que no puedo ver mis novelas en vivo so el app me permitía verlas a la bora que yo puedo pero ya tiene mas de 1 semana que no las puedo ver porque los capítulos nuevos no se están actualizando al app por favor resuelvan este problema",
-            "rating": 3,
-            "updated": "2022-05-05T06:11:28-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Chelerae",
-            "title": "Horrible",
-            "text": "It’s been a week and the novelas are not showing up like they’re supposed to on the following day. Never any updates to improve. Whoever is in charge of this should be dismissed.",
-            "rating": 1,
-            "updated": "2022-05-03T05:26:38-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "chivis&1",
-            "title": "Bad service",
-            "text": "This service works in an on and off basis trying to watch a show and then all of a sudden after certain episodes it freezes up and it won’t give you any more either on the app or it doesn’t matter the TV provider that you have I do not recommend this if you are going to watch a show you might as will not even bother",
-            "rating": 1,
-            "updated": "2022-04-29T06:35:33-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "midira59",
-            "title": "Problema técnico",
-            "text": "Tengo la App de Univisión en mi IPad y no puedo  ver el capituló completo de la la novela Madre algún programa; Gracias",
-            "rating": 5,
-            "updated": "2022-03-24T10:21:33-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Ana Divas",
-            "title": "Angry at Univision!!!",
-            "text": "My mother and I and my whole family is very disappointed, El Gordon y la flaca was my favorite show… I can’t believe the show got cancel for no reason!!!",
-            "rating": 1,
-            "updated": "2022-03-01T16:49:44-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "smhch",
-            "title": "Difícil",
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "updated": "2022-02-24T15:04:33-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          }
-        ]
+        "reviews": []
       },
       "google": {
         "package": "com.univision.android",
@@ -3419,15 +2538,15 @@
             "installs": "1,000,000+",
             "minInstalls": 1000000,
             "realInstalls": 4790855,
-            "score": 3.7116992,
-            "ratings": 22283,
+            "score": 3.7079277,
+            "ratings": 22279,
             "reviews": 5423,
             "histogram": [
-              5120,
-              899,
-              1085,
-              3351,
-              11823
+              5143,
+              898,
+              1083,
+              3346,
+              11805
             ],
             "price": 0,
             "free": true,
@@ -3489,14 +2608,23 @@
             "appId": "com.univision.android",
             "url": "https://play.google.com/store/apps/details?id=com.univision.android&hl=en&gl=us"
           },
-          "average_rating": 3.7116992,
-          "rating_count": 22283,
+          "average_rating": 3.7079277,
+          "rating_count": 22279,
           "version": "Varies with device",
           "installs": "1,000,000+",
           "title": "Univision App: Stream TV Shows",
           "developer": "Univision Communications Inc."
         },
         "reviews": [
+          {
+            "author": "Erla Vasquez",
+            "title": "13.1215",
+            "text": "ultimamente la peor app",
+            "rating": 1,
+            "updated": "2026-10-20T10:41:15",
+            "platform": "Android",
+            "store": "google_play"
+          },
           {
             "author": "customer 8169",
             "title": "13.1215",
@@ -3937,15 +3065,6 @@
             "updated": "2024-09-27T20:19:28",
             "platform": "Android",
             "store": "google_play"
-          },
-          {
-            "author": "latinakween702",
-            "title": "13.1101",
-            "text": "𝗨𝗻𝗶𝘃𝗶𝘀𝗶𝗼𝗻 𝗔𝗽𝗽: 𝗦𝘁𝗿𝗲𝗮𝗺 𝗧𝗩 𝗦𝗵𝗼𝘄𝘀",
-            "rating": 5,
-            "updated": "2024-09-25T03:16:37",
-            "platform": "Android",
-            "store": "google_play"
           }
         ]
       }
@@ -3973,13 +3092,6 @@
             ],
             "appletvScreenshotUrls": [],
             "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/62/b1/c162b190-3fde-a66b-64c5-1f4fe360aeb3/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/62/b1/c162b190-3fde-a66b-64c5-1f4fe360aeb3/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/62/b1/c162b190-3fde-a66b-64c5-1f4fe360aeb3/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
-            "isGameCenterEnabled": false,
-            "features": [
-              "iosUniversal"
-            ],
             "advisories": [
               "Infrequent/Mild Sexual Content and Nudity",
               "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
@@ -4121,9 +3233,16 @@
               "iPhone18ProMax-iPhone18ProMax",
               "iPhoneDuo-iPhoneDuo"
             ],
+            "isGameCenterEnabled": false,
             "kind": "software",
-            "minimumOsVersion": "15.6",
-            "sellerUrl": "http://www.univisionnow.com",
+            "features": [
+              "iosUniversal"
+            ],
+            "artistViewUrl": "https://apps.apple.com/us/developer/univision-communications-inc/id353665653?uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/62/b1/c162b190-3fde-a66b-64c5-1f4fe360aeb3/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/62/b1/c162b190-3fde-a66b-64c5-1f4fe360aeb3/UnivisionNow_AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "averageUserRatingForCurrentVersion": 2.79136,
+            "averageUserRating": 2.79136,
             "languageCodesISO2A": [
               "EN"
             ],
@@ -4131,488 +3250,46 @@
             "formattedPrice": "Free",
             "userRatingCountForCurrentVersion": 3729,
             "trackContentRating": "12+",
-            "averageUserRatingForCurrentVersion": 2.79163,
-            "averageUserRating": 2.79163,
-            "trackCensoredName": "Univision Now",
-            "trackViewUrl": "https://apps.apple.com/us/app/univision-now/id1049321283?uo=4",
-            "contentAdvisoryRating": "12+",
+            "sellerUrl": "http://www.univisionnow.com",
+            "currentVersionReleaseDate": "2026-09-11T11:51:17Z",
+            "artistId": 353665653,
+            "artistName": "Univision Communications Inc.",
             "genres": [
               "Entertainment",
               "Lifestyle"
             ],
             "price": 0.0,
+            "bundleId": "com.univision.univisionnow",
             "trackId": 1049321283,
             "trackName": "Univision Now",
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
+            "releaseNotes": "Our latest update includes general stability and bug fixes.\n\nStay tuned for more updates in the future!",
+            "releaseDate": "2015-11-17T23:56:17Z",
             "genreIds": [
               "6016",
               "6012"
             ],
-            "currentVersionReleaseDate": "2026-09-11T11:51:17Z",
-            "isVppDeviceBasedLicensingEnabled": true,
+            "minimumOsVersion": "15.6",
             "sellerName": "Univision Communications Inc.",
-            "releaseDate": "2015-11-17T23:56:17Z",
-            "releaseNotes": "Our latest update includes general stability and bug fixes.\n\nStay tuned for more updates in the future!",
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "isVppDeviceBasedLicensingEnabled": true,
             "version": "13.4.22(48.6)",
             "wrapperType": "software",
             "currency": "USD",
             "description": "THE BEST OF ENTERTAINMENT, NEWS AND SPORTS IN SPANISH\n\n\nSubscribe to Univision Now to watch your favorite Univision and UniMás shows live and on demand for only $11.99 / month. Cancel at any time.\n\nWatch your way\n• Univision, UniMas, Noticias 24/7, Zona TUDN and Canal ViX live \n• Watch the latest episodes of the new Univision and UniMás shows the day after they air.\n• Watch live and on demand, at home or on the go.\n• Use any device, including TV or mobile, at home with Roku, Chromecast, and Apple TV.\n• Watch programming from up to three days ago with the automatic DVR feature.\n\nAccess all your favorite shows:\n• Current Novelas \n• Classic Novelas\n• El Gordo y la Flaca\n• Despierta América\n• Noticiero Univision\n\nExclusive rights to football matches\n• Liga MX\n• UEFA Champions League\n• Mexican and US National soccer teams\n\n\nTerms of Use: https://www.univisionnow.com/terms-of-use\n\nNot all programming is available.",
-            "bundleId": "com.univision.univisionnow",
-            "artistId": 353665653,
-            "artistName": "Univision Communications Inc.",
+            "trackCensoredName": "Univision Now",
+            "trackViewUrl": "https://apps.apple.com/us/app/univision-now/id1049321283?uo=4",
+            "contentAdvisoryRating": "12+",
             "userRatingCount": 3729
           },
-          "average_rating": 2.79163,
+          "average_rating": 2.79136,
           "rating_count": 3729,
           "version": "13.4.22(48.6)",
           "current_version_release_date": "2026-09-11T11:51:17Z",
           "track_name": "Univision Now",
           "bundle_id": "com.univision.univisionnow"
         },
-        "reviews": [
-          {
-            "author": "Claribel35",
-            "title": "Log in",
-            "text": "I have to keep logging off and back in.. I order to watch anything .. and it’s very annoying I’m about to cancel my subscription",
-            "rating": 1,
-            "updated": "2026-09-26T06:37:47-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Rxes",
-            "title": "Funciona cuando quiere",
-            "text": "Cancelaré mi cuenta de nuevo ya que desde la semana pasada la aplicación se queda en negro cuando quiere uno ver los programas en vivo. Es una desesperación!",
-            "rating": 1,
-            "updated": "2026-09-22T06:16:40-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "bstc1161",
-            "title": "Hace una semana, pago subsripcion y No abre!!!",
-            "text": "Hace una semana, pago subsripcion y No abre!!!",
-            "rating": 1,
-            "updated": "2026-09-21T09:15:38-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "danzig666x",
-            "title": "Local news",
-            "text": "For some reason this app stop airing local news from chicago… why? Definitely I’m canceling this subscription…",
-            "rating": 1,
-            "updated": "2026-07-22T13:05:59-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "MariMar66",
-            "title": "What’s Happening",
-            "text": "It has been already more than a month that the app constantly freezes or signs me out. It is so annoying",
-            "rating": 3,
-            "updated": "2026-05-14T17:31:59-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "duardavi",
-            "title": "Completely useless now – Livestream is entirely blocked",
-            "text": "There is absolutely no point in having this app anymore. We recently lost our local Univision station in the Portland area, so Univision NOW became our only alternative to watch everyday programming. Now, that alternative is gone too because the livestream is completely blocked. Every time I try to watch, I just get a \"Lo sentimos\" screen saying the program isn't available.\nThis isn't just a glitch on one device, either. I’ve tried accessing the livestream on every platform—iOS, Roku, and Android TV—and it's blocked across the board. To make matters worse, the app's support team has been completely unhelpful. I reached out to them, jumped through their hoops, and provided my device details, and app versions, only to receive absolutely no actual help or resolution.\nIf I can't stream the daily programming and customer support can't fix a total blackout on their end, there is zero reason to keep this app installed. Save your time and frustration.",
-            "rating": 1,
-            "updated": "2026-05-03T20:39:41-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "I'm still in bounds ref",
-            "title": "Potential new users stay away",
-            "text": "I pay a subscription for my mom but this company is horrible to their customers. The amount of times I've had to resign in is rediculous, but worst of all the main Univision channel isn't working now. All my devices the main channel is in unwatchable quality sound and video.its buffering yet playing in a horrible quality. BUT when it's commercial time they play just fine it's comically bad. I hate Univision but I'm not the one stuck with them it's my mother but I'm seriously about to just get her cable at this point.",
-            "rating": 1,
-            "updated": "2026-04-29T19:00:56-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "RichDominguez",
-            "title": "14 commercials",
-            "text": "I am getting 14 commercials-the same one on repeat. 😬",
-            "rating": 2,
-            "updated": "2026-04-06T06:35:09-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Liz—9",
-            "title": "The time doesn’t match",
-            "text": "The time doesn’t match with the regular schedule",
-            "rating": 1,
-            "updated": "2026-03-09T19:42:56-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "7sanyiag",
-            "title": "Comercial",
-            "text": "Don’t like comercial on the app",
-            "rating": 1,
-            "updated": "2026-02-13T18:20:01-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "roboreview2stars",
-            "title": "Waist of money",
-            "text": "Downloaded the app just to find out you cannot stream the app on Samsung tv.   Also, Samsung does not have the app available to download.",
-            "rating": 1,
-            "updated": "2025-12-16T16:15:09-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "moryta la conejita",
-            "title": "Fake News",
-            "text": "Fake news",
-            "rating": 2,
-            "updated": "2025-11-20T15:08:21-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Nanais888",
-            "title": "Charging me for no service",
-            "text": "I had this app for a very long time and one day stopped working. I attempted to log in and it keeps telling me that my account is not found. However I keep being charged for an account that doesn’t exist. I switched to a different appt that has no users at all! And to get these charges to stop is nearly impossible!!!!!",
-            "rating": 1,
-            "updated": "2025-10-29T06:31:37-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Univision es un desastre",
-            "title": "No sirve, si no pagas cable, no puedes ver tus noticias locales-Houston",
-            "text": "-10",
-            "rating": 1,
-            "updated": "2025-10-12T07:48:38-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Isai Zambrano",
-            "title": "Horrible app",
-            "text": "Bought it to watch a live sports game. Instead of it saying it’s not available to be watched in your area. It charged me the 11.99 then told me. Scam app.",
-            "rating": 1,
-            "updated": "2025-10-11T20:41:37-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "peelo415",
-            "title": "Too many ads despite $11.99 price point",
-            "text": "Since YouTube tv canceled their agreement with Univision, I had to scramble to get my mom an alternative option for her to watch live. Downloaded this app and signed up for the monthly subscription. We noticed immediately that the audio isn’t  synced  with the image…seems like delay. I’ve troubleshooted, internet connection is solid. Can’t figure out what the heck is going on. My other apps don’t have that issue. Commercials are excessive and annoying. If we can’t address this, we are going to cancel.",
-            "rating": 1,
-            "updated": "2025-10-01T17:52:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "elangel34",
-            "title": "bad telenovelas",
-            "text": "la verdad ya no es lo que era antes lastima, pero bueno nimodo yo no recomiendo que vean univision",
-            "rating": 1,
-            "updated": "2025-09-26T16:58:50-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Melissa anr",
-            "title": "kicks you off the app",
-            "text": "App does not load on any of my devices.",
-            "rating": 1,
-            "updated": "2025-09-15T08:10:07-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "zombie_8_brains",
-            "title": "App is garbage",
-            "text": "Fire the developers “now” I have a paid subscription but Cnat watch content. Content shown as locked. Very glitchy and horrible interface will Noel be renewing.",
-            "rating": 1,
-            "updated": "2025-09-06T19:44:31-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "ddd3453",
-            "title": "No compres",
-            "text": "La compre y todavía mi pide que me suscriba otra vez.",
-            "rating": 1,
-            "updated": "2025-09-06T18:21:18-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Atto Diaz",
-            "title": "TUDN",
-            "text": "Should Have TUDN But Doesn’t",
-            "rating": 1,
-            "updated": "2025-08-28T19:12:48-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Bbraun24",
-            "title": "Not working properly anymore",
-            "text": "The app is skipping programming. It suddenly stops live streaming. It was not like this before",
-            "rating": 1,
-            "updated": "2025-07-29T06:17:49-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Mexdom",
-            "title": "Tirar tu dinero",
-            "text": "No vale la pena gastar 12 mensuales si lo unico k uno ve son comerciales y regresamos despues de una pausa comercial \nPara el record la pague por 4 años para k mi esposa viera sus tvnovelas y ahora ya ni eso puede ver en los ultimos 3 meses he visto como su servicio a caido",
-            "rating": 1,
-            "updated": "2025-07-29T05:42:39-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "@Nicaudy",
-            "title": "Trash",
-            "text": "I see more ads than shows. I only have a 20-minute program, the rest is a black ad saying we’re right back for 20 min more…",
-            "rating": 1,
-            "updated": "2025-07-24T16:28:04-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Adbrmd",
-            "title": "Univision app is not working",
-            "text": "La aplicacion ya no sirve como antes, antes tu podias ver programacion  vieja o que no pudistes ver y ahora no puedes y por si no fuera poco la programacion en vivo siempre esta en comerciales, no recomiendo el app de univision.",
-            "rating": 1,
-            "updated": "2025-07-24T03:42:20-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Antonio512",
-            "title": "No funcionan los programas en vivo!",
-            "text": "La aplicación no funcionan los programas en vivo en mi TV! la app en mi tel funciona bien pero en la televisión no funciona los en vivo! Se quedó en comerciales llevo semanas tratando de ver univicion en vivo y no funciona!",
-            "rating": 1,
-            "updated": "2025-07-23T17:16:32-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Costalito4",
-            "title": "Pésimo",
-            "text": "La aplicación no sirve no la bajen se detiene mucho y no puedes ver la programación casi asta 30 minutos no gasten su dinero en vano",
-            "rating": 1,
-            "updated": "2025-07-23T08:31:14-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "SuperAceroA",
-            "title": "Not worth it",
-            "text": "It’s not worth it anymore they took out a lot of channels and movies",
-            "rating": 2,
-            "updated": "2025-07-22T16:09:23-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "25REM",
-            "title": "Crashed. Never opened.",
-            "text": "That sums it up. \nI downloaded it, clicked on ‘open’ and it crashed. \nLo bajé.  Hice click en ‘abrir’ y se salió del app, dejándome en la pantalla principal. Mas bien lo deben nombrarlo Univisión jamás",
-            "rating": 1,
-            "updated": "2025-07-11T05:10:55-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Qieieiwjddiw",
-            "title": "This is a virtual world",
-            "text": "Run by gay ai bots. Este es un mundo virtual no el mundo real. 99% de las personas que ves en persona en línea y todos en la tele son BOTS deepfakes CGI",
-            "rating": 1,
-            "updated": "2025-06-23T01:21:09-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "netfilx plz 69",
-            "title": "Univisión 41 New York",
-            "text": "Hi live in WA but want to watch Univision 41 but there’s no option hope they make it",
-            "rating": 3,
-            "updated": "2025-05-20T16:33:30-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Picosito 89",
-            "title": "Mala app",
-            "text": "No sirve",
-            "rating": 1,
-            "updated": "2025-05-18T19:19:25-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Baby2cents",
-            "title": "Too many crashes",
-            "text": "I actually like the app, However, it crashes when certain commercials come on. Also crashes when I lock my device while it's on airplay, Will unsubscribe if this continues.\n\n\n\n\nMe gusta la aplicación, pero se bloquea cuando salen ciertos anuncios. También se bloquea cuando bloqueo el dispositivo mientras está en AirPlay. Si esto continúa, me daré de baja.",
-            "rating": 2,
-            "updated": "2025-05-16T06:45:57-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Nayesheliz",
-            "title": "Not working",
-            "text": "I use the app both on my phone and on my Roku tv. Recently the app stopped working on the tv, specially the lives.  I will most likely cancel soon if the app is not fixed.",
-            "rating": 2,
-            "updated": "2025-04-29T14:21:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Mi2Centss",
-            "title": "App offers less value",
-            "text": "I used to be able to see both live TV and catch up with older series episodes. After recent changes all that is available is live TV channel and all of the previous programming has been wiped off. \n\nWhen I try to search TV series or movies those sections appear blank. I see  that for a year no updates were done and this year there are going up to six and the app is less functional. \n\nI’m considering canceling this subscription.",
-            "rating": 1,
-            "updated": "2025-04-16T17:39:04-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Enojada Frustrada",
-            "title": "Horribleeeeee",
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
-            "rating": 1,
-            "updated": "2025-04-16T07:05:37-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "NatNatF2023",
-            "title": "Rebelde",
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
-            "rating": 1,
-            "updated": "2025-03-17T23:03:30-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Winterwolf94",
-            "title": "I can’t sign into tv App",
-            "text": "The tv app shows a 7 digit code number while the activation website page only has room for 6 digits.",
-            "rating": 2,
-            "updated": "2025-03-12T14:21:40-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Geliruiz",
-            "title": "El Amor no tiene receta",
-            "text": "Quisiera saber por qué quitaron \"El amor no tiene receta\".\nTampoco aparece mi lista de programas.\nDe seguir así voy a cancelar mi suscripción \nGracias \nEspero me respondan",
-            "rating": 3,
-            "updated": "2025-03-05T22:48:46-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Esme0228",
-            "title": "Ads freeze",
-            "text": "The ada freeze and you can’t continue watching I think if we’re paying for the app we shouldn’t have to watch ads",
-            "rating": 1,
-            "updated": "2025-03-02T15:20:12-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Kathyl93",
-            "title": "HORRIBLE APP",
-            "text": "never works always a problem.",
-            "rating": 1,
-            "updated": "2025-02-27T09:56:59-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Ballin g malan",
-            "title": "Garbage",
-            "text": "Garbage app that barely worked and they will continue to charge you even after you cancel and have the email to prove it. Please, dont even bother",
-            "rating": 1,
-            "updated": "2025-02-27T03:57:21-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Vineager love",
-            "title": "DO NOT PAY FOR THIS FRAUD APP",
-            "text": "I had service in January then one day I was locked out when I checked to make sure I was logged in, it says I have an account. Regardless I Could not watch one thing. So I canceled that subscription that I paid through google, next I tried paying through apple on February 9th I began my 2nd subscription with Univision now . As of 2 days ago I am locked out again. Now I am still paid through march 9th but cannot watch anything and no tech support available.",
-            "rating": 1,
-            "updated": "2025-02-24T10:08:02-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "vaca loca18",
-            "title": "Actualización",
-            "text": "horrible actualización se pausa mucho",
-            "rating": 1,
-            "updated": "2025-02-21T14:35:47-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "SYDinATL",
-            "title": "Paying for Ads",
-            "text": "My regular Univision app suddenly eliminated my watchlist and my option to stream without ads. After a week of watching the same commercial literally repeat five or six times during each episode of my shows, I finally decided to subscribe to Univision NOW. Imagine my surprise after agreeing to pay $12 a month, when the same ad started appearing! What am I paying for? Tried to find a fix but there is no customer service contact, just a few unrelated articles in the so-called help center. I’m definitely unsubscribing.",
-            "rating": 1,
-            "updated": "2025-02-20T18:32:22-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Lickdognuts",
-            "title": "Univision and Unimas don’t work when i press on it",
-            "text": "I was getting ready to watch univision but when i press on Unimas and Univision a error code 20106 pops up and i can’t watch it please help",
-            "rating": 1,
-            "updated": "2025-02-20T18:24:10-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "😘👍🏾👍🏾🛑",
-            "title": "This is trash",
-            "text": "This is soooo bad there is like 10 ads of the Samsung S25 I’m disappointed it’s a piece of trash i wish this had improved but it’s so bad.buying this was a waste of money I can even find things that are way better like vix I have never seen a advertisement on vix and it cost no money so pls fix this",
-            "rating": 1,
-            "updated": "2025-02-19T18:35:01-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Galletitas6",
-            "title": "voyL",
-            "text": "PapiL",
-            "rating": 5,
-            "updated": "2025-02-18T18:56:20-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          },
-          {
-            "author": "Abiyanet",
-            "title": "About the new uptake",
-            "text": "The new update to the app is VERY SLOW. I hate the new update.",
-            "rating": 1,
-            "updated": "2025-02-18T06:05:42-07:00",
-            "platform": "iOS",
-            "store": "apple"
-          }
-        ]
+        "reviews": []
       },
       "google": {
         "package": "com.univision.univisionnow",
@@ -4625,16 +3302,16 @@
             "summary": "Univision y UniMás live and on demand without cable",
             "installs": "5,000,000+",
             "minInstalls": 5000000,
-            "realInstalls": 5577475,
-            "score": 3.5395966,
-            "ratings": 32194,
+            "realInstalls": 5577593,
+            "score": 3.5369823,
+            "ratings": 32193,
             "reviews": 10380,
             "histogram": [
-              9532,
-              1313,
-              1377,
-              2184,
-              17783
+              9555,
+              1317,
+              1364,
+              2190,
+              17763
             ],
             "price": 0,
             "free": true,
@@ -4696,8 +3373,8 @@
             "appId": "com.univision.univisionnow",
             "url": "https://play.google.com/store/apps/details?id=com.univision.univisionnow&hl=en&gl=us"
           },
-          "average_rating": 3.5395966,
-          "rating_count": 32194,
+          "average_rating": 3.5369823,
+          "rating_count": 32193,
           "version": "Varies with device",
           "installs": "5,000,000+",
           "title": "Univision Now: Live TV",
@@ -5164,19 +3841,10 @@
         "country": "us",
         "summary": {
           "raw": {
-            "advisories": [
-              "Infrequent/Mild Realistic Violence",
-              "Infrequent/Mild Horror/Fear Themes",
-              "Infrequent/Mild Sexual Content and Nudity",
-              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
-              "Infrequent/Mild Mature/Suggestive Themes",
-              "Infrequent/Mild Profanity or Crude Humor"
-            ],
             "isGameCenterEnabled": false,
-            "features": [
-              "iosUniversal"
-            ],
-            "kind": "software",
+            "artistViewUrl": "https://apps.apple.com/us/developer/canela-media-inc/id1507429167?uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/7b/a7/c97ba7dc-9335-6c95-9439-f4368668832b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/7b/a7/c97ba7dc-9335-6c95-9439-f4368668832b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
             "screenshotUrls": [
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/86/89/b5868980-ad05-4f3a-8a4e-6db1b5e1f97c/iPhone-1242x2208-7-LATAM.jpg/392x696bb.jpg",
               "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f7/42/a0/f742a011-5eed-83ff-2126-6e6aed152983/iPhone-1242x2208-2-LATAM.jpg/392x696bb.jpg",
@@ -5196,9 +3864,17 @@
             ],
             "appletvScreenshotUrls": [],
             "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/7b/a7/c97ba7dc-9335-6c95-9439-f4368668832b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
-            "artistViewUrl": "https://apps.apple.com/us/developer/canela-media-inc/id1507429167?uo=4",
-            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/7b/a7/c97ba7dc-9335-6c95-9439-f4368668832b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/60x60bb.jpg",
-            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/7b/a7/c97ba7dc-9335-6c95-9439-f4368668832b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/100x100bb.jpg",
+            "features": [
+              "iosUniversal"
+            ],
+            "advisories": [
+              "Infrequent/Mild Realistic Violence",
+              "Infrequent/Mild Horror/Fear Themes",
+              "Infrequent/Mild Sexual Content and Nudity",
+              "Infrequent/Mild Alcohol, Tobacco, or Drug Use or References",
+              "Infrequent/Mild Mature/Suggestive Themes",
+              "Infrequent/Mild Profanity or Crude Humor"
+            ],
             "supportedDevices": [
               "iPhone5s-iPhone5s",
               "iPadAir-iPadAir",
@@ -5331,50 +4007,51 @@
               "iPhone18ProMax-iPhone18ProMax",
               "iPhoneDuo-iPhoneDuo"
             ],
-            "artistId": 1507429167,
-            "artistName": "Canela Media, Inc.",
-            "genres": [
-              "Entertainment",
-              "Lifestyle"
-            ],
-            "price": 0.0,
-            "currentVersionReleaseDate": "2026-10-01T13:36:59Z",
-            "bundleId": "com.canela.ott",
-            "trackId": 1507429168,
-            "trackName": "Canela.TV - Series y Películas",
+            "kind": "software",
             "releaseNotes": "Canela.TV te ofrece el mejor entretenimiento gratuito donde sea y cuando sea.​\n\n- Correcciones de errores y mejoras de rendimiento",
-            "releaseDate": "2020-05-02T07:00:00Z",
-            "genreIds": [
-              "6016",
-              "6012"
-            ],
-            "primaryGenreName": "Entertainment",
-            "primaryGenreId": 6016,
-            "sellerName": "Canela Media, Inc.",
-            "isVppDeviceBasedLicensingEnabled": true,
-            "version": "16.7",
-            "wrapperType": "software",
-            "currency": "USD",
-            "description": "Canela.TV es tu aplicación de televisión en español. Disfruta de una amplia variedad de entretenimiento para toda la familia y un programa de lealtad donde ganas puntos viendo tus shows favoritos. Disponible ¡SIEMPRE GRATIS!\n \nMás de 35,000 horas de contenido, incluyendo: series originales, telenovelas icónicas, películas de Hollywood, clásicos del Cine de Oro, telenovelas turcas y brasileñas, programas diarios de entretenimiento, estilo de vida, deportes y noticias. Además, secciones dedicadas a música, deportes y contenido infantil para toda la familia.\n\nCLUB CANELA es el programa de lealtad de Canela.TV donde ganas puntos viendo tu contenido favorito y puedes cambiarlos por recompesas. Siempre es gratis, solo necesitas crear tu perfil e iniciar sesión para comenzar a ganar puntos desde la app de la TV, móvil o sitio web. Ganas 5 puntos por cada 5 minutos de contenido consecutivo. Mientras más veas e interactúes con Canela.TV, más puntos ganas.\n \nSERIES ORIGINALES de todos los géneros, incluyendo Secretos de Villanas y Secretos de las Indomables, con la participación de estrellas icónicas de la televisión como Gaby Spanic, Laura Zapata, Cynthia Klitbo, Aylin Mujica, Sabine Moussier, Geraldine Bazán, Sarah Mintz, Yuri, Alicia Machado, Ninel Conde, Amara ‘La Negra’, Patricia Manterola y Zuleyka Rivera.\n \nCANALES EN VIVO siempre disponibles y dedicados a diferentes géneros y entretenimiento, seguro encuentras un canal para ti.\n \nPELÍCULAS Originales como Mi Perfecto Ex con Marjorie de Sousa y Mark Tacher; Cazadoras de Millonarios con Alicia Machado y Sherlyn. Clásicos del Cine de Oro como La Devoradora con María Félix; Me He de Comer Esa Tuna con Jorge Negrete; y Sor Tequila con La India María. Y lo mejor de Hollywood para todos los gustos: acción, comedia, romance, drama y más.\n \nTELENOVELAS desde las que marcaron toda una época hasta los más recientes éxitos. Novelas Turcas como Hercai, Infieles, El Secreto de Feriha y Me Robó Mi Vida, y telenovelas latinas como: Mirada de Mujer, Gata Salvaje y Eva Luna.\n \nCANELA MUSIC con videos musicales, shows originales, entrevistas y mixtapes seleccionados con los mejores videos de la música latina.\n \nCANELA DEPORTES te trae los mejores análisis deportivos con 100% Futbol y El Dugout; Historias de Leyendas y One on One, con entrevistas a grandes figuras como el Pibe Valderrama, Óscar Córdoba, Javier Zanetti y más. Además, disfruta de MASL y canales en vivo.\n \nCANELA KIDS te ofrece contenido infantil y 100% en español. Disfruta shows originales como Plaza Aventuras, SúperEllas y StoryBook, además de éxitos donde los pequeños aprenden jugando, como Barbie Dreamtopia, El Mundo de Ryan, Hola Romi y Love Diana.\n \n¿Qué puedes hacer dentro de Canela.TV?\n \n- Disfrutar de todo el contenido disponible con acceso 100% gratuito.\n- Filtrar contenido para encontrar justo lo que quieres ver.\n- Recibir notificaciones personalizadas para seguir descubriendo más entretenimiento.\n- Recibir recomendaciones personalizadas alineadas a tus gustos.\n- Guardar tu contenido favorito.\n- Recibir acceso anticipado a contenido exclusivo.\n- Controlar el acceso a contenido que ven tus hijos.\n- Si eres parte de Club Canela, podrás ganar puntos por ver tu contenido favorito, que puedes cambiar por contenido exclusivo, entradas a sorteos y nuevas sorpresas todo el tiempo; además podrás completar divertidos retos y trivias que te harán ganar puntos extras.\n \nEl mejor entretenimiento en español en un solo lugar. ¡Descarga la app ahora!\n \nCanela.TV - Televisión gratis y en español\nMás información en https://www.canela.tv",
-            "averageUserRatingForCurrentVersion": 4.75315,
-            "sellerUrl": "https://www.canela.tv",
+            "averageUserRatingForCurrentVersion": 4.75308,
             "languageCodesISO2A": [
               "EN",
               "ES"
             ],
             "fileSizeBytes": "130436096",
-            "formattedPrice": "Free",
-            "userRatingCountForCurrentVersion": 42985,
-            "trackContentRating": "17+",
             "trackCensoredName": "Canela.TV - Series y Películas",
             "trackViewUrl": "https://apps.apple.com/us/app/canela-tv-series-y-pel%C3%ADculas/id1507429168?uo=4",
             "contentAdvisoryRating": "17+",
-            "averageUserRating": 4.75315,
+            "averageUserRating": 4.75308,
+            "sellerUrl": "https://www.canela.tv",
+            "formattedPrice": "Free",
+            "userRatingCountForCurrentVersion": 43005,
+            "trackContentRating": "17+",
+            "genres": [
+              "Entertainment",
+              "Lifestyle"
+            ],
+            "artistId": 1507429167,
+            "artistName": "Canela Media, Inc.",
+            "price": 0.0,
+            "bundleId": "com.canela.ott",
             "minimumOsVersion": "14.0",
-            "userRatingCount": 42985
+            "trackId": 1507429168,
+            "trackName": "Canela.TV - Series y Películas",
+            "genreIds": [
+              "6016",
+              "6012"
+            ],
+            "releaseDate": "2020-05-02T07:00:00Z",
+            "sellerName": "Canela Media, Inc.",
+            "primaryGenreName": "Entertainment",
+            "primaryGenreId": 6016,
+            "isVppDeviceBasedLicensingEnabled": true,
+            "currentVersionReleaseDate": "2026-10-01T13:36:59Z",
+            "version": "16.7",
+            "wrapperType": "software",
+            "currency": "USD",
+            "description": "Canela.TV es tu aplicación de televisión en español. Disfruta de una amplia variedad de entretenimiento para toda la familia y un programa de lealtad donde ganas puntos viendo tus shows favoritos. Disponible ¡SIEMPRE GRATIS!\n \nMás de 35,000 horas de contenido, incluyendo: series originales, telenovelas icónicas, películas de Hollywood, clásicos del Cine de Oro, telenovelas turcas y brasileñas, programas diarios de entretenimiento, estilo de vida, deportes y noticias. Además, secciones dedicadas a música, deportes y contenido infantil para toda la familia.\n\nCLUB CANELA es el programa de lealtad de Canela.TV donde ganas puntos viendo tu contenido favorito y puedes cambiarlos por recompesas. Siempre es gratis, solo necesitas crear tu perfil e iniciar sesión para comenzar a ganar puntos desde la app de la TV, móvil o sitio web. Ganas 5 puntos por cada 5 minutos de contenido consecutivo. Mientras más veas e interactúes con Canela.TV, más puntos ganas.\n \nSERIES ORIGINALES de todos los géneros, incluyendo Secretos de Villanas y Secretos de las Indomables, con la participación de estrellas icónicas de la televisión como Gaby Spanic, Laura Zapata, Cynthia Klitbo, Aylin Mujica, Sabine Moussier, Geraldine Bazán, Sarah Mintz, Yuri, Alicia Machado, Ninel Conde, Amara ‘La Negra’, Patricia Manterola y Zuleyka Rivera.\n \nCANALES EN VIVO siempre disponibles y dedicados a diferentes géneros y entretenimiento, seguro encuentras un canal para ti.\n \nPELÍCULAS Originales como Mi Perfecto Ex con Marjorie de Sousa y Mark Tacher; Cazadoras de Millonarios con Alicia Machado y Sherlyn. Clásicos del Cine de Oro como La Devoradora con María Félix; Me He de Comer Esa Tuna con Jorge Negrete; y Sor Tequila con La India María. Y lo mejor de Hollywood para todos los gustos: acción, comedia, romance, drama y más.\n \nTELENOVELAS desde las que marcaron toda una época hasta los más recientes éxitos. Novelas Turcas como Hercai, Infieles, El Secreto de Feriha y Me Robó Mi Vida, y telenovelas latinas como: Mirada de Mujer, Gata Salvaje y Eva Luna.\n \nCANELA MUSIC con videos musicales, shows originales, entrevistas y mixtapes seleccionados con los mejores videos de la música latina.\n \nCANELA DEPORTES te trae los mejores análisis deportivos con 100% Futbol y El Dugout; Historias de Leyendas y One on One, con entrevistas a grandes figuras como el Pibe Valderrama, Óscar Córdoba, Javier Zanetti y más. Además, disfruta de MASL y canales en vivo.\n \nCANELA KIDS te ofrece contenido infantil y 100% en español. Disfruta shows originales como Plaza Aventuras, SúperEllas y StoryBook, además de éxitos donde los pequeños aprenden jugando, como Barbie Dreamtopia, El Mundo de Ryan, Hola Romi y Love Diana.\n \n¿Qué puedes hacer dentro de Canela.TV?\n \n- Disfrutar de todo el contenido disponible con acceso 100% gratuito.\n- Filtrar contenido para encontrar justo lo que quieres ver.\n- Recibir notificaciones personalizadas para seguir descubriendo más entretenimiento.\n- Recibir recomendaciones personalizadas alineadas a tus gustos.\n- Guardar tu contenido favorito.\n- Recibir acceso anticipado a contenido exclusivo.\n- Controlar el acceso a contenido que ven tus hijos.\n- Si eres parte de Club Canela, podrás ganar puntos por ver tu contenido favorito, que puedes cambiar por contenido exclusivo, entradas a sorteos y nuevas sorpresas todo el tiempo; además podrás completar divertidos retos y trivias que te harán ganar puntos extras.\n \nEl mejor entretenimiento en español en un solo lugar. ¡Descarga la app ahora!\n \nCanela.TV - Televisión gratis y en español\nMás información en https://www.canela.tv",
+            "userRatingCount": 43005
           },
-          "average_rating": 4.75315,
-          "rating_count": 42985,
+          "average_rating": 4.75308,
+          "rating_count": 43005,
           "version": "16.7",
           "current_version_release_date": "2026-10-01T13:36:59Z",
           "track_name": "Canela.TV - Series y Películas",
@@ -5393,16 +4070,16 @@
             "summary": "Entretenimiento gratis en español: Series, películas, novelas, deportes y más",
             "installs": "10,000,000+",
             "minInstalls": 10000000,
-            "realInstalls": 21364622,
+            "realInstalls": 21367299,
             "score": 4.232323,
-            "ratings": 14631,
+            "ratings": 14633,
             "reviews": 780,
             "histogram": [
               1842,
-              515,
+              516,
               737,
               810,
-              10709
+              10711
             ],
             "price": 0,
             "free": true,
@@ -5467,7 +4144,7 @@
             "url": "https://play.google.com/store/apps/details?id=com.canela.ott&hl=en&gl=us"
           },
           "average_rating": 4.232323,
-          "rating_count": 14631,
+          "rating_count": 14633,
           "version": "16.7",
           "installs": "10,000,000+",
           "title": "Canela.TV - Series y Películas",
@@ -5948,7 +4625,7 @@
             "summary": "Play your daily dose of awesome entertainment anywhere you go.",
             "installs": "1,000,000+",
             "minInstalls": 1000000,
-            "realInstalls": 1481373,
+            "realInstalls": 1481443,
             "score": 4.6130586,
             "ratings": 22816,
             "reviews": 3265,
