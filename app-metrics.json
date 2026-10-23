@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-22T06:49:26.677873+00:00",
+  "generated_utc": "2026-10-23T06:44:49.911677+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52797
       },
       "android": {
-        "rating": 4.4257684
+        "rating": 4.4257812
       },
       "sentiment": {
-        "score": 0.602,
+        "score": 0.527,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,9 +24,9 @@
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 4,
-            "platform": "Android"
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
           }
         ],
         "topNegative": [
@@ -49,10 +49,22 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -61,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51969
+        "rating": 4.52153
       },
       "android": {
-        "rating": 4.63105
+        "rating": 4.6316104
       },
       "sentiment": {
-        "score": 0.61,
+        "score": 0.606,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -122,10 +134,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26042
+        "rating": 2.26268
       },
       "android": {
-        "rating": 3.429719
+        "rating": 3.4504132
       },
       "sentiment": {
         "score": 0.527,
@@ -187,10 +199,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44351
+        "rating": 4.44344
       },
       "android": {
-        "rating": 3.7079277
+        "rating": 3.7097223
       },
       "sentiment": {
         "score": 0.5,
@@ -248,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79136
+        "rating": 2.7896
       },
       "android": {
-        "rating": 3.5369823
+        "rating": 3.5367901
       },
       "sentiment": {
         "score": 0.51,
@@ -317,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75308
+        "rating": 4.75257
       },
       "android": {
         "rating": 4.232323
