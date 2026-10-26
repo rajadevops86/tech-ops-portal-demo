@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-25T07:06:21.630370+00:00",
+  "generated_utc": "2026-10-26T07:13:22.265405+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52792
+        "rating": 4.52785
       },
       "android": {
-        "rating": 4.425368
+        "rating": 4.4253664
       },
       "sentiment": {
-        "score": 0.564,
+        "score": 0.578,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,28 +31,28 @@
         ],
         "topNegative": [
           {
+            "text": "very worst customer care.i did annual subscription but there is no access. I contacted customer care almost 10 times for a solution. there is no use. they start the chat and then no reply. dont waste your money.",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "am faciing login issues from evening I couldn't login no customer support help also I paid for quarterly worst 😡",
+            "rating": 2,
+            "platform": "Android"
+          },
+          {
             "text": "worst experience",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app every time shows error",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "crash",
+            "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "crash",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.51979
+        "rating": 4.52003
       },
       "android": {
-        "rating": 4.6306005
+        "rating": 4.6286063
       },
       "sentiment": {
-        "score": 0.6,
+        "score": 0.601,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -137,7 +137,7 @@
         "rating": 2.26623
       },
       "android": {
-        "rating": 3.433735
+        "rating": 3.4421487
       },
       "sentiment": {
         "score": 0.527,
@@ -199,20 +199,15 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44351
+        "rating": 4.44376
       },
       "android": {
-        "rating": 3.714882
+        "rating": 3.7122905
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.5,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "No es la primera vez que intento usar esta aplicación cada vez que entro y quiero entrar a mi cuenta solo me sale optimum Y NO TENGO UNQ CUENTA MI CUENTA ES FIOS! y me molesta que no me da la opción para seleccionar mi proveedor!",
-            "rating": 1,
-            "platform": "iOS"
-          },
           {
             "text": "Very good",
             "rating": 5,
@@ -222,13 +217,18 @@
             "text": "good",
             "rating": 5,
             "platform": "Android"
+          },
+          {
+            "text": "Is ok",
+            "rating": 4,
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -243,23 +243,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -268,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78901
+        "rating": 2.7896
       },
       "android": {
-        "rating": 3.5367901
+        "rating": 3.532274
       },
       "sentiment": {
         "score": 0.51,
@@ -337,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75261
+        "rating": 4.75297
       },
       "android": {
         "rating": 4.232323
