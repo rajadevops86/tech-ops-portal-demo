@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-26T07:13:22.265405+00:00",
+  "generated_utc": "2026-10-27T07:02:37.320425+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52785
+        "rating": 4.52782
       },
       "android": {
-        "rating": 4.4253664
+        "rating": 4.425108
       },
       "sentiment": {
-        "score": 0.578,
+        "score": 0.596,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -24,7 +24,7 @@
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -36,27 +36,27 @@
             "platform": "Android"
           },
           {
-            "text": "am faciing login issues from evening I couldn't login no customer support help also I paid for quarterly worst 😡",
-            "rating": 2,
+            "text": "bad",
+            "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst experience",
-            "rating": 1,
+            "text": "am faciing login issues from evening I couldn't login no customer support help also I paid for quarterly worst 😡",
+            "rating": 2,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "stream",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52003
+        "rating": 4.5202
       },
       "android": {
-        "rating": 4.6286063
+        "rating": 4.62568
       },
       "sentiment": {
-        "score": 0.601,
+        "score": 0.598,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -137,10 +137,10 @@
         "rating": 2.26623
       },
       "android": {
-        "rating": 3.4421487
+        "rating": 3.4256198
       },
       "sentiment": {
-        "score": 0.527,
+        "score": 0.524,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -202,7 +202,7 @@
         "rating": 4.44376
       },
       "android": {
-        "rating": 3.7122905
+        "rating": 3.7178771
       },
       "sentiment": {
         "score": 0.5,
@@ -263,7 +263,7 @@
         "rating": 2.7896
       },
       "android": {
-        "rating": 3.532274
+        "rating": 3.530288
       },
       "sentiment": {
         "score": 0.51,
@@ -329,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75297
+        "rating": 4.75298
       },
       "android": {
-        "rating": 4.232323
+        "rating": 4.2171717
       },
       "sentiment": {
         "score": 0.619,
