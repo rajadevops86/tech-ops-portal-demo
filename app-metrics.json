@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-28T07:43:54.183350+00:00",
+  "generated_utc": "2026-10-29T07:48:50.662301+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52778
+        "rating": 4.5278
       },
       "android": {
-        "rating": 4.425059
+        "rating": 4.424956
       },
       "sentiment": {
-        "score": 0.602,
+        "score": 0.61,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52018
+        "rating": 4.5212
       },
       "android": {
-        "rating": 4.625113
+        "rating": 4.6229806
       },
       "sentiment": {
-        "score": 0.598,
+        "score": 0.6,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -88,12 +88,12 @@
             "platform": "Android"
           },
           {
-            "text": "very nice apps, just here for pvl.",
+            "text": "BEAUTIFUL DAY BEAUTIFUL DAYS",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
+            "text": "very nice apps, just here for pvl.",
             "rating": 5,
             "platform": "Android"
           }
@@ -117,15 +117,15 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
             "label": "stream",
             "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -199,7 +199,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44381
+        "rating": 4.44386
       },
       "android": {
         "rating": 3.7178771
@@ -260,7 +260,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7896
+        "rating": 2.78912
       },
       "android": {
         "rating": 3.530288
@@ -329,13 +329,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75303
+        "rating": 4.75295
       },
       "android": {
-        "rating": 4.2171717
+        "rating": 4.2512565
       },
       "sentiment": {
-        "score": 0.576,
+        "score": 0.615,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -356,6 +356,11 @@
         ],
         "topNegative": [
           {
+            "text": "I don't even use this🤪",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
@@ -364,24 +369,15 @@
             "text": "This app would be five stars if they would just give it closed captions.",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
-            "rating": 2,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
