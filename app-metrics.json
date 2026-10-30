@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T07:48:50.662301+00:00",
+  "generated_utc": "2026-10-30T07:53:36.650526+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,7 +7,7 @@
         "rating": 4.5278
       },
       "android": {
-        "rating": 4.424956
+        "rating": 4.424906
       },
       "sentiment": {
         "score": 0.61,
@@ -52,6 +52,10 @@
             "trend": "worsening"
           },
           {
+            "label": "update",
+            "trend": "steady"
+          },
+          {
             "label": "crash",
             "trend": "steady"
           },
@@ -62,10 +66,6 @@
           {
             "label": "buffer",
             "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5212
+        "rating": 4.52217
       },
       "android": {
-        "rating": 4.6229806
+        "rating": 4.6198473
       },
       "sentiment": {
-        "score": 0.6,
+        "score": 0.554,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,14 +100,14 @@
         ],
         "topNegative": [
           {
-            "text": "I will not recommend this application to someone, it always need to UPGRADE your SUBSCRIPTION before watching an NBA game, additionally there's no replay. I am disappointed, as I expected to watch NBA game after its scheduled time. Unfortunately, you didn't meet my expectation.",
+            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
+            "text": "I just subscribed but can't access the game that I wanted to watch!",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Pakiayos naman po ng app nyo di po kasi makanood ng NBA eh. (Sorry, an error occurred) po nakalagay.",
@@ -117,15 +117,23 @@
         ],
         "drivers": [
           {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
             "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -137,7 +145,7 @@
         "rating": 2.26459
       },
       "android": {
-        "rating": 3.4244897
+        "rating": 3.4308944
       },
       "sentiment": {
         "score": 0.532,
@@ -202,7 +210,7 @@
         "rating": 4.44386
       },
       "android": {
-        "rating": 3.7178771
+        "rating": 3.7140865
       },
       "sentiment": {
         "score": 0.5,
@@ -266,7 +274,7 @@
         "rating": 3.530288
       },
       "sentiment": {
-        "score": 0.51,
+        "score": 0.486,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -287,40 +295,40 @@
         ],
         "topNegative": [
           {
-            "text": "The app lacks all the time which is really frustrating.",
+            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "Terrible App do not waste your money.",
+            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
+            "text": "horrible actualización se pausa mucho",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
-            "label": "slow",
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "buffer",
             "trend": "steady"
           }
         ]
@@ -329,7 +337,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75295
+        "rating": 4.75291
       },
       "android": {
         "rating": 4.2512565
