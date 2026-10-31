@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T07:53:36.650526+00:00",
+  "generated_utc": "2026-10-31T07:44:56.961275+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,7 +7,7 @@
         "rating": 4.5278
       },
       "android": {
-        "rating": 4.424906
+        "rating": 4.4249053
       },
       "sentiment": {
         "score": 0.61,
@@ -76,10 +76,10 @@
         "rating": 4.52217
       },
       "android": {
-        "rating": 4.6198473
+        "rating": 4.617629
       },
       "sentiment": {
-        "score": 0.554,
+        "score": 0.595,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,14 +100,14 @@
         ],
         "topNegative": [
           {
-            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
+            "text": "I will not recommend this application to someone, it always need to UPGRADE your SUBSCRIPTION before watching an NBA game, additionally there's no replay. I am disappointed, as I expected to watch NBA game after its scheduled time. Unfortunately, you didn't meet my expectation.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "I just subscribed but can't access the game that I wanted to watch!",
+            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Pakiayos naman po ng app nyo di po kasi makanood ng NBA eh. (Sorry, an error occurred) po nakalagay.",
@@ -121,19 +121,11 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -210,7 +202,7 @@
         "rating": 4.44386
       },
       "android": {
-        "rating": 3.7140865
+        "rating": 3.7196653
       },
       "sentiment": {
         "score": 0.5,
@@ -274,7 +266,7 @@
         "rating": 3.530288
       },
       "sentiment": {
-        "score": 0.486,
+        "score": 0.51,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -295,40 +287,40 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -337,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75291
+        "rating": 4.75281
       },
       "android": {
-        "rating": 4.2512565
+        "rating": 4.2713566
       },
       "sentiment": {
         "score": 0.615,
