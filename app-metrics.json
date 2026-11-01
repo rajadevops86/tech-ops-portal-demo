@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-31T07:44:56.961275+00:00",
+  "generated_utc": "2026-11-01T08:25:15.734540+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5278
+        "rating": 4.52777
       },
       "android": {
-        "rating": 4.4249053
+        "rating": 4.4248085
       },
       "sentiment": {
-        "score": 0.61,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,7 +31,7 @@
         ],
         "topNegative": [
           {
-            "text": "very worst customer care.i did annual subscription but there is no access. I contacted customer care almost 10 times for a solution. there is no use. they start the chat and then no reply. dont waste your money.",
+            "text": "Very Very slow..!! the app sometimes glitches too.",
             "rating": 1,
             "platform": "Android"
           },
@@ -60,11 +60,11 @@
             "trend": "steady"
           },
           {
-            "label": "stream",
+            "label": "slow",
             "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "stream",
             "trend": "steady"
           }
         ]
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52217
+        "rating": 4.52314
       },
       "android": {
-        "rating": 4.617629
+        "rating": 4.6260633
       },
       "sentiment": {
-        "score": 0.595,
+        "score": 0.555,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,14 +100,14 @@
         ],
         "topNegative": [
           {
-            "text": "I will not recommend this application to someone, it always need to UPGRADE your SUBSCRIPTION before watching an NBA game, additionally there's no replay. I am disappointed, as I expected to watch NBA game after its scheduled time. Unfortunately, you didn't meet my expectation.",
+            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
+            "text": "I just subscribed but can't access the game that I wanted to watch!",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Pakiayos naman po ng app nyo di po kasi makanood ng NBA eh. (Sorry, an error occurred) po nakalagay.",
@@ -121,11 +121,19 @@
             "trend": "worsening"
           },
           {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
             "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "update",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -137,10 +145,10 @@
         "rating": 2.26459
       },
       "android": {
-        "rating": 3.4308944
+        "rating": 3.4210527
       },
       "sentiment": {
-        "score": 0.532,
+        "score": 0.527,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -199,7 +207,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44386
+        "rating": 4.44381
       },
       "android": {
         "rating": 3.7196653
@@ -260,7 +268,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78912
+        "rating": 2.7887
       },
       "android": {
         "rating": 3.530288
@@ -329,10 +337,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75281
+        "rating": 4.75282
       },
       "android": {
-        "rating": 4.2713566
+        "rating": 4.321608
       },
       "sentiment": {
         "score": 0.615,
