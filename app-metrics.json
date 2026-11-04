@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-03T08:50:03.152527+00:00",
+  "generated_utc": "2026-11-04T08:18:27.529131+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.5278
+        "rating": 4.52776
       },
       "android": {
-        "rating": 4.4248137
+        "rating": 4.4247127
       },
       "sentiment": {
-        "score": 0.569,
+        "score": 0.58,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -53,14 +53,14 @@
           },
           {
             "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "slow",
             "trend": "steady"
           },
           {
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52371
+        "rating": 4.52325
       },
       "android": {
-        "rating": 4.627011
+        "rating": 4.622081
       },
       "sentiment": {
-        "score": 0.559,
+        "score": 0.598,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -105,9 +105,9 @@
             "platform": "Android"
           },
           {
-            "text": "I just subscribed but can't access the game that I wanted to watch!",
+            "text": "useless",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Pakiayos naman po ng app nyo di po kasi makanood ng NBA eh. (Sorry, an error occurred) po nakalagay.",
@@ -121,19 +121,11 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
             "label": "ads",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -142,10 +134,10 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26459
+        "rating": 2.26132
       },
       "android": {
-        "rating": 3.3755102
+        "rating": 3.3714285
       },
       "sentiment": {
         "score": 0.523,
@@ -268,7 +260,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.79025
+        "rating": 2.79036
       },
       "android": {
         "rating": 3.5290322
@@ -337,10 +329,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75271
+        "rating": 4.75264
       },
       "android": {
-        "rating": 4.3015075
+        "rating": 4.305
       },
       "sentiment": {
         "score": 0.614,
