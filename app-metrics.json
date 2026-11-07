@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-11-06T08:45:35.565632+00:00",
+  "generated_utc": "2026-11-07T08:00:23.241925+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52778
+        "rating": 4.52775
       },
       "android": {
-        "rating": 4.424559
+        "rating": 4.4245415
       },
       "sentiment": {
-        "score": 0.584,
+        "score": 0.517,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "very good afternoon",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "very good",
+            "text": "very good afternoon",
             "rating": 5,
             "platform": "Android"
           },
@@ -31,14 +31,14 @@
         ],
         "topNegative": [
           {
-            "text": "Very Very slow..!! the app sometimes glitches too.",
+            "text": "Even after paying subscription ads pop up, it’s annoying as hell",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "bad",
+            "text": "All are very boring",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "am faciing login issues from evening I couldn't login no customer support help also I paid for quarterly worst 😡",
@@ -52,20 +52,20 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "login",
             "trend": "worsening"
           },
           {
             "label": "slow",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52528
+        "rating": 4.52614
       },
       "android": {
-        "rating": 4.623035
+        "rating": 4.624353
       },
       "sentiment": {
-        "score": 0.592,
+        "score": 0.594,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -134,51 +134,51 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.26968
+        "rating": 2.27156
       },
       "android": {
-        "rating": 3.388664
+        "rating": 3.4065042
       },
       "sentiment": {
-        "score": 0.516,
+        "score": 0.523,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "Very good",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
             "text": "good",
             "rating": 3,
+            "platform": "Android"
+          },
+          {
+            "text": "thanks a lot. keep going. y'all the best",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "i liked",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "Cannot log in even after clearing cache and reinstall. This was included in my fibre broadband. For years paid the extra monthly RM30 yet cannot access. terrible",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Unfriendly, the worst authentication",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "login",
+            "label": "slow",
             "trend": "worsening"
           },
           {
@@ -186,16 +186,12 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
             "label": "update",
             "trend": "worsening"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
           }
         ]
       }
@@ -203,7 +199,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44386
+        "rating": 4.44393
       },
       "android": {
         "rating": 3.7242339
@@ -264,7 +260,7 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.7894
+        "rating": 2.78999
       },
       "android": {
         "rating": 3.5290322
@@ -333,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75263
+        "rating": 4.7527
       },
       "android": {
         "rating": 4.305
