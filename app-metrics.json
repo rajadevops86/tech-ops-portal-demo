@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-08T08:18:57.049232+00:00",
+  "generated_utc": "2026-11-09T08:52:01.601449+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,19 +7,19 @@
         "rating": 4.52764
       },
       "android": {
-        "rating": 4.4244523
+        "rating": 4.424292
       },
       "sentiment": {
-        "score": 0.591,
+        "score": 0.507,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "very good afternoon",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "very good",
+            "text": "very good afternoon",
             "rating": 5,
             "platform": "Android"
           },
@@ -31,12 +31,12 @@
         ],
         "topNegative": [
           {
-            "text": "Very Very slow..!! the app sometimes glitches too.",
+            "text": "All are very boring",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
-            "text": "bad",
+            "text": "worst experience in my life",
             "rating": 1,
             "platform": "Android"
           },
@@ -48,24 +48,24 @@
         ],
         "drivers": [
           {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
             "label": "ads",
             "trend": "worsening"
           },
           {
-            "label": "slow",
-            "trend": "steady"
+            "label": "login",
+            "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52665
+        "rating": 4.52698
       },
       "android": {
-        "rating": 4.6288314
+        "rating": 4.6281743
       },
       "sentiment": {
-        "score": 0.599,
+        "score": 0.554,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,9 +100,9 @@
         ],
         "topNegative": [
           {
-            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
+            "text": "I just subscribed but can't access the game that I wanted to watch!",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "useless",
@@ -118,71 +118,6 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "ads",
-            "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          }
-        ]
-      }
-    },
-    {
-      "appName": "Unifi TV 2.0",
-      "ios": {
-        "rating": 2.27692
-      },
-      "android": {
-        "rating": 3.3918366
-      },
-      "sentiment": {
-        "score": 0.523,
-        "scoreDelta": 0,
-        "topPositive": [
-          {
-            "text": "good",
-            "rating": 3,
-            "platform": "Android"
-          },
-          {
-            "text": "thanks a lot. keep going. y'all the best",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "i liked",
-            "rating": 5,
-            "platform": "Android"
-          }
-        ],
-        "topNegative": [
-          {
-            "text": "Cannot log in even after clearing cache and reinstall. This was included in my fibre broadband. For years paid the extra monthly RM30 yet cannot access. terrible",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "what this 400203? error without solution. so stupid",
-            "rating": 1,
-            "platform": "Android"
-          }
-        ],
-        "drivers": [
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
-            "label": "stream",
             "trend": "worsening"
           },
           {
@@ -196,6 +131,79 @@
           {
             "label": "login",
             "trend": "steady"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          }
+        ]
+      }
+    },
+    {
+      "appName": "Unifi TV 2.0",
+      "ios": {
+        "rating": 2.27529
+      },
+      "android": {
+        "rating": 3.342742
+      },
+      "sentiment": {
+        "score": 0.517,
+        "scoreDelta": 0,
+        "topPositive": [
+          {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "Very good",
+            "rating": 5,
+            "platform": "iOS"
+          },
+          {
+            "text": "good",
+            "rating": 3,
+            "platform": "Android"
+          }
+        ],
+        "topNegative": [
+          {
+            "text": "what this 400203? error without solution. so stupid",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Unfriendly, the worst authentication",
+            "rating": 1,
+            "platform": "iOS"
+          }
+        ],
+        "drivers": [
+          {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "crash",
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
           }
         ]
       }
@@ -206,7 +214,7 @@
         "rating": 4.44393
       },
       "android": {
-        "rating": 3.7224548
+        "rating": 3.7126918
       },
       "sentiment": {
         "score": 0.5,
@@ -270,7 +278,7 @@
         "rating": 3.5290322
       },
       "sentiment": {
-        "score": 0.488,
+        "score": 0.51,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -291,40 +299,40 @@
         ],
         "topNegative": [
           {
-            "text": "Stop taking off rebelde I hate it I still not done watching it put it backkkkkkkk",
+            "text": "The app lacks all the time which is really frustrating.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "No la bajes se tarda horrible eso si te cobran bien puntual y lo peor es que no hay servicio al cliente para mejorar el servicio . Univisión se lees esto realmente es horrible la aplicación por más y mejor internet tengas en tu casa o en el trabajo .",
+            "text": "Terrible App do not waste your money.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "horrible actualización se pausa mucho",
+            "text": "This app is a joke. I don't recommend downloading. This app continues to fail to send a notification to it subscribers. And it makes you reinstall your subscription. Despite there still charging for monthly payments. the process to delete your account/ cancel your subscription is ridiculous. And they still have the nerve to charge you after you cancel. And deleting your profile account is another nightmare of process. this company is terrible!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
           {
-            "label": "stream",
-            "trend": "worsening"
-          },
-          {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
-            "label": "buffer",
+            "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
             "trend": "steady"
           }
         ]
@@ -333,13 +341,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75268
+        "rating": 4.7527
       },
       "android": {
-        "rating": 4.3015075
+        "rating": 4.305
       },
       "sentiment": {
-        "score": 0.615,
+        "score": 0.574,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -360,28 +368,32 @@
         ],
         "topNegative": [
           {
-            "text": "Me encanta aquí está mi novela favorita el secreto de feriha❤️",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "I don't even use this🤪",
+            "text": "It constantly says error or connection issues even though other seasons and episodes work. Only wanted to watch ONE show specifically so my family could understand but it kept saying error… again and again, I’ve seen this issue happen. Didn’t even get past the 4th episode in the FIRST SEASON and the app started having issues. The app seems to have just this major issue besides the lack of variety in movies but it’s SUPER INCONVENIENT.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
+            "rating": 2,
+            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
