@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-11-09T08:52:01.601449+00:00",
+  "generated_utc": "2026-11-10T08:57:59.821887+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52764
+        "rating": 4.52763
       },
       "android": {
-        "rating": 4.424292
+        "rating": 4.424151
       },
       "sentiment": {
-        "score": 0.507,
+        "score": 0.563,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Very good",
+            "text": "very good afternoon",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "very good afternoon",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           },
@@ -31,9 +31,9 @@
         ],
         "topNegative": [
           {
-            "text": "All are very boring",
+            "text": "bad",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "worst experience in my life",
@@ -48,24 +48,24 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
-          },
-          {
             "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "ads",
             "trend": "worsening"
+          },
+          {
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "slow",
+            "trend": "steady"
+          },
+          {
+            "label": "crash",
+            "trend": "steady"
           }
         ]
       }
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52698
+        "rating": 4.52689
       },
       "android": {
-        "rating": 4.6281743
+        "rating": 4.629105
       },
       "sentiment": {
-        "score": 0.554,
+        "score": 0.595,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,9 +100,9 @@
         ],
         "topNegative": [
           {
-            "text": "I just subscribed but can't access the game that I wanted to watch!",
+            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "useless",
@@ -118,22 +118,14 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
             "label": "ads",
+            "trend": "steady"
+          },
+          {
+            "label": "update",
             "trend": "steady"
           }
         ]
@@ -148,62 +140,58 @@
         "rating": 3.342742
       },
       "sentiment": {
-        "score": 0.517,
+        "score": 0.523,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
-            "text": "Very good",
-            "rating": 5,
-            "platform": "iOS"
-          },
-          {
             "text": "good",
             "rating": 3,
+            "platform": "Android"
+          },
+          {
+            "text": "thanks a lot. keep going. y'all the best",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "i liked",
+            "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "Cannot log in even after clearing cache and reinstall. This was included in my fibre broadband. For years paid the extra monthly RM30 yet cannot access. terrible",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "text": "The worst app for TV. Terrible user experience, everything is slow and delayed. And it's not the network. To those in charge or the backend - Wake up!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Unfriendly, the worst authentication",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
-          {
-            "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
-            "trend": "worsening"
-          },
           {
             "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "stream",
+            "label": "slow",
             "trend": "worsening"
           },
           {
-            "label": "slow",
-            "trend": "worsening"
+            "label": "stream",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
+            "trend": "steady"
           }
         ]
       }
@@ -211,10 +199,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44393
+        "rating": 4.44388
       },
       "android": {
-        "rating": 3.7126918
+        "rating": 3.7096775
       },
       "sentiment": {
         "score": 0.5,
@@ -275,7 +263,7 @@
         "rating": 2.78999
       },
       "android": {
-        "rating": 3.5290322
+        "rating": 3.5220287
       },
       "sentiment": {
         "score": 0.51,
@@ -341,13 +329,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7527
+        "rating": 4.75263
       },
       "android": {
         "rating": 4.305
       },
       "sentiment": {
-        "score": 0.574,
+        "score": 0.615,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -368,32 +356,28 @@
         ],
         "topNegative": [
           {
-            "text": "It constantly says error or connection issues even though other seasons and episodes work. Only wanted to watch ONE show specifically so my family could understand but it kept saying error… again and again, I’ve seen this issue happen. Didn’t even get past the 4th episode in the FIRST SEASON and the app started having issues. The app seems to have just this major issue besides the lack of variety in movies but it’s SUPER INCONVENIENT.",
+            "text": "Me encanta aquí está mi novela favorita el secreto de feriha❤️",
+            "rating": 5,
+            "platform": "Android"
+          },
+          {
+            "text": "I don't even use this🤪",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
-            "rating": 2,
-            "platform": "iOS"
           }
         ],
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
