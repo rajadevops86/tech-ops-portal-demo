@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-14T08:18:37.070896+00:00",
+  "generated_utc": "2026-11-15T08:38:05.840831+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52763
+        "rating": 4.52758
       },
       "android": {
-        "rating": 4.4235396
+        "rating": 4.4234285
       },
       "sentiment": {
-        "score": 0.497,
+        "score": 0.491,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -73,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.5301
+        "rating": 4.52987
       },
       "android": {
-        "rating": 4.6148014
+        "rating": 4.6171565
       },
       "sentiment": {
         "score": 0.555,
@@ -142,13 +142,13 @@
     {
       "appName": "Unifi TV 2.0",
       "ios": {
-        "rating": 2.27877
+        "rating": 2.28097
       },
       "android": {
-        "rating": 3.3360324
+        "rating": 3.3211381
       },
       "sentiment": {
-        "score": 0.519,
+        "score": 0.525,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -203,7 +203,7 @@
           },
           {
             "label": "slow",
-            "trend": "worsening"
+            "trend": "steady"
           }
         ]
       }
@@ -211,7 +211,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44353
+        "rating": 4.44332
       },
       "android": {
         "rating": 3.7082748
@@ -283,7 +283,7 @@
         "rating": 2.79108
       },
       "android": {
-        "rating": 3.5207374
+        "rating": 3.5204709
       },
       "sentiment": {
         "score": 0.488,
@@ -349,13 +349,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75244
+        "rating": 4.7524
       },
       "android": {
-        "rating": 4.281407
+        "rating": 4.285
       },
       "sentiment": {
-        "score": 0.574,
+        "score": 0.575,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -376,6 +376,11 @@
         ],
         "topNegative": [
           {
+            "text": "I like the app, but it’s so annoying to watch the same ads over and over! Same Real Milk ad, same Macdonald’s ad! Every 2 minutes and then the same ads, you cant skip bc they have you watch ads!! I get the ads make the app free, but jeez, gives me anxiety to hear the same ads every 2 minutes. Plus towards the end it doesn’t let the episode finish when they change it to the next one which starts with ads so I cant see how that episode ends!",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
             "text": "It constantly says error or connection issues even though other seasons and episodes work. Only wanted to watch ONE show specifically so my family could understand but it kept saying error… again and again, I’ve seen this issue happen. Didn’t even get past the 4th episode in the FIRST SEASON and the app started having issues. The app seems to have just this major issue besides the lack of variety in movies but it’s SUPER INCONVENIENT.",
             "rating": 1,
             "platform": "iOS"
@@ -384,11 +389,6 @@
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
             "rating": 1,
             "platform": "Android"
-          },
-          {
-            "text": "I was really interested in watching the new show Secretos de Pareja, but it’s been extremely difficult because the connection is terrible. It’s very complicated to skip scenes, and when I’ve tried using AirPlay or mirroring my phone, it gets stuck. When it freezes and I try closing and reopening it, it doesn’t resume where I left off but starts from the beginning. It could be a good app, but it’s missing basic features. I’ve spent over two hours just trying to watch the first episode because it keeps freezing. Plus, having seven commercials every two minutes is really annoying.",
-            "rating": 2,
-            "platform": "iOS"
           }
         ],
         "drivers": [
