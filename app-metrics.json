@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-16T08:46:44.076424+00:00",
+  "generated_utc": "2026-11-17T09:54:02.853877+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52754
+        "rating": 4.52749
       },
       "android": {
-        "rating": 4.423403
+        "rating": 4.4233794
       },
       "sentiment": {
-        "score": 0.54,
+        "score": 0.556,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,6 +31,11 @@
         ],
         "topNegative": [
           {
+            "text": "bad",
+            "rating": 1,
+            "platform": "Android"
+          },
+          {
             "text": "very very bad experience not working 4k quality in this app west of my money",
             "rating": 1,
             "platform": "Android"
@@ -38,11 +43,6 @@
           {
             "text": "worst experience in my life",
             "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "am faciing login issues from evening I couldn't login no customer support help also I paid for quarterly worst 😡",
-            "rating": 2,
             "platform": "Android"
           }
         ],
@@ -73,13 +73,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52988
+        "rating": 4.53019
       },
       "android": {
-        "rating": 4.6148953
+        "rating": 4.617202
       },
       "sentiment": {
-        "score": 0.555,
+        "score": 0.595,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -100,9 +100,9 @@
         ],
         "topNegative": [
           {
-            "text": "I just subscribed but can't access the game that I wanted to watch!",
+            "text": "this is a scam! I subscribed to this but the app could not play, despite repeated calls to Cignal for them to fix the error. So I cancelled my subscription weeks before Oct 2, 2026 which is supposed to be my last day for viewing. But lo and behold! I was charged on Sept 30 thru gcash for another subscription!!!!! I complained and I hope I will get a refund. So, beware of this app!!! Do Not Subscribe!!",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "useless",
@@ -118,18 +118,6 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -145,7 +133,7 @@
         "rating": 2.28189
       },
       "android": {
-        "rating": 3.3373494
+        "rating": 3.34
       },
       "sentiment": {
         "score": 0.542,
@@ -211,10 +199,10 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44327
+        "rating": 4.44325
       },
       "android": {
-        "rating": 3.7068725
+        "rating": 3.7014084
       },
       "sentiment": {
         "score": 0.5,
@@ -275,7 +263,7 @@
         "rating": 2.79108
       },
       "android": {
-        "rating": 3.5204709
+        "rating": 3.5109148
       },
       "sentiment": {
         "score": 0.51,
@@ -344,7 +332,7 @@
         "rating": 4.75255
       },
       "android": {
-        "rating": 4.285
+        "rating": 4.281407
       },
       "sentiment": {
         "score": 0.615,
@@ -405,7 +393,7 @@
         "rating": 0
       },
       "android": {
-        "rating": 4.6132283
+        "rating": 4.6130586
       },
       "sentiment": {
         "score": 0.615,
