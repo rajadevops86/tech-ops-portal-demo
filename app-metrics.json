@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-19T09:39:58.277529+00:00",
+  "generated_utc": "2026-11-20T09:25:59.376249+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52747
+        "rating": 4.52745
       },
       "android": {
-        "rating": 4.423189
+        "rating": 4.422934
       },
       "sentiment": {
-        "score": 0.577,
+        "score": 0.562,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,7 +31,7 @@
         ],
         "topNegative": [
           {
-            "text": "Very Very slow..!! the app sometimes glitches too.",
+            "text": "worst app waste my money",
             "rating": 1,
             "platform": "Android"
           },
@@ -48,15 +48,15 @@
         ],
         "drivers": [
           {
-            "label": "update",
-            "trend": "worsening"
+            "label": "ads",
+            "trend": "steady"
           },
           {
             "label": "stream",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "update",
             "trend": "steady"
           },
           {
@@ -69,15 +69,20 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53007
+        "rating": 4.52999
       },
       "android": {
-        "rating": 4.615059
+        "rating": 4.6125717
       },
       "sentiment": {
-        "score": 0.591,
+        "score": 0.601,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "perfect",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "BEAUTIFUL DAY BEAUTIFUL DAYS",
             "rating": 5,
@@ -85,11 +90,6 @@
           },
           {
             "text": "very nice apps, just here for pvl.",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "Good",
             "rating": 5,
             "platform": "Android"
           }
@@ -129,10 +129,10 @@
         "rating": 2.28025
       },
       "android": {
-        "rating": 3.3493977
+        "rating": 3.3846154
       },
       "sentiment": {
-        "score": 0.538,
+        "score": 0.535,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -170,19 +170,19 @@
         ],
         "drivers": [
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
             "label": "update",
             "trend": "worsening"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
             "label": "slow",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
@@ -195,7 +195,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44318
+        "rating": 4.44322
       },
       "android": {
         "rating": 3.7014084
@@ -259,7 +259,7 @@
         "rating": 2.7906
       },
       "android": {
-        "rating": 3.5091193
+        "rating": 3.5099165
       },
       "sentiment": {
         "score": 0.51,
@@ -325,7 +325,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75253
+        "rating": 4.75257
       },
       "android": {
         "rating": 4.281407
