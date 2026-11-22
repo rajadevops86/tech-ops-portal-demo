@@ -1,18 +1,23 @@
 {
-  "generated_utc": "2026-11-21T08:58:19.342931+00:00",
+  "generated_utc": "2026-11-22T09:03:25.294163+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52743
+        "rating": 4.52745
       },
       "android": {
-        "rating": 4.4225683
+        "rating": 4.4228606
       },
       "sentiment": {
-        "score": 0.573,
+        "score": 0.603,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "best entertainment",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "Excellent",
             "rating": 5,
@@ -22,14 +27,14 @@
             "text": "very good 👍",
             "rating": 5,
             "platform": "Android"
-          },
-          {
-            "text": "very good",
-            "rating": 5,
-            "platform": "Android"
           }
         ],
         "topNegative": [
+          {
+            "text": "worst app waste my money",
+            "rating": 1,
+            "platform": "Android"
+          },
           {
             "text": "very very bad experience not working 4k quality in this app west of my money",
             "rating": 1,
@@ -37,11 +42,6 @@
           },
           {
             "text": "worst app I ever used",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst experience in my life",
             "rating": 1,
             "platform": "Android"
           }
@@ -54,10 +54,6 @@
           {
             "label": "stream",
             "trend": "steady"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
           }
         ]
       }
@@ -65,10 +61,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.52989
+        "rating": 4.52996
       },
       "android": {
-        "rating": 4.6115975
+        "rating": 4.610425
       },
       "sentiment": {
         "score": 0.594,
@@ -125,10 +121,10 @@
         "rating": 2.27863
       },
       "android": {
-        "rating": 3.391129
+        "rating": 3.4065042
       },
       "sentiment": {
-        "score": 0.535,
+        "score": 0.53,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -194,10 +190,10 @@
         "rating": 4.44315
       },
       "android": {
-        "rating": 3.703235
+        "rating": 3.7108603
       },
       "sentiment": {
-        "score": 0.5,
+        "score": 0.492,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -218,9 +214,9 @@
         ],
         "topNegative": [
           {
-            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
+            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -235,15 +231,23 @@
         ],
         "drivers": [
           {
+            "label": "ads",
+            "trend": "worsening"
+          },
+          {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
+          },
+          {
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "ads",
+            "label": "login",
             "trend": "steady"
           }
         ]
@@ -255,14 +259,14 @@
         "rating": 2.78964
       },
       "android": {
-        "rating": 3.5120041
+        "rating": 3.5104933
       },
       "sentiment": {
-        "score": 0.51,
+        "score": 0.519,
         "scoreDelta": 0,
         "topPositive": [
           {
-            "text": "very good",
+            "text": "perfect",
             "rating": 5,
             "platform": "Android"
           },
@@ -272,7 +276,7 @@
             "platform": "Android"
           },
           {
-            "text": "Great 👍",
+            "text": "very good",
             "rating": 5,
             "platform": "Android"
           }
@@ -321,13 +325,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.7526
+        "rating": 4.75254
       },
       "android": {
         "rating": 4.281407
       },
       "sentiment": {
-        "score": 0.615,
+        "score": 0.575,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -348,14 +352,14 @@
         ],
         "topNegative": [
           {
-            "text": "Me encanta aquí está mi novela favorita el secreto de feriha❤️",
-            "rating": 5,
-            "platform": "Android"
+            "text": "I like the app, but it’s so annoying to watch the same ads over and over! Same Real Milk ad, same Macdonald’s ad! Every 2 minutes and then the same ads, you cant skip bc they have you watch ads!! I get the ads make the app free, but jeez, gives me anxiety to hear the same ads every 2 minutes. Plus towards the end it doesn’t let the episode finish when they change it to the next one which starts with ads so I cant see how that episode ends!",
+            "rating": 1,
+            "platform": "iOS"
           },
           {
-            "text": "I don't even use this🤪",
+            "text": "It constantly says error or connection issues even though other seasons and episodes work. Only wanted to watch ONE show specifically so my family could understand but it kept saying error… again and again, I’ve seen this issue happen. Didn’t even get past the 4th episode in the FIRST SEASON and the app started having issues. The app seems to have just this major issue besides the lack of variety in movies but it’s SUPER INCONVENIENT.",
             "rating": 1,
-            "platform": "Android"
+            "platform": "iOS"
           },
           {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
@@ -366,10 +370,14 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
             "label": "crash",
+            "trend": "steady"
+          },
+          {
+            "label": "login",
             "trend": "steady"
           },
           {
