@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-25T10:41:36.438886+00:00",
+  "generated_utc": "2026-11-26T10:12:16.287725+00:00",
   "apps": [
     {
       "appName": "Aha",
@@ -7,10 +7,10 @@
         "rating": 4.52745
       },
       "android": {
-        "rating": 4.4229336
+        "rating": 4.4230747
       },
       "sentiment": {
-        "score": 0.624,
+        "score": 0.634,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -65,13 +65,13 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53219
+        "rating": 4.53444
       },
       "android": {
-        "rating": 4.6094356
+        "rating": 4.606178
       },
       "sentiment": {
-        "score": 0.55,
+        "score": 0.579,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -92,9 +92,9 @@
         ],
         "topNegative": [
           {
-            "text": "I just subscribed but can't access the game that I wanted to watch!",
+            "text": "I will not recommend this application to someone, it always need to UPGRADE your SUBSCRIPTION before watching an NBA game, additionally there's no replay. I am disappointed, as I expected to watch NBA game after its scheduled time. Unfortunately, you didn't meet my expectation.",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "useless",
@@ -110,18 +110,6 @@
         "drivers": [
           {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "steady"
-          },
-          {
-            "label": "crash",
-            "trend": "steady"
-          },
-          {
-            "label": "login",
             "trend": "steady"
           },
           {
@@ -140,40 +128,40 @@
         "rating": 3.46
       },
       "sentiment": {
-        "score": 0.528,
+        "score": 0.52,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "Best App for FIFA",
+            "rating": 5,
+            "platform": "iOS"
+          },
           {
             "text": "Excellent",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "good",
-            "rating": 3,
-            "platform": "Android"
-          },
-          {
-            "text": "thanks a lot. keep going. y'all the best",
+            "text": "Very good",
             "rating": 5,
-            "platform": "Android"
+            "platform": "iOS"
           }
         ],
         "topNegative": [
           {
-            "text": "Winner of the worst service. You call me to upgrade the plan I've been using and I agree. What did I get? I can't streaming the new plan, keeps asking me to Activate, didn't know how to activate and when I contacted you hardly to reach you. No chance I'll unsubscribe.",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "Cannot log in even after clearing cache and reinstall. This was included in my fibre broadband. For years paid the extra monthly RM30 yet cannot access. terrible",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
             "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
             "platform": "Android"
+          },
+          {
+            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "Unfriendly, the worst authentication",
+            "rating": 1,
+            "platform": "iOS"
           }
         ],
         "drivers": [
@@ -182,16 +170,16 @@
             "trend": "worsening"
           },
           {
-            "label": "update",
+            "label": "crash",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "steady"
+            "trend": "worsening"
           },
           {
-            "label": "crash",
-            "trend": "steady"
+            "label": "update",
+            "trend": "worsening"
           },
           {
             "label": "slow",
@@ -206,10 +194,10 @@
         "rating": 4.44308
       },
       "android": {
-        "rating": 3.7090394
+        "rating": 3.7146893
       },
       "sentiment": {
-        "score": 0.492,
+        "score": 0.5,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -230,9 +218,9 @@
         ],
         "topNegative": [
           {
-            "text": "TERRIBLE I connected my cable account and it is still saying I can’t watch on the app but when I connect on the Univision website it works. It did also work before. FIX YOUR APP",
+            "text": "Cannot connect if I'm streaming through YouTube TV. stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Univision Now 2.0, Terrible 1/10",
@@ -247,23 +235,15 @@
         ],
         "drivers": [
           {
-            "label": "ads",
-            "trend": "worsening"
-          },
-          {
             "label": "stream",
-            "trend": "worsening"
-          },
-          {
-            "label": "update",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -272,10 +252,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78975
+        "rating": 2.78943
       },
       "android": {
-        "rating": 3.512388
+        "rating": 3.5105596
       },
       "sentiment": {
         "score": 0.51,
@@ -341,13 +321,13 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75258
+        "rating": 4.75264
       },
       "android": {
         "rating": 4.285
       },
       "sentiment": {
-        "score": 0.575,
+        "score": 0.615,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -368,14 +348,14 @@
         ],
         "topNegative": [
           {
-            "text": "I like the app, but it’s so annoying to watch the same ads over and over! Same Real Milk ad, same Macdonald’s ad! Every 2 minutes and then the same ads, you cant skip bc they have you watch ads!! I get the ads make the app free, but jeez, gives me anxiety to hear the same ads every 2 minutes. Plus towards the end it doesn’t let the episode finish when they change it to the next one which starts with ads so I cant see how that episode ends!",
-            "rating": 1,
-            "platform": "iOS"
+            "text": "Me encanta aquí está mi novela favorita el secreto de feriha❤️",
+            "rating": 5,
+            "platform": "Android"
           },
           {
-            "text": "It constantly says error or connection issues even though other seasons and episodes work. Only wanted to watch ONE show specifically so my family could understand but it kept saying error… again and again, I’ve seen this issue happen. Didn’t even get past the 4th episode in the FIRST SEASON and the app started having issues. The app seems to have just this major issue besides the lack of variety in movies but it’s SUPER INCONVENIENT.",
+            "text": "I don't even use this🤪",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "Every time I try to watch Turkish programs, the music is too high & u hardly understand what they are talking bc the music overtakes",
@@ -386,14 +366,10 @@
         "drivers": [
           {
             "label": "ads",
-            "trend": "worsening"
-          },
-          {
-            "label": "crash",
             "trend": "steady"
           },
           {
-            "label": "login",
+            "label": "crash",
             "trend": "steady"
           },
           {
