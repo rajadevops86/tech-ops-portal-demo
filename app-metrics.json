@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-26T10:12:16.287725+00:00",
+  "generated_utc": "2026-11-27T10:18:23.058420+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52745
+        "rating": 4.52741
       },
       "android": {
-        "rating": 4.4230747
+        "rating": 4.422999
       },
       "sentiment": {
-        "score": 0.634,
+        "score": 0.563,
         "scoreDelta": 0,
         "topPositive": [
           {
@@ -31,32 +31,40 @@
         ],
         "topNegative": [
           {
-            "text": "worst app, always movies arw not streaming properly",
+            "text": "All are very boring",
+            "rating": 1,
+            "platform": "iOS"
+          },
+          {
+            "text": "terrible. I just wanted to watch a show but after the subscription couldn't view any content. keep on asking for subscriptions again and again even if it is done. Then auto pay cuttings for 99 Rs will be Rs/- 149 seems cheating",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "worst app within 10 sec iam getting adds",
-            "rating": 1,
-            "platform": "Android"
-          },
-          {
-            "text": "worst app I ever used",
+            "text": "boring",
             "rating": 1,
             "platform": "Android"
           }
         ],
         "drivers": [
           {
+            "label": "login",
+            "trend": "worsening"
+          },
+          {
+            "label": "slow",
+            "trend": "worsening"
+          },
+          {
+            "label": "ads",
+            "trend": "steady"
+          },
+          {
             "label": "buffer",
             "trend": "steady"
           },
           {
             "label": "stream",
-            "trend": "steady"
-          },
-          {
-            "label": "ads",
             "trend": "steady"
           }
         ]
@@ -65,10 +73,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53444
+        "rating": 4.53389
       },
       "android": {
-        "rating": 4.606178
+        "rating": 4.6043425
       },
       "sentiment": {
         "score": 0.579,
@@ -125,43 +133,43 @@
         "rating": 2.28298
       },
       "android": {
-        "rating": 3.46
+        "rating": 3.4534414
       },
       "sentiment": {
-        "score": 0.52,
+        "score": 0.528,
         "scoreDelta": 0,
         "topPositive": [
-          {
-            "text": "Best App for FIFA",
-            "rating": 5,
-            "platform": "iOS"
-          },
           {
             "text": "Excellent",
             "rating": 5,
             "platform": "Android"
           },
           {
-            "text": "Very good",
+            "text": "good",
+            "rating": 3,
+            "platform": "Android"
+          },
+          {
+            "text": "thanks a lot. keep going. y'all the best",
             "rating": 5,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "what this 400203? error without solution. so stupid",
+            "text": "Winner of the worst service. You call me to upgrade the plan I've been using and I agree. What did I get? I can't streaming the new plan, keeps asking me to Activate, didn't know how to activate and when I contacted you hardly to reach you. No chance I'll unsubscribe.",
             "rating": 1,
             "platform": "Android"
           },
           {
-            "text": "Terrible experience on TV because of the lag and the interface. Badly optimised. Fix this.",
+            "text": "Cannot log in even after clearing cache and reinstall. This was included in my fibre broadband. For years paid the extra monthly RM30 yet cannot access. terrible",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
-            "text": "Unfriendly, the worst authentication",
+            "text": "what this 400203? error without solution. so stupid",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           }
         ],
         "drivers": [
@@ -170,16 +178,16 @@
             "trend": "worsening"
           },
           {
-            "label": "crash",
+            "label": "update",
             "trend": "worsening"
           },
           {
             "label": "stream",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
-            "label": "update",
-            "trend": "worsening"
+            "label": "crash",
+            "trend": "steady"
           },
           {
             "label": "slow",
@@ -191,7 +199,7 @@
     {
       "appName": "Univision",
       "ios": {
-        "rating": 4.44308
+        "rating": 4.44313
       },
       "android": {
         "rating": 3.7146893
@@ -252,10 +260,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78943
+        "rating": 2.78848
       },
       "android": {
-        "rating": 3.5105596
+        "rating": 3.509274
       },
       "sentiment": {
         "score": 0.51,
@@ -321,7 +329,7 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75264
+        "rating": 4.75271
       },
       "android": {
         "rating": 4.285
