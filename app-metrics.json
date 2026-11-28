@@ -1,39 +1,39 @@
 {
-  "generated_utc": "2026-11-27T10:18:23.058420+00:00",
+  "generated_utc": "2026-11-28T09:36:54.488670+00:00",
   "apps": [
     {
       "appName": "Aha",
       "ios": {
-        "rating": 4.52741
+        "rating": 4.52735
       },
       "android": {
-        "rating": 4.422999
+        "rating": 4.4229712
       },
       "sentiment": {
-        "score": 0.563,
+        "score": 0.625,
         "scoreDelta": 0,
         "topPositive": [
+          {
+            "text": "superb",
+            "rating": 5,
+            "platform": "Android"
+          },
           {
             "text": "superb picture",
             "rating": 3,
             "platform": "Android"
           },
           {
-            "text": "excellent",
-            "rating": 5,
-            "platform": "Android"
-          },
-          {
-            "text": "best entertainment",
+            "text": "very nice",
             "rating": 5,
             "platform": "Android"
           }
         ],
         "topNegative": [
           {
-            "text": "All are very boring",
+            "text": "very bad 👎",
             "rating": 1,
-            "platform": "iOS"
+            "platform": "Android"
           },
           {
             "text": "terrible. I just wanted to watch a show but after the subscription couldn't view any content. keep on asking for subscriptions again and again even if it is done. Then auto pay cuttings for 99 Rs will be Rs/- 149 seems cheating",
@@ -49,11 +49,7 @@
         "drivers": [
           {
             "label": "login",
-            "trend": "worsening"
-          },
-          {
-            "label": "slow",
-            "trend": "worsening"
+            "trend": "steady"
           },
           {
             "label": "ads",
@@ -62,10 +58,6 @@
           {
             "label": "buffer",
             "trend": "steady"
-          },
-          {
-            "label": "stream",
-            "trend": "steady"
           }
         ]
       }
@@ -73,10 +65,10 @@
     {
       "appName": "Pilipinas Live",
       "ios": {
-        "rating": 4.53389
+        "rating": 4.53508
       },
       "android": {
-        "rating": 4.6043425
+        "rating": 4.6045046
       },
       "sentiment": {
         "score": 0.579,
@@ -133,7 +125,7 @@
         "rating": 2.28298
       },
       "android": {
-        "rating": 3.4534414
+        "rating": 3.4462152
       },
       "sentiment": {
         "score": 0.528,
@@ -260,10 +252,10 @@
     {
       "appName": "Univision Now",
       "ios": {
-        "rating": 2.78848
+        "rating": 2.78842
       },
       "android": {
-        "rating": 3.509274
+        "rating": 3.5076842
       },
       "sentiment": {
         "score": 0.51,
@@ -329,10 +321,10 @@
     {
       "appName": "Canela.TV",
       "ios": {
-        "rating": 4.75271
+        "rating": 4.75282
       },
       "android": {
-        "rating": 4.285
+        "rating": 4.265
       },
       "sentiment": {
         "score": 0.615,
